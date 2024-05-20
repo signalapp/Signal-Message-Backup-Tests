@@ -23,4 +23,4 @@ To convert a `.jsonproto` test case into its corresponding `.binproto`, ensure y
 ; cargo run test-cases/{test-case-name}.jsonproto > test-cases/{test-case-name}.binproto
 ```
 
-Alternatively, having added a `.jsonproto` file to `test-cases/`, run `./generate-binprotos.sh`. CI will do this on every push/pull-request, to validate that all committed `.binproto` files match their corresponding `.jsonproto`s. A generated `.binproto` should be committed to the repo for each added `.jsonproto`.
+Alternatively, having added a `.jsonproto` file to `test-cases/`, run `./scripts/generate-binprotos.sh`. CI will do this on every push/pull-request, to validate that all committed `.binproto` files match their corresponding `.jsonproto`s. A generated `.binproto` should be committed to the repo for each added `.jsonproto`.
