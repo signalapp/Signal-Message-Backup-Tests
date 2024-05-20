@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate_and_compare:
+    name: Generate and compare .binprotos
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 3
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - run: sudo apt-get update && sudo apt-get install protobuf-compiler
+    - run: rustup toolchain install stable
+
+    - name: Generate `.binproto`s for all `.jsonproto`s
+      run: ${PWD}/generate-binprotos.zsh
+
+    - name: Compare generated `.binproto`s
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "Files changed after generating .binprotos!"
+          exit 1
+        fi
