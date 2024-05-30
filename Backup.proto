@@ -102,10 +102,9 @@ message Recipient {
 }
 
 message Contact {
-  enum Registered {
-    UNKNOWN = 0;
-    REGISTERED = 1;
-    NOT_REGISTERED = 2;
+  message Registered { }
+  message NotRegistered {
+    uint64 unregisteredTimestamp = 1;
   }
 
   enum Visibility {
@@ -120,8 +119,12 @@ message Contact {
   optional uint64 e164 = 4;
   bool blocked = 5;
   Visibility visibility = 6;
-  Registered registered = 7;
-  uint64 unregisteredTimestamp = 8;
+
+  oneof registration {
+    Registered registered = 7;
+    NotRegistered notRegistered = 8;
+  }
+
   optional bytes profileKey = 9;
   bool profileSharing = 10;
   optional string profileGivenName = 11;
@@ -489,7 +492,7 @@ message ContactAttachment {
   repeated Phone number = 3;
   repeated Email email = 4;
   repeated PostalAddress address = 5;
-  optional string avatarUrlPath = 6;
+  optional FilePointer avatar = 6;
   optional string organization = 7;
 }
 

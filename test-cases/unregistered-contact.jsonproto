@@ -49,8 +49,9 @@
         "e164": "17735550199",
         "blocked": false,
         "visibility": "VISIBLE",
-        "registered": "NOT_REGISTERED",
-        "unregisteredTimestamp": 1713157772000,
+        "notRegistered": {
+          "unregisteredTimestamp": 1713157772000
+        },
         "profileKey": "nH0NX5+LqtIe85lAy958oyRNH9INMHFn2eb1VF6i4/o=",
         "profileSharing": true,
         "profileGivenName": "Han",

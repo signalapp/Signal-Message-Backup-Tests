@@ -32,7 +32,7 @@
         "aci": "VVxXlxwxS8aBGSQJ1tL0sA==",
         "profileGivenName": "Han Solo",
         "profileKey": "BSQ4Cl4xfTKwrRZzKGaxbL9rGa/ZYz2KP4NxaRYiYcE=",
-        "registered": "REGISTERED"
+        "registered": {}
       },
       "id": "2"
     }
@@ -44,7 +44,7 @@
         "e164": "15555550001",
         "pni": "VVpXlxwxS8aBGSQJ1tL0sA==",
         "profileSharing": true,
-        "registered": "REGISTERED"
+        "registered": {}
       },
       "id": "3"
     }
@@ -56,7 +56,7 @@
         "e164": "15555550002",
         "pni": "VVlXlxwxS8aBGSQJ1tL0sA==",
         "profileSharing": true,
-        "registered": "REGISTERED"
+        "registered": {}
       },
       "id": "4"
     }
