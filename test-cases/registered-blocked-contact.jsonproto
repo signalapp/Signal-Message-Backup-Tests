@@ -48,7 +48,7 @@
         "username": "han_solo.44",
         "e164": "17735550199",
         "blocked": true,
-        "hidden": true,
+        "visibility": "HIDDEN",
         "registered": "REGISTERED",
         "unregisteredTimestamp": 0,
         "profileKey": "nH0NX5+LqtIe85lAy958oyRNH9INMHFn2eb1VF6i4/o=",
