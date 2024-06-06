@@ -9,9 +9,6 @@
       "givenName": "Boba",
       "familyName": "Fett",
       "avatarUrlPath": "",
-      "subscriberId": "",
-      "subscriberCurrencyCode": "",
-      "subscriptionManuallyCancelled": false,
       "accountSettings": {
         "readReceipts": false,
         "sealedSenderIndicators": true,

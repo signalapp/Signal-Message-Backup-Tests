@@ -15,9 +15,11 @@
       "givenName": "Boba",
       "familyName": "Fett",
       "avatarUrlPath": "",
-      "subscriberId": "7LtoxzQzGi6jM82nR8mMRVNlImFYK0/OWuDeqE3OZRk=",
-      "subscriberCurrencyCode": "USD",
-      "subscriptionManuallyCancelled": true,
+      "donationSubscriberData": {
+        "subscriberId": "7LtoxzQzGi6jM82nR8mMRVNlImFYK0/OWuDeqE3OZRk=",
+        "currencyCode": "USD",
+        "manuallyCancelled": true
+      },
       "accountSettings": {
         "readReceipts": true,
         "sealedSenderIndicators": true,
