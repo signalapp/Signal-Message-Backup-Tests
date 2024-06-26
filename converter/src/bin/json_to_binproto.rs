@@ -22,7 +22,7 @@ fn main() {
     eprintln!("reading from {:?}", filename.source);
 
     let contents =
-        serde_json::from_str(&String::from_utf8(read_file(filename)).expect("not a string"))
+        json5::from_str(&String::from_utf8(read_file(filename)).expect("not a string"))
             .expect("invalid JSON");
 
     let contents = assert_matches!(contents, serde_json::Value::Array(contents) => contents);
