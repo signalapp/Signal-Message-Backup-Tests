@@ -1,0 +1,282 @@
+// Includes at least one message for each of the "simple chat updates".
+[
+  {
+    "backupTimeMs": "123456",
+    "version": "1"
+  },
+  {
+    "account": {
+      "profileKey": "YQKRq+3DQklInaOaMcmlzZnN0m/1hzLiaONX7gB12dg=",
+      "givenName": "Boba",
+      "familyName": "Fett",
+      "avatarUrlPath": "",
+      "accountSettings": {
+        "readReceipts": false,
+        "sealedSenderIndicators": true,
+        "typingIndicators": false,
+        "linkPreviews": false,
+        "notDiscoverableByPhoneNumber": false,
+        "preferContactAvatars": false,
+        "universalExpireTimer": 0,
+        "preferredReactionEmoji": [],
+        "displayBadgesOnProfile": false,
+        "keepMutedChatsArchived": false,
+        "hasSetMyStoriesPrivacy": false,
+        "hasViewedOnboardingStory": false,
+        "storiesDisabled": false,
+        "storyViewReceiptsEnabled": false,
+        "hasSeenGroupStoryEducationSheet": false,
+        "hasCompletedUsernameOnboarding": false,
+        "phoneNumberSharingMode": "NOBODY"
+      }
+    }
+  },
+  {
+    "recipient": {
+      "id": "1",
+      "self": {}
+    }
+  },
+  {
+    "recipient": {
+      "id": "2",
+      "releaseNotes": {}
+    }
+  },
+  {
+    "recipient": {
+      "id": "3",
+      "contact": {
+        "aci": "X4xWjQEZR72BqruHybcZlQ==",
+        "profileKey": "YtHHVK+Wo4nPcVpWhC3roMEDu2Tw6kYc9JpLRMq1Q94=",
+        "profileSharing": true,
+        "profileFamilyName": "Solo",
+        "profileGivenName": "Han",
+        "registered": {},
+        "hideStory": false,
+      }
+    }
+  },
+  // Release Notes channel
+  {
+    "chat": {
+      "id": "1",
+      "recipientId": "2"
+    }
+  },
+  // 1:1 chat with Contact recipient 3
+  {
+    "chat": {
+      "id": "2",
+      "recipientId": "3"
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "1",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "JOINED_SIGNAL"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "2",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "IDENTITY_UPDATE"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "3",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "IDENTITY_VERIFIED"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "4",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "IDENTITY_DEFAULT"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "2",
+      "chatId": "1",
+      "dateSent": "5",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "RELEASE_CHANNEL_DONATION_REQUEST"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "6",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "CHANGE_NUMBER"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "7",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "END_SESSION"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "8",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "CHAT_SESSION_REFRESH"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "9",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "BAD_DECRYPT"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "10",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "PAYMENTS_ACTIVATED"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "1",
+      "chatId": "2",
+      "dateSent": "11",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "PAYMENTS_ACTIVATED"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "12",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "PAYMENT_ACTIVATION_REQUEST"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "1",
+      "chatId": "2",
+      "dateSent": "13",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "PAYMENT_ACTIVATION_REQUEST"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "2",
+      "dateSent": "14",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "UNSUPPORTED_PROTOCOL_MESSAGE"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "1",
+      "chatId": "2",
+      "dateSent": "14",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "UNSUPPORTED_PROTOCOL_MESSAGE"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": "1",
+      "chatId": "2",
+      "dateSent": "15",
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "REPORTED_SPAM"
+        }
+      }
+    }
+  }
+]
