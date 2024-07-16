@@ -1,7 +1,8 @@
+// Includes "expiration timer update" chat update messages, one from the local user and one from another user.
 [
   {
-    "version": "1",
-    "backupTimeMs": "1715636551000"
+    "backupTimeMs": "123456",
+    "version": "1"
   },
   {
     "account": {
@@ -39,34 +40,53 @@
   {
     "recipient": {
       "id": "2",
+      "releaseNotes": {}
+    }
+  },
+  {
+    "recipient": {
+      "id": "3",
       "contact": {
-        "aci": "QHaZXgUxQEKp5B5np33zWA==",
-        "pni": "JvwCorpYSn2wgZ2iOXFXCg==",
-        "username": "han_solo.44",
-        "e164": "17735550199",
-        "blocked": false,
-        "visibility": "VISIBLE",
-        "notRegistered": {
-          "unregisteredTimestamp": 1713157772000
-        },
-        "profileKey": "nH0NX5+LqtIe85lAy958oyRNH9INMHFn2eb1VF6i4/o=",
+        "aci": "X4xWjQEZR72BqruHybcZlQ==",
+        "profileKey": "YtHHVK+Wo4nPcVpWhC3roMEDu2Tw6kYc9JpLRMq1Q94=",
         "profileSharing": true,
-        "profileGivenName": "Han",
         "profileFamilyName": "Solo",
-        "hideStory": true
+        "profileGivenName": "Han",
+        "registered": {},
+        "hideStory": false,
       }
     }
   },
   {
     "chat": {
       "id": "1",
-      "recipientId": "1"
+      "recipientId": "3"
     }
   },
   {
-    "chat": {
-      "id": "2",
-      "recipientId": "2"
+    "chatItem": {
+      "authorId": "3",
+      "chatId": "1",
+      "dateSent": "1",
+      "directionless": {},
+      "updateMessage": {
+        "expirationTimerChange": {
+          "expiresInMs": 0
+        }
+      }
     }
-  }
+  },
+  {
+    "chatItem": {
+      "authorId": "1",
+      "chatId": "1",
+      "dateSent": "2",
+      "directionless": {},
+      "updateMessage": {
+        "expirationTimerChange": {
+          "expiresInMs": 9001000
+        }
+      }
+    }
+  },
 ]

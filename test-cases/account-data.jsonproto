@@ -28,7 +28,7 @@
         "linkPreviews": false,
         "notDiscoverableByPhoneNumber": true,
         "preferContactAvatars": true,
-        "universalExpireTimer": 3600,
+        "universalExpireTimerSeconds": 3600,
         "preferredReactionEmoji": ["🏎️"],
         "displayBadgesOnProfile": true,
         "keepMutedChatsArchived": true,
