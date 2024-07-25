@@ -39,6 +39,26 @@
   {
     "recipient": {
       "id": "2",
+      "releaseNotes": {}
+    }
+  },
+  {
+    "recipient": {
+      "id": "3",
+      "distributionList": {
+        "distributionId": "AAAAAAAAAAAAAAAAAAAAAA==",
+        "distributionList": {
+          "allowReplies": true,
+          "memberRecipientIds": [],
+          "name": "My Story",
+          "privacyMode": "ALL"
+        }
+      }
+    }
+  },
+  {
+    "recipient": {
+      "id": "4",
       "contact": {
         "aci": "QHaZXgUxQEKp5B5np33zWA==",
         "pni": "JvwCorpYSn2wgZ2iOXFXCg==",
@@ -66,7 +86,7 @@
   {
     "chat": {
       "id": "2",
-      "recipientId": "2"
+      "recipientId": "4"
     }
   }
 ]

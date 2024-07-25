@@ -46,6 +46,20 @@
   {
     "recipient": {
       "id": "3",
+      "distributionList": {
+        "distributionId": "AAAAAAAAAAAAAAAAAAAAAA==",
+        "distributionList": {
+          "allowReplies": true,
+          "memberRecipientIds": [],
+          "name": "My Story",
+          "privacyMode": "ALL"
+        }
+      }
+    }
+  },
+  {
+    "recipient": {
+      "id": "4",
       "contact": {
         "aci": "X4xWjQEZR72BqruHybcZlQ==",
         "profileKey": "YtHHVK+Wo4nPcVpWhC3roMEDu2Tw6kYc9JpLRMq1Q94=",
@@ -60,12 +74,12 @@
   {
     "chat": {
       "id": "1",
-      "recipientId": "3"
+      "recipientId": "4"
     }
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "1",
       "dateSent": "1",
       "directionless": {},

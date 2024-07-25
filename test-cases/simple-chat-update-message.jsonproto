@@ -46,6 +46,20 @@
   {
     "recipient": {
       "id": "3",
+      "distributionList": {
+        "distributionId": "AAAAAAAAAAAAAAAAAAAAAA==",
+        "distributionList": {
+          "allowReplies": true,
+          "memberRecipientIds": [],
+          "name": "My Story",
+          "privacyMode": "ALL"
+        }
+      }
+    }
+  },
+  {
+    "recipient": {
+      "id": "4",
       "contact": {
         "aci": "X4xWjQEZR72BqruHybcZlQ==",
         "profileKey": "YtHHVK+Wo4nPcVpWhC3roMEDu2Tw6kYc9JpLRMq1Q94=",
@@ -64,16 +78,16 @@
       "recipientId": "2"
     }
   },
-  // 1:1 chat with Contact recipient 3
+  // 1:1 chat with Contact recipient 4
   {
     "chat": {
       "id": "2",
-      "recipientId": "3"
+      "recipientId": "4"
     }
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "1",
       "directionless": {},
@@ -86,7 +100,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "2",
       "directionless": {},
@@ -99,7 +113,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "3",
       "directionless": {},
@@ -112,7 +126,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "4",
       "directionless": {},
@@ -138,7 +152,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "6",
       "directionless": {},
@@ -151,7 +165,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "7",
       "directionless": {},
@@ -164,7 +178,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "8",
       "directionless": {},
@@ -177,7 +191,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "9",
       "directionless": {},
@@ -190,7 +204,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "10",
       "directionless": {},
@@ -216,7 +230,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "12",
       "directionless": {},
@@ -242,7 +256,7 @@
   },
   {
     "chatItem": {
-      "authorId": "3",
+      "authorId": "4",
       "chatId": "2",
       "dateSent": "14",
       "directionless": {},

@@ -28,103 +28,109 @@
   },
   {
     "recipient": {
+      "id": "2",
+      "releaseNotes": {}
+    }
+  },
+  {
+    "recipient": {
+      "id": "3",
       "contact": {
         "aci": "VVxXlxwxS8aBGSQJ1tL0sA==",
         "profileGivenName": "Han Solo",
         "profileKey": "BSQ4Cl4xfTKwrRZzKGaxbL9rGa/ZYz2KP4NxaRYiYcE=",
         "registered": {}
-      },
-      "id": "2"
+      }
     }
   },
   {
     "recipient": {
+      "id": "4",
       "contact": {
         "aci": "VVtXlxwxS8aBGSQJ1tL0sA==",
         "e164": "15555550001",
         "pni": "VVpXlxwxS8aBGSQJ1tL0sA==",
         "profileSharing": true,
         "registered": {}
-      },
-      "id": "3"
+      }
     }
   },
   {
     "recipient": {
+      "id": "5",
       "contact": {
         "aci": "VVhXlxwxS8aBGSQJ1tL0sA==",
         "e164": "15555550002",
         "pni": "VVlXlxwxS8aBGSQJ1tL0sA==",
         "profileSharing": true,
         "registered": {}
-      },
-      "id": "4"
+      }
     }
   },
   {
     "recipient": {
-      "distributionList": {
-        "deletionTimestamp": "1715633599374",
-        "distributionId": "Vo1p4wr9Rz+onvgV+ig7Og=="
-      },
-      "id": "5"
-    }
-  },
- {
-    "recipient": {
-      "distributionList": {
-        "deletionTimestamp": "1715633599370",
-        "distributionId": "VVVXlxwxS8aBGSQJ1tL0sA=="
-      },
-      "id": "6"
-    }
-  },
-  {
-    "recipient": {
+      "id": "6",
       "distributionList": {
         "distributionId": "AAAAAAAAAAAAAAAAAAAAAA==",
         "distributionList": {
           "allowReplies": true,
           "memberRecipientIds": [
-            "3"
+            "4"
           ],
           "name": "My Story",
           "privacyMode": "ALL_EXCEPT"
         }
-      },
-      "id": "7"
+      }
     }
   },
   {
     "recipient": {
+      "id": "7",
+      "distributionList": {
+        "deletionTimestamp": "1715633599374",
+        "distributionId": "Vo1p4wr9Rz+onvgV+ig7Og=="
+      }
+    }
+  },
+ {
+    "recipient": {
+      "id": "8",
+      "distributionList": {
+        "deletionTimestamp": "1715633599370",
+        "distributionId": "VVVXlxwxS8aBGSQJ1tL0sA=="
+      }
+    }
+  },
+  {
+    "recipient": {
+      "id": "9",
       "distributionList": {
         "distributionId": "me/ptJ9tRnyCWu/eg9uP7Q==",
         "distributionList": {
           "allowReplies": true,
           "memberRecipientIds": [
-            "3",
-            "4"
+            "4",
+            "5"
           ],
           "name": "Mandalorians",
           "privacyMode": "ALL_EXCEPT"
         }
-      },
-      "id": "8"
+      }
     }
   },
   {
     "recipient": {
+      "id": "10",
       "distributionList": {
         "distributionId": "ZYoHlxwxS8aBGSQJ1tL0sA==",
         "distributionList": {
           "memberRecipientIds": [
-            "3"
+            "4"
           ],
           "name": "Hutts",
           "privacyMode": "ONLY_WITH"
         }
-      },
-      "id": "9"
+      }
     }
   }
 ]
