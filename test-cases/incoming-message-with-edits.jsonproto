@@ -151,7 +151,7 @@
       "incoming": {
         "dateReceived": 3002, // Dates corresponding to the newest edit.
         "dateServerSent": 3001,
-        "read": false,
+        "read": true,
         "sealedSender": true,
       },
       "standardMessage": {
@@ -195,7 +195,7 @@
           "incoming": {
             "dateReceived": 1002,
             "dateServerSent": 1001,
-            "read": false,
+            "read": true,
             "sealedSender": true,
           },
           "standardMessage": {
@@ -218,7 +218,7 @@
           "incoming": {
             "dateReceived": 2002,
             "dateServerSent": 2001,
-            "read": false,
+            "read": true,
             "sealedSender": true,
           },
           "standardMessage": {
