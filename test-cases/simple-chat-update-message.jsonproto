@@ -3,8 +3,8 @@
 // yet.
 [
   {
-    "backupTimeMs": "123456",
-    "version": "1"
+    "backupTimeMs": 123456,
+    "version": 1
   },
   {
     "account": {
@@ -35,19 +35,19 @@
   },
   {
     "recipient": {
-      "id": "1",
+      "id": 1,
       "self": {}
     }
   },
   {
     "recipient": {
-      "id": "2",
+      "id": 2,
       "releaseNotes": {}
     }
   },
   {
     "recipient": {
-      "id": "3",
+      "id": 3,
       "distributionList": {
         "distributionId": "AAAAAAAAAAAAAAAAAAAAAA==",
         "distributionList": {
@@ -61,7 +61,7 @@
   },
   {
     "recipient": {
-      "id": "4",
+      "id": 4,
       "contact": {
         "aci": "X4xWjQEZR72BqruHybcZlQ==",
         "profileKey": "YtHHVK+Wo4nPcVpWhC3roMEDu2Tw6kYc9JpLRMq1Q94=",
@@ -73,18 +73,75 @@
       }
     }
   },
-  // 1:1 chat with Contact recipient 4
+  {
+    "recipient": {
+      "id": 5,
+      "group": {
+        "masterKey": "IK0/LD6QONKivit6q8/V+S0MjoV4MMQl4rw2w0Ez76U=",
+        "whitelisted": true,
+        "hideStory": false,
+        "storySendMode": "DEFAULT",
+        "snapshot": {
+          "title": {
+            "title": "My Cool Group"
+          },
+          "description": {
+            "descriptionText": "Blorp"
+          },
+          "disappearingMessagesTimer": {
+            "disappearingMessagesDuration": 0
+          },
+          "accessControl": {
+            "attributes": "MEMBER",
+            "members": "MEMBER",
+            "addFromInviteLink": "UNSATISFIABLE",
+          },
+          "version": 12,
+          "members": [
+            {
+              "userId": "CujGyCcHTqeyJHQXIn04kA==",
+              "role": "ADMINISTRATOR",
+              "profileKey": "cM4PAiE6xclFBl2wesio4S/tpbDfZHFpYf7BBAsnZI4=",
+              "joinedAtVersion": 0,
+            },
+            {
+              "userId": "X4xWjQEZR72BqruHybcZlQ==",
+              "role": "ADMINISTRATOR",
+              "profileKey": "YtHHVK+Wo4nPcVpWhC3roMEDu2Tw6kYc9JpLRMq1Q94=",
+              "joinedAtVersion": 0,
+            },
+          ],
+          "inviteLinkPassword": "",
+          "announcements_only": false
+        }
+      }
+    }
+  },
+  // 1:1 chat with "Han Solo"
   {
     "chat": {
-      "id": "1",
-      "recipientId": "4"
+      "id": 1,
+      "recipientId": 4
+    }
+  },
+  // Group chat with "My Cool Group"
+  {
+    "chat": {
+      "id": 2,
+      "recipientId": 5,
+      "archived": false,
+      "pinnedOrder": 0,
+      "expirationTimerMs": 0,
+      "muteUntilMs": 0,
+      "markedUnread": false,
+      "dontNotifyForMentionsIfMuted": false,
     }
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "1",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 1,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -95,9 +152,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "2",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 2,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -108,9 +165,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "3",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 3,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -121,9 +178,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "4",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 4,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -134,9 +191,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "6",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 6,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -147,9 +204,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "7",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 7,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -160,9 +217,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "8",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 8,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -173,9 +230,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "9",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 9,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -186,9 +243,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "10",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 10,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -199,9 +256,9 @@
   },
   {
     "chatItem": {
-      "authorId": "1",
-      "chatId": "1",
-      "dateSent": "11",
+      "authorId": 1,
+      "chatId": 1,
+      "dateSent": 11,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -212,9 +269,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "12",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 12,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -225,9 +282,9 @@
   },
   {
     "chatItem": {
-      "authorId": "1",
-      "chatId": "1",
-      "dateSent": "13",
+      "authorId": 1,
+      "chatId": 1,
+      "dateSent": 13,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -238,9 +295,9 @@
   },
   {
     "chatItem": {
-      "authorId": "4",
-      "chatId": "1",
-      "dateSent": "14",
+      "authorId": 4,
+      "chatId": 1,
+      "dateSent": 14,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -251,9 +308,9 @@
   },
   {
     "chatItem": {
-      "authorId": "1",
-      "chatId": "1",
-      "dateSent": "14",
+      "authorId": 1,
+      "chatId": 1,
+      "dateSent": 14,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -264,9 +321,9 @@
   },
   {
     "chatItem": {
-      "authorId": "1",
-      "chatId": "1",
-      "dateSent": "15",
+      "authorId": 1,
+      "chatId": 1,
+      "dateSent": 15,
       "directionless": {},
       "updateMessage": {
         "simpleUpdate": {
@@ -274,5 +331,74 @@
         }
       }
     }
-  }
+  },
+  // In the 1:1 chat
+  {
+    "chatItem": {
+      "authorId": 1,
+      "chatId": 1,
+      "dateSent": 16,
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "BLOCKED"
+        }
+      }
+    }
+  },
+  // In the 1:1 chat
+  {
+    "chatItem": {
+      "authorId": 1,
+      "chatId": 1,
+      "dateSent": 17,
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "UNBLOCKED"
+        }
+      }
+    }
+  },
+  // In the group chat
+  {
+    "chatItem": {
+      "authorId": 1,
+      "chatId": 2,
+      "dateSent": 18,
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "BLOCKED"
+        }
+      }
+    }
+  },
+  // In the group chat
+  {
+    "chatItem": {
+      "authorId": 1,
+      "chatId": 2,
+      "dateSent": 19,
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "UNBLOCKED"
+        }
+      }
+    }
+  },
+  {
+    "chatItem": {
+      "authorId": 1,
+      "chatId": 1,
+      "dateSent": 20,
+      "directionless": {},
+      "updateMessage": {
+        "simpleUpdate": {
+          "type": "MESSAGE_REQUEST_ACCEPTED"
+        }
+      }
+    }
+  },
 ]
