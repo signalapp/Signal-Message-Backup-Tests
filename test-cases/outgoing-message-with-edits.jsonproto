@@ -109,14 +109,12 @@
             "emoji": "👀",
             "authorId": 1, // Self-react
             "sentTimestamp": 101,
-            // No `receivedTimestamp`, since we sent this reaction
             "sortOrder": 1
           },
           {
             "emoji": "🥂",
             "authorId": 4,
             "sentTimestamp": 102,
-            "receivedTimestamp": 103,
             "sortOrder": 2
           }
         ]
