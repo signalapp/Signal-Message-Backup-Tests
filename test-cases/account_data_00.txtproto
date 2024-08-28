@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -1325120
+          solid = -2805332
         },
         CustomChatColor {
           id = 2
-          solid = -2537207
+          solid = -8354883
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 59
+            angle = 20
             colors = [
-              -15640225,
-              -4632205
+              -7053932,
+              -10086694
             ]
             positions = [
               0.0,
@@ -47,7 +47,7 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 1083889414
+      universalExpireTimerSeconds = 616008951
     }
     avatarUrlPath = ""
     familyName = ""

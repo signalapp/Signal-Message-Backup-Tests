@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -1325120
+          solid = -2805332
         },
         CustomChatColor {
           id = 2
-          solid = -2537207
+          solid = -8354883
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 59
+            angle = 20
             colors = [
-              -15640225,
-              -4632205
+              -7053932,
+              -10086694
             ]
             positions = [
               0.0,
@@ -68,13 +68,9 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 1083889414
+      universalExpireTimerSeconds = 616008951
     }
     avatarUrlPath = ""
-    backupsSubscriberData = SubscriberData {
-      currencyCode = "EUR"
-      subscriberId = <7413fec76076c9df65cfa830a11a5cb82d872d622f7cb73a1c085a95699762ba>
-    }
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       subscriberId = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>

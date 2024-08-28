@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -7789932
+          solid = -16570247
         },
         CustomChatColor {
           id = 2
-          solid = -11995034
+          solid = -415866
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 50
+            angle = 229
             colors = [
-              -6934140,
-              -126129
+              -11328369,
+              -16144417
             ]
             positions = [
               0.0,
@@ -38,14 +38,9 @@ Frame {
         wallpaperPreset = WallpaperPreset.GRADIENT_HEATMAP
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 1514863930
+      universalExpireTimerSeconds = 542768234
     }
     avatarUrlPath = "https://example.com/BvsKAUVdtL"
-    backupsSubscriberData = SubscriberData {
-      currencyCode = "GBP"
-      manuallyCancelled = true
-      subscriberId = <66de0801976f073e561ac824c3716b81b515c87edc658b9f52e305873211de86>
-    }
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true

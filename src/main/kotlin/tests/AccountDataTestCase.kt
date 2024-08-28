@@ -62,13 +62,14 @@ object AccountDataTestCase : TestCase("account_data") {
             manuallyCancelled = someBoolean()
           )
         },
-        backupsSubscriberData = someNullablePermutation {
-          frames += AccountData.SubscriberData(
-            subscriberId = someBytes(32).toByteString(),
-            currencyCode = some(Generators.list("USD", "EUR", "GBP")),
-            manuallyCancelled = someBoolean()
-          )
-        },
+        // TODO Currently in flux, unclear if this is even needed anymore
+//        backupsSubscriberData = someNullablePermutation {
+//          frames += AccountData.SubscriberData(
+//            subscriberId = someBytes(32).toByteString(),
+//            currencyCode = some(Generators.list("USD", "EUR", "GBP")),
+//            manuallyCancelled = someBoolean()
+//          )
+//        },
         accountSettings = AccountData.AccountSettings(
           readReceipts = someBoolean(),
           sealedSenderIndicators = someBoolean(),
