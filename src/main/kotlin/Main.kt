@@ -28,7 +28,7 @@ val ALL_TEST_CASES = listOf(
   ChatItemThreadMergeUpdateTestCase,
   ChatItemExpirationTimerUpdateTestCase,
   ChatItemPaymentNotificationTestCase,
-//  ChatItemGiftBadgeTestCase, TODO figure out a way to generate valid presentations
+  ChatItemGiftBadgeTestCase,
   ChatItemIndividualCallUpdateTestCase,
   ChatItemGroupCallUpdateTestCase,
   ChatItemStandardMessageTextOnlyTestCase,
