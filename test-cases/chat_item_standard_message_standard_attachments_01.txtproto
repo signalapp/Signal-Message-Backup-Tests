@@ -1,0 +1,199 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = "My Story"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000000000000000000000000000001>
+      e164 = 16105550101
+      pni = <00000000000000000000000000000002>
+      profileFamilyName = "Smith"
+      profileGivenName = "Alice"
+      profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      registered = Registered {}
+      visibility = Visibility.VISIBLE
+    }
+    id = 4
+  }
+}
+
+Frame {
+  chat = Chat {
+    id = 2
+    recipientId = 4
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 4
+    chatId = 2
+    dateSent = 1680366577839
+    incoming = IncomingMessageDetails {
+      dateReceived = 1702291826270
+      dateServerSent = 1794124103202
+    }
+    standardMessage = StandardMessage {
+      attachments = [
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              cdnNumber = 2
+              digest = <222d4808bdaadcf9eaa4908fc733c244>
+              key = <4a5aa0bbf67baa9066da53caf60c4ec9>
+              mediaName = "222d4808bdaadcf9eaa4908fc733c244"
+              size = 522457189
+              transitCdnKey = "WyYPnka"
+            }
+            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+            caption = ""
+            contentType = "image/png"
+            fileName = "zeAEZObFnzTZMn"
+            height = 3973
+            incrementalMac = <22ad8089d8b31e0b8d6049955da8992e>
+            incrementalMacChunkSize = 2048
+            width = 3796
+          }
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              cdnNumber = 3
+              digest = <7db665e567fdcb1ac685a8aedbd29cb4>
+              key = <2ed70996974af5a7a459650a2590efd1>
+              mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
+              size = 1261260923
+              transitCdnKey = "IBHCZ"
+              transitCdnNumber = 2
+            }
+            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+            caption = "ksKenthyvzSFN"
+            contentType = "image/gif"
+            fileName = "MNaiqnlQb"
+            height = 2301
+            width = 2298
+          }
+          wasDownloaded = true
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              digest = <595e2aa725b1e780a6681e10130f4bc7>
+              key = <0f4d11d0201e77f9ba1caec888cf6bfa>
+              mediaName = "595e2aa725b1e780a6681e10130f4bc7"
+              size = 413137175
+            }
+            caption = "pXHtZhd"
+            contentType = "audio/mp3"
+            height = 3097
+            incrementalMac = <22ad8089d8b31e0b8d6049955da8992e>
+            incrementalMacChunkSize = 2048
+            width = 3092
+          }
+        }
+      ]
+      reactions = [
+        Reaction {
+          authorId = 1
+          emoji = "💀"
+          sentTimestamp = 1744320599093
+          sortOrder = 1
+        }
+      ]
+      text = Text {
+        body = ""
+      }
+    }
+  }
+}

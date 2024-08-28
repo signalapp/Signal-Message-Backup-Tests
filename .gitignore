@@ -1,3 +1,12 @@
-.DS_Store
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea/
+!.idea/file.template.settings.xml
+!.idea/fileTemplates/
+.gradle/
+build/
 
-target
+### Mac OS ###
+.DS_Store

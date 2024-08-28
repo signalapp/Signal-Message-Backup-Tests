@@ -7,25 +7,27 @@ on:
       - main
 
 jobs:
-  generate_and_compare:
-    name: Generate and compare .binprotos
-
+  run:
     runs-on: ubuntu-latest
-
-    timeout-minutes: 3
-
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
 
-    - run: sudo apt-get update && sudo apt-get install protobuf-compiler
-    - run: rustup toolchain install stable
+      - name: Generate tests
+        run: ./gradlew run
 
-    - name: Generate `.binproto`s for all `.jsonproto`s
-      run: ${PWD}/scripts/generate-binprotos.sh
+      - name: Ensure output matches committed tests
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Git status is not clean after running the Gradle script. Output does not match the committed tests!"
+            exit 1
+          else
+            echo "Git status is clean. No changes detected."
+          fi
 
-    - name: Compare generated `.binproto`s
-      run: |
-        if [ -n "$(git status --porcelain)" ]; then
-          echo "Files changed after generating .binprotos!"
-          exit 1
-        fi
+      - name: Check lint
+        run: ./gradlew ktlintCheck

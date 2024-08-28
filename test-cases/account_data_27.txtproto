@@ -1,0 +1,85 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -1325120
+        },
+        CustomChatColor {
+          id = 2
+          solid = -2537207
+        },
+        CustomChatColor {
+          gradient = Gradient {
+            angle = 59
+            colors = [
+              -15640225,
+              -4632205
+            ]
+            positions = [
+              0.0,
+              1.0
+            ]
+          }
+          id = 3
+        }
+      ]
+      defaultChatStyle = ChatStyle {
+        autoBubbleColor = AutomaticBubbleColor {}
+        dimWallpaperInDarkMode = true
+        wallpaperPreset = WallpaperPreset.GRADIENT_BLISS
+      }
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      universalExpireTimerSeconds = 1083889414
+    }
+    avatarUrlPath = ""
+    backupsSubscriberData = SubscriberData {
+      currencyCode = "GBP"
+      manuallyCancelled = true
+      subscriberId = <66de0801976f073e561ac824c3716b81b515c87edc658b9f52e305873211de86>
+    }
+    donationSubscriberData = SubscriberData {
+      currencyCode = "GBP"
+      manuallyCancelled = true
+      subscriberId = <7911e7798244f14304a45b550a99ee0df3ff32c42e228cf0ec92e3182c8face4>
+    }
+    familyName = ""
+    givenName = ""
+    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = "My Story"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}

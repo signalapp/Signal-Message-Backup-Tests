@@ -1,0 +1,91 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -7789932
+        },
+        CustomChatColor {
+          id = 2
+          solid = -11995034
+        },
+        CustomChatColor {
+          gradient = Gradient {
+            angle = 50
+            colors = [
+              -6934140,
+              -126129
+            ]
+            positions = [
+              0.0,
+              1.0
+            ]
+          }
+          id = 3
+        }
+      ]
+      defaultChatStyle = ChatStyle {
+        bubbleColorPreset = BubbleColorPreset.SOLID_VIOLET
+        dimWallpaperInDarkMode = true
+        wallpaperPreset = WallpaperPreset.SOLID_DUST
+      }
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      universalExpireTimerSeconds = 1514863930
+    }
+    avatarUrlPath = "https://example.com/BvsKAUVdtL"
+    backupsSubscriberData = SubscriberData {
+      currencyCode = "GBP"
+      manuallyCancelled = true
+      subscriberId = <66de0801976f073e561ac824c3716b81b515c87edc658b9f52e305873211de86>
+    }
+    donationSubscriberData = SubscriberData {
+      currencyCode = "GBP"
+      manuallyCancelled = true
+      subscriberId = <7911e7798244f14304a45b550a99ee0df3ff32c42e228cf0ec92e3182c8face4>
+    }
+    familyName = "QxVufxIRR"
+    givenName = "vNHEreJDueIn"
+    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
+    username = "HqzzN.96"
+    usernameLink = UsernameLink {
+      color = Color.WHITE
+      entropy = <00205ee8e14dd5d6df1bf0ae271eed9d640edd3bd1e1a6cfc758125a94372c26>
+      serverId = <44b7a5ed7fed22b2f329b86acb134608>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = "My Story"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}

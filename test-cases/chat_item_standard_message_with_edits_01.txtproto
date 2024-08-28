@@ -1,0 +1,178 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = "My Story"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000000000000000000000000000001>
+      e164 = 16105550101
+      pni = <00000000000000000000000000000002>
+      profileFamilyName = "Smith"
+      profileGivenName = "Alice"
+      profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      registered = Registered {}
+      visibility = Visibility.VISIBLE
+    }
+    id = 4
+  }
+}
+
+Frame {
+  chat = Chat {
+    id = 2
+    recipientId = 4
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 4
+    chatId = 2
+    dateSent = 1695248715439
+    incoming = IncomingMessageDetails {
+      dateReceived = 1695248715429
+      dateServerSent = 1695248715438
+    }
+    revisions = [
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1833527053934
+        incoming = IncomingMessageDetails {
+          dateReceived = 1833527053924
+          dateServerSent = 1833527053933
+          read = true
+          sealedSender = true
+        }
+        standardMessage = StandardMessage {
+          text = Text {
+            body = ""
+          }
+        }
+      },
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1833527053933
+        incoming = IncomingMessageDetails {
+          dateReceived = 1833527053923
+          dateServerSent = 1833527053932
+        }
+        standardMessage = StandardMessage {
+          text = Text {
+            body = "fWbogY"
+          }
+        }
+      },
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1833527053932
+        incoming = IncomingMessageDetails {
+          dateReceived = 1833527053922
+          dateServerSent = 1833527053931
+          read = true
+          sealedSender = true
+        }
+        standardMessage = StandardMessage {
+          text = Text {
+            body = "zQSvJcb"
+          }
+        }
+      }
+    ]
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "WfDTg"
+      }
+    }
+  }
+}

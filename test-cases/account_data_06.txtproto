@@ -1,0 +1,119 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -1325120
+        },
+        CustomChatColor {
+          id = 2
+          solid = -2537207
+        },
+        CustomChatColor {
+          gradient = Gradient {
+            angle = 59
+            colors = [
+              -15640225,
+              -4632205
+            ]
+            positions = [
+              0.0,
+              1.0
+            ]
+          }
+          id = 3
+        }
+      ]
+      defaultChatStyle = ChatStyle {
+        bubbleColorPreset = BubbleColorPreset.SOLID_FOREST
+        wallpaperPhoto = FilePointer {
+          attachmentLocator = AttachmentLocator {
+            cdnKey = "LmtLxdKP"
+            cdnNumber = 2
+            digest = <fcd89432f89fb1eaa786569514b8aab9>
+            key = <a459650a2590efd18c249edbc4fa0a59>
+            size = 2123148010
+            uploadTimestamp = 1776491210910
+          }
+          blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
+          caption = ""
+          contentType = "image/jpeg"
+          fileName = "xHDjKnB"
+          height = 3361
+          incrementalMac = <b0268c5da867e8b454754359d4337a3c>
+          incrementalMacChunkSize = 2048
+          width = 823
+        }
+      }
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
+      preferContactAvatars = true
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 1083889414
+    }
+    avatarUrlPath = ""
+    backupsSubscriberData = SubscriberData {
+      currencyCode = "EUR"
+      subscriberId = <7413fec76076c9df65cfa830a11a5cb82d872d622f7cb73a1c085a95699762ba>
+    }
+    donationSubscriberData = SubscriberData {
+      currencyCode = "EUR"
+      subscriberId = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
+    }
+    familyName = ""
+    givenName = ""
+    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
+    username = "ZggKo.88"
+    usernameLink = UsernameLink {
+      color = Color.ORANGE
+      entropy = <fe56c791fcdea8977e30252c7516f323573b0e07b88e3658f00760e0768dc91e>
+      serverId = <8a31e24230f253d87497d4b73dafe4fa>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = "My Story"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}

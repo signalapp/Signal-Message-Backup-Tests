@@ -1,0 +1,238 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = "My Story"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000000000000000000000000000001>
+      e164 = 16105550101
+      pni = <00000000000000000000000000000002>
+      profileFamilyName = "Smith"
+      profileGivenName = "Alice"
+      profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      registered = Registered {}
+      visibility = Visibility.VISIBLE
+    }
+    id = 4
+  }
+}
+
+Frame {
+  chat = Chat {
+    id = 2
+    recipientId = 4
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 2
+    contactMessage = ContactMessage {
+      contact = [
+        ContactAttachment {
+          address = [
+            PostalAddress {
+              city = "nZhuXJWXD"
+              country = "fCpzjVLQFQh"
+              label = "tAKtPVXV"
+              neighborhood = "FzSlNk"
+              pobox = "jrJToWuNQzhOBq"
+              postcode = "YQcczeJZd"
+              region = "rOHZwwEoKI"
+              street = "hyZCTrFaZqB"
+              type = Type.CUSTOM
+            }
+          ]
+          avatar = FilePointer {
+            attachmentLocator = AttachmentLocator {
+              cdnKey = "DpVLDtDu"
+              cdnNumber = 3
+              digest = <af31ea199d074cf47f5ce0c5aba8b8c4>
+              key = <6570c694db1bb6ddd81bfc351add5a15>
+              size = 1171631170
+              uploadTimestamp = 1794847194749
+            }
+            caption = "YOffzkwP"
+            contentType = "image/png"
+            height = 2696
+            width = 895
+          }
+          email = [
+            Email {
+              label = "tWAZn"
+              type = Type.WORK
+              value_ = "qaczwFdzHL@okMZPmjwqTJ.com"
+            }
+          ]
+          name = Name {
+            familyName = "CqQNEWGrAzrHY"
+            givenName = "SkLQGER"
+          }
+          number = [
+            Phone {
+              label = "qmCdYWyYPnka"
+              type = Type.WORK
+              value_ = "447700900133"
+            }
+          ]
+          organization = "yyKbzaMMpNLPKQ"
+        },
+        ContactAttachment {
+          address = [
+            PostalAddress {
+              city = "xnqeB"
+              country = "aeMuBzXfTMvHb"
+              label = "jjbudVyDygx"
+              neighborhood = "ldxrj"
+              pobox = "unEEaAnFRLrvz"
+              postcode = "cgnvkuuYU"
+              region = "yYPnDcOB"
+              street = "UUiitmkHLv"
+              type = Type.HOME
+            },
+            PostalAddress {
+              city = "nZhuXJWXD"
+              street = "hyZCTrFaZqB"
+              type = Type.HOME
+            }
+          ]
+          avatar = FilePointer {
+            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+            caption = "ZvhLDSCjVGP"
+            contentType = "image/gif"
+            fileName = "TwOar"
+            height = 1505
+            incrementalMac = <0891e5f69b302a9bf97a7ea0e423fd11>
+            incrementalMacChunkSize = 2048
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            width = 925
+          }
+          email = [
+            Email {
+              label = "GxHDjKnBipjP"
+              type = Type.CUSTOM
+              value_ = "PMVYoUEqXx@DXOZYcESWutf.org"
+            },
+            Email {
+              type = Type.HOME
+              value_ = "qaczwFdzHL@okMZPmjwqTJ.com"
+            }
+          ]
+          name = Name {
+            familyName = "wSQuECQWuuuEFC"
+            givenName = "iJZOYWfDTgpIJq"
+          }
+          number = [
+            Phone {
+              label = "IBHCZ"
+              type = Type.CUSTOM
+              value_ = "19325550110"
+            },
+            Phone {
+              type = Type.HOME
+              value_ = "447700900133"
+            }
+          ]
+        }
+      ]
+    }
+    dateSent = 1688484601889
+    outgoing = OutgoingMessageDetails {
+      sendStatus = [
+        SendStatus {
+          recipientId = 4
+          skipped = Skipped {}
+        }
+      ]
+    }
+  }
+}

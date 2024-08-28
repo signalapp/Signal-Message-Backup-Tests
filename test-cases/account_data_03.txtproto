@@ -1,0 +1,107 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -1325120
+        },
+        CustomChatColor {
+          id = 2
+          solid = -2537207
+        },
+        CustomChatColor {
+          gradient = Gradient {
+            angle = 59
+            colors = [
+              -15640225,
+              -4632205
+            ]
+            positions = [
+              0.0,
+              1.0
+            ]
+          }
+          id = 3
+        }
+      ]
+      defaultChatStyle = ChatStyle {
+        bubbleColorPreset = BubbleColorPreset.SOLID_CRIMSON
+        dimWallpaperInDarkMode = true
+        wallpaperPhoto = FilePointer {
+          backupLocator = BackupLocator {
+            cdnNumber = 3
+            digest = <8a72bebb4db939e0342ae035ddbe7fe4>
+            key = <d9345fdc5ab1cf72b00738e125ef7370>
+            mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
+            size = 1693683457
+            transitCdnKey = "gYOzQSvJcbzGY"
+            transitCdnNumber = 2
+          }
+          blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+          caption = "OymkbGZomPlLHy"
+          contentType = "image/gif"
+          fileName = "xHDjKnB"
+          height = 781
+          width = 3896
+        }
+      }
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      universalExpireTimerSeconds = 1083889414
+    }
+    avatarUrlPath = ""
+    backupsSubscriberData = SubscriberData {
+      currencyCode = "GBP"
+      manuallyCancelled = true
+      subscriberId = <66de0801976f073e561ac824c3716b81b515c87edc658b9f52e305873211de86>
+    }
+    donationSubscriberData = SubscriberData {
+      currencyCode = "GBP"
+      manuallyCancelled = true
+      subscriberId = <7911e7798244f14304a45b550a99ee0df3ff32c42e228cf0ec92e3182c8face4>
+    }
+    familyName = ""
+    givenName = ""
+    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
+    username = "HqzzN.96"
+    usernameLink = UsernameLink {
+      color = Color.GREY
+      entropy = <ea2b87608981423f87a1cf293b8aa5dac03b4e37d46a68b84baa49cf5140d38a>
+      serverId = <8be2cb21a0fa47a0181037dfcfe0de95>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = "My Story"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}

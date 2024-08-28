@@ -1,26 +1,22 @@
-# Signal Message Backup shared integration test cases
+# Signal Message Backup Tests
+The goal of this project is to provide a set of shared backup test files that clients can use to validate that they are 
+importing and exporting data correctly. They can do this by importing the test file, exporting a new one, and verifying
+that the new file is functionally equivalent to the original (using the [libsignal](https://github.com/signalapp/libsignal) comparator).
 
-At a high level, the goal of Backup integration tests is to validate that each client can import a given Backup instance into local state; export that local state into a new Backup instance; and confirm that the imported and exported Backups are equivalent. This requires a representation of Backup instances that is both human- and computer-readable and -writable, and a set of shared Backup instances that all clients are consuming in tests.
+The tests themselves are generated through a Kotlin DSL that allows for the easy creation of permutations of a given
+proto. This helps ensure that we have strong coverage over a wide range of possible backup files.
 
-## Key Terms
+# Using shared test cases
+The test cases are located in [test-cases](test-cases). The actual backup file has a `.binproto` extension. Each of 
+these is paired with a `.txtproto` file that contains a human-readable version of the backup file to aid in debugging.
 
-- “Backup binary” format: the `<varint><proto data>...` format used to serialize a Backup.
-- `.binproto`: a file extension identifying a backup binary file that is neither gzipped nor encrypted.
+The `.binproto`'s themselves are unencrypted and un-gzipped. This is to avoid any need for a shared key.
 
-## Representing test-case Backup instances
+# Creating test cases
+If you import this project into IntelliJ, it comes with a template for creating a new test case. If you right-click
+the `tests` package and click `New > Signal Backup Test Case`, you should have a basic template. Everything is generated
+with a largely straightforward kotlin DSL. There's lots of existing test cases you can use as an example to see how
+things are put together and how you can easily generate permutations of a given proto.
 
-We will represent Backup test-case instances using JSON, relying on Proto3’s [JSON-mapping specification](https://protobuf.dev/programming-guides/proto3/#json) to convert types in `Backup.proto` to JSON objects. Specifically, a JSON representation of a Backup (a “`.jsonproto`” file) will contain a single top-level JSON array containing JSON representations of the ordered protos in a backup binary.
-
-This format will allow developers to manually write test cases representing specific scenarios as well as to inspect and perform manual validation on existing test cases during development.
-
-### Importing test cases in client tests
-
-While `.jsonproto` is human-interpretable, client test frameworks are expecting to import `.binproto` files. Fortunately, a `.jsonproto` is straightforwardly convertible to `.binproto` by reading the JSON array, mapping each contained object back to its Proto3 representation, and re-serializing those protos.
-
-To convert a `.jsonproto` test case into its corresponding `.binproto`, ensure you have Rust/`cargo` installed on your machine and run:
-
-```sh
-; cargo run test-cases/{test-case-name}.jsonproto > test-cases/{test-case-name}.binproto
-```
-
-Alternatively, having added a `.jsonproto` file to `test-cases/`, run `./scripts/generate-binprotos.sh`. CI will do this on every push/pull-request, to validate that all committed `.binproto` files match their corresponding `.jsonproto`s. A generated `.binproto` should be committed to the repo for each added `.jsonproto`.
+After creating the test file, add it to the `ALL_TEST_CASES` list in `Main.kt`, and run the project. If you're not using
+Intellij, you can simply run `./gradlew run` from the terminal.
