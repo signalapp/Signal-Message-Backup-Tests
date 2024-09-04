@@ -26,7 +26,7 @@ object ChatItemExpirationTimerUpdateTestCase : TestCase("chat_item_expiration_ti
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           expirationTimerChange = ExpirationTimerChatUpdate(
-            expiresInMs = somePositiveLong()
+            expiresInMs = someExpirationTimerMs()
           )
         )
       )

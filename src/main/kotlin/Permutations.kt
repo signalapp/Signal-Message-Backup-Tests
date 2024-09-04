@@ -150,6 +150,8 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
 
   fun someDecrementingTimestamp(lower: Long = 1659383695000, upper: Long = 1911844456000): Long = some(Generators.decrementingTimestamps(lower, upper))
 
+  fun someExpirationTimerMs(): Long = some(Generators.expirationTimersMs())
+
   fun someE164(): Long = some(Generators.e164s())
 
   fun someUuid(): UUID = some(Generators.uuids())
@@ -274,6 +276,12 @@ object Generators {
   fun blurHashes(): Generator<String> = Generators.list("LfLh6Voa9NIW?wNF-ooL-;WAX8oy", "LGG*f,-i.l-o?G\$~?Zt7pHN1=tE3", "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6", "LJR,66e.~Cxu%LoLM|S2%3WWIosm", "LIM:}RB8?-^L.d4]O.nkK_ruI?od")
   fun picoMobs(): Generator<String> = Generators.list(SeededRandom.string(18, 25, "123456789"), SeededRandom.string(18, 25, "123456789"))
   fun colors(): Generator<Int> = Generators.list(seededRandomColor(), seededRandomColor(), seededRandomColor())
+
+  /**
+   * Expiration timers are 64-bit values that should be second-aligned
+   * (divisible by 1000), and whose value-as-seconds should fit into 32-bits.
+   */
+  fun expirationTimersMs(): Generator<Long> = Generators.list(0L, SeededRandom.long(0, Int.MAX_VALUE.toLong()) * 1000, SeededRandom.long(0, Int.MAX_VALUE.toLong()) * 1000)
 
   fun <T> list(vararg items: T): Generator<T> = ListGenerator(items.toList())
   fun <T> list(items: List<T>): Generator<T> = ListGenerator(items)

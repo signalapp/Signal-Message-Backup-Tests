@@ -120,7 +120,7 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       expirationTimerChange = ExpirationTimerChatUpdate {
-        expiresInMs = 73675704045171831
+        expiresInMs = 440136650000
       }
     }
   }

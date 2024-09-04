@@ -23,7 +23,7 @@ object RecipientCallLinkTestCase : TestCase("recipient_call_link") {
           adminKey = someNullableBytes(32)?.toByteString(),
           name = someString(),
           restrictions = someEnum(CallLink.Restrictions::class.java, excluding = CallLink.Restrictions.UNKNOWN),
-          expirationMs = somePositiveLong()
+          expirationMs = someExpirationTimerMs()
         )
       )
     )

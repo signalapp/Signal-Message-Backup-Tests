@@ -111,7 +111,7 @@ Frame {
     dontNotifyForMentionsIfMuted = true
     id = 3
     markedUnread = true
-    recipientId = 2
+    recipientId = 4
     style = ChatStyle {
       customColorId = 2
       dimWallpaperInDarkMode = true

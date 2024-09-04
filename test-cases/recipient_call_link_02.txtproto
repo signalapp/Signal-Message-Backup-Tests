@@ -92,7 +92,7 @@ Frame {
 Frame {
   recipient = Recipient {
     callLink = CallLink {
-      expirationMs = 8996438946018987777
+      expirationMs = 1588009503000
       name = "SDTsXBkoG"
       restrictions = Restrictions.NONE
       rootKey = <2cc2b48c50aefe53b3974ed91e6b4ea9>

@@ -34,11 +34,11 @@ object ChatTestCase : TestCase("chat") {
     frames += Frame(
       chat = Chat(
         id = 3,
-        recipientId = StandardFrames.chatAlice.chat!!.id,
+        recipientId = StandardFrames.recipientAlice.recipient!!.id,
         archived = someBoolean(),
         pinnedOrder = some(Generators.list(listOf(0, 1))),
-        expirationTimerMs = somePositiveLong(),
-        muteUntilMs = somePositiveLong(),
+        expirationTimerMs = someExpirationTimerMs(),
+        muteUntilMs = someTimestamp(),
         markedUnread = someBoolean(),
         dontNotifyForMentionsIfMuted = someBoolean(),
         style = somePermutation {
