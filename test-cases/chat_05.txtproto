@@ -107,9 +107,9 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 7514635526255804157
+    expirationTimerMs = 937018508425176998
     id = 3
-    muteUntilMs = 7916152572632902443
+    muteUntilMs = 6481873439951717697
     pinnedOrder = 1
     recipientId = 2
     style = ChatStyle {
@@ -124,13 +124,9 @@ Frame {
           uploadTimestamp = 1776491210910
         }
         blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
-        caption = ""
-        contentType = "image/jpeg"
-        fileName = "xHDjKnB"
-        height = 3361
+        contentType = "image/png"
         incrementalMac = <b0268c5da867e8b454754359d4337a3c>
         incrementalMacChunkSize = 2048
-        width = 823
       }
     }
   }

@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -16570247
+          solid = -792050
         },
         CustomChatColor {
           id = 2
-          solid = -415866
+          solid = -4712235
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 229
+            angle = 323
             colors = [
-              -11328369,
-              -16144417
+              -8782409,
+              -7053975
             ]
             positions = [
               0.0,
@@ -43,27 +43,26 @@ Frame {
             size = 193250115
           }
           blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-          contentType = "video/mp4"
-          fileName = "fktWAZnl"
+          contentType = "image/jpeg"
         }
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 542768234
+      universalExpireTimerSeconds = 1205434845
     }
-    avatarUrlPath = "https://example.com/BvsKAUVdtL"
+    avatarUrlPath = "https://example.com/nUUiit"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true
-      subscriberId = <df93d2e29614e293c3e76f4e185b9058efc1fa486e362a8bfe82fac40e9e6701>
+      subscriberId = <fcd58ca580b80888e681e323c607d5959f6b63ece7730df01fcfad80dfdf000f>
     }
-    familyName = "QxVufxIRR"
-    givenName = "vNHEreJDueIn"
-    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
-    username = "HqzzN.96"
+    familyName = "VMjjbudVyD"
+    givenName = "tfRDjcU"
+    profileKey = <05d886b98779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91>
+    username = "LPSkAoCfVdHWJP.67"
     usernameLink = UsernameLink {
       color = Color.GREEN
-      entropy = <bd816ba653e5e51923ff43cce18fcefe8f5eaf903c1ac370d80625c4e81d8138>
-      serverId = <890a6fcc0d7cede0d005e0aafb8cd88b>
+      entropy = <2a849b36033d55ee22ad8089d8b31e0b8d6049955da8992e8eb2791f46f29c9b>
+      serverId = <a4c0c97e9983986201c65001bb7bc8ac>
     }
   }
 }

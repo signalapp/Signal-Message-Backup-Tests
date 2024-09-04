@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -16570247
+          solid = -792050
         },
         CustomChatColor {
           id = 2
-          solid = -415866
+          solid = -4712235
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 229
+            angle = 323
             colors = [
-              -11328369,
-              -16144417
+              -8782409,
+              -7053975
             ]
             positions = [
               0.0,
@@ -38,22 +38,22 @@ Frame {
         wallpaperPreset = WallpaperPreset.SOLID_DUST
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 542768234
+      universalExpireTimerSeconds = 1205434845
     }
-    avatarUrlPath = "https://example.com/BvsKAUVdtL"
+    avatarUrlPath = "https://example.com/nUUiit"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true
-      subscriberId = <7911e7798244f14304a45b550a99ee0df3ff32c42e228cf0ec92e3182c8face4>
+      subscriberId = <42bf45e91cd2b5d284298c030d7a577d4e461bad394678abe8ddfe7755cf8693>
     }
-    familyName = "QxVufxIRR"
-    givenName = "vNHEreJDueIn"
-    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
-    username = "HqzzN.96"
+    familyName = "VMjjbudVyD"
+    givenName = "tfRDjcU"
+    profileKey = <05d886b98779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91>
+    username = "LPSkAoCfVdHWJP.67"
     usernameLink = UsernameLink {
       color = Color.WHITE
-      entropy = <00205ee8e14dd5d6df1bf0ae271eed9d640edd3bd1e1a6cfc758125a94372c26>
-      serverId = <44b7a5ed7fed22b2f329b86acb134608>
+      entropy = <74f34922363753d413b462631f8eb741383ccf3627c362ea1d4aadc91b546309>
+      serverId = <eabc0dacb6f894ff2dcd51a027f66df3>
     }
   }
 }

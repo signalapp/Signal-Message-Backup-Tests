@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -2805332
+          solid = -6739874
         },
         CustomChatColor {
           id = 2
-          solid = -8354883
+          solid = -6263822
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 20
+            angle = 226
             colors = [
-              -7053932,
-              -10086694
+              -9696843,
+              -6229632
             ]
             positions = [
               0.0,
@@ -44,13 +44,9 @@ Frame {
             uploadTimestamp = 1776491210910
           }
           blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
-          caption = ""
-          contentType = "image/jpeg"
-          fileName = "xHDjKnB"
-          height = 3361
+          contentType = "image/png"
           incrementalMac = <b0268c5da867e8b454754359d4337a3c>
           incrementalMacChunkSize = 2048
-          width = 823
         }
       }
       displayBadgesOnProfile = true
@@ -68,21 +64,21 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 616008951
+      universalExpireTimerSeconds = 998704135
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
+      subscriberId = <a6eeb98b207d85f0b413e071743cee3d4bece41ec92ea59e67f1c2ef2a465a56>
     }
     familyName = ""
     givenName = ""
-    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
-    username = "ZggKo.88"
+    profileKey = <05d886b98779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91>
+    username = "ZhdLygutgr.51"
     usernameLink = UsernameLink {
       color = Color.ORANGE
-      entropy = <fe56c791fcdea8977e30252c7516f323573b0e07b88e3658f00760e0768dc91e>
-      serverId = <8a31e24230f253d87497d4b73dafe4fa>
+      entropy = <47db44d61270a0dc3ef0b2b677d4e0eeaf3371028a04ed7271a429e076b8d33f>
+      serverId = <406bb217821bcd82ccd719d94ce58985>
     }
   }
 }

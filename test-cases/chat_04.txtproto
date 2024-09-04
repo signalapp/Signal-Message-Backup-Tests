@@ -109,10 +109,10 @@ Frame {
   chat = Chat {
     archived = true
     dontNotifyForMentionsIfMuted = true
-    expirationTimerMs = 6965407815217563106
+    expirationTimerMs = 5826213532931346611
     id = 3
     markedUnread = true
-    muteUntilMs = 3733945861451479994
+    muteUntilMs = 3788253560711682182
     recipientId = 2
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.SOLID_BURLAP
@@ -125,8 +125,7 @@ Frame {
           size = 193250115
         }
         blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-        contentType = "video/mp4"
-        fileName = "fktWAZnl"
+        contentType = "image/jpeg"
       }
     }
   }

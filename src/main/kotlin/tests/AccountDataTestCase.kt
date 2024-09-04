@@ -22,7 +22,7 @@ object AccountDataTestCase : TestCase("account_data") {
     frames += StandardFrames.backupInfo
 
     val (wallpaperPhotoGenerator, wallpaperPresetGenerator) = oneOf(
-      Generators.filePointer() as Generator<Any?>,
+      Generators.wallpaperFilePointer() as Generator<Any?>,
       Generators.enum(ChatStyle.WallpaperPreset::class.java, excluding = ChatStyle.WallpaperPreset.UNKNOWN_WALLPAPER_PRESET) as Generator<Any?>
     )
 

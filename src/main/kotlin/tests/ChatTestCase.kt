@@ -21,7 +21,7 @@ object ChatTestCase : TestCase("chat") {
     frames += StandardFrames.recipientAlice
 
     val (wallpaperPhotoGenerator, wallpaperPresetGenerator) = oneOf(
-      Generators.filePointer() as Generator<Any?>,
+      Generators.wallpaperFilePointer() as Generator<Any?>,
       Generators.enum(ChatStyle.WallpaperPreset::class.java, ChatStyle.WallpaperPreset.UNKNOWN_WALLPAPER_PRESET) as Generator<Any?>
     )
 

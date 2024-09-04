@@ -124,10 +124,7 @@ Frame {
           size = 2101437613
           uploadTimestamp = 1852195597883
         }
-        caption = "OymkbGZomPlLHy"
-        contentType = "image/png"
-        height = 781
-        width = 3896
+        contentType = "image/jpeg"
       }
     }
   }

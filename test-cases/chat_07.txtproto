@@ -107,23 +107,19 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 6965407815217563106
+    expirationTimerMs = 5826213532931346611
     id = 3
-    muteUntilMs = 3733945861451479994
+    muteUntilMs = 3788253560711682182
     pinnedOrder = 1
     recipientId = 2
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.SOLID_TEAL
       wallpaperPhoto = FilePointer {
         blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-        caption = "LGdFwzenIne"
-        contentType = "image/gif"
-        fileName = "fktWAZnl"
-        height = 3522
+        contentType = "image/png"
         incrementalMac = <b0268c5da867e8b454754359d4337a3c>
         incrementalMacChunkSize = 2048
         invalidAttachmentLocator = InvalidAttachmentLocator {}
-        width = 710
       }
     }
   }

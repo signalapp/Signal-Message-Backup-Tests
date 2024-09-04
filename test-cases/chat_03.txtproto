@@ -119,12 +119,10 @@ Frame {
           mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
           size = 1000441712
         }
-        caption = "LGdFwzenIne"
-        contentType = "audio/mp3"
-        height = 3522
+        blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+        contentType = "image/png"
         incrementalMac = <b0268c5da867e8b454754359d4337a3c>
         incrementalMacChunkSize = 2048
-        width = 710
       }
     }
   }

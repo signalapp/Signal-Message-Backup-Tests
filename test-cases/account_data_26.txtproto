@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -16570247
+          solid = -792050
         },
         CustomChatColor {
           id = 2
-          solid = -415866
+          solid = -4712235
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 229
+            angle = 323
             colors = [
-              -11328369,
-              -16144417
+              -8782409,
+              -7053975
             ]
             positions = [
               0.0,
@@ -51,21 +51,21 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 542768234
+      universalExpireTimerSeconds = 1205434845
     }
-    avatarUrlPath = "https://example.com/BvsKAUVdtL"
+    avatarUrlPath = "https://example.com/nUUiit"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
+      subscriberId = <a6eeb98b207d85f0b413e071743cee3d4bece41ec92ea59e67f1c2ef2a465a56>
     }
-    familyName = "QxVufxIRR"
-    givenName = "vNHEreJDueIn"
-    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
-    username = "ZggKo.88"
+    familyName = "VMjjbudVyD"
+    givenName = "tfRDjcU"
+    profileKey = <05d886b98779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91>
+    username = "ZhdLygutgr.51"
     usernameLink = UsernameLink {
       color = Color.PURPLE
-      entropy = <bf2129fa7e13decf351a46279b80ab8e71ee5c3d1a6984f8975f5943ed7cdb21>
-      serverId = <6edab2dab1ec8f3d1edc09d3bfc894e5>
+      entropy = <0c2dede827e18e55c28e712f9a3dddc384e466f98e15432bce34cee30502d540>
+      serverId = <03129ecfd189c9f35a386c4aa68fd418>
     }
   }
 }

@@ -107,9 +107,9 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 6965407815217563106
+    expirationTimerMs = 5826213532931346611
     id = 3
-    muteUntilMs = 3733945861451479994
+    muteUntilMs = 3788253560711682182
     pinnedOrder = 1
     recipientId = 2
     style = ChatStyle {

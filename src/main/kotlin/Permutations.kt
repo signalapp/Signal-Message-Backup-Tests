@@ -272,7 +272,6 @@ object Generators {
   fun cdnNumbers(): Generator<Int> = Generators.list(0, 2, 3)
   fun emails(): Generator<String> = Generators.list("${SeededRandom.string()}@${SeededRandom.string()}.com", "${SeededRandom.string()}@${SeededRandom.string()}.org")
   fun blurHashes(): Generator<String> = Generators.list("LfLh6Voa9NIW?wNF-ooL-;WAX8oy", "LGG*f,-i.l-o?G\$~?Zt7pHN1=tE3", "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6", "LJR,66e.~Cxu%LoLM|S2%3WWIosm", "LIM:}RB8?-^L.d4]O.nkK_ruI?od")
-  fun contentTypes(): Generator<String> = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
   fun picoMobs(): Generator<String> = Generators.list(SeededRandom.string(18, 25, "123456789"), SeededRandom.string(18, 25, "123456789"))
   fun colors(): Generator<Int> = Generators.list(seededRandomColor(), seededRandomColor(), seededRandomColor())
 
@@ -297,7 +296,28 @@ object Generators {
     return ListGenerator(allItems)
   }
 
-  fun filePointer(contentTypeGenerator: Generator<String> = Generators.contentTypes()): Generator<FilePointer> {
+  fun wallpaperFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = false,
+    includeMediaSize = false,
+    includeCaption = false,
+    contentTypeGenerator = Generators.list("image/jpeg", "image/png")
+  )
+
+  fun filePointer(
+    contentTypeGenerator: Generator<String> = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
+  ): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = true,
+    includeCaption = true,
+    contentTypeGenerator = contentTypeGenerator
+  )
+
+  private fun filePointerInternal(
+    includeFileName: Boolean,
+    includeMediaSize: Boolean,
+    includeCaption: Boolean,
+    contentTypeGenerator: Generator<String>
+  ): Generator<FilePointer> {
     val (backupLocatorGenerator, attachmentLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
       Generators.permutation {
         val transitCdnKey = some(Generators.nonEmptyStrings().nullable())
@@ -349,10 +369,10 @@ object Generators {
         } else {
           null
         },
-        fileName = some(Generators.nonEmptyStrings().nullable()),
-        width = some(Generators.ints(0, 4096).nullable()),
-        height = some(Generators.ints(0, 4096).nullable()),
-        caption = someNullableString(),
+        fileName = if (includeFileName) some(Generators.nonEmptyStrings().nullable()) else null,
+        width = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
+        height = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
+        caption = if (includeCaption) someNullableString() else null,
         blurHash = if (contentType.startsWith("audio")) null else blurHash
       )
     }

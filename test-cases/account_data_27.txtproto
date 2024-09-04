@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -2805332
+          solid = -6739874
         },
         CustomChatColor {
           id = 2
-          solid = -8354883
+          solid = -6263822
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 20
+            angle = 226
             colors = [
-              -7053932,
-              -10086694
+              -9696843,
+              -6229632
             ]
             positions = [
               0.0,
@@ -38,17 +38,17 @@ Frame {
         wallpaperPreset = WallpaperPreset.GRADIENT_BLISS
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 616008951
+      universalExpireTimerSeconds = 998704135
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true
-      subscriberId = <7911e7798244f14304a45b550a99ee0df3ff32c42e228cf0ec92e3182c8face4>
+      subscriberId = <42bf45e91cd2b5d284298c030d7a577d4e461bad394678abe8ddfe7755cf8693>
     }
     familyName = ""
     givenName = ""
-    profileKey = <99a0b038244c4dded369b915dbc6d9d34af5273ec0c1d502acde812c7ee2f29c>
+    profileKey = <05d886b98779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91>
   }
 }
 
