@@ -134,7 +134,7 @@ Frame {
         },
         Reaction {
           authorId = 4
-          emoji = "💀"
+          emoji = "👍🏾"
           sentTimestamp = 1754822320313
           sortOrder = 1762578225552
         }

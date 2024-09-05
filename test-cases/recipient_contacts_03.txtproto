@@ -93,14 +93,15 @@ Frame {
   recipient = Recipient {
     contact = Contact {
       aci = <88d9eec83bef469db111daaf5d87ff09>
-      e164 = 33639984013
+      e164 = 33639987949
       notRegistered = NotRegistered {
         unregisteredTimestamp = 1695248715439
       }
       pni = <f2c8f6640c62af2f006929719cb0c468>
-      profileFamilyName = "CmCqQNEWGrAz"
-      profileGivenName = "ySkLQGERtwS"
-      profileKey = <861af10f43256ed684290aa03422f16e9e293e6982b87e2036106eec0da607bf>
+      profileFamilyName = "EFCmCqQNEWGrA"
+      profileGivenName = "ERtwSQu"
+      profileKey = <149f599dab4f9c8a0a0f6193b4fffb255879953e257ab94747b56ae57f372e1b>
+      username = "avlHxOeTt.05"
       visibility = Visibility.VISIBLE
     }
     id = 4

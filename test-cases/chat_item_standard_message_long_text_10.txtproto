@@ -139,7 +139,7 @@ Frame {
       reactions = [
         Reaction {
           authorId = 1
-          emoji = "👍"
+          emoji = "👩‍💻"
           sentTimestamp = 1831980309924
           sortOrder = 1817711302260
         }

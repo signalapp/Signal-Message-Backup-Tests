@@ -254,8 +254,8 @@ private class DecrementingTimestampGenerator(lower: Long, upper: Long) : Generat
 object Generators {
   fun strings(): Generator<String> = Generators.list("", SeededRandom.string(), SeededRandom.string())
   fun nonEmptyStrings(): Generator<String> = Generators.list(SeededRandom.string(), SeededRandom.string())
-  fun emoji(): Generator<String> = Generators.list("\uD83D\uDC80", "👍", "👎")
-  fun usernames(): Generator<String> = Generators.list("${SeededRandom.string()}.${SeededRandom.int(10, 100)}", "${SeededRandom.string()}.${SeededRandom.int(10, 100)}")
+  fun emoji(): Generator<String> = Generators.list("\uD83D\uDC80", "👍", "👎", "\uD83D\uDC4D\uD83C\uDFFE", "\uD83D\uDC69\u200D\uD83D\uDCBB")
+  fun usernames(): Generator<String> = Generators.list("${SeededRandom.string()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.string()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.string()}.0${SeededRandom.int(1, 10)}")
   fun booleans(): Generator<Boolean> = Generators.list(true, false)
   fun ints(lower: Int = Int.MIN_VALUE, upper: Int = Int.MAX_VALUE): Generator<Int> = Generators.list(SeededRandom.int(lower, upper), SeededRandom.int(lower, upper), SeededRandom.int(lower, upper))
   fun longs(lower: Long = Long.MIN_VALUE, upper: Long = Long.MAX_VALUE): Generator<Long> = Generators.list(0L, SeededRandom.long(lower, upper), SeededRandom.long(lower, upper))

@@ -134,7 +134,7 @@ Frame {
         },
         Reaction {
           authorId = 4
-          emoji = "💀"
+          emoji = "👍🏾"
           sentTimestamp = 1668034297681
           sortOrder = 1784708167318
         }
@@ -149,7 +149,7 @@ Frame {
           }
           contentType = "image/png"
         }
-        emoji = "👎"
+        emoji = "👍🏾"
         packId = <e85604e4e3670f77ebf5e721149f599d>
         packKey = <0a0f6193b4fffb255879953e257ab94747b56ae57f372e1b97f2d8ea602ae6c8>
         stickerId = 27

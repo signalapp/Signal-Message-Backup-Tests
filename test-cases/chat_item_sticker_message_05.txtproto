@@ -131,7 +131,7 @@ Frame {
       reactions = [
         Reaction {
           authorId = 1
-          emoji = "👍"
+          emoji = "👩‍💻"
           sentTimestamp = 1668034297682
           sortOrder = 1899836917778
         },
@@ -161,7 +161,7 @@ Frame {
           incrementalMacChunkSize = 2048
           width = 3530
         }
-        emoji = "👎"
+        emoji = "💀"
         packId = <e85604e4e3670f77ebf5e721149f599d>
         packKey = <0a0f6193b4fffb255879953e257ab94747b56ae57f372e1b97f2d8ea602ae6c8>
         stickerId = 27

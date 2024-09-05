@@ -116,45 +116,11 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577852
-    outgoing = OutgoingMessageDetails {
-      sendStatus = [
-        SendStatus {
-          failed = Failed {
-            reason = FailureReason.IDENTITY_KEY_MISMATCH
-          }
-          recipientId = 4
-        }
-      ]
-    }
-    standardMessage = StandardMessage {
-      longText = FilePointer {
-        attachmentLocator = AttachmentLocator {
-          cdnKey = "zWWFqaczw"
-          digest = <88e3f24a21a78511518391fbc5b26db6>
-          key = <4b91d8690f4d11d0201e77f9ba1caec8>
-          size = 1632210473
-        }
-        blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-        contentType = "video/mp4"
-        fileName = "mkOGiGqMxxp"
-      }
-      reactions = [
-        Reaction {
-          authorId = 4
-          emoji = "👍🏾"
-          sentTimestamp = 1831980309923
-          sortOrder = 1877305478784
-        },
-        Reaction {
-          authorId = 1
-          emoji = "👩‍💻"
-          sentTimestamp = 1831980309924
-          sortOrder = 1817711302260
-        }
-      ]
-      text = Text {
-        body = "YWfDTgpIJ"
+    dateSent = 1707348544399
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      learnedProfileChange = LearnedProfileChatUpdate {
+        username = "DTsXBkoGHkm.08"
       }
     }
   }
