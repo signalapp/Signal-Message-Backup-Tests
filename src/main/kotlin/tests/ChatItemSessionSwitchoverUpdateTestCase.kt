@@ -21,7 +21,7 @@ object ChatItemSessionSwitchoverUpdateTestCase : TestCase("chat_item_session_swi
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
         authorId = StandardFrames.recipientAlice.recipient!!.id,
-        dateSent = someTimestamp(),
+        dateSent = someNonZeroTimestamp(),
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           sessionSwitchover = SessionSwitchoverChatUpdate(

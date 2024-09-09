@@ -17,7 +17,7 @@ object ChatItemThreadMergeUpdateTestCase : TestCase("chat_item_thread_merge_upda
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
         authorId = StandardFrames.recipientAlice.recipient!!.id,
-        dateSent = someTimestamp(),
+        dateSent = someNonZeroTimestamp(),
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           threadMerge = ThreadMergeChatUpdate(

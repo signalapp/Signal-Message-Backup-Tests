@@ -119,13 +119,34 @@ Frame {
     contactMessage = ContactMessage {
       contact = [
         ContactAttachment {
-          name = Name {
-            familyName = "wSQuECQWuuuEFC"
-            givenName = "iJZOYWfDTgpIJq"
+          avatar = FilePointer {
+            backupLocator = BackupLocator {
+              cdnNumber = 3
+              digest = <8e0d273ad3cc7d8c285504cdf1b52578>
+              key = <362db73801df7d496ce0af3aa0005822>
+              mediaName = "8e0d273ad3cc7d8c285504cdf1b52578"
+              size = 1732766388
+              transitCdnKey = "XDYLorFptC"
+              transitCdnNumber = 2
+            }
+            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+            contentType = "image/jpeg"
+            fileName = "jVGPMBX"
+            height = 485
+            width = 3317
           }
+          name = Name {
+            familyName = "CqQNEWGrAzrHY"
+            givenName = "SkLQGER"
+            middleName = "WyYPnka"
+            prefix = "OtEhcCMeej"
+            suffix = "dKPNuFXypj"
+          }
+          organization = "CsyUnSuQFB"
         }
       ]
     }
+    dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {

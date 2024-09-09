@@ -119,32 +119,65 @@ Frame {
     contactMessage = ContactMessage {
       contact = [
         ContactAttachment {
-          avatar = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 3
-              digest = <14d067b00a9b72659c04a5715eff403d>
-              key = <8eb83f1ec7d6521b7624aafb8f19d75e>
-              mediaName = "14d067b00a9b72659c04a5715eff403d"
-              size = 2122135182
-              transitCdnKey = "ISQpKbdZI"
-              transitCdnNumber = 2
+          address = [
+            PostalAddress {
+              city = "cgnvkuuYU"
+              country = "jrfsmPFkkXPf"
+              label = "xnqeB"
+              neighborhood = "yYPnDcOB"
+              pobox = "FzSlNk"
+              postcode = "GtbGdLaxUF"
+              region = "aeMuBzXfTMvHb"
+              type = Type.HOME
+            },
+            PostalAddress {
+              pobox = "FzSlNk"
+              type = Type.HOME
             }
-            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "YOffzkwP"
-            contentType = "image/gif"
-            fileName = "eyxBcYxd"
-            height = 2696
-            width = 895
+          ]
+          avatar = FilePointer {
+            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+            contentType = "image/png"
+            fileName = "wPOZvhLDS"
+            height = 3033
+            incrementalMac = <591eeb9b35c876bc7f5b1be8870f7902>
+            incrementalMacChunkSize = 2048
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            width = 267
           }
+          email = [
+            Email {
+              label = "KhylALWHDDLpj"
+              type = Type.CUSTOM
+              value_ = "OymkbGZomPlLHy@LGdFwzenIne.org"
+            },
+            Email {
+              type = Type.HOME
+              value_ = "xHDjKnB@pjPVt.com"
+            }
+          ]
           name = Name {
-            familyName = "CqQNEWGrAzrHY"
-            givenName = "SkLQGER"
+            familyName = "wSQuECQWuuuEFC"
+            givenName = "iJZOYWfDTgpIJq"
+            middleName = "FXMOBqmCd"
+            prefix = "IBHCZ"
+            suffix = "nSfTgFokLHLmtL"
           }
-          organization = "yyKbzaMMpNLPKQ"
+          number = [
+            Phone {
+              label = "CvxAOiiqzDNPnb"
+              type = Type.CUSTOM
+              value_ = "447700900496"
+            },
+            Phone {
+              type = Type.HOME
+              value_ = "447700900571"
+            }
+          ]
         }
       ]
     }
-    dateSent = 1688484601889
+    dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {

@@ -122,10 +122,14 @@ Frame {
           name = Name {
             familyName = "wSQuECQWuuuEFC"
             givenName = "iJZOYWfDTgpIJq"
+            middleName = "FXMOBqmCd"
+            prefix = "IBHCZ"
+            suffix = "nSfTgFokLHLmtL"
           }
         }
       ]
     }
+    dateSent = 1680366577838
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826269
       dateServerSent = 1794124103201

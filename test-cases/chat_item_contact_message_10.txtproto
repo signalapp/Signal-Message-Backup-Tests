@@ -119,29 +119,41 @@ Frame {
     contactMessage = ContactMessage {
       contact = [
         ContactAttachment {
-          avatar = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "RIdlg"
-              cdnNumber = 2
-              digest = <593932b06551b2e2890f59e14a0cef78>
-              key = <6d8b5d468bdd8b16ebceb4fa96febac7>
-              size = 1235219109
-              uploadTimestamp = 1815031729274
+          address = [
+            PostalAddress {
+              pobox = "FzSlNk"
+              type = Type.HOME
             }
-            blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
-            caption = ""
+          ]
+          avatar = FilePointer {
+            backupLocator = BackupLocator {
+              digest = <245052a930af623c6f503cf7bbfd9a0d>
+              key = <1c3701139655d30267e5ccd3ede8adb0>
+              mediaName = "245052a930af623c6f503cf7bbfd9a0d"
+              size = 1120972837
+            }
             contentType = "image/jpeg"
-            fileName = "eyxBcYxd"
-            height = 462
-            incrementalMac = <0891e5f69b302a9bf97a7ea0e423fd11>
-            incrementalMacChunkSize = 2048
-            width = 2972
           }
+          email = [
+            Email {
+              type = Type.HOME
+              value_ = "xHDjKnB@pjPVt.com"
+            }
+          ]
           name = Name {
-            familyName = "wSQuECQWuuuEFC"
-            givenName = "iJZOYWfDTgpIJq"
+            familyName = "CqQNEWGrAzrHY"
+            givenName = "SkLQGER"
+            middleName = "WyYPnka"
+            prefix = "OtEhcCMeej"
+            suffix = "dKPNuFXypj"
           }
-          organization = "pKBuwAHesX"
+          number = [
+            Phone {
+              type = Type.HOME
+              value_ = "447700900571"
+            }
+          ]
+          organization = ""
         }
       ]
     }

@@ -121,107 +121,76 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "nZhuXJWXD"
-              country = "fCpzjVLQFQh"
-              label = "tAKtPVXV"
-              neighborhood = "FzSlNk"
-              pobox = "jrJToWuNQzhOBq"
-              postcode = "YQcczeJZd"
-              region = "rOHZwwEoKI"
-              street = "hyZCTrFaZqB"
+              city = ""
+              country = ""
+              label = ""
+              neighborhood = ""
+              postcode = ""
+              region = ""
+              street = "jrJToWuNQzhOBq"
+              type = Type.WORK
+            },
+            PostalAddress {
+              city = "YQcczeJZd"
+              country = "fnyqwIJn"
+              label = "nZhuXJWXD"
+              neighborhood = "rOHZwwEoKI"
+              pobox = "ldxrj"
+              postcode = "bdigdRgXvkkw"
+              region = "fCpzjVLQFQh"
+              street = "unEEaAnFRLrvz"
               type = Type.CUSTOM
             }
           ]
           avatar = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "DpVLDtDu"
-              cdnNumber = 3
-              digest = <af31ea199d074cf47f5ce0c5aba8b8c4>
-              key = <6570c694db1bb6ddd81bfc351add5a15>
-              size = 1171631170
-              uploadTimestamp = 1794847194749
+            backupLocator = BackupLocator {
+              cdnNumber = 2
+              digest = <8eb83f1ec7d6521b7624aafb8f19d75e>
+              key = <842db2adbe12faf29a852ad28dafc528>
+              mediaName = "8eb83f1ec7d6521b7624aafb8f19d75e"
+              size = 1518066505
+              transitCdnKey = "QSFzJCDXD"
             }
-            caption = "YOffzkwP"
-            contentType = "image/png"
-            height = 2696
-            width = 895
-          }
-          email = [
-            Email {
-              label = "tWAZn"
-              type = Type.WORK
-              value_ = "qaczwFdzHL@okMZPmjwqTJ.com"
-            }
-          ]
-          name = Name {
-            familyName = "CqQNEWGrAzrHY"
-            givenName = "SkLQGER"
-          }
-          number = [
-            Phone {
-              label = "qmCdYWyYPnka"
-              type = Type.WORK
-              value_ = "447700900133"
-            }
-          ]
-          organization = "yyKbzaMMpNLPKQ"
-        },
-        ContactAttachment {
-          address = [
-            PostalAddress {
-              city = "xnqeB"
-              country = "aeMuBzXfTMvHb"
-              label = "jjbudVyDygx"
-              neighborhood = "ldxrj"
-              pobox = "unEEaAnFRLrvz"
-              postcode = "cgnvkuuYU"
-              region = "yYPnDcOB"
-              street = "UUiitmkHLv"
-              type = Type.HOME
-            },
-            PostalAddress {
-              city = "nZhuXJWXD"
-              street = "hyZCTrFaZqB"
-              type = Type.HOME
-            }
-          ]
-          avatar = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-            caption = "ZvhLDSCjVGP"
-            contentType = "image/gif"
-            fileName = "TwOar"
-            height = 1505
-            incrementalMac = <0891e5f69b302a9bf97a7ea0e423fd11>
+            contentType = "image/png"
+            fileName = "wPOZvhLDS"
+            height = 4021
+            incrementalMac = <591eeb9b35c876bc7f5b1be8870f7902>
             incrementalMacChunkSize = 2048
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
-            width = 925
+            width = 2502
           }
           email = [
             Email {
-              label = "GxHDjKnBipjP"
-              type = Type.CUSTOM
-              value_ = "PMVYoUEqXx@DXOZYcESWutf.org"
+              label = ""
+              type = Type.MOBILE
+              value_ = "OymkbGZomPlLHy@LGdFwzenIne.org"
             },
             Email {
-              type = Type.HOME
-              value_ = "qaczwFdzHL@okMZPmjwqTJ.com"
+              label = "VzsXSlnJDCHS"
+              type = Type.WORK
+              value_ = "xHDjKnB@pjPVt.com"
             }
           ]
           name = Name {
             familyName = "wSQuECQWuuuEFC"
             givenName = "iJZOYWfDTgpIJq"
+            middleName = "FXMOBqmCd"
+            prefix = "IBHCZ"
+            suffix = "nSfTgFokLHLmtL"
           }
           number = [
             Phone {
-              label = "IBHCZ"
-              type = Type.CUSTOM
-              value_ = "19325550110"
+              label = ""
+              type = Type.MOBILE
+              value_ = "447700900496"
             },
             Phone {
-              type = Type.HOME
-              value_ = "447700900133"
+              label = "KGTWpTUETYz"
+              type = Type.WORK
+              value_ = "447700900571"
             }
           ]
+          organization = "AUJhqwqw"
         }
       ]
     }

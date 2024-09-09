@@ -311,6 +311,13 @@ object Generators {
     contentTypeGenerator = Generators.list("image/jpeg", "image/png")
   )
 
+  fun avatarFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = true,
+    includeCaption = false,
+    contentTypeGenerator = Generators.list("image/jpeg", "image/png")
+  )
+
   fun filePointer(
     contentTypeGenerator: Generator<String> = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
   ): Generator<FilePointer> = filePointerInternal(

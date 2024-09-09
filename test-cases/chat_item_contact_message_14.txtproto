@@ -119,32 +119,67 @@ Frame {
     contactMessage = ContactMessage {
       contact = [
         ContactAttachment {
-          avatar = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 3
-              digest = <14d067b00a9b72659c04a5715eff403d>
-              key = <8eb83f1ec7d6521b7624aafb8f19d75e>
-              mediaName = "14d067b00a9b72659c04a5715eff403d"
-              size = 2122135182
-              transitCdnKey = "ISQpKbdZI"
-              transitCdnNumber = 2
+          address = [
+            PostalAddress {
+              pobox = "FzSlNk"
+              type = Type.HOME
+            },
+            PostalAddress {
+              city = ""
+              country = ""
+              label = ""
+              neighborhood = ""
+              postcode = ""
+              region = ""
+              street = "jrJToWuNQzhOBq"
+              type = Type.WORK
             }
-            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "YOffzkwP"
-            contentType = "image/gif"
-            fileName = "eyxBcYxd"
-            height = 2696
-            width = 895
+          ]
+          avatar = FilePointer {
+            attachmentLocator = AttachmentLocator {
+              cdnKey = "fhiGYdtFepxf"
+              digest = <a046ec76543ec0bb6d8b5d468bdd8b16>
+              key = <7698f67aa2b531de63dce70e8cb7639e>
+              size = 1675460427
+            }
+            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
+            contentType = "image/jpeg"
+            fileName = "wPOZvhLDS"
           }
+          email = [
+            Email {
+              type = Type.HOME
+              value_ = "xHDjKnB@pjPVt.com"
+            },
+            Email {
+              label = ""
+              type = Type.MOBILE
+              value_ = "OymkbGZomPlLHy@LGdFwzenIne.org"
+            }
+          ]
           name = Name {
             familyName = "CqQNEWGrAzrHY"
             givenName = "SkLQGER"
+            middleName = "WyYPnka"
+            prefix = "OtEhcCMeej"
+            suffix = "dKPNuFXypj"
           }
-          organization = "yyKbzaMMpNLPKQ"
+          number = [
+            Phone {
+              type = Type.HOME
+              value_ = "447700900571"
+            },
+            Phone {
+              label = ""
+              type = Type.MOBILE
+              value_ = "447700900496"
+            }
+          ]
+          organization = ""
         }
       ]
     }
-    dateSent = 1688484601889
+    dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {

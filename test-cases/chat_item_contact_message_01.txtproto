@@ -121,114 +121,43 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "nZhuXJWXD"
-              street = "hyZCTrFaZqB"
+              pobox = "FzSlNk"
               type = Type.HOME
             }
           ]
           avatar = FilePointer {
             backupLocator = BackupLocator {
-              digest = <6b61c36c807559220985f14b0252e833>
-              key = <8d3cda32685e0086546218a42159dc48>
-              mediaName = "6b61c36c807559220985f14b0252e833"
-              size = 1465688382
+              digest = <245052a930af623c6f503cf7bbfd9a0d>
+              key = <1c3701139655d30267e5ccd3ede8adb0>
+              mediaName = "245052a930af623c6f503cf7bbfd9a0d"
+              size = 1120972837
             }
             contentType = "image/jpeg"
           }
           email = [
             Email {
               type = Type.HOME
-              value_ = "qaczwFdzHL@okMZPmjwqTJ.com"
+              value_ = "xHDjKnB@pjPVt.com"
             }
           ]
           name = Name {
             familyName = "CqQNEWGrAzrHY"
             givenName = "SkLQGER"
+            middleName = "WyYPnka"
+            prefix = "OtEhcCMeej"
+            suffix = "dKPNuFXypj"
           }
           number = [
             Phone {
               type = Type.HOME
-              value_ = "447700900133"
+              value_ = "447700900571"
             }
           ]
           organization = ""
-        },
-        ContactAttachment {
-          address = [
-            PostalAddress {
-              city = "xnqeB"
-              country = ""
-              label = ""
-              neighborhood = ""
-              pobox = ""
-              postcode = ""
-              region = ""
-              street = "UUiitmkHLv"
-              type = Type.WORK
-            },
-            PostalAddress {
-              city = "nZhuXJWXD"
-              country = "fCpzjVLQFQh"
-              label = "tAKtPVXV"
-              neighborhood = "FzSlNk"
-              pobox = "jrJToWuNQzhOBq"
-              postcode = "YQcczeJZd"
-              region = "rOHZwwEoKI"
-              street = "hyZCTrFaZqB"
-              type = Type.CUSTOM
-            }
-          ]
-          avatar = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 2
-              digest = <85e08d21245052a930af623c6f503cf7>
-              key = <c03df20a1c3701139655d30267e5ccd3>
-              mediaName = "85e08d21245052a930af623c6f503cf7"
-              size = 658677648
-              transitCdnKey = "NeUzkxb"
-            }
-            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-            caption = ""
-            contentType = "image/png"
-            fileName = "TwOar"
-            height = 462
-            incrementalMac = <0891e5f69b302a9bf97a7ea0e423fd11>
-            incrementalMacChunkSize = 2048
-            width = 2972
-          }
-          email = [
-            Email {
-              label = ""
-              type = Type.MOBILE
-              value_ = "PMVYoUEqXx@DXOZYcESWutf.org"
-            },
-            Email {
-              label = "tWAZn"
-              type = Type.WORK
-              value_ = "qaczwFdzHL@okMZPmjwqTJ.com"
-            }
-          ]
-          name = Name {
-            familyName = "wSQuECQWuuuEFC"
-            givenName = "iJZOYWfDTgpIJq"
-          }
-          number = [
-            Phone {
-              label = ""
-              type = Type.MOBILE
-              value_ = "19325550110"
-            },
-            Phone {
-              label = "qmCdYWyYPnka"
-              type = Type.WORK
-              value_ = "447700900133"
-            }
-          ]
-          organization = "pKBuwAHesX"
         }
       ]
     }
-    dateSent = 1680366577838
+    dateSent = 1688484601889
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826270
       dateServerSent = 1794124103202

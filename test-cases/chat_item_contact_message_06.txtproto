@@ -119,13 +119,35 @@ Frame {
     contactMessage = ContactMessage {
       contact = [
         ContactAttachment {
+          avatar = FilePointer {
+            attachmentLocator = AttachmentLocator {
+              cdnKey = "rjGaq"
+              cdnNumber = 2
+              digest = <4c5d85908dd94664eac043a8790aa5e6>
+              key = <0385e95b9fb531fc34977acc1143c272>
+              size = 2144222294
+              uploadTimestamp = 1899107889752
+            }
+            blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
+            contentType = "image/png"
+            fileName = "jVGPMBX"
+            height = 4021
+            incrementalMac = <591eeb9b35c876bc7f5b1be8870f7902>
+            incrementalMacChunkSize = 2048
+            width = 2502
+          }
           name = Name {
             familyName = "wSQuECQWuuuEFC"
             givenName = "iJZOYWfDTgpIJq"
+            middleName = "FXMOBqmCd"
+            prefix = "IBHCZ"
+            suffix = "nSfTgFokLHLmtL"
           }
+          organization = "AUJhqwqw"
         }
       ]
     }
+    dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {

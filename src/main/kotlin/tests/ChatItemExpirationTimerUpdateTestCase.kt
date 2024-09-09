@@ -22,7 +22,7 @@ object ChatItemExpirationTimerUpdateTestCase : TestCase("chat_item_expiration_ti
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
         authorId = some(Generators.list(StandardFrames.recipientSelf.recipient!!.id, StandardFrames.recipientAlice.recipient!!.id)),
-        dateSent = someTimestamp(),
+        dateSent = someNonZeroTimestamp(),
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           expirationTimerChange = ExpirationTimerChatUpdate(

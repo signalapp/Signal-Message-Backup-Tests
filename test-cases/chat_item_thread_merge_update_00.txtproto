@@ -116,6 +116,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
+    dateSent = 1833527071192
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       threadMerge = ThreadMergeChatUpdate {

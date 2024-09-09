@@ -119,29 +119,53 @@ Frame {
     contactMessage = ContactMessage {
       contact = [
         ContactAttachment {
-          avatar = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "RIdlg"
-              cdnNumber = 2
-              digest = <593932b06551b2e2890f59e14a0cef78>
-              key = <6d8b5d468bdd8b16ebceb4fa96febac7>
-              size = 1235219109
-              uploadTimestamp = 1815031729274
+          address = [
+            PostalAddress {
+              city = "cgnvkuuYU"
+              country = "jrfsmPFkkXPf"
+              label = "xnqeB"
+              neighborhood = "yYPnDcOB"
+              pobox = "FzSlNk"
+              postcode = "GtbGdLaxUF"
+              region = "aeMuBzXfTMvHb"
+              type = Type.HOME
             }
-            blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
-            caption = ""
-            contentType = "image/jpeg"
-            fileName = "eyxBcYxd"
-            height = 462
-            incrementalMac = <0891e5f69b302a9bf97a7ea0e423fd11>
+          ]
+          avatar = FilePointer {
+            backupLocator = BackupLocator {
+              digest = <178cfdca85d0ff83fb34c8dfda308b20>
+              key = <89a2fe07a6d23413b67218cbbbd8a380>
+              mediaName = "178cfdca85d0ff83fb34c8dfda308b20"
+              size = 1120972837
+            }
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+            contentType = "image/png"
+            height = 3033
+            incrementalMac = <591eeb9b35c876bc7f5b1be8870f7902>
             incrementalMacChunkSize = 2048
-            width = 2972
+            width = 267
           }
+          email = [
+            Email {
+              label = "KhylALWHDDLpj"
+              type = Type.CUSTOM
+              value_ = "OymkbGZomPlLHy@LGdFwzenIne.org"
+            }
+          ]
           name = Name {
             familyName = "wSQuECQWuuuEFC"
             givenName = "iJZOYWfDTgpIJq"
+            middleName = "FXMOBqmCd"
+            prefix = "IBHCZ"
+            suffix = "nSfTgFokLHLmtL"
           }
-          organization = "pKBuwAHesX"
+          number = [
+            Phone {
+              label = "CvxAOiiqzDNPnb"
+              type = Type.CUSTOM
+              value_ = "447700900496"
+            }
+          ]
         }
       ]
     }

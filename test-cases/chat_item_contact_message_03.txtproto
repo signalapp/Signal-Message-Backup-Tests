@@ -119,112 +119,34 @@ Frame {
     contactMessage = ContactMessage {
       contact = [
         ContactAttachment {
-          address = [
-            PostalAddress {
-              city = "xnqeB"
-              country = "aeMuBzXfTMvHb"
-              label = "jjbudVyDygx"
-              neighborhood = "ldxrj"
-              pobox = "unEEaAnFRLrvz"
-              postcode = "cgnvkuuYU"
-              region = "yYPnDcOB"
-              street = "UUiitmkHLv"
-              type = Type.HOME
-            }
-          ]
           avatar = FilePointer {
             backupLocator = BackupLocator {
-              digest = <77380521362db73801df7d496ce0af3a>
-              key = <d3f6fd64e28d18307550bd709b90e971>
-              mediaName = "77380521362db73801df7d496ce0af3a"
-              size = 1465688382
+              cdnNumber = 3
+              digest = <8e0d273ad3cc7d8c285504cdf1b52578>
+              key = <362db73801df7d496ce0af3aa0005822>
+              mediaName = "8e0d273ad3cc7d8c285504cdf1b52578"
+              size = 1732766388
+              transitCdnKey = "XDYLorFptC"
+              transitCdnNumber = 2
             }
-            caption = "ZvhLDSCjVGP"
-            contentType = "audio/mp3"
-            height = 1505
-            incrementalMac = <0891e5f69b302a9bf97a7ea0e423fd11>
-            incrementalMacChunkSize = 2048
-            width = 925
+            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+            contentType = "image/jpeg"
+            fileName = "jVGPMBX"
+            height = 485
+            width = 3317
           }
-          email = [
-            Email {
-              label = "GxHDjKnBipjP"
-              type = Type.CUSTOM
-              value_ = "PMVYoUEqXx@DXOZYcESWutf.org"
-            }
-          ]
-          name = Name {
-            familyName = "wSQuECQWuuuEFC"
-            givenName = "iJZOYWfDTgpIJq"
-          }
-          number = [
-            Phone {
-              label = "IBHCZ"
-              type = Type.CUSTOM
-              value_ = "19325550110"
-            }
-          ]
-        },
-        ContactAttachment {
-          address = [
-            PostalAddress {
-              city = "nZhuXJWXD"
-              street = "hyZCTrFaZqB"
-              type = Type.HOME
-            },
-            PostalAddress {
-              city = "xnqeB"
-              country = ""
-              label = ""
-              neighborhood = ""
-              pobox = ""
-              postcode = ""
-              region = ""
-              street = "UUiitmkHLv"
-              type = Type.WORK
-            }
-          ]
-          avatar = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "DpVLDtDu"
-              digest = <c5613913e6ae94e9516e245eaca7c46d>
-              key = <db153edc89a2fe07a6d23413b67218cb>
-              size = 827594331
-            }
-            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-            contentType = "video/mp4"
-            fileName = "TwOar"
-          }
-          email = [
-            Email {
-              type = Type.HOME
-              value_ = "qaczwFdzHL@okMZPmjwqTJ.com"
-            },
-            Email {
-              label = ""
-              type = Type.MOBILE
-              value_ = "PMVYoUEqXx@DXOZYcESWutf.org"
-            }
-          ]
           name = Name {
             familyName = "CqQNEWGrAzrHY"
             givenName = "SkLQGER"
+            middleName = "WyYPnka"
+            prefix = "OtEhcCMeej"
+            suffix = "dKPNuFXypj"
           }
-          number = [
-            Phone {
-              type = Type.HOME
-              value_ = "447700900133"
-            },
-            Phone {
-              label = ""
-              type = Type.MOBILE
-              value_ = "19325550110"
-            }
-          ]
-          organization = ""
+          organization = "CsyUnSuQFB"
         }
       ]
     }
+    dateSent = 1688484601889
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {

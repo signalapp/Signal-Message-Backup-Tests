@@ -22,7 +22,7 @@ object ChatItemSimpleUpdatesTestCase : TestCase("chat_item_simple_updates") {
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
         authorId = StandardFrames.recipientAlice.recipient!!.id,
-        dateSent = someTimestamp(),
+        dateSent = someNonZeroTimestamp(),
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           simpleUpdate = SimpleChatUpdate(

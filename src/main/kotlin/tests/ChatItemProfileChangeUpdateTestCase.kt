@@ -21,7 +21,7 @@ object ChatItemProfileChangeUpdateTestCase : TestCase("chat_item_profile_change_
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
         authorId = StandardFrames.recipientAlice.recipient!!.id,
-        dateSent = someTimestamp(),
+        dateSent = someNonZeroTimestamp(),
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           profileChange = ProfileChangeChatUpdate(

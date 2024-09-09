@@ -3,6 +3,7 @@ package tests
 import PermutationScope
 import TestCase
 import asList
+import nullable
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.ChatItem
 import org.thoughtcrime.securesms.backup.v2.proto.ContactAttachment
@@ -51,7 +52,7 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
         } else {
           StandardFrames.recipientAlice.recipient!!.id
         },
-        dateSent = someTimestamp(),
+        dateSent = someNonZeroTimestamp(),
         incoming = incoming as ChatItem.IncomingMessageDetails?,
         outgoing = outgoing as ChatItem.OutgoingMessageDetails?,
         contactMessage = ContactMessage(
@@ -59,7 +60,10 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
             frames += ContactAttachment(
               name = ContactAttachment.Name(
                 givenName = someNonEmptyString(),
-                familyName = someNonEmptyString()
+                familyName = someNonEmptyString(),
+                middleName = someNonEmptyString(),
+                prefix = someNonEmptyString(),
+                suffix = someNonEmptyString()
               ),
               number = Generators.permutation<ContactAttachment.Phone> {
                 frames += ContactAttachment.Phone(
@@ -82,25 +86,30 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
                 )
               }.asList(0, 1, 2).let { some(it) },
               address = Generators.permutation<ContactAttachment.PostalAddress> {
+                // All-empty addresses are invalid, so ensure that at least one
+                // address field has a non-null, non-empty string.
+                val streetGenerator = Generators.list(null, SeededRandom.string(), SeededRandom.string())
+                val poBoxGenerator = Generators.list(SeededRandom.string(), null, SeededRandom.string())
+
                 frames += ContactAttachment.PostalAddress(
                   type = someEnum(
                     ContactAttachment.PostalAddress.Type::class.java,
                     excluding = ContactAttachment.PostalAddress.Type.UNKNOWN
                   ),
                   label = someNullableString(),
-                  street = someNonEmptyString(),
-                  pobox = someNullableString(),
+                  street = some(streetGenerator),
+                  pobox = some(poBoxGenerator),
                   neighborhood = someNullableString(),
-                  city = someNonEmptyString(),
+                  city = someNullableString(),
                   region = someNullableString(),
                   postcode = someNullableString(),
                   country = someNullableString()
                 )
               }.asList(0, 1, 2).let { some(it) },
               organization = someNullableString(),
-              avatar = someNullableFilePointer()
+              avatar = some(Generators.avatarFilePointer().nullable())
             )
-          }.asList(1, 2).let { some(it) }
+          }.asList(1).let { some(it) }
         )
       )
     )
