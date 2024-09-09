@@ -97,7 +97,7 @@ Frame {
       pni = <00000000000000000000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
-      profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
       registered = Registered {}
       visibility = Visibility.VISIBLE
     }
@@ -126,16 +126,21 @@ Frame {
     group = Group {
       masterKey = <0000000000000000000000000000000000000000000000000000000000000000>
       snapshot = GroupSnapshot {
+        accessControl = AccessControl {
+          addFromInviteLink = AccessRequired.UNSATISFIABLE
+          attributes = AccessRequired.MEMBER
+          members = AccessRequired.MEMBER
+        }
         avatarUrl = "https://example.com/avatar.jpg"
         inviteLinkPassword = <>
         members = [
           Member {
-            profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+            profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
             role = Role.ADMINISTRATOR
             userId = <00000000000000640000000000000064>
           },
           Member {
-            profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+            profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
             role = Role.DEFAULT
             userId = <00000000000000000000000000000001>
           },
@@ -174,7 +179,7 @@ Frame {
       groupCall = GroupCall {
         callId = 6079152038928072179
         endedCallTimestamp = 100
-        ringerRecipientId = 5
+        ringerRecipientId = 4
         startedCallRecipientId = 5
         startedCallTimestamp = 1660152710755
         state = State.MISSED

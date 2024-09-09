@@ -97,7 +97,7 @@ Frame {
       pni = <00000000000000000000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
-      profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
       registered = Registered {}
       visibility = Visibility.VISIBLE
     }
@@ -120,7 +120,8 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       individualCall = IndividualCall {
-        direction = Direction.OUTGOING
+        direction = Direction.INCOMING
+        read = true
         startedCallTimestamp = 1660152710755
         state = State.MISSED_NOTIFICATION_PROFILE
         type = Type.VIDEO_CALL

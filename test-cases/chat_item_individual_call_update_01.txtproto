@@ -97,7 +97,7 @@ Frame {
       pni = <00000000000000000000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
-      profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
       registered = Registered {}
       visibility = Visibility.VISIBLE
     }
@@ -122,6 +122,7 @@ Frame {
       individualCall = IndividualCall {
         callId = 7829309874007127439
         direction = Direction.OUTGOING
+        read = true
         startedCallTimestamp = 1660152710755
         state = State.NOT_ACCEPTED
         type = Type.VIDEO_CALL

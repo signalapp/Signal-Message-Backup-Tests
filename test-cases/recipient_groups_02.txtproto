@@ -97,7 +97,7 @@ Frame {
       pni = <00000000000000000000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
-      profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
       registered = Registered {}
       visibility = Visibility.VISIBLE
     }
@@ -207,7 +207,7 @@ Frame {
         inviteLinkPassword = <2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1745e712b>
         members = [
           Member {
-            profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
+            profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
             role = Role.DEFAULT
             userId = <00000000000000000000000000000001>
           },

@@ -12,12 +12,6 @@ import org.thoughtcrime.securesms.backup.v2.proto.*
  * Individual call updates
  */
 object ChatItemGroupCallUpdateTestCase : TestCase("chat_item_group_call_update") {
-  private val ENDED_STATES = setOf(
-    GroupCall.State.DECLINED,
-    GroupCall.State.MISSED,
-    GroupCall.State.MISSED_NOTIFICATION_PROFILE
-  )
-
   override fun PermutationScope.execute() {
     frames += StandardFrames.MANDATORY_FRAMES
 
@@ -25,11 +19,6 @@ object ChatItemGroupCallUpdateTestCase : TestCase("chat_item_group_call_update")
     frames += StandardFrames.recipientBob
     frames += StandardFrames.recipientGroupAB
     frames += StandardFrames.chatGroupAB
-
-    val ringerGenerator = Generators.list(
-      StandardFrames.recipientAlice.recipient!!.id,
-      StandardFrames.recipientBob.recipient!!.id
-    )
 
     val startedCallGenerator = Generators.list(
       StandardFrames.recipientSelf.recipient!!.id,
@@ -49,15 +38,45 @@ object ChatItemGroupCallUpdateTestCase : TestCase("chat_item_group_call_update")
           groupCall = GroupCall(
             callId = somePositiveLong(),
             state = callState,
-            ringerRecipientId = some(ringerGenerator),
+            ringerRecipientId = when (callState) {
+              // Only incoming ringing call states potentially have a ringer...
+              GroupCall.State.RINGING,
+              GroupCall.State.ACCEPTED,
+              GroupCall.State.DECLINED,
+              GroupCall.State.MISSED -> StandardFrames.recipientAlice.recipient!!.id
+              // ...but we want to cover a null ringer for one ringing state.
+              GroupCall.State.MISSED_NOTIFICATION_PROFILE -> null
+              GroupCall.State.GENERIC,
+              GroupCall.State.JOINED,
+              GroupCall.State.OUTGOING_RING -> null
+              GroupCall.State.UNKNOWN_STATE -> throw NotImplementedError()
+            },
             startedCallRecipientId = some(startedCallGenerator),
             startedCallTimestamp = someNonZeroTimestamp(),
-            endedCallTimestamp = if (callState in ENDED_STATES) {
-              100L
-            } else {
-              0L
+            endedCallTimestamp = when (callState) {
+              GroupCall.State.DECLINED,
+              GroupCall.State.MISSED,
+              GroupCall.State.MISSED_NOTIFICATION_PROFILE -> 100L
+              GroupCall.State.GENERIC,
+              GroupCall.State.JOINED,
+              GroupCall.State.OUTGOING_RING,
+              GroupCall.State.RINGING,
+              GroupCall.State.ACCEPTED -> 0L
+              GroupCall.State.UNKNOWN_STATE -> throw NotImplementedError()
             },
-            read = someBoolean()
+            read = when (callState) {
+              // Only missed call states can potentially be unread...
+              GroupCall.State.MISSED -> false
+              // ...but we want to cover "read" missed calls too.
+              GroupCall.State.MISSED_NOTIFICATION_PROFILE -> true
+              GroupCall.State.DECLINED,
+              GroupCall.State.GENERIC,
+              GroupCall.State.JOINED,
+              GroupCall.State.OUTGOING_RING,
+              GroupCall.State.RINGING,
+              GroupCall.State.ACCEPTED -> true
+              GroupCall.State.UNKNOWN_STATE -> throw NotImplementedError()
+            }
           )
         )
       )

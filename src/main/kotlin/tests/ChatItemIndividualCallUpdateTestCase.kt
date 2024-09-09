@@ -16,6 +16,8 @@ object ChatItemIndividualCallUpdateTestCase : TestCase("chat_item_individual_cal
     frames += StandardFrames.recipientAlice
     frames += StandardFrames.chatAlice
 
+    val callState = someEnum(IndividualCall.State::class.java, excluding = IndividualCall.State.UNKNOWN_STATE)
+
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
@@ -26,10 +28,25 @@ object ChatItemIndividualCallUpdateTestCase : TestCase("chat_item_individual_cal
           individualCall = IndividualCall(
             callId = somePositiveLong(),
             type = someEnum(IndividualCall.Type::class.java, excluding = IndividualCall.Type.UNKNOWN_TYPE),
-            direction = someEnum(IndividualCall.Direction::class.java, excluding = IndividualCall.Direction.UNKNOWN_DIRECTION),
-            state = someEnum(IndividualCall.State::class.java, excluding = IndividualCall.State.UNKNOWN_STATE),
+            direction = when (callState) {
+              // We can only have "missed notification profile" for incoming calls...
+              IndividualCall.State.MISSED_NOTIFICATION_PROFILE -> IndividualCall.Direction.INCOMING
+              // ...so use the other statuses to cover incoming and outgoing.
+              IndividualCall.State.ACCEPTED,
+              IndividualCall.State.MISSED -> IndividualCall.Direction.INCOMING
+              IndividualCall.State.NOT_ACCEPTED -> IndividualCall.Direction.OUTGOING
+              IndividualCall.State.UNKNOWN_STATE -> throw NotImplementedError()
+            },
+            state = callState,
             startedCallTimestamp = someNonZeroTimestamp(),
-            read = someBoolean()
+            // Only missed call states can potentially be unread.
+            read = when (callState) {
+              IndividualCall.State.MISSED -> false
+              IndividualCall.State.MISSED_NOTIFICATION_PROFILE -> true
+              IndividualCall.State.ACCEPTED,
+              IndividualCall.State.NOT_ACCEPTED -> true
+              IndividualCall.State.UNKNOWN_STATE -> throw NotImplementedError()
+            }
           )
         )
       )

@@ -131,7 +131,8 @@ object StandardFrames {
         profileGivenName = "Alice",
         profileFamilyName = "Smith",
         registered = Contact.Registered(),
-        profileKey = base64Decode("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=").toByteString()
+        // All 1s, since all As results in an all-zero blob.
+        profileKey = base64Decode("1111111111111111111111111111111111111111111=").toByteString()
       )
     )
   )
@@ -240,6 +241,11 @@ object StandardFrames {
               role = Group.Member.Role.DEFAULT,
               profileKey = recipientBob.recipient!!.contact!!.profileKey!!
             )
+          ),
+          accessControl = Group.AccessControl(
+            attributes = Group.AccessControl.AccessRequired.MEMBER,
+            members = Group.AccessControl.AccessRequired.MEMBER,
+            addFromInviteLink = Group.AccessControl.AccessRequired.UNSATISFIABLE
           )
         )
       )
