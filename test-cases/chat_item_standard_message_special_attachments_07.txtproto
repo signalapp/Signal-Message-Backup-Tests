@@ -138,8 +138,6 @@ Frame {
             contentType = "image/png"
             fileName = "FwzenIneLV"
             height = 3189
-            incrementalMac = <66a1e4dfbdea011a4c4f4cdd16292569>
-            incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             width = 665
           }

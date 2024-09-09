@@ -135,8 +135,6 @@ Frame {
             contentType = "image/gif"
             fileName = "zeAEZObFnzTZMn"
             height = 3097
-            incrementalMac = <22ad8089d8b31e0b8d6049955da8992e>
-            incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             width = 3092
           }

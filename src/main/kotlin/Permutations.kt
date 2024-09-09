@@ -367,16 +367,20 @@ object Generators {
     )
 
     return Generators.permutation {
-      val incrementalMac: ByteArray? = some(Generators.bytes(16).nullable())
+      val backupLocator: FilePointer.BackupLocator? = someOneOf(backupLocatorGenerator)
+      val attachmentLocator: FilePointer.AttachmentLocator? = someOneOf(attachmentLocatorGenerator)
+      val invalidAttachmentLocator: FilePointer.InvalidAttachmentLocator? = someOneOf(invalidAttachmentLocatorGenerator)
+      val potentialIncrementalMac = some(Generators.bytes(16).nullable())
+      val incrementalMac = if (invalidAttachmentLocator == null) potentialIncrementalMac else null
       val incrementalMacChunkSize: Int? = some(Generators.list(1024, 2048))
 
       val contentType = some(contentTypeGenerator)
       val blurHash = some(Generators.blurHashes().nullable())
 
       frames += FilePointer(
-        backupLocator = someOneOf(backupLocatorGenerator),
-        attachmentLocator = someOneOf(attachmentLocatorGenerator),
-        invalidAttachmentLocator = someOneOf(invalidAttachmentLocatorGenerator),
+        backupLocator = backupLocator,
+        attachmentLocator = attachmentLocator,
+        invalidAttachmentLocator = invalidAttachmentLocator,
         contentType = contentType,
         incrementalMac = incrementalMac?.toByteString(),
         incrementalMacChunkSize = if (incrementalMac != null) {

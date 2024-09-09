@@ -37,8 +37,6 @@ Frame {
         wallpaperPhoto = FilePointer {
           blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
           contentType = "image/png"
-          incrementalMac = <b0268c5da867e8b454754359d4337a3c>
-          incrementalMacChunkSize = 2048
           invalidAttachmentLocator = InvalidAttachmentLocator {}
         }
       }
