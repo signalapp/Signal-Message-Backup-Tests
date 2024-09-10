@@ -114,9 +114,23 @@ Frame {
 
 Frame {
   chatItem = ChatItem {
-    authorId = 4
+    authorId = 1
     chatId = 2
     dateSent = 1695248715439
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      simpleUpdate = SimpleChatUpdate {
+        type = Type.UNSUPPORTED_PROTOCOL_MESSAGE
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 4
+    chatId = 2
+    dateSent = 1739546236831
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
