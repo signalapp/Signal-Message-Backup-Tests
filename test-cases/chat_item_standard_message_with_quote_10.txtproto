@@ -153,6 +153,9 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
+        text = Text {
+          body = "Peter Parker"
+        }
         type = Type.NORMAL
       }
       reactions = [

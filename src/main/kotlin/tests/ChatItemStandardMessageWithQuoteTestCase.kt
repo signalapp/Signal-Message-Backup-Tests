@@ -97,6 +97,11 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
                   emptyList()
                 }
               )
+            } else if (targetMessage.chatItem?.contactMessage != null) {
+              var name = targetMessage.chatItem.contactMessage.contact[0].name
+              Text(
+                body = "${name!!.givenName} ${name!!.familyName}"
+              )
             } else {
               null
             },
