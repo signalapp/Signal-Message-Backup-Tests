@@ -45,7 +45,10 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
           packId = ByteArray(16) { 0 }.toByteString(),
           packKey = ByteArray(32) { 1 }.toByteString(),
           emoji = "👍",
-          data_ = FilePointer(invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator())
+          data_ = FilePointer(
+            contentType = "image/webp",
+            invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator()
+          )
         )
       ).asGenerator()
     )

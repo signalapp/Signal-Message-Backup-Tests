@@ -125,6 +125,7 @@ Frame {
     stickerMessage = StickerMessage {
       sticker = Sticker {
         data_ = FilePointer {
+          contentType = "image/webp"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
         }
         emoji = "👍"
