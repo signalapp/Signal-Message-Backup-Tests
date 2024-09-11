@@ -92,9 +92,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000001>
+      aci = <000a11ce000040008000000000000001>
       e164 = 16105550101
-      pni = <00000000000000000000000000000002>
+      pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
       profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
@@ -108,9 +108,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000003>
+      aci = <00000b0b000040008000000000000001>
       e164 = 16105550102
-      pni = <00000000000000000000000000000004>
+      pni = <00000b0b000040008000000000000002>
       profileFamilyName = "Jones"
       profileGivenName = "Bob"
       profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
@@ -124,9 +124,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000005>
+      aci = <0000ca01000040008000000000000001>
       e164 = 16105550103
-      pni = <00000000000000000000000000000006>
+      pni = <0000ca01000040008000000000000002>
       profileFamilyName = "Johnson"
       profileGivenName = "Carol"
       profileKey = <0820820820820820820820820820820820820820820820820820820820820820>
@@ -140,7 +140,7 @@ Frame {
 Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
-      distributionId = <72298758a63c85fc2720a157e24129e4>
+      distributionId = <72298758a63cc5fca720a157e24129e4>
       distributionList = DistributionList {
         memberRecipientIds = [
           4,

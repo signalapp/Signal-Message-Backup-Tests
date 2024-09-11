@@ -92,9 +92,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000001>
+      aci = <000a11ce000040008000000000000001>
       e164 = 16105550101
-      pni = <00000000000000000000000000000002>
+      pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
       profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
@@ -108,9 +108,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000003>
+      aci = <00000b0b000040008000000000000001>
       e164 = 16105550102
-      pni = <00000000000000000000000000000004>
+      pni = <00000b0b000040008000000000000002>
       profileFamilyName = "Jones"
       profileGivenName = "Bob"
       profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
@@ -137,17 +137,17 @@ Frame {
           Member {
             profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
             role = Role.ADMINISTRATOR
-            userId = <00000000000000640000000000000064>
+            userId = <00000000000040008000000000000001>
           },
           Member {
             profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
             role = Role.DEFAULT
-            userId = <00000000000000000000000000000001>
+            userId = <000a11ce000040008000000000000001>
           },
           Member {
             profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
             role = Role.DEFAULT
-            userId = <00000000000000000000000000000003>
+            userId = <00000b0b000040008000000000000001>
           }
         ]
         title = GroupAttributeBlob {
@@ -192,7 +192,7 @@ Frame {
         bodyRanges = [
           BodyRange {
             length = 5
-            mentionAci = <00000000000000000000000000000003>
+            mentionAci = <00000b0b000040008000000000000001>
           },
           BodyRange {
             length = 10

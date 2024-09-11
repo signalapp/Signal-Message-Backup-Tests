@@ -92,9 +92,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000001>
+      aci = <000a11ce000040008000000000000001>
       e164 = 16105550101
-      pni = <00000000000000000000000000000002>
+      pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
       profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
@@ -108,9 +108,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000003>
+      aci = <00000b0b000040008000000000000001>
       e164 = 16105550102
-      pni = <00000000000000000000000000000004>
+      pni = <00000b0b000040008000000000000002>
       profileFamilyName = "Jones"
       profileGivenName = "Bob"
       profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
@@ -124,9 +124,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000005>
+      aci = <0000ca01000040008000000000000001>
       e164 = 16105550103
-      pni = <00000000000000000000000000000006>
+      pni = <0000ca01000040008000000000000002>
       profileFamilyName = "Johnson"
       profileGivenName = "Carol"
       profileKey = <0820820820820820820820820820820820820820820820820820820820820820>
@@ -140,9 +140,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000007>
+      aci = <000000da000040008000000000000001>
       e164 = 16105550104
-      pni = <00000000000000000000000000000008>
+      pni = <000000da000040008000000000000002>
       profileFamilyName = "Brown"
       profileGivenName = "Dan"
       profileKey = <0c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30>
@@ -156,9 +156,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000009>
+      aci = <000000ee000040008000000000000001>
       e164 = 16105550105
-      pni = <0000000000000000000000000000000a>
+      pni = <000000ee000040008000000000000002>
       profileFamilyName = "Green"
       profileGivenName = "Eve"
       profileKey = <1041041041041041041041041041041041041041041041041041041041041041>
@@ -172,9 +172,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <0000000000000000000000000000000b>
+      aci = <000000fa000040008000000000000001>
       e164 = 16105550106
-      pni = <0000000000000000000000000000000c>
+      pni = <000000fa000040008000000000000002>
       profileFamilyName = "Johnson"
       profileGivenName = "Frank"
       profileKey = <1451451451451451451451451451451451451451451451451451451451451451>
@@ -209,22 +209,22 @@ Frame {
           Member {
             profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
             role = Role.DEFAULT
-            userId = <00000000000000000000000000000001>
+            userId = <000a11ce000040008000000000000001>
           },
           Member {
             profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
             role = Role.ADMINISTRATOR
-            userId = <00000000000000000000000000000003>
+            userId = <00000b0b000040008000000000000001>
           },
           Member {
             profileKey = <0820820820820820820820820820820820820820820820820820820820820820>
             role = Role.DEFAULT
-            userId = <00000000000000000000000000000005>
+            userId = <0000ca01000040008000000000000001>
           },
           Member {
             profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
             role = Role.DEFAULT
-            userId = <00000000000000640000000000000064>
+            userId = <00000000000040008000000000000001>
           }
         ]
         title = GroupAttributeBlob {

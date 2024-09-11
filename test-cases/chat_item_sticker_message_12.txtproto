@@ -92,9 +92,9 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <00000000000000000000000000000001>
+      aci = <000a11ce000040008000000000000001>
       e164 = 16105550101
-      pni = <00000000000000000000000000000002>
+      pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
       profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>

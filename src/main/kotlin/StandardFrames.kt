@@ -12,8 +12,8 @@ object StandardFrames {
   private val MY_STORY_UUID: UUID = UUID.fromString("00000000-0000-0000-0000-000000000000")
   val SELF_PROFILE_KEY: ByteArray = base64Decode("YQKRq+3DQklInaOaMcmlzZnN0m/1hzLiaONX7gB12dg=")
 
-  val SELF_ACI: ByteArray = UUID(100, 100).toByteArray()
-  val SELF_PNI: ByteArray = UUID(101, 101).toByteArray()
+  val SELF_ACI: ByteArray = UUID.fromString("00000000-0000-4000-8000-000000000001").toByteArray()
+  val SELF_PNI: ByteArray = UUID.fromString("00000000-0000-4000-8000-000000000002").toByteArray()
 
   val backupInfo = BackupInfo(
     version = 1,
@@ -125,8 +125,8 @@ object StandardFrames {
     recipient = Recipient(
       id = 4,
       contact = Contact(
-        aci = UUID(0, 1).toByteArray().toByteString(),
-        pni = UUID(0, 2).toByteArray().toByteString(),
+        aci = UUID.fromString("000a11ce-0000-4000-8000-000000000001").toByteArray().toByteString(),
+        pni = UUID.fromString("000a11ce-0000-4000-8000-000000000002").toByteArray().toByteString(),
         e164 = 16105550101,
         profileGivenName = "Alice",
         profileFamilyName = "Smith",
@@ -141,8 +141,8 @@ object StandardFrames {
     recipient = Recipient(
       id = 5,
       contact = Contact(
-        aci = UUID(0, 3).toByteArray().toByteString(),
-        pni = UUID(0, 4).toByteArray().toByteString(),
+        aci = UUID.fromString("00000b0b-0000-4000-8000-000000000001").toByteArray().toByteString(),
+        pni = UUID.fromString("00000b0b-0000-4000-8000-000000000002").toByteArray().toByteString(),
         e164 = 16105550102,
         profileGivenName = "Bob",
         profileFamilyName = "Jones",
@@ -156,8 +156,8 @@ object StandardFrames {
     recipient = Recipient(
       id = 6,
       contact = Contact(
-        aci = UUID(0, 5).toByteArray().toByteString(),
-        pni = UUID(0, 6).toByteArray().toByteString(),
+        aci = UUID.fromString("0000ca01-0000-4000-8000-000000000001").toByteArray().toByteString(),
+        pni = UUID.fromString("0000ca01-0000-4000-8000-000000000002").toByteArray().toByteString(),
         e164 = 16105550103,
         profileGivenName = "Carol",
         profileFamilyName = "Johnson",
@@ -171,8 +171,8 @@ object StandardFrames {
     recipient = Recipient(
       id = 7,
       contact = Contact(
-        aci = UUID(0, 7).toByteArray().toByteString(),
-        pni = UUID(0, 8).toByteArray().toByteString(),
+        aci = UUID.fromString("000000da-0000-4000-8000-000000000001").toByteArray().toByteString(),
+        pni = UUID.fromString("000000da-0000-4000-8000-000000000002").toByteArray().toByteString(),
         e164 = 16105550104,
         profileGivenName = "Dan",
         profileFamilyName = "Brown",
@@ -186,8 +186,8 @@ object StandardFrames {
     recipient = Recipient(
       id = 8,
       contact = Contact(
-        aci = UUID(0, 9).toByteArray().toByteString(),
-        pni = UUID(0, 10).toByteArray().toByteString(),
+        aci = UUID.fromString("000000ee-0000-4000-8000-000000000001").toByteArray().toByteString(),
+        pni = UUID.fromString("000000ee-0000-4000-8000-000000000002").toByteArray().toByteString(),
         e164 = 16105550105,
         profileGivenName = "Eve",
         profileFamilyName = "Green",
@@ -201,8 +201,8 @@ object StandardFrames {
     recipient = Recipient(
       id = 9,
       contact = Contact(
-        aci = UUID(0, 11).toByteArray().toByteString(),
-        pni = UUID(0, 12).toByteArray().toByteString(),
+        aci = UUID.fromString("000000fa-0000-4000-8000-000000000001").toByteArray().toByteString(),
+        pni = UUID.fromString("000000fa-0000-4000-8000-000000000002").toByteArray().toByteString(),
         e164 = 16105550106,
         profileGivenName = "Frank",
         profileFamilyName = "Johnson",

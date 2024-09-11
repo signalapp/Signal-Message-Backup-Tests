@@ -10,7 +10,7 @@ object SeededRandom {
   }
 
   fun uuid(): UUID {
-    return UUID(random.nextLong(), random.nextLong())
+    return UUID(random.nextLong().or(0x4000L), random.nextLong().toULong().or(0x8000000000000000UL).toLong())
   }
 
   fun bytes(length: Int): ByteArray {
