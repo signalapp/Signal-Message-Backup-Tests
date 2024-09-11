@@ -255,7 +255,7 @@ object StandardFrames {
   val recipientCallLink = Frame(
     recipient = Recipient(
       callLink = CallLink(
-        rootKey = ByteArray(16) { 0 }.toByteString(),
+        rootKey = ByteArray(16) { pos -> pos.toByte() }.toByteString(),
         adminKey = ByteArray(32) { 1 }.toByteString(),
         name = "Test Call Link",
         restrictions = CallLink.Restrictions.NONE,

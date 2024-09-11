@@ -167,6 +167,8 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
 
   fun someNullableFilePointer(): FilePointer? = some(Generators.filePointer().nullable())
 
+  fun someCallLinkRootKey(): ByteArray = some(Generators.callLinkRootKey())
+
   fun <T> some(generator: Generator<T>): T {
     if (snapshotIndex == 0) {
       registeredGenerators.add(generator)
@@ -249,6 +251,29 @@ private class DecrementingTimestampGenerator(lower: Long, upper: Long) : Generat
 
   override val minSize: Int = 2
   override fun next(): Long = onDeck.also { onDeck -= 1 }
+}
+
+private class CallLinkRootKeyGenerator : Generator<ByteArray> {
+  override val minSize: Int = 16
+
+  override fun next(): ByteArray {
+    var result = SeededRandom.bytes(this.minSize)
+    while (this.hasRepeatedChunk(result)) {
+      result = SeededRandom.bytes(this.minSize)
+    }
+    return result
+  }
+
+  // See https://github.com/signalapp/ringrtc-private/blob/cdde6532a836d085a7a8318abc65646ac7b86783/src/rust/src/lite/call_links/root_key.rs#L31
+  fun hasRepeatedChunk(value: ByteArray): Boolean {
+    for ((l, r) in value.asList().chunked(2)) {
+      var word = l.toInt() + r.toInt().shl(8)
+      if (word % 0x1111 == 0) {
+        return true
+      }
+    }
+    return false
+  }
 }
 
 object Generators {
@@ -396,6 +421,8 @@ object Generators {
       )
     }
   }
+
+  fun callLinkRootKey(): Generator<ByteArray> = CallLinkRootKeyGenerator()
 
   fun sendStatus(recipientIdGenerator: Generator<Long>): Generator<SendStatus> {
     val (

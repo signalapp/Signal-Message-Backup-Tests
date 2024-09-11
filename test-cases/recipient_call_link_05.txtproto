@@ -92,17 +92,11 @@ Frame {
 Frame {
   recipient = Recipient {
     callLink = CallLink {
-      adminKey = <0101010101010101010101010101010101010101010101010101010101010101>
-      name = "Test Call Link"
-      restrictions = Restrictions.NONE
-      rootKey = <000102030405060708090a0b0c0d0e0f>
+      adminKey = <e77bcc2f537f0b02efe86030ac2c315346a8f5dcc0a79602f9a51310c8eed988>
+      expirationMs = 1588009503000
+      name = "SDTsXBkoG"
+      restrictions = Restrictions.ADMIN_APPROVAL
+      rootKey = <2cc2b48c50aefe53b3974ed91e6b4ea9>
     }
-  }
-}
-
-Frame {
-  adHocCall = AdHocCall {
-    callId = 5069471078380689193
-    state = State.GENERIC
   }
 }

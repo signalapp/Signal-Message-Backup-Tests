@@ -19,7 +19,7 @@ object RecipientCallLinkTestCase : TestCase("recipient_call_link") {
     frames += Frame(
       recipient = Recipient(
         callLink = CallLink(
-          rootKey = someBytes(16).toByteString(),
+          rootKey = someCallLinkRootKey().toByteString(),
           adminKey = someNullableBytes(32)?.toByteString(),
           name = someString(),
           restrictions = someEnum(CallLink.Restrictions::class.java, excluding = CallLink.Restrictions.UNKNOWN),
