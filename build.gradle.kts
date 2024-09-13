@@ -19,6 +19,6 @@ application {
 }
 
 dependencies {
-  implementation("org.signal:libsignal-client:0.56.1")
+  implementation("org.signal:libsignal-client:0.57.1")
   implementation(kotlin("reflect"))
 }
