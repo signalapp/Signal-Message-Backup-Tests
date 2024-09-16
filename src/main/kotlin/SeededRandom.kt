@@ -14,7 +14,8 @@ object SeededRandom {
       random.nextLong().toULong()
         .and(0xffffffffffff0fffUL).or(0x4000UL).toLong(),
       random.nextLong().toULong()
-        .and(0x0fffffffffffffffUL).or(0x8000000000000000UL).toLong())
+        .and(0x0fffffffffffffffUL).or(0x8000000000000000UL).toLong()
+    )
   }
 
   fun bytes(length: Int): ByteArray {
