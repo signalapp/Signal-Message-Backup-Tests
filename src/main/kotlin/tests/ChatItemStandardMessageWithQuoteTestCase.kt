@@ -32,7 +32,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
     val (
       standardMessageGenerator,
       contactMessageGenerator,
-      stickerMessageGenerator
+      stickerMessageGenerator,
+      giftBadgeGenerator
     ) = oneOf(
       StandardMessage(
         text = Text(body = "asdf")
@@ -50,6 +51,10 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
             invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator()
           )
         )
+      ).asGenerator(),
+      GiftBadge(
+        receiptCredentialPresentation = some(Generators.receiptCredentialPresentation()).serialize().toByteString(),
+        state = GiftBadge.State.OPENED
       ).asGenerator()
     )
 
@@ -67,7 +72,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
         ),
         standardMessage = someOneOf(standardMessageGenerator),
         contactMessage = someOneOf(contactMessageGenerator),
-        stickerMessage = someOneOf(stickerMessageGenerator)
+        stickerMessage = someOneOf(stickerMessageGenerator),
+        giftBadge = someOneOf(giftBadgeGenerator)
       )
     )
 
@@ -86,7 +92,7 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
         outgoing = outgoing,
         standardMessage = StandardMessage(
           text = Text(
-            body = someString()
+            body = someNonEmptyString()
           ),
           quote = Quote(
             targetSentTimestamp = targetDateSent,
@@ -108,7 +114,11 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
             } else {
               null
             },
-            type = Quote.Type.NORMAL
+            type = if (targetMessage.chatItem?.giftBadge != null) {
+              Quote.Type.GIFTBADGE
+            } else {
+              Quote.Type.NORMAL
+            }
           ),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )

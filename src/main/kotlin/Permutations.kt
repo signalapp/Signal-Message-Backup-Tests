@@ -3,7 +3,13 @@
 
 import com.squareup.wire.Message
 import okio.ByteString.Companion.toByteString
+import org.signal.libsignal.zkgroup.ServerSecretParams
+import org.signal.libsignal.zkgroup.receipts.ClientZkReceiptOperations
+import org.signal.libsignal.zkgroup.receipts.ReceiptCredentialPresentation
+import org.signal.libsignal.zkgroup.receipts.ReceiptSerial
+import org.signal.libsignal.zkgroup.receipts.ServerZkReceiptOperations
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import java.security.SecureRandom
 import java.util.*
 import kotlin.math.max
 
@@ -163,10 +169,6 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
   fun <T> someEnum(clazz: Class<T>, excluding: T? = null): T = excluding?.let { some(Generators.enum(clazz, excluding)) } ?: some(Generators.enum(clazz))
   fun <T> someEnum(clazz: Class<T>, vararg excluding: T): T = some(Generators.enum(clazz, *excluding))
 
-  fun <T> someNullableEnum(clazz: Class<T>): T? = some(Generators.enum(clazz).nullable())
-
-  fun someNullableFilePointer(): FilePointer? = some(Generators.filePointer().nullable())
-
   fun someCallLinkRootKey(): ByteArray = some(Generators.callLinkRootKey())
 
   fun <T> some(generator: Generator<T>): T {
@@ -308,6 +310,22 @@ object Generators {
    */
   fun expirationTimersMs(): Generator<Long> = Generators.list(0L, SeededRandom.long(0, Int.MAX_VALUE.toLong()) * 1000, SeededRandom.long(0, Int.MAX_VALUE.toLong()) * 1000)
 
+  fun receiptCredentialPresentation(): Generator<ReceiptCredentialPresentation> {
+    // libsignal requires a SecureRandom for zkgroup operations
+    val derivedRandom = SecureRandom.getInstance("SHA1PRNG")
+    derivedRandom.setSeed(SeededRandom.long())
+    val serverParams = ServerSecretParams.generate(derivedRandom)
+    val clientOps = ClientZkReceiptOperations(serverParams.publicParams)
+
+    val serial = ReceiptSerial(SeededRandom.bytes(ReceiptSerial.SIZE))
+    val context = clientOps.createReceiptCredentialRequestContext(derivedRandom, serial)
+    val response = ServerZkReceiptOperations(serverParams).issueReceiptCredential(derivedRandom, context.request, 0, 1)
+    val credential = clientOps.receiveReceiptCredential(context, response)
+    val presentation = clientOps.createReceiptCredentialPresentation(derivedRandom, credential)
+
+    return presentation.asGenerator()
+  }
+
   fun <T> list(vararg items: T): Generator<T> = ListGenerator(items.toList())
   fun <T> list(items: List<T>): Generator<T> = ListGenerator(items)
   fun <T> single(item: T): Generator<T> = Generators.list(item)
@@ -333,6 +351,7 @@ object Generators {
     includeFileName = false,
     includeMediaSize = false,
     includeCaption = false,
+    includeBlurHash = true,
     contentTypeGenerator = Generators.list("image/jpeg", "image/png")
   )
 
@@ -340,7 +359,40 @@ object Generators {
     includeFileName = true,
     includeMediaSize = true,
     includeCaption = false,
+    includeBlurHash = true,
     contentTypeGenerator = Generators.list("image/jpeg", "image/png")
+  )
+
+  fun longTextFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = false,
+    includeCaption = false,
+    includeBlurHash = false,
+    contentTypeGenerator = Generators.list("text/x-signal-plain")
+  )
+
+  fun voiceMessageFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = false,
+    includeCaption = false,
+    includeBlurHash = false,
+    contentTypeGenerator = Generators.list("audio/mp3")
+  )
+
+  fun gifFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = true,
+    includeCaption = false,
+    includeBlurHash = true,
+    contentTypeGenerator = Generators.list("video/mp4")
+  )
+
+  fun borderlessFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = true,
+    includeCaption = false,
+    includeBlurHash = true,
+    contentTypeGenerator = Generators.list("image/png")
   )
 
   fun filePointer(
@@ -349,6 +401,7 @@ object Generators {
     includeFileName = true,
     includeMediaSize = true,
     includeCaption = true,
+    includeBlurHash = true,
     contentTypeGenerator = contentTypeGenerator
   )
 
@@ -356,6 +409,7 @@ object Generators {
     includeFileName: Boolean,
     includeMediaSize: Boolean,
     includeCaption: Boolean,
+    includeBlurHash: Boolean,
     contentTypeGenerator: Generator<String>
   ): Generator<FilePointer> {
     val (backupLocatorGenerator, attachmentLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
@@ -400,7 +454,6 @@ object Generators {
       val incrementalMacChunkSize: Int? = some(Generators.list(1024, 2048))
 
       val contentType = some(contentTypeGenerator)
-      val blurHash = some(Generators.blurHashes().nullable())
 
       frames += FilePointer(
         backupLocator = backupLocator,
@@ -417,7 +470,7 @@ object Generators {
         width = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         height = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         caption = if (includeCaption) someNullableString() else null,
-        blurHash = if (contentType.startsWith("audio")) null else blurHash
+        blurHash = if (includeBlurHash) some(Generators.blurHashes().nullable()) else null
       )
     }
   }

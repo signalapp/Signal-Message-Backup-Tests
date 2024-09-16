@@ -197,8 +197,49 @@ Frame {
         body = "0123456789"
         bodyRanges = [
           BodyRange {
-            length = 1
+            length = 4
+            style = Style.BOLD
+          }
+        ]
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 3
+    dateSent = 1910611834873
+    outgoing = OutgoingMessageDetails {
+      sendStatus = [
+        SendStatus {
+          failed = Failed {
+            reason = FailureReason.NETWORK
+          }
+          recipientId = 4
+          timestamp = 1695248715439
+        },
+        SendStatus {
+          failed = Failed {
+            reason = FailureReason.NETWORK
+          }
+          recipientId = 5
+          timestamp = 1794124103201
+        }
+      ]
+    }
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "0123456789"
+        bodyRanges = [
+          BodyRange {
+            length = 10
             style = Style.STRIKETHROUGH
+          },
+          BodyRange {
+            length = 10
+            mentionAci = <000a11ce000040008000000000000001>
           }
         ]
       }

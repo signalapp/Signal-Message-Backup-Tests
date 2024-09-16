@@ -128,33 +128,26 @@ Frame {
     standardMessage = StandardMessage {
       longText = FilePointer {
         backupLocator = BackupLocator {
-          cdnNumber = 2
-          digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
-          key = <0a038863ebb03fed8486f4196b6e656c>
-          mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
-          size = 1267987916
-          transitCdnKey = "ySkLQGERtwS"
+          digest = <7db665e567fdcb1ac685a8aedbd29cb4>
+          key = <2ed70996974af5a7a459650a2590efd1>
+          mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
+          size = 891929939
         }
-        blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-        caption = ""
-        contentType = "image/png"
-        fileName = "mkOGiGqMxxp"
-        height = 2764
+        contentType = "text/x-signal-plain"
         incrementalMac = <d64ea836f23a4ce20c4220ab396c4b8e>
         incrementalMacChunkSize = 2048
-        width = 2028
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1831980309920
+          sentTimestamp = 1893972547779
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1831980309921
+          sentTimestamp = 1893972547780
           sortOrder = 2
         }
       ]

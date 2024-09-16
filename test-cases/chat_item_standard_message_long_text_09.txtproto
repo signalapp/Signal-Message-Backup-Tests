@@ -129,8 +129,22 @@ Frame {
       ]
     }
     standardMessage = StandardMessage {
+      longText = FilePointer {
+        backupLocator = BackupLocator {
+          cdnNumber = 2
+          digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
+          key = <0a038863ebb03fed8486f4196b6e656c>
+          mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
+          size = 1267987916
+          transitCdnKey = "ySkLQGERtwS"
+        }
+        contentType = "text/x-signal-plain"
+        fileName = "mkOGiGqMxxp"
+        incrementalMac = <d64ea836f23a4ce20c4220ab396c4b8e>
+        incrementalMacChunkSize = 2048
+      }
       text = Text {
-        body = ""
+        body = "YWfDTgpIJ"
       }
     }
   }

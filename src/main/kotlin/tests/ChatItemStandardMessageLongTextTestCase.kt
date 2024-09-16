@@ -1,5 +1,6 @@
 package tests
 
+import Generators
 import PermutationScope
 import TestCase
 import org.thoughtcrime.securesms.backup.v2.proto.ChatItem
@@ -36,9 +37,10 @@ object ChatItemStandardMessageLongTextTestCase : TestCase("chat_item_standard_me
         outgoing = outgoing,
         standardMessage = StandardMessage(
           text = Text(
-            body = someString()
+            // Long text must have a non-empty message body.
+            body = someNonEmptyString()
           ),
-          longText = someNullableFilePointer(),
+          longText = some(Generators.longTextFilePointer()),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )
       )

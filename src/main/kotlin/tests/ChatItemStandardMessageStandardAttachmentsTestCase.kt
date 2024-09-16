@@ -36,7 +36,7 @@ object ChatItemStandardMessageStandardAttachmentsTestCase : TestCase("chat_item_
           quote = null,
           text = someNullablePermutation {
             frames += Text(
-              body = someString()
+              body = someNonEmptyString()
             )
           },
           attachments = Generators.permutation<MessageAttachment> {

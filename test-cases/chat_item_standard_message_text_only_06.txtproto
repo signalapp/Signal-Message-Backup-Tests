@@ -128,7 +128,7 @@ Frame {
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = ""
+        body = "pdiJZ"
       }
     }
   }

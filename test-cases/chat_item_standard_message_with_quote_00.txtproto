@@ -134,7 +134,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577838
+    dateSent = 1804284278906
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826269
       dateServerSent = 1794124103201
@@ -151,7 +151,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = ""
+        body = "WfDTg"
       }
     }
   }

@@ -134,7 +134,7 @@ Frame {
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = ""
+            body = "fWbogY"
           }
         }
       },
@@ -148,30 +148,30 @@ Frame {
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = "fWbogY"
+            body = "zQSvJcb"
           }
         }
       },
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1833527053932
+        dateSent = 1833527053934
         incoming = IncomingMessageDetails {
-          dateReceived = 1833527053922
-          dateServerSent = 1833527053931
+          dateReceived = 1833527053924
+          dateServerSent = 1833527053933
           read = true
           sealedSender = true
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = "zQSvJcb"
+            body = "fWbogY"
           }
         }
       }
     ]
     standardMessage = StandardMessage {
       text = Text {
-        body = "WfDTg"
+        body = "diJZOYWfDTgpIJ"
       }
     }
   }

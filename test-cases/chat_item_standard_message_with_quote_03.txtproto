@@ -117,15 +117,14 @@ Frame {
     authorId = 4
     chatId = 2
     dateSent = 1
+    giftBadge = GiftBadge {
+      receiptCredentialPresentation = <00d499bc4a140ccf242420336c060dc56523d84dde6ff6ae7238eae08f2fda1c570aee8301ab3ead51a945f2dc56241265be8273fa8866221f6748b9a50180e42ffcbb422249cd7ba8231815ddda699d122c63bb6d930bf49157c4cadfa7186856a440af885da7e253dca7a6eeeda12011e92445c1edfd54b211aea186acec4a41c6e1173c58ad9c446c2d2c008a5f03cff4cb90cce2fe6c2feba95601dc037d4280000000000000002f03d6e9f4d7155bda822894a8bc2f656c307f8fce70d237024c211a1a32040671ee106ec993a3501ed67392a943dfd6c775797334c541d597103095a1460706275650f225f155795f3cc80e0db5fe3993cdda871a2df7983d397328b290470d6af532c3ae78070ed538854be949af6c1afc5b93eebea8d0d93d0f0fd9748c0300000000000000000100000000000000e85604e4e3670f77ebf5e721149f599d>
+      state = State.OPENED
+    }
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
-    }
-    standardMessage = StandardMessage {
-      text = Text {
-        body = "asdf"
-      }
     }
   }
 }
@@ -134,7 +133,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577841
+    dateSent = 1804284278909
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -150,13 +149,10 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
-        text = Text {
-          body = "asdf"
-        }
-        type = Type.NORMAL
+        type = Type.GIFTBADGE
       }
       text = Text {
-        body = ""
+        body = "IJqySkLQGERt"
       }
     }
   }

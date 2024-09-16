@@ -129,19 +129,23 @@ Frame {
     standardMessage = StandardMessage {
       longText = FilePointer {
         backupLocator = BackupLocator {
-          digest = <8a72bebb4db939e0342ae035ddbe7fe4>
-          key = <d9345fdc5ab1cf72b00738e125ef7370>
-          mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
-          size = 891929939
+          cdnNumber = 3
+          digest = <222d4808bdaadcf9eaa4908fc733c244>
+          key = <4a5aa0bbf67baa9066da53caf60c4ec9>
+          mediaName = "222d4808bdaadcf9eaa4908fc733c244"
+          size = 1322441015
+          transitCdnKey = "uECQWuuuE"
+          transitCdnNumber = 2
         }
-        contentType = "image/jpeg"
+        contentType = "text/x-signal-plain"
+        fileName = "cKiDzz"
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "👩‍💻"
-          sentTimestamp = 1831980309924
-          sortOrder = 1817711302260
+          sentTimestamp = 1893972547783
+          sortOrder = 1895605000767
         }
       ]
       text = Text {

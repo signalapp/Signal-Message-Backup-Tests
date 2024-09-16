@@ -135,11 +135,11 @@ Frame {
           pointer = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 2
-              digest = <222d4808bdaadcf9eaa4908fc733c244>
-              key = <4a5aa0bbf67baa9066da53caf60c4ec9>
-              mediaName = "222d4808bdaadcf9eaa4908fc733c244"
-              size = 522457189
-              transitCdnKey = "WyYPnka"
+              digest = <a7ed5289222d4808bdaadcf9eaa4908f>
+              key = <0c3ae62e4a5aa0bbf67baa9066da53ca>
+              mediaName = "a7ed5289222d4808bdaadcf9eaa4908f"
+              size = 290586407
+              transitCdnKey = "CmCqQNEWGrAz"
             }
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
@@ -152,9 +152,6 @@ Frame {
           }
         }
       ]
-      text = Text {
-        body = "YWfDTgpIJ"
-      }
     }
   }
 }

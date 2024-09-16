@@ -197,18 +197,60 @@ Frame {
         body = "0123456789"
         bodyRanges = [
           BodyRange {
-            length = 10
-            style = Style.NONE
-          },
-          BodyRange {
-            length = 5
-            start = 1
-            style = Style.BOLD
-          },
-          BodyRange {
-            length = 7
+            length = 2
             start = 2
-            style = Style.ITALIC
+            style = Style.SPOILER
+          },
+          BodyRange {
+            length = 2
+            start = 6
+            style = Style.STRIKETHROUGH
+          },
+          BodyRange {
+            length = 2
+            start = 6
+            style = Style.MONOSPACE
+          }
+        ]
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 3
+    dateSent = 1910611834869
+    outgoing = OutgoingMessageDetails {
+      sendStatus = [
+        SendStatus {
+          recipientId = 4
+          timestamp = 1833527071192
+          viewed = Viewed {
+            sealedSender = true
+          }
+        },
+        SendStatus {
+          recipientId = 5
+          timestamp = 1702291826269
+          viewed = Viewed {
+            sealedSender = true
+          }
+        }
+      ]
+    }
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "0123456789"
+        bodyRanges = [
+          BodyRange {
+            length = 10
+            style = Style.MONOSPACE
+          },
+          BodyRange {
+            length = 10
+            mentionAci = <000a11ce000040008000000000000001>
           }
         ]
       }

@@ -122,15 +122,9 @@ Frame {
       dateServerSent = 1
       read = true
     }
-    stickerMessage = StickerMessage {
-      sticker = Sticker {
-        data_ = FilePointer {
-          contentType = "image/webp"
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
-        }
-        emoji = "👍"
-        packId = <00000000000000000000000000000000>
-        packKey = <0101010101010101010101010101010101010101010101010101010101010101>
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "asdf"
       }
     }
   }
@@ -140,7 +134,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577846
+    dateSent = 1804284278914
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -153,23 +147,26 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
+        text = Text {
+          body = "asdf"
+        }
         type = Type.NORMAL
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1754822320312
+          sentTimestamp = 1837514303872
         },
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1754822320313
-          sortOrder = 1762578225552
+          sentTimestamp = 1837514303873
+          sortOrder = 1838953738862
         }
       ]
       text = Text {
-        body = "YWfDTgpIJ"
+        body = "WfDTg"
       }
     }
   }

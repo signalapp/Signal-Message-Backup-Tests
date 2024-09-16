@@ -184,10 +184,10 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
-              digest = <ebb03fed8486f4196b6e656c0977166f>
-              key = <18e707cf7cb4446159fb651a953525dd>
-              mediaName = "ebb03fed8486f4196b6e656c0977166f"
-              size = 413137175
+              digest = <d95fde0154d933c20d1a04ced92499f5>
+              key = <97130bcd791cedfafc0e29956dc1e0cd>
+              mediaName = "d95fde0154d933c20d1a04ced92499f5"
+              size = 357854953
             }
             contentType = "image/jpeg"
           }
@@ -198,11 +198,11 @@ Frame {
           pointer = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 2
-              digest = <222d4808bdaadcf9eaa4908fc733c244>
-              key = <4a5aa0bbf67baa9066da53caf60c4ec9>
-              mediaName = "222d4808bdaadcf9eaa4908fc733c244"
-              size = 522457189
-              transitCdnKey = "WyYPnka"
+              digest = <a7ed5289222d4808bdaadcf9eaa4908f>
+              key = <0c3ae62e4a5aa0bbf67baa9066da53ca>
+              mediaName = "a7ed5289222d4808bdaadcf9eaa4908f"
+              size = 290586407
+              transitCdnKey = "CmCqQNEWGrAz"
             }
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
@@ -230,7 +230,7 @@ Frame {
         }
       ]
       text = Text {
-        body = ""
+        body = "YWfDTgpIJ"
       }
     }
   }

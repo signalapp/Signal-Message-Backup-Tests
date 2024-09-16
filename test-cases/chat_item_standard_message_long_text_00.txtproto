@@ -124,8 +124,17 @@ Frame {
       sealedSender = true
     }
     standardMessage = StandardMessage {
+      longText = FilePointer {
+        backupLocator = BackupLocator {
+          digest = <8a72bebb4db939e0342ae035ddbe7fe4>
+          key = <d9345fdc5ab1cf72b00738e125ef7370>
+          mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
+          size = 891929939
+        }
+        contentType = "text/x-signal-plain"
+      }
       text = Text {
-        body = ""
+        body = "pdiJZ"
       }
     }
   }

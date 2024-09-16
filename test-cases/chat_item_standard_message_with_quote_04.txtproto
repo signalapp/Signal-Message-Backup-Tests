@@ -116,21 +116,16 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          name = Name {
-            familyName = "Parker"
-            givenName = "Peter"
-          }
-        }
-      ]
-    }
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
+    }
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "asdf"
+      }
     }
   }
 }
@@ -139,7 +134,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577842
+    dateSent = 1804284278910
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -154,7 +149,7 @@ Frame {
         authorId = 4
         targetSentTimestamp = 1
         text = Text {
-          body = "Peter Parker"
+          body = "asdf"
         }
         type = Type.NORMAL
       }
@@ -162,12 +157,12 @@ Frame {
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1754822320313
-          sortOrder = 1762578225552
+          sentTimestamp = 1837514303873
+          sortOrder = 1838953738862
         }
       ]
       text = Text {
-        body = "pdiJZ"
+        body = "WfDTg"
       }
     }
   }

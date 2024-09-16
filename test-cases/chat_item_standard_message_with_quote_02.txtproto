@@ -140,7 +140,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577840
+    dateSent = 1804284278908
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -159,17 +159,17 @@ Frame {
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1754822320311
+          sentTimestamp = 1837514303871
           sortOrder = 2
         },
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1754822320312
+          sentTimestamp = 1837514303872
         }
       ]
       text = Text {
-        body = "YWfDTgpIJ"
+        body = "WfDTg"
       }
     }
   }

@@ -131,23 +131,17 @@ Frame {
     standardMessage = StandardMessage {
       longText = FilePointer {
         backupLocator = BackupLocator {
-          cdnNumber = 3
-          digest = <222d4808bdaadcf9eaa4908fc733c244>
-          key = <4a5aa0bbf67baa9066da53caf60c4ec9>
-          mediaName = "222d4808bdaadcf9eaa4908fc733c244"
-          size = 1322441015
-          transitCdnKey = "uECQWuuuE"
-          transitCdnNumber = 2
+          digest = <7db665e567fdcb1ac685a8aedbd29cb4>
+          key = <2ed70996974af5a7a459650a2590efd1>
+          mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
+          size = 891929939
         }
-        blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-        caption = "nzTZMnGMNa"
-        contentType = "image/gif"
-        fileName = "cKiDzz"
-        height = 983
-        width = 1577
+        contentType = "text/x-signal-plain"
+        incrementalMac = <d64ea836f23a4ce20c4220ab396c4b8e>
+        incrementalMacChunkSize = 2048
       }
       text = Text {
-        body = ""
+        body = "YWfDTgpIJ"
       }
     }
   }

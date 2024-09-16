@@ -133,11 +133,11 @@ Frame {
           pointer = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 3
-              digest = <7db665e567fdcb1ac685a8aedbd29cb4>
-              key = <2ed70996974af5a7a459650a2590efd1>
-              mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
-              size = 1261260923
-              transitCdnKey = "IBHCZ"
+              digest = <c685a8aedbd29cb42e984d652ed70996>
+              key = <a459650a2590efd18c249edbc4fa0a59>
+              mediaName = "c685a8aedbd29cb42e984d652ed70996"
+              size = 366187902
+              transitCdnKey = "HYkFXMOBqmCd"
               transitCdnNumber = 2
             }
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
@@ -156,8 +156,9 @@ Frame {
               digest = <595e2aa725b1e780a6681e10130f4bc7>
               key = <0f4d11d0201e77f9ba1caec888cf6bfa>
               mediaName = "595e2aa725b1e780a6681e10130f4bc7"
-              size = 413137175
+              size = 357854953
             }
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             caption = "pXHtZhd"
             contentType = "audio/mp3"
             height = 3097
@@ -190,6 +191,9 @@ Frame {
           sortOrder = 1812737042662
         }
       ]
+      text = Text {
+        body = "pdiJZ"
+      }
     }
   }
 }

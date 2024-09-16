@@ -116,7 +116,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577839
+    dateSent = 1798056002714
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826270
       dateServerSent = 1794124103202
@@ -127,21 +127,12 @@ Frame {
           flag = Flag.BORDERLESS
           pointer = FilePointer {
             backupLocator = BackupLocator {
-              cdnNumber = 2
-              digest = <994d295169f375454a95979def0ce9d2>
-              key = <5d04641dda741f81140efe703c6727a8>
-              mediaName = "994d295169f375454a95979def0ce9d2"
-              size = 1093478118
-              transitCdnKey = "pdiJZ"
+              digest = <3384961f52e772aa4fd669a338fb6ddd>
+              key = <2a7eddab7869439292de6b3479d3b8d1>
+              mediaName = "3384961f52e772aa4fd669a338fb6ddd"
+              size = 1695849057
             }
-            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-            caption = ""
             contentType = "image/png"
-            fileName = "FwzenIneLV"
-            height = 1183
-            incrementalMac = <66a1e4dfbdea011a4c4f4cdd16292569>
-            incrementalMacChunkSize = 2048
-            width = 1929
           }
         }
       ]
@@ -149,7 +140,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1744320599093
+          sentTimestamp = 1826383505455
           sortOrder = 1
         }
       ]

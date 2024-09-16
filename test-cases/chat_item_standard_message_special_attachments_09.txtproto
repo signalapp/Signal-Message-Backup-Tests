@@ -116,7 +116,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577847
+    dateSent = 1798056002722
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -131,25 +131,17 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          flag = Flag.BORDERLESS
+          flag = Flag.VOICE_MESSAGE
           pointer = FilePointer {
             backupLocator = BackupLocator {
-              cdnNumber = 2
-              digest = <994d295169f375454a95979def0ce9d2>
-              key = <5d04641dda741f81140efe703c6727a8>
-              mediaName = "994d295169f375454a95979def0ce9d2"
-              size = 1093478118
-              transitCdnKey = "pdiJZ"
+              digest = <8bffbb6878d9cd54434bca72346a5ff9>
+              key = <bd6e73ff9022c6fa6faebb1559633d69>
+              mediaName = "8bffbb6878d9cd54434bca72346a5ff9"
+              size = 1107048700
             }
-            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-            caption = ""
-            contentType = "image/png"
-            fileName = "FwzenIneLV"
-            height = 1183
-            incrementalMac = <66a1e4dfbdea011a4c4f4cdd16292569>
-            incrementalMacChunkSize = 2048
-            width = 1929
+            contentType = "audio/mp3"
           }
+          wasDownloaded = true
         }
       ]
     }

@@ -36,7 +36,7 @@ object ChatItemStandardMessageTextOnlyTestCase : TestCase("chat_item_standard_me
         outgoing = outgoing,
         standardMessage = StandardMessage(
           text = Text(
-            body = someString()
+            body = someNonEmptyString()
           ),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )

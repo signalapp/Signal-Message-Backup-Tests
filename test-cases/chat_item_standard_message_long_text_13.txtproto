@@ -130,28 +130,28 @@ Frame {
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
-        backupLocator = BackupLocator {
-          digest = <7db665e567fdcb1ac685a8aedbd29cb4>
-          key = <2ed70996974af5a7a459650a2590efd1>
-          mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
-          size = 891929939
+        attachmentLocator = AttachmentLocator {
+          cdnKey = "dzHLOokMZPmj"
+          cdnNumber = 2
+          digest = <10636ce8af1b499244fc7b251b65c6d3>
+          key = <c3c226dc221e8fec3522a5e4cd2f910d>
+          size = 265383037
+          uploadTimestamp = 1776807292834
         }
-        caption = "qnlQb"
-        contentType = "audio/mp3"
-        height = 3428
+        contentType = "text/x-signal-plain"
+        fileName = "cKiDzz"
         incrementalMac = <d64ea836f23a4ce20c4220ab396c4b8e>
         incrementalMacChunkSize = 2048
-        width = 21
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1831980309922
+          sentTimestamp = 1893972547781
         }
       ]
       text = Text {
-        body = "pdiJZ"
+        body = "YWfDTgpIJ"
       }
     }
   }

@@ -197,10 +197,10 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
-              digest = <ebb03fed8486f4196b6e656c0977166f>
-              key = <18e707cf7cb4446159fb651a953525dd>
-              mediaName = "ebb03fed8486f4196b6e656c0977166f"
-              size = 413137175
+              digest = <d95fde0154d933c20d1a04ced92499f5>
+              key = <97130bcd791cedfafc0e29956dc1e0cd>
+              mediaName = "d95fde0154d933c20d1a04ced92499f5"
+              size = 357854953
             }
             contentType = "image/jpeg"
           }
@@ -221,7 +221,7 @@ Frame {
         }
       ]
       text = Text {
-        body = "pdiJZ"
+        body = "YWfDTgpIJ"
       }
     }
   }

@@ -136,14 +136,14 @@ Frame {
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = ""
+            body = "fWbogY"
           }
         }
       }
     ]
     standardMessage = StandardMessage {
       text = Text {
-        body = ""
+        body = "zEavlHxOeTtfOM"
       }
     }
   }

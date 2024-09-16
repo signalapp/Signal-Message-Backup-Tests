@@ -137,8 +137,9 @@ Frame {
               digest = <595e2aa725b1e780a6681e10130f4bc7>
               key = <0f4d11d0201e77f9ba1caec888cf6bfa>
               mediaName = "595e2aa725b1e780a6681e10130f4bc7"
-              size = 413137175
+              size = 357854953
             }
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             caption = "pXHtZhd"
             contentType = "audio/mp3"
             height = 3097
@@ -193,7 +194,7 @@ Frame {
         }
       ]
       text = Text {
-        body = "YWfDTgpIJ"
+        body = "pdiJZ"
       }
     }
   }

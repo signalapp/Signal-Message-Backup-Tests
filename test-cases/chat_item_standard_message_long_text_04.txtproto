@@ -128,25 +128,21 @@ Frame {
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
-        backupLocator = BackupLocator {
-          digest = <7db665e567fdcb1ac685a8aedbd29cb4>
-          key = <2ed70996974af5a7a459650a2590efd1>
-          mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
-          size = 891929939
+        attachmentLocator = AttachmentLocator {
+          cdnKey = "zWWFqaczw"
+          digest = <88e3f24a21a78511518391fbc5b26db6>
+          key = <4b91d8690f4d11d0201e77f9ba1caec8>
+          size = 1632210473
         }
-        caption = "qnlQb"
-        contentType = "audio/mp3"
-        height = 3428
-        incrementalMac = <d64ea836f23a4ce20c4220ab396c4b8e>
-        incrementalMacChunkSize = 2048
-        width = 21
+        contentType = "text/x-signal-plain"
+        fileName = "mkOGiGqMxxp"
       }
       reactions = [
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1831980309923
-          sortOrder = 1877305478784
+          sentTimestamp = 1893972547782
+          sortOrder = 1740018814157
         }
       ]
       text = Text {

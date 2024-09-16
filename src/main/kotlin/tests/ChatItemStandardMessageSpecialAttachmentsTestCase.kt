@@ -24,6 +24,10 @@ object ChatItemStandardMessageSpecialAttachmentsTestCase : TestCase("chat_item_s
     val incoming = some(incomingGenerator)
     val outgoing = some(outgoingGenerator)
 
+    val voiceMessageFilePointer = some(Generators.voiceMessageFilePointer())
+    val gifFilePointer = some(Generators.gifFilePointer())
+    val borderlessFilePointer = some(Generators.borderlessFilePointer())
+
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
@@ -38,19 +42,16 @@ object ChatItemStandardMessageSpecialAttachmentsTestCase : TestCase("chat_item_s
         standardMessage = StandardMessage(
           quote = null,
           attachments = Generators.permutation<MessageAttachment> {
-            val flag = some(Generators.list(MessageAttachment.Flag.VOICE_MESSAGE, MessageAttachment.Flag.BORDERLESS, MessageAttachment.Flag.GIF))
-            val pointer = some(Generators.filePointer())
+            val flag = someEnum(MessageAttachment.Flag::class.java, excluding = MessageAttachment.Flag.NONE)
 
             frames += MessageAttachment(
               flag = flag,
-              pointer = if (flag == MessageAttachment.Flag.VOICE_MESSAGE) {
-                pointer.copy(contentType = "audio/mp3", blurHash = null)
-              } else if (flag == MessageAttachment.Flag.GIF) {
-                pointer.copy(contentType = "video/mp4")
-              } else if (flag == MessageAttachment.Flag.BORDERLESS) {
-                pointer.copy(contentType = "image/png")
-              } else {
-                pointer
+              pointer = when (flag) {
+                MessageAttachment.Flag.VOICE_MESSAGE -> voiceMessageFilePointer
+                MessageAttachment.Flag.GIF -> gifFilePointer
+                MessageAttachment.Flag.BORDERLESS -> borderlessFilePointer
+                // Excluded above.
+                MessageAttachment.Flag.NONE -> throw NotImplementedError()
               },
               wasDownloaded = someBoolean()
             )

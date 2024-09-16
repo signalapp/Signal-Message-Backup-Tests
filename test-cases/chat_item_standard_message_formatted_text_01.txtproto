@@ -183,7 +183,35 @@ Frame {
         body = "0123456789"
         bodyRanges = [
           BodyRange {
-            length = 1
+            length = 2
+            mentionAci = <000a11ce000040008000000000000001>
+            start = 6
+          }
+        ]
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 4
+    chatId = 3
+    dateSent = 1910611834861
+    incoming = IncomingMessageDetails {
+      dateReceived = 1893384744453
+      dateServerSent = 1661654979889
+    }
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "0123456789"
+        bodyRanges = [
+          BodyRange {
+            length = 10
+            style = Style.ITALIC
+          },
+          BodyRange {
+            length = 10
             mentionAci = <000a11ce000040008000000000000001>
           }
         ]

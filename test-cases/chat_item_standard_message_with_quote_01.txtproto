@@ -139,7 +139,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577839
+    dateSent = 1804284278907
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826270
       dateServerSent = 1794124103202
@@ -157,12 +157,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1754822320310
+          sentTimestamp = 1837514303870
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "pdiJZ"
+        body = "IJqySkLQGERt"
       }
     }
   }

@@ -116,7 +116,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577838
+    dateSent = 1798056002713
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826269
       dateServerSent = 1794124103201
@@ -129,10 +129,10 @@ Frame {
           flag = Flag.VOICE_MESSAGE
           pointer = FilePointer {
             backupLocator = BackupLocator {
-              digest = <346a5ff97c318292bd6e73ff9022c6fa>
-              key = <59633d69d55d99f6f871f8839a9ce2d8>
-              mediaName = "346a5ff97c318292bd6e73ff9022c6fa"
-              size = 761879400
+              digest = <8bffbb6878d9cd54434bca72346a5ff9>
+              key = <bd6e73ff9022c6fa6faebb1559633d69>
+              mediaName = "8bffbb6878d9cd54434bca72346a5ff9"
+              size = 1107048700
             }
             contentType = "audio/mp3"
           }

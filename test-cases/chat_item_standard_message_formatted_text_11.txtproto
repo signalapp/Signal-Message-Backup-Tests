@@ -191,27 +191,64 @@ Frame {
         body = "0123456789"
         bodyRanges = [
           BodyRange {
-            length = 5
-            mentionAci = <00000b0b000040008000000000000001>
+            length = 2
+            start = 2
+            style = Style.SPOILER
           },
+          BodyRange {
+            length = 2
+            start = 6
+            style = Style.STRIKETHROUGH
+          },
+          BodyRange {
+            length = 2
+            start = 6
+            style = Style.MONOSPACE
+          },
+          BodyRange {
+            length = 2
+            mentionAci = <000a11ce000040008000000000000001>
+            start = 6
+          },
+          BodyRange {
+            length = 2
+            mentionAci = <00000b0b000040008000000000000001>
+            start = 8
+          }
+        ]
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 3
+    dateSent = 1910611834871
+    outgoing = OutgoingMessageDetails {
+      sendStatus = [
+        SendStatus {
+          recipientId = 4
+          skipped = Skipped {}
+        },
+        SendStatus {
+          recipientId = 5
+          skipped = Skipped {}
+        }
+      ]
+    }
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "0123456789"
+        bodyRanges = [
           BodyRange {
             length = 10
-            style = Style.NONE
-          },
-          BodyRange {
-            length = 5
-            start = 1
-            style = Style.BOLD
-          },
-          BodyRange {
-            length = 7
-            start = 2
             style = Style.ITALIC
           },
           BodyRange {
-            length = 3
-            start = 3
-            style = Style.SPOILER
+            length = 10
+            mentionAci = <000a11ce000040008000000000000001>
           }
         ]
       }

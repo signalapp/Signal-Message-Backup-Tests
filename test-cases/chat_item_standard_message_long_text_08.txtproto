@@ -127,29 +127,29 @@ Frame {
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
-        blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-        caption = "qnlQb"
-        contentType = "image/gif"
-        fileName = "mkOGiGqMxxp"
-        height = 3428
-        invalidAttachmentLocator = InvalidAttachmentLocator {}
-        width = 21
+        backupLocator = BackupLocator {
+          digest = <8a72bebb4db939e0342ae035ddbe7fe4>
+          key = <d9345fdc5ab1cf72b00738e125ef7370>
+          mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
+          size = 891929939
+        }
+        contentType = "text/x-signal-plain"
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1831980309922
+          sentTimestamp = 1893972547781
         },
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1831980309923
-          sortOrder = 1877305478784
+          sentTimestamp = 1893972547782
+          sortOrder = 1740018814157
         }
       ]
       text = Text {
-        body = "YWfDTgpIJ"
+        body = "pdiJZ"
       }
     }
   }

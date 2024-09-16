@@ -130,29 +130,20 @@ Frame {
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
-        attachmentLocator = AttachmentLocator {
-          cdnKey = "zWWFqaczw"
-          cdnNumber = 3
-          digest = <c00259c7264eb5417dfb20d9de3b2c34>
-          key = <f1199c78f4a921363af79e298cfcf249>
-          size = 1788482179
-          uploadTimestamp = 1781666258121
-        }
-        caption = "nzTZMnGMNa"
-        contentType = "image/png"
-        height = 983
-        width = 1577
+        contentType = "text/x-signal-plain"
+        fileName = "mkOGiGqMxxp"
+        invalidAttachmentLocator = InvalidAttachmentLocator {}
       }
       reactions = [
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1831980309921
+          sentTimestamp = 1893972547780
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "pdiJZ"
+        body = "YWfDTgpIJ"
       }
     }
   }

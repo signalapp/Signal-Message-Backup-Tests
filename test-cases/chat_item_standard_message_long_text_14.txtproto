@@ -131,30 +131,30 @@ Frame {
       longText = FilePointer {
         attachmentLocator = AttachmentLocator {
           cdnKey = "zWWFqaczw"
-          digest = <88e3f24a21a78511518391fbc5b26db6>
-          key = <4b91d8690f4d11d0201e77f9ba1caec8>
-          size = 1632210473
+          cdnNumber = 3
+          digest = <c00259c7264eb5417dfb20d9de3b2c34>
+          key = <f1199c78f4a921363af79e298cfcf249>
+          size = 1788482179
+          uploadTimestamp = 1781666258121
         }
-        blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-        contentType = "video/mp4"
-        fileName = "mkOGiGqMxxp"
+        contentType = "text/x-signal-plain"
       }
       reactions = [
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1831980309923
-          sortOrder = 1877305478784
+          sentTimestamp = 1893972547782
+          sortOrder = 1740018814157
         },
         Reaction {
           authorId = 1
           emoji = "👩‍💻"
-          sentTimestamp = 1831980309924
-          sortOrder = 1817711302260
+          sentTimestamp = 1893972547783
+          sortOrder = 1895605000767
         }
       ]
       text = Text {
-        body = "YWfDTgpIJ"
+        body = "pdiJZ"
       }
     }
   }

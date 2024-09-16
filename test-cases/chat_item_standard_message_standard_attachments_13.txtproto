@@ -190,7 +190,7 @@ Frame {
         }
       ]
       text = Text {
-        body = ""
+        body = "pdiJZ"
       }
     }
   }
