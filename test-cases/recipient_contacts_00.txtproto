@@ -92,11 +92,11 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <88d9eec83bef469db111daaf5d87ff09>
+      aci = <88d9eec83bef469d8111daaf5d87ff09>
       blocked = true
       e164 = 33639982820
       hideStory = true
-      pni = <f2c8f6640c62ef2f806929719cb0c468>
+      pni = <f2c8f6640c624f2f806929719cb0c468>
       profileSharing = true
       registered = Registered {}
       visibility = Visibility.VISIBLE
