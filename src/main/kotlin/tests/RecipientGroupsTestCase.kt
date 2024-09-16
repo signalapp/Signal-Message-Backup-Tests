@@ -68,7 +68,9 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
                 members + Group.Member(
                   userId = StandardFrames.SELF_ACI.toByteString(),
                   role = Group.Member.Role.DEFAULT,
-                  profileKey = StandardFrames.SELF_PROFILE_KEY.toByteString()
+                  // Backups have no references to our ACI so Desktop can't fill
+                  // this back in.
+                  profileKey = ByteArray(32) { 0 }.toByteString()
                 )
               }.let { some(it) },
               membersPendingProfileKey = Generators.permutation<Group.MemberPendingProfileKey> {
