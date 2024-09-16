@@ -1,9 +1,13 @@
 package tests
 
+import Generators
 import PermutationScope
 import TestCase
 import asList
+import nullable
+import okio.ByteString.Companion.toByteString
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import toByteArray
 
 /**
  * Incoming/outgoing messages with standard attachments (i.e. no flags, meaning no voice notes, etc.).
@@ -43,7 +47,8 @@ object ChatItemStandardMessageStandardAttachmentsTestCase : TestCase("chat_item_
             frames += MessageAttachment(
               pointer = some(Generators.filePointer()),
               flag = MessageAttachment.Flag.NONE,
-              wasDownloaded = someBoolean()
+              wasDownloaded = someBoolean(),
+              clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()
             )
           }.asList(1, 3, 5).let { some(it) },
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))

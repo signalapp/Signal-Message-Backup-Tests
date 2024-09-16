@@ -144,6 +144,7 @@ Frame {
           wasDownloaded = true
         },
         MessageAttachment {
+          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
           flag = Flag.NONE
           pointer = FilePointer {
             attachmentLocator = AttachmentLocator {
@@ -187,8 +188,8 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "👩‍💻"
-          sentTimestamp = 1744320599097
-          sortOrder = 1877653162635
+          sentTimestamp = 1829195743905
+          sortOrder = 1816975231491
         }
       ]
       text = Text {

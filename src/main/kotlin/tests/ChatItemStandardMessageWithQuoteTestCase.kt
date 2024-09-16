@@ -48,6 +48,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
           emoji = "👍",
           data_ = FilePointer(
             contentType = "image/webp",
+            // If we update to have a sticker with a valid attachment, the quote
+            // below should be updated to include a valid thumbnail attachment.
             invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator()
           )
         )
@@ -97,27 +99,35 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
           quote = Quote(
             targetSentTimestamp = targetDateSent,
             authorId = StandardFrames.recipientAlice.recipient.id,
-            text = if (targetMessage.chatItem?.standardMessage?.text?.body != null) {
+            text = if (targetMessage.chatItem!!.standardMessage != null) {
               Text(
-                body = targetMessage.chatItem.standardMessage.text.body,
-                bodyRanges = if (targetMessage.chatItem?.standardMessage?.text?.bodyRanges != null) {
-                  targetMessage.chatItem.standardMessage.text.bodyRanges
-                } else {
-                  emptyList()
-                }
+                body = targetMessage.chatItem.standardMessage!!.text!!.body,
+                bodyRanges = targetMessage.chatItem.standardMessage!!.text!!.bodyRanges
               )
-            } else if (targetMessage.chatItem?.contactMessage != null) {
-              var name = targetMessage.chatItem.contactMessage.contact[0].name
+            } else if (targetMessage.chatItem!!.contactMessage != null) {
+              val name = targetMessage.chatItem.contactMessage!!.contact[0].name
               Text(
                 body = "${name!!.givenName} ${name!!.familyName}"
               )
             } else {
               null
             },
-            type = if (targetMessage.chatItem?.giftBadge != null) {
+            type = if (targetMessage.chatItem!!.giftBadge != null) {
               Quote.Type.GIFTBADGE
             } else {
               Quote.Type.NORMAL
+            },
+            attachments = if (targetMessage.chatItem!!.stickerMessage != null) {
+              // The sole sticker message test case has an invalid attachment,
+              // so we wouldn't have a proper thumbnail attachment here.
+              listOf(
+                Quote.QuotedAttachment(
+                  contentType = "image/png",
+                  fileName = null
+                )
+              )
+            } else {
+              emptyList()
             }
           ),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))

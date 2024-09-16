@@ -128,6 +128,7 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
+          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
@@ -153,6 +154,7 @@ Frame {
           wasDownloaded = true
         },
         MessageAttachment {
+          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
@@ -195,6 +197,7 @@ Frame {
           wasDownloaded = true
         },
         MessageAttachment {
+          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
@@ -217,13 +220,13 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1744320599093
+          sentTimestamp = 1829195743901
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1744320599094
+          sentTimestamp = 1829195743902
           sortOrder = 2
         }
       ]

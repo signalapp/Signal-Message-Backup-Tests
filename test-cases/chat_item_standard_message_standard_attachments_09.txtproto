@@ -131,6 +131,7 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
+          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {

@@ -131,6 +131,7 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
+          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
           flag = Flag.NONE
           pointer = FilePointer {
             attachmentLocator = AttachmentLocator {
@@ -170,6 +171,7 @@ Frame {
           wasDownloaded = true
         },
         MessageAttachment {
+          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
@@ -186,7 +188,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1744320599095
+          sentTimestamp = 1829195743903
         }
       ]
       text = Text {

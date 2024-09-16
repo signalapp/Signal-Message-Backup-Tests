@@ -151,6 +151,11 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
+        attachments = [
+          QuotedAttachment {
+            contentType = "image/png"
+          }
+        ]
         authorId = 4
         targetSentTimestamp = 1
         type = Type.NORMAL
