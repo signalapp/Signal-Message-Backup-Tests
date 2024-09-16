@@ -229,7 +229,9 @@ object StandardFrames {
             Group.Member(
               userId = SELF_ACI.toByteString(),
               role = Group.Member.Role.ADMINISTRATOR,
-              profileKey = recipientAlice.recipient!!.contact!!.profileKey!!
+              // Backups have no references to our ACI so Desktop can't fill
+              // this back in.
+              profileKey = ByteArray(32) { 0 }.toByteString()
             ),
             Group.Member(
               userId = recipientAlice.recipient!!.contact!!.aci!!,
