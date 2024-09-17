@@ -78,19 +78,6 @@ Frame {
 
 Frame {
   recipient = Recipient {
-    distributionList = DistributionListItem {
-      distributionId = <00000000000000000000000000000000>
-      distributionList = DistributionList {
-        name = "My Story"
-        privacyMode = PrivacyMode.ALL
-      }
-    }
-    id = 3
-  }
-}
-
-Frame {
-  recipient = Recipient {
     contact = Contact {
       aci = <000a11ce000040008000000000000001>
       e164 = 16105550101
@@ -140,15 +127,29 @@ Frame {
 Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
-      distributionId = <72298758a63c45fc8720a157e24129e4>
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        allowReplies = true
+        name = "EtjaXtfWb"
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 7
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <4918c8d4170946868d1955d4fa82c95b>
       distributionList = DistributionList {
         memberRecipientIds = [
           4
         ]
-        name = "SvJcbzGYSDTsX"
-        privacyMode = PrivacyMode.ALL_EXCEPT
+        name = "NEWGrAzrH"
+        privacyMode = PrivacyMode.ONLY_WITH
       }
     }
-    id = 7
+    id = 8
   }
 }

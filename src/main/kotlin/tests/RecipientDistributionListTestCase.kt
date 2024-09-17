@@ -18,7 +18,7 @@ import toByteArray
 object RecipientDistributionListTestCase : TestCase("recipient_distribution_list") {
 
   override fun PermutationScope.execute() {
-    frames += StandardFrames.MANDATORY_FRAMES
+    frames += StandardFrames.MANDATORY_FRAMES_WITHOUT_MY_STORY
 
     frames += StandardFrames.recipientAlice
     frames += StandardFrames.recipientBob
@@ -30,23 +30,47 @@ object RecipientDistributionListTestCase : TestCase("recipient_distribution_list
       StandardFrames.recipientCarol
     ).map { it.recipient!!.id }
 
+    val myStoryGenerator = Generators.permutation<DistributionList> {
+      val privacyModeGenerator = Generators.enum(DistributionList.PrivacyMode::class.java, excluding = DistributionList.PrivacyMode.UNKNOWN)
+      val memberRecipientIdGenerator = Generators.list(memberIds).asList(0, 1, 2, 3)
+
+      val privacyMode = some(privacyModeGenerator)
+      val memberRecipientIds = some(memberRecipientIdGenerator)
+
+      frames += DistributionList(
+        name = someNonEmptyString(),
+        allowReplies = someBoolean(),
+        memberRecipientIds = if (privacyMode == DistributionList.PrivacyMode.ALL) {
+          emptyList()
+        } else {
+          memberRecipientIds
+        },
+        privacyMode = privacyMode
+      )
+    }
+
+    frames += Frame(
+      recipient = Recipient(
+        id = 7,
+        distributionList = DistributionListItem(
+          distributionId = StandardFrames.MY_STORY_UUID,
+          distributionList = some(myStoryGenerator)
+        )
+      )
+    )
+
     val (deletionTimestampGenerator, distributionListGenerator) = oneOf(
       Generators.single(someIncrementingTimestamp()),
       Generators.permutation {
-        val privacyModeGenerator = Generators.enum(DistributionList.PrivacyMode::class.java, excluding = DistributionList.PrivacyMode.UNKNOWN)
         val memberRecipientIdGenerator = Generators.list(memberIds).asList(0, 1, 2, 3)
 
-        val privacyMode = some(privacyModeGenerator)
+        val privacyMode = DistributionList.PrivacyMode.ONLY_WITH
         val memberRecipientIds = some(memberRecipientIdGenerator)
 
         frames += DistributionList(
           name = someNonEmptyString(),
           allowReplies = someBoolean(),
-          memberRecipientIds = if (privacyMode == DistributionList.PrivacyMode.ALL) {
-            emptyList()
-          } else {
-            memberRecipientIds
-          },
+          memberRecipientIds = memberRecipientIds,
           privacyMode = privacyMode
         )
       }
@@ -54,7 +78,7 @@ object RecipientDistributionListTestCase : TestCase("recipient_distribution_list
 
     frames += Frame(
       recipient = Recipient(
-        id = 7,
+        id = 8,
         distributionList = DistributionListItem(
           distributionId = someUuid().toByteArray().toByteString(),
           deletionTimestamp = someOneOf(deletionTimestampGenerator),

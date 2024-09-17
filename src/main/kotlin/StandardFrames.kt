@@ -1,5 +1,6 @@
 @file:OptIn(ExperimentalStdlibApi::class)
 
+import okio.ByteString
 import okio.ByteString.Companion.toByteString
 import org.thoughtcrime.securesms.backup.v2.proto.*
 import java.util.*
@@ -9,7 +10,7 @@ import java.util.*
  * Helpful when you need an arbitrary recipient, chat, etc.
  */
 object StandardFrames {
-  private val MY_STORY_UUID: UUID = UUID.fromString("00000000-0000-0000-0000-000000000000")
+  val MY_STORY_UUID: ByteString = UUID.fromString("00000000-0000-0000-0000-000000000000").toByteArray().toByteString()
   val SELF_PROFILE_KEY: ByteArray = base64Decode("YQKRq+3DQklInaOaMcmlzZnN0m/1hzLiaONX7gB12dg=")
 
   val SELF_ACI: ByteArray = UUID.fromString("00000000-0000-4000-8000-000000000001").toByteArray()
@@ -38,7 +39,7 @@ object StandardFrames {
     recipient = Recipient(
       id = 3,
       distributionList = DistributionListItem(
-        distributionId = MY_STORY_UUID.toByteArray().toByteString(),
+        distributionId = MY_STORY_UUID,
         distributionList = DistributionList(
           name = "My Story",
           privacyMode = DistributionList.PrivacyMode.ALL
@@ -106,11 +107,14 @@ object StandardFrames {
     )
   )
 
-  val MANDATORY_FRAMES = listOf(
+  val MANDATORY_FRAMES_WITHOUT_MY_STORY = listOf(
     backupInfo,
     accountData,
     recipientSelf,
-    recipientReleaseNotes,
+    recipientReleaseNotes
+  )
+
+  val MANDATORY_FRAMES = MANDATORY_FRAMES_WITHOUT_MY_STORY + listOf(
     recipientMyStory
   )
 
