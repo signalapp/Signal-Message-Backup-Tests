@@ -108,6 +108,7 @@ Frame {
 Frame {
   chat = Chat {
     expirationTimerMs = 145232483000
+    expireTimerVersion = 381622415
     id = 3
     muteUntilMs = 1864331637697
     pinnedOrder = 1

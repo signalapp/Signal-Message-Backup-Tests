@@ -11,7 +11,6 @@ import java.util.*
  */
 object StandardFrames {
   val MY_STORY_UUID: ByteString = UUID.fromString("00000000-0000-0000-0000-000000000000").toByteArray().toByteString()
-  val SELF_PROFILE_KEY: ByteArray = base64Decode("YQKRq+3DQklInaOaMcmlzZnN0m/1hzLiaONX7gB12dg=")
 
   val SELF_ACI: ByteArray = UUID.fromString("00000000-0000-4000-8000-000000000001").toByteArray()
   val SELF_PNI: ByteArray = UUID.fromString("00000000-0000-4000-8000-000000000002").toByteArray()
@@ -50,7 +49,7 @@ object StandardFrames {
 
   val accountData = Frame(
     account = AccountData(
-      profileKey = SELF_PROFILE_KEY.toByteString(),
+      profileKey = base64Decode("YQKRq+3DQklInaOaMcmlzZnN0m/1hzLiaONX7gB12dg=").toByteString(),
       username = "boba_fett.66",
       usernameLink = AccountData.UsernameLink(
         entropy = base64Decode("ZWdcc9AOsBAF47t8SkfylstlVPeJgSOIFekV2CT9LpM=").toByteString(),
@@ -232,20 +231,15 @@ object StandardFrames {
           members = listOf(
             Group.Member(
               userId = SELF_ACI.toByteString(),
-              role = Group.Member.Role.ADMINISTRATOR,
-              // Backups have no references to our ACI so Desktop can't fill
-              // this back in.
-              profileKey = ByteArray(32) { 0 }.toByteString()
+              role = Group.Member.Role.ADMINISTRATOR
             ),
             Group.Member(
               userId = recipientAlice.recipient!!.contact!!.aci!!,
-              role = Group.Member.Role.DEFAULT,
-              profileKey = recipientAlice.recipient!!.contact!!.profileKey!!
+              role = Group.Member.Role.DEFAULT
             ),
             Group.Member(
               userId = recipientBob.recipient!!.contact!!.aci!!,
-              role = Group.Member.Role.DEFAULT,
-              profileKey = recipientBob.recipient!!.contact!!.profileKey!!
+              role = Group.Member.Role.DEFAULT
             )
           ),
           accessControl = Group.AccessControl(

@@ -61,16 +61,12 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
                 val user = some(userGenerator)
                 frames += Group.Member(
                   userId = user.aci!!,
-                  role = someEnum(Group.Member.Role::class.java, excluding = Group.Member.Role.UNKNOWN),
-                  profileKey = user.profileKey!!
+                  role = someEnum(Group.Member.Role::class.java, excluding = Group.Member.Role.UNKNOWN)
                 )
               }.asList(1, 2, 3).map { members ->
                 members + Group.Member(
                   userId = StandardFrames.SELF_ACI.toByteString(),
-                  role = Group.Member.Role.DEFAULT,
-                  // Backups have no references to our ACI so Desktop can't fill
-                  // this back in.
-                  profileKey = ByteArray(32) { 0 }.toByteString()
+                  role = Group.Member.Role.DEFAULT
                 )
               }.let { some(it) },
               membersPendingProfileKey = Generators.permutation<Group.MemberPendingProfileKey> {
@@ -86,7 +82,6 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
               membersPendingAdminApproval = Generators.permutation<Group.MemberPendingAdminApproval> {
                 frames += Group.MemberPendingAdminApproval(
                   userId = StandardFrames.recipientEve.recipient!!.contact!!.aci!!,
-                  profileKey = StandardFrames.recipientEve.recipient!!.contact!!.profileKey!!,
                   timestamp = someIncrementingTimestamp()
                 )
               }.asList(0, 1).let { some(it) },

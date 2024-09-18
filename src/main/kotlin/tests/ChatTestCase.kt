@@ -50,7 +50,8 @@ object ChatTestCase : TestCase("chat") {
             customColorId = someOneOf(bubbleCustomGenerator),
             dimWallpaperInDarkMode = someBoolean()
           )
-        }
+        },
+        expireTimerVersion = someExpirationTimerVersion()
       )
     )
   }

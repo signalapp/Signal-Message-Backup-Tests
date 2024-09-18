@@ -205,24 +205,20 @@ Frame {
         inviteLinkPassword = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a5>
         members = [
           Member {
-            profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
             role = Role.ADMINISTRATOR
             userId = <00000b0b000040008000000000000001>
           },
           Member {
-            profileKey = <0820820820820820820820820820820820820820820820820820820820820820>
             role = Role.DEFAULT
             userId = <0000ca01000040008000000000000001>
           },
           Member {
-            profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }
         ]
         membersPendingAdminApproval = [
           MemberPendingAdminApproval {
-            profileKey = <1041041041041041041041041041041041041041041041041041041041041041>
             timestamp = 1889758719954
             userId = <000000ee000040008000000000000001>
           }
@@ -231,7 +227,6 @@ Frame {
           MemberPendingProfileKey {
             addedByUserId = <000a11ce000040008000000000000001>
             member = Member {
-              profileKey = <>
               role = Role.DEFAULT
               userId = <000000da000040008000000000000001>
             }

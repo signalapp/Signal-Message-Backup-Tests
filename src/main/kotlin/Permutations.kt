@@ -158,6 +158,12 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
 
   fun someExpirationTimerMs(): Long = some(Generators.expirationTimersMs())
 
+  /**
+   * Expiration timer versions can be any positive Int. (In some special cases
+   * they can be 0 as well, but positive Int is always legal.)
+   */
+  fun someExpirationTimerVersion(): Int = some(Generators.ints(lower = 1, upper = Int.MAX_VALUE))
+
   fun someE164(): Long = some(Generators.e164s())
 
   fun someUuid(): UUID = some(Generators.uuids())

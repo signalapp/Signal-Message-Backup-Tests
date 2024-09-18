@@ -204,12 +204,10 @@ Frame {
         inviteLinkPassword = <97130bcd791cedfafc0e29956dc1e0cd18b0df35d2dda82a4ffea322fd2aa72b>
         members = [
           Member {
-            profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
             role = Role.DEFAULT
             userId = <000a11ce000040008000000000000001>
           },
           Member {
-            profileKey = <0000000000000000000000000000000000000000000000000000000000000000>
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }

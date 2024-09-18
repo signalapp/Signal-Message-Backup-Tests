@@ -110,6 +110,7 @@ Frame {
     archived = true
     dontNotifyForMentionsIfMuted = true
     expirationTimerMs = 145232483000
+    expireTimerVersion = 381622415
     id = 3
     markedUnread = true
     muteUntilMs = 1864331637697

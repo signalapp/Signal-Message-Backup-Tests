@@ -191,8 +191,8 @@ message Group {
 
     bytes userId = 1;
     Role role = 2;
-    bytes profileKey = 3;
-    reserved /*presentation*/ 4; // The field is deprecated in the context of static group state
+    reserved /*profileKey*/ 3; // This field is ignored in Backups, in favor of Contact frames for members
+    reserved /*presentation*/ 4; // This field is deprecated in the context of static group state
     uint32 joinedAtVersion = 5;
   }
 
@@ -204,8 +204,8 @@ message Group {
 
   message MemberPendingAdminApproval {
     bytes userId = 1;
-    bytes profileKey = 2;
-    reserved /*presentation*/ 3; // The field is deprecated in the context of static group state
+    reserved /*profileKey*/ 2; // This field is ignored in Backups, in favor of Contact frames for members
+    reserved /*presentation*/ 3; // This field is deprecated in the context of static group state
     uint64 timestamp = 4;
   }
 
@@ -243,6 +243,7 @@ message Chat {
   bool markedUnread = 7;
   bool dontNotifyForMentionsIfMuted = 8;
   ChatStyle style = 9;
+  uint32 expireTimerVersion = 10;
 }
 
 /**
@@ -433,14 +434,14 @@ message PaymentNotification {
       Status status = 1;
 
       // This identification is used to map the payment table to the ledger
-      // and is likely required otherwise we may have issues reconciling with
+      // and is likely required otherwise we may have issues reconciling with 
       // the ledger
       MobileCoinTxoIdentification mobileCoinIdentification = 2;
       optional uint64 timestamp = 3;
       optional uint64 blockIndex = 4;
       optional uint64 blockTimestamp = 5;
-      optional bytes transaction = 6; // mobile coin blobs
-      optional bytes receipt = 7; // mobile coin blobs
+      optional bytes transaction = 6; // mobile coin blobs 
+      optional bytes receipt = 7; // mobile coin blobs 
     }
 
     oneof payment {
@@ -448,12 +449,12 @@ message PaymentNotification {
       FailedTransaction failedTransaction = 2;
     }
   }
-
+  
   optional string amountMob = 1; // stored as a decimal string, e.g. 1.00001
   optional string feeMob = 2; // stored as a decimal string, e.g. 1.00001
   optional string note = 3;
   TransactionDetails transactionDetails = 4;
-
+  
 }
 
 message GiftBadge {
@@ -611,7 +612,7 @@ message FilePointer {
   }
 
   // References attachments that are invalid in such a way where download
-  // cannot be attempted. Could range from missing digests to missing
+  // cannot be attempted. Could range from missing digests to missing 
   // CDN keys or anything else that makes download attempts impossible.
   // This serves as a 'tombstone' so that the UX can show that an attachment
   // did exist, but for whatever reason it's not retrievable.
@@ -1066,7 +1067,7 @@ message StickerPack {
 message ChatStyle {
   message Gradient {
     uint32 angle = 1; // degrees
-    repeated fixed32 colors = 2;
+    repeated fixed32 colors = 2; // 0xAARRGGBB
     repeated float positions = 3; // percent from 0 to 1
   }
 
@@ -1074,7 +1075,7 @@ message ChatStyle {
     uint64 id = 1;
 
     oneof color {
-      fixed32 solid = 2;
+      fixed32 solid = 2; // 0xAARRGGBB
       Gradient gradient = 3;
     }
   }
@@ -1135,6 +1136,8 @@ message ChatStyle {
 
   oneof wallpaper {
     WallpaperPreset wallpaperPreset = 1;
+    // This `FilePointer` is expected not to contain a `fileName`, `width`,
+    // `height`, or `caption`.
     FilePointer wallpaperPhoto = 2;
   }
 
