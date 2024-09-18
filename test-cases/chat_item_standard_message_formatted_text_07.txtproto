@@ -161,6 +161,7 @@ Frame {
 
 Frame {
   chat = Chat {
+    expireTimerVersion = 1
     id = 3
     recipientId = 10
   }

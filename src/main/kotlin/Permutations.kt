@@ -159,8 +159,10 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
   fun someExpirationTimerMs(): Long = some(Generators.expirationTimersMs())
 
   /**
-   * Expiration timer versions can be any positive Int. (In some special cases
-   * they can be 0 as well, but positive Int is always legal.)
+   * Expiration timer versions can be any positive Int. (Negative values are
+   * never used, and 0 is reserved as a default value for legacy clients who
+   * are unaware of this field in any protos; no client capable of Backups
+   * will ever use a value of 0.)
    */
   fun someExpirationTimerVersion(): Int = some(Generators.ints(lower = 1, upper = Int.MAX_VALUE))
 

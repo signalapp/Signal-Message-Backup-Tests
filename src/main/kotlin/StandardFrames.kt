@@ -120,7 +120,8 @@ object StandardFrames {
   val chatSelf = Frame(
     chat = Chat(
       id = 1,
-      recipientId = recipientSelf.recipient!!.id
+      recipientId = recipientSelf.recipient!!.id,
+      expireTimerVersion = 1
     )
   )
 
@@ -267,14 +268,16 @@ object StandardFrames {
   val chatAlice = Frame(
     chat = Chat(
       id = 2,
-      recipientId = recipientAlice.recipient!!.id
+      recipientId = recipientAlice.recipient!!.id,
+      expireTimerVersion = 1
     )
   )
 
   val chatGroupAB = Frame(
     chat = Chat(
       id = 3,
-      recipientId = recipientGroupAB.recipient!!.id
+      recipientId = recipientGroupAB.recipient!!.id,
+      expireTimerVersion = 1
     )
   )
 }
