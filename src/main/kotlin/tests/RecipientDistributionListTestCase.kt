@@ -38,7 +38,9 @@ object RecipientDistributionListTestCase : TestCase("recipient_distribution_list
       val memberRecipientIds = some(memberRecipientIdGenerator)
 
       frames += DistributionList(
-        name = someNonEmptyString(),
+        // Empty name specifically for My Story, which has a localized name
+        // built into clients.
+        name = "",
         allowReplies = someBoolean(),
         memberRecipientIds = if (privacyMode == DistributionList.PrivacyMode.ALL) {
           emptyList()

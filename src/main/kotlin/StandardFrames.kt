@@ -40,7 +40,7 @@ object StandardFrames {
       distributionList = DistributionListItem(
         distributionId = MY_STORY_UUID,
         distributionList = DistributionList(
-          name = "My Story",
+          name = "",
           privacyMode = DistributionList.PrivacyMode.ALL
         )
       )

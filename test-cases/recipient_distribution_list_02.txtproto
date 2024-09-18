@@ -130,7 +130,7 @@ Frame {
       distributionId = <00000000000000000000000000000000>
       distributionList = DistributionList {
         allowReplies = true
-        name = "EtjaXtfWb"
+        name = ""
         privacyMode = PrivacyMode.ALL
       }
     }
@@ -141,13 +141,13 @@ Frame {
 Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
-      distributionId = <cde0c16d35df40188aa8ddd222a3fe4f>
+      distributionId = <25fbffb43e95495887b97a24e56ab547>
       distributionList = DistributionList {
         memberRecipientIds = [
           5,
           6
         ]
-        name = "ySkLQGERtwS"
+        name = "SvJcbzGYSDTsX"
         privacyMode = PrivacyMode.ONLY_WITH
       }
     }

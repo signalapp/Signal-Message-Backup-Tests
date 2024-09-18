@@ -77,7 +77,7 @@ Frame {
     distributionList = DistributionListItem {
       distributionId = <00000000000000000000000000000000>
       distributionList = DistributionList {
-        name = "My Story"
+        name = ""
         privacyMode = PrivacyMode.ALL
       }
     }

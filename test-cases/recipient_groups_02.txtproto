@@ -81,7 +81,7 @@ Frame {
     distributionList = DistributionListItem {
       distributionId = <00000000000000000000000000000000>
       distributionList = DistributionList {
-        name = "My Story"
+        name = ""
         privacyMode = PrivacyMode.ALL
       }
     }
@@ -189,7 +189,7 @@ Frame {
   recipient = Recipient {
     group = Group {
       hideStory = true
-      masterKey = <2cc2b48c50aefe53b3974ed91e6b4ea924f9baa8e77bcc2f537f0b02efe86030>
+      masterKey = <8779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -197,14 +197,14 @@ Frame {
           members = AccessRequired.MEMBER
         }
         announcements_only = true
-        avatarUrl = "https://example.com/uuuEFCmCqQN"
+        avatarUrl = "https://example.com/LQGERtwSQuECQ"
         description = GroupAttributeBlob {
-          descriptionText = "EavlHx"
+          descriptionText = "nzNFkpZzmNnJ"
         }
         disappearingMessagesTimer = GroupAttributeBlob {
-          disappearingMessagesDuration = 705496382
+          disappearingMessagesDuration = 1124598742
         }
-        inviteLinkPassword = <2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1745e712b>
+        inviteLinkPassword = <27c362ea1d4aadc91b5463098f179c50eabc0dacb6f894ff2dcd51a027f66df3>
         members = [
           Member {
             role = Role.DEFAULT
@@ -224,13 +224,22 @@ Frame {
           }
         ]
         title = GroupAttributeBlob {
-          title = "ogYOzQSvJcbzGY"
+          title = "EtjaXtfWb"
         }
-        version = 1769244279
+        version = 963106989
       }
       storySendMode = StorySendMode.ENABLED
       whitelisted = true
     }
     id = 10
+  }
+}
+
+Frame {
+  chat = Chat {
+    expirationTimerMs = 1124598742000
+    expireTimerVersion = 1
+    id = 1
+    recipientId = 10
   }
 }

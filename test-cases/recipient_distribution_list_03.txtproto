@@ -133,7 +133,7 @@ Frame {
         memberRecipientIds = [
           4
         ]
-        name = "EtjaXtfWb"
+        name = ""
         privacyMode = PrivacyMode.ONLY_WITH
       }
     }
@@ -144,7 +144,7 @@ Frame {
 Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
-      distributionId = <cde0c16d35df40188aa8ddd222a3fe4f>
+      distributionId = <25fbffb43e95495887b97a24e56ab547>
       distributionList = DistributionList {
         allowReplies = true
         memberRecipientIds = [
@@ -152,7 +152,7 @@ Frame {
           5,
           6
         ]
-        name = "YWfDTgpIJ"
+        name = "jaXtfWbogYOz"
         privacyMode = PrivacyMode.ONLY_WITH
       }
     }

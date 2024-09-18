@@ -81,7 +81,7 @@ Frame {
     distributionList = DistributionListItem {
       distributionId = <00000000000000000000000000000000>
       distributionList = DistributionList {
-        name = "My Story"
+        name = ""
         privacyMode = PrivacyMode.ALL
       }
     }
@@ -188,21 +188,21 @@ Frame {
 Frame {
   recipient = Recipient {
     group = Group {
-      masterKey = <2cc2b48c50aefe53b3974ed91e6b4ea924f9baa8e77bcc2f537f0b02efe86030>
+      masterKey = <8779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
           attributes = AccessRequired.ADMINISTRATOR
           members = AccessRequired.ADMINISTRATOR
         }
-        avatarUrl = "https://example.com/LQGERtwSQuECQ"
+        avatarUrl = "https://example.com/ZOYWfDTgpIJqyS"
         description = GroupAttributeBlob {
-          descriptionText = "nzNFkpZzmNnJ"
+          descriptionText = "DTsXBkoGHkm"
         }
         disappearingMessagesTimer = GroupAttributeBlob {
-          disappearingMessagesDuration = 943323026
+          disappearingMessagesDuration = 330901086
         }
-        inviteLinkPassword = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a5>
+        inviteLinkPassword = <1bbf0e8674ca8dec9544987b380d208afecdc4c5701ad7ec4bf8a7f52384caa7>
         members = [
           Member {
             role = Role.ADMINISTRATOR
@@ -219,7 +219,6 @@ Frame {
         ]
         membersPendingAdminApproval = [
           MemberPendingAdminApproval {
-            timestamp = 1889758719954
             userId = <000000ee000040008000000000000001>
           }
         ]
@@ -230,22 +229,30 @@ Frame {
               role = Role.DEFAULT
               userId = <000000da000040008000000000000001>
             }
-            timestamp = 1727847481262
           }
         ]
         members_banned = [
           MemberBanned {
-            timestamp = 1776014913654
+            timestamp = 1717037855458
             userId = <000000fa000040008000000000000001>
           }
         ]
         title = GroupAttributeBlob {
-          title = "DTsXBkoGHkm"
+          title = "gYOzQSvJcbzGY"
         }
-        version = 1321978533
+        version = 1848613484
       }
       storySendMode = StorySendMode.DISABLED
     }
     id = 10
+  }
+}
+
+Frame {
+  chat = Chat {
+    expirationTimerMs = 330901086000
+    expireTimerVersion = 1
+    id = 1
+    recipientId = 10
   }
 }
