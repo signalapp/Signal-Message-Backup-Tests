@@ -133,14 +133,14 @@ Frame {
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1668034297681
-          sortOrder = 1784708167318
+          sentTimestamp = 1775172671567
+          sortOrder = 1890617579856
         },
         Reaction {
           authorId = 1
           emoji = "👩‍💻"
-          sentTimestamp = 1668034297682
-          sortOrder = 1899836917778
+          sentTimestamp = 1775172671568
+          sortOrder = 1876547590663
         }
       ]
       sticker = Sticker {
@@ -153,7 +153,6 @@ Frame {
             size = 228533420
             uploadTimestamp = 1866570650701
           }
-          caption = "GMNaiqnl"
           contentType = "image/png"
           height = 1838
           width = 2923

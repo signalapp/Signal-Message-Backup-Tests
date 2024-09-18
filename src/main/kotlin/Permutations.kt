@@ -403,14 +403,20 @@ object Generators {
     contentTypeGenerator = Generators.list("image/png")
   )
 
-  fun filePointer(
-    contentTypeGenerator: Generator<String> = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
-  ): Generator<FilePointer> = filePointerInternal(
+  fun stickerFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = true,
+    includeCaption = false,
+    includeBlurHash = false,
+    contentTypeGenerator = Generators.list("image/png", "image/apng", "image/webp")
+  )
+
+  fun bodyAttachmentFilePointer(): Generator<FilePointer> = filePointerInternal(
     includeFileName = true,
     includeMediaSize = true,
     includeCaption = true,
     includeBlurHash = true,
-    contentTypeGenerator = contentTypeGenerator
+    contentTypeGenerator = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
   )
 
   private fun filePointerInternal(

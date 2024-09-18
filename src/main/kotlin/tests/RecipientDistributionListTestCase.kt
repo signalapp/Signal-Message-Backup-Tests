@@ -32,7 +32,7 @@ object RecipientDistributionListTestCase : TestCase("recipient_distribution_list
 
     val myStoryGenerator = Generators.permutation<DistributionList> {
       val privacyModeGenerator = Generators.enum(DistributionList.PrivacyMode::class.java, excluding = DistributionList.PrivacyMode.UNKNOWN)
-      val memberRecipientIdGenerator = Generators.list(memberIds).asList(0, 1, 2, 3)
+      val memberRecipientIdGenerator = Generators.list(memberIds).asList(1, 2, 3)
 
       val privacyMode = some(privacyModeGenerator)
       val memberRecipientIds = some(memberRecipientIdGenerator)
@@ -62,7 +62,7 @@ object RecipientDistributionListTestCase : TestCase("recipient_distribution_list
     val (deletionTimestampGenerator, distributionListGenerator) = oneOf(
       Generators.single(someIncrementingTimestamp()),
       Generators.permutation {
-        val memberRecipientIdGenerator = Generators.list(memberIds).asList(0, 1, 2, 3)
+        val memberRecipientIdGenerator = Generators.list(memberIds).asList(1, 2, 3)
 
         val privacyMode = DistributionList.PrivacyMode.ONLY_WITH
         val memberRecipientIds = some(memberRecipientIdGenerator)

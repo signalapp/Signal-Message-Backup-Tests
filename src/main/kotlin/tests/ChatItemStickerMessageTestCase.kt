@@ -27,8 +27,6 @@ object ChatItemStickerMessageTestCase : TestCase("chat_item_sticker_message") {
     val incoming = some(incomingGenerator)
     val outgoing = some(outgoingGenerator)
 
-    val contentTypeGenerator = Generators.list("image/png", "image/apng", "image/webp")
-
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
@@ -46,7 +44,7 @@ object ChatItemStickerMessageTestCase : TestCase("chat_item_sticker_message") {
             packKey = someBytes(32).toByteString(),
             stickerId = someInt(1, 32),
             emoji = someEmoji(),
-            data_ = some(Generators.filePointer(contentTypeGenerator))
+            data_ = some(Generators.stickerFilePointer())
           ),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient!!))
         )

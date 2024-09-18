@@ -134,14 +134,12 @@ Frame {
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1668034297679
+          sentTimestamp = 1775172671565
           sortOrder = 2
         }
       ]
       sticker = Sticker {
         data_ = FilePointer {
-          blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-          caption = "bYTMdKV"
           contentType = "image/apng"
           fileName = "iGqMx"
           height = 3586

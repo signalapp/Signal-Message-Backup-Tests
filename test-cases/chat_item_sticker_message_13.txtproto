@@ -134,7 +134,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1668034297680
+          sentTimestamp = 1775172671566
         }
       ]
       sticker = Sticker {
@@ -147,8 +147,6 @@ Frame {
             size = 464606141
             uploadTimestamp = 1664616494583
           }
-          blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
-          caption = ""
           contentType = "image/webp"
           fileName = "pdcKiDzzeAEZOb"
           height = 39

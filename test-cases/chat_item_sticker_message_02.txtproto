@@ -131,13 +131,13 @@ Frame {
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1668034297679
+          sentTimestamp = 1775172671565
           sortOrder = 2
         },
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1668034297680
+          sentTimestamp = 1775172671566
         }
       ]
       sticker = Sticker {
@@ -151,8 +151,6 @@ Frame {
             transitCdnKey = "wSQuECQWuuuEFC"
             transitCdnNumber = 2
           }
-          blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-          caption = "GMNaiqnl"
           contentType = "image/webp"
           fileName = "pdcKiDzzeAEZOb"
           height = 1838

@@ -2,6 +2,7 @@ package tests
 
 import PermutationScope
 import TestCase
+import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.Contact
@@ -40,8 +41,8 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           notRegistered = someOneOf(notRegistered),
           profileKey = someNullableBytes(32)?.toByteString(),
           profileSharing = someBoolean(),
-          profileGivenName = someNullableString(),
-          profileFamilyName = someNullableString(),
+          profileGivenName = some(Generators.nonEmptyStrings().nullable()),
+          profileFamilyName = some(Generators.nonEmptyStrings().nullable()),
           hideStory = someBoolean()
         )
       )

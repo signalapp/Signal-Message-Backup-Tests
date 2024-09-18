@@ -45,7 +45,7 @@ object ChatItemStandardMessageStandardAttachmentsTestCase : TestCase("chat_item_
           },
           attachments = Generators.permutation<MessageAttachment> {
             frames += MessageAttachment(
-              pointer = some(Generators.filePointer()),
+              pointer = some(Generators.bodyAttachmentFilePointer()),
               flag = MessageAttachment.Flag.NONE,
               wasDownloaded = someBoolean(),
               clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()

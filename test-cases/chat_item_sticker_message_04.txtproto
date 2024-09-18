@@ -132,8 +132,8 @@ Frame {
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1668034297681
-          sortOrder = 1784708167318
+          sentTimestamp = 1775172671567
+          sortOrder = 1890617579856
         }
       ]
       sticker = Sticker {
@@ -144,7 +144,6 @@ Frame {
             key = <88cf6bfa88e3f24a21a78511518391fb>
             size = 1850075618
           }
-          blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/apng"
           fileName = "iGqMx"
         }

@@ -130,6 +130,9 @@ Frame {
       distributionId = <00000000000000000000000000000000>
       distributionList = DistributionList {
         allowReplies = true
+        memberRecipientIds = [
+          4
+        ]
         name = "EtjaXtfWb"
         privacyMode = PrivacyMode.ONLY_WITH
       }
@@ -141,8 +144,8 @@ Frame {
 Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
-      deletionTimestamp = 1828988507550
-      distributionId = <4918c8d4170946868d1955d4fa82c95b>
+      deletionTimestamp = 1727080952861
+      distributionId = <cde0c16d35df40188aa8ddd222a3fe4f>
     }
     id = 8
   }

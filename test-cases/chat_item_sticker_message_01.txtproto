@@ -127,7 +127,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1668034297678
+          sentTimestamp = 1775172671564
           sortOrder = 1
         }
       ]
@@ -141,8 +141,6 @@ Frame {
             size = 1343527527
             transitCdnKey = "SkLQGER"
           }
-          blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-          caption = ""
           contentType = "image/apng"
           fileName = "iGqMx"
           height = 39

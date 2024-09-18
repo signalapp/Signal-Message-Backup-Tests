@@ -131,13 +131,13 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "👎"
-          sentTimestamp = 1668034297680
+          sentTimestamp = 1775172671566
         },
         Reaction {
           authorId = 4
           emoji = "👍🏾"
-          sentTimestamp = 1668034297681
-          sortOrder = 1784708167318
+          sentTimestamp = 1775172671567
+          sortOrder = 1890617579856
         }
       ]
       sticker = Sticker {

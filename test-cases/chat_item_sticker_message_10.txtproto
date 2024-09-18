@@ -132,8 +132,8 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "👩‍💻"
-          sentTimestamp = 1668034297682
-          sortOrder = 1899836917778
+          sentTimestamp = 1775172671568
+          sortOrder = 1876547590663
         }
       ]
       sticker = Sticker {
@@ -147,8 +147,6 @@ Frame {
             transitCdnKey = "wSQuECQWuuuEFC"
             transitCdnNumber = 2
           }
-          blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-          caption = "GMNaiqnl"
           contentType = "image/webp"
           fileName = "pdcKiDzzeAEZOb"
           height = 1838
