@@ -576,19 +576,21 @@ object Generators {
   }
 
   fun reactions(maxReactions: Int, vararg authors: Recipient): Generator<List<Reaction>> {
-    return Generators.permutation<Reaction> {
-      frames += Reaction(
-        emoji = someEmoji(),
-        authorId = some(Generators.list(*authors.map { it.id }.toTypedArray())),
-        sentTimestamp = someIncrementingTimestamp(),
-        sortOrder = some(
-          Generators.merge(
-            Generators.list(1, 2),
-            Generators.timestamps()
+    return Generators.lists((0..maxReactions).toList()) {
+      Generators.permutation<Reaction> {
+        frames += Reaction(
+          emoji = someEmoji(),
+          authorId = some(Generators.list(authors.map { it.id })),
+          sentTimestamp = someIncrementingTimestamp(),
+          sortOrder = some(
+            Generators.merge(
+              Generators.list(1, 2),
+              Generators.timestamps()
+            )
           )
         )
-      )
-    }.asList(*(0..maxReactions).toList().toIntArray())
+      }
+    }
   }
 
   /**

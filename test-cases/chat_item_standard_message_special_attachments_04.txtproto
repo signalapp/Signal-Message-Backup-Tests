@@ -144,10 +144,10 @@ Frame {
       ]
       reactions = [
         Reaction {
-          authorId = 4
-          emoji = "👍🏾"
-          sentTimestamp = 1826383505458
-          sortOrder = 1778755589674
+          authorId = 1
+          emoji = "💀"
+          sentTimestamp = 1826383505455
+          sortOrder = 1
         }
       ]
     }

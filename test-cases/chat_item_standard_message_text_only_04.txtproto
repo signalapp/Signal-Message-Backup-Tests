@@ -130,10 +130,10 @@ Frame {
     standardMessage = StandardMessage {
       reactions = [
         Reaction {
-          authorId = 4
-          emoji = "👍🏾"
-          sentTimestamp = 1754822320313
-          sortOrder = 1762578225552
+          authorId = 1
+          emoji = "💀"
+          sentTimestamp = 1754822320310
+          sortOrder = 1
         }
       ]
       text = Text {

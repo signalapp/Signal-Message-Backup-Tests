@@ -145,9 +145,9 @@ Frame {
       reactions = [
         Reaction {
           authorId = 1
-          emoji = "👩‍💻"
-          sentTimestamp = 1826383505459
-          sortOrder = 1792508305913
+          emoji = "💀"
+          sentTimestamp = 1826383505455
+          sortOrder = 1
         }
       ]
     }

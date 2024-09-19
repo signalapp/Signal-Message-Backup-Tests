@@ -223,16 +223,16 @@ Frame {
       ]
       reactions = [
         Reaction {
-          authorId = 4
-          emoji = "👍🏾"
-          sentTimestamp = 1829195743904
-          sortOrder = 1813883921501
+          authorId = 1
+          emoji = "💀"
+          sentTimestamp = 1829195743901
+          sortOrder = 1
         },
         Reaction {
-          authorId = 1
-          emoji = "👩‍💻"
-          sentTimestamp = 1829195743905
-          sortOrder = 1816975231491
+          authorId = 4
+          emoji = "👍"
+          sentTimestamp = 1829195743902
+          sortOrder = 2
         }
       ]
       text = Text {

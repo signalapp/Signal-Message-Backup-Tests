@@ -132,10 +132,10 @@ Frame {
     stickerMessage = StickerMessage {
       reactions = [
         Reaction {
-          authorId = 4
-          emoji = "👍"
-          sentTimestamp = 1775172671565
-          sortOrder = 2
+          authorId = 1
+          emoji = "💀"
+          sentTimestamp = 1775172671564
+          sortOrder = 1
         }
       ]
       sticker = Sticker {

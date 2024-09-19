@@ -147,8 +147,9 @@ Frame {
       reactions = [
         Reaction {
           authorId = 1
-          emoji = "👎"
-          sentTimestamp = 1893972547781
+          emoji = "💀"
+          sentTimestamp = 1893972547779
+          sortOrder = 1
         }
       ]
       text = Text {
