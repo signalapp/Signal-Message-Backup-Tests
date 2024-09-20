@@ -355,13 +355,39 @@ object Generators {
     return ListGenerator(allItems)
   }
 
-  fun wallpaperFilePointer(): Generator<FilePointer> = filePointerInternal(
-    includeFileName = false,
-    includeMediaSize = false,
-    includeCaption = false,
-    includeBlurHash = true,
-    contentTypeGenerator = Generators.list("image/jpeg", "image/png")
-  )
+  fun wallpaperFilePointer(): Generator<FilePointer> {
+    val (backupLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
+      backupLocatorGenerator() as Generator<Any?>,
+      Generators.single(FilePointer.InvalidAttachmentLocator())
+    )
+
+    return Generators.permutation {
+      val backupLocator: FilePointer.BackupLocator? = someOneOf(backupLocatorGenerator)
+      val invalidAttachmentLocator: FilePointer.InvalidAttachmentLocator? = someOneOf(invalidAttachmentLocatorGenerator)
+      val potentialIncrementalMac = some(Generators.bytes(16).nullable())
+      val incrementalMac = if (invalidAttachmentLocator == null) potentialIncrementalMac else null
+      val incrementalMacChunkSize: Int? = some(Generators.list(1024, 2048))
+
+      val contentType = some(Generators.list("image/jpeg", "image/png"))
+
+      frames += FilePointer(
+        backupLocator = backupLocator,
+        invalidAttachmentLocator = invalidAttachmentLocator,
+        contentType = contentType,
+        incrementalMac = incrementalMac?.toByteString(),
+        incrementalMacChunkSize = if (incrementalMac != null) {
+          incrementalMacChunkSize
+        } else {
+          null
+        },
+        fileName = null,
+        width = null,
+        height = null,
+        caption = null,
+        blurHash = some(Generators.blurHashes().nullable())
+      )
+    }
+  }
 
   fun avatarFilePointer(): Generator<FilePointer> = filePointerInternal(
     includeFileName = true,
@@ -427,25 +453,7 @@ object Generators {
     contentTypeGenerator: Generator<String>
   ): Generator<FilePointer> {
     val (backupLocatorGenerator, attachmentLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
-      Generators.permutation {
-        val transitCdnKey = some(Generators.nonEmptyStrings().nullable())
-        val transitCdnNumber = some(Generators.cdnNumbers().nullable())
-        val digest = someBytes(16)
-
-        frames += FilePointer.BackupLocator(
-          mediaName = digest.toHexString(),
-          cdnNumber = some(Generators.cdnNumbers()),
-          key = someBytes(16).toByteString(),
-          digest = digest.toByteString(),
-          size = somePositiveInt(),
-          transitCdnNumber = if (transitCdnKey != null) {
-            transitCdnNumber
-          } else {
-            null
-          },
-          transitCdnKey = transitCdnKey
-        )
-      },
+      backupLocatorGenerator() as Generator<Any?>,
       Generators.permutation {
         frames += FilePointer.AttachmentLocator(
           cdnKey = someNonEmptyString(),
@@ -485,6 +493,28 @@ object Generators {
         height = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         caption = if (includeCaption) someNullableString() else null,
         blurHash = if (includeBlurHash) some(Generators.blurHashes().nullable()) else null
+      )
+    }
+  }
+
+  private fun backupLocatorGenerator(): Generator<FilePointer.BackupLocator> {
+    return Generators.permutation {
+      val transitCdnKey = some(Generators.nonEmptyStrings().nullable())
+      val transitCdnNumber = some(Generators.cdnNumbers().nullable())
+      val digest = someBytes(16)
+
+      frames += FilePointer.BackupLocator(
+        mediaName = digest.toHexString(),
+        cdnNumber = some(Generators.cdnNumbers()),
+        key = someBytes(16).toByteString(),
+        digest = digest.toByteString(),
+        size = somePositiveInt(),
+        transitCdnNumber = if (transitCdnKey != null) {
+          transitCdnNumber
+        } else {
+          null
+        },
+        transitCdnKey = transitCdnKey
       )
     }
   }

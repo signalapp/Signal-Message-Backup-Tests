@@ -109,14 +109,14 @@ Frame {
   chat = Chat {
     archived = true
     dontNotifyForMentionsIfMuted = true
-    expireTimerVersion = 1990892173
+    expireTimerVersion = 2123148011
     id = 3
     markedUnread = true
     recipientId = 4
     style = ChatStyle {
       customColorId = 2
       dimWallpaperInDarkMode = true
-      wallpaperPreset = WallpaperPreset.GRADIENT_IRIDESCENT
+      wallpaperPreset = WallpaperPreset.GRADIENT_BLISS
     }
   }
 }

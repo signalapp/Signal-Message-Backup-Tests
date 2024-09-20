@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -14318816
+          solid = -2471943
         },
         CustomChatColor {
           id = 2
-          solid = -2462394
+          solid = -2143551
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 319
+            angle = 108
             colors = [
-              -11947711,
-              -1521238
+              -16513674,
+              -5256884
             ]
             positions = [
               0.0,
@@ -34,7 +34,7 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         customColorId = 1
-        wallpaperPreset = WallpaperPreset.GRADIENT_AQUA
+        wallpaperPreset = WallpaperPreset.GRADIENT_MONSTERA
       }
       displayBadgesOnProfile = true
       hasCompletedUsernameOnboarding = true
@@ -51,17 +51,17 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 313025179
+      universalExpireTimerSeconds = 250991231
     }
     avatarUrlPath = ""
     familyName = ""
     givenName = ""
-    profileKey = <5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fdf6d6742e0e366ee6>
-    username = "ZhdLygutgr.2481"
+    profileKey = <f1199c78f4a921363af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9>
+    username = "kbGZomPlLHy.1136"
     usernameLink = UsernameLink {
       color = Color.ORANGE
-      entropy = <47db44d61270a0dc3ef0b2b677d4e0eeaf3371028a04ed7271a429e076b8d33f>
-      serverId = <406bb217821bcd82ccd719d94ce58985>
+      entropy = <21a78511518391fbc5b26db646e8dc0a531c93c2fbd8a21f072534d5f767baae>
+      serverId = <7ba7623758493e1bb0268c5da867e8b4>
     }
   }
 }

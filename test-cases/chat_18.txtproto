@@ -109,14 +109,14 @@ Frame {
   chat = Chat {
     archived = true
     dontNotifyForMentionsIfMuted = true
-    expireTimerVersion = 1990892173
+    expireTimerVersion = 2123148011
     id = 3
     markedUnread = true
     recipientId = 4
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.GRADIENT_FLUORESCENT
       dimWallpaperInDarkMode = true
-      wallpaperPreset = WallpaperPreset.SOLID_EGGPLANT
+      wallpaperPreset = WallpaperPreset.GRADIENT_SUNSET
     }
   }
 }

@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -6340960
+          solid = -8118884
         },
         CustomChatColor {
           id = 2
-          solid = -8683123
+          solid = -13705744
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 79
+            angle = 216
             colors = [
-              -11034661,
-              -9878058
+              -16063024,
+              -14691062
             ]
             positions = [
               0.0,
@@ -35,35 +35,25 @@ Frame {
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_WINTERGREEN
         dimWallpaperInDarkMode = true
-        wallpaperPhoto = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "eejhnSfTgFokL"
-            cdnNumber = 3
-            digest = <46e8dc0a531c93c2fbd8a21f072534d5>
-            key = <88cf6bfa88e3f24a21a78511518391fb>
-            size = 2101437613
-            uploadTimestamp = 1852195597883
-          }
-          contentType = "image/jpeg"
-        }
+        wallpaperPreset = WallpaperPreset.SOLID_BLUSH
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 1157010821
+      universalExpireTimerSeconds = 1377313449
     }
-    avatarUrlPath = "https://example.com/xMhyZCTrFaZ"
+    avatarUrlPath = "https://example.com/MnGMNaiqnlQbYT"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true
-      subscriberId = <e8ddfe7755cf8693d1408e670e080e775a5e2a0ebbf3b28fce7fe14e67cf3896>
+      subscriberId = <8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d>
     }
-    familyName = "KtPVXVM"
-    givenName = "GQzmtf"
-    profileKey = <5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fdf6d6742e0e366ee6>
-    username = "LPSkAoCfVdHWJP.6367"
+    familyName = "cKiDzz"
+    givenName = "DLpjlO"
+    profileKey = <f1199c78f4a921363af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9>
+    username = "GdFwzenIne.4607"
     usernameLink = UsernameLink {
       color = Color.PINK
-      entropy = <27a38645ab2d573928a14adb2e90907199154fed979ea98f19d848c17b785ff8>
-      serverId = <5aa092c1745e712bc96653a10091c5a8>
+      entropy = <d4337a3cc4f08757f22b67999610114498749f3fd268ebfe4cb7634ea9ab33f6>
+      serverId = <0712b5adab5ce2a61c11f4a53bc87b10>
     }
   }
 }

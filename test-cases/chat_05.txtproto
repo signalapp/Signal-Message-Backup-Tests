@@ -107,26 +107,24 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 145232483000
-    expireTimerVersion = 381622415
+    expirationTimerMs = 186725826000
+    expireTimerVersion = 2003546656
     id = 3
-    muteUntilMs = 1864331637697
+    muteUntilMs = 1824341912627
     pinnedOrder = 1
     recipientId = 4
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.SOLID_FOREST
       wallpaperPhoto = FilePointer {
-        attachmentLocator = AttachmentLocator {
-          cdnKey = "LmtLxdKP"
-          cdnNumber = 2
-          digest = <fcd89432f89fb1eaa786569514b8aab9>
-          key = <a459650a2590efd18c249edbc4fa0a59>
-          size = 2123148010
-          uploadTimestamp = 1776491210910
+        backupLocator = BackupLocator {
+          digest = <5c0c5f7b97527985b715cd4f8972f428>
+          key = <3bd72e515007f15a21064b374c7c7f19>
+          mediaName = "5c0c5f7b97527985b715cd4f8972f428"
+          size = 1000441712
         }
         blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
         contentType = "image/png"
-        incrementalMac = <b0268c5da867e8b454754359d4337a3c>
+        incrementalMac = <59fb651a953525dd5da9aa792ff23f31>
         incrementalMacChunkSize = 2048
       }
     }

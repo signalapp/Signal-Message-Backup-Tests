@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -10877249
+          solid = -8327818
         },
         CustomChatColor {
           id = 2
-          solid = -5741716
+          solid = -5963777
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 76
+            angle = 145
             colors = [
-              -12972264,
-              -3099487
+              -1173173,
+              -8701354
             ]
             positions = [
               0.0,
@@ -35,25 +35,25 @@ Frame {
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_VIOLET
         dimWallpaperInDarkMode = true
-        wallpaperPreset = WallpaperPreset.SOLID_DUST
+        wallpaperPreset = WallpaperPreset.SOLID_RAINFOREST
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 694141765
+      universalExpireTimerSeconds = 166062167
     }
-    avatarUrlPath = "https://example.com/BnUUiitmkHLvf"
+    avatarUrlPath = "https://example.com/dKVWk"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true
-      subscriberId = <e8ddfe7755cf8693d1408e670e080e775a5e2a0ebbf3b28fce7fe14e67cf3896>
+      subscriberId = <8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d>
     }
-    familyName = "jbudVyDy"
-    givenName = "DjcUVSZlHt"
-    profileKey = <5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fdf6d6742e0e366ee6>
-    username = "PHwAvoq.04"
+    familyName = "AEZObFnzT"
+    givenName = "SumkOGiGqMxxp"
+    profileKey = <f1199c78f4a921363af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9>
+    username = "zsXSlnJDCH.06"
     usernameLink = UsernameLink {
       color = Color.WHITE
-      entropy = <74f34922363753d413b462631f8eb741383ccf3627c362ea1d4aadc91b546309>
-      serverId = <eabc0dacb6f894ff2dcd51a027f66df3>
+      entropy = <589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b>
+      serverId = <458c6acb7db665e567fdcb1ac685a8ae>
     }
   }
 }

@@ -107,15 +107,15 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 145232483000
-    expireTimerVersion = 381622415
+    expirationTimerMs = 186725826000
+    expireTimerVersion = 2003546656
     id = 3
-    muteUntilMs = 1864331637697
+    muteUntilMs = 1824341912627
     pinnedOrder = 1
     recipientId = 4
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.GRADIENT_LAGOON
-      wallpaperPreset = WallpaperPreset.SOLID_PINK
+      wallpaperPreset = WallpaperPreset.SOLID_SILVER
     }
   }
 }

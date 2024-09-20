@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -10877249
+          solid = -8327818
         },
         CustomChatColor {
           id = 2
-          solid = -5741716
+          solid = -5963777
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 76
+            angle = 145
             colors = [
-              -12972264,
-              -3099487
+              -1173173,
+              -8701354
             ]
             positions = [
               0.0,
@@ -34,7 +34,7 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         customColorId = 3
-        wallpaperPreset = WallpaperPreset.GRADIENT_MONSTERA
+        wallpaperPreset = WallpaperPreset.GRADIENT_SKY
       }
       displayBadgesOnProfile = true
       hasCompletedUsernameOnboarding = true
@@ -51,21 +51,21 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 694141765
+      universalExpireTimerSeconds = 166062167
     }
-    avatarUrlPath = "https://example.com/BnUUiitmkHLvf"
+    avatarUrlPath = "https://example.com/dKVWk"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <67f1c2ef2a465a568529d9a342bf45e91cd2b5d284298c030d7a577d4e461bad>
+      subscriberId = <0502d540f2eff4ef03129ecfd189c9f35a386c4aa68fd418e657fd8cab0b80bf>
     }
-    familyName = "jbudVyDy"
-    givenName = "DjcUVSZlHt"
-    profileKey = <5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fdf6d6742e0e366ee6>
-    username = "PHwAvoq.04"
+    familyName = "AEZObFnzT"
+    givenName = "SumkOGiGqMxxp"
+    profileKey = <f1199c78f4a921363af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9>
+    username = "zsXSlnJDCH.06"
     usernameLink = UsernameLink {
       color = Color.PURPLE
-      entropy = <0c2dede827e18e55c28e712f9a3dddc384e466f98e15432bce34cee30502d540>
-      serverId = <03129ecfd189c9f35a386c4aa68fd418>
+      entropy = <d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f31f78622c>
+      serverId = <12e5d730c3c226dc221e8fec3522a5e4>
     }
   }
 }
