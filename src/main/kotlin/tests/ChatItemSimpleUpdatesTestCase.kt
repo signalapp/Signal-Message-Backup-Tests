@@ -21,7 +21,8 @@ object ChatItemSimpleUpdatesTestCase : TestCase("chat_item_simple_updates") {
     // Generate timestamps for as many frames as we might want to add depending
     // on simpleChatUpdate. (We need to register the max number of generators
     // we might eventually use, up-front.)
-    val dateSentTimestamps = listOf(someNonZeroTimestamp(), someNonZeroTimestamp())
+    val timestamp = someIncrementingTimestamp()
+    val dateSentTimestamps = listOf(timestamp, timestamp + 1000)
 
     val simpleChatUpdate = someEnum(SimpleChatUpdate.Type::class.java, excluding = SimpleChatUpdate.Type.UNKNOWN)
 

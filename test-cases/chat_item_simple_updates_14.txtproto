@@ -117,7 +117,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1833527071192
+    dateSent = 1833527071206
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
