@@ -481,6 +481,7 @@ object Generators {
       val incrementalMacChunkSize: Int? = some(Generators.list(1024, 2048))
 
       val contentType = some(contentTypeGenerator)
+      val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
 
       frames += FilePointer(
         backupLocator = backupLocator,
@@ -497,7 +498,7 @@ object Generators {
         width = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         height = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         caption = if (includeCaption) someNullableString() else null,
-        blurHash = if (includeBlurHash) some(Generators.blurHashes().nullable()) else null
+        blurHash = if (includeBlurHash && blurHashSupported) some(Generators.blurHashes().nullable()) else null
       )
     }
   }

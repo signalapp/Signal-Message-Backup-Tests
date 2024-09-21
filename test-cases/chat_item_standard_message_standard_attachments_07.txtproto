@@ -141,7 +141,6 @@ Frame {
               mediaName = "531c93c2fbd8a21f072534d5f767baae"
               size = 1855101642
             }
-            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             caption = "AoCfV"
             contentType = "audio/mp3"
             height = 1389
@@ -159,7 +158,7 @@ Frame {
               key = <12e5d730c3c226dc221e8fec3522a5e4>
               size = 844099452
             }
-            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "video/mp4"
             fileName = "MdKVWksKen"
           }
@@ -177,7 +176,7 @@ Frame {
               size = 2146991586
               uploadTimestamp = 1801773535749
             }
-            blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
+            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             caption = ""
             contentType = "image/jpeg"
             fileName = "hyvzSFNg"

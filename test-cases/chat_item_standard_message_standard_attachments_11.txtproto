@@ -132,7 +132,6 @@ Frame {
           clientUuid = <8c9f1d58edb9493086048d358b403cb4>
           flag = Flag.NONE
           pointer = FilePointer {
-            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = "AoCfV"
             contentType = "image/gif"
             fileName = "MdKVWksKen"
@@ -207,7 +206,6 @@ Frame {
               mediaName = "531c93c2fbd8a21f072534d5f767baae"
               size = 1855101642
             }
-            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             caption = "AoCfV"
             contentType = "audio/mp3"
             height = 1389

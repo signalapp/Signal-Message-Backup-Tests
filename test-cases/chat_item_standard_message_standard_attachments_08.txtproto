@@ -139,6 +139,7 @@ Frame {
               size = 1162493295
               uploadTimestamp = 1699830219231
             }
+            blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             caption = "LygutgrXFLPS"
             contentType = "image/png"
             height = 2514
@@ -150,7 +151,6 @@ Frame {
           clientUuid = <8c9f1d58edb9493086048d358b403cb4>
           flag = Flag.NONE
           pointer = FilePointer {
-            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = "AoCfV"
             contentType = "image/gif"
             fileName = "MdKVWksKen"
