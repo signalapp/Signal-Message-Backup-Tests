@@ -122,7 +122,7 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
               // so we wouldn't have a proper thumbnail attachment here.
               listOf(
                 Quote.QuotedAttachment(
-                  contentType = "image/png",
+                  contentType = "image/webp",
                   fileName = null
                 )
               )

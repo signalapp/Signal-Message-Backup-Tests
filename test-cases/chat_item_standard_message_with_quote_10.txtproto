@@ -155,7 +155,7 @@ Frame {
       quote = Quote {
         attachments = [
           QuotedAttachment {
-            contentType = "image/png"
+            contentType = "image/webp"
           }
         ]
         authorId = 4
