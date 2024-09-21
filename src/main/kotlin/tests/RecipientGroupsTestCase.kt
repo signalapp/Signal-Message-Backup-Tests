@@ -1,6 +1,7 @@
 package tests
 
 import Generator
+import Generators
 import PermutationScope
 import TestCase
 import asList
@@ -28,11 +29,11 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
     val snapshot: Group.GroupSnapshot = somePermutation {
       frames += Group.GroupSnapshot(
         title = Group.GroupAttributeBlob(
-          title = someNonEmptyString()
+          title = some(Generators.titles())
         ),
         description = someNullablePermutation {
           frames += Group.GroupAttributeBlob(
-            descriptionText = someNonEmptyString()
+            descriptionText = some(Generators.textBody())
           )
         },
         avatarUrl = someUrl(),

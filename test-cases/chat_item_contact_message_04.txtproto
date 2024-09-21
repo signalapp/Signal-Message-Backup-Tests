@@ -122,49 +122,49 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "cgnvkuuYU"
-              country = "jrfsmPFkkXPf"
-              label = "xnqeB"
-              neighborhood = "yYPnDcOB"
-              pobox = "FzSlNk"
-              postcode = "GtbGdLaxUF"
-              region = "aeMuBzXfTMvHb"
+              city = "jjbudVyDygx"
+              country = "ldxrj"
+              label = "pXHaW"
+              neighborhood = "mtfRDjcUVSZl"
+              pobox = "FLPSkA"
+              postcode = "unEEaAnFRLrvz"
+              region = "UUiitmkHLv"
               type = Type.HOME
             }
           ]
           avatar = FilePointer {
             backupLocator = BackupLocator {
-              digest = <178cfdca85d0ff83fb34c8dfda308b20>
-              key = <89a2fe07a6d23413b67218cbbbd8a380>
-              mediaName = "178cfdca85d0ff83fb34c8dfda308b20"
-              size = 1120972837
+              digest = <807559220985f14b0252e833ea9a84c3>
+              key = <685e0086546218a42159dc4893072988>
+              mediaName = "807559220985f14b0252e833ea9a84c3"
+              size = 161637746
             }
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "image/png"
-            height = 3033
-            incrementalMac = <591eeb9b35c876bc7f5b1be8870f7902>
+            height = 1852
+            incrementalMac = <c9524284c3249539c09ea81eb340caa7>
             incrementalMacChunkSize = 2048
-            width = 267
+            width = 1210
           }
           email = [
             Email {
-              label = "KhylALWHDDLpj"
+              label = "DXOZYcESWutf"
               type = Type.CUSTOM
-              value_ = "OymkbGZomPlLHy@LGdFwzenIne.org"
+              value_ = "qaczwFdzHL@okMZPmjwqTJ.org"
             }
           ]
           name = Name {
-            familyName = "wSQuECQWuuuEFC"
-            givenName = "iJZOYWfDTgpIJq"
-            middleName = "FXMOBqmCd"
-            prefix = "IBHCZ"
-            suffix = "nSfTgFokLHLmtL"
+            familyName = "Watson"
+            givenName = "Ronnie"
+            middleName = "Jodie"
+            prefix = "gpIJqy"
+            suffix = "uECQWuuuE"
           }
           number = [
             Phone {
-              label = "CvxAOiiqzDNPnb"
+              label = "WIBHCZROtEhcC"
               type = Type.CUSTOM
-              value_ = "447700900496"
+              value_ = "447700900133"
             }
           ]
         }

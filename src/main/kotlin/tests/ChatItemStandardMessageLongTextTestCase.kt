@@ -37,8 +37,7 @@ object ChatItemStandardMessageLongTextTestCase : TestCase("chat_item_standard_me
         outgoing = outgoing,
         standardMessage = StandardMessage(
           text = Text(
-            // Long text must have a non-empty message body.
-            body = someNonEmptyString()
+            body = some(Generators.textBody())
           ),
           longText = some(Generators.longTextFilePointer()),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))

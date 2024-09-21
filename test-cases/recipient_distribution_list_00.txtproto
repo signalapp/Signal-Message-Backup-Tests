@@ -145,7 +145,7 @@ Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
       deletionTimestamp = 1833527071192
-      distributionId = <25fbffb43e95495887b97a24e56ab547>
+      distributionId = <512ed73b5af14750874b0621197f7c4c>
     }
     id = 8
   }

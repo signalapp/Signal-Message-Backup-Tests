@@ -94,16 +94,16 @@ Frame {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
       blocked = true
-      e164 = 33639982820
+      e164 = 33639987372
       hideStory = true
       notRegistered = NotRegistered {
         unregisteredTimestamp = 1833527071192
       }
       pni = <f2c8f6640c624f2f806929719cb0c468>
-      profileFamilyName = "EFCmCqQNEWGrA"
-      profileGivenName = "ERtwSQu"
+      profileFamilyName = "Pennington"
+      profileGivenName = "Manuela"
       profileSharing = true
-      username = "nzNFkpZzmNnJ.3791"
+      username = "theodore.2274"
       visibility = Visibility.HIDDEN_MESSAGE_REQUEST
     }
     id = 4

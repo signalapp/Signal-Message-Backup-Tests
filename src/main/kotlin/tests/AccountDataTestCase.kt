@@ -6,6 +6,7 @@ import Generator
 import Generators
 import PermutationScope
 import TestCase
+import asGenerator
 import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
@@ -52,8 +53,8 @@ object AccountDataTestCase : TestCase("account_data") {
           null
         },
         usernameLink = usernameLink,
-        givenName = someString(),
-        familyName = someString(),
+        givenName = some(Generators.merge("".asGenerator(), Generators.firstNames())),
+        familyName = some(Generators.merge("".asGenerator(), Generators.lastNames())),
         avatarUrlPath = someUrl(),
         donationSubscriberData = someNullablePermutation {
           frames += AccountData.SubscriberData(

@@ -122,52 +122,52 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "YQcczeJZd"
-              country = "fnyqwIJn"
-              label = "nZhuXJWXD"
-              neighborhood = "rOHZwwEoKI"
-              pobox = "ldxrj"
-              postcode = "bdigdRgXvkkw"
-              region = "fCpzjVLQFQh"
-              street = "unEEaAnFRLrvz"
+              city = "tAKtPVXV"
+              country = "FzSlNk"
+              label = "taPHwAvo"
+              neighborhood = "ejXWhGQ"
+              pobox = "CfVdHWJ"
+              postcode = "jrJToWuNQzhOBq"
+              region = "hyZCTrFaZqB"
+              street = "ygutgr"
               type = Type.CUSTOM
             }
           ]
           avatar = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "fhiGYdtFepxf"
+              cdnKey = "SuQFBOQS"
               cdnNumber = 3
-              digest = <73402d75b81bc8b903fffc37c2b6da39>
-              key = <4b63ffc95bcf12cd19c3daecb8416143>
-              size = 1478040748
-              uploadTimestamp = 1781250150712
+              digest = <1613383d82819e967350be037f595614>
+              key = <feedcc81e788d9c3303ccbe11f3a0554>
+              size = 1776710323
+              uploadTimestamp = 1775683075420
             }
             contentType = "image/jpeg"
-            height = 485
-            width = 3317
+            height = 2493
+            width = 2207
           }
           email = [
             Email {
-              label = "VzsXSlnJDCHS"
+              label = "PMVYoUEqXx"
               type = Type.WORK
-              value_ = "xHDjKnB@pjPVt.com"
+              value_ = "Vito@Dillard.com"
             }
           ]
           name = Name {
-            familyName = "CqQNEWGrAzrHY"
-            givenName = "SkLQGER"
-            middleName = "WyYPnka"
-            prefix = "OtEhcCMeej"
-            suffix = "dKPNuFXypj"
+            familyName = "Watson"
+            givenName = "Ronnie"
+            middleName = "Jodie"
+            prefix = "kLQGERtwS"
+            suffix = "CmCqQNEWGrAz"
           }
           number = [
             Phone {
-              label = "KGTWpTUETYz"
+              label = "MOBqmCdYWyYPnk"
               type = Type.WORK
-              value_ = "447700900571"
+              value_ = "11395550128"
             }
           ]
-          organization = "CsyUnSuQFB"
+          organization = "yjjay"
         }
       ]
     }

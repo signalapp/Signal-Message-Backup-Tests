@@ -1,5 +1,6 @@
 package tests
 
+import Generators
 import PermutationScope
 import TestCase
 import asList
@@ -70,7 +71,7 @@ object RecipientDistributionListTestCase : TestCase("recipient_distribution_list
         val memberRecipientIds = some(memberRecipientIdGenerator)
 
         frames += DistributionList(
-          name = someNonEmptyString(),
+          name = some(Generators.titles()),
           allowReplies = someBoolean(),
           memberRecipientIds = memberRecipientIds,
           privacyMode = privacyMode

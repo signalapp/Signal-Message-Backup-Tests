@@ -1,5 +1,6 @@
 package tests
 
+import Generators
 import PermutationScope
 import TestCase
 import asList
@@ -59,9 +60,9 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
           contact = Generators.permutation<ContactAttachment> {
             frames += ContactAttachment(
               name = ContactAttachment.Name(
-                givenName = someNonEmptyString(),
-                familyName = someNonEmptyString(),
-                middleName = someNonEmptyString(),
+                givenName = some(Generators.firstNames()),
+                familyName = some(Generators.lastNames()),
+                middleName = some(Generators.firstNames()),
                 prefix = someNonEmptyString(),
                 suffix = someNonEmptyString()
               ),

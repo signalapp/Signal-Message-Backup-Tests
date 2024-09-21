@@ -117,11 +117,11 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1707348544398
+    dateSent = 1665501589233
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       learnedProfileChange = LearnedProfileChatUpdate {
-        username = "QSvJcbzG.2274"
+        username = "hugh.8859"
       }
     }
   }

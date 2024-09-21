@@ -2,6 +2,7 @@
 
 package tests
 
+import Generators
 import PermutationScope
 import StandardFrames
 import TestCase
@@ -25,8 +26,8 @@ object ChatItemProfileChangeUpdateTestCase : TestCase("chat_item_profile_change_
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           profileChange = ProfileChangeChatUpdate(
-            previousName = someNonEmptyString(),
-            newName = someNonEmptyString()
+            previousName = some(Generators.names()),
+            newName = some(Generators.names())
           )
         )
       )

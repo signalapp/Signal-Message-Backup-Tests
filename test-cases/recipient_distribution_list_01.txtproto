@@ -144,13 +144,13 @@ Frame {
 Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
-      distributionId = <25fbffb43e95495887b97a24e56ab547>
+      distributionId = <512ed73b5af14750874b0621197f7c4c>
       distributionList = DistributionList {
         allowReplies = true
         memberRecipientIds = [
           4
         ]
-        name = "jaXtfWbogYOz"
+        name = "Justo Congue"
         privacyMode = PrivacyMode.ONLY_WITH
       }
     }

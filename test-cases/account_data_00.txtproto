@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -2471943
+          solid = -9041347
         },
         CustomChatColor {
           id = 2
-          solid = -2143551
+          solid = -2627377
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 108
+            angle = 137
             colors = [
-              -16513674,
-              -5256884
+              -15156903,
+              -448447
             ]
             positions = [
               0.0,
@@ -47,12 +47,12 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 250991231
+      universalExpireTimerSeconds = 390911022
     }
     avatarUrlPath = ""
     familyName = ""
     givenName = ""
-    profileKey = <f1199c78f4a921363af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9>
+    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
   }
 }
 

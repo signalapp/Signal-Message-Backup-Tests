@@ -132,28 +132,31 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
+          clientUuid = <8c9f1d58edb9493086048d358b403cb4>
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 2
-              digest = <a7ed5289222d4808bdaadcf9eaa4908f>
-              key = <0c3ae62e4a5aa0bbf67baa9066da53ca>
-              mediaName = "a7ed5289222d4808bdaadcf9eaa4908f"
-              size = 290586407
-              transitCdnKey = "CmCqQNEWGrAz"
+              digest = <66da53caf60c4ec900b2dee58107854a>
+              key = <95b0f63bd4c8184986860917d55519fd>
+              mediaName = "66da53caf60c4ec900b2dee58107854a"
+              size = 1020613806
+              transitCdnKey = "AzrHYkFXMOBqmC"
             }
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "zeAEZObFnzTZMn"
-            height = 3973
-            incrementalMac = <22ad8089d8b31e0b8d6049955da8992e>
+            fileName = "MdKVWksKen"
+            height = 3064
+            incrementalMac = <27a38645ab2d573928a14adb2e909071>
             incrementalMacChunkSize = 2048
-            width = 3796
+            width = 1190
           }
         }
       ]
+      text = Text {
+        body = "utinam tota repudiandae brute veritus unum"
+      }
     }
   }
 }

@@ -126,7 +126,7 @@ Frame {
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "pdiJZ"
+        body = "senserit decore interpretaris"
       }
     }
   }

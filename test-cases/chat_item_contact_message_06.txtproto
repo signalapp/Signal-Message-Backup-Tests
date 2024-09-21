@@ -122,29 +122,29 @@ Frame {
         ContactAttachment {
           avatar = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "rjGaq"
+              cdnKey = "zJCDXDXX"
               cdnNumber = 2
-              digest = <4c5d85908dd94664eac043a8790aa5e6>
-              key = <0385e95b9fb531fc34977acc1143c272>
-              size = 2144222294
-              uploadTimestamp = 1899107889752
+              digest = <9a852ad28dafc5280a19d0fd2932b058>
+              key = <7624aafb8f19d75ef7129713842db2ad>
+              size = 23702219
+              uploadTimestamp = 1720304993868
             }
             blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             contentType = "image/png"
-            fileName = "jVGPMBX"
-            height = 4021
-            incrementalMac = <591eeb9b35c876bc7f5b1be8870f7902>
+            fileName = "qFfhi"
+            height = 1963
+            incrementalMac = <c9524284c3249539c09ea81eb340caa7>
             incrementalMacChunkSize = 2048
-            width = 2502
+            width = 1627
           }
           name = Name {
-            familyName = "wSQuECQWuuuEFC"
-            givenName = "iJZOYWfDTgpIJq"
-            middleName = "FXMOBqmCd"
-            prefix = "IBHCZ"
-            suffix = "nSfTgFokLHLmtL"
+            familyName = "Gillespie"
+            givenName = "Fletcher"
+            middleName = "Daphne"
+            prefix = "gpIJqy"
+            suffix = "uECQWuuuE"
           }
-          organization = "AUJhqwqw"
+          organization = "RMBtkZiqm"
         }
       ]
     }

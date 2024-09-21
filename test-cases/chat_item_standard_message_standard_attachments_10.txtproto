@@ -133,54 +133,54 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "xxDXOZ"
-              digest = <1c11f4a53bc87b1036327e78d6bf0ffb>
-              key = <4cb7634ea9ab33f68328b1520712b5ad>
-              size = 1761157590
+              cdnKey = "ktWAZnlG"
+              digest = <f566824710636ce8af1b499244fc7b25>
+              key = <12e5d730c3c226dc221e8fec3522a5e4>
+              size = 844099452
             }
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "video/mp4"
-            fileName = "zeAEZObFnzTZMn"
+            fileName = "MdKVWksKen"
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
+          clientUuid = <8c9f1d58edb9493086048d358b403cb4>
           flag = Flag.NONE
           pointer = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "cESWu"
+              cdnKey = "HDjKnB"
               cdnNumber = 2
-              digest = <01480e9e27dcdcb674f34922363753d4>
-              key = <820ab936183555ed8e40d2431d317e2d>
-              size = 1134316339
-              uploadTimestamp = 1708089907411
+              digest = <2e2771dbc69f3f56cf981fd64acc5040>
+              key = <1a96e707c00259c7264eb5417dfb20d9>
+              size = 2146991586
+              uploadTimestamp = 1801773535749
             }
             blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             caption = ""
             contentType = "image/jpeg"
-            fileName = "MNaiqnlQb"
-            height = 3973
-            incrementalMac = <22ad8089d8b31e0b8d6049955da8992e>
+            fileName = "hyvzSFNg"
+            height = 3064
+            incrementalMac = <27a38645ab2d573928a14adb2e909071>
             incrementalMacChunkSize = 2048
-            width = 3796
+            width = 1190
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "xxDXOZ"
+              cdnKey = "ktWAZnlG"
               cdnNumber = 3
-              digest = <c5f36b40745ec558f58cca155df7981e>
-              key = <bdefd49b44b4c8d19c47cb807844279f>
-              size = 503516885
-              uploadTimestamp = 1881696134321
+              digest = <71a429e076b8d33fcc659540406bb217>
+              key = <1270a0dc3ef0b2b677d4e0eeaf337102>
+              size = 1162493295
+              uploadTimestamp = 1699830219231
             }
-            caption = "ksKenthyvzSFN"
+            caption = "LygutgrXFLPS"
             contentType = "image/png"
-            height = 2301
-            width = 2298
+            height = 2514
+            width = 397
           }
           wasDownloaded = true
         }
@@ -194,7 +194,7 @@ Frame {
         }
       ]
       text = Text {
-        body = "pdiJZ"
+        body = "in definitiones volutpat sagittis"
       }
     }
   }

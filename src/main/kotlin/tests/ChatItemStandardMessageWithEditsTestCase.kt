@@ -41,7 +41,7 @@ object ChatItemStandardMessageWithEditsTestCase : TestCase("chat_item_standard_m
           ),
           standardMessage = StandardMessage(
             text = Text(
-              body = someNonEmptyString()
+              body = some(Generators.textBody())
             )
           )
         )
@@ -63,7 +63,7 @@ object ChatItemStandardMessageWithEditsTestCase : TestCase("chat_item_standard_m
         ),
         standardMessage = StandardMessage(
           text = Text(
-            body = someNonEmptyString()
+            body = some(Generators.textBody())
           )
         ),
         revisions = revisions

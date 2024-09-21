@@ -1,5 +1,6 @@
 package tests
 
+import Generators
 import PermutationScope
 import TestCase
 import org.thoughtcrime.securesms.backup.v2.proto.ChatItem
@@ -36,7 +37,7 @@ object ChatItemStandardMessageTextOnlyTestCase : TestCase("chat_item_standard_me
         outgoing = outgoing,
         standardMessage = StandardMessage(
           text = Text(
-            body = someNonEmptyString()
+            body = some(Generators.textBody())
           ),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )

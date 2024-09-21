@@ -137,14 +137,14 @@ Frame {
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = "fWbogY"
+            body = "morbi dicat antiopam quod iudicabit auctor platonem"
           }
         }
       }
     ]
     standardMessage = StandardMessage {
       text = Text {
-        body = "zEavlHxOeTtfOM"
+        body = "in definitiones volutpat sagittis"
       }
     }
   }

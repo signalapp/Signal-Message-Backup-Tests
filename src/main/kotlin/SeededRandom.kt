@@ -1,12 +1,18 @@
+import com.thedeanda.lorem.LoremIpsum
 import java.util.*
 import kotlin.random.Random
+import kotlin.random.asJavaRandom
 
 object SeededRandom {
 
   private var random = Random(0)
 
+  var lipsum: LoremIpsum = LoremIpsum(random.asJavaRandom())
+    private set
+
   fun reset(seed: Long = 0) {
     random = Random(seed)
+    lipsum = LoremIpsum(random.asJavaRandom())
   }
 
   fun uuid(): UUID {

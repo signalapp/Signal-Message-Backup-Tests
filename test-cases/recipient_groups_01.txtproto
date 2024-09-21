@@ -188,21 +188,21 @@ Frame {
 Frame {
   recipient = Recipient {
     group = Group {
-      masterKey = <8779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb>
+      masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
           attributes = AccessRequired.ADMINISTRATOR
           members = AccessRequired.ADMINISTRATOR
         }
-        avatarUrl = "https://example.com/ZOYWfDTgpIJqyS"
+        avatarUrl = "https://example.com/eTtfOMpdi"
         description = GroupAttributeBlob {
-          descriptionText = "DTsXBkoGHkm"
+          descriptionText = "quod iudicabit auctor"
         }
         disappearingMessagesTimer = GroupAttributeBlob {
-          disappearingMessagesDuration = 330901086
+          disappearingMessagesDuration = 2103644488
         }
-        inviteLinkPassword = <1bbf0e8674ca8dec9544987b380d208afecdc4c5701ad7ec4bf8a7f52384caa7>
+        inviteLinkPassword = <7db665e567fdcb1ac685a8aedbd29cb42e984d652ed70996974af5a7a459650a>
         members = [
           Member {
             role = Role.ADMINISTRATOR
@@ -233,14 +233,14 @@ Frame {
         ]
         members_banned = [
           MemberBanned {
-            timestamp = 1717037855458
+            timestamp = 1747591982256
             userId = <000000fa000040008000000000000001>
           }
         ]
         title = GroupAttributeBlob {
-          title = "gYOzQSvJcbzGY"
+          title = "Congue Fastidii"
         }
-        version = 1848613484
+        version = 1394492158
       }
       storySendMode = StorySendMode.DISABLED
     }
@@ -250,7 +250,7 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 330901086000
+    expirationTimerMs = 2103644488000
     expireTimerVersion = 1
     id = 1
     recipientId = 10

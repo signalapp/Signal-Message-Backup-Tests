@@ -189,7 +189,7 @@ Frame {
   recipient = Recipient {
     group = Group {
       hideStory = true
-      masterKey = <8779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb>
+      masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -197,14 +197,14 @@ Frame {
           members = AccessRequired.MEMBER
         }
         announcements_only = true
-        avatarUrl = "https://example.com/LQGERtwSQuECQ"
+        avatarUrl = "https://example.com/ZOYWfDTgpIJqyS"
         description = GroupAttributeBlob {
-          descriptionText = "nzNFkpZzmNnJ"
+          descriptionText = "docendi proin reformidans oratio rhoncus"
         }
         disappearingMessagesTimer = GroupAttributeBlob {
-          disappearingMessagesDuration = 1124598742
+          disappearingMessagesDuration = 182310711
         }
-        inviteLinkPassword = <27c362ea1d4aadc91b5463098f179c50eabc0dacb6f894ff2dcd51a027f66df3>
+        inviteLinkPassword = <162925690d31a8ba1a7be8b3820ab936183555ed8e40d2431d317e2dee39bbf8>
         members = [
           Member {
             role = Role.DEFAULT
@@ -224,9 +224,9 @@ Frame {
           }
         ]
         title = GroupAttributeBlob {
-          title = "EtjaXtfWb"
+          title = "Morbi Dicat"
         }
-        version = 963106989
+        version = 328224940
       }
       storySendMode = StorySendMode.ENABLED
       whitelisted = true
@@ -237,7 +237,7 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 1124598742000
+    expirationTimerMs = 182310711000
     expireTimerVersion = 1
     id = 1
     recipientId = 10

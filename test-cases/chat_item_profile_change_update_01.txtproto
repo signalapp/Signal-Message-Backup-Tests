@@ -121,8 +121,8 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       profileChange = ProfileChangeChatUpdate {
-        newName = "kmlnzNFkpZzmNn"
-        previousName = "OzQSvJcbzGYSD"
+        newName = "Todd Potter"
+        previousName = "Emilio White"
       }
     }
   }

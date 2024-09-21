@@ -94,7 +94,7 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
         outgoing = outgoing,
         standardMessage = StandardMessage(
           text = Text(
-            body = someNonEmptyString()
+            body = some(Generators.textBody())
           ),
           quote = Quote(
             targetSentTimestamp = targetDateSent,

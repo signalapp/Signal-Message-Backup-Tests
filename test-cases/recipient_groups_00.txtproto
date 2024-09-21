@@ -189,7 +189,7 @@ Frame {
   recipient = Recipient {
     group = Group {
       hideStory = true
-      masterKey = <8779cc84b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb>
+      masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -198,7 +198,7 @@ Frame {
         }
         announcements_only = true
         avatarUrl = ""
-        inviteLinkPassword = <99eb27976fb2a59dcf3429a08f357899994d295169f375454a95979def0ce9d2>
+        inviteLinkPassword = <0c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345>
         members = [
           Member {
             role = Role.DEFAULT
@@ -210,9 +210,9 @@ Frame {
           }
         ]
         title = GroupAttributeBlob {
-          title = "EtjaXtfWb"
+          title = "Ut Cubilia"
         }
-        version = 584711858
+        version = 957662124
       }
       storySendMode = StorySendMode.DEFAULT
       whitelisted = true

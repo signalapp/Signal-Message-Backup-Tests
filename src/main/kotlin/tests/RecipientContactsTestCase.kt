@@ -41,8 +41,8 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           notRegistered = someOneOf(notRegistered),
           profileKey = someNullableBytes(32)?.toByteString(),
           profileSharing = someBoolean(),
-          profileGivenName = some(Generators.nonEmptyStrings().nullable()),
-          profileFamilyName = some(Generators.nonEmptyStrings().nullable()),
+          profileGivenName = some(Generators.firstNames().nullable()),
+          profileFamilyName = some(Generators.lastNames().nullable()),
           hideStory = someBoolean()
         )
       )

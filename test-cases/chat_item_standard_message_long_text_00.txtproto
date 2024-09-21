@@ -135,7 +135,7 @@ Frame {
         contentType = "text/x-signal-plain"
       }
       text = Text {
-        body = "pdiJZ"
+        body = "senserit decore interpretaris"
       }
     }
   }

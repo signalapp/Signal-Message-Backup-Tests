@@ -130,10 +130,10 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
-              digest = <d95fde0154d933c20d1a04ced92499f5>
-              key = <97130bcd791cedfafc0e29956dc1e0cd>
-              mediaName = "d95fde0154d933c20d1a04ced92499f5"
-              size = 357854953
+              digest = <fd2aa72b0a038863ebb03fed8486f419>
+              key = <0977166fd3faf51e18e707cf7cb44461>
+              mediaName = "fd2aa72b0a038863ebb03fed8486f419"
+              size = 1855101642
             }
             contentType = "image/jpeg"
           }

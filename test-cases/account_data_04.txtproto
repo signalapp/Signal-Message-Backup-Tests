@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -8118884
+          solid = -4323357
         },
         CustomChatColor {
           id = 2
-          solid = -13705744
+          solid = -4019538
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 216
+            angle = 185
             colors = [
-              -16063024,
-              -14691062
+              -11825771,
+              -6506482
             ]
             positions = [
               0.0,
@@ -62,13 +62,13 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 1377313449
+      universalExpireTimerSeconds = 264034631
     }
-    avatarUrlPath = "https://example.com/MnGMNaiqnlQbYT"
-    familyName = "cKiDzz"
-    givenName = "DLpjlO"
-    profileKey = <f1199c78f4a921363af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9>
-    username = "GdFwzenIne.4607"
+    avatarUrlPath = "https://example.com/neLVzsX"
+    familyName = ""
+    givenName = ""
+    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    username = "joey.6010"
     usernameLink = UsernameLink {
       color = Color.OLIVE
       entropy = <74ca8dec9544987b380d208afecdc4c5701ad7ec4bf8a7f52384caa746d54763>

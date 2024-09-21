@@ -123,27 +123,27 @@ Frame {
           avatar = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 3
-              digest = <8e0d273ad3cc7d8c285504cdf1b52578>
-              key = <362db73801df7d496ce0af3aa0005822>
-              mediaName = "8e0d273ad3cc7d8c285504cdf1b52578"
-              size = 1732766388
-              transitCdnKey = "XDYLorFptC"
+              digest = <1bbf695b643cbd4cedd41c11b54cdc5f>
+              key = <6e06f1e54c79d357398365ca68f73bc6>
+              mediaName = "1bbf695b643cbd4cedd41c11b54cdc5f"
+              size = 961406088
+              transitCdnKey = "FjbptyQ"
               transitCdnNumber = 2
             }
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "image/jpeg"
-            fileName = "jVGPMBX"
-            height = 485
-            width = 3317
+            fileName = "qFfhi"
+            height = 2493
+            width = 2207
           }
           name = Name {
-            familyName = "CqQNEWGrAzrHY"
-            givenName = "SkLQGER"
-            middleName = "WyYPnka"
-            prefix = "OtEhcCMeej"
-            suffix = "dKPNuFXypj"
+            familyName = "Gillespie"
+            givenName = "Fletcher"
+            middleName = "Daphne"
+            prefix = "kLQGERtwS"
+            suffix = "CmCqQNEWGrAz"
           }
-          organization = "CsyUnSuQFB"
+          organization = "yjjay"
         }
       ]
     }

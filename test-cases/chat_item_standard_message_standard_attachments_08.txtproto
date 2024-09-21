@@ -132,66 +132,66 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "xxDXOZ"
+              cdnKey = "ktWAZnlG"
               cdnNumber = 3
-              digest = <c5f36b40745ec558f58cca155df7981e>
-              key = <bdefd49b44b4c8d19c47cb807844279f>
-              size = 503516885
-              uploadTimestamp = 1881696134321
+              digest = <71a429e076b8d33fcc659540406bb217>
+              key = <1270a0dc3ef0b2b677d4e0eeaf337102>
+              size = 1162493295
+              uploadTimestamp = 1699830219231
             }
-            caption = "ksKenthyvzSFN"
+            caption = "LygutgrXFLPS"
             contentType = "image/png"
-            height = 2301
-            width = 2298
+            height = 2514
+            width = 397
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
+          clientUuid = <8c9f1d58edb9493086048d358b403cb4>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-            caption = "pXHtZhd"
+            caption = "AoCfV"
             contentType = "image/gif"
-            fileName = "zeAEZObFnzTZMn"
-            height = 3097
+            fileName = "MdKVWksKen"
+            height = 1389
             invalidAttachmentLocator = InvalidAttachmentLocator {}
-            width = 3092
+            width = 2255
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
-              digest = <d95fde0154d933c20d1a04ced92499f5>
-              key = <97130bcd791cedfafc0e29956dc1e0cd>
-              mediaName = "d95fde0154d933c20d1a04ced92499f5"
-              size = 357854953
+              digest = <fd2aa72b0a038863ebb03fed8486f419>
+              key = <0977166fd3faf51e18e707cf7cb44461>
+              mediaName = "fd2aa72b0a038863ebb03fed8486f419"
+              size = 1855101642
             }
             contentType = "image/jpeg"
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <21db7ced72034e348ab2da6e3d8fecb1>
+          clientUuid = <8c9f1d58edb9493086048d358b403cb4>
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 2
-              digest = <a7ed5289222d4808bdaadcf9eaa4908f>
-              key = <0c3ae62e4a5aa0bbf67baa9066da53ca>
-              mediaName = "a7ed5289222d4808bdaadcf9eaa4908f"
-              size = 290586407
-              transitCdnKey = "CmCqQNEWGrAz"
+              digest = <66da53caf60c4ec900b2dee58107854a>
+              key = <95b0f63bd4c8184986860917d55519fd>
+              mediaName = "66da53caf60c4ec900b2dee58107854a"
+              size = 1020613806
+              transitCdnKey = "AzrHYkFXMOBqmC"
             }
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "zeAEZObFnzTZMn"
-            height = 3973
-            incrementalMac = <22ad8089d8b31e0b8d6049955da8992e>
+            fileName = "MdKVWksKen"
+            height = 3064
+            incrementalMac = <27a38645ab2d573928a14adb2e909071>
             incrementalMacChunkSize = 2048
-            width = 3796
+            width = 1190
           }
         },
         MessageAttachment {
@@ -199,19 +199,19 @@ Frame {
           pointer = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 3
-              digest = <c685a8aedbd29cb42e984d652ed70996>
-              key = <a459650a2590efd18c249edbc4fa0a59>
-              mediaName = "c685a8aedbd29cb42e984d652ed70996"
-              size = 366187902
-              transitCdnKey = "HYkFXMOBqmCd"
+              digest = <1bbf0e8674ca8dec9544987b380d208a>
+              key = <701ad7ec4bf8a7f52384caa746d54763>
+              mediaName = "1bbf0e8674ca8dec9544987b380d208a"
+              size = 413137175
+              transitCdnKey = "YWyYPnkaWIBH"
               transitCdnNumber = 2
             }
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "ksKenthyvzSFN"
+            caption = "LygutgrXFLPS"
             contentType = "image/gif"
-            fileName = "MNaiqnlQb"
-            height = 2301
-            width = 2298
+            fileName = "hyvzSFNg"
+            height = 2514
+            width = 397
           }
           wasDownloaded = true
         }
@@ -230,9 +230,6 @@ Frame {
           sortOrder = 2
         }
       ]
-      text = Text {
-        body = "YWfDTgpIJ"
-      }
     }
   }
 }

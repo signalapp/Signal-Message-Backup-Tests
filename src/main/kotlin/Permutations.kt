@@ -290,7 +290,7 @@ object Generators {
   fun strings(): Generator<String> = Generators.list("", SeededRandom.string(), SeededRandom.string())
   fun nonEmptyStrings(): Generator<String> = Generators.list(SeededRandom.string(), SeededRandom.string())
   fun emoji(): Generator<String> = Generators.list("\uD83D\uDC80", "👍", "👎", "\uD83D\uDC4D\uD83C\uDFFE", "\uD83D\uDC69\u200D\uD83D\uDCBB")
-  fun usernames(): Generator<String> = Generators.list("${SeededRandom.string()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.string()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.string()}.0${SeededRandom.int(1, 10)}")
+  fun usernames(): Generator<String> = Generators.list("${SeededRandom.lipsum.firstName.lowercase()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.lipsum.firstName.lowercase()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.lipsum.firstName.lowercase()}.0${SeededRandom.int(1, 10)}")
   fun booleans(): Generator<Boolean> = Generators.list(true, false)
   fun ints(lower: Int = Int.MIN_VALUE, upper: Int = Int.MAX_VALUE): Generator<Int> = Generators.list(SeededRandom.int(lower, upper), SeededRandom.int(lower, upper), SeededRandom.int(lower, upper))
   fun longs(lower: Long = Long.MIN_VALUE, upper: Long = Long.MAX_VALUE): Generator<Long> = Generators.list(0L, SeededRandom.long(lower, upper), SeededRandom.long(lower, upper))
@@ -307,10 +307,15 @@ object Generators {
   fun e164s(): Generator<Long> = Generators.list(seededRandomE164(), seededRandomE164())
   fun uuids(): Generator<UUID> = UuidGenerator()
   fun cdnNumbers(): Generator<Int> = Generators.list(0, 2, 3)
-  fun emails(): Generator<String> = Generators.list("${SeededRandom.string()}@${SeededRandom.string()}.com", "${SeededRandom.string()}@${SeededRandom.string()}.org")
+  fun emails(): Generator<String> = Generators.list("${SeededRandom.lipsum.firstName}@${SeededRandom.lipsum.lastName}.com", "${SeededRandom.string()}@${SeededRandom.string()}.org")
   fun blurHashes(): Generator<String> = Generators.list("LfLh6Voa9NIW?wNF-ooL-;WAX8oy", "LGG*f,-i.l-o?G\$~?Zt7pHN1=tE3", "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6", "LJR,66e.~Cxu%LoLM|S2%3WWIosm", "LIM:}RB8?-^L.d4]O.nkK_ruI?od")
   fun picoMobs(): Generator<String> = Generators.list(SeededRandom.string(18, 25, "123456789"), SeededRandom.string(18, 25, "123456789"))
   fun colors(): Generator<Int> = Generators.list(seededRandomColor(), seededRandomColor(), seededRandomColor())
+  fun names(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.name })
+  fun firstNames(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.firstName })
+  fun lastNames(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.lastName })
+  fun textBody(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.getWords(1, 10) })
+  fun titles(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.getTitle(2, 3) })
 
   /**
    * Expiration timers are 64-bit values that should be second-aligned

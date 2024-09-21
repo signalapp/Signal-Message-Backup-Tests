@@ -11,18 +11,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -8327818
+          solid = -15148908
         },
         CustomChatColor {
           id = 2
-          solid = -5963777
+          solid = -13831452
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 145
+            angle = 312
             colors = [
-              -1173173,
-              -8701354
+              -6201948,
+              -9003532
             ]
             positions = [
               0.0,
@@ -38,18 +38,18 @@ Frame {
         wallpaperPreset = WallpaperPreset.SOLID_EGGPLANT
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 166062167
+      universalExpireTimerSeconds = 1305377059
     }
-    avatarUrlPath = "https://example.com/dKVWk"
+    avatarUrlPath = "https://example.com/lnJDCHSAKhylA"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true
-      subscriberId = <0091c5a8a51edea80c2dede827e18e55c28e712f9a3dddc384e466f98e15432b>
+      subscriberId = <264eb5417dfb20d9de3b2c342e2771dbc69f3f56cf981fd64acc5040d64ea836>
     }
-    familyName = "AEZObFnzT"
-    givenName = "SumkOGiGqMxxp"
-    profileKey = <f1199c78f4a921363af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9>
-    username = "zsXSlnJDCH.06"
+    familyName = "Rivers"
+    givenName = "Patsy"
+    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    username = "shelly.01"
     usernameLink = UsernameLink {
       color = Color.PURPLE
       entropy = <d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f31f78622c>
