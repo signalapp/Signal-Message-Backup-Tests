@@ -125,7 +125,7 @@ Frame {
     paymentNotification = PaymentNotification {
       amountMob = "8659743698745397888"
       feeMob = "6646369563226663457966"
-      note = ""
+      note = "homero periculis vero quaerendum molestie ferri risus aeque"
       transactionDetails = TransactionDetails {
         transaction = Transaction {
           blockIndex = 9203588929966772552

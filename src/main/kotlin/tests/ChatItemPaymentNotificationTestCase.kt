@@ -5,6 +5,7 @@ package tests
 import Generators
 import PermutationScope
 import TestCase
+import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
@@ -63,7 +64,7 @@ object ChatItemPaymentNotificationTestCase : TestCase("chat_item_payment_notific
         paymentNotification = PaymentNotification(
           amountMob = some(Generators.picoMobs()),
           feeMob = some(Generators.picoMobs()),
-          note = someNullableString(),
+          note = some(Generators.textBody().nullable()),
           transactionDetails = PaymentNotification.TransactionDetails(
             transaction = someOneOf(transactionGenerator),
             failedTransaction = someOneOf(failedTransactionGenerator)

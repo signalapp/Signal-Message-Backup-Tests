@@ -130,7 +130,7 @@ Frame {
     paymentNotification = PaymentNotification {
       amountMob = "168215219239718813429"
       feeMob = "4386491352746419896"
-      note = "ktWAZnlG"
+      note = "invenire inimicus quis fermentum arcu nonumy convallis similique mei"
       transactionDetails = TransactionDetails {
         failedTransaction = FailedTransaction {
           reason = FailureReason.NETWORK
