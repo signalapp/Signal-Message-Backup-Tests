@@ -117,7 +117,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1759338148030
+    dateSent = 1776266470571
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -127,21 +127,21 @@ Frame {
       ]
     }
     paymentNotification = PaymentNotification {
-      amountMob = "486597436987453978"
-      feeMob = "96766463695632266634"
+      amountMob = "168215219239718813429"
+      feeMob = "4386491352746419896"
       transactionDetails = TransactionDetails {
         transaction = Transaction {
           blockIndex = 783018544485806508
           blockTimestamp = 1869702052137
           mobileCoinIdentification = MobileCoinTxoIdentification {
             publicKey = [
-<f7a05a9615d4adbdf6985c94b6633322a1ff1c9732d8456e7027634ab98b2bed>
+<fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166fd3faf51e18e707cf>
             ]
           }
-          receipt = <28fe841d9e2ff1cb589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139>
+          receipt = <0a220a2000000000000000000000000000000000000000000000000000000000000000002a2d0a220a20000000000000000000000000000000000000000000000000000000000000000011e603000000000000>
           status = Status.SUCCESSFUL
           timestamp = 1754822320312
-          transaction = <8107854a29a3b2f195b0f63bd4c8184986860917d55519fd5bc982fa3e64d7ee>
+          transaction = <fb70db9f128ab0196d6be1c6a7ed5289222d4808bdaadcf9eaa4908fc733c244>
         }
       }
     }

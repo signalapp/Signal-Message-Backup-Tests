@@ -39,7 +39,7 @@ object ChatItemPaymentNotificationTestCase : TestCase("chat_item_payment_notific
           blockIndex = somePositiveLong(),
           blockTimestamp = someTimestamp(),
           transaction = someBytes(32).toByteString(),
-          receipt = someBytes(32).toByteString()
+          receipt = some(Generators.mobileCoinReceipts()).toByteString()
         )
       },
       Generators.permutation {

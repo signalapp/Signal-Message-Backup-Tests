@@ -9,6 +9,9 @@ import org.signal.libsignal.zkgroup.receipts.ReceiptCredentialPresentation
 import org.signal.libsignal.zkgroup.receipts.ReceiptSerial
 import org.signal.libsignal.zkgroup.receipts.ServerZkReceiptOperations
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import org.thoughtcrime.securesms.backup.v2.proto.misc.CompressedRistretto
+import org.thoughtcrime.securesms.backup.v2.proto.misc.MaskedAmount
+import org.thoughtcrime.securesms.backup.v2.proto.misc.Receipt
 import java.security.SecureRandom
 import java.util.*
 import kotlin.math.max
@@ -647,6 +650,26 @@ object Generators {
         return (0 until sizes[sizeIndex])
           .map { generator.next() }
           .also { sizeIndex = (sizeIndex + 1) % sizes.size }
+      }
+    }
+  }
+
+  fun mobileCoinReceipts(): Generator<ByteArray> {
+    return object : Generator<ByteArray> {
+      override val minSize: Int = 1
+
+      override fun next(): ByteArray {
+        return Receipt(
+          public_key = CompressedRistretto(
+            data_ = ByteArray(32) { 0 }.toByteString()
+          ),
+          masked_amount_v2 = MaskedAmount(
+            commitment = CompressedRistretto(
+              data_ = ByteArray(32) { 0 }.toByteString()
+            ),
+            masked_value = SeededRandom.long(1, 1000)
+          )
+        ).encode()
       }
     }
   }

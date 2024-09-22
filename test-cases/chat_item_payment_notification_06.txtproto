@@ -117,7 +117,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1759338148028
+    dateSent = 1776266470569
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -128,9 +128,9 @@ Frame {
       ]
     }
     paymentNotification = PaymentNotification {
-      amountMob = "486597436987453978"
-      feeMob = "96766463695632266634"
-      note = "jPVtxOymkbGZom"
+      amountMob = "168215219239718813429"
+      feeMob = "4386491352746419896"
+      note = "ktWAZnlG"
       transactionDetails = TransactionDetails {
         transaction = Transaction {
           mobileCoinIdentification = MobileCoinTxoIdentification {
@@ -138,7 +138,7 @@ Frame {
 <36106eec0da607bfe85604e4e3670f77ebf5e721149f599dab4f9c8a0a0f6193>
             ]
           }
-          receipt = <0c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345>
+          receipt = <0a220a2000000000000000000000000000000000000000000000000000000000000000002a2d0a220a20000000000000000000000000000000000000000000000000000000000000000011a702000000000000>
           status = Status.INITIAL
           timestamp = 1754822320310
           transaction = <d0b6d25acc4d5a8259872972fc853ca658a12027e42941e2e1f45a96bc4c7227>
