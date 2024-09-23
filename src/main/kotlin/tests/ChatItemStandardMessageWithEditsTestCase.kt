@@ -14,13 +14,18 @@ import org.thoughtcrime.securesms.backup.v2.proto.Text
  * Permutations of a standard message with edits/revisions.
  */
 object ChatItemStandardMessageWithEditsTestCase : TestCase("chat_item_standard_message_with_edits") {
+
+  // We always want to read the latest value inside a generator, so to prevent capturing
+  // a snapshot, we keep this as member state
+  private var originalMessageDateSent: Long = 0L
+
   override fun PermutationScope.execute() {
     frames += StandardFrames.MANDATORY_FRAMES
 
     frames += StandardFrames.recipientAlice
     frames += StandardFrames.chatAlice
 
-    val originalMessageDateSent = someNonZeroTimestamp()
+    originalMessageDateSent = someNonZeroTimestamp()
 
     val revisionGenerator = Generators.lists(listOf(1, 3)) {
       Generators.permutation<ChatItem>(snapshotCount = 4) {

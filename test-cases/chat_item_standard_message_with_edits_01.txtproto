@@ -126,10 +126,10 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1833527053934
+        dateSent = 1695248698181
         incoming = IncomingMessageDetails {
-          dateReceived = 1833527053924
-          dateServerSent = 1833527053933
+          dateReceived = 1695248698171
+          dateServerSent = 1695248698180
           read = true
           sealedSender = true
         }
@@ -142,10 +142,10 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1833527053933
+        dateSent = 1695248698180
         incoming = IncomingMessageDetails {
-          dateReceived = 1833527053923
-          dateServerSent = 1833527053932
+          dateReceived = 1695248698170
+          dateServerSent = 1695248698179
         }
         standardMessage = StandardMessage {
           text = Text {
@@ -156,10 +156,10 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1833527053932
+        dateSent = 1695248698179
         incoming = IncomingMessageDetails {
-          dateReceived = 1833527053922
-          dateServerSent = 1833527053931
+          dateReceived = 1695248698169
+          dateServerSent = 1695248698178
           read = true
           sealedSender = true
         }
