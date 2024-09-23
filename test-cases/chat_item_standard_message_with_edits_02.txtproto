@@ -128,10 +128,10 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1833527053934
+        dateSent = 1833527013371
         incoming = IncomingMessageDetails {
-          dateReceived = 1833527053924
-          dateServerSent = 1833527053933
+          dateReceived = 1833527013361
+          dateServerSent = 1833527013370
           read = true
           sealedSender = true
         }

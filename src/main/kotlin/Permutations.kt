@@ -155,7 +155,7 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
 
   fun someNonZeroTimestamp(): Long = some(Generators.nonZeroTimestamps())
 
-  fun someIncrementingTimestamp(): Long = some(Generators.incrementingTimestamps())
+  fun someIncrementingTimestamp(lower: Long = 1659383695000, upper: Long = 1911844456000): Long = some(Generators.incrementingTimestamps(lower, upper))
 
   fun someDecrementingTimestamp(lower: Long = 1659383695000, upper: Long = 1911844456000): Long = some(Generators.decrementingTimestamps(lower, upper))
 
@@ -252,8 +252,8 @@ private class ByteGenerator(private val numBytes: Int, override val minSize: Int
   override fun next(): ByteArray = SeededRandom.bytes(numBytes)
 }
 
-private class IncrementingTimestampGenerator : Generator<Long> {
-  private var onDeck = SeededRandom.long(lower = 1659383695000, upper = 1911844456000)
+private class IncrementingTimestampGenerator(lower: Long = 1659383695000, upper: Long = 1911844456000) : Generator<Long> {
+  private var onDeck = SeededRandom.long(lower = lower, upper = upper)
 
   override val minSize: Int = 2
   override fun next(): Long = onDeck.also { onDeck += 1 }
@@ -305,7 +305,7 @@ object Generators {
   fun urls(): Generator<String> = Generators.list("", "https://example.com/" + SeededRandom.string(), "https://example.com/" + SeededRandom.string())
   fun timestamps(): Generator<Long> = Generators.list(0L, SeededRandom.long(lower = 1659383695000, upper = 1911844456000), SeededRandom.long(lower = 1659383695000, upper = 1911844456000))
   fun nonZeroTimestamps(): Generator<Long> = Generators.list(SeededRandom.long(lower = 1659383695000, upper = 1911844456000), SeededRandom.long(lower = 1659383695000, upper = 1911844456000))
-  fun incrementingTimestamps(): Generator<Long> = IncrementingTimestampGenerator()
+  fun incrementingTimestamps(lower: Long = 1659383695000, upper: Long = 1911844456000): Generator<Long> = IncrementingTimestampGenerator(lower, upper)
   fun decrementingTimestamps(lower: Long = 1659383695000, upper: Long = 1911844456000): Generator<Long> = DecrementingTimestampGenerator(lower, upper)
   fun e164s(): Generator<Long> = Generators.list(seededRandomE164(), seededRandomE164())
   fun uuids(): Generator<UUID> = UuidGenerator()

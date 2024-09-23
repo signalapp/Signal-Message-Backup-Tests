@@ -29,9 +29,9 @@ object ChatItemStandardMessageWithEditsTestCase : TestCase("chat_item_standard_m
 
     val revisionGenerator = Generators.lists(listOf(1, 3)) {
       Generators.permutation<ChatItem>(snapshotCount = 4) {
-        val dateSent = someDecrementingTimestamp(
+        val dateSent = someIncrementingTimestamp(
           lower = originalMessageDateSent - 100_000,
-          upper = originalMessageDateSent - 1
+          upper = originalMessageDateSent - 10_000
         )
 
         frames += ChatItem(
