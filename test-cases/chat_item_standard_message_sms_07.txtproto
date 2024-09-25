@@ -129,7 +129,23 @@ Frame {
         }
       ]
     }
+    sms = true
     standardMessage = StandardMessage {
+      attachments = [
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              digest = <8a72bebb4db939e0342ae035ddbe7fe4>
+              key = <d9345fdc5ab1cf72b00738e125ef7370>
+              mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
+              size = 891929939
+            }
+            contentType = "image/jpeg"
+          }
+          wasDownloaded = true
+        }
+      ]
       text = Text {
         body = "YWfDTgpIJ"
       }

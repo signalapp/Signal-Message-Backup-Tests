@@ -129,6 +129,7 @@ Frame {
         }
       ]
     }
+    sms = true
     standardMessage = StandardMessage {
       text = Text {
         body = "YWfDTgpIJ"

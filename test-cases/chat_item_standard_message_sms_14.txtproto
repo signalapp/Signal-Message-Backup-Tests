@@ -130,6 +130,92 @@ Frame {
     }
     sms = true
     standardMessage = StandardMessage {
+      attachments = [
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              cdnNumber = 2
+              digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
+              key = <0a038863ebb03fed8486f4196b6e656c>
+              mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
+              size = 1267987916
+              transitCdnKey = "ySkLQGERtwS"
+            }
+            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+            contentType = "image/png"
+            fileName = "zWWFqaczw"
+            height = 3188
+            width = 2674
+          }
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              cdnNumber = 3
+              digest = <222d4808bdaadcf9eaa4908fc733c244>
+              key = <4a5aa0bbf67baa9066da53caf60c4ec9>
+              mediaName = "222d4808bdaadcf9eaa4908fc733c244"
+              size = 1322441015
+              transitCdnKey = "uECQWuuuE"
+              transitCdnNumber = 2
+            }
+            contentType = "audio/mp3"
+            fileName = "dzHLOokMZPmj"
+            height = 1693
+            width = 2062
+          }
+          wasDownloaded = true
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              digest = <7db665e567fdcb1ac685a8aedbd29cb4>
+              key = <2ed70996974af5a7a459650a2590efd1>
+              mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
+              size = 891929939
+            }
+            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+            contentType = "video/mp4"
+            height = 3329
+            width = 257
+          }
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              digest = <8a72bebb4db939e0342ae035ddbe7fe4>
+              key = <d9345fdc5ab1cf72b00738e125ef7370>
+              mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
+              size = 891929939
+            }
+            contentType = "application/pdf"
+            fileName = "zWWFqaczw"
+          }
+          wasDownloaded = true
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              cdnNumber = 2
+              digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
+              key = <0a038863ebb03fed8486f4196b6e656c>
+              mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
+              size = 1267987916
+              transitCdnKey = "ySkLQGERtwS"
+            }
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+            contentType = "image/jpeg"
+            fileName = "dzHLOokMZPmj"
+            height = 3188
+            width = 2674
+          }
+        }
+      ]
       text = Text {
         body = "pdiJZ"
       }

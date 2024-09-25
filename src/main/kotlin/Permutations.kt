@@ -479,6 +479,27 @@ object Generators {
     contentTypeGenerator = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
   )
 
+  fun smsAttachmentFilePointer(): Generator<FilePointer> {
+    return Generators.permutation {
+      val contentType = some(Generators.list("image/jpeg", "image/png", "audio/mp3", "video/mp4", "application/pdf"))
+      val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
+
+      frames += FilePointer(
+        backupLocator = some(backupLocatorGenerator()),
+        attachmentLocator = null,
+        invalidAttachmentLocator = null,
+        contentType = contentType,
+        incrementalMac = null,
+        incrementalMacChunkSize = null,
+        fileName = some(Generators.nonEmptyStrings().nullable()),
+        width = some(Generators.ints(0, 4096).nullable()),
+        height = some(Generators.ints(0, 4096).nullable()),
+        caption = null,
+        blurHash = if (blurHashSupported) some(Generators.blurHashes().nullable()) else null
+      )
+    }
+  }
+
   private fun filePointerInternal(
     includeFileName: Boolean,
     includeMediaSize: Boolean,
