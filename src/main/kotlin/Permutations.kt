@@ -303,6 +303,7 @@ object Generators {
   fun <T> enum(clazz: Class<T>, excluding: T? = null): Generator<T> = ListGenerator(clazz.enumConstants.filterNot { it == excluding }.toList())
   fun <T> enum(clazz: Class<T>, vararg excluding: T): Generator<T> = ListGenerator(clazz.enumConstants.filterNot { excluding.contains(it) }.toList())
   fun urls(): Generator<String> = Generators.list("", "https://example.com/" + SeededRandom.string(), "https://example.com/" + SeededRandom.string())
+  fun nonEmptyUrls(): Generator<String> = Generators.list("https://example.com/" + SeededRandom.string(), "https://example.com/" + SeededRandom.string())
   fun timestamps(): Generator<Long> = Generators.list(0L, SeededRandom.long(lower = 1659383695000, upper = 1911844456000), SeededRandom.long(lower = 1659383695000, upper = 1911844456000))
   fun nonZeroTimestamps(): Generator<Long> = Generators.list(SeededRandom.long(lower = 1659383695000, upper = 1911844456000), SeededRandom.long(lower = 1659383695000, upper = 1911844456000))
   fun incrementingTimestamps(lower: Long = 1659383695000, upper: Long = 1911844456000): Generator<Long> = IncrementingTimestampGenerator(lower, upper)
@@ -449,6 +450,15 @@ object Generators {
     includeBlurHash = true,
     includeIncrementalMac = false,
     contentTypeGenerator = "image/jpeg".asGenerator()
+  )
+
+  fun linkPreviewFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = false,
+    includeMediaSize = true,
+    includeCaption = false,
+    includeBlurHash = true,
+    includeIncrementalMac = false,
+    contentTypeGenerator = Generators.list("image/jpeg", "image/png")
   )
 
   fun stickerFilePointer(): Generator<FilePointer> = filePointerInternal(
