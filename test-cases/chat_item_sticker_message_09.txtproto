@@ -143,8 +143,6 @@ Frame {
           contentType = "image/apng"
           fileName = "iGqMx"
           height = 39
-          incrementalMac = <bdefd49b44b4c8d19c47cb807844279f>
-          incrementalMacChunkSize = 2048
           width = 3530
         }
         emoji = "👩‍💻"

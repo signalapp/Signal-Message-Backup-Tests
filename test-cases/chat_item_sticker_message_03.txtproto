@@ -140,8 +140,6 @@ Frame {
           }
           contentType = "image/png"
           height = 3586
-          incrementalMac = <bdefd49b44b4c8d19c47cb807844279f>
-          incrementalMacChunkSize = 2048
           width = 3822
         }
         emoji = "👍🏾"

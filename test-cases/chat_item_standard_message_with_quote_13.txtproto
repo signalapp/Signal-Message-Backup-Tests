@@ -117,17 +117,11 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          name = Name {
-            familyName = "Parker"
-            givenName = "Peter"
-          }
-        }
-      ]
-    }
     dateSent = 1
+    giftBadge = GiftBadge {
+      receiptCredentialPresentation = <00f80e88b8ee9b3c131ad37834bc231865e4e2e5f3fcdba49711d9e90d300d771564a93b8f768a49ed3a6933758b6c88a15053c54012f5ef558fce88f9a20fe028d008b217ae360cd97b7ff8b8d6d522893e0624e31f064710181a537012e80c21983317cc0fa62ec243f41bb8f7b775c21d92ca53aaa57877130cd4d2bae8af5732ade4f5cd7defa08a6a9aac8929c635beaf85e35d70c9c7e1df5a16a012b5188000000000000000d5e73fa872ca8e02db462f789558f97ca62a6685aedb0f5951341852d82d32078b259e2cc7dc8a2d452e16f07238c07e789b1e600ef82d347ac0df9b5ec7f3045c930f393117dc0cc202a820546bc471d09b01501a479e111c58c77b16a6fb0dff56ce8cfeabb89088e21de7836f301b8f32065073dc01aca99b0537cdfe030600000000000000000100000000000000757189140984c6d347b727a3fb3cea46>
+      state = State.OPENED
+    }
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
@@ -140,7 +134,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1804284278919
+    dateSent = 1885067522612
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -156,21 +150,18 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
-        text = Text {
-          body = "Peter Parker"
-        }
-        type = Type.NORMAL
+        type = Type.GIFTBADGE
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1842156385752
+          sentTimestamp = 1659733899763
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "utinam sapien tristique"
+        body = "nisl"
       }
     }
   }

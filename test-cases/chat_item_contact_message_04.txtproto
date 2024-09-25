@@ -142,8 +142,6 @@ Frame {
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "image/png"
             height = 1852
-            incrementalMac = <c9524284c3249539c09ea81eb340caa7>
-            incrementalMacChunkSize = 2048
             width = 1210
           }
           email = [

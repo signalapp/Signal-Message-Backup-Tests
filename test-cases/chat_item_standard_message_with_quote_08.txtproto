@@ -123,9 +123,22 @@ Frame {
       dateServerSent = 1
       read = true
     }
-    standardMessage = StandardMessage {
-      text = Text {
-        body = "asdf"
+    stickerMessage = StickerMessage {
+      sticker = Sticker {
+        data_ = FilePointer {
+          backupLocator = BackupLocator {
+            digest = <21efea3f9248f35c5cf76c3f5c52b793>
+            key = <6d1059ced9cfb212aa27b9edf8b0bf84>
+            mediaName = "21efea3f9248f35c5cf76c3f5c52b793"
+            size = 254277433
+          }
+          contentType = "image/png"
+          height = 3854
+          width = 101
+        }
+        emoji = "👍🏾"
+        packId = <830b68827e1bb66118f616e9bc52bb0b>
+        packKey = <34afd9b782548efca8b3d2936164a13923b4f681a95660c909f6b1b9a8205f85>
       }
     }
   }
@@ -135,7 +148,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1804284278914
+    dateSent = 1885067522607
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -148,27 +161,24 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
-        text = Text {
-          body = "asdf"
-        }
         type = Type.NORMAL
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1842156385752
+          sentTimestamp = 1659733899763
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1842156385753
+          sentTimestamp = 1659733899764
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "quaerendum disputationi quaeque an pretium"
+        body = "theophrastus dignissim aliquet ubique sagittis recteque ocurreret equidem"
       }
     }
   }

@@ -402,6 +402,7 @@ object Generators {
     includeMediaSize = true,
     includeCaption = false,
     includeBlurHash = true,
+    includeIncrementalMac = false,
     contentTypeGenerator = Generators.list("image/jpeg", "image/png")
   )
 
@@ -410,6 +411,7 @@ object Generators {
     includeMediaSize = false,
     includeCaption = false,
     includeBlurHash = false,
+    includeIncrementalMac = false,
     contentTypeGenerator = Generators.list("text/x-signal-plain")
   )
 
@@ -418,6 +420,7 @@ object Generators {
     includeMediaSize = false,
     includeCaption = false,
     includeBlurHash = false,
+    includeIncrementalMac = false,
     contentTypeGenerator = Generators.list("audio/mp3")
   )
 
@@ -426,6 +429,7 @@ object Generators {
     includeMediaSize = true,
     includeCaption = false,
     includeBlurHash = true,
+    includeIncrementalMac = false,
     contentTypeGenerator = Generators.list("video/mp4")
   )
 
@@ -434,7 +438,17 @@ object Generators {
     includeMediaSize = true,
     includeCaption = false,
     includeBlurHash = true,
+    includeIncrementalMac = false,
     contentTypeGenerator = Generators.list("image/png")
+  )
+
+  fun quoteFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = false,
+    includeMediaSize = true,
+    includeCaption = false,
+    includeBlurHash = true,
+    includeIncrementalMac = false,
+    contentTypeGenerator = "image/jpeg".asGenerator()
   )
 
   fun stickerFilePointer(): Generator<FilePointer> = filePointerInternal(
@@ -442,6 +456,7 @@ object Generators {
     includeMediaSize = true,
     includeCaption = false,
     includeBlurHash = false,
+    includeIncrementalMac = false,
     contentTypeGenerator = Generators.list("image/png", "image/apng", "image/webp")
   )
 
@@ -450,6 +465,7 @@ object Generators {
     includeMediaSize = true,
     includeCaption = true,
     includeBlurHash = true,
+    includeIncrementalMac = true,
     contentTypeGenerator = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
   )
 
@@ -458,6 +474,7 @@ object Generators {
     includeMediaSize: Boolean,
     includeCaption: Boolean,
     includeBlurHash: Boolean,
+    includeIncrementalMac: Boolean,
     contentTypeGenerator: Generator<String>
   ): Generator<FilePointer> {
     val (backupLocatorGenerator, attachmentLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
@@ -480,7 +497,7 @@ object Generators {
       val attachmentLocator: FilePointer.AttachmentLocator? = someOneOf(attachmentLocatorGenerator)
       val invalidAttachmentLocator: FilePointer.InvalidAttachmentLocator? = someOneOf(invalidAttachmentLocatorGenerator)
       val potentialIncrementalMac = some(Generators.bytes(16).nullable())
-      val incrementalMac = if (invalidAttachmentLocator == null) potentialIncrementalMac else null
+      val incrementalMac = if (includeIncrementalMac && invalidAttachmentLocator == null) potentialIncrementalMac else null
       val incrementalMacChunkSize: Int? = some(Generators.list(1024, 2048))
 
       val contentType = some(contentTypeGenerator)

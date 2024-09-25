@@ -2,14 +2,19 @@
 
 package tests
 
+import Generator
 import Generators
 import PermutationScope
 import StandardFrames
 import TestCase
 import asGenerator
+import asList
+import map
+import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import toByteArray
 
 /**
  * Incoming/outgoing messages that quote other messages. We try to cover quoting every type of message here.
@@ -27,33 +32,26 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
     val incoming = some(incomingGenerator)
     val outgoing = some(outgoingGenerator)
 
-    // TODO more message types!
-
     val (
       standardMessageGenerator,
       contactMessageGenerator,
       stickerMessageGenerator,
       giftBadgeGenerator
     ) = oneOf(
-      StandardMessage(
-        text = Text(body = "asdf")
-      ).asGenerator(),
+      standardMessageGenerator(),
       ContactMessage(
         contact = listOf(ContactAttachment(name = ContactAttachment.Name(givenName = "Peter", familyName = "Parker")))
       ).asGenerator(),
-      StickerMessage(
-        sticker = Sticker(
-          packId = ByteArray(16) { 0 }.toByteString(),
-          packKey = ByteArray(32) { 1 }.toByteString(),
-          emoji = "👍",
-          data_ = FilePointer(
-            contentType = "image/webp",
-            // If we update to have a sticker with a valid attachment, the quote
-            // below should be updated to include a valid thumbnail attachment.
-            invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator()
+      Generators.permutation {
+        frames += StickerMessage(
+          sticker = Sticker(
+            packId = someBytes(16).toByteString(),
+            packKey = someBytes(32).toByteString(),
+            emoji = someEmoji(),
+            data_ = some(Generators.stickerFilePointer())
           )
         )
-      ).asGenerator(),
+      },
       GiftBadge(
         receiptCredentialPresentation = some(Generators.receiptCredentialPresentation()).serialize().toByteString(),
         state = GiftBadge.State.OPENED
@@ -81,6 +79,17 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
 
     frames += targetMessage
 
+    checkNotNull(targetMessage.chatItem)
+
+    val quoteThumbnailGenerator: Generator<MessageAttachment> = Generators.quoteFilePointer().map { pointer ->
+      MessageAttachment(
+        pointer = pointer,
+        flag = MessageAttachment.Flag.NONE,
+        wasDownloaded = someBoolean(),
+        clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()
+      )
+    }
+
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
@@ -99,40 +108,81 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
           quote = Quote(
             targetSentTimestamp = targetDateSent,
             authorId = StandardFrames.recipientAlice.recipient.id,
-            text = if (targetMessage.chatItem!!.standardMessage != null) {
-              Text(
-                body = targetMessage.chatItem.standardMessage!!.text!!.body,
-                bodyRanges = targetMessage.chatItem.standardMessage!!.text!!.bodyRanges
-              )
-            } else if (targetMessage.chatItem!!.contactMessage != null) {
-              val name = targetMessage.chatItem.contactMessage!!.contact[0].name
-              Text(
-                body = "${name!!.givenName} ${name!!.familyName}"
-              )
-            } else {
-              null
-            },
-            type = if (targetMessage.chatItem!!.giftBadge != null) {
+            text = targetMessage.chatItem.getQuoteText(),
+            type = if (targetMessage.chatItem.giftBadge != null) {
               Quote.Type.GIFTBADGE
             } else {
               Quote.Type.NORMAL
             },
-            attachments = if (targetMessage.chatItem!!.stickerMessage != null) {
-              // The sole sticker message test case has an invalid attachment,
-              // so we wouldn't have a proper thumbnail attachment here.
-              listOf(
+            attachments = quoteThumbnailGenerator
+              .map { thumbnail ->
+                val targetContentType = targetMessage.chatItem.stickerMessage?.sticker?.data_?.contentType
+                  ?: targetMessage.chatItem.standardMessage?.attachments?.firstOrNull()?.pointer?.contentType
                 Quote.QuotedAttachment(
-                  contentType = "image/webp",
-                  fileName = null
+                  contentType = targetContentType,
+                  fileName = thumbnail.pointer?.fileName,
+                  thumbnail = thumbnail.takeUnless { targetContentType == null }
                 )
-              )
-            } else {
-              emptyList()
-            }
+              }
+              .map { listOf(it).filter { q -> q.thumbnail != null } }
+              .let { some(it) }
           ),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )
       )
     )
+  }
+
+  private fun standardMessageGenerator(): Generator<Any?> {
+    return Generators.permutation {
+      val standardMessageGenerator = Generators.permutation<MessageAttachment> {
+        frames += MessageAttachment(
+          pointer = some(Generators.bodyAttachmentFilePointer()),
+          flag = MessageAttachment.Flag.NONE,
+          wasDownloaded = someBoolean(),
+          clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()
+        )
+      }.asList(0, 1, 3)
+
+      val voiceNoteAttachmentGenerator = Generators.permutation<MessageAttachment> {
+        frames += MessageAttachment(
+          pointer = some(Generators.voiceMessageFilePointer()),
+          flag = MessageAttachment.Flag.VOICE_MESSAGE,
+          wasDownloaded = someBoolean(),
+          clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()
+        )
+      }.asList(1)
+
+      val attachmentGenerator: Generator<List<MessageAttachment>> = Generators.merge(standardMessageGenerator, voiceNoteAttachmentGenerator)
+
+      val attachments = some(attachmentGenerator)
+
+      frames += StandardMessage(
+        text = if (attachments.firstOrNull()?.flag == MessageAttachment.Flag.VOICE_MESSAGE) {
+          null
+        } else {
+          Text(body = "asdf")
+        },
+        attachments = attachments
+      )
+    }
+  }
+
+  private fun ChatItem.getQuoteText(): Text? {
+    return when {
+      this.standardMessage != null -> {
+        Text(
+          body = this.standardMessage.text?.body ?: "",
+          bodyRanges = this.standardMessage.text?.bodyRanges ?: emptyList()
+        )
+      }
+      this.contactMessage != null -> {
+        val name = this.contactMessage.contact[0].name!!
+        Text(
+          body = "${name.givenName} ${name.familyName}"
+        )
+      }
+      else -> null
+    }
   }
 }

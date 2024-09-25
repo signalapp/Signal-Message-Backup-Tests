@@ -141,8 +141,6 @@ Frame {
         }
         contentType = "text/x-signal-plain"
         fileName = "mkOGiGqMxxp"
-        incrementalMac = <d64ea836f23a4ce20c4220ab396c4b8e>
-        incrementalMacChunkSize = 2048
       }
       text = Text {
         body = "senserit decore interpretaris"

@@ -151,8 +151,6 @@ Frame {
           contentType = "image/webp"
           fileName = "pdcKiDzzeAEZOb"
           height = 39
-          incrementalMac = <bdefd49b44b4c8d19c47cb807844279f>
-          incrementalMacChunkSize = 2048
           width = 3530
         }
         emoji = "👍🏾"

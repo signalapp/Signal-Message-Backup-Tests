@@ -117,21 +117,31 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          name = Name {
-            familyName = "Parker"
-            givenName = "Peter"
-          }
-        }
-      ]
-    }
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
+    }
+    standardMessage = StandardMessage {
+      attachments = [
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
+              digest = <8bffbb6878d9cd54434bca72346a5ff9>
+              key = <bd6e73ff9022c6fa6faebb1559633d69>
+              mediaName = "8bffbb6878d9cd54434bca72346a5ff9"
+              size = 1107048700
+            }
+            contentType = "image/jpeg"
+          }
+          wasDownloaded = true
+        }
+      ]
+      text = Text {
+        body = "asdf"
+      }
     }
   }
 }
@@ -140,7 +150,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1804284278907
+    dateSent = 1885067522600
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826270
       dateServerSent = 1794124103202
@@ -150,7 +160,7 @@ Frame {
         authorId = 4
         targetSentTimestamp = 1
         text = Text {
-          body = "Peter Parker"
+          body = "asdf"
         }
         type = Type.NORMAL
       }
@@ -158,12 +168,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1842156385752
+          sentTimestamp = 1659733899763
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "utinam sapien tristique"
+        body = "nisl"
       }
     }
   }

@@ -140,8 +140,6 @@ Frame {
         }
         contentType = "text/x-signal-plain"
         fileName = "cKiDzz"
-        incrementalMac = <d64ea836f23a4ce20c4220ab396c4b8e>
-        incrementalMacChunkSize = 2048
       }
       reactions = [
         Reaction {

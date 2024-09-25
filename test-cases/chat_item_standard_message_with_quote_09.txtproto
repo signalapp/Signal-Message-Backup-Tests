@@ -117,21 +117,28 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          name = Name {
-            familyName = "Parker"
-            givenName = "Peter"
-          }
-        }
-      ]
-    }
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
+    }
+    stickerMessage = StickerMessage {
+      sticker = Sticker {
+        data_ = FilePointer {
+          attachmentLocator = AttachmentLocator {
+            cdnKey = "LpkbK"
+            digest = <8a54497376b95e47074099ec621e2955>
+            key = <355750ad1da84cf4612caa0c59a4992d>
+            size = 1456450975
+          }
+          contentType = "image/apng"
+          fileName = "roNPcsQfQRrO"
+        }
+        emoji = "👩‍💻"
+        packId = <b219bf3c0de0e4e96a74fe9b0a44173c>
+        packKey = <392c9af17ca1e2c9b1316bc18ac3c3d9718700d52646662c523f25aa2c7d893c>
+      }
     }
   }
 }
@@ -140,7 +147,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1804284278915
+    dateSent = 1885067522608
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -156,13 +163,10 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
-        text = Text {
-          body = "Peter Parker"
-        }
         type = Type.NORMAL
       }
       text = Text {
-        body = "sagittis natoque utinam tota repudiandae brute veritus"
+        body = "saperet duis rutrum blandit nisi persecuti quod vehicula rutrum"
       }
     }
   }

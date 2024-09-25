@@ -126,12 +126,22 @@ Frame {
     stickerMessage = StickerMessage {
       sticker = Sticker {
         data_ = FilePointer {
+          attachmentLocator = AttachmentLocator {
+            cdnKey = "oCleFxC"
+            cdnNumber = 2
+            digest = <d29feb1754663c75523920c70e1d88ff>
+            key = <ffedf0c113a40931cd131488a885ef73>
+            size = 447009874
+            uploadTimestamp = 1696687454091
+          }
           contentType = "image/webp"
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          fileName = "CapzHP"
+          height = 3271
+          width = 2949
         }
-        emoji = "👍"
-        packId = <00000000000000000000000000000000>
-        packKey = <0101010101010101010101010101010101010101010101010101010101010101>
+        emoji = "💀"
+        packId = <600f7453a5f0ad3a15501a033e92f33c>
+        packKey = <c8f6ce89e86b538d5cbd2f8085f7b91055ef5f7fee29b303cc2a064be56f696c>
       }
     }
   }
@@ -141,7 +151,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1804284278916
+    dateSent = 1885067522609
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -153,11 +163,6 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
-        attachments = [
-          QuotedAttachment {
-            contentType = "image/webp"
-          }
-        ]
         authorId = 4
         targetSentTimestamp = 1
         type = Type.NORMAL
@@ -166,12 +171,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1842156385752
+          sentTimestamp = 1659733899763
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "utinam sapien tristique"
+        body = "nisl"
       }
     }
   }
