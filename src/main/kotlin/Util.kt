@@ -1,4 +1,6 @@
 import okio.ByteString
+import java.io.IOException
+import java.io.InputStream
 import java.io.OutputStream
 import java.nio.ByteBuffer
 import java.util.Base64
@@ -25,6 +27,51 @@ fun OutputStream.writeVarInt32(value: Int) {
     } else {
       // Otherwise, we need to write the next 7 bits, and set the MSB to 1 to indicate that there are more bits to come
       write(lowestSevenBits or 0x80)
+    }
+  }
+}
+
+/**
+ * Reads a 32-bit variable-length integer from the stream.
+ *
+ * The format uses one byte for each 7 bits of the integer, with the most significant bit (MSB) of each byte indicating whether more bytes need to be read.
+ * If the MSB is 0, it indicates the final byte. The actual integer value is constructed from the remaining 7 bits of each byte.
+ */
+fun InputStream.readVarInt32(): Int {
+  var result = 0
+
+  // We read 7 bits of the integer at a time, up to the full size of an integer (32 bits).
+  for (shift in 0 until 32 step 7) {
+    // Despite returning an int, the range of the returned value is 0..255, so it's just a byte.
+    // I believe it's an int just so it can return -1 when the stream ends.
+    val byte: Int = read()
+    if (byte < 0) {
+      return -1
+    }
+
+    val lowestSevenBits = byte and 0x7F
+    val shiftedBits = lowestSevenBits shl shift
+
+    result = result or shiftedBits
+
+    // If the MSB is 0, that means the varint is finished, and we have our full result
+    if (byte and 0x80 == 0) {
+      return result
+    }
+  }
+
+  throw IOException("Malformed varint!")
+}
+
+/**
+ * Reads the specified number of bytes from the stream and returns it as a [ByteArray].
+ * Throws an [IOException] if the stream doesn't have that many bytes.
+ */
+@Throws(IOException::class)
+fun InputStream.readNBytesOrThrow(length: Int): ByteArray {
+  return this.readNBytes(length).also {
+    if (it.size != length) {
+      throw IllegalStateException("Not enough bytes!")
     }
   }
 }

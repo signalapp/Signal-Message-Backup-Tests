@@ -3,9 +3,13 @@
 import com.squareup.wire.Message
 import org.signal.libsignal.messagebackup.ComparableBackup
 import org.signal.libsignal.messagebackup.MessageBackup
+import org.thoughtcrime.securesms.backup.v2.proto.BackupInfo
+import org.thoughtcrime.securesms.backup.v2.proto.Frame
 import tests.*
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.io.FileInputStream
+import java.io.InputStream
 import java.io.OutputStream
 
 const val OUTPUT_DIR = "test-cases"
@@ -44,13 +48,52 @@ val ALL_TEST_CASES = listOf(
   ChatItemRemoteDeleteTestCase
 )
 
-fun main() {
-  val startTime = System.currentTimeMillis()
+fun main(args: Array<String>) {
+  if (args.isEmpty()) {
+    generateTests()
+    return
+  }
 
+  if (args.size == 1 && args[0] == "generate-tests") {
+    generateTests()
+    return
+  }
+
+  if (args.size == 1 && args[0] in setOf("help", "--help")) {
+    printHelp()
+    return
+  }
+
+  if (args.size == 2 && args[0] == "print") {
+    prettyPrintBackup(path = args[1])
+    return
+  }
+
+  printHelp()
+}
+
+private fun generateTests() {
+  val startTime = System.currentTimeMillis()
   println("Initializing...")
   init()
   runAllTests()
   println("Complete! Took ${System.currentTimeMillis() - startTime} ms.")
+}
+
+private fun prettyPrintBackup(path: String) {
+  val fileStream = FileInputStream(path)
+  val frames = readAllFramesFromStream(fileStream)
+  val prettyPrinted = frames.joinToString("\n\n") { it.prettyPrint() }
+  println(prettyPrinted)
+}
+
+private fun printHelp() {
+  println("Usage:")
+  println("  If no command is supplied, this will generate tests.")
+  println("")
+  println("Commands:")
+  println("  generate-tests\t\tGenerates test cases")
+  println("  print\t\tPrints out a readable plaintext version of a plaintext, ungzipped backup file")
 }
 
 private fun init() {
@@ -95,8 +138,8 @@ private fun runTest(testName: String, init: PermutationScope.() -> Unit) {
 
     File("$OUTPUT_DIR/$baseFileName.binproto").writeBytes(binary)
 
-    val json = snapshot.joinToString("\n\n") { it.prettyPrint() }
-    File("$OUTPUT_DIR/$baseFileName.txtproto").writeText(json.prefixWithWarningComment())
+    val prettyPrinted = snapshot.joinToString("\n\n") { it.prettyPrint() }
+    File("$OUTPUT_DIR/$baseFileName.txtproto").writeText(prettyPrinted.prefixWithWarningComment())
 
     index++
   }
@@ -128,5 +171,50 @@ private class PlainTextBackupWriter(private val outputStream: OutputStream) : Au
 
   override fun close() {
     outputStream.close()
+  }
+}
+
+private fun readAllFramesFromStream(inputStream: InputStream): List<Message<*, *>> {
+  val frames = mutableListOf<Message<*, *>>()
+  PlainTextBackupReader(inputStream).use { reader ->
+    while (reader.hasNext()) {
+      frames += reader.next()
+    }
+  }
+
+  return frames
+}
+
+private class PlainTextBackupReader(private val inputStream: InputStream) : Iterator<Message<*, *>>, AutoCloseable {
+
+  private var hasReadHeader = false
+  private var next: Message<*, *>? = readNext()
+
+  override fun hasNext(): Boolean {
+    return next != null
+  }
+
+  override fun next(): Message<*, *> {
+    return next!!.also { next = readNext() }
+  }
+
+  override fun close() {
+    inputStream.close()
+  }
+
+  private fun readNext(): Message<*, *>? {
+    val length = inputStream.readVarInt32()
+    if (length <= 0) {
+      return null
+    }
+
+    val frameBytes = inputStream.readNBytesOrThrow(length)
+
+    return if (!hasReadHeader) {
+      hasReadHeader = true
+      BackupInfo.ADAPTER.decode(frameBytes)
+    } else {
+      return Frame.ADAPTER.decode(frameBytes)
+    }
   }
 }
