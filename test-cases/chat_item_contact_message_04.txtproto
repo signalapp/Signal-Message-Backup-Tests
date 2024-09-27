@@ -122,47 +122,43 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "jjbudVyDygx"
-              country = "ldxrj"
-              label = "pXHaW"
-              neighborhood = "mtfRDjcUVSZl"
-              pobox = "FLPSkA"
-              postcode = "unEEaAnFRLrvz"
-              region = "UUiitmkHLv"
+              city = "pXHaW"
+              country = "UUiitmkHLv"
+              label = "ygutgr"
+              neighborhood = "CfVdHWJ"
+              pobox = "dKVWk"
+              postcode = "jjbudVyDygx"
+              region = "mtfRDjcUVSZl"
               type = Type.HOME
             }
           ]
           avatar = FilePointer {
             backupLocator = BackupLocator {
-              digest = <807559220985f14b0252e833ea9a84c3>
-              key = <685e0086546218a42159dc4893072988>
-              mediaName = "807559220985f14b0252e833ea9a84c3"
-              size = 161637746
+              digest = <5f0b001866bdefbc95239458e0c53bed>
+              key = <f2363ed9947107e26853961a46c9023f>
+              mediaName = "5f0b001866bdefbc95239458e0c53bed"
+              size = 1932568500
             }
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "image/png"
-            height = 1852
-            width = 1210
+            height = 3249
+            width = 3523
           }
           email = [
             Email {
-              label = "DXOZYcESWutf"
+              label = "zDNPnbCyaCBGA"
               type = Type.CUSTOM
-              value_ = "qaczwFdzHL@okMZPmjwqTJ.org"
+              value_ = "UUkKGT@pTUET.org"
             }
           ]
           name = Name {
-            familyName = "Watson"
             givenName = "Ronnie"
-            middleName = "Jodie"
-            prefix = "gpIJqy"
-            suffix = "uECQWuuuE"
           }
           number = [
             Phone {
-              label = "WIBHCZROtEhcC"
+              label = "uECQWuuuE"
               type = Type.CUSTOM
-              value_ = "447700900133"
+              value_ = "33639988942"
             }
           ]
         }

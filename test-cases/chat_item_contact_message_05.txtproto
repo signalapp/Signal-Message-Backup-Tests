@@ -122,7 +122,7 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              pobox = "FLPSkA"
+              pobox = "dKVWk"
               type = Type.HOME
             },
             PostalAddress {
@@ -132,48 +132,49 @@ Frame {
               neighborhood = ""
               postcode = ""
               region = ""
-              street = "pXHtZhd"
+              street = "EZObFnzTZ"
               type = Type.WORK
             }
           ]
           avatar = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "SuQFBOQS"
-              digest = <245052a930af623c6f503cf7bbfd9a0d>
-              key = <fef7c6ae3ab14c037355e66382f93b81>
-              size = 159423374
+              cdnKey = "SQpKbdZIRAUJh"
+              digest = <a7145ef1eae90ee8fd8418f75f9941ad>
+              key = <cb3e8d9e7483125349239a77e474e6a7>
+              size = 827570539
             }
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "image/jpeg"
-            fileName = "XuxxxsrHpmv"
+            fileName = "KNrTwHjDpVLD"
           }
           email = [
             Email {
               type = Type.HOME
-              value_ = "Vito@Dillard.com"
+              value_ = "Kenya@Hunter.com"
             },
             Email {
               label = ""
               type = Type.MOBILE
-              value_ = "qaczwFdzHL@okMZPmjwqTJ.org"
+              value_ = "UUkKGT@pTUET.org"
             }
           ]
           name = Name {
-            familyName = "Clayton"
+            familyName = "Gillespie"
             givenName = "Rachael"
-            middleName = "Lorraine"
-            prefix = "kLQGERtwS"
-            suffix = "CmCqQNEWGrAz"
+            middleName = "Daphne"
+            nickname = "Michelle"
+            prefix = "Mr."
+            suffix = "Jr."
           }
           number = [
             Phone {
               type = Type.HOME
-              value_ = "11395550128"
+              value_ = "447700900381"
             },
             Phone {
               label = ""
               type = Type.MOBILE
-              value_ = "447700900133"
+              value_ = "33639988942"
             }
           ]
           organization = ""

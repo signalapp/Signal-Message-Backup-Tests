@@ -122,36 +122,37 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              pobox = "FLPSkA"
+              pobox = "dKVWk"
               type = Type.HOME
             }
           ]
           avatar = FilePointer {
             backupLocator = BackupLocator {
-              digest = <fa7c60d5e22af1036fae5ece6f2fc478>
-              key = <be390edffb508106666250a3d0955ce5>
-              mediaName = "fa7c60d5e22af1036fae5ece6f2fc478"
-              size = 161637746
+              digest = <7869439292de6b3479d3b8d192cc6b4e>
+              key = <91397527ab6ed8da3cade6724c1d82ca>
+              mediaName = "7869439292de6b3479d3b8d192cc6b4e"
+              size = 1932568500
             }
             contentType = "image/jpeg"
           }
           email = [
             Email {
               type = Type.HOME
-              value_ = "Vito@Dillard.com"
+              value_ = "Kenya@Hunter.com"
             }
           ]
           name = Name {
-            familyName = "Watson"
+            familyName = "Gillespie"
             givenName = "Ronnie"
-            middleName = "Jodie"
-            prefix = "kLQGERtwS"
-            suffix = "CmCqQNEWGrAz"
+            middleName = "Daphne"
+            nickname = "Michelle"
+            prefix = "Mr."
+            suffix = "Jr."
           }
           number = [
             Phone {
               type = Type.HOME
-              value_ = "11395550128"
+              value_ = "447700900381"
             }
           ]
           organization = ""

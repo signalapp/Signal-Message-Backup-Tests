@@ -61,10 +61,11 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
             frames += ContactAttachment(
               name = ContactAttachment.Name(
                 givenName = some(Generators.firstNames()),
-                familyName = some(Generators.lastNames()),
-                middleName = some(Generators.firstNames()),
-                prefix = someNonEmptyString(),
-                suffix = someNonEmptyString()
+                familyName = some(Generators.lastNames().nullable()),
+                middleName = some(Generators.firstNames().nullable()),
+                prefix = some(Generators.list(null, "Mr.", "Mrs.", "Miss")),
+                suffix = some(Generators.list(null, "Jr.", "Sr.", "III")),
+                nickname = some(Generators.firstNames().nullable())
               ),
               number = Generators.permutation<ContactAttachment.Phone> {
                 frames += ContactAttachment.Phone(

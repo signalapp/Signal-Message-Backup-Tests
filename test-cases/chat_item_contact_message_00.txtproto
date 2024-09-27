@@ -121,11 +121,7 @@ Frame {
       contact = [
         ContactAttachment {
           name = Name {
-            familyName = "Gillespie"
             givenName = "Fletcher"
-            middleName = "Daphne"
-            prefix = "gpIJqy"
-            suffix = "uECQWuuuE"
           }
         }
       ]

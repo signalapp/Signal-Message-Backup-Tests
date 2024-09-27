@@ -122,52 +122,53 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "tAKtPVXV"
-              country = "FzSlNk"
-              label = "taPHwAvo"
-              neighborhood = "ejXWhGQ"
-              pobox = "CfVdHWJ"
-              postcode = "jrJToWuNQzhOBq"
-              region = "hyZCTrFaZqB"
-              street = "ygutgr"
+              city = "taPHwAvo"
+              country = "hyZCTrFaZqB"
+              label = "vzSFNgpXHtZhd"
+              neighborhood = "FLPSkA"
+              pobox = "Kenth"
+              postcode = "tAKtPVXV"
+              region = "ejXWhGQ"
+              street = "nGMNaiqnlQbYT"
               type = Type.CUSTOM
             }
           ]
           avatar = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "SuQFBOQS"
+              cdnKey = "SQpKbdZIRAUJh"
               cdnNumber = 3
-              digest = <1613383d82819e967350be037f595614>
-              key = <feedcc81e788d9c3303ccbe11f3a0554>
-              size = 1776710323
-              uploadTimestamp = 1775683075420
+              digest = <c655a939fcac4c1e5d72dc618e0d273a>
+              key = <176bc947e17594adfd14c218a27fa4e4>
+              size = 112603735
+              uploadTimestamp = 1908912224941
             }
             contentType = "image/jpeg"
-            height = 2493
-            width = 2207
+            height = 307
+            width = 520
           }
           email = [
             Email {
-              label = "PMVYoUEqXx"
+              label = "zPCvxAOii"
               type = Type.WORK
-              value_ = "Vito@Dillard.com"
+              value_ = "Kenya@Hunter.com"
             }
           ]
           name = Name {
-            familyName = "Watson"
+            familyName = "Clayton"
             givenName = "Ronnie"
-            middleName = "Jodie"
-            prefix = "kLQGERtwS"
-            suffix = "CmCqQNEWGrAz"
+            middleName = "Lorraine"
+            nickname = "Iva"
+            prefix = "Miss"
+            suffix = "III"
           }
           number = [
             Phone {
-              label = "MOBqmCdYWyYPnk"
+              label = "kLQGERtwS"
               type = Type.WORK
-              value_ = "11395550128"
+              value_ = "447700900381"
             }
           ]
-          organization = "yjjay"
+          organization = "WiGRTndr"
         }
       ]
     }

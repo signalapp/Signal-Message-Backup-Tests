@@ -434,14 +434,14 @@ message PaymentNotification {
       Status status = 1;
 
       // This identification is used to map the payment table to the ledger
-      // and is likely required otherwise we may have issues reconciling with 
+      // and is likely required otherwise we may have issues reconciling with
       // the ledger
       MobileCoinTxoIdentification mobileCoinIdentification = 2;
       optional uint64 timestamp = 3;
       optional uint64 blockIndex = 4;
       optional uint64 blockTimestamp = 5;
-      optional bytes transaction = 6; // mobile coin blobs 
-      optional bytes receipt = 7; // mobile coin blobs 
+      optional bytes transaction = 6; // mobile coin blobs
+      optional bytes receipt = 7; // mobile coin blobs
     }
 
     oneof payment {
@@ -449,12 +449,12 @@ message PaymentNotification {
       FailedTransaction failedTransaction = 2;
     }
   }
-  
+
   optional string amountMob = 1; // stored as a decimal string, e.g. 1.00001
   optional string feeMob = 2; // stored as a decimal string, e.g. 1.00001
   optional string note = 3;
   TransactionDetails transactionDetails = 4;
-  
+
 }
 
 message GiftBadge {
@@ -476,6 +476,7 @@ message ContactAttachment {
     optional string prefix = 3;
     optional string suffix = 4;
     optional string middleName = 5;
+    optional string nickname = 6;
   }
 
   message Phone {
@@ -612,7 +613,7 @@ message FilePointer {
   }
 
   // References attachments that are invalid in such a way where download
-  // cannot be attempted. Could range from missing digests to missing 
+  // cannot be attempted. Could range from missing digests to missing
   // CDN keys or anything else that makes download attempts impossible.
   // This serves as a 'tombstone' so that the UX can show that an attachment
   // did exist, but for whatever reason it's not retrievable.
