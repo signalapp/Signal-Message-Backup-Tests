@@ -163,9 +163,6 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
-        text = Text {
-          body = ""
-        }
         type = Type.NORMAL
       }
       text = Text {

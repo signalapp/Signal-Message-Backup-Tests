@@ -170,10 +170,10 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
 
   private fun ChatItem.getQuoteText(): Text? {
     return when {
-      this.standardMessage != null -> {
+      this.standardMessage?.text != null -> {
         Text(
-          body = this.standardMessage.text?.body ?: "",
-          bodyRanges = this.standardMessage.text?.bodyRanges ?: emptyList()
+          body = this.standardMessage.text.body ?: "",
+          bodyRanges = this.standardMessage.text.bodyRanges ?: emptyList()
         )
       }
       this.contactMessage != null -> {
