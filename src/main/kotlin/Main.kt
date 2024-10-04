@@ -45,7 +45,8 @@ val ALL_TEST_CASES = listOf(
   ChatItemStandardMessageWithLinkPreviewTestCase,
   ChatItemStandardMessageWithQuoteTestCase,
   ChatItemStickerMessageTestCase,
-  ChatItemRemoteDeleteTestCase
+  ChatItemRemoteDeleteTestCase,
+  ChatItemViewOnceTestCase
 )
 
 fun main(args: Array<String>) {

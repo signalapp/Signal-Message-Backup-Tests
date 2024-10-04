@@ -461,6 +461,15 @@ object Generators {
     contentTypeGenerator = Generators.list("image/jpeg", "image/png")
   )
 
+  fun viewOnceFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = false,
+    includeMediaSize = true,
+    includeCaption = false,
+    includeBlurHash = true,
+    includeIncrementalMac = true,
+    contentTypeGenerator = Generators.list("image/jpeg", "image/png", "image/gif", "video/mp4")
+  )
+
   fun stickerFilePointer(): Generator<FilePointer> = filePointerInternal(
     includeFileName = true,
     includeMediaSize = true,
