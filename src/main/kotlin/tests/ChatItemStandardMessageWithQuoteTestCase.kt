@@ -81,13 +81,27 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
 
     checkNotNull(targetMessage.chatItem)
 
-    val quoteThumbnailGenerator: Generator<MessageAttachment> = Generators.quoteFilePointer().map { pointer ->
-      MessageAttachment(
-        pointer = pointer,
-        flag = MessageAttachment.Flag.NONE,
-        wasDownloaded = someBoolean(),
-        clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()
+    val quoteThumbnail: MessageAttachment = some(
+      Generators.quoteFilePointer().map { pointer ->
+        MessageAttachment(
+          pointer = pointer,
+          flag = MessageAttachment.Flag.NONE,
+          wasDownloaded = someBoolean()
+        )
+      }
+    )
+
+    val quoteAttachmentContentType: String? = targetMessage.chatItem.stickerMessage?.sticker?.data_?.contentType
+      ?: targetMessage.chatItem.standardMessage?.attachments?.firstOrNull()?.pointer?.contentType
+
+    val quoteAttachment: Quote.QuotedAttachment? = if (quoteAttachmentContentType != null) {
+      Quote.QuotedAttachment(
+        contentType = quoteAttachmentContentType,
+        fileName = quoteThumbnail.pointer?.fileName,
+        thumbnail = quoteThumbnail
       )
+    } else {
+      null
     }
 
     frames += Frame(
@@ -114,18 +128,11 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
             } else {
               Quote.Type.NORMAL
             },
-            attachments = quoteThumbnailGenerator
-              .map { thumbnail ->
-                val targetContentType = targetMessage.chatItem.stickerMessage?.sticker?.data_?.contentType
-                  ?: targetMessage.chatItem.standardMessage?.attachments?.firstOrNull()?.pointer?.contentType
-                Quote.QuotedAttachment(
-                  contentType = targetContentType,
-                  fileName = thumbnail.pointer?.fileName,
-                  thumbnail = thumbnail.takeUnless { targetContentType == null }
-                )
-              }
-              .map { listOf(it).filter { q -> q.thumbnail != null } }
-              .let { some(it) }
+            attachments = if (quoteAttachment != null) {
+              listOf(quoteAttachment)
+            } else {
+              listOf()
+            }
           ),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )

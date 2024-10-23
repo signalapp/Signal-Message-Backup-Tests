@@ -163,6 +163,28 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
+        attachments = [
+          QuotedAttachment {
+            contentType = "image/apng"
+            thumbnail = MessageAttachment {
+              flag = Flag.NONE
+              pointer = FilePointer {
+                attachmentLocator = AttachmentLocator {
+                  cdnKey = "HBAAKHBTaIpNkK"
+                  cdnNumber = 3
+                  digest = <b87c5094bb217f4aee0c1aef5eef1282>
+                  key = <a1809ae126f34d9a15a092ec9fd2e992>
+                  size = 648225630
+                  uploadTimestamp = 1720674933270
+                }
+                contentType = "image/jpeg"
+                height = 2862
+                width = 876
+              }
+              wasDownloaded = true
+            }
+          }
+        ]
         authorId = 4
         targetSentTimestamp = 1
         type = Type.NORMAL

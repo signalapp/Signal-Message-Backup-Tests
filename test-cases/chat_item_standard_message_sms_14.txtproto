@@ -135,6 +135,19 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             backupLocator = BackupLocator {
+              digest = <8a72bebb4db939e0342ae035ddbe7fe4>
+              key = <d9345fdc5ab1cf72b00738e125ef7370>
+              mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
+              size = 891929939
+            }
+            contentType = "image/jpeg"
+          }
+          wasDownloaded = true
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            backupLocator = BackupLocator {
               cdnNumber = 2
               digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
               key = <0a038863ebb03fed8486f4196b6e656c>
@@ -181,38 +194,6 @@ Frame {
             contentType = "video/mp4"
             height = 3329
             width = 257
-          }
-        },
-        MessageAttachment {
-          flag = Flag.NONE
-          pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <8a72bebb4db939e0342ae035ddbe7fe4>
-              key = <d9345fdc5ab1cf72b00738e125ef7370>
-              mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
-              size = 891929939
-            }
-            contentType = "application/pdf"
-            fileName = "zWWFqaczw"
-          }
-          wasDownloaded = true
-        },
-        MessageAttachment {
-          flag = Flag.NONE
-          pointer = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 2
-              digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
-              key = <0a038863ebb03fed8486f4196b6e656c>
-              mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
-              size = 1267987916
-              transitCdnKey = "ySkLQGERtwS"
-            }
-            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
-            contentType = "image/jpeg"
-            fileName = "dzHLOokMZPmj"
-            height = 3188
-            width = 2674
           }
         }
       ]

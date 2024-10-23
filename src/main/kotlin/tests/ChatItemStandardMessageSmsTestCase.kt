@@ -2,7 +2,6 @@ package tests
 
 import PermutationScope
 import TestCase
-import asList
 import org.thoughtcrime.securesms.backup.v2.proto.*
 
 /**
@@ -37,14 +36,16 @@ object ChatItemStandardMessageSmsTestCase : TestCase("chat_item_standard_message
           text = Text(
             body = someNonEmptyString()
           ),
-          attachments = Generators.permutation<MessageAttachment> {
-            frames += MessageAttachment(
-              pointer = some(Generators.smsAttachmentFilePointer()),
-              flag = MessageAttachment.Flag.NONE,
-              wasDownloaded = someBoolean(),
-              clientUuid = null
-            )
-          }.asList(0, 1, 5).let { some(it) }
+          attachments = Generators.lists(listOf(0, 1, 4)) {
+            Generators.permutation<MessageAttachment> {
+              frames += MessageAttachment(
+                pointer = some(Generators.smsAttachmentFilePointer()),
+                flag = MessageAttachment.Flag.NONE,
+                wasDownloaded = someBoolean(),
+                clientUuid = null
+              )
+            }
+          }.let { some(it) }
         )
       )
     )

@@ -159,6 +159,28 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
+        attachments = [
+          QuotedAttachment {
+            contentType = "image/png"
+            thumbnail = MessageAttachment {
+              flag = Flag.NONE
+              pointer = FilePointer {
+                attachmentLocator = AttachmentLocator {
+                  cdnKey = "jDpPxmLHTN"
+                  cdnNumber = 2
+                  digest = <2d8fcd7712c8b270c9d1bd1fc55cf160>
+                  key = <7ae8055414258305f7761bd507132457>
+                  size = 134427160
+                  uploadTimestamp = 1828847065950
+                }
+                blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
+                contentType = "image/jpeg"
+                height = 1226
+                width = 2693
+              }
+            }
+          }
+        ]
         authorId = 4
         targetSentTimestamp = 1
         type = Type.NORMAL
@@ -167,13 +189,13 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1659733899763
+          sentTimestamp = 1834374389772
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1659733899764
+          sentTimestamp = 1834374389773
           sortOrder = 2
         }
       ]

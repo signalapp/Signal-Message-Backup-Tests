@@ -161,6 +161,26 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
+        attachments = [
+          QuotedAttachment {
+            contentType = "audio/mp3"
+            thumbnail = MessageAttachment {
+              flag = Flag.NONE
+              pointer = FilePointer {
+                backupLocator = BackupLocator {
+                  digest = <7e535319be182307d20dc2a3123d8ac2>
+                  key = <ae12f8b6dd2a7212b158d1c29518e2da>
+                  mediaName = "7e535319be182307d20dc2a3123d8ac2"
+                  size = 1597131413
+                }
+                blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+                contentType = "image/jpeg"
+                height = 971
+                width = 3181
+              }
+            }
+          }
+        ]
         authorId = 4
         targetSentTimestamp = 1
         type = Type.NORMAL

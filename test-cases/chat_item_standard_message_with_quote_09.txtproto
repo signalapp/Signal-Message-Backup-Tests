@@ -161,6 +161,28 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
+        attachments = [
+          QuotedAttachment {
+            contentType = "image/apng"
+            thumbnail = MessageAttachment {
+              flag = Flag.NONE
+              pointer = FilePointer {
+                backupLocator = BackupLocator {
+                  cdnNumber = 2
+                  digest = <322c0c135b8f39b651631be8eabd21d7>
+                  key = <4f45a614a393aa098bcfd1e15af7d69e>
+                  mediaName = "322c0c135b8f39b651631be8eabd21d7"
+                  size = 1256611453
+                  transitCdnKey = "zLVToj"
+                }
+                blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+                contentType = "image/jpeg"
+                height = 1226
+                width = 2693
+              }
+            }
+          }
+        ]
         authorId = 4
         targetSentTimestamp = 1
         type = Type.NORMAL
