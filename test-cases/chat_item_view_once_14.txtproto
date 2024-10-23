@@ -2,6 +2,7 @@
 
 BackupInfo {
   backupTimeMs = 1715636551000
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
 }
 
