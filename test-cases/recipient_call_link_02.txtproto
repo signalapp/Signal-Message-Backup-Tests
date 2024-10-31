@@ -95,7 +95,7 @@ Frame {
     callLink = CallLink {
       expirationMs = 1587945600000
       name = "SDTsXBkoG"
-      restrictions = Restrictions.NONE
+      restrictions = Restrictions.ADMIN_APPROVAL
       rootKey = <2cc2b48c50aefe53b3974ed91e6b4ea9>
     }
   }

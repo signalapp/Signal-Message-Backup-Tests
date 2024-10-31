@@ -94,7 +94,7 @@ Frame {
   recipient = Recipient {
     callLink = CallLink {
       name = ""
-      restrictions = Restrictions.NONE
+      restrictions = Restrictions.UNKNOWN
       rootKey = <2cc2b48c50aefe53b3974ed91e6b4ea9>
     }
   }
