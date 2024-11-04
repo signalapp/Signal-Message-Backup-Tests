@@ -98,12 +98,14 @@ Frame {
       restrictions = Restrictions.NONE
       rootKey = <000102030405060708090a0b0c0d0e0f>
     }
+    id = 11
   }
 }
 
 Frame {
   adHocCall = AdHocCall {
     callId = 5069471078380689193
+    recipientId = 11
     state = State.GENERIC
   }
 }

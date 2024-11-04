@@ -256,6 +256,7 @@ object StandardFrames {
 
   val recipientCallLink = Frame(
     recipient = Recipient(
+      id = 11,
       callLink = CallLink(
         rootKey = ByteArray(16) { pos -> pos.toByte() }.toByteString(),
         adminKey = ByteArray(32) { 1 }.toByteString(),
