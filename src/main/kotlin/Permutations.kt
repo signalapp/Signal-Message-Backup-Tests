@@ -179,6 +179,7 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
 
   fun <T> someEnum(clazz: Class<T>, excluding: T? = null): T = excluding?.let { some(Generators.enum(clazz, excluding)) } ?: some(Generators.enum(clazz))
   fun <T> someEnum(clazz: Class<T>, vararg excluding: T): T = some(Generators.enum(clazz, *excluding))
+  inline fun <reified T> someEnum(clazz: Class<T>, excluding: List<T>): T = some(Generators.enum(clazz, *excluding.toTypedArray()))
 
   fun someCallLinkRootKey(): ByteArray = some(Generators.callLinkRootKey())
 

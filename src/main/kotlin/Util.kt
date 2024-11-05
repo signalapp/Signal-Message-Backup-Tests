@@ -1,4 +1,6 @@
 import okio.ByteString
+import okio.ByteString.Companion.toByteString
+import org.thoughtcrime.securesms.backup.v2.proto.Frame
 import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
@@ -87,6 +89,12 @@ fun UUID.toByteArray(): ByteArray {
 fun base64Decode(value: String): ByteArray {
   return Base64.getDecoder().decode(value)
 }
+
+/** Synthetic value to make it easier to get ACI's off of frames that you know are Contacts with ACI's */
+val Frame.aci: ByteString
+  get() = this.recipient!!.contact!!.aci!!
+
+fun UUID.toByteString(): ByteString = this.toByteArray().toByteString()
 
 /**
  * Takes a class and converts it to a nice, multi-line string with good indentation. Optimized for readability.
