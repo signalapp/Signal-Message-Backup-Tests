@@ -33,8 +33,8 @@ object ChatItemPaymentNotificationTestCase : TestCase("chat_item_payment_notific
         frames += PaymentNotification.TransactionDetails.Transaction(
           status = someEnum(PaymentNotification.TransactionDetails.Transaction.Status::class.java),
           mobileCoinIdentification = PaymentNotification.TransactionDetails.MobileCoinTxoIdentification(
-            publicKey = publicKey.takeIf { incoming != null } ?: emptyList(),
-            keyImages = keyImages.takeIf { outgoing != null } ?: emptyList()
+            publicKey = publicKey,
+            keyImages = keyImages
           ),
           timestamp = someIncrementingTimestamp(),
           blockIndex = somePositiveLong(),
@@ -66,7 +66,17 @@ object ChatItemPaymentNotificationTestCase : TestCase("chat_item_payment_notific
           feeMob = some(Generators.picoMobs()),
           note = some(Generators.textBody().nullable()),
           transactionDetails = PaymentNotification.TransactionDetails(
-            transaction = someOneOf(transactionGenerator),
+            transaction = someOneOf<PaymentNotification.TransactionDetails.Transaction?>(transactionGenerator)?.let { transaction ->
+              // We only want to take one of publickey/keyImages depending on if the message is incoming or outgoing.
+              // Because this generator is populated immediately, it doesn't have up-to-date info on whether incoming/outgoing is present.
+              // Therefore, we need to map it on-the-fly to account for the current value of incoming/outgoing.
+              transaction.copy(
+                mobileCoinIdentification = transaction.mobileCoinIdentification!!.copy(
+                  publicKey = transaction.mobileCoinIdentification.publicKey.takeIf { incoming != null } ?: emptyList(),
+                  keyImages = transaction.mobileCoinIdentification.keyImages.takeIf { outgoing != null } ?: emptyList()
+                )
+              )
+            },
             failedTransaction = someOneOf(failedTransactionGenerator)
           )
         )

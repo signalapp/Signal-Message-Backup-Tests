@@ -135,8 +135,8 @@ Frame {
       transactionDetails = TransactionDetails {
         transaction = Transaction {
           mobileCoinIdentification = MobileCoinTxoIdentification {
-            publicKey = [
-<36106eec0da607bfe85604e4e3670f77ebf5e721149f599dab4f9c8a0a0f6193>
+            keyImages = [
+<5879953e257ab94747b56ae57f372e1b97f2d8ea602ae6c88bffbb6878d9cd54>
             ]
           }
           receipt = <0a220a2000000000000000000000000000000000000000000000000000000000000000002a2d0a220a20000000000000000000000000000000000000000000000000000000000000000011a702000000000000>
