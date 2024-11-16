@@ -204,27 +204,27 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1878937499399
+    dateSent = 1820168225219
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       groupChange = GroupChangeChatUpdate {
         updates = [
           Update {
-            groupUnknownInviteeUpdate = GroupUnknownInviteeUpdate {
-              inviteeCount = 2
-              inviterAci = <000a11ce000040008000000000000001>
+            groupNameUpdate = GroupNameUpdate {
+              newGroupName = "Ut Cubilia"
+              updaterAci = <00000000000040008000000000000001>
             }
           },
           Update {
-            groupInvitationAcceptedUpdate = GroupInvitationAcceptedUpdate {
-              inviterAci = <000a11ce000040008000000000000001>
-              newMemberAci = <0000ca01000040008000000000000001>
+            groupNameUpdate = GroupNameUpdate {
+              newGroupName = "Congue Fastidii"
+              updaterAci = <00000000000040008000000000000001>
             }
           },
           Update {
-            groupInvitationAcceptedUpdate = GroupInvitationAcceptedUpdate {
-              inviterAci = <00000b0b000040008000000000000001>
-              newMemberAci = <000000da000040008000000000000001>
+            groupNameUpdate = GroupNameUpdate {
+              newGroupName = "Morbi Dicat"
+              updaterAci = <00000000000040008000000000000001>
             }
           }
         ]

@@ -210,23 +210,21 @@ Frame {
       groupChange = GroupChangeChatUpdate {
         updates = [
           Update {
-            groupMemberJoinedUpdate = GroupMemberJoinedUpdate {
-              newMemberAci = <000000da000040008000000000000001>
+            groupMembershipAccessLevelChangeUpdate = GroupMembershipAccessLevelChangeUpdate {
+              accessLevel = GroupV2AccessLevel.ANY
+              updaterAci = <00000000000040008000000000000001>
             }
           },
           Update {
-            groupMemberAddedUpdate = GroupMemberAddedUpdate {
-              hadOpenInvitation = true
-              newMemberAci = <0000ca01000040008000000000000001>
-              updaterAci = <000a11ce000040008000000000000001>
+            groupMembershipAccessLevelChangeUpdate = GroupMembershipAccessLevelChangeUpdate {
+              accessLevel = GroupV2AccessLevel.MEMBER
+              updaterAci = <00000000000040008000000000000001>
             }
           },
           Update {
-            groupMemberAddedUpdate = GroupMemberAddedUpdate {
-              hadOpenInvitation = true
-              inviterAci = <000a11ce000040008000000000000001>
-              newMemberAci = <000000da000040008000000000000001>
-              updaterAci = <00000b0b000040008000000000000001>
+            groupMembershipAccessLevelChangeUpdate = GroupMembershipAccessLevelChangeUpdate {
+              accessLevel = GroupV2AccessLevel.ADMINISTRATOR
+              updaterAci = <00000000000040008000000000000001>
             }
           }
         ]
