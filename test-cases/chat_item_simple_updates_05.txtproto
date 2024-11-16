@@ -115,9 +115,17 @@ Frame {
 }
 
 Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 4
+    recipientId = 2
+  }
+}
+
+Frame {
   chatItem = ChatItem {
     authorId = 2
-    chatId = 2
+    chatId = 4
     dateSent = 1833527071197
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {

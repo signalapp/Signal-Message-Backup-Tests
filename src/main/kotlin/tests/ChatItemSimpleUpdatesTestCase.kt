@@ -29,36 +29,42 @@ object ChatItemSimpleUpdatesTestCase : TestCase("chat_item_simple_updates") {
     val selfRecipientId = StandardFrames.recipientSelf.recipient!!.id
     val aliceRecipientId = StandardFrames.recipientAlice.recipient!!.id
     val releaseNotesRecipientId = StandardFrames.recipientReleaseNotes.recipient!!.id
+    val aliceChatId = StandardFrames.chatAlice.chat!!.id
+    val releaseNotesChatId = StandardFrames.chatReleaseNotes.chat!!.id
 
     // Some simple chat updates can originate from the local user or a remote
     // user, while some are necessarily from one or the other.
-    val authorIds: List<Long> = when (simpleChatUpdate) {
+    val authorData: AuthorData = when (simpleChatUpdate) {
       // ...and release note donation requests should come from the release
       // notes recipient.
-      SimpleChatUpdate.Type.RELEASE_CHANNEL_DONATION_REQUEST -> listOf(releaseNotesRecipientId)
+      SimpleChatUpdate.Type.RELEASE_CHANNEL_DONATION_REQUEST -> AuthorData(releaseNotesRecipientId, releaseNotesChatId)
       SimpleChatUpdate.Type.IDENTITY_UPDATE,
       SimpleChatUpdate.Type.IDENTITY_VERIFIED,
       SimpleChatUpdate.Type.IDENTITY_DEFAULT,
       SimpleChatUpdate.Type.JOINED_SIGNAL,
-      SimpleChatUpdate.Type.CHANGE_NUMBER -> listOf(aliceRecipientId)
+      SimpleChatUpdate.Type.CHANGE_NUMBER -> AuthorData(aliceRecipientId, aliceChatId)
       SimpleChatUpdate.Type.CHAT_SESSION_REFRESH,
       SimpleChatUpdate.Type.REPORTED_SPAM,
       SimpleChatUpdate.Type.BLOCKED,
       SimpleChatUpdate.Type.UNBLOCKED,
-      SimpleChatUpdate.Type.MESSAGE_REQUEST_ACCEPTED -> listOf(selfRecipientId)
+      SimpleChatUpdate.Type.MESSAGE_REQUEST_ACCEPTED -> AuthorData(selfRecipientId, aliceChatId)
       SimpleChatUpdate.Type.END_SESSION,
       SimpleChatUpdate.Type.BAD_DECRYPT,
       SimpleChatUpdate.Type.PAYMENTS_ACTIVATED,
       SimpleChatUpdate.Type.PAYMENT_ACTIVATION_REQUEST,
-      SimpleChatUpdate.Type.UNSUPPORTED_PROTOCOL_MESSAGE -> listOf(selfRecipientId, aliceRecipientId)
+      SimpleChatUpdate.Type.UNSUPPORTED_PROTOCOL_MESSAGE -> AuthorData(listOf(selfRecipientId, aliceRecipientId), aliceChatId)
       // Impossible, checked above.
-      SimpleChatUpdate.Type.UNKNOWN -> listOf()
+      SimpleChatUpdate.Type.UNKNOWN -> throw AssertionError("Impossible")
     }
 
-    for ((idx, authorId) in authorIds.withIndex()) {
+    for ((idx, authorId) in authorData.possibleAuthorIds.withIndex()) {
+      if (authorData.chatId == releaseNotesChatId) {
+        frames += StandardFrames.chatReleaseNotes
+      }
+
       frames += Frame(
         chatItem = ChatItem(
-          chatId = StandardFrames.chatAlice.chat!!.id,
+          chatId = authorData.chatId,
           authorId = authorId,
           dateSent = dateSentTimestamps[idx],
           directionless = ChatItem.DirectionlessMessageDetails(),
@@ -68,5 +74,12 @@ object ChatItemSimpleUpdatesTestCase : TestCase("chat_item_simple_updates") {
         )
       )
     }
+  }
+
+  data class AuthorData(
+    val possibleAuthorIds: List<Long>,
+    val chatId: Long
+  ) {
+    constructor(authorId: Long, chatId: Long) : this(listOf(authorId), chatId)
   }
 }

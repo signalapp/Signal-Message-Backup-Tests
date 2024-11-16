@@ -282,4 +282,12 @@ object StandardFrames {
       expireTimerVersion = 1
     )
   )
+
+  val chatReleaseNotes = Frame(
+    chat = Chat(
+      id = 4,
+      recipientId = recipientReleaseNotes.recipient!!.id,
+      expireTimerVersion = 1
+    )
+  )
 }
