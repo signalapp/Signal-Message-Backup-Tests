@@ -1,5 +1,6 @@
 package tests
 
+import Generators
 import PermutationScope
 import TestCase
 import nullable
@@ -27,6 +28,8 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
       }
     )
 
+    val identityKey: ByteArray? = some(Generators.identityKeys().nullable())
+
     frames += Frame(
       recipient = Recipient(
         id = 4,
@@ -43,7 +46,9 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           profileSharing = someBoolean(),
           profileGivenName = some(Generators.firstNames().nullable()),
           profileFamilyName = some(Generators.lastNames().nullable()),
-          hideStory = someBoolean()
+          hideStory = someBoolean(),
+          identityKey = identityKey?.toByteString(),
+          identityState = someEnum(Contact.IdentityState::class.java).takeIf { identityKey != null } ?: Contact.IdentityState.DEFAULT
         )
       )
     )

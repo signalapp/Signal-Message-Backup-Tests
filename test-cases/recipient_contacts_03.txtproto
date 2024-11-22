@@ -95,6 +95,8 @@ Frame {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
       e164 = 12255550184
+      identityKey = <055ba16a7d75f20ae9be8a5498f82b3c2a00226a7c44d96dd820261d516b730867>
+      identityState = IdentityState.DEFAULT
       notRegistered = NotRegistered {
         unregisteredTimestamp = 1695248715439
       }

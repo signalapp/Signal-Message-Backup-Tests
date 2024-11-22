@@ -3,6 +3,7 @@
 
 import com.squareup.wire.Message
 import okio.ByteString.Companion.toByteString
+import org.signal.libsignal.protocol.IdentityKeyPair
 import org.signal.libsignal.zkgroup.ServerSecretParams
 import org.signal.libsignal.zkgroup.receipts.ClientZkReceiptOperations
 import org.signal.libsignal.zkgroup.receipts.ReceiptCredentialPresentation
@@ -728,6 +729,16 @@ object Generators {
             masked_value = SeededRandom.long(1, 1000)
           )
         ).encode()
+      }
+    }
+  }
+
+  fun identityKeys(): Generator<ByteArray> {
+    return object : Generator<ByteArray> {
+      override val minSize: Int = 3
+
+      override fun next(): ByteArray {
+        return IdentityKeyPair.generate().publicKey.serialize()
       }
     }
   }

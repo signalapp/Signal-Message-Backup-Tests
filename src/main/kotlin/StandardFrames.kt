@@ -137,7 +137,9 @@ object StandardFrames {
         profileFamilyName = "Smith",
         registered = Contact.Registered(),
         // All 1s, since all As results in an all-zero blob.
-        profileKey = base64Decode("1111111111111111111111111111111111111111111=").toByteString()
+        profileKey = base64Decode("1111111111111111111111111111111111111111111=").toByteString(),
+        identityKey = base64Decode("Bep1hatPbeGROvYFn2m1CtJsVa8neeMb3ljeyLoWXhZO").toByteString(),
+        identityState = Contact.IdentityState.DEFAULT
       )
     )
   )
@@ -152,7 +154,9 @@ object StandardFrames {
         profileGivenName = "Bob",
         profileFamilyName = "Jones",
         registered = Contact.Registered(),
-        profileKey = base64Decode("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=").toByteString()
+        profileKey = base64Decode("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=").toByteString(),
+        identityKey = base64Decode("BS3ebG3Prw/9y8Xi6skOWhjCaWmQfJQureOg40WUi+J+").toByteString(),
+        identityState = Contact.IdentityState.VERIFIED
       )
     )
   )
@@ -167,7 +171,9 @@ object StandardFrames {
         profileGivenName = "Carol",
         profileFamilyName = "Johnson",
         registered = Contact.Registered(),
-        profileKey = base64Decode("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC=").toByteString()
+        profileKey = base64Decode("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC=").toByteString(),
+        identityKey = base64Decode("BUY3abereji+LL+n6M/343y7MncNdiNwxVz76CNGWT9U").toByteString(),
+        identityState = Contact.IdentityState.UNVERIFIED
       )
     )
   )
@@ -182,7 +188,9 @@ object StandardFrames {
         profileGivenName = "Dan",
         profileFamilyName = "Brown",
         registered = Contact.Registered(),
-        profileKey = base64Decode("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD=").toByteString()
+        profileKey = base64Decode("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD=").toByteString(),
+        identityKey = base64Decode("BZ4QBy7jJyEjd+9MRChDtCbqSh8WoCnCPJ0Ci+T1E6l8").toByteString(),
+        identityState = Contact.IdentityState.DEFAULT
       )
     )
   )
@@ -197,7 +205,9 @@ object StandardFrames {
         profileGivenName = "Eve",
         profileFamilyName = "Green",
         registered = Contact.Registered(),
-        profileKey = base64Decode("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE=").toByteString()
+        profileKey = base64Decode("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE=").toByteString(),
+        identityKey = base64Decode("Bf87/oZKm/EmAlQ/zW+jAxIZ/AMfR0h/8GXLBRujYDk4").toByteString(),
+        identityState = Contact.IdentityState.VERIFIED
       )
     )
   )
