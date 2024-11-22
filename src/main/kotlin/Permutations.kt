@@ -3,7 +3,6 @@
 
 import com.squareup.wire.Message
 import okio.ByteString.Companion.toByteString
-import org.signal.libsignal.protocol.IdentityKeyPair
 import org.signal.libsignal.zkgroup.ServerSecretParams
 import org.signal.libsignal.zkgroup.receipts.ClientZkReceiptOperations
 import org.signal.libsignal.zkgroup.receipts.ReceiptCredentialPresentation
@@ -737,8 +736,24 @@ object Generators {
     return object : Generator<ByteArray> {
       override val minSize: Int = 3
 
+      private val keys: List<ByteArray> = listOf(
+        "BTHioSz61vk56IrCsF7FpCtd5tNxaOi5cp0rEMJZ+Pwc",
+        "BZIZF+IBHFzbhGpJEMjAUX5r7Nn1XHV4EXmlim9OoCEc",
+        "Bd7i9lwcmlGg9WZ6VqyhjEPlZoTmcZ3/+pBFkdyyJ5cf",
+        "Bd1GCTHRzKOVLe144aHdvgVM92s/CQicyk3MzdTThQke",
+        "BU08gfd+p10S5voc+WqJNOEZTo2QMV61sBraYjCs4MVs",
+        "BWtizh6hq9p0cbqJn1aUpvkNEwteGh3IYp3pO8qnc9U7",
+        "BXe0xqvqiIAJapWSz4RUygZnm7Qb5dcjW5Y8TGiCD5Q8",
+        "BetOG3RdxwxtPdCwGYSmLUmf7xIlsc0mjVmRYx0SQs19",
+        "BX/VF+lxdxrb+9Pa0eD8q7f5yh91+Z5XOr/bjIixAMFc",
+        "BbCgl7aN4F8LBRB8mDLbptPKhzeamcJbYfg//SjynWhA",
+        "BXKspvBGxezIMpBvedbLVk1Yhl60RQHcKGGJAaijMOdB"
+      ).map { base64Decode(it) }
+
+      private var index = 0
+
       override fun next(): ByteArray {
-        return IdentityKeyPair.generate().publicKey.serialize()
+        return keys[index++ % keys.size]
       }
     }
   }

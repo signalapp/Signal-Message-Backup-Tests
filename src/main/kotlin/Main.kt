@@ -11,6 +11,7 @@ import java.io.File
 import java.io.FileInputStream
 import java.io.InputStream
 import java.io.OutputStream
+import kotlin.io.encoding.ExperimentalEncodingApi
 
 const val OUTPUT_DIR = "test-cases"
 
@@ -51,6 +52,7 @@ val ALL_TEST_CASES = listOf(
   ChatItemGroupChangeChatMultipleUpdateTestCase
 )
 
+@OptIn(ExperimentalEncodingApi::class)
 fun main(args: Array<String>) {
   if (args.isEmpty()) {
     generateTests()
