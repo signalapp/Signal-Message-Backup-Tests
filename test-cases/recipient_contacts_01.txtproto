@@ -95,7 +95,7 @@ Frame {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
       e164 = 12255550184
-      identityKey = <059ce26f76452d8576d9345b60e9fdf3aa3e46c0fc32a399133ef5ec850f2c4844>
+      identityKey = <05c5287c3a914c349015b2afdc54f206ed0b38bfb9164ffa95863ab180528ee92b>
       identityState = IdentityState.VERIFIED
       notRegistered = NotRegistered {}
       pni = <f2c8f6640c624f2f806929719cb0c468>

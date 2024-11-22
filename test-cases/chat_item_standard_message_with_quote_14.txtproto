@@ -126,11 +126,7 @@ Frame {
       dateServerSent = 1
       read = true
     }
-    standardMessage = StandardMessage {
-      text = Text {
-        body = "asdf"
-      }
-    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }
 
@@ -153,10 +149,7 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
-        text = Text {
-          body = "asdf"
-        }
-        type = Type.NORMAL
+        type = Type.VIEW_ONCE
       }
       reactions = [
         Reaction {

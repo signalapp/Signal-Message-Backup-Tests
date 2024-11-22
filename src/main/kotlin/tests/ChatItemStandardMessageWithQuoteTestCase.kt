@@ -36,7 +36,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
       standardMessageGenerator,
       contactMessageGenerator,
       stickerMessageGenerator,
-      giftBadgeGenerator
+      giftBadgeGenerator,
+      viewOnceGenerator
     ) = oneOf(
       standardMessageGenerator(),
       ContactMessage(
@@ -55,7 +56,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
       GiftBadge(
         receiptCredentialPresentation = some(Generators.receiptCredentialPresentation()).serialize().toByteString(),
         state = GiftBadge.State.OPENED
-      ).asGenerator()
+      ).asGenerator(),
+      ViewOnceMessage().asGenerator()
     )
 
     val targetDateSent = 1L
@@ -73,7 +75,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
         standardMessage = someOneOf(standardMessageGenerator),
         contactMessage = someOneOf(contactMessageGenerator),
         stickerMessage = someOneOf(stickerMessageGenerator),
-        giftBadge = someOneOf(giftBadgeGenerator)
+        giftBadge = someOneOf(giftBadgeGenerator),
+        viewOnceMessage = someOneOf(viewOnceGenerator)
       )
     )
 
@@ -123,10 +126,10 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
             targetSentTimestamp = targetDateSent,
             authorId = StandardFrames.recipientAlice.recipient.id,
             text = targetMessage.chatItem.getQuoteText(),
-            type = if (targetMessage.chatItem.giftBadge != null) {
-              Quote.Type.GIFTBADGE
-            } else {
-              Quote.Type.NORMAL
+            type = when {
+              targetMessage.chatItem.giftBadge != null -> Quote.Type.GIFT_BADGE
+              targetMessage.chatItem.viewOnceMessage != null -> Quote.Type.VIEW_ONCE
+              else -> Quote.Type.NORMAL
             },
             attachments = if (quoteAttachment != null) {
               listOf(quoteAttachment)

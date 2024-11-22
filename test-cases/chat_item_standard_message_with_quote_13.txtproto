@@ -153,7 +153,7 @@ Frame {
       quote = Quote {
         authorId = 4
         targetSentTimestamp = 1
-        type = Type.GIFTBADGE
+        type = Type.GIFT_BADGE
       }
       reactions = [
         Reaction {
