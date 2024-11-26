@@ -524,7 +524,7 @@ object Generators {
         frames += FilePointer.AttachmentLocator(
           cdnKey = someNonEmptyString(),
           cdnNumber = some(Generators.cdnNumbers()),
-          uploadTimestamp = someTimestamp(),
+          uploadTimestamp = someTimestamp().takeIf { it > 0 },
           key = someBytes(16).toByteString(),
           digest = someBytes(16).toByteString(),
           size = somePositiveInt()

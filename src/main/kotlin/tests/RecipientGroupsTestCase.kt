@@ -103,10 +103,8 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
       chat = Chat(
         id = 1,
         recipientId = groupRecipientId,
-        expirationTimerMs = if (snapshot.disappearingMessagesTimer != null) {
-          snapshot.disappearingMessagesTimer!!.disappearingMessagesDuration!!.toLong() * 1000
-        } else {
-          0
+        expirationTimerMs = snapshot.disappearingMessagesTimer?.let { timer ->
+          timer.disappearingMessagesDuration!!.toLong() * 1000
         },
         expireTimerVersion = 1
       )

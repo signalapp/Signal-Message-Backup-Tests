@@ -36,9 +36,9 @@ object ChatTestCase : TestCase("chat") {
         id = 3,
         recipientId = StandardFrames.recipientAlice.recipient!!.id,
         archived = someBoolean(),
-        pinnedOrder = some(Generators.list(listOf(0, 1))),
-        expirationTimerMs = someExpirationTimerMs(),
-        muteUntilMs = someTimestamp(),
+        pinnedOrder = some(Generators.list(listOf(0, 1))).takeIf { it > 0 },
+        expirationTimerMs = someExpirationTimerMs().takeIf { it > 0 },
+        muteUntilMs = someTimestamp().takeIf { it > 0 },
         markedUnread = someBoolean(),
         dontNotifyForMentionsIfMuted = someBoolean(),
         style = somePermutation {
