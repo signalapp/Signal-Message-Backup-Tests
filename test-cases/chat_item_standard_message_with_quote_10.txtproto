@@ -168,7 +168,7 @@ Frame {
       quote = Quote {
         attachments = [
           QuotedAttachment {
-            contentType = "image/webp"
+            contentType = "image/jpeg"
             thumbnail = MessageAttachment {
               flag = Flag.NONE
               pointer = FilePointer {
