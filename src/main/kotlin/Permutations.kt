@@ -1,6 +1,7 @@
 @file:Suppress("UNCHECKED_CAST")
 @file:OptIn(ExperimentalStdlibApi::class)
 
+import SeededRandom.seededShuffled
 import com.squareup.wire.Message
 import okio.ByteString.Companion.toByteString
 import org.signal.libsignal.zkgroup.ServerSecretParams
@@ -346,6 +347,7 @@ object Generators {
 
   fun <T> list(vararg items: T): Generator<T> = ListGenerator(items.toList())
   fun <T> list(items: List<T>): Generator<T> = ListGenerator(items)
+  fun <T> randomizedList(items: List<T>): Generator<T> = ListGenerator(items.seededShuffled())
   fun <T> single(item: T): Generator<T> = Generators.list(item)
 
   fun <T> permutation(snapshotCount: Int = -1, init: PermutationScope.() -> Unit): Generator<T> {

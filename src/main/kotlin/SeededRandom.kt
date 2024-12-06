@@ -2,6 +2,7 @@ import com.thedeanda.lorem.LoremIpsum
 import java.util.*
 import kotlin.random.Random
 import kotlin.random.asJavaRandom
+import kotlin.random.nextInt
 
 object SeededRandom {
 
@@ -39,12 +40,21 @@ object SeededRandom {
     return random.nextLong(lower, upper)
   }
 
+  /** Random int from [lower] (inclusive) to [upper] (exclusive) */
   fun int(lower: Int = Int.MIN_VALUE, upper: Int = Int.MAX_VALUE): Int {
     return random.nextInt(lower, upper)
+  }
+
+  fun int(range: IntRange): Int {
+    return random.nextInt(range)
   }
 
   fun float(lower: Float = Float.MIN_VALUE, upper: Float = Float.MAX_VALUE): Float {
     val diff = upper - lower
     return lower + (random.nextFloat() * diff)
+  }
+
+  fun <T> List<T>.seededShuffled(): List<T> {
+    return this.shuffled(random)
   }
 }

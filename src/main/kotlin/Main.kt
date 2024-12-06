@@ -23,6 +23,8 @@ val ALL_TEST_CASES = listOf(
   RecipientCallLinkTestCase,
   StickerPackTestCase,
   AdHocCallTestCase,
+  NotificationProfileTestCase,
+  ChatFolderTestCase,
   ChatTestCase,
   ChatItemSimpleUpdatesTestCase,
   ChatItemContactMessageTestCase,

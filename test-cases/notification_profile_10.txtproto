@@ -1,0 +1,195 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = ""
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <000a11ce000040008000000000000001>
+      e164 = 16105550101
+      identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
+      identityState = IdentityState.DEFAULT
+      pni = <000a11ce000040008000000000000002>
+      profileFamilyName = "Smith"
+      profileGivenName = "Alice"
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
+      registered = Registered {}
+      visibility = Visibility.VISIBLE
+    }
+    id = 4
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000b0b000040008000000000000001>
+      e164 = 16105550102
+      identityKey = <052dde6c6dcfaf0ffdcbc5e2eac90e5a18c26969907c942eade3a0e345948be27e>
+      identityState = IdentityState.VERIFIED
+      pni = <00000b0b000040008000000000000002>
+      profileFamilyName = "Jones"
+      profileGivenName = "Bob"
+      profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
+      registered = Registered {}
+      visibility = Visibility.VISIBLE
+    }
+    id = 5
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    group = Group {
+      masterKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      snapshot = GroupSnapshot {
+        accessControl = AccessControl {
+          addFromInviteLink = AccessRequired.UNSATISFIABLE
+          attributes = AccessRequired.MEMBER
+          members = AccessRequired.MEMBER
+        }
+        avatarUrl = "https://example.com/avatar.jpg"
+        inviteLinkPassword = <>
+        members = [
+          Member {
+            role = Role.ADMINISTRATOR
+            userId = <00000000000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <000a11ce000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <00000b0b000040008000000000000001>
+          }
+        ]
+        title = GroupAttributeBlob {
+          title = "Me, Alice, Bob"
+        }
+        version = 1
+      }
+      storySendMode = StorySendMode.DEFAULT
+      whitelisted = true
+    }
+    id = 10
+  }
+}
+
+Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 3
+    recipientId = 10
+  }
+}
+
+Frame {
+  notificationProfile = NotificationProfile {
+    allowAllCalls = true
+    allowAllMentions = true
+    allowedMembers = [
+      5,
+      10
+    ]
+    color = -2960676
+    createdAtMs = 1905721875752
+    emoji = "👍🏾"
+    name = "Congue Fastidii"
+    scheduleDaysEnabled = [
+      DayOfWeek.TUESDAY,
+      DayOfWeek.WEDNESDAY
+    ]
+    scheduleEnabled = true
+    scheduleEndTime = 434
+    scheduleStartTime = 2223
+  }
+}
