@@ -18,7 +18,9 @@ object StandardFrames {
   val backupInfo = BackupInfo(
     version = 1,
     backupTimeMs = 1715636551000,
-    mediaRootBackupKey = base64Decode("j7o84ZRreKTKDZIp3bBQoScCByMJ1ldK4SRRJp5f27I=").toByteString()
+    mediaRootBackupKey = base64Decode("j7o84ZRreKTKDZIp3bBQoScCByMJ1ldK4SRRJp5f27I=").toByteString(),
+    currentAppVersion = "FooClient 2.0.0",
+    firstAppVersion = "FooClient 1.0.0"
   )
 
   val recipientSelf = Frame(
