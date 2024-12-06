@@ -61,7 +61,7 @@ object ChatItemGroupCallUpdateTestCase : TestCase("chat_item_group_call_update")
               GroupCall.State.JOINED,
               GroupCall.State.OUTGOING_RING,
               GroupCall.State.RINGING,
-              GroupCall.State.ACCEPTED -> 0L
+              GroupCall.State.ACCEPTED -> null
               GroupCall.State.UNKNOWN_STATE -> throw NotImplementedError()
             },
             read = when (callState) {
