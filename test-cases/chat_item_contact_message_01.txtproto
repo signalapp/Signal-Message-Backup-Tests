@@ -127,40 +127,49 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
+              city = ""
+              country = ""
+              label = ""
+              neighborhood = ""
               pobox = "dKVWk"
+              postcode = ""
+              region = ""
+              street = ""
               type = Type.HOME
             }
           ]
           avatar = FilePointer {
             backupLocator = BackupLocator {
-              digest = <7869439292de6b3479d3b8d192cc6b4e>
-              key = <91397527ab6ed8da3cade6724c1d82ca>
-              mediaName = "7869439292de6b3479d3b8d192cc6b4e"
-              size = 1932568500
+              digest = <42848fa87911e7798244f14304a45b55>
+              key = <f3ff32c42e228cf0ec92e3182c8face4>
+              mediaName = "42848fa87911e7798244f14304a45b55"
+              size = 616008951
             }
             contentType = "image/jpeg"
           }
           email = [
             Email {
+              label = ""
               type = Type.HOME
               value_ = "Kenya@Hunter.com"
             }
           ]
           name = Name {
-            familyName = "Gillespie"
+            familyName = "Watson"
             givenName = "Ronnie"
-            middleName = "Daphne"
-            nickname = "Michelle"
+            middleName = "Jodie"
+            nickname = "Susana"
             prefix = "Mr."
             suffix = "Jr."
           }
           number = [
             Phone {
+              label = ""
               type = Type.HOME
               value_ = "447700900381"
             }
           ]
-          organization = ""
+          organization = "xVufxIRRdMR"
         }
       ]
     }

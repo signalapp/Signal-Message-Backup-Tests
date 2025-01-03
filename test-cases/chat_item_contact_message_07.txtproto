@@ -127,53 +127,53 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "taPHwAvo"
-              country = "hyZCTrFaZqB"
-              label = "vzSFNgpXHtZhd"
-              neighborhood = "FLPSkA"
-              pobox = "Kenth"
-              postcode = "tAKtPVXV"
-              region = "ejXWhGQ"
-              street = "nGMNaiqnlQbYT"
-              type = Type.CUSTOM
+              city = ""
+              country = ""
+              label = ""
+              neighborhood = ""
+              pobox = "dKVWk"
+              postcode = ""
+              region = ""
+              street = ""
+              type = Type.HOME
             }
           ]
           avatar = FilePointer {
             attachmentLocator = AttachmentLocator {
-              cdnKey = "SQpKbdZIRAUJh"
+              cdnKey = "JOxIxtvXoeRqeX"
               cdnNumber = 3
-              digest = <c655a939fcac4c1e5d72dc618e0d273a>
-              key = <176bc947e17594adfd14c218a27fa4e4>
-              size = 112603735
-              uploadTimestamp = 1908912224941
+              digest = <e22af1036fae5ece6f2fc4786f846a4e>
+              key = <72d0cc61a319e55f94f0b995c11698bb>
+              size = 1856170870
+              uploadTimestamp = 1717402393111
             }
             contentType = "image/jpeg"
-            height = 307
-            width = 520
+            height = 1525
+            width = 3740
           }
           email = [
             Email {
-              label = "zPCvxAOii"
+              label = "zDNPnbCyaCBGA"
               type = Type.WORK
               value_ = "Kenya@Hunter.com"
             }
           ]
           name = Name {
-            familyName = "Clayton"
-            givenName = "Ronnie"
-            middleName = "Lorraine"
-            nickname = "Iva"
+            familyName = ""
+            givenName = ""
+            middleName = ""
+            nickname = ""
             prefix = "Miss"
             suffix = "III"
           }
           number = [
             Phone {
-              label = "kLQGERtwS"
+              label = "uECQWuuuE"
               type = Type.WORK
               value_ = "447700900381"
             }
           ]
-          organization = "WiGRTndr"
+          organization = "xVufxIRRdMR"
         }
       ]
     }

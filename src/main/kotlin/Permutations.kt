@@ -200,6 +200,10 @@ fun <T> Generator<T>.nullable(): Generator<T?> {
   return Generators.merge(NullGenerator(1), this as Generator<T?>)
 }
 
+fun <T> Generator<T>.plus(vararg extraElements: T): Generator<T> {
+  return Generators.merge(this, Generators.list(*extraElements))
+}
+
 fun <T> Generator<T>.asList(vararg sizes: Int): Generator<List<T>> {
   val target = this
 

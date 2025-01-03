@@ -127,45 +127,52 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = "pXHaW"
-              country = "UUiitmkHLv"
-              label = "ygutgr"
-              neighborhood = "CfVdHWJ"
+              city = ""
+              country = ""
+              label = ""
+              neighborhood = ""
               pobox = "dKVWk"
-              postcode = "jjbudVyDygx"
-              region = "mtfRDjcUVSZl"
+              postcode = ""
+              region = ""
+              street = ""
               type = Type.HOME
             }
           ]
           avatar = FilePointer {
             backupLocator = BackupLocator {
-              digest = <5f0b001866bdefbc95239458e0c53bed>
-              key = <f2363ed9947107e26853961a46c9023f>
-              mediaName = "5f0b001866bdefbc95239458e0c53bed"
-              size = 1932568500
+              digest = <911abe0326f7d093c5d15ca0b3d91770>
+              key = <1533a5f65bda799a7f11bd6289540c3b>
+              mediaName = "911abe0326f7d093c5d15ca0b3d91770"
+              size = 616008951
             }
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "image/png"
-            height = 3249
-            width = 3523
+            height = 949
+            width = 2631
           }
           email = [
             Email {
-              label = "zDNPnbCyaCBGA"
+              label = ""
               type = Type.CUSTOM
               value_ = "UUkKGT@pTUET.org"
             }
           ]
           name = Name {
-            givenName = "Ronnie"
+            familyName = "Gillespie"
+            givenName = "Fletcher"
+            middleName = "Daphne"
+            nickname = "Michelle"
+            prefix = ""
+            suffix = ""
           }
           number = [
             Phone {
-              label = "uECQWuuuE"
+              label = ""
               type = Type.CUSTOM
               value_ = "33639988942"
             }
           ]
+          organization = "xVufxIRRdMR"
         }
       ]
     }

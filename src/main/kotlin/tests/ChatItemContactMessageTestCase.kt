@@ -10,6 +10,7 @@ import org.thoughtcrime.securesms.backup.v2.proto.ChatItem
 import org.thoughtcrime.securesms.backup.v2.proto.ContactAttachment
 import org.thoughtcrime.securesms.backup.v2.proto.ContactMessage
 import org.thoughtcrime.securesms.backup.v2.proto.Frame
+import plus
 
 /**
  * Every reasonable permutation of ChatItem.ContactMessage
@@ -60,12 +61,12 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
           contact = Generators.permutation<ContactAttachment> {
             frames += ContactAttachment(
               name = ContactAttachment.Name(
-                givenName = some(Generators.firstNames()),
-                familyName = some(Generators.lastNames().nullable()),
-                middleName = some(Generators.firstNames().nullable()),
-                prefix = some(Generators.list(null, "Mr.", "Mrs.", "Miss")),
-                suffix = some(Generators.list(null, "Jr.", "Sr.", "III")),
-                nickname = some(Generators.firstNames().nullable())
+                givenName = some(Generators.firstNames().plus("")),
+                familyName = some(Generators.lastNames().plus("")),
+                middleName = some(Generators.firstNames().plus("")),
+                prefix = some(Generators.list("", "Mr.", "Mrs.", "Miss")),
+                suffix = some(Generators.list("", "Jr.", "Sr.", "III")),
+                nickname = some(Generators.firstNames().plus(""))
               ),
               number = Generators.permutation<ContactAttachment.Phone> {
                 frames += ContactAttachment.Phone(
@@ -74,7 +75,7 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
                     ContactAttachment.Phone.Type::class.java,
                     excluding = ContactAttachment.Phone.Type.UNKNOWN
                   ),
-                  label = someNullableString()
+                  label = someString()
                 )
               }.asList(0, 1, 2).let { some(it) },
               email = Generators.permutation<ContactAttachment.Email> {
@@ -84,31 +85,31 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
                     ContactAttachment.Email.Type::class.java,
                     excluding = ContactAttachment.Email.Type.UNKNOWN
                   ),
-                  label = someNullableString()
+                  label = someString()
                 )
               }.asList(0, 1, 2).let { some(it) },
               address = Generators.permutation<ContactAttachment.PostalAddress> {
                 // All-empty addresses are invalid, so ensure that at least one
                 // address field has a non-null, non-empty string.
-                val streetGenerator = Generators.list(null, SeededRandom.string(), SeededRandom.string())
-                val poBoxGenerator = Generators.list(SeededRandom.string(), null, SeededRandom.string())
+                val streetGenerator = Generators.list("", SeededRandom.string(), SeededRandom.string())
+                val poBoxGenerator = Generators.list(SeededRandom.string(), "", SeededRandom.string())
 
                 frames += ContactAttachment.PostalAddress(
                   type = someEnum(
                     ContactAttachment.PostalAddress.Type::class.java,
                     excluding = ContactAttachment.PostalAddress.Type.UNKNOWN
                   ),
-                  label = someNullableString(),
+                  label = someString(),
                   street = some(streetGenerator),
                   pobox = some(poBoxGenerator),
-                  neighborhood = someNullableString(),
-                  city = someNullableString(),
-                  region = someNullableString(),
-                  postcode = someNullableString(),
-                  country = someNullableString()
+                  neighborhood = someString(),
+                  city = someString(),
+                  region = someString(),
+                  postcode = someString(),
+                  country = someString()
                 )
               }.asList(0, 1, 2).let { some(it) },
-              organization = someNullableString(),
+              organization = someString(),
               avatar = some(Generators.avatarFilePointer().nullable())
             )
           }.asList(1).let { some(it) }

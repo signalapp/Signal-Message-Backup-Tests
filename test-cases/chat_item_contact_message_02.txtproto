@@ -127,23 +127,24 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
-              city = ""
-              country = ""
-              label = ""
-              neighborhood = ""
-              postcode = ""
-              region = ""
-              street = "EZObFnzTZ"
-              type = Type.WORK
-            },
-            PostalAddress {
               city = "taPHwAvo"
               country = "hyZCTrFaZqB"
               label = "vzSFNgpXHtZhd"
               neighborhood = "FLPSkA"
-              pobox = "Kenth"
+              pobox = ""
               postcode = "tAKtPVXV"
               region = "ejXWhGQ"
+              street = "EZObFnzTZ"
+              type = Type.WORK
+            },
+            PostalAddress {
+              city = "pXHaW"
+              country = "UUiitmkHLv"
+              label = "ygutgr"
+              neighborhood = "CfVdHWJ"
+              pobox = "Kenth"
+              postcode = "jjbudVyDygx"
+              region = "mtfRDjcUVSZl"
               street = "nGMNaiqnlQbYT"
               type = Type.CUSTOM
             }
@@ -151,51 +152,51 @@ Frame {
           avatar = FilePointer {
             backupLocator = BackupLocator {
               cdnNumber = 2
-              digest = <e22af1036fae5ece6f2fc4786f846a4e>
-              key = <fb508106666250a3d0955ce53ad73057>
-              mediaName = "e22af1036fae5ece6f2fc4786f846a4e"
-              size = 231883234
-              transitCdnKey = "ydMivXKW"
+              digest = <52e305873211de86a2099e060cae3581>
+              key = <75fa95b469fdc3dbb98690e5a59db3bc>
+              mediaName = "52e305873211de86a2099e060cae3581"
+              size = 769549436
+              transitCdnKey = "UVdtLLzdMbv"
             }
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            fileName = "KNrTwHjDpVLD"
-            height = 127
-            width = 3580
+            fileName = "yvrPutOj"
+            height = 1497
+            width = 778
           }
           email = [
             Email {
-              label = ""
+              label = "zPCvxAOii"
               type = Type.MOBILE
               value_ = "UUkKGT@pTUET.org"
             },
             Email {
-              label = "zPCvxAOii"
+              label = "zDNPnbCyaCBGA"
               type = Type.WORK
               value_ = "Kenya@Hunter.com"
             }
           ]
           name = Name {
-            familyName = "Watson"
+            familyName = "Clayton"
             givenName = "Rachael"
-            middleName = "Jodie"
-            nickname = "Susana"
+            middleName = "Lorraine"
+            nickname = "Iva"
             prefix = "Mrs."
             suffix = "Sr."
           }
           number = [
             Phone {
-              label = ""
+              label = "kLQGERtwS"
               type = Type.MOBILE
               value_ = "33639988942"
             },
             Phone {
-              label = "kLQGERtwS"
+              label = "uECQWuuuE"
               type = Type.WORK
               value_ = "447700900381"
             }
           ]
-          organization = "nkKzAencfThgPt"
+          organization = "BbKuotBvsK"
         }
       ]
     }

@@ -127,53 +127,69 @@ Frame {
         ContactAttachment {
           address = [
             PostalAddress {
+              city = "taPHwAvo"
+              country = "hyZCTrFaZqB"
+              label = "vzSFNgpXHtZhd"
+              neighborhood = "FLPSkA"
+              pobox = ""
+              postcode = "tAKtPVXV"
+              region = "ejXWhGQ"
+              street = "EZObFnzTZ"
+              type = Type.WORK
+            },
+            PostalAddress {
               city = "pXHaW"
               country = "UUiitmkHLv"
               label = "ygutgr"
               neighborhood = "CfVdHWJ"
-              pobox = "dKVWk"
+              pobox = "Kenth"
               postcode = "jjbudVyDygx"
               region = "mtfRDjcUVSZl"
-              type = Type.HOME
-            },
-            PostalAddress {
-              pobox = "dKVWk"
-              type = Type.HOME
+              street = "nGMNaiqnlQbYT"
+              type = Type.CUSTOM
             }
           ]
           avatar = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            fileName = "KNrTwHjDpVLD"
-            height = 3249
+            fileName = "yvrPutOj"
+            height = 949
             invalidAttachmentLocator = InvalidAttachmentLocator {}
-            width = 3523
+            width = 2631
           }
           email = [
             Email {
-              label = "zDNPnbCyaCBGA"
+              label = ""
               type = Type.CUSTOM
               value_ = "UUkKGT@pTUET.org"
             },
             Email {
+              label = ""
               type = Type.HOME
               value_ = "Kenya@Hunter.com"
             }
           ]
           name = Name {
-            givenName = "Rachael"
+            familyName = "Gillespie"
+            givenName = "Fletcher"
+            middleName = "Daphne"
+            nickname = "Michelle"
+            prefix = ""
+            suffix = ""
           }
           number = [
             Phone {
-              label = "uECQWuuuE"
+              label = ""
               type = Type.CUSTOM
               value_ = "33639988942"
             },
             Phone {
+              label = ""
               type = Type.HOME
               value_ = "447700900381"
             }
           ]
+          organization = "BbKuotBvsK"
         }
       ]
     }

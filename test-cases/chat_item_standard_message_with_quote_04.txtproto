@@ -128,7 +128,12 @@ Frame {
           name = Name {
             familyName = "Parker"
             givenName = "Peter"
+            middleName = ""
+            nickname = ""
+            prefix = ""
+            suffix = ""
           }
+          organization = ""
         }
       ]
     }
