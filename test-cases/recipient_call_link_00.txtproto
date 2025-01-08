@@ -99,5 +99,6 @@ Frame {
       restrictions = Restrictions.UNKNOWN
       rootKey = <2cc2b48c50aefe53b3974ed91e6b4ea9>
     }
+    id = 10
   }
 }

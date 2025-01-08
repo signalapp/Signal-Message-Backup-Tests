@@ -22,6 +22,7 @@ object RecipientCallLinkTestCase : TestCase("recipient_call_link") {
 
     frames += Frame(
       recipient = Recipient(
+        id = 10,
         callLink = CallLink(
           rootKey = someCallLinkRootKey().toByteString(),
           adminKey = someNullableBytes(32)?.toByteString(),
