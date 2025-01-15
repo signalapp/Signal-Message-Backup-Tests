@@ -3,7 +3,9 @@
 
 import SeededRandom.seededShuffled
 import com.squareup.wire.Message
+import okio.ByteString
 import okio.ByteString.Companion.toByteString
+import org.signal.libsignal.protocol.ServiceId.Aci
 import org.signal.libsignal.zkgroup.ServerSecretParams
 import org.signal.libsignal.zkgroup.receipts.ClientZkReceiptOperations
 import org.signal.libsignal.zkgroup.receipts.ReceiptCredentialPresentation
@@ -16,6 +18,7 @@ import org.thoughtcrime.securesms.backup.v2.proto.misc.Receipt
 import java.security.SecureRandom
 import java.util.*
 import kotlin.math.max
+import kotlin.math.min
 
 /**
  * Generates a list of snapshots, ensuring that a snapshot exists for each possible value of each individual generator.
@@ -324,7 +327,7 @@ object Generators {
   fun names(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.name })
   fun firstNames(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.firstName })
   fun lastNames(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.lastName })
-  fun textBody(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.getWords(1, 10) })
+  fun textBody(minWords: Int = 1, maxWords: Int = min(10, minWords)): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.getWords(1, 10) })
   fun titles(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.getTitle(2, 3) })
 
   /**
@@ -736,6 +739,60 @@ object Generators {
         ).encode()
       }
     }
+  }
+
+  /**
+   * IMPORTANT: Assumes the input text is at least 10 characters long, for simplicity.
+   * The text is passed in as an arg to ensure that.
+   */
+  fun bodyRanges(inputText: String, mentionAcis: List<Aci> = emptyList()): Generator<List<BodyRange>> {
+    check(inputText.length >= 10)
+
+    val (mentionGenerator, styleGenerator) = oneOf(
+      Generators.list(mentionAcis),
+      Generators.enum(BodyRange.Style::class.java, excluding = BodyRange.Style.NONE) as Generator<Any?>
+    )
+
+    // Mentions and styles can occupy identical or disjoint ranges, but cannot
+    // partially overlap. (I.e., styles cannot be applied to part-but-not-all
+    // of a mention.)
+    val mentionRangeGenerator = Generators.list(
+      Pair(6, 2),
+      Pair(8, 2)
+    )
+
+    // Includes intentional doubles, so we get multiple styles with the same
+    // exact ranges.
+    val styleRangeGenerator = Generators.list(
+      Pair(0, 1),
+      Pair(0, 4),
+      Pair(0, 4),
+      Pair(1, 5),
+      Pair(2, 2),
+      Pair(6, 2),
+      Pair(6, 2)
+    )
+
+    return Generators.permutation<BodyRange> {
+      val style: BodyRange.Style? = someOneOf(styleGenerator)
+      val styleRange = some(styleRangeGenerator)
+
+      val mentionRange = some(mentionRangeGenerator)
+      val mention: ByteString? = someOneOf(mentionGenerator)
+
+      val range: Pair<Int, Int> = if (style != null) {
+        styleRange
+      } else {
+        mentionRange
+      }
+
+      frames += BodyRange(
+        start = range.first,
+        length = range.second,
+        style = style,
+        mentionAci = mention
+      )
+    }.asList(0, 1, 2, 3, 4, 5)
   }
 
   fun identityKeys(): Generator<ByteArray> {
