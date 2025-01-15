@@ -6,6 +6,7 @@ import Generator
 import Generators
 import PermutationScope
 import TestCase
+import nullable
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
 
@@ -31,7 +32,8 @@ object ChatItemDirectStoryReplyTestCase : TestCase("chat_item_direct_story_reply
           text = Text(
             body = text,
             bodyRanges = some(Generators.bodyRanges(text))
-          )
+          ),
+          longText = some(Generators.longTextFilePointer().nullable())
         )
       },
       Generators.emoji()as Generator<Any?>
