@@ -99,6 +99,10 @@ Frame {
       e164 = 12255550184
       identityKey = <05dee2f65c1c9a51a0f5667a56aca18c43e56684e6719dfffa904591dcb227971f>
       identityState = IdentityState.DEFAULT
+      nickname = Name {
+        family = "Sheppard"
+        given = "Virginia"
+      }
       notRegistered = NotRegistered {
         unregisteredTimestamp = 1695248715439
       }

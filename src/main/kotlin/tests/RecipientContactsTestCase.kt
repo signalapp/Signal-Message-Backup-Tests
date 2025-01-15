@@ -9,6 +9,7 @@ import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.Contact
 import org.thoughtcrime.securesms.backup.v2.proto.Frame
 import org.thoughtcrime.securesms.backup.v2.proto.Recipient
+import plus
 import toByteArray
 
 /**
@@ -48,7 +49,14 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           profileFamilyName = some(Generators.lastNames().nullable()),
           hideStory = someBoolean(),
           identityKey = identityKey?.toByteString(),
-          identityState = someEnum(Contact.IdentityState::class.java).takeIf { identityKey != null } ?: Contact.IdentityState.DEFAULT
+          identityState = someEnum(Contact.IdentityState::class.java).takeIf { identityKey != null } ?: Contact.IdentityState.DEFAULT,
+          nickname = Generators.permutation<Contact.Name> {
+            frames += Contact.Name(
+              given = some(Generators.firstNames()),
+              family = some(Generators.lastNames().plus(""))
+            )
+          }.nullable().let { some(it) },
+          note = some(Generators.textBody().plus(""))
         )
       )
     )

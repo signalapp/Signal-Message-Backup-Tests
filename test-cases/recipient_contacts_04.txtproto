@@ -96,20 +96,18 @@ Frame {
   recipient = Recipient {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
-      e164 = 12255550184
-      identityKey = <0531e2a12cfad6f939e88ac2b05ec5a42b5de6d37168e8b9729d2b10c259f8fc1c>
-      identityState = IdentityState.VERIFIED
+      blocked = true
+      e164 = 33639987372
+      hideStory = true
+      identityState = IdentityState.DEFAULT
       nickname = Name {
-        family = "Rodriguez"
+        family = ""
         given = "Maura"
       }
-      notRegistered = NotRegistered {}
-      note = "tota repudiandae"
+      note = "natoque"
       pni = <f2c8f6640c624f2f806929719cb0c468>
-      profileFamilyName = "Freeman"
-      profileGivenName = "Enid"
-      profileKey = <21064b374c7c7f19ef4ab90be00e43771d8bb3f9031ee7c9761a278e9730ff2a>
-      username = "goldie.9119"
+      profileSharing = true
+      registered = Registered {}
       visibility = Visibility.HIDDEN
     }
     id = 4
