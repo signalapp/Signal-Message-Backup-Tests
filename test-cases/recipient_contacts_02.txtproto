@@ -104,6 +104,7 @@ Frame {
       notRegistered = NotRegistered {
         unregisteredTimestamp = 1833527071192
       }
+      note = ""
       pni = <f2c8f6640c624f2f806929719cb0c468>
       profileFamilyName = "Pennington"
       profileGivenName = "Manuela"

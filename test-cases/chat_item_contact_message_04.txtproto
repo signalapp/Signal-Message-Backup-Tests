@@ -99,6 +99,7 @@ Frame {
       e164 = 16105550101
       identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
@@ -123,58 +124,56 @@ Frame {
     authorId = 1
     chatId = 2
     contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          address = [
-            PostalAddress {
-              city = ""
-              country = ""
-              label = ""
-              neighborhood = ""
-              pobox = "dKVWk"
-              postcode = ""
-              region = ""
-              street = ""
-              type = Type.HOME
-            }
-          ]
-          avatar = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <911abe0326f7d093c5d15ca0b3d91770>
-              key = <1533a5f65bda799a7f11bd6289540c3b>
-              mediaName = "911abe0326f7d093c5d15ca0b3d91770"
-              size = 616008951
-            }
-            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
-            contentType = "image/png"
-            height = 949
-            width = 2631
+      contact = ContactAttachment {
+        address = [
+          PostalAddress {
+            city = ""
+            country = ""
+            label = ""
+            neighborhood = ""
+            pobox = "dKVWk"
+            postcode = ""
+            region = ""
+            street = ""
+            type = Type.HOME
           }
-          email = [
-            Email {
-              label = ""
-              type = Type.CUSTOM
-              value_ = "UUkKGT@pTUET.org"
-            }
-          ]
-          name = Name {
-            familyName = "Gillespie"
-            givenName = "Fletcher"
-            middleName = "Daphne"
-            nickname = "Michelle"
-            prefix = ""
-            suffix = ""
+        ]
+        avatar = FilePointer {
+          backupLocator = BackupLocator {
+            digest = <911abe0326f7d093c5d15ca0b3d91770>
+            key = <1533a5f65bda799a7f11bd6289540c3b>
+            mediaName = "911abe0326f7d093c5d15ca0b3d91770"
+            size = 616008951
           }
-          number = [
-            Phone {
-              label = ""
-              type = Type.CUSTOM
-              value_ = "33639988942"
-            }
-          ]
-          organization = "xVufxIRRdMR"
+          blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+          contentType = "image/png"
+          height = 949
+          width = 2631
         }
-      ]
+        email = [
+          Email {
+            label = ""
+            type = Type.CUSTOM
+            value_ = "UUkKGT@pTUET.org"
+          }
+        ]
+        name = Name {
+          familyName = "Gillespie"
+          givenName = "Fletcher"
+          middleName = "Daphne"
+          nickname = "Michelle"
+          prefix = ""
+          suffix = ""
+        }
+        number = [
+          Phone {
+            label = ""
+            type = Type.CUSTOM
+            value_ = "33639988942"
+          }
+        ]
+        organization = "xVufxIRRdMR"
+      }
     }
     dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {

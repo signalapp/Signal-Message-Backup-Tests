@@ -99,6 +99,7 @@ Frame {
       e164 = 16105550101
       identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
@@ -123,55 +124,53 @@ Frame {
     authorId = 1
     chatId = 2
     contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          address = [
-            PostalAddress {
-              city = ""
-              country = ""
-              label = ""
-              neighborhood = ""
-              pobox = "dKVWk"
-              postcode = ""
-              region = ""
-              street = ""
-              type = Type.HOME
-            }
-          ]
-          avatar = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <42848fa87911e7798244f14304a45b55>
-              key = <f3ff32c42e228cf0ec92e3182c8face4>
-              mediaName = "42848fa87911e7798244f14304a45b55"
-              size = 616008951
-            }
-            contentType = "image/jpeg"
+      contact = ContactAttachment {
+        address = [
+          PostalAddress {
+            city = ""
+            country = ""
+            label = ""
+            neighborhood = ""
+            pobox = "dKVWk"
+            postcode = ""
+            region = ""
+            street = ""
+            type = Type.HOME
           }
-          email = [
-            Email {
-              label = ""
-              type = Type.HOME
-              value_ = "Kenya@Hunter.com"
-            }
-          ]
-          name = Name {
-            familyName = "Watson"
-            givenName = "Ronnie"
-            middleName = "Jodie"
-            nickname = "Susana"
-            prefix = "Mr."
-            suffix = "Jr."
+        ]
+        avatar = FilePointer {
+          backupLocator = BackupLocator {
+            digest = <42848fa87911e7798244f14304a45b55>
+            key = <f3ff32c42e228cf0ec92e3182c8face4>
+            mediaName = "42848fa87911e7798244f14304a45b55"
+            size = 616008951
           }
-          number = [
-            Phone {
-              label = ""
-              type = Type.HOME
-              value_ = "447700900381"
-            }
-          ]
-          organization = "xVufxIRRdMR"
+          contentType = "image/jpeg"
         }
-      ]
+        email = [
+          Email {
+            label = ""
+            type = Type.HOME
+            value_ = "Kenya@Hunter.com"
+          }
+        ]
+        name = Name {
+          familyName = "Watson"
+          givenName = "Ronnie"
+          middleName = "Jodie"
+          nickname = "Susana"
+          prefix = "Mr."
+          suffix = "Jr."
+        }
+        number = [
+          Phone {
+            label = ""
+            type = Type.HOME
+            value_ = "447700900381"
+          }
+        ]
+        organization = "xVufxIRRdMR"
+      }
     }
     dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {

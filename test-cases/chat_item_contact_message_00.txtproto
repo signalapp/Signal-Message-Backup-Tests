@@ -99,6 +99,7 @@ Frame {
       e164 = 16105550101
       identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
@@ -123,19 +124,17 @@ Frame {
     authorId = 4
     chatId = 2
     contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          name = Name {
-            familyName = "Gillespie"
-            givenName = "Fletcher"
-            middleName = "Daphne"
-            nickname = "Michelle"
-            prefix = ""
-            suffix = ""
-          }
-          organization = ""
+      contact = ContactAttachment {
+        name = Name {
+          familyName = "Gillespie"
+          givenName = "Fletcher"
+          middleName = "Daphne"
+          nickname = "Michelle"
+          prefix = ""
+          suffix = ""
         }
-      ]
+        organization = ""
+      }
     }
     dateSent = 1680366577838
     incoming = IncomingMessageDetails {

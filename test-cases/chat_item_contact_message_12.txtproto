@@ -99,6 +99,7 @@ Frame {
       e164 = 16105550101
       identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
@@ -123,35 +124,33 @@ Frame {
     authorId = 1
     chatId = 2
     contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          avatar = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 3
-              digest = <e2843250301287d4cceace9511923143>
-              key = <729df40349b8e59cb677e456b3a5b045>
-              mediaName = "e2843250301287d4cceace9511923143"
-              size = 542768234
-              transitCdnKey = "PaXiLScgLH"
-              transitCdnNumber = 2
-            }
-            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            contentType = "image/jpeg"
-            fileName = "YzYCnHJHjz"
-            height = 1525
-            width = 3740
+      contact = ContactAttachment {
+        avatar = FilePointer {
+          backupLocator = BackupLocator {
+            cdnNumber = 3
+            digest = <e2843250301287d4cceace9511923143>
+            key = <729df40349b8e59cb677e456b3a5b045>
+            mediaName = "e2843250301287d4cceace9511923143"
+            size = 542768234
+            transitCdnKey = "PaXiLScgLH"
+            transitCdnNumber = 2
           }
-          name = Name {
-            familyName = ""
-            givenName = ""
-            middleName = ""
-            nickname = ""
-            prefix = "Miss"
-            suffix = "III"
-          }
-          organization = ""
+          blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+          contentType = "image/jpeg"
+          fileName = "YzYCnHJHjz"
+          height = 1525
+          width = 3740
         }
-      ]
+        name = Name {
+          familyName = ""
+          givenName = ""
+          middleName = ""
+          nickname = ""
+          prefix = "Miss"
+          suffix = "III"
+        }
+        organization = ""
+      }
     }
     dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {

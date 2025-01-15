@@ -99,6 +99,7 @@ Frame {
       e164 = 16105550101
       identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
@@ -123,78 +124,76 @@ Frame {
     authorId = 1
     chatId = 2
     contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          address = [
-            PostalAddress {
-              city = "taPHwAvo"
-              country = "hyZCTrFaZqB"
-              label = "vzSFNgpXHtZhd"
-              neighborhood = "FLPSkA"
-              pobox = ""
-              postcode = "tAKtPVXV"
-              region = "ejXWhGQ"
-              street = "EZObFnzTZ"
-              type = Type.WORK
-            },
-            PostalAddress {
-              city = "pXHaW"
-              country = "UUiitmkHLv"
-              label = "ygutgr"
-              neighborhood = "CfVdHWJ"
-              pobox = "Kenth"
-              postcode = "jjbudVyDygx"
-              region = "mtfRDjcUVSZl"
-              street = "nGMNaiqnlQbYT"
-              type = Type.CUSTOM
-            }
-          ]
-          avatar = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "JOxIxtvXoeRqeX"
-              digest = <96db99c9bb254a1bb0de5501d6b6653b>
-              key = <415322f414f309cdef3eb5a920f7f60e>
-              size = 26430243
-            }
-            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-            contentType = "image/jpeg"
-            fileName = "yvrPutOj"
+      contact = ContactAttachment {
+        address = [
+          PostalAddress {
+            city = "taPHwAvo"
+            country = "hyZCTrFaZqB"
+            label = "vzSFNgpXHtZhd"
+            neighborhood = "FLPSkA"
+            pobox = ""
+            postcode = "tAKtPVXV"
+            region = "ejXWhGQ"
+            street = "EZObFnzTZ"
+            type = Type.WORK
+          },
+          PostalAddress {
+            city = "pXHaW"
+            country = "UUiitmkHLv"
+            label = "ygutgr"
+            neighborhood = "CfVdHWJ"
+            pobox = "Kenth"
+            postcode = "jjbudVyDygx"
+            region = "mtfRDjcUVSZl"
+            street = "nGMNaiqnlQbYT"
+            type = Type.CUSTOM
           }
-          email = [
-            Email {
-              label = ""
-              type = Type.HOME
-              value_ = "Kenya@Hunter.com"
-            },
-            Email {
-              label = "zPCvxAOii"
-              type = Type.MOBILE
-              value_ = "UUkKGT@pTUET.org"
-            }
-          ]
-          name = Name {
-            familyName = "Watson"
-            givenName = "Ronnie"
-            middleName = "Jodie"
-            nickname = "Susana"
-            prefix = "Mr."
-            suffix = "Jr."
+        ]
+        avatar = FilePointer {
+          attachmentLocator = AttachmentLocator {
+            cdnKey = "JOxIxtvXoeRqeX"
+            digest = <96db99c9bb254a1bb0de5501d6b6653b>
+            key = <415322f414f309cdef3eb5a920f7f60e>
+            size = 26430243
           }
-          number = [
-            Phone {
-              label = ""
-              type = Type.HOME
-              value_ = "447700900381"
-            },
-            Phone {
-              label = "kLQGERtwS"
-              type = Type.MOBILE
-              value_ = "33639988942"
-            }
-          ]
-          organization = "BbKuotBvsK"
+          blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
+          contentType = "image/jpeg"
+          fileName = "yvrPutOj"
         }
-      ]
+        email = [
+          Email {
+            label = ""
+            type = Type.HOME
+            value_ = "Kenya@Hunter.com"
+          },
+          Email {
+            label = "zPCvxAOii"
+            type = Type.MOBILE
+            value_ = "UUkKGT@pTUET.org"
+          }
+        ]
+        name = Name {
+          familyName = "Watson"
+          givenName = "Ronnie"
+          middleName = "Jodie"
+          nickname = "Susana"
+          prefix = "Mr."
+          suffix = "Jr."
+        }
+        number = [
+          Phone {
+            label = ""
+            type = Type.HOME
+            value_ = "447700900381"
+          },
+          Phone {
+            label = "kLQGERtwS"
+            type = Type.MOBILE
+            value_ = "33639988942"
+          }
+        ]
+        organization = "BbKuotBvsK"
+      }
     }
     dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {

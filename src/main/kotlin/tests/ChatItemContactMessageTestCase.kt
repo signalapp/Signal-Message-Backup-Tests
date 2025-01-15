@@ -112,7 +112,7 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
               organization = someString(),
               avatar = some(Generators.avatarFilePointer().nullable())
             )
-          }.asList(1).let { some(it) }
+          }.let { some(it) }
         )
       )
     )

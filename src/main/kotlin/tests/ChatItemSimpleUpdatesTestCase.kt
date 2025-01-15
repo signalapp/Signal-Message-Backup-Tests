@@ -42,6 +42,8 @@ object ChatItemSimpleUpdatesTestCase : TestCase("chat_item_simple_updates") {
       SimpleChatUpdate.Type.IDENTITY_VERIFIED,
       SimpleChatUpdate.Type.IDENTITY_DEFAULT,
       SimpleChatUpdate.Type.JOINED_SIGNAL,
+      SimpleChatUpdate.Type.PAYMENTS_ACTIVATED,
+      SimpleChatUpdate.Type.PAYMENT_ACTIVATION_REQUEST,
       SimpleChatUpdate.Type.CHANGE_NUMBER -> AuthorData(aliceRecipientId, aliceChatId)
       SimpleChatUpdate.Type.CHAT_SESSION_REFRESH,
       SimpleChatUpdate.Type.REPORTED_SPAM,
@@ -50,8 +52,6 @@ object ChatItemSimpleUpdatesTestCase : TestCase("chat_item_simple_updates") {
       SimpleChatUpdate.Type.MESSAGE_REQUEST_ACCEPTED -> AuthorData(selfRecipientId, aliceChatId)
       SimpleChatUpdate.Type.END_SESSION,
       SimpleChatUpdate.Type.BAD_DECRYPT,
-      SimpleChatUpdate.Type.PAYMENTS_ACTIVATED,
-      SimpleChatUpdate.Type.PAYMENT_ACTIVATION_REQUEST,
       SimpleChatUpdate.Type.UNSUPPORTED_PROTOCOL_MESSAGE -> AuthorData(listOf(selfRecipientId, aliceRecipientId), aliceChatId)
       // Impossible, checked above.
       SimpleChatUpdate.Type.UNKNOWN -> throw AssertionError("Impossible")

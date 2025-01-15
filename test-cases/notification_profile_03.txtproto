@@ -99,6 +99,7 @@ Frame {
       e164 = 16105550101
       identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
@@ -117,6 +118,7 @@ Frame {
       e164 = 16105550102
       identityKey = <052dde6c6dcfaf0ffdcbc5e2eac90e5a18c26969907c942eade3a0e345948be27e>
       identityState = IdentityState.VERIFIED
+      note = ""
       pni = <00000b0b000040008000000000000002>
       profileFamilyName = "Jones"
       profileGivenName = "Bob"

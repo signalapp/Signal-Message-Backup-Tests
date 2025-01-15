@@ -100,6 +100,7 @@ Frame {
       identityKey = <0531e2a12cfad6f939e88ac2b05ec5a42b5de6d37168e8b9729d2b10c259f8fc1c>
       identityState = IdentityState.VERIFIED
       notRegistered = NotRegistered {}
+      note = ""
       pni = <f2c8f6640c624f2f806929719cb0c468>
       profileFamilyName = "Freeman"
       profileGivenName = "Enid"

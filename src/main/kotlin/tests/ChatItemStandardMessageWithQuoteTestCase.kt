@@ -41,7 +41,7 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
     ) = oneOf(
       standardMessageGenerator(),
       ContactMessage(
-        contact = listOf(ContactAttachment(name = ContactAttachment.Name(givenName = "Peter", familyName = "Parker")))
+        contact = ContactAttachment(name = ContactAttachment.Name(givenName = "Peter", familyName = "Parker"))
       ).asGenerator(),
       Generators.permutation {
         frames += StickerMessage(
@@ -184,12 +184,12 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
     return when {
       this.standardMessage?.text != null -> {
         Text(
-          body = this.standardMessage.text.body ?: "",
-          bodyRanges = this.standardMessage.text.bodyRanges ?: emptyList()
+          body = this.standardMessage.text.body,
+          bodyRanges = this.standardMessage.text.bodyRanges
         )
       }
       this.contactMessage != null -> {
-        val name = this.contactMessage.contact[0].name!!
+        val name = this.contactMessage.contact!!.name!!
         Text(
           body = "${name.givenName} ${name.familyName}"
         )

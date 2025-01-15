@@ -100,6 +100,7 @@ Frame {
       e164 = 33639987372
       hideStory = true
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <f2c8f6640c624f2f806929719cb0c468>
       profileSharing = true
       registered = Registered {}

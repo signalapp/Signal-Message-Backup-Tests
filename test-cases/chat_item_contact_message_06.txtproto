@@ -99,6 +99,7 @@ Frame {
       e164 = 16105550101
       identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
       identityState = IdentityState.DEFAULT
+      note = ""
       pni = <000a11ce000040008000000000000002>
       profileFamilyName = "Smith"
       profileGivenName = "Alice"
@@ -123,34 +124,32 @@ Frame {
     authorId = 1
     chatId = 2
     contactMessage = ContactMessage {
-      contact = [
-        ContactAttachment {
-          avatar = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "FxREjlR"
-              cdnNumber = 2
-              digest = <79d3b8d192cc6b4ec33429ca91397527>
-              key = <38fb6dddcf446fde2a7eddab78694392>
-              size = 998331070
-              uploadTimestamp = 1906030085412
-            }
-            blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
-            contentType = "image/png"
-            fileName = "YzYCnHJHjz"
-            height = 1497
-            width = 778
+      contact = ContactAttachment {
+        avatar = FilePointer {
+          attachmentLocator = AttachmentLocator {
+            cdnKey = "FxREjlR"
+            cdnNumber = 2
+            digest = <79d3b8d192cc6b4ec33429ca91397527>
+            key = <38fb6dddcf446fde2a7eddab78694392>
+            size = 998331070
+            uploadTimestamp = 1906030085412
           }
-          name = Name {
-            familyName = "Clayton"
-            givenName = "Rachael"
-            middleName = "Lorraine"
-            nickname = "Iva"
-            prefix = "Mrs."
-            suffix = "Sr."
-          }
-          organization = ""
+          blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
+          contentType = "image/png"
+          fileName = "YzYCnHJHjz"
+          height = 1497
+          width = 778
         }
-      ]
+        name = Name {
+          familyName = "Clayton"
+          givenName = "Rachael"
+          middleName = "Lorraine"
+          nickname = "Iva"
+          prefix = "Mrs."
+          suffix = "Sr."
+        }
+        organization = ""
+      }
     }
     dateSent = 1680366577838
     outgoing = OutgoingMessageDetails {
