@@ -154,11 +154,11 @@ Frame {
             width = 3019
           }
           title = "Graeco Tractatos"
-          url = "https://example.com/OMpdiJZO"
+          url = "https://signal.org/OMpdiJZO"
         }
       ]
       text = Text {
-        body = "utinam sapien tristique https://example.com/OMpdiJZO"
+        body = "utinam sapien tristique https://signal.org/OMpdiJZO"
       }
     }
   }

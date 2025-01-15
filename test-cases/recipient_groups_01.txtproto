@@ -209,7 +209,7 @@ Frame {
           attributes = AccessRequired.ADMINISTRATOR
           members = AccessRequired.ADMINISTRATOR
         }
-        avatarUrl = "https://example.com/eTtfOMpdi"
+        avatarUrl = "https://signal.org/eTtfOMpdi"
         description = GroupAttributeBlob {
           descriptionText = "quod iudicabit auctor"
         }

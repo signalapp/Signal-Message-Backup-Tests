@@ -43,7 +43,7 @@ Frame {
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       universalExpireTimerSeconds = 1305377059
     }
-    avatarUrlPath = "https://example.com/lnJDCHSAKhylA"
+    avatarUrlPath = "https://signal.org/lnJDCHSAKhylA"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true

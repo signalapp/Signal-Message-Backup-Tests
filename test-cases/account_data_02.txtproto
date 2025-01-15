@@ -69,7 +69,7 @@ Frame {
       typingIndicators = true
       universalExpireTimerSeconds = 1305377059
     }
-    avatarUrlPath = "https://example.com/lnJDCHSAKhylA"
+    avatarUrlPath = "https://signal.org/lnJDCHSAKhylA"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       subscriberId = <0c4220ab396c4b8ebdefd49b44b4c8d19c47cb807844279fb4a4e927c5f36b40>

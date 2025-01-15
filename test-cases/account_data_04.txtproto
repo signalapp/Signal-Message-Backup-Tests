@@ -67,7 +67,7 @@ Frame {
       typingIndicators = true
       universalExpireTimerSeconds = 264034631
     }
-    avatarUrlPath = "https://example.com/neLVzsX"
+    avatarUrlPath = "https://signal.org/neLVzsX"
     familyName = ""
     givenName = ""
     profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>

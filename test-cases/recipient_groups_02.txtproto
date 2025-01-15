@@ -211,7 +211,7 @@ Frame {
           members = AccessRequired.MEMBER
         }
         announcements_only = true
-        avatarUrl = "https://example.com/ZOYWfDTgpIJqyS"
+        avatarUrl = "https://signal.org/ZOYWfDTgpIJqyS"
         description = GroupAttributeBlob {
           descriptionText = "docendi proin reformidans oratio rhoncus"
         }

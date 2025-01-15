@@ -142,7 +142,7 @@ Frame {
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             width = 2028
           }
-          url = "https://example.com/OMpdiJZO"
+          url = "https://signal.org/OMpdiJZO"
         }
       ]
       reactions = [
@@ -160,7 +160,7 @@ Frame {
         }
       ]
       text = Text {
-        body = "reprehendunt quisque sociis dolor pertinacia populo ferri https://example.com/OMpdiJZO"
+        body = "reprehendunt quisque sociis dolor pertinacia populo ferri https://signal.org/OMpdiJZO"
       }
     }
   }

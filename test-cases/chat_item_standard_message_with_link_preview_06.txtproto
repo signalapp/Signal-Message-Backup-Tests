@@ -151,11 +151,11 @@ Frame {
             width = 2489
           }
           title = "Laoreet Fugit"
-          url = "https://example.com/OMpdiJZO"
+          url = "https://signal.org/OMpdiJZO"
         }
       ]
       text = Text {
-        body = "utinam sapien tristique https://example.com/OMpdiJZO"
+        body = "utinam sapien tristique https://signal.org/OMpdiJZO"
       }
     }
   }

@@ -148,7 +148,7 @@ Frame {
             height = 2764
             width = 2028
           }
-          url = "https://example.com/OMpdiJZO"
+          url = "https://signal.org/OMpdiJZO"
         }
       ]
       reactions = [
@@ -160,7 +160,7 @@ Frame {
         }
       ]
       text = Text {
-        body = "quaerendum disputationi quaeque an pretium https://example.com/OMpdiJZO"
+        body = "quaerendum disputationi quaeque an pretium https://signal.org/OMpdiJZO"
       }
     }
   }

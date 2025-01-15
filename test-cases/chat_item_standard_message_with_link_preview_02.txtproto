@@ -151,7 +151,7 @@ Frame {
             width = 2489
           }
           title = "Laoreet Fugit"
-          url = "https://example.com/OMpdiJZO"
+          url = "https://signal.org/OMpdiJZO"
         }
       ]
       reactions = [
@@ -169,7 +169,7 @@ Frame {
         }
       ]
       text = Text {
-        body = "reprehendunt quisque sociis dolor pertinacia populo ferri https://example.com/OMpdiJZO"
+        body = "reprehendunt quisque sociis dolor pertinacia populo ferri https://signal.org/OMpdiJZO"
       }
     }
   }
