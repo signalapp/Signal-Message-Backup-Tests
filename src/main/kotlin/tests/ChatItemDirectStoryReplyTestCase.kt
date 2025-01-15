@@ -9,6 +9,7 @@ import TestCase
 import nullable
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import plus
 
 /**
  * Incoming/outgoing remote deleted messages.
@@ -53,7 +54,7 @@ object ChatItemDirectStoryReplyTestCase : TestCase("chat_item_direct_story_reply
         directStoryReplyMessage = DirectStoryReplyMessage(
           textReply = someOneOf(textReply),
           emoji = someOneOf(emoji),
-          storySentTimestamp = someTimestamp(),
+          storySentTimestamp = some(Generators.nonZeroTimestamps().nullable()),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )
       )
