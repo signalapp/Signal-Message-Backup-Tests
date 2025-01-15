@@ -5,7 +5,6 @@ import SeededRandom.seededShuffled
 import com.squareup.wire.Message
 import okio.ByteString
 import okio.ByteString.Companion.toByteString
-import org.signal.libsignal.protocol.ServiceId.Aci
 import org.signal.libsignal.zkgroup.ServerSecretParams
 import org.signal.libsignal.zkgroup.receipts.ClientZkReceiptOperations
 import org.signal.libsignal.zkgroup.receipts.ReceiptCredentialPresentation
@@ -745,7 +744,7 @@ object Generators {
    * IMPORTANT: Assumes the input text is at least 10 characters long, for simplicity.
    * The text is passed in as an arg to ensure that.
    */
-  fun bodyRanges(inputText: String, mentionAcis: List<Aci> = emptyList()): Generator<List<BodyRange>> {
+  fun bodyRanges(inputText: String, mentionAcis: List<ByteString> = emptyList()): Generator<List<BodyRange>> {
     check(inputText.length >= 10)
 
     val (mentionGenerator, styleGenerator) = oneOf(
