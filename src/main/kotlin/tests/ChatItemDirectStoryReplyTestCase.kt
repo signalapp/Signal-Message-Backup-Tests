@@ -54,7 +54,6 @@ object ChatItemDirectStoryReplyTestCase : TestCase("chat_item_direct_story_reply
         directStoryReplyMessage = DirectStoryReplyMessage(
           textReply = someOneOf(textReply),
           emoji = someOneOf(emoji),
-          storySentTimestamp = some(Generators.nonZeroTimestamps().nullable()),
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )
       )

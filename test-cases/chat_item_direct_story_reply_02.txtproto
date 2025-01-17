@@ -129,17 +129,16 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1842793619186
+          sentTimestamp = 1741109005970
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1842793619187
+          sentTimestamp = 1741109005971
           sortOrder = 2
         }
       ]
-      storySentTimestamp = 1839935850830
       textReply = TextReply {
         longText = FilePointer {
           backupLocator = BackupLocator {
