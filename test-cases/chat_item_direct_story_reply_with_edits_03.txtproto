@@ -1,0 +1,223 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  currentAppVersion = "FooClient 2.0.0"
+  firstAppVersion = "FooClient 1.0.0"
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = ""
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <000a11ce000040008000000000000001>
+      e164 = 16105550101
+      identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
+      identityState = IdentityState.DEFAULT
+      note = ""
+      pni = <000a11ce000040008000000000000002>
+      profileFamilyName = "Smith"
+      profileGivenName = "Alice"
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
+      registered = Registered {}
+      visibility = Visibility.VISIBLE
+    }
+    id = 4
+  }
+}
+
+Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 2
+    recipientId = 4
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 4
+    chatId = 2
+    dateSent = 1724823960269
+    directStoryReplyMessage = DirectStoryReplyMessage {
+      textReply = TextReply {
+        longText = FilePointer {
+          backupLocator = BackupLocator {
+            cdnNumber = 3
+            digest = <b00738e125ef73707c0a1a54a78a536a>
+            key = <6fb2a59dcf3429a08f357899994d2951>
+            mediaName = "b00738e125ef73707c0a1a54a78a536a"
+            size = 253678511
+            transitCdnKey = "koGHkmlnzN"
+            transitCdnNumber = 2
+          }
+          contentType = "text/x-signal-plain"
+          fileName = "xHDjKnB"
+        }
+        text = Text {
+          body = "ut cubilia justo congue"
+          bodyRanges = [
+            BodyRange {
+              length = 5
+              start = 1
+              style = Style.STRIKETHROUGH
+            },
+            BodyRange {
+              length = 2
+              start = 2
+              style = Style.MONOSPACE
+            },
+            BodyRange {
+              length = 2
+              start = 6
+              style = Style.BOLD
+            }
+          ]
+        }
+      }
+    }
+    incoming = IncomingMessageDetails {
+      dateReceived = 1724823960259
+      dateServerSent = 1724823960268
+    }
+    revisions = [
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1724823901298
+        directStoryReplyMessage = DirectStoryReplyMessage {
+          textReply = TextReply {
+            text = Text {
+              body = "dicat vituperata saperet inimicus ridens labores consectetur singulis dui"
+            }
+          }
+        }
+        incoming = IncomingMessageDetails {
+          dateReceived = 1724823901288
+          dateServerSent = 1724823901297
+          read = true
+          sealedSender = true
+        }
+      },
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1724823901299
+        directStoryReplyMessage = DirectStoryReplyMessage {
+          textReply = TextReply {
+            text = Text {
+              body = "simul tota graeci numquam conclusionemque menandri atqui"
+            }
+          }
+        }
+        incoming = IncomingMessageDetails {
+          dateReceived = 1724823901289
+          dateServerSent = 1724823901298
+        }
+      },
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1724823901300
+        directStoryReplyMessage = DirectStoryReplyMessage {
+          textReply = TextReply {
+            text = Text {
+              body = "oratio tempor maiorum mentitum dolores definitiones omittam inceptos"
+            }
+          }
+        }
+        incoming = IncomingMessageDetails {
+          dateReceived = 1724823901290
+          dateServerSent = 1724823901299
+          read = true
+          sealedSender = true
+        }
+      }
+    ]
+  }
+}
