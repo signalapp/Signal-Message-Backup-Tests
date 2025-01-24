@@ -791,7 +791,7 @@ object Generators {
         style = style,
         mentionAci = mention
       )
-    }.asList(0, 1, 2, 3, 4, 5)
+    }.asList(0, 1, 2, 3, 4, 5).map { it.distinct() }
   }
 
   fun identityKeys(): Generator<ByteArray> {

@@ -153,7 +153,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1885067522602
+    dateSent = 1662654195378
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -174,15 +174,15 @@ Frame {
               flag = Flag.NONE
               pointer = FilePointer {
                 backupLocator = BackupLocator {
-                  digest = <7e535319be182307d20dc2a3123d8ac2>
-                  key = <ae12f8b6dd2a7212b158d1c29518e2da>
-                  mediaName = "7e535319be182307d20dc2a3123d8ac2"
-                  size = 1597131413
+                  digest = <894e40336ce2d82dc281dfb9a552a77f>
+                  key = <0cb5502749c4f5c6923f4df01023b00c>
+                  mediaName = "894e40336ce2d82dc281dfb9a552a77f"
+                  size = 1914440565
                 }
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 971
-                width = 3181
+                height = 146
+                width = 2388
               }
             }
           }
@@ -192,7 +192,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "saperet duis rutrum blandit nisi persecuti quod vehicula rutrum"
+        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
       }
     }
   }

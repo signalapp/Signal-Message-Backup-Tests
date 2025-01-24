@@ -123,24 +123,31 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    contactMessage = ContactMessage {
-      contact = ContactAttachment {
-        name = Name {
-          familyName = "Parker"
-          givenName = "Peter"
-          middleName = ""
-          nickname = ""
-          prefix = ""
-          suffix = ""
-        }
-        organization = ""
-      }
-    }
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
+    }
+    standardMessage = StandardMessage {
+      text = Text {
+        body = "0123456789"
+        bodyRanges = [
+          BodyRange {
+            length = 2
+            mentionAci = <000a11ce000040008000000000000001>
+            start = 6
+          },
+          BodyRange {
+            length = 4
+            style = Style.BOLD
+          },
+          BodyRange {
+            length = 4
+            style = Style.ITALIC
+          }
+        ]
+      }
     }
   }
 }
@@ -149,7 +156,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1885067522603
+    dateSent = 1662654195379
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -164,7 +171,22 @@ Frame {
         authorId = 4
         targetSentTimestamp = 1
         text = Text {
-          body = "Peter Parker"
+          body = "0123456789"
+          bodyRanges = [
+            BodyRange {
+              length = 2
+              mentionAci = <000a11ce000040008000000000000001>
+              start = 6
+            },
+            BodyRange {
+              length = 4
+              style = Style.BOLD
+            },
+            BodyRange {
+              length = 4
+              style = Style.ITALIC
+            }
+          ]
         }
         type = Type.NORMAL
       }
@@ -172,12 +194,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1834374389772
+          sentTimestamp = 1791849224014
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "nisl"
+        body = "necessitatibus te"
       }
     }
   }

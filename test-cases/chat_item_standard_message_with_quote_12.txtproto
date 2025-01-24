@@ -132,15 +132,22 @@ Frame {
     stickerMessage = StickerMessage {
       sticker = Sticker {
         data_ = FilePointer {
-          contentType = "image/apng"
-          fileName = "roNPcsQfQRrO"
-          height = 3854
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
-          width = 101
+          attachmentLocator = AttachmentLocator {
+            cdnKey = "rtZXLxrufVZ"
+            cdnNumber = 2
+            digest = <dd0e3a881be5c89b091b4479256cbccc>
+            key = <103fc6cf474167aa1140c4d5c9e2fc02>
+            size = 296411406
+            uploadTimestamp = 1907918113905
+          }
+          contentType = "image/webp"
+          fileName = "QoXasUwza"
+          height = 2386
+          width = 252
         }
-        emoji = "👎"
-        packId = <be08b2d24584d14a4c45c394b2bcd7a6>
-        packKey = <86d5e4aa0ee97e768957d120b3804007c27eda92793471a921db49bd5b614827>
+        emoji = "💀"
+        packId = <8f3d837dc157a85b49013aef12b255a0>
+        packKey = <b20a925e63d6ca063a5252ab801196b6fd05974250e8a3e9fe496578eb65052f>
       }
     }
   }
@@ -150,7 +157,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1885067522611
+    dateSent = 1662654195387
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -171,10 +178,10 @@ Frame {
               flag = Flag.NONE
               pointer = FilePointer {
                 attachmentLocator = AttachmentLocator {
-                  cdnKey = "HBAAKHBTaIpNkK"
-                  digest = <151104318052227250ac7416fd4c5089>
-                  key = <af19a650008dd8092300bd136744f0a1>
-                  size = 1909353420
+                  cdnKey = "udAvagmeqW"
+                  digest = <0218c56773dde8ec819935b4821b2c01>
+                  key = <1a9907c6a5fa8f00bb6c6ba92ea3fa89>
+                  size = 1902380935
                 }
                 blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
                 contentType = "image/jpeg"
@@ -188,7 +195,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "saperet duis rutrum blandit nisi persecuti quod vehicula rutrum"
+        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
       }
     }
   }

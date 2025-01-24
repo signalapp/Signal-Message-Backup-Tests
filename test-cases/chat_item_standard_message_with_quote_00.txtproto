@@ -131,7 +131,7 @@ Frame {
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "asdf"
+        body = "0123456789"
       }
     }
   }
@@ -141,7 +141,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1885067522599
+    dateSent = 1662654195375
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826269
       dateServerSent = 1794124103201
@@ -153,12 +153,12 @@ Frame {
         authorId = 4
         targetSentTimestamp = 1
         text = Text {
-          body = "asdf"
+          body = "0123456789"
         }
         type = Type.NORMAL
       }
       text = Text {
-        body = "saperet duis rutrum blandit nisi persecuti quod vehicula rutrum"
+        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
       }
     }
   }

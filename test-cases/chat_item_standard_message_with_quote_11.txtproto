@@ -133,20 +133,17 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           attachmentLocator = AttachmentLocator {
-            cdnKey = "LpkbK"
-            cdnNumber = 3
-            digest = <d4d7cd43fa4e8e2b8c25a02e8609f8fe>
-            key = <f4ac52195e4ba84d484bb5b7a882a037>
-            size = 1122282353
-            uploadTimestamp = 1703584644150
+            cdnKey = "XBFaxf"
+            digest = <fa91234a3d49bffed997de007bb9a1de>
+            key = <79084495ff02befd5822810b635219f9>
+            size = 598425540
           }
-          contentType = "image/png"
-          height = 1626
-          width = 1991
+          contentType = "image/apng"
+          fileName = "ohdXHUy"
         }
-        emoji = "👍"
-        packId = <269c3814372b113a3d74b4dfdbcd9308>
-        packKey = <d3a5c044845b4007f5c5433515ecc589d82fc7f9839e229cb57885ba16d0fa13>
+        emoji = "👩‍💻"
+        packId = <d714292b175730590c0226ea88a9ddf4>
+        packKey = <eb9c795609f32dda812766508cdebfb53f7cd842ed46e16f0afe1780d5765928>
       }
     }
   }
@@ -156,7 +153,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1885067522610
+    dateSent = 1662654195386
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -174,15 +171,15 @@ Frame {
               flag = Flag.NONE
               pointer = FilePointer {
                 backupLocator = BackupLocator {
-                  digest = <7e535319be182307d20dc2a3123d8ac2>
-                  key = <ae12f8b6dd2a7212b158d1c29518e2da>
-                  mediaName = "7e535319be182307d20dc2a3123d8ac2"
-                  size = 1597131413
+                  digest = <894e40336ce2d82dc281dfb9a552a77f>
+                  key = <0cb5502749c4f5c6923f4df01023b00c>
+                  mediaName = "894e40336ce2d82dc281dfb9a552a77f"
+                  size = 1914440565
                 }
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 971
-                width = 3181
+                height = 146
+                width = 2388
               }
             }
           }
@@ -195,18 +192,18 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1834374389772
+          sentTimestamp = 1791849224014
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1834374389773
+          sentTimestamp = 1791849224015
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "theophrastus dignissim aliquet ubique sagittis recteque ocurreret equidem"
+        body = "appetere mucius option"
       }
     }
   }

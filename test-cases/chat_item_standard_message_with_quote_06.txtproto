@@ -123,32 +123,24 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
+    contactMessage = ContactMessage {
+      contact = ContactAttachment {
+        name = Name {
+          familyName = "Parker"
+          givenName = "Peter"
+          middleName = ""
+          nickname = ""
+          prefix = ""
+          suffix = ""
+        }
+        organization = ""
+      }
+    }
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
-    }
-    stickerMessage = StickerMessage {
-      sticker = Sticker {
-        data_ = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 2
-            digest = <b05807b6f4f887e90a5bfa919ca8fac2>
-            key = <3119581f44181757bcf9414d7532ccd6>
-            mediaName = "b05807b6f4f887e90a5bfa919ca8fac2"
-            size = 70139132
-            transitCdnKey = "NRpDSwJ"
-          }
-          contentType = "image/apng"
-          fileName = "roNPcsQfQRrO"
-          height = 3271
-          width = 2949
-        }
-        emoji = "👍"
-        packId = <c306993b3870da97c0c9781a649e0fea>
-        packKey = <665fb8254a9fbddfad914d6fcd86941a8fa60d8abd80fb4eb41c1634f8d97c30>
-      }
     }
   }
 }
@@ -157,7 +149,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1885067522605
+    dateSent = 1662654195381
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -169,34 +161,15 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
-        attachments = [
-          QuotedAttachment {
-            contentType = "image/jpeg"
-            thumbnail = MessageAttachment {
-              flag = Flag.NONE
-              pointer = FilePointer {
-                attachmentLocator = AttachmentLocator {
-                  cdnKey = "HBAAKHBTaIpNkK"
-                  cdnNumber = 3
-                  digest = <b87c5094bb217f4aee0c1aef5eef1282>
-                  key = <a1809ae126f34d9a15a092ec9fd2e992>
-                  size = 648225630
-                  uploadTimestamp = 1720674933270
-                }
-                contentType = "image/jpeg"
-                height = 2862
-                width = 876
-              }
-              wasDownloaded = true
-            }
-          }
-        ]
         authorId = 4
         targetSentTimestamp = 1
+        text = Text {
+          body = "Peter Parker"
+        }
         type = Type.NORMAL
       }
       text = Text {
-        body = "saperet duis rutrum blandit nisi persecuti quod vehicula rutrum"
+        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
       }
     }
   }

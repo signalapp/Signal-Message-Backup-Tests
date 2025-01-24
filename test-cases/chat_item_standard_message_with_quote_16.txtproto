@@ -129,65 +129,24 @@ Frame {
       dateServerSent = 1
       read = true
     }
-    stickerMessage = StickerMessage {
-      sticker = Sticker {
-        data_ = FilePointer {
-          contentType = "image/apng"
-          fileName = "ohdXHUy"
-          height = 2262
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
-          width = 1147
-        }
-        emoji = "👎"
-        packId = <cb6eae1e2d746973572eb9499b3b6207>
-        packKey = <14cc90553aeaeac3bc181f28d3e0546b1003c11f128d654aa5eb1edeeec55c65>
-      }
-    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }
 
 Frame {
   chatItem = ChatItem {
-    authorId = 1
+    authorId = 4
     chatId = 2
-    dateSent = 1662654195389
-    outgoing = OutgoingMessageDetails {
-      sendStatus = [
-        SendStatus {
-          failed = Failed {
-            reason = FailureReason.IDENTITY_KEY_MISMATCH
-          }
-          recipientId = 4
-        }
-      ]
+    dateSent = 1662654195391
+    incoming = IncomingMessageDetails {
+      dateReceived = 1702291826270
+      dateServerSent = 1794124103202
     }
     standardMessage = StandardMessage {
       quote = Quote {
-        attachments = [
-          QuotedAttachment {
-            contentType = "image/jpeg"
-            thumbnail = MessageAttachment {
-              flag = Flag.NONE
-              pointer = FilePointer {
-                attachmentLocator = AttachmentLocator {
-                  cdnKey = "udAvagmeqW"
-                  cdnNumber = 3
-                  digest = <3da9d0b2c1f949e51ef2b72c7e1dc0e0>
-                  key = <277b9a896421e1f80e8f66ad6fa2e7f9>
-                  size = 1759700073
-                  uploadTimestamp = 1863142322364
-                }
-                contentType = "image/jpeg"
-                height = 2652
-                width = 2539
-              }
-              wasDownloaded = true
-            }
-          }
-        ]
         authorId = 4
         targetSentTimestamp = 1
-        type = Type.NORMAL
+        type = Type.VIEW_ONCE
       }
       reactions = [
         Reaction {
@@ -195,16 +154,10 @@ Frame {
           emoji = "💀"
           sentTimestamp = 1791849224014
           sortOrder = 1
-        },
-        Reaction {
-          authorId = 4
-          emoji = "👍"
-          sentTimestamp = 1791849224015
-          sortOrder = 2
         }
       ]
       text = Text {
-        body = "appetere mucius option"
+        body = "necessitatibus te"
       }
     }
   }

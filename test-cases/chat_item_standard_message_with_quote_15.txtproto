@@ -124,87 +124,37 @@ Frame {
     authorId = 4
     chatId = 2
     dateSent = 1
+    giftBadge = GiftBadge {
+      receiptCredentialPresentation = <00b094772e456326412b65979859b00af14c8b9d74259e5b353f9bd32b40f80250a09d98e50a8b4b47b4cafb10c69e25b8783dc6d8c03450fa63f01bfa23badc3c5897cea670af6e0c35e9fcda4e481740599a910eac9e7225053c9de45d442e2edc3e7ee178a9df2f342d027e6d16cb67bd0301c29541cb9699100d8ddfb2a713bc103cd90ad19461b1ce380a33e2804fdc6227ecf9c16ca286c0ddb13a7fda618000000000000000c925e26d64dcaa8c60f53613837fd107065d6d47362b2f77ce99155edea6c008c906c9a9136710f2ec6e3892cf0f32e618e8a1f1606e686107898bf174dd9d0c7b80e512032f7860b1bf0c502ea072f37a2103ebf379ef02e197227d25166d0ddbe4e00403a85ea4608d83f39ac2c1b3e92c335a04a5b75fd9092998495e3a0b0000000000000000010000000000000011b6ecdb3ce4498692a9f22f107d6f2c>
+      state = State.OPENED
+    }
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
-    }
-    stickerMessage = StickerMessage {
-      sticker = Sticker {
-        data_ = FilePointer {
-          contentType = "image/apng"
-          fileName = "ohdXHUy"
-          height = 2262
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
-          width = 1147
-        }
-        emoji = "👎"
-        packId = <cb6eae1e2d746973572eb9499b3b6207>
-        packKey = <14cc90553aeaeac3bc181f28d3e0546b1003c11f128d654aa5eb1edeeec55c65>
-      }
     }
   }
 }
 
 Frame {
   chatItem = ChatItem {
-    authorId = 1
+    authorId = 4
     chatId = 2
-    dateSent = 1662654195389
-    outgoing = OutgoingMessageDetails {
-      sendStatus = [
-        SendStatus {
-          failed = Failed {
-            reason = FailureReason.IDENTITY_KEY_MISMATCH
-          }
-          recipientId = 4
-        }
-      ]
+    dateSent = 1662654195390
+    incoming = IncomingMessageDetails {
+      dateReceived = 1702291826269
+      dateServerSent = 1794124103201
+      read = true
+      sealedSender = true
     }
     standardMessage = StandardMessage {
       quote = Quote {
-        attachments = [
-          QuotedAttachment {
-            contentType = "image/jpeg"
-            thumbnail = MessageAttachment {
-              flag = Flag.NONE
-              pointer = FilePointer {
-                attachmentLocator = AttachmentLocator {
-                  cdnKey = "udAvagmeqW"
-                  cdnNumber = 3
-                  digest = <3da9d0b2c1f949e51ef2b72c7e1dc0e0>
-                  key = <277b9a896421e1f80e8f66ad6fa2e7f9>
-                  size = 1759700073
-                  uploadTimestamp = 1863142322364
-                }
-                contentType = "image/jpeg"
-                height = 2652
-                width = 2539
-              }
-              wasDownloaded = true
-            }
-          }
-        ]
         authorId = 4
         targetSentTimestamp = 1
-        type = Type.NORMAL
+        type = Type.GIFT_BADGE
       }
-      reactions = [
-        Reaction {
-          authorId = 1
-          emoji = "💀"
-          sentTimestamp = 1791849224014
-          sortOrder = 1
-        },
-        Reaction {
-          authorId = 4
-          emoji = "👍"
-          sentTimestamp = 1791849224015
-          sortOrder = 2
-        }
-      ]
       text = Text {
-        body = "appetere mucius option"
+        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
       }
     }
   }

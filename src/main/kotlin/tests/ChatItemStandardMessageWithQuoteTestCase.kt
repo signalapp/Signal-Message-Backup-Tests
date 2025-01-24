@@ -169,11 +169,17 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
 
       val attachments = some(attachmentGenerator)
 
+      val bodyRangeGenerator = Generators.bodyRanges("0123456789", listOf(StandardFrames.recipientAlice.recipient!!.contact!!.aci!!))
+      val bodyRanges = some(bodyRangeGenerator)
+
       frames += StandardMessage(
         text = if (attachments.firstOrNull()?.flag == MessageAttachment.Flag.VOICE_MESSAGE) {
           null
         } else {
-          Text(body = "asdf")
+          Text(
+            body = "0123456789",
+            bodyRanges = bodyRanges
+          )
         },
         attachments = attachments
       )

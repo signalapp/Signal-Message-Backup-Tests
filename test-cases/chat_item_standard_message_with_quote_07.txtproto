@@ -133,22 +133,16 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           backupLocator = BackupLocator {
-            cdnNumber = 3
-            digest = <1e697ef0985bdbd29b4547a7cd8c7797>
-            key = <ac5943f5ff80c714e081c5a16fbcd29a>
-            mediaName = "1e697ef0985bdbd29b4547a7cd8c7797"
-            size = 1126696935
-            transitCdnKey = "qRNnjtmZFV"
-            transitCdnNumber = 2
+            digest = <411e87742767c240b780d075c2949f3e>
+            key = <ae2732c407534a88183c3428959ffaae>
+            mediaName = "411e87742767c240b780d075c2949f3e"
+            size = 1884080705
           }
-          contentType = "image/webp"
-          fileName = "CapzHP"
-          height = 1626
-          width = 1991
+          contentType = "image/png"
         }
-        emoji = "👎"
-        packId = <772e3668ed796f05388c0953032b743c>
-        packKey = <13d639e7dff56917d11db61b82bede7dc6cc6b72334feffcc6917996ac1e7ba5>
+        emoji = "💀"
+        packId = <2aa19c28af2a1c0128d11c66d12c5d13>
+        packKey = <802216354d24ff11ab69e6318674e96a30519122b20b39fbb45cd3e50bb20829>
       }
     }
   }
@@ -158,7 +152,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1885067522606
+    dateSent = 1662654195382
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -180,9 +174,9 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
-                height = 971
+                height = 146
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
-                width = 3181
+                width = 2388
               }
             }
           }
@@ -195,12 +189,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1834374389772
+          sentTimestamp = 1791849224014
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "nisl"
+        body = "necessitatibus te"
       }
     }
   }

@@ -132,18 +132,23 @@ Frame {
     stickerMessage = StickerMessage {
       sticker = Sticker {
         data_ = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "LpkbK"
-            digest = <8a54497376b95e47074099ec621e2955>
-            key = <355750ad1da84cf4612caa0c59a4992d>
-            size = 1456450975
+          backupLocator = BackupLocator {
+            cdnNumber = 3
+            digest = <d608ee48b0c67f2cc3585a571a951dca>
+            key = <7c67e95b2c6704d88f333f63c9cfc3ce>
+            mediaName = "d608ee48b0c67f2cc3585a571a951dca"
+            size = 1791022578
+            transitCdnKey = "FMidkMLtADq"
+            transitCdnNumber = 2
           }
-          contentType = "image/apng"
-          fileName = "roNPcsQfQRrO"
+          contentType = "image/webp"
+          fileName = "QoXasUwza"
+          height = 2796
+          width = 784
         }
-        emoji = "👩‍💻"
-        packId = <b219bf3c0de0e4e96a74fe9b0a44173c>
-        packKey = <392c9af17ca1e2c9b1316bc18ac3c3d9718700d52646662c523f25aa2c7d893c>
+        emoji = "👎"
+        packId = <c2efc7b82a7647e51ad7504a1de539e7>
+        packKey = <045eb102a371fd7301cff783739178c3f261d326c641cd13fdc10606eb230943>
       }
     }
   }
@@ -153,7 +158,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1885067522608
+    dateSent = 1662654195384
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -175,16 +180,16 @@ Frame {
               pointer = FilePointer {
                 backupLocator = BackupLocator {
                   cdnNumber = 2
-                  digest = <322c0c135b8f39b651631be8eabd21d7>
-                  key = <4f45a614a393aa098bcfd1e15af7d69e>
-                  mediaName = "322c0c135b8f39b651631be8eabd21d7"
-                  size = 1256611453
-                  transitCdnKey = "zLVToj"
+                  digest = <115d7934716789a0c670d7b4397273d4>
+                  key = <f4c369078e71d02f7affd2b4d1d782e8>
+                  mediaName = "115d7934716789a0c670d7b4397273d4"
+                  size = 512137253
+                  transitCdnKey = "GgbFNFkZCS"
                 }
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
-                height = 1226
-                width = 2693
+                height = 235
+                width = 2186
               }
             }
           }
@@ -194,7 +199,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "saperet duis rutrum blandit nisi persecuti quod vehicula rutrum"
+        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
       }
     }
   }
