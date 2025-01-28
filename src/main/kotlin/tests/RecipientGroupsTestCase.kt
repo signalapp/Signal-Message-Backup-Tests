@@ -87,11 +87,13 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
     }
 
     // If blocked, can't be whitelisted.
-    val (isBlocked, isWhitelisted) = some(Generators.list<Pair<Boolean, Boolean>>(
-      Pair(true, false),
-      Pair(false, true),
-      Pair(false, false)
-    ))
+    val (isBlocked, isWhitelisted) = some(
+      Generators.list<Pair<Boolean, Boolean>>(
+        Pair(true, false),
+        Pair(false, true),
+        Pair(false, false)
+      )
+    )
 
     frames += Frame(
       recipient = Recipient(
