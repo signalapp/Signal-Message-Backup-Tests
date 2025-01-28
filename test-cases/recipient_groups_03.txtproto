@@ -208,6 +208,7 @@ Frame {
 Frame {
   recipient = Recipient {
     group = Group {
+      blocked = true
       masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
@@ -270,5 +271,19 @@ Frame {
     expireTimerVersion = 1
     id = 1
     recipientId = 10
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 1
+    dateSent = 1722382677508
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      simpleUpdate = SimpleChatUpdate {
+        type = Type.BLOCKED
+      }
+    }
   }
 }

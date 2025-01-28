@@ -263,6 +263,7 @@ Frame {
         version = 1394492158
       }
       storySendMode = StorySendMode.DISABLED
+      whitelisted = true
     }
     id = 10
   }

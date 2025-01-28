@@ -86,15 +86,23 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
       )
     }
 
+    // If blocked, can't be whitelisted.
+    val (isBlocked, isWhitelisted) = some(Generators.list<Pair<Boolean, Boolean>>(
+      Pair(true, false),
+      Pair(false, true),
+      Pair(false, false)
+    ))
+
     frames += Frame(
       recipient = Recipient(
         id = groupRecipientId,
         group = Group(
           masterKey = someBytes(32).toByteString(),
-          whitelisted = someBoolean(),
+          whitelisted = if (isBlocked) false else isWhitelisted,
           hideStory = someBoolean(),
           storySendMode = someEnum(Group.StorySendMode::class.java),
-          snapshot = snapshot
+          snapshot = snapshot,
+          blocked = isBlocked
         )
       )
     )
@@ -109,5 +117,19 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
         expireTimerVersion = 1
       )
     )
+
+    if (isBlocked) {
+      frames += Frame(
+        chatItem = ChatItem(
+          chatId = 1,
+          authorId = StandardFrames.recipientSelf.recipient!!.id,
+          dateSent = someNonZeroTimestamp(),
+          directionless = ChatItem.DirectionlessMessageDetails(),
+          updateMessage = ChatUpdateMessage(
+            simpleUpdate = SimpleChatUpdate(type = SimpleChatUpdate.Type.BLOCKED)
+          )
+        )
+      )
+    }
   }
 }
