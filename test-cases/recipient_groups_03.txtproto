@@ -273,17 +273,3 @@ Frame {
     recipientId = 10
   }
 }
-
-Frame {
-  chatItem = ChatItem {
-    authorId = 1
-    chatId = 1
-    dateSent = 1722382677508
-    directionless = DirectionlessMessageDetails {}
-    updateMessage = ChatUpdateMessage {
-      simpleUpdate = SimpleChatUpdate {
-        type = Type.BLOCKED
-      }
-    }
-  }
-}

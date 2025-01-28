@@ -119,19 +119,5 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
         expireTimerVersion = 1
       )
     )
-
-    if (isBlocked) {
-      frames += Frame(
-        chatItem = ChatItem(
-          chatId = 1,
-          authorId = StandardFrames.recipientSelf.recipient!!.id,
-          dateSent = someNonZeroTimestamp(),
-          directionless = ChatItem.DirectionlessMessageDetails(),
-          updateMessage = ChatUpdateMessage(
-            simpleUpdate = SimpleChatUpdate(type = SimpleChatUpdate.Type.BLOCKED)
-          )
-        )
-      )
-    }
   }
 }
