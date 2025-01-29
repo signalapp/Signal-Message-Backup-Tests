@@ -302,4 +302,12 @@ object StandardFrames {
       expireTimerVersion = 1
     )
   )
+
+  val chatBob = Frame(
+    chat = Chat(
+      id = 5,
+      recipientId = recipientBob.recipient!!.id,
+      expireTimerVersion = 1
+    )
+  )
 }

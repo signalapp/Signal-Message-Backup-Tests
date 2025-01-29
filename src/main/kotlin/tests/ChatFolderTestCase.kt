@@ -16,6 +16,10 @@ object ChatFolderTestCase : TestCase("chat_folder") {
     frames += StandardFrames.recipientBob
     frames += StandardFrames.recipientGroupAB
 
+    frames += StandardFrames.chatAlice
+    frames += StandardFrames.chatBob
+    frames += StandardFrames.chatGroupAB
+
     val memberIds: List<Long> = listOf(
       StandardFrames.recipientAlice,
       StandardFrames.recipientBob,
