@@ -105,6 +105,9 @@ Frame {
       profileGivenName = "Alice"
       profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 4
@@ -124,6 +127,9 @@ Frame {
       profileGivenName = "Bob"
       profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 5
@@ -143,6 +149,9 @@ Frame {
       profileGivenName = "Carol"
       profileKey = <0820820820820820820820820820820820820820820820820820820820820820>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 6
@@ -162,6 +171,9 @@ Frame {
       profileGivenName = "Dan"
       profileKey = <0c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 7
@@ -181,6 +193,9 @@ Frame {
       profileGivenName = "Eve"
       profileKey = <1041041041041041041041041041041041041041041041041041041041041041>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 8
@@ -199,6 +214,9 @@ Frame {
       profileGivenName = "Frank"
       profileKey = <1451451451451451451451451451451451451451451451451451451451451451>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 9

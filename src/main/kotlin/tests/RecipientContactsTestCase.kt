@@ -56,7 +56,10 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
               family = some(Generators.lastNames().plus(""))
             )
           }.nullable().let { some(it) },
-          note = some(Generators.textBody().plus(""))
+          note = some(Generators.textBody().plus("")),
+          systemGivenName = some(Generators.firstNames(count = 4).plus("")),
+          systemFamilyName = some(Generators.lastNames(count = 3).plus("")),
+          systemNickname = some(Generators.firstNames(count = 5).plus(""))
         )
       )
     )

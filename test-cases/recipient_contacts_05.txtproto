@@ -95,98 +95,22 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <000a11ce000040008000000000000001>
-      e164 = 16105550101
-      identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
-      identityState = IdentityState.DEFAULT
-      note = ""
-      pni = <000a11ce000040008000000000000002>
-      profileFamilyName = "Smith"
-      profileGivenName = "Alice"
-      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
-      registered = Registered {}
-      systemFamilyName = ""
-      systemGivenName = ""
+      aci = <88d9eec83bef469d8111daaf5d87ff09>
+      e164 = 12255550184
+      identityKey = <0531e2a12cfad6f939e88ac2b05ec5a42b5de6d37168e8b9729d2b10c259f8fc1c>
+      identityState = IdentityState.UNVERIFIED
+      notRegistered = NotRegistered {}
+      note = "tota repudiandae"
+      pni = <f2c8f6640c624f2f806929719cb0c468>
+      profileFamilyName = "Freeman"
+      profileGivenName = "Enid"
+      profileKey = <21064b374c7c7f19ef4ab90be00e43771d8bb3f9031ee7c9761a278e9730ff2a>
+      systemFamilyName = "Snyder"
+      systemGivenName = "German"
       systemNickname = ""
-      visibility = Visibility.VISIBLE
+      username = "goldie.9119"
+      visibility = Visibility.HIDDEN_MESSAGE_REQUEST
     }
     id = 4
-  }
-}
-
-Frame {
-  chat = Chat {
-    expireTimerVersion = 1
-    id = 2
-    recipientId = 4
-  }
-}
-
-Frame {
-  chatItem = ChatItem {
-    authorId = 1
-    chatId = 2
-    contactMessage = ContactMessage {
-      contact = ContactAttachment {
-        address = [
-          PostalAddress {
-            city = ""
-            country = ""
-            label = ""
-            neighborhood = ""
-            pobox = "dKVWk"
-            postcode = ""
-            region = ""
-            street = ""
-            type = Type.HOME
-          }
-        ]
-        avatar = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <911abe0326f7d093c5d15ca0b3d91770>
-            key = <1533a5f65bda799a7f11bd6289540c3b>
-            mediaName = "911abe0326f7d093c5d15ca0b3d91770"
-            size = 616008951
-          }
-          blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
-          contentType = "image/png"
-          height = 949
-          width = 2631
-        }
-        email = [
-          Email {
-            label = ""
-            type = Type.CUSTOM
-            value_ = "UUkKGT@pTUET.org"
-          }
-        ]
-        name = Name {
-          familyName = "Gillespie"
-          givenName = "Fletcher"
-          middleName = "Daphne"
-          nickname = "Michelle"
-          prefix = ""
-          suffix = ""
-        }
-        number = [
-          Phone {
-            label = ""
-            type = Type.CUSTOM
-            value_ = "33639988942"
-          }
-        ]
-        organization = "xVufxIRRdMR"
-      }
-    }
-    dateSent = 1680366577838
-    outgoing = OutgoingMessageDetails {
-      sendStatus = [
-        SendStatus {
-          recipientId = 4
-          sent = Sent {}
-          timestamp = 1695248715439
-        }
-      ]
-    }
   }
 }

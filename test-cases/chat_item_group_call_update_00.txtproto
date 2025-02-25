@@ -105,6 +105,9 @@ Frame {
       profileGivenName = "Alice"
       profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 4
@@ -124,6 +127,9 @@ Frame {
       profileGivenName = "Bob"
       profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
       registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
       visibility = Visibility.VISIBLE
     }
     id = 5

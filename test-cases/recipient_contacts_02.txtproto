@@ -113,6 +113,9 @@ Frame {
       profileFamilyName = "Pennington"
       profileGivenName = "Manuela"
       profileSharing = true
+      systemFamilyName = "Byers"
+      systemGivenName = "Brandi"
+      systemNickname = "Mona"
       username = "theodore.2274"
       visibility = Visibility.HIDDEN_MESSAGE_REQUEST
     }

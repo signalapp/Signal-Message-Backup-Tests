@@ -109,6 +109,9 @@ Frame {
       profileFamilyName = "Freeman"
       profileGivenName = "Enid"
       profileKey = <21064b374c7c7f19ef4ab90be00e43771d8bb3f9031ee7c9761a278e9730ff2a>
+      systemFamilyName = "Snyder"
+      systemGivenName = "Nolan"
+      systemNickname = "Matthew"
       username = "goldie.9119"
       visibility = Visibility.HIDDEN
     }

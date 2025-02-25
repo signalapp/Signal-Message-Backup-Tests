@@ -324,8 +324,8 @@ object Generators {
   fun picoMobs(): Generator<String> = Generators.list(SeededRandom.string(18, 25, "123456789"), SeededRandom.string(18, 25, "123456789"))
   fun colors(): Generator<Int> = Generators.list(seededRandomColor(), seededRandomColor(), seededRandomColor())
   fun names(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.name })
-  fun firstNames(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.firstName })
-  fun lastNames(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.lastName })
+  fun firstNames(count: Int = 3): Generator<String> = Generators.list(List(count) { SeededRandom.lipsum.firstName })
+  fun lastNames(count: Int = 3): Generator<String> = Generators.list(List(count) { SeededRandom.lipsum.lastName })
   fun textBody(minWords: Int = 1, maxWords: Int = min(10, minWords)): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.getWords(1, 10) })
   fun titles(): Generator<String> = Generators.list(List(3) { SeededRandom.lipsum.getTitle(2, 3) })
 
