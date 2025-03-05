@@ -89,6 +89,8 @@ Frame {
 Frame {
   recipient = Recipient {
     id = 1
-    self = Self {}
+    self = Self {
+      avatarColor = AvatarColor.A100
+    }
   }
 }

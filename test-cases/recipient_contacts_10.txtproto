@@ -99,7 +99,7 @@ Frame {
   recipient = Recipient {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
-      avatarColor = AvatarColor.A190
+      avatarColor = AvatarColor.A200
       blocked = true
       e164 = 33639987372
       hideStory = true

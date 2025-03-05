@@ -61,7 +61,7 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           systemGivenName = some(Generators.firstNames(count = 4).plus("")),
           systemFamilyName = some(Generators.lastNames(count = 3).plus("")),
           systemNickname = some(Generators.firstNames(count = 5).plus("")),
-          avatarColor = some(Generators.enum(AvatarColor::class.java).nullable())
+          avatarColor = some(Generators.enum(AvatarColor::class.java))
         )
       )
     )

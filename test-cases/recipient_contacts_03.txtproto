@@ -99,7 +99,7 @@ Frame {
   recipient = Recipient {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
-      avatarColor = AvatarColor.A120
+      avatarColor = AvatarColor.A130
       e164 = 12255550184
       identityKey = <05dee2f65c1c9a51a0f5667a56aca18c43e56684e6719dfffa904591dcb227971f>
       identityState = IdentityState.DEFAULT

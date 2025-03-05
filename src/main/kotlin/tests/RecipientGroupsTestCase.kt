@@ -106,7 +106,7 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
           storySendMode = someEnum(Group.StorySendMode::class.java),
           snapshot = snapshot,
           blocked = isBlocked,
-          avatarColor = some(Generators.enum(AvatarColor::class.java).nullable())
+          avatarColor = some(Generators.enum(AvatarColor::class.java))
         )
       )
     )

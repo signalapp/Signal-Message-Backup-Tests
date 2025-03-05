@@ -90,7 +90,7 @@ Frame {
   recipient = Recipient {
     id = 1
     self = Self {
-      avatarColor = AvatarColor.A160
+      avatarColor = AvatarColor.A170
     }
   }
 }

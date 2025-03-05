@@ -22,7 +22,7 @@ object RecipientSelfTestCase : TestCase("recipient_self") {
       recipient = Recipient(
         id = 1,
         self = Self(
-          avatarColor = some(Generators.enum(AvatarColor::class.java).nullable())
+          avatarColor = some(Generators.enum(AvatarColor::class.java))
         )
       )
     )
