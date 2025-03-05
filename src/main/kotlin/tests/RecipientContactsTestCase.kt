@@ -6,6 +6,7 @@ import TestCase
 import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
+import org.thoughtcrime.securesms.backup.v2.proto.AvatarColor
 import org.thoughtcrime.securesms.backup.v2.proto.Contact
 import org.thoughtcrime.securesms.backup.v2.proto.Frame
 import org.thoughtcrime.securesms.backup.v2.proto.Recipient
@@ -59,7 +60,8 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           note = some(Generators.textBody().plus("")),
           systemGivenName = some(Generators.firstNames(count = 4).plus("")),
           systemFamilyName = some(Generators.lastNames(count = 3).plus("")),
-          systemNickname = some(Generators.firstNames(count = 5).plus(""))
+          systemNickname = some(Generators.firstNames(count = 5).plus("")),
+          avatarColor = some(Generators.enum(AvatarColor::class.java).nullable())
         )
       )
     )

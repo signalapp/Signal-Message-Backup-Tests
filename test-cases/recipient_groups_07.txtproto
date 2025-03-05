@@ -1,0 +1,303 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  currentAppVersion = "FooClient 2.0.0"
+  firstAppVersion = "FooClient 1.0.0"
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    svrPin = ""
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {
+      avatarColor = AvatarColor.A210
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = ""
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <000a11ce000040008000000000000001>
+      avatarColor = AvatarColor.A110
+      e164 = 16105550101
+      identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
+      identityState = IdentityState.DEFAULT
+      note = ""
+      pni = <000a11ce000040008000000000000002>
+      profileFamilyName = "Smith"
+      profileGivenName = "Alice"
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 4
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000b0b000040008000000000000001>
+      avatarColor = AvatarColor.A120
+      e164 = 16105550102
+      identityKey = <052dde6c6dcfaf0ffdcbc5e2eac90e5a18c26969907c942eade3a0e345948be27e>
+      identityState = IdentityState.VERIFIED
+      note = ""
+      pni = <00000b0b000040008000000000000002>
+      profileFamilyName = "Jones"
+      profileGivenName = "Bob"
+      profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 5
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <0000ca01000040008000000000000001>
+      avatarColor = AvatarColor.A130
+      e164 = 16105550103
+      identityKey = <05463769b7ab7a38be2cbfa7e8cff7e37cbb32770d762370c55cfbe82346593f54>
+      identityState = IdentityState.UNVERIFIED
+      note = ""
+      pni = <0000ca01000040008000000000000002>
+      profileFamilyName = "Johnson"
+      profileGivenName = "Carol"
+      profileKey = <0820820820820820820820820820820820820820820820820820820820820820>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 6
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <000000da000040008000000000000001>
+      avatarColor = AvatarColor.A140
+      e164 = 16105550104
+      identityKey = <059e10072ee327212377ef4c442843b426ea4a1f16a029c23c9d028be4f513a97c>
+      identityState = IdentityState.DEFAULT
+      note = ""
+      pni = <000000da000040008000000000000002>
+      profileFamilyName = "Brown"
+      profileGivenName = "Dan"
+      profileKey = <0c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30c30>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 7
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <000000ee000040008000000000000001>
+      avatarColor = AvatarColor.A150
+      e164 = 16105550105
+      identityKey = <05ff3bfe864a9bf12602543fcd6fa3031219fc031f47487ff065cb051ba3603938>
+      identityState = IdentityState.VERIFIED
+      note = ""
+      pni = <000000ee000040008000000000000002>
+      profileFamilyName = "Green"
+      profileGivenName = "Eve"
+      profileKey = <1041041041041041041041041041041041041041041041041041041041041041>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 8
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <000000fa000040008000000000000001>
+      avatarColor = AvatarColor.A160
+      e164 = 16105550106
+      identityState = IdentityState.DEFAULT
+      note = ""
+      pni = <000000fa000040008000000000000002>
+      profileFamilyName = "Johnson"
+      profileGivenName = "Frank"
+      profileKey = <1451451451451451451451451451451451451451451451451451451451451451>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 9
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    group = Group {
+      avatarColor = AvatarColor.A160
+      masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
+      snapshot = GroupSnapshot {
+        accessControl = AccessControl {
+          addFromInviteLink = AccessRequired.UNSATISFIABLE
+          attributes = AccessRequired.ADMINISTRATOR
+          members = AccessRequired.ADMINISTRATOR
+        }
+        avatarUrl = ""
+        description = GroupAttributeBlob {
+          descriptionText = "volumus error leo taciti quo"
+        }
+        disappearingMessagesTimer = GroupAttributeBlob {
+          disappearingMessagesDuration = 882815404
+        }
+        inviteLinkPassword = <afd0cb13a6fd095284a078df6859b9ac390b234e608d3671842725ffb7b5369c>
+        members = [
+          Member {
+            role = Role.DEFAULT
+            userId = <000a11ce000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <00000000000040008000000000000001>
+          }
+        ]
+        membersPendingAdminApproval = [
+          MemberPendingAdminApproval {
+            userId = <000000ee000040008000000000000001>
+          }
+        ]
+        membersPendingProfileKey = [
+          MemberPendingProfileKey {
+            addedByUserId = <000a11ce000040008000000000000001>
+            member = Member {
+              role = Role.DEFAULT
+              userId = <000000da000040008000000000000001>
+            }
+          }
+        ]
+        members_banned = [
+          MemberBanned {
+            timestamp = 1747591982257
+            userId = <000000fa000040008000000000000001>
+          }
+        ]
+        title = GroupAttributeBlob {
+          title = "Ut Cubilia"
+        }
+        version = 957662124
+      }
+      storySendMode = StorySendMode.DISABLED
+      whitelisted = true
+    }
+    id = 10
+  }
+}
+
+Frame {
+  chat = Chat {
+    expirationTimerMs = 882815404000
+    expireTimerVersion = 1
+    id = 1
+    recipientId = 10
+  }
+}

@@ -6,6 +6,7 @@ import PermutationScope
 import TestCase
 import asList
 import map
+import nullable
 import okio.ByteString.Companion.toByteString
 import org.thoughtcrime.securesms.backup.v2.proto.*
 
@@ -104,7 +105,8 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
           hideStory = someBoolean(),
           storySendMode = someEnum(Group.StorySendMode::class.java),
           snapshot = snapshot,
-          blocked = isBlocked
+          blocked = isBlocked,
+          avatarColor = some(Generators.enum(AvatarColor::class.java).nullable())
         )
       )
     )

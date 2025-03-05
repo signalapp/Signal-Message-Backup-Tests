@@ -235,6 +235,7 @@ Frame {
 Frame {
   recipient = Recipient {
     group = Group {
+      avatarColor = AvatarColor.A110
       hideStory = true
       masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
       snapshot = GroupSnapshot {

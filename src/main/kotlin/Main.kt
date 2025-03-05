@@ -17,6 +17,7 @@ const val OUTPUT_DIR = "test-cases"
 val ALL_TEST_CASES = listOf(
   StandardFramesTestCase,
   AccountDataTestCase,
+  RecipientSelfTestCase,
   RecipientContactsTestCase,
   RecipientGroupsTestCase,
   RecipientDistributionListTestCase,
