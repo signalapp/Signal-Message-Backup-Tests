@@ -6,7 +6,6 @@ import PermutationScope
 import TestCase
 import asList
 import map
-import nullable
 import okio.ByteString.Companion.toByteString
 import org.thoughtcrime.securesms.backup.v2.proto.*
 

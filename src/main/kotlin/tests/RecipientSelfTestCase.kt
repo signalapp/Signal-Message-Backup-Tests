@@ -5,7 +5,6 @@ package tests
 import PermutationScope
 import StandardFrames
 import TestCase
-import nullable
 import org.thoughtcrime.securesms.backup.v2.proto.*
 
 /**
