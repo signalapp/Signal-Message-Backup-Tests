@@ -52,6 +52,7 @@ object AccountDataTestCase : TestCase("account_data") {
         } else {
           null
         },
+        svrPin = some(Generators.list("1234", "123456", "abcdefg", "안녕하세요, 세계", "")),
         usernameLink = usernameLink,
         givenName = some(Generators.merge("".asGenerator(), Generators.firstNames())),
         familyName = some(Generators.merge("".asGenerator(), Generators.lastNames())),
