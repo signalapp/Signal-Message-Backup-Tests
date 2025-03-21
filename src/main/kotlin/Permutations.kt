@@ -154,9 +154,9 @@ class PermutationScope : Iterator<List<Message<*, *>>> {
 
   fun someUrl(): String = some(Generators.urls())
 
-  fun someTimestamp(): Long = some(Generators.timestamps())
+  fun someTimestamp(lower: Long = 1659383695000, upper: Long = 1911844456000): Long = some(Generators.timestamps(lower, upper))
 
-  fun someNonZeroTimestamp(): Long = some(Generators.nonZeroTimestamps())
+  fun someNonZeroTimestamp(lower: Long = 1659383695000, upper: Long = 1911844456000): Long = some(Generators.nonZeroTimestamps(lower, upper))
 
   fun someIncrementingTimestamp(lower: Long = 1659383695000, upper: Long = 1911844456000): Long = some(Generators.incrementingTimestamps(lower, upper))
 
@@ -312,8 +312,8 @@ object Generators {
   fun <T> enum(clazz: Class<T>, vararg excluding: T): Generator<T> = ListGenerator(clazz.enumConstants.filterNot { excluding.contains(it) }.toList())
   fun urls(): Generator<String> = Generators.list("", "https://signal.org/" + SeededRandom.string(), "https://signal.org/" + SeededRandom.string())
   fun nonEmptyUrls(): Generator<String> = Generators.list("https://signal.org/" + SeededRandom.string(), "https://signal.org/" + SeededRandom.string())
-  fun timestamps(): Generator<Long> = Generators.list(0L, SeededRandom.long(lower = 1659383695000, upper = 1911844456000), SeededRandom.long(lower = 1659383695000, upper = 1911844456000))
-  fun nonZeroTimestamps(): Generator<Long> = Generators.list(SeededRandom.long(lower = 1659383695000, upper = 1911844456000), SeededRandom.long(lower = 1659383695000, upper = 1911844456000))
+  fun timestamps(lower: Long = 1659383695000, upper: Long = 1911844456000): Generator<Long> = Generators.list(0L, SeededRandom.long(lower, upper), SeededRandom.long(lower, upper))
+  fun nonZeroTimestamps(lower: Long = 1659383695000, upper: Long = 1911844456000): Generator<Long> = Generators.list(SeededRandom.long(lower, upper), SeededRandom.long(lower, upper))
   fun incrementingTimestamps(lower: Long = 1659383695000, upper: Long = 1911844456000): Generator<Long> = IncrementingTimestampGenerator(lower, upper)
   fun decrementingTimestamps(lower: Long = 1659383695000, upper: Long = 1911844456000): Generator<Long> = DecrementingTimestampGenerator(lower, upper)
   fun e164s(): Generator<Long> = Generators.list(seededRandomE164(), seededRandomE164())
@@ -526,13 +526,21 @@ object Generators {
     includeIncrementalMac: Boolean,
     contentTypeGenerator: Generator<String>
   ): Generator<FilePointer> {
+    // As an optimization during restore clients may discard attachment locators
+    // that are assumed to have expired from the CDN. To that end, ensure that
+    // all attachment locators in the tests are "valid" per that optimization.
+    //
+    // At the time of writing, transit-tier CDN media lives for 45d.
+    val attachmentLocatorUploadMaxTimestamp: Long = StandardFrames.BACKUP_TIME_MS
+    val attachmentLocatorUploadMinTimestamp: Long = attachmentLocatorUploadMaxTimestamp - (45L * 24L * 60L * 60L * 1000L)
+
     val (backupLocatorGenerator, attachmentLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
       backupLocatorGenerator() as Generator<Any?>,
       Generators.permutation {
         frames += FilePointer.AttachmentLocator(
           cdnKey = someNonEmptyString(),
           cdnNumber = some(Generators.cdnNumbers()),
-          uploadTimestamp = someTimestamp().takeIf { it > 0 },
+          uploadTimestamp = someNonZeroTimestamp(lower = attachmentLocatorUploadMinTimestamp, upper = attachmentLocatorUploadMaxTimestamp),
           key = someBytes(16).toByteString(),
           digest = someBytes(16).toByteString(),
           size = somePositiveInt()

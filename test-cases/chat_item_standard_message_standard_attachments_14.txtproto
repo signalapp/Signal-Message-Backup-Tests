@@ -225,6 +225,7 @@ Frame {
               digest = <f566824710636ce8af1b499244fc7b25>
               key = <12e5d730c3c226dc221e8fec3522a5e4>
               size = 844099452
+              uploadTimestamp = 1714154401749
             }
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "video/mp4"

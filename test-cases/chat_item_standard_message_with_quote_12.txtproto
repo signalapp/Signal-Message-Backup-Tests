@@ -145,7 +145,7 @@ Frame {
             digest = <dd0e3a881be5c89b091b4479256cbccc>
             key = <103fc6cf474167aa1140c4d5c9e2fc02>
             size = 296411406
-            uploadTimestamp = 1907918113905
+            uploadTimestamp = 1715116722509
           }
           contentType = "image/webp"
           fileName = "QoXasUwza"
@@ -189,6 +189,7 @@ Frame {
                   digest = <0218c56773dde8ec819935b4821b2c01>
                   key = <1a9907c6a5fa8f00bb6c6ba92ea3fa89>
                   size = 1902380935
+                  uploadTimestamp = 1714596168114
                 }
                 blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
                 contentType = "image/jpeg"

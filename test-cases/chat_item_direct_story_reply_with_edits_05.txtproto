@@ -153,6 +153,7 @@ Frame {
             digest = <00b2dee58107854a29a3b2f195b0f63b>
             key = <0c3ae62e4a5aa0bbf67baa9066da53ca>
             size = 193250115
+            uploadTimestamp = 1714332425910
           }
           contentType = "text/x-signal-plain"
           fileName = "fktWAZnl"

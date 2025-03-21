@@ -162,6 +162,7 @@ Frame {
             digest = <96db99c9bb254a1bb0de5501d6b6653b>
             key = <415322f414f309cdef3eb5a920f7f60e>
             size = 26430243
+            uploadTimestamp = 1712860571412
           }
           blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/jpeg"

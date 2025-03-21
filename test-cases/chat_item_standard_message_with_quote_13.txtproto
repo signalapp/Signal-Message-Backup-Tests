@@ -145,7 +145,7 @@ Frame {
             digest = <aab980a11dccaedcdd7f70e3ce509608>
             key = <3c41026abc611198f303a0a6dfab362d>
             size = 110054767
-            uploadTimestamp = 1749914556509
+            uploadTimestamp = 1712635729905
           }
           contentType = "image/png"
           height = 2796
@@ -189,7 +189,7 @@ Frame {
                   digest = <ad9f4ddd3e4c0c94ccccd9747762d4cc>
                   key = <f4ca647789fbdca303bf219361471541>
                   size = 1449583163
-                  uploadTimestamp = 1874513727114
+                  uploadTimestamp = 1713608996364
                 }
                 blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
                 contentType = "image/jpeg"

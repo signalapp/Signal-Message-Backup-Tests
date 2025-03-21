@@ -144,6 +144,7 @@ Frame {
             digest = <fa91234a3d49bffed997de007bb9a1de>
             key = <79084495ff02befd5822810b635219f9>
             size = 598425540
+            uploadTimestamp = 1712635729905
           }
           contentType = "image/apng"
           fileName = "ohdXHUy"

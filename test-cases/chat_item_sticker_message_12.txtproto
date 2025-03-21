@@ -150,6 +150,7 @@ Frame {
             digest = <46e8dc0a531c93c2fbd8a21f072534d5>
             key = <88cf6bfa88e3f24a21a78511518391fb>
             size = 1850075618
+            uploadTimestamp = 1715220719583
           }
           contentType = "image/apng"
           fileName = "iGqMx"

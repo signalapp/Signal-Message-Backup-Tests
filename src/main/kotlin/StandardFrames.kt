@@ -10,6 +10,8 @@ import java.util.*
  * Helpful when you need an arbitrary recipient, chat, etc.
  */
 object StandardFrames {
+  const val BACKUP_TIME_MS: Long = 1715636551000
+
   val MY_STORY_UUID: ByteString = UUID.fromString("00000000-0000-0000-0000-000000000000").toByteArray().toByteString()
 
   val SELF_ACI: ByteArray = UUID.fromString("00000000-0000-4000-8000-000000000001").toByteArray()
@@ -17,7 +19,7 @@ object StandardFrames {
 
   val backupInfo = BackupInfo(
     version = 1,
-    backupTimeMs = 1715636551000,
+    backupTimeMs = BACKUP_TIME_MS,
     mediaRootBackupKey = base64Decode("j7o84ZRreKTKDZIp3bBQoScCByMJ1ldK4SRRJp5f27I=").toByteString(),
     currentAppVersion = "FooClient 2.0.0",
     firstAppVersion = "FooClient 1.0.0"

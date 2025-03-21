@@ -147,6 +147,7 @@ Frame {
           digest = <88e3f24a21a78511518391fbc5b26db6>
           key = <4b91d8690f4d11d0201e77f9ba1caec8>
           size = 1632210473
+          uploadTimestamp = 1715516857834
         }
         contentType = "text/x-signal-plain"
         fileName = "mkOGiGqMxxp"
