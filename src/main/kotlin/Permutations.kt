@@ -18,6 +18,7 @@ import java.security.SecureRandom
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.time.Duration.Companion.days
 
 /**
  * Generates a list of snapshots, ensuring that a snapshot exists for each possible value of each individual generator.
@@ -532,7 +533,7 @@ object Generators {
     //
     // At the time of writing, transit-tier CDN media lives for 45d.
     val attachmentLocatorUploadMaxTimestamp: Long = StandardFrames.BACKUP_TIME_MS
-    val attachmentLocatorUploadMinTimestamp: Long = attachmentLocatorUploadMaxTimestamp - (45L * 24L * 60L * 60L * 1000L)
+    val attachmentLocatorUploadMinTimestamp: Long = attachmentLocatorUploadMaxTimestamp - 45.days.inWholeMilliseconds
 
     val (backupLocatorGenerator, attachmentLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
       backupLocatorGenerator() as Generator<Any?>,
