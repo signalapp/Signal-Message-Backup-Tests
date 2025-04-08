@@ -207,6 +207,7 @@ Frame {
 Frame {
   chatFolder = ChatFolder {
     folderType = FolderType.ALL
+    id = <2cc2b48c50aefe53b3974ed91e6b4ea9>
     includeAllGroupChats = true
     includeAllIndividualChats = true
     name = ""
@@ -217,11 +218,12 @@ Frame {
 Frame {
   chatFolder = ChatFolder {
     folderType = FolderType.CUSTOM
+    id = <7229690068c4b09c566976e517765490>
     includedRecipientIds = [
       5,
-      10,
-      4
+      4,
+      10
     ]
-    name = "Fastidii eum"
+    name = "Quod Iudicabit"
   }
 }

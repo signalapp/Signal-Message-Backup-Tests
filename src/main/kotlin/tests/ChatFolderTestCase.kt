@@ -5,6 +5,7 @@ import PermutationScope
 import StandardFrames
 import TestCase
 import asList
+import okio.ByteString.Companion.toByteString
 import org.thoughtcrime.securesms.backup.v2.proto.ChatFolder
 import org.thoughtcrime.securesms.backup.v2.proto.Frame
 
@@ -35,7 +36,8 @@ object ChatFolderTestCase : TestCase("chat_folder") {
         includeAllGroupChats = true,
         folderType = ChatFolder.FolderType.ALL,
         includedRecipientIds = emptyList(),
-        excludedRecipientIds = emptyList()
+        excludedRecipientIds = emptyList(),
+        id = someBytes(16).toByteString()
       )
     )
 
@@ -51,7 +53,8 @@ object ChatFolderTestCase : TestCase("chat_folder") {
         includeAllGroupChats = someBoolean(),
         folderType = ChatFolder.FolderType.CUSTOM,
         includedRecipientIds = included,
-        excludedRecipientIds = excluded
+        excludedRecipientIds = excluded,
+        id = someBytes(16).toByteString()
       )
     )
   }
