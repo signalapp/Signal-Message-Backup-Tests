@@ -196,6 +196,7 @@ Frame {
     color = -2234372
     createdAtMs = 1905721875752
     emoji = "💀"
+    id = <2faf620c7229690068c4b09c566976e5>
     name = "Congue Fastidii"
     scheduleDaysEnabled = [
       DayOfWeek.MONDAY

@@ -193,6 +193,7 @@ Frame {
     allowAllCalls = true
     allowAllMentions = true
     color = -1842178
+    id = <2faf620c7229690068c4b09c566976e5>
     name = "Ut Cubilia"
     scheduleEnabled = true
     scheduleEndTime = 434

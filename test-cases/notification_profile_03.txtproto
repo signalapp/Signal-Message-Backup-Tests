@@ -197,6 +197,7 @@ Frame {
     ]
     color = -3283763
     emoji = "👎"
+    id = <2faf620c7229690068c4b09c566976e5>
     name = "Ut Cubilia"
     scheduleDaysEnabled = [
       DayOfWeek.THURSDAY,

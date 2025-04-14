@@ -8,6 +8,7 @@ import StandardFrames
 import TestCase
 import asList
 import nullable
+import okio.ByteString.Companion.toByteString
 import org.thoughtcrime.securesms.backup.v2.proto.Frame
 import org.thoughtcrime.securesms.backup.v2.proto.NotificationProfile
 
@@ -59,7 +60,8 @@ object NotificationProfileTestCase : TestCase("notification_profile") {
         scheduleStartTime = some(ScheduleTimeGenerator()),
         scheduleEndTime = some(ScheduleTimeGenerator()),
         scheduleDaysEnabled = some(scheduleDaysGenerator.asList(0, 1, 2, 3, 4, 5, 6, 7)),
-        allowedMembers = some(allowedMembersGenerator)
+        allowedMembers = some(allowedMembersGenerator),
+        id = someBytes(16).toByteString()
       )
     )
   }
