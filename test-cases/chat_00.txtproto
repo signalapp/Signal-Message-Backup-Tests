@@ -122,7 +122,7 @@ Frame {
   chat = Chat {
     archived = true
     dontNotifyForMentionsIfMuted = true
-    expireTimerVersion = 2123148011
+    expireTimerVersion = 582678965
     id = 3
     markedUnread = true
     recipientId = 4
@@ -130,13 +130,14 @@ Frame {
       autoBubbleColor = AutomaticBubbleColor {}
       dimWallpaperInDarkMode = true
       wallpaperPhoto = FilePointer {
-        backupLocator = BackupLocator {
-          digest = <5c0c5f7b97527985b715cd4f8972f428>
-          key = <3bd72e515007f15a21064b374c7c7f19>
-          mediaName = "5c0c5f7b97527985b715cd4f8972f428"
-          size = 1000441712
-        }
         contentType = "image/jpeg"
+        invalidAttachmentLocator = InvalidAttachmentLocator {}
+        locatorInfo = LocatorInfo {
+          digest = <e77bcc2f537f0b02efe86030ac2c3153>
+          key = <2cc2b48c50aefe53b3974ed91e6b4ea9>
+          mediaName = "e77bcc2f537f0b02efe86030ac2c3153"
+          size = 21713888
+        }
       }
     }
   }

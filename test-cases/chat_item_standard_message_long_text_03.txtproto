@@ -144,13 +144,13 @@ Frame {
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
-        backupLocator = BackupLocator {
-          digest = <7db665e567fdcb1ac685a8aedbd29cb4>
-          key = <2ed70996974af5a7a459650a2590efd1>
-          mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
-          size = 891929939
-        }
         contentType = "text/x-signal-plain"
+        invalidAttachmentLocator = InvalidAttachmentLocator {}
+        locatorInfo = LocatorInfo {
+          digest = <>
+          key = <>
+          mediaName = ""
+        }
       }
       text = Text {
         body = "senserit decore interpretaris"

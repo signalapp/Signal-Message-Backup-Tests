@@ -145,55 +145,53 @@ Frame {
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 3
-              digest = <1bbf0e8674ca8dec9544987b380d208a>
-              key = <701ad7ec4bf8a7f52384caa746d54763>
-              mediaName = "1bbf0e8674ca8dec9544987b380d208a"
-              size = 413137175
-              transitCdnKey = "YWyYPnkaWIBH"
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+            contentType = "video/mp4"
+            fileName = "cCMeejhnSf"
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <e660b3fbea8e9fff77a691f7effe2df5>
+              key = <edc997f4505b2d0c464633445cb1f9a6>
+              mediaName = "e660b3fbea8e9fff77a691f7effe2df5"
+              size = 1083161197
+              transitCdnKey = "CdYWy"
               transitCdnNumber = 2
+              transitTierUploadTimestamp = 1715089586241
             }
-            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "LygutgrXFLPS"
-            contentType = "image/gif"
-            fileName = "hyvzSFNg"
-            height = 2514
-            width = 397
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <8c9f1d58edb9493086048d358b403cb4>
+          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <531c93c2fbd8a21f072534d5f767baae>
-              key = <7ba7623758493e1bb0268c5da867e8b4>
-              mediaName = "531c93c2fbd8a21f072534d5f767baae"
-              size = 1855101642
+            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
+            caption = ""
+            contentType = "image/jpeg"
+            fileName = "gFokLHLm"
+            height = 411
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <>
+              key = <>
+              mediaName = ""
             }
-            caption = "AoCfV"
-            contentType = "audio/mp3"
-            height = 1389
-            incrementalMac = <27a38645ab2d573928a14adb2e909071>
-            incrementalMacChunkSize = 2048
-            width = 2255
+            width = 4004
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "ktWAZnlG"
-              digest = <f566824710636ce8af1b499244fc7b25>
-              key = <12e5d730c3c226dc221e8fec3522a5e4>
-              size = 844099452
-              uploadTimestamp = 1714154401749
+            contentType = "image/jpeg"
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <994d295169f375454a95979def0ce9d2>
+              key = <a78a536a99eb27976fb2a59dcf3429a0>
+              mediaName = "994d295169f375454a95979def0ce9d2"
+              size = 246546990
+              transitCdnKey = "CdYWy"
+              transitTierUploadTimestamp = 1715089586241
             }
-            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
-            contentType = "video/mp4"
-            fileName = "MdKVWksKen"
           }
           wasDownloaded = true
         }
@@ -202,7 +200,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1829195743901
+          sentTimestamp = 1710490134292
           sortOrder = 1
         }
       ]

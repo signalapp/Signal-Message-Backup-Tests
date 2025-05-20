@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -4323357
+          solid = -4506046
         },
         CustomChatColor {
           id = 2
-          solid = -4019538
+          solid = -298204
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 185
+            angle = 181
             colors = [
-              -11825771,
-              -6506482
+              -12250776,
+              -2367362
             ]
             positions = [
               0.0,
@@ -38,16 +38,14 @@ Frame {
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_VERMILION
         wallpaperPhoto = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
-            key = <0a038863ebb03fed8486f4196b6e656c>
-            mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
-            size = 1000441712
-          }
           blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
           contentType = "image/png"
-          incrementalMac = <59fb651a953525dd5da9aa792ff23f31>
-          incrementalMacChunkSize = 2048
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
         }
       }
       displayBadgesOnProfile = true
@@ -58,6 +56,7 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
@@ -65,18 +64,18 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 264034631
+      universalExpireTimerSeconds = 1776497293
     }
-    avatarUrlPath = "https://signal.org/neLVzsX"
+    avatarUrlPath = "https://signal.org/PMVYoUEqXx"
     familyName = ""
     givenName = ""
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = ""
-    username = "joey.6010"
+    username = "emery.8742"
     usernameLink = UsernameLink {
       color = Color.OLIVE
-      entropy = <74ca8dec9544987b380d208afecdc4c5701ad7ec4bf8a7f52384caa746d54763>
-      serverId = <4f139f80950d8ea9f18dbe1090e3527a>
+      entropy = <2ff23f31ca20483ef7a05a9615d4adbdf6985c94b6633322a1ff1c9732d8456e>
+      serverId = <b98b2bedfeba4948ff5ee0b3877862d9>
     }
   }
 }

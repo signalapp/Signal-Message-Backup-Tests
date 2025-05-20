@@ -130,9 +130,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1808388979109
+    dateSent = 1854327129884
     directStoryReplyMessage = DirectStoryReplyMessage {
-      emoji = "💀"
+      emoji = "👍🏾"
     }
     outgoing = OutgoingMessageDetails {
       sendStatus = [

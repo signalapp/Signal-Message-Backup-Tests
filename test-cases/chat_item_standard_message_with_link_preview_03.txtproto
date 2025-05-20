@@ -145,21 +145,23 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "sapien"
+          description = "dolorum aperiri dignissim"
           image = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 3
-              digest = <c685a8aedbd29cb42e984d652ed70996>
-              key = <a459650a2590efd18c249edbc4fa0a59>
-              mediaName = "c685a8aedbd29cb42e984d652ed70996"
-              size = 1736700812
-              transitCdnKey = "MOBqmCdYWyYPnk"
-              transitCdnNumber = 2
-            }
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "image/jpeg"
-            height = 21
-            width = 3019
+            height = 422
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <dbd29cb42e984d652ed70996974af5a7>
+              key = <3d448eb3458c6acb7db665e567fdcb1a>
+              mediaName = "dbd29cb42e984d652ed70996974af5a7"
+              mediaTierCdnNumber = 2
+              size = 582678964
+              transitCdnKey = "XMOBqmCd"
+              transitCdnNumber = 3
+              transitTierUploadTimestamp = 1712931481956
+            }
+            width = 495
           }
           title = "Graeco Tractatos"
           url = "https://signal.org/OMpdiJZO"

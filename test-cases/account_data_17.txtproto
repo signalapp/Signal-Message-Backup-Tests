@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -15148908
+          solid = -6607516
         },
         CustomChatColor {
           id = 2
-          solid = -13831452
+          solid = -3877931
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 312
+            angle = 347
             colors = [
-              -6201948,
-              -9003532
+              -1570527,
+              -12481143
             ]
             positions = [
               0.0,
@@ -41,23 +41,23 @@ Frame {
         wallpaperPreset = WallpaperPreset.SOLID_EGGPLANT
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 1305377059
+      universalExpireTimerSeconds = 844099452
     }
-    avatarUrlPath = "https://signal.org/lnJDCHSAKhylA"
+    avatarUrlPath = "https://signal.org/DXOZYcESWutf"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true
-      subscriberId = <264eb5417dfb20d9de3b2c342e2771dbc69f3f56cf981fd64acc5040d64ea836>
+      subscriberId = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a5>
     }
-    familyName = "Rivers"
-    givenName = "Patsy"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Gallegos"
+    givenName = "Kristen"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "abcdefg"
-    username = "shelly.01"
+    username = "sabrina.06"
     usernameLink = UsernameLink {
       color = Color.PURPLE
-      entropy = <d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f31f78622c>
-      serverId = <12e5d730c3c226dc221e8fec3522a5e4>
+      entropy = <2ed70996974af5a7a459650a2590efd18c249edbc4fa0a5983c9e903fcd89432>
+      serverId = <a786569514b8aab9b5a5bfd31bbf0e86>
     }
   }
 }

@@ -130,21 +130,23 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1808388979103
+    dateSent = 1854327129878
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         longText = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 3
-            digest = <222d4808bdaadcf9eaa4908fc733c244>
-            key = <4a5aa0bbf67baa9066da53caf60c4ec9>
-            mediaName = "222d4808bdaadcf9eaa4908fc733c244"
-            size = 1322441015
-            transitCdnKey = "uECQWuuuE"
-            transitCdnNumber = 2
-          }
           contentType = "text/x-signal-plain"
-          fileName = "cKiDzz"
+          fileName = "aWIBH"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <974af5a7a459650a2590efd18c249edb>
+            key = <67fdcb1ac685a8aedbd29cb42e984d65>
+            mediaName = "974af5a7a459650a2590efd18c249edb"
+            mediaTierCdnNumber = 2
+            size = 957662124
+            transitCdnKey = "ECQWuuuEFCmCq"
+            transitCdnNumber = 3
+            transitTierUploadTimestamp = 1714340547340
+          }
         }
         text = Text {
           body = "massa nominavi senserit decore interpretaris"

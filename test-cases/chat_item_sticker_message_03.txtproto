@@ -145,15 +145,15 @@ Frame {
     stickerMessage = StickerMessage {
       sticker = Sticker {
         data_ = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <67fdcb1ac685a8aedbd29cb42e984d65>
-            key = <974af5a7a459650a2590efd18c249edb>
-            mediaName = "67fdcb1ac685a8aedbd29cb42e984d65"
-            size = 1322441015
-          }
           contentType = "image/png"
-          height = 3586
-          width = 3822
+          height = 3312
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
+          width = 1734
         }
         emoji = "👍🏾"
         packId = <e85604e4e3670f77ebf5e721149f599d>

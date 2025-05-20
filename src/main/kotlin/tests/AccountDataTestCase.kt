@@ -117,7 +117,8 @@ object AccountDataTestCase : TestCase("account_data") {
                 positions = listOf(0f, 1f)
               )
             )
-          )
+          ),
+          optimizeOnDeviceStorage = someBoolean()
         )
       )
     )

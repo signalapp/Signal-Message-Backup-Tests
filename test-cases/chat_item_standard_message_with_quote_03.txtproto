@@ -141,13 +141,16 @@ Frame {
         MessageAttachment {
           flag = Flag.VOICE_MESSAGE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <1efc3f7b6ee6d232c5792462c6c46476>
-              key = <4e3ccc5249ac5a46bddeebd3822cf518>
-              mediaName = "1efc3f7b6ee6d232c5792462c6c46476"
-              size = 53908400
-            }
             contentType = "audio/mp3"
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <415927e5e905a65cf1e3dc3854637d61>
+              key = <6c16ee4958a6182835d776e1b9efa859>
+              mediaName = "415927e5e905a65cf1e3dc3854637d61"
+              size = 464850599
+              transitCdnKey = "IZokXAtYfRj"
+              transitTierUploadTimestamp = 1713506558146
+            }
           }
           wasDownloaded = true
         }
@@ -160,7 +163,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1662654195378
+    dateSent = 1714038464611
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -180,16 +183,16 @@ Frame {
             thumbnail = MessageAttachment {
               flag = Flag.NONE
               pointer = FilePointer {
-                backupLocator = BackupLocator {
-                  digest = <894e40336ce2d82dc281dfb9a552a77f>
-                  key = <0cb5502749c4f5c6923f4df01023b00c>
-                  mediaName = "894e40336ce2d82dc281dfb9a552a77f"
-                  size = 1914440565
-                }
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 146
-                width = 2388
+                height = 2385
+                invalidAttachmentLocator = InvalidAttachmentLocator {}
+                locatorInfo = LocatorInfo {
+                  digest = <>
+                  key = <>
+                  mediaName = ""
+                }
+                width = 2688
               }
             }
           }
@@ -199,7 +202,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
+        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
       }
     }
   }

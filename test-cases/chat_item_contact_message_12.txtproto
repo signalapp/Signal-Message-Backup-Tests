@@ -132,31 +132,78 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
-        avatar = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 3
-            digest = <e2843250301287d4cceace9511923143>
-            key = <729df40349b8e59cb677e456b3a5b045>
-            mediaName = "e2843250301287d4cceace9511923143"
-            size = 542768234
-            transitCdnKey = "PaXiLScgLH"
-            transitCdnNumber = 2
+        address = [
+          PostalAddress {
+            city = "taPHwAvo"
+            country = "hyZCTrFaZqB"
+            label = "vzSFNgpXHtZhd"
+            neighborhood = "FLPSkA"
+            pobox = ""
+            postcode = "tAKtPVXV"
+            region = "ejXWhGQ"
+            street = "EZObFnzTZ"
+            type = Type.WORK
+          },
+          PostalAddress {
+            city = "pXHaW"
+            country = "UUiitmkHLv"
+            label = "ygutgr"
+            neighborhood = "CfVdHWJ"
+            pobox = "Kenth"
+            postcode = "jjbudVyDygx"
+            region = "mtfRDjcUVSZl"
+            street = "nGMNaiqnlQbYT"
+            type = Type.CUSTOM
           }
-          blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+        ]
+        avatar = FilePointer {
+          blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/jpeg"
-          fileName = "YzYCnHJHjz"
-          height = 1525
-          width = 3740
+          fileName = "yaEqYS"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <8095cf757fa25a191bbf695b643cbd4c>
+            key = <c4a8876208e4adddc9ed63579f7a7d08>
+            mediaName = "8095cf757fa25a191bbf695b643cbd4c"
+            size = 1167399735
+            transitCdnKey = "aXiLScgL"
+            transitCdnNumber = 2
+            transitTierUploadTimestamp = 1713032953686
+          }
         }
+        email = [
+          Email {
+            label = ""
+            type = Type.HOME
+            value_ = "Kenya@Hunter.com"
+          },
+          Email {
+            label = "zPCvxAOii"
+            type = Type.MOBILE
+            value_ = "UUkKGT@pTUET.org"
+          }
+        ]
         name = Name {
-          familyName = ""
-          givenName = ""
-          middleName = ""
-          nickname = ""
-          prefix = "Miss"
-          suffix = "III"
+          familyName = "Watson"
+          givenName = "Ronnie"
+          middleName = "Jodie"
+          nickname = "Susana"
+          prefix = "Mr."
+          suffix = "Jr."
         }
-        organization = ""
+        number = [
+          Phone {
+            label = ""
+            type = Type.HOME
+            value_ = "447700900381"
+          },
+          Phone {
+            label = "kLQGERtwS"
+            type = Type.MOBILE
+            value_ = "33639988942"
+          }
+        ]
+        organization = "BbKuotBvsK"
       }
     }
     dateSent = 1680366577838

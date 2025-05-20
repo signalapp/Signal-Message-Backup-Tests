@@ -122,27 +122,26 @@ Frame {
   chat = Chat {
     archived = true
     dontNotifyForMentionsIfMuted = true
-    expirationTimerMs = 186725826000
-    expireTimerVersion = 2003546656
+    expirationTimerMs = 904364147000
+    expireTimerVersion = 1769244280
     id = 3
     markedUnread = true
-    muteUntilMs = 1824341912627
+    muteUntilMs = 1910611834860
     recipientId = 4
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.SOLID_CRIMSON
       dimWallpaperInDarkMode = true
       wallpaperPhoto = FilePointer {
-        backupLocator = BackupLocator {
-          cdnNumber = 3
-          digest = <8a72bebb4db939e0342ae035ddbe7fe4>
-          key = <d9345fdc5ab1cf72b00738e125ef7370>
-          mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
-          size = 1693683457
-          transitCdnKey = "gYOzQSvJcbzGY"
-          transitCdnNumber = 2
-        }
         blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
         contentType = "image/jpeg"
+        invalidAttachmentLocator = InvalidAttachmentLocator {}
+        locatorInfo = LocatorInfo {
+          digest = <80f6e1c9dbd14b48236d757f2705f484>
+          key = <031ee7c9761a278e9730ff2a7b4eb31e>
+          mediaName = "80f6e1c9dbd14b48236d757f2705f484"
+          mediaTierCdnNumber = 2
+          size = 1147991908
+        }
       }
     }
   }

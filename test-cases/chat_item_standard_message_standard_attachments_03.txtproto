@@ -145,25 +145,19 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <8c9f1d58edb9493086048d358b403cb4>
+          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 2
-              digest = <66da53caf60c4ec900b2dee58107854a>
-              key = <95b0f63bd4c8184986860917d55519fd>
-              mediaName = "66da53caf60c4ec900b2dee58107854a"
-              size = 1020613806
-              transitCdnKey = "AzrHYkFXMOBqmC"
+            caption = "TWpTUET"
+            contentType = "audio/mp3"
+            height = 2197
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <>
+              key = <>
+              mediaName = ""
             }
-            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-            caption = ""
-            contentType = "image/png"
-            fileName = "MdKVWksKen"
-            height = 3064
-            incrementalMac = <27a38645ab2d573928a14adb2e909071>
-            incrementalMacChunkSize = 2048
-            width = 1190
+            width = 2557
           }
         }
       ]

@@ -139,19 +139,19 @@ Frame {
     stickerMessage = StickerMessage {
       sticker = Sticker {
         data_ = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <32b280109505778a4715aecdbfa2b5d3>
-            key = <50e78d1c9c707c09c62ca7e07202738a>
-            mediaName = "32b280109505778a4715aecdbfa2b5d3"
-            size = 1884080705
-          }
           contentType = "image/png"
-          height = 2262
-          width = 1147
+          height = 893
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
+          width = 3916
         }
         emoji = "👍🏾"
-        packId = <6d2e6983bac9c1a00c3ceba46c5c4883>
-        packKey = <0af79bbba756a68133b3c0c66e93d85f0d65f7b135cae12c99834f1ca28f7df2>
+        packId = <248136cb2b86dd3b56a4d17627ffa6db>
+        packKey = <4aa948b6797ba7de47a20d4a44322a1ce6620b0ad5c88e3954b8d0dcccf76675>
       }
     }
   }
@@ -161,7 +161,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1662654195385
+    dateSent = 1714038464618
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -179,19 +179,18 @@ Frame {
             thumbnail = MessageAttachment {
               flag = Flag.NONE
               pointer = FilePointer {
-                backupLocator = BackupLocator {
-                  cdnNumber = 3
-                  digest = <6f953538a0b84e32a225762b2bc2b4b5>
-                  key = <c16d5cde38318aa191d019f2c9278e08>
-                  mediaName = "6f953538a0b84e32a225762b2bc2b4b5"
-                  size = 898439067
-                  transitCdnKey = "zEJgXGKYYrMq"
-                  transitCdnNumber = 2
-                }
-                blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+                blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
                 contentType = "image/jpeg"
-                height = 2652
-                width = 2539
+                invalidAttachmentLocator = InvalidAttachmentLocator {}
+                locatorInfo = LocatorInfo {
+                  digest = <5d991b04b4dc051b9ea2eb0e1f571757>
+                  key = <a41aaa84b2faa55ce06caff819bb7395>
+                  mediaName = "5d991b04b4dc051b9ea2eb0e1f571757"
+                  size = 508240466
+                  transitCdnKey = "KFgbkCrm"
+                  transitCdnNumber = 2
+                  transitTierUploadTimestamp = 1711987805477
+                }
               }
               wasDownloaded = true
             }
@@ -205,12 +204,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1791849224014
+          sentTimestamp = 1753730775131
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "necessitatibus te"
+        body = "oratio neque decore wisi regione dico mauris curae"
       }
     }
   }

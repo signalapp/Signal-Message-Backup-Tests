@@ -145,21 +145,19 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <8c9f1d58edb9493086048d358b403cb4>
+          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <531c93c2fbd8a21f072534d5f767baae>
-              key = <7ba7623758493e1bb0268c5da867e8b4>
-              mediaName = "531c93c2fbd8a21f072534d5f767baae"
-              size = 1855101642
-            }
-            caption = "AoCfV"
+            caption = "TWpTUET"
             contentType = "audio/mp3"
-            height = 1389
-            incrementalMac = <27a38645ab2d573928a14adb2e909071>
-            incrementalMacChunkSize = 2048
-            width = 2255
+            height = 2197
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <>
+              key = <>
+              mediaName = ""
+            }
+            width = 2557
           }
         }
       ]

@@ -163,7 +163,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1662654195379
+    dateSent = 1714038464612
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -201,12 +201,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1791849224014
+          sentTimestamp = 1753730775131
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "necessitatibus te"
+        body = "oratio neque decore wisi regione dico mauris curae"
       }
     }
   }

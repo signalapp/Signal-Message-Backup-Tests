@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1798056002713
+    dateSent = 1800045001405
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826269
       dateServerSent = 1794124103201
@@ -142,13 +142,16 @@ Frame {
         MessageAttachment {
           flag = Flag.VOICE_MESSAGE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <8bffbb6878d9cd54434bca72346a5ff9>
-              key = <bd6e73ff9022c6fa6faebb1559633d69>
-              mediaName = "8bffbb6878d9cd54434bca72346a5ff9"
-              size = 1107048700
-            }
             contentType = "audio/mp3"
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <149f599dab4f9c8a0a0f6193b4fffb25>
+              key = <36106eec0da607bfe85604e4e3670f77>
+              mediaName = "149f599dab4f9c8a0a0f6193b4fffb25"
+              size = 601668882
+              transitCdnKey = "gpIJqy"
+              transitTierUploadTimestamp = 1714708939862
+            }
           }
           wasDownloaded = true
         }

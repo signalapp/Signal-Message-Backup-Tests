@@ -146,16 +146,16 @@ Frame {
           }
         ]
         avatar = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <911abe0326f7d093c5d15ca0b3d91770>
-            key = <1533a5f65bda799a7f11bd6289540c3b>
-            mediaName = "911abe0326f7d093c5d15ca0b3d91770"
-            size = 616008951
-          }
           blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
           contentType = "image/png"
-          height = 949
-          width = 2631
+          height = 869
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
+          width = 2157
         }
         email = [
           Email {

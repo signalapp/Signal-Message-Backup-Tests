@@ -130,25 +130,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1808388979106
+    dateSent = 1854327129881
     directStoryReplyMessage = DirectStoryReplyMessage {
-      textReply = TextReply {
-        longText = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "dzHLOokMZPmj"
-            cdnNumber = 2
-            digest = <10636ce8af1b499244fc7b251b65c6d3>
-            key = <c3c226dc221e8fec3522a5e4cd2f910d>
-            size = 265383037
-            uploadTimestamp = 1714769873121
-          }
-          contentType = "text/x-signal-plain"
-          fileName = "cKiDzz"
-        }
-        text = Text {
-          body = "massa nominavi senserit decore interpretaris"
-        }
-      }
+      emoji = "💀"
     }
     outgoing = OutgoingMessageDetails {
       sendStatus = [

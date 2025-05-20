@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -9041347
+          solid = -7820003
         },
         CustomChatColor {
           id = 2
-          solid = -2627377
+          solid = -1309265
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 137
+            angle = 159
             colors = [
-              -15156903,
-              -448447
+              -5726839,
+              -4759389
             ]
             positions = [
               0.0,
@@ -41,23 +41,23 @@ Frame {
         wallpaperPreset = WallpaperPreset.SOLID_LILAC
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 390911022
+      universalExpireTimerSeconds = 314441250
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true
-      subscriberId = <f58cca155df7981e10411f6eea6a34842a849b36033d55ee22ad8089d8b31e0b>
+      subscriberId = <af4b15d212e5d730c3c226dc221e8fec3522a5e4cd2f910df566824710636ce8>
     }
-    familyName = "Hernandez"
-    givenName = "Lea"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Woods"
+    givenName = "Mavis"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "1234"
-    username = "jody.350"
+    username = "ryan.8012"
     usernameLink = UsernameLink {
       color = Color.ORANGE
-      entropy = <21a78511518391fbc5b26db646e8dc0a531c93c2fbd8a21f072534d5f767baae>
-      serverId = <7ba7623758493e1bb0268c5da867e8b4>
+      entropy = <f60c4ec900b2dee58107854a29a3b2f195b0f63bd4c8184986860917d55519fd>
+      serverId = <3e64d7eea8973f9028fe841d9e2ff1cb>
     }
   }
 }

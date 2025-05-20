@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -15148908
+          solid = -6607516
         },
         CustomChatColor {
           id = 2
-          solid = -13831452
+          solid = -3877931
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 312
+            angle = 347
             colors = [
-              -6201948,
-              -9003532
+              -1570527,
+              -12481143
             ]
             positions = [
               0.0,
@@ -38,18 +38,14 @@ Frame {
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_ULTRAMARINE
         wallpaperPhoto = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 2
-            digest = <e3670f77ebf5e721149f599dab4f9c8a>
-            key = <b4fffb255879953e257ab94747b56ae5>
-            mediaName = "e3670f77ebf5e721149f599dab4f9c8a"
-            size = 2094646670
-            transitCdnKey = "EtjaXtfWb"
-          }
           blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
           contentType = "image/png"
-          incrementalMac = <59fb651a953525dd5da9aa792ff23f31>
-          incrementalMacChunkSize = 2048
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
         }
       }
       displayBadgesOnProfile = true
@@ -60,6 +56,7 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
@@ -67,22 +64,22 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 1305377059
+      universalExpireTimerSeconds = 844099452
     }
-    avatarUrlPath = "https://signal.org/lnJDCHSAKhylA"
+    avatarUrlPath = "https://signal.org/DXOZYcESWutf"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <0c4220ab396c4b8ebdefd49b44b4c8d19c47cb807844279fb4a4e927c5f36b40>
+      subscriberId = <36327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f3>
     }
-    familyName = "Hewitt"
-    givenName = "Clarice"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Kramer"
+    givenName = "Janelle"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "abcdefg"
-    username = "shelly.01"
+    username = "sabrina.06"
     usernameLink = UsernameLink {
       color = Color.WHITE
-      entropy = <589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b>
-      serverId = <458c6acb7db665e567fdcb1ac685a8ae>
+      entropy = <140efe703c6727a8d5e0f3b49a458da0d95fde0154d933c20d1a04ced92499f5>
+      serverId = <97130bcd791cedfafc0e29956dc1e0cd>
     }
   }
 }

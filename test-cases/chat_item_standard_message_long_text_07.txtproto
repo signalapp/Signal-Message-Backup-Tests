@@ -145,14 +145,18 @@ Frame {
     standardMessage = StandardMessage {
       longText = FilePointer {
         contentType = "text/x-signal-plain"
-        fileName = "mkOGiGqMxxp"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
+        locatorInfo = LocatorInfo {
+          digest = <>
+          key = <>
+          mediaName = ""
+        }
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1893972547779
+          sentTimestamp = 1737231682230
           sortOrder = 1
         }
       ]

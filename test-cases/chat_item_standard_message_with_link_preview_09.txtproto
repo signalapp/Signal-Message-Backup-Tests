@@ -145,6 +145,21 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
+          date = 1786170548347
+          description = "risus"
+          image = FilePointer {
+            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+            contentType = "image/png"
+            height = 1556
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <>
+              key = <>
+              mediaName = ""
+            }
+            width = 1777
+          }
+          title = "Laoreet Fugit"
           url = "https://signal.org/OMpdiJZO"
         }
       ]

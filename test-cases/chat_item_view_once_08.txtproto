@@ -141,15 +141,20 @@ Frame {
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
-        clientUuid = <8fa99e96c1484819885f787a8fd1d20d>
         flag = Flag.NONE
         pointer = FilePointer {
-          blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-          contentType = "video/mp4"
-          height = 3979
+          contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
-          width = 3797
+          locatorInfo = LocatorInfo {
+            digest = <0a0f6193b4fffb255879953e257ab947>
+            key = <e85604e4e3670f77ebf5e721149f599d>
+            mediaName = "0a0f6193b4fffb255879953e257ab947"
+            size = 228006847
+            transitCdnKey = "IJqySkLQGERt"
+            transitTierUploadTimestamp = 1714542436278
+          }
         }
+        wasDownloaded = true
       }
     }
   }

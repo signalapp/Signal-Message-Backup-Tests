@@ -132,15 +132,76 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
-        name = Name {
-          familyName = "Gillespie"
-          givenName = "Fletcher"
-          middleName = "Daphne"
-          nickname = "Michelle"
-          prefix = ""
-          suffix = ""
+        address = [
+          PostalAddress {
+            city = "taPHwAvo"
+            country = "hyZCTrFaZqB"
+            label = "vzSFNgpXHtZhd"
+            neighborhood = "FLPSkA"
+            pobox = ""
+            postcode = "tAKtPVXV"
+            region = "ejXWhGQ"
+            street = "EZObFnzTZ"
+            type = Type.WORK
+          },
+          PostalAddress {
+            city = "pXHaW"
+            country = "UUiitmkHLv"
+            label = "ygutgr"
+            neighborhood = "CfVdHWJ"
+            pobox = "Kenth"
+            postcode = "jjbudVyDygx"
+            region = "mtfRDjcUVSZl"
+            street = "nGMNaiqnlQbYT"
+            type = Type.CUSTOM
+          }
+        ]
+        avatar = FilePointer {
+          blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+          contentType = "image/png"
+          fileName = "yaEqYS"
+          height = 105
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
+          width = 2552
         }
-        organization = ""
+        email = [
+          Email {
+            label = "zPCvxAOii"
+            type = Type.MOBILE
+            value_ = "UUkKGT@pTUET.org"
+          },
+          Email {
+            label = "zDNPnbCyaCBGA"
+            type = Type.WORK
+            value_ = "Kenya@Hunter.com"
+          }
+        ]
+        name = Name {
+          familyName = "Clayton"
+          givenName = "Rachael"
+          middleName = "Lorraine"
+          nickname = "Iva"
+          prefix = "Mrs."
+          suffix = "Sr."
+        }
+        number = [
+          Phone {
+            label = "kLQGERtwS"
+            type = Type.MOBILE
+            value_ = "33639988942"
+          },
+          Phone {
+            label = "uECQWuuuE"
+            type = Type.WORK
+            value_ = "447700900381"
+          }
+        ]
+        organization = "BbKuotBvsK"
       }
     }
     dateSent = 1688484601889

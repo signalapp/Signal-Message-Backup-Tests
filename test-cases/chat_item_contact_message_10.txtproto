@@ -132,51 +132,33 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
-        address = [
-          PostalAddress {
-            city = ""
-            country = ""
-            label = ""
-            neighborhood = ""
-            pobox = "dKVWk"
-            postcode = ""
-            region = ""
-            street = ""
-            type = Type.HOME
-          }
-        ]
         avatar = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <42848fa87911e7798244f14304a45b55>
-            key = <f3ff32c42e228cf0ec92e3182c8face4>
-            mediaName = "42848fa87911e7798244f14304a45b55"
-            size = 616008951
-          }
+          blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/jpeg"
-        }
-        email = [
-          Email {
-            label = ""
-            type = Type.HOME
-            value_ = "Kenya@Hunter.com"
+          fileName = "GQDDfXFi"
+          height = 2067
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <9c78ede6249be3774edfd6f44d99aeec>
+            key = <26a8275b675edf50b974ee8cbdec4974>
+            mediaName = "9c78ede6249be3774edfd6f44d99aeec"
+            mediaTierCdnNumber = 2
+            size = 1652375935
+            transitCdnKey = "aXiLScgL"
+            transitCdnNumber = 3
+            transitTierUploadTimestamp = 1713032953686
           }
-        ]
+          width = 2160
+        }
         name = Name {
-          familyName = "Watson"
-          givenName = "Ronnie"
-          middleName = "Jodie"
-          nickname = "Susana"
-          prefix = "Mr."
-          suffix = "Jr."
+          familyName = ""
+          givenName = ""
+          middleName = ""
+          nickname = ""
+          prefix = "Miss"
+          suffix = "III"
         }
-        number = [
-          Phone {
-            label = ""
-            type = Type.HOME
-            value_ = "447700900381"
-          }
-        ]
-        organization = "xVufxIRRdMR"
+        organization = ""
       }
     }
     dateSent = 1680366577838

@@ -132,54 +132,28 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
-        address = [
-          PostalAddress {
-            city = ""
-            country = ""
-            label = ""
-            neighborhood = ""
-            pobox = "dKVWk"
-            postcode = ""
-            region = ""
-            street = ""
-            type = Type.HOME
-          }
-        ]
         avatar = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <911abe0326f7d093c5d15ca0b3d91770>
-            key = <1533a5f65bda799a7f11bd6289540c3b>
-            mediaName = "911abe0326f7d093c5d15ca0b3d91770"
-            size = 616008951
-          }
-          blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+          blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
           contentType = "image/png"
-          height = 949
-          width = 2631
-        }
-        email = [
-          Email {
-            label = ""
-            type = Type.CUSTOM
-            value_ = "UUkKGT@pTUET.org"
+          fileName = "GQDDfXFi"
+          height = 105
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
           }
-        ]
+          width = 2552
+        }
         name = Name {
-          familyName = "Gillespie"
-          givenName = "Fletcher"
-          middleName = "Daphne"
-          nickname = "Michelle"
-          prefix = ""
-          suffix = ""
+          familyName = "Clayton"
+          givenName = "Rachael"
+          middleName = "Lorraine"
+          nickname = "Iva"
+          prefix = "Mrs."
+          suffix = "Sr."
         }
-        number = [
-          Phone {
-            label = ""
-            type = Type.CUSTOM
-            value_ = "33639988942"
-          }
-        ]
-        organization = "xVufxIRRdMR"
+        organization = ""
       }
     }
     dateSent = 1688484601889

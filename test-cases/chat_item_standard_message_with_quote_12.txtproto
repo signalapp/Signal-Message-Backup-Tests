@@ -131,31 +131,14 @@ Frame {
     authorId = 4
     chatId = 2
     dateSent = 1
+    giftBadge = GiftBadge {
+      receiptCredentialPresentation = <006cdec31a9dac5d7746246a6315f18cf165d30979a2dfe93d1ce83e24f1935777940884794ac3b4c4d7d79dda4fbc540571f53dd23f4ec98f50eb5e1f857e093f0e8180f1b43d7693032cdc3f53ea9dff66f2d45d34e885b4b5cb5d911d1c3f273c033f02149f5732133cf3513cd83f65dbf2bf65ce1f9533a4fb5e14852d312064276ae3334233318d931bdbed68b5d3cecc550a9e00d74e498481b4ec3a5f7680000000000000005bb7b01db0ae7fb6d469878ae7098644c7a01bf14d0d477a520369e2ba833c0617844fdfe27d5ee1c2db332f35deb5e303e6ed9c9d1612855233e029ebfb1f0d4a5ed8540701845f0349dd68013daf442f2251e2875a7685b1dd67e3cbedfe045e421bc601689146ce66eb38f91dc5a63ac0e7488bab51ff4463025bac5758080000000000000000010000000000000013146f971dd8e18dda3c9fecbbbc4dd7>
+      state = State.OPENED
+    }
     incoming = IncomingMessageDetails {
       dateReceived = 1
       dateServerSent = 1
       read = true
-    }
-    stickerMessage = StickerMessage {
-      sticker = Sticker {
-        data_ = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "rtZXLxrufVZ"
-            cdnNumber = 2
-            digest = <dd0e3a881be5c89b091b4479256cbccc>
-            key = <103fc6cf474167aa1140c4d5c9e2fc02>
-            size = 296411406
-            uploadTimestamp = 1715116722509
-          }
-          contentType = "image/webp"
-          fileName = "QoXasUwza"
-          height = 2386
-          width = 252
-        }
-        emoji = "💀"
-        packId = <8f3d837dc157a85b49013aef12b255a0>
-        packKey = <b20a925e63d6ca063a5252ab801196b6fd05974250e8a3e9fe496578eb65052f>
-      }
     }
   }
 }
@@ -164,7 +147,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1662654195387
+    dateSent = 1714038464620
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -178,32 +161,12 @@ Frame {
     }
     standardMessage = StandardMessage {
       quote = Quote {
-        attachments = [
-          QuotedAttachment {
-            contentType = "image/jpeg"
-            thumbnail = MessageAttachment {
-              flag = Flag.NONE
-              pointer = FilePointer {
-                attachmentLocator = AttachmentLocator {
-                  cdnKey = "udAvagmeqW"
-                  digest = <0218c56773dde8ec819935b4821b2c01>
-                  key = <1a9907c6a5fa8f00bb6c6ba92ea3fa89>
-                  size = 1902380935
-                  uploadTimestamp = 1714596168114
-                }
-                blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-                contentType = "image/jpeg"
-              }
-              wasDownloaded = true
-            }
-          }
-        ]
         authorId = 4
         targetSentTimestamp = 1
-        type = Type.NORMAL
+        type = Type.GIFT_BADGE
       }
       text = Text {
-        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
+        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
       }
     }
   }

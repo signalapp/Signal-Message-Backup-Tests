@@ -145,23 +145,23 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "sapien"
+          date = 1786170548347
+          description = "ultrices urna non"
           image = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 3
-              digest = <c685a8aedbd29cb42e984d652ed70996>
-              key = <a459650a2590efd18c249edbc4fa0a59>
-              mediaName = "c685a8aedbd29cb42e984d652ed70996"
-              size = 1736700812
-              transitCdnKey = "MOBqmCdYWyYPnk"
-              transitCdnNumber = 2
-            }
-            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "image/jpeg"
-            height = 21
-            width = 3019
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <162925690d31a8ba1a7be8b3820ab936>
+              key = <db326789aebcb5a166a1e4dfbdea011a>
+              mediaName = "162925690d31a8ba1a7be8b3820ab936"
+              size = 680830668
+              transitCdnKey = "XMOBqmCd"
+              transitCdnNumber = 2
+              transitTierUploadTimestamp = 1712931481956
+            }
           }
-          title = "Graeco Tractatos"
+          title = "Ridens Tamquam"
           url = "https://signal.org/OMpdiJZO"
         }
       ]

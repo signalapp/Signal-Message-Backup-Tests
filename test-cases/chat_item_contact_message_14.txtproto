@@ -132,75 +132,15 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
-        address = [
-          PostalAddress {
-            city = "taPHwAvo"
-            country = "hyZCTrFaZqB"
-            label = "vzSFNgpXHtZhd"
-            neighborhood = "FLPSkA"
-            pobox = ""
-            postcode = "tAKtPVXV"
-            region = "ejXWhGQ"
-            street = "EZObFnzTZ"
-            type = Type.WORK
-          },
-          PostalAddress {
-            city = "pXHaW"
-            country = "UUiitmkHLv"
-            label = "ygutgr"
-            neighborhood = "CfVdHWJ"
-            pobox = "Kenth"
-            postcode = "jjbudVyDygx"
-            region = "mtfRDjcUVSZl"
-            street = "nGMNaiqnlQbYT"
-            type = Type.CUSTOM
-          }
-        ]
-        avatar = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "JOxIxtvXoeRqeX"
-            digest = <96db99c9bb254a1bb0de5501d6b6653b>
-            key = <415322f414f309cdef3eb5a920f7f60e>
-            size = 26430243
-            uploadTimestamp = 1712860571412
-          }
-          blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-          contentType = "image/jpeg"
-          fileName = "yvrPutOj"
-        }
-        email = [
-          Email {
-            label = ""
-            type = Type.HOME
-            value_ = "Kenya@Hunter.com"
-          },
-          Email {
-            label = "zPCvxAOii"
-            type = Type.MOBILE
-            value_ = "UUkKGT@pTUET.org"
-          }
-        ]
         name = Name {
-          familyName = "Watson"
-          givenName = "Ronnie"
-          middleName = "Jodie"
-          nickname = "Susana"
-          prefix = "Mr."
-          suffix = "Jr."
+          familyName = "Gillespie"
+          givenName = "Fletcher"
+          middleName = "Daphne"
+          nickname = "Michelle"
+          prefix = ""
+          suffix = ""
         }
-        number = [
-          Phone {
-            label = ""
-            type = Type.HOME
-            value_ = "447700900381"
-          },
-          Phone {
-            label = "kLQGERtwS"
-            type = Type.MOBILE
-            value_ = "33639988942"
-          }
-        ]
-        organization = "BbKuotBvsK"
+        organization = ""
       }
     }
     dateSent = 1680366577838

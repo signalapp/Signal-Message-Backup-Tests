@@ -141,29 +141,31 @@ Frame {
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
-        backupLocator = BackupLocator {
-          cdnNumber = 3
-          digest = <222d4808bdaadcf9eaa4908fc733c244>
-          key = <4a5aa0bbf67baa9066da53caf60c4ec9>
-          mediaName = "222d4808bdaadcf9eaa4908fc733c244"
-          size = 1322441015
-          transitCdnKey = "uECQWuuuE"
-          transitCdnNumber = 2
-        }
         contentType = "text/x-signal-plain"
-        fileName = "cKiDzz"
+        fileName = "aWIBH"
+        invalidAttachmentLocator = InvalidAttachmentLocator {}
+        locatorInfo = LocatorInfo {
+          digest = <974af5a7a459650a2590efd18c249edb>
+          key = <67fdcb1ac685a8aedbd29cb42e984d65>
+          mediaName = "974af5a7a459650a2590efd18c249edb"
+          mediaTierCdnNumber = 2
+          size = 957662124
+          transitCdnKey = "ECQWuuuEFCmCq"
+          transitCdnNumber = 3
+          transitTierUploadTimestamp = 1714340547340
+        }
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1893972547779
+          sentTimestamp = 1737231682230
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1893972547780
+          sentTimestamp = 1737231682231
           sortOrder = 2
         }
       ]

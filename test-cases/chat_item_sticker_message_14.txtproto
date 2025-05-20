@@ -146,29 +146,33 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1775172671564
+          sentTimestamp = 1738568507738
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1775172671565
+          sentTimestamp = 1738568507739
           sortOrder = 2
         }
       ]
       sticker = Sticker {
         data_ = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "WWFqaczwFd"
-            cdnNumber = 3
-            digest = <2e2771dbc69f3f56cf981fd64acc5040>
-            key = <1a96e707c00259c7264eb5417dfb20d9>
-            size = 228533420
-            uploadTimestamp = 1715220719583
+          contentType = "image/webp"
+          fileName = "IBHCZ"
+          height = 495
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <83c9e903fcd89432f89fb1eaa7865695>
+            key = <974af5a7a459650a2590efd18c249edb>
+            mediaName = "83c9e903fcd89432f89fb1eaa7865695"
+            mediaTierCdnNumber = 2
+            size = 1394492158
+            transitCdnKey = "CQWuu"
+            transitCdnNumber = 3
+            transitTierUploadTimestamp = 1711790123967
           }
-          contentType = "image/png"
-          height = 1838
-          width = 2923
+          width = 415
         }
         emoji = "👩‍💻"
         packId = <e85604e4e3670f77ebf5e721149f599d>

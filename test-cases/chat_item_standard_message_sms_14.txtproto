@@ -147,66 +147,67 @@ Frame {
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <8a72bebb4db939e0342ae035ddbe7fe4>
-              key = <d9345fdc5ab1cf72b00738e125ef7370>
-              mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
-              size = 891929939
-            }
             contentType = "image/jpeg"
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <59633d69d55d99f6f871f8839a9ce2d8>
+              key = <346a5ff97c318292bd6e73ff9022c6fa>
+              mediaName = "59633d69d55d99f6f871f8839a9ce2d8"
+              size = 761879400
+            }
           }
           wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 2
-              digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
-              key = <0a038863ebb03fed8486f4196b6e656c>
-              mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
-              size = 1267987916
-              transitCdnKey = "ySkLQGERtwS"
-            }
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            fileName = "zWWFqaczw"
-            height = 3188
-            width = 2674
+            fileName = "ECQWuuuEFCmCq"
+            height = 3374
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <d95fde0154d933c20d1a04ced92499f5>
+              key = <da741f81140efe703c6727a8d5e0f3b4>
+              mediaName = "d95fde0154d933c20d1a04ced92499f5"
+              size = 1093478118
+            }
+            width = 1298
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 3
-              digest = <222d4808bdaadcf9eaa4908fc733c244>
-              key = <4a5aa0bbf67baa9066da53caf60c4ec9>
-              mediaName = "222d4808bdaadcf9eaa4908fc733c244"
-              size = 1322441015
-              transitCdnKey = "uECQWuuuE"
-              transitCdnNumber = 2
-            }
             contentType = "audio/mp3"
-            fileName = "dzHLOokMZPmj"
-            height = 1693
-            width = 2062
+            fileName = "NEWGrAzrH"
+            height = 3915
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <877862d96ce3c17322ad4bfac6e10859>
+              key = <32d8456e7027634ab98b2bedfeba4948>
+              mediaName = "877862d96ce3c17322ad4bfac6e10859"
+              mediaTierCdnNumber = 2
+              size = 957662124
+            }
+            width = 1111
           }
           wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <7db665e567fdcb1ac685a8aedbd29cb4>
-              key = <2ed70996974af5a7a459650a2590efd1>
-              mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
-              size = 891929939
-            }
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "video/mp4"
-            height = 3329
-            width = 257
+            height = 470
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <67fdcb1ac685a8aedbd29cb42e984d65>
+              key = <696ab01a75f6908b3d448eb3458c6acb>
+              mediaName = "67fdcb1ac685a8aedbd29cb42e984d65"
+              mediaTierCdnNumber = 3
+              size = 761879400
+            }
+            width = 2521
           }
         }
       ]

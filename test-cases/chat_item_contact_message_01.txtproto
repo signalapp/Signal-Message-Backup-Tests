@@ -146,13 +146,16 @@ Frame {
           }
         ]
         avatar = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <42848fa87911e7798244f14304a45b55>
-            key = <f3ff32c42e228cf0ec92e3182c8face4>
-            mediaName = "42848fa87911e7798244f14304a45b55"
-            size = 616008951
-          }
           contentType = "image/jpeg"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <3f401e4adf93d2e29614e293c3e76f4e>
+            key = <097ad9b4c06dcac60b2b6007c3846787>
+            mediaName = "3f401e4adf93d2e29614e293c3e76f4e"
+            size = 612196599
+            transitCdnKey = "aXiLScgL"
+            transitTierUploadTimestamp = 1713032953686
+          }
         }
         email = [
           Email {

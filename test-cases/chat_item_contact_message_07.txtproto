@@ -132,55 +132,15 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
-        address = [
-          PostalAddress {
-            city = ""
-            country = ""
-            label = ""
-            neighborhood = ""
-            pobox = "dKVWk"
-            postcode = ""
-            region = ""
-            street = ""
-            type = Type.HOME
-          }
-        ]
-        avatar = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "JOxIxtvXoeRqeX"
-            cdnNumber = 3
-            digest = <e22af1036fae5ece6f2fc4786f846a4e>
-            key = <72d0cc61a319e55f94f0b995c11698bb>
-            size = 1856170870
-            uploadTimestamp = 1712860571412
-          }
-          contentType = "image/jpeg"
-          height = 1525
-          width = 3740
-        }
-        email = [
-          Email {
-            label = "zDNPnbCyaCBGA"
-            type = Type.WORK
-            value_ = "Kenya@Hunter.com"
-          }
-        ]
         name = Name {
-          familyName = ""
-          givenName = ""
-          middleName = ""
-          nickname = ""
-          prefix = "Miss"
-          suffix = "III"
+          familyName = "Gillespie"
+          givenName = "Fletcher"
+          middleName = "Daphne"
+          nickname = "Michelle"
+          prefix = ""
+          suffix = ""
         }
-        number = [
-          Phone {
-            label = "uECQWuuuE"
-            type = Type.WORK
-            value_ = "447700900381"
-          }
-        ]
-        organization = "xVufxIRRdMR"
+        organization = ""
       }
     }
     dateSent = 1688484601889

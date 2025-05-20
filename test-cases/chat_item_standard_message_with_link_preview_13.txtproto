@@ -145,19 +145,20 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1743240709328
+          description = "risus"
           image = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <595e2aa725b1e780a6681e10130f4bc7>
-              key = <0f4d11d0201e77f9ba1caec888cf6bfa>
-              mediaName = "595e2aa725b1e780a6681e10130f4bc7"
-              size = 931871620
-            }
-            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+            blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             contentType = "image/png"
-            height = 2764
-            width = 2028
+            height = 1556
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <>
+              key = <>
+              mediaName = ""
+            }
+            width = 1777
           }
+          title = "Laoreet Fugit"
           url = "https://signal.org/OMpdiJZO"
         }
       ]
@@ -165,7 +166,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1726049184982
+          sentTimestamp = 1791048979308
           sortOrder = 1
         }
       ]

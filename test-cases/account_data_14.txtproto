@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -15148908
+          solid = -6607516
         },
         CustomChatColor {
           id = 2
-          solid = -13831452
+          solid = -3877931
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 312
+            angle = 347
             colors = [
-              -6201948,
-              -9003532
+              -1570527,
+              -12481143
             ]
             positions = [
               0.0,
@@ -47,6 +47,7 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
@@ -54,22 +55,22 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 1305377059
+      universalExpireTimerSeconds = 844099452
     }
-    avatarUrlPath = "https://signal.org/lnJDCHSAKhylA"
+    avatarUrlPath = "https://signal.org/DXOZYcESWutf"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <0c4220ab396c4b8ebdefd49b44b4c8d19c47cb807844279fb4a4e927c5f36b40>
+      subscriberId = <36327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f3>
     }
-    familyName = "Hewitt"
-    givenName = "Clarice"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Kramer"
+    givenName = "Janelle"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = ""
-    username = "shelly.01"
+    username = "sabrina.06"
     usernameLink = UsernameLink {
       color = Color.GREEN
-      entropy = <0b7e939b46b594613c7b2ffacf664a80595e2aa725b1e780a6681e10130f4bc7>
-      serverId = <0f4d11d0201e77f9ba1caec888cf6bfa>
+      entropy = <22ad4bfac6e10859fb70db9f128ab0196d6be1c6a7ed5289222d4808bdaadcf9>
+      serverId = <c733c2440c3ae62e4a5aa0bbf67baa90>
     }
   }
 }

@@ -142,6 +142,23 @@ Frame {
         }
       ]
     }
-    viewOnceMessage = ViewOnceMessage {}
+    viewOnceMessage = ViewOnceMessage {
+      attachment = MessageAttachment {
+        clientUuid = <ee553d0289804d228b1eb3d79549608d>
+        flag = Flag.NONE
+        pointer = FilePointer {
+          blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+          contentType = "image/png"
+          height = 1836
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
+          width = 3655
+        }
+      }
+    }
   }
 }

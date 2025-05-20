@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -9041347
+          solid = -7820003
         },
         CustomChatColor {
           id = 2
-          solid = -2627377
+          solid = -1309265
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 137
+            angle = 159
             colors = [
-              -15156903,
-              -448447
+              -5726839,
+              -4759389
             ]
             positions = [
               0.0,
@@ -39,37 +39,36 @@ Frame {
         bubbleColorPreset = BubbleColorPreset.SOLID_CRIMSON
         dimWallpaperInDarkMode = true
         wallpaperPhoto = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 3
-            digest = <8a72bebb4db939e0342ae035ddbe7fe4>
-            key = <d9345fdc5ab1cf72b00738e125ef7370>
-            mediaName = "8a72bebb4db939e0342ae035ddbe7fe4"
-            size = 1693683457
-            transitCdnKey = "gYOzQSvJcbzGY"
-            transitCdnNumber = 2
-          }
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/jpeg"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <80f6e1c9dbd14b48236d757f2705f484>
+            key = <031ee7c9761a278e9730ff2a7b4eb31e>
+            mediaName = "80f6e1c9dbd14b48236d757f2705f484"
+            mediaTierCdnNumber = 2
+            size = 1147991908
+          }
         }
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 390911022
+      universalExpireTimerSeconds = 314441250
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true
-      subscriberId = <f58cca155df7981e10411f6eea6a34842a849b36033d55ee22ad8089d8b31e0b>
+      subscriberId = <af4b15d212e5d730c3c226dc221e8fec3522a5e4cd2f910df566824710636ce8>
     }
-    familyName = "Hernandez"
-    givenName = "Lea"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Woods"
+    givenName = "Mavis"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "안녕하세요, 세계"
-    username = "jody.350"
+    username = "ryan.8012"
     usernameLink = UsernameLink {
       color = Color.GREY
-      entropy = <2e984d652ed70996974af5a7a459650a2590efd18c249edbc4fa0a5983c9e903>
-      serverId = <f89fb1eaa786569514b8aab9b5a5bfd3>
+      entropy = <d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166f>
+      serverId = <18e707cf7cb4446159fb651a953525dd>
     }
   }
 }

@@ -157,16 +157,19 @@ Frame {
           }
         ]
         avatar = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "JOxIxtvXoeRqeX"
-            digest = <96db99c9bb254a1bb0de5501d6b6653b>
-            key = <415322f414f309cdef3eb5a920f7f60e>
-            size = 26430243
-            uploadTimestamp = 1712860571412
-          }
           blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/jpeg"
-          fileName = "yvrPutOj"
+          fileName = "yaEqYS"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <8095cf757fa25a191bbf695b643cbd4c>
+            key = <c4a8876208e4adddc9ed63579f7a7d08>
+            mediaName = "8095cf757fa25a191bbf695b643cbd4c"
+            size = 1167399735
+            transitCdnKey = "aXiLScgL"
+            transitCdnNumber = 2
+            transitTierUploadTimestamp = 1713032953686
+          }
         }
         email = [
           Email {

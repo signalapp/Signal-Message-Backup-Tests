@@ -139,23 +139,25 @@ Frame {
     stickerMessage = StickerMessage {
       sticker = Sticker {
         data_ = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 3
-            digest = <d608ee48b0c67f2cc3585a571a951dca>
-            key = <7c67e95b2c6704d88f333f63c9cfc3ce>
-            mediaName = "d608ee48b0c67f2cc3585a571a951dca"
-            size = 1791022578
-            transitCdnKey = "FMidkMLtADq"
-            transitCdnNumber = 2
-          }
           contentType = "image/webp"
-          fileName = "QoXasUwza"
-          height = 2796
-          width = 784
+          fileName = "qqaJPpU"
+          height = 3334
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <9da8b7afc56db49d1c31fc998ff6ebb7>
+            key = <1315a70b68fc42549fb3dc833e8e3ae0>
+            mediaName = "9da8b7afc56db49d1c31fc998ff6ebb7"
+            mediaTierCdnNumber = 2
+            size = 1718218228
+            transitCdnKey = "VrgohtSR"
+            transitCdnNumber = 3
+            transitTierUploadTimestamp = 1713705932662
+          }
+          width = 35
         }
         emoji = "👎"
-        packId = <c2efc7b82a7647e51ad7504a1de539e7>
-        packKey = <045eb102a371fd7301cff783739178c3f261d326c641cd13fdc10606eb230943>
+        packId = <03e37119321da6d448263a1881ce7ad8>
+        packKey = <005765a2278f1a4a02600f559e16c84ad5408b23a1d75afe893a9c1f9fefcb04>
       }
     }
   }
@@ -165,7 +167,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1662654195384
+    dateSent = 1714038464617
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -185,18 +187,16 @@ Frame {
             thumbnail = MessageAttachment {
               flag = Flag.NONE
               pointer = FilePointer {
-                backupLocator = BackupLocator {
-                  cdnNumber = 2
-                  digest = <115d7934716789a0c670d7b4397273d4>
-                  key = <f4c369078e71d02f7affd2b4d1d782e8>
-                  mediaName = "115d7934716789a0c670d7b4397273d4"
-                  size = 512137253
-                  transitCdnKey = "GgbFNFkZCS"
-                }
-                blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+                blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 235
-                width = 2186
+                height = 2385
+                invalidAttachmentLocator = InvalidAttachmentLocator {}
+                locatorInfo = LocatorInfo {
+                  digest = <>
+                  key = <>
+                  mediaName = ""
+                }
+                width = 2688
               }
             }
           }
@@ -206,7 +206,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "malesuada quidam adipisci reprehendunt aliquam vivendo non"
+        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
       }
     }
   }

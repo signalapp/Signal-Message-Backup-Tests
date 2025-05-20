@@ -375,30 +375,51 @@ object Generators {
   }
 
   fun wallpaperFilePointer(): Generator<FilePointer> {
-    val (backupLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
-      backupLocatorGenerator() as Generator<Any?>,
-      Generators.single(FilePointer.InvalidAttachmentLocator())
-    )
-
     return Generators.permutation {
-      val backupLocator: FilePointer.BackupLocator? = someOneOf(backupLocatorGenerator)
-      val invalidAttachmentLocator: FilePointer.InvalidAttachmentLocator? = someOneOf(invalidAttachmentLocatorGenerator)
-      val potentialIncrementalMac = some(Generators.bytes(16).nullable())
-      val incrementalMac = if (invalidAttachmentLocator == null) potentialIncrementalMac else null
-      val incrementalMacChunkSize: Int? = some(Generators.list(1024, 2048))
+      val includeMediaName = someBoolean()
 
-      val contentType = some(Generators.list("image/jpeg", "image/png"))
+      val potentialKey = someBytes(16)
+      val potentialDigest = someBytes(16)
+      val potentialSize = somePositiveInt()
+      val potentialMediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
+      val potentialIncrementalMac = some(Generators.bytes(16).nullable())
+      val potentialIncrementalMacChunkSize = some(Generators.list(1024, 2048))
+
+      var key: ByteArray = byteArrayOf()
+      var digest: ByteArray = byteArrayOf()
+      var size = 0
+      var mediaName = ""
+      var mediaTierCdnNumber: Int? = null
+      var incrementalMac: ByteArray? = null
+      var incrementalMacChunkSize: Int? = null
+      if (includeMediaName) {
+        key = potentialKey
+        digest = potentialDigest
+        size = potentialSize
+        mediaName = digest.toHexString()
+        mediaTierCdnNumber = potentialMediaTierCdnNumber
+        incrementalMac = potentialIncrementalMac
+      }
+      if (incrementalMac != null) {
+        incrementalMacChunkSize = potentialIncrementalMacChunkSize
+      }
+
+      val locatorInfo = FilePointer.LocatorInfo(
+        key = key.toByteString(),
+        digest = digest.toByteString(),
+        size = size,
+        mediaTierCdnNumber = mediaTierCdnNumber,
+        mediaName = mediaName,
+        localKey = null
+      )
+      val contentType: String = some(Generators.list("image/jpeg", "image/png"))
 
       frames += FilePointer(
-        backupLocator = backupLocator,
-        invalidAttachmentLocator = invalidAttachmentLocator,
+        invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator(),
+        locatorInfo = locatorInfo,
         contentType = contentType,
         incrementalMac = incrementalMac?.toByteString(),
-        incrementalMacChunkSize = if (incrementalMac != null) {
-          incrementalMacChunkSize
-        } else {
-          null
-        },
+        incrementalMacChunkSize = incrementalMacChunkSize,
         fileName = null,
         width = null,
         height = null,
@@ -503,10 +524,24 @@ object Generators {
       val contentType = some(Generators.list("image/jpeg", "image/png", "audio/mp3", "video/mp4", "application/pdf"))
       val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
 
+      val key: ByteString = someBytes(16).toByteString()
+      val digest = someBytes(16)
+      val size: Int = somePositiveInt()
+      val mediaName = digest.toHexString()
+      val mediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
+
+      val locatorInfo = FilePointer.LocatorInfo(
+        key = key,
+        digest = digest.toByteString(),
+        size = size,
+        mediaTierCdnNumber = mediaTierCdnNumber,
+        mediaName = mediaName,
+        localKey = null
+      )
+
       frames += FilePointer(
-        backupLocator = some(backupLocatorGenerator()),
-        attachmentLocator = null,
-        invalidAttachmentLocator = null,
+        invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator(),
+        locatorInfo = locatorInfo,
         contentType = contentType,
         incrementalMac = null,
         incrementalMacChunkSize = null,
@@ -535,36 +570,71 @@ object Generators {
     val attachmentLocatorUploadMaxTimestamp: Long = StandardFrames.BACKUP_TIME_MS
     val attachmentLocatorUploadMinTimestamp: Long = attachmentLocatorUploadMaxTimestamp - 45.days.inWholeMilliseconds
 
-    val (backupLocatorGenerator, attachmentLocatorGenerator, invalidAttachmentLocatorGenerator) = oneOf(
-      backupLocatorGenerator() as Generator<Any?>,
-      Generators.permutation {
-        frames += FilePointer.AttachmentLocator(
-          cdnKey = someNonEmptyString(),
-          cdnNumber = some(Generators.cdnNumbers()),
-          uploadTimestamp = someNonZeroTimestamp(lower = attachmentLocatorUploadMinTimestamp, upper = attachmentLocatorUploadMaxTimestamp),
-          key = someBytes(16).toByteString(),
-          digest = someBytes(16).toByteString(),
-          size = somePositiveInt()
-        )
-      },
-      Generators.single(FilePointer.InvalidAttachmentLocator())
-    )
-
     return Generators.permutation {
-      val backupLocator: FilePointer.BackupLocator? = someOneOf(backupLocatorGenerator)
-      val attachmentLocator: FilePointer.AttachmentLocator? = someOneOf(attachmentLocatorGenerator)
-      val invalidAttachmentLocator: FilePointer.InvalidAttachmentLocator? = someOneOf(invalidAttachmentLocatorGenerator)
+      val includeMediaName = someBoolean()
+      val includeTransitTierInfo = someBoolean()
+
+      val potentialKey = someBytes(16)
+      val potentialDigest = someBytes(16)
+      val potentialSize = somePositiveInt()
+      val potentialMediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
+
+      var mediaName = ""
+      var mediaTierCdnNumber: Int? = null
+      if (includeMediaName) {
+        mediaName = potentialDigest.toHexString()
+        mediaTierCdnNumber = potentialMediaTierCdnNumber
+      }
+
+      val potentialTransitCdnKey = some(Generators.nonEmptyStrings())
+      val potentialTransitCdnNumber = some(Generators.cdnNumbers())
+      val potentialTransitUploadTimestamp = someNonZeroTimestamp(
+        lower = attachmentLocatorUploadMinTimestamp,
+        upper = attachmentLocatorUploadMaxTimestamp
+      )
+
+      var transitCdnKey: String? = null
+      var transitCdnNumber: Int? = null
+      var transitUploadTimestamp: Long? = null
+      if (includeTransitTierInfo) {
+        transitCdnKey = potentialTransitCdnKey
+        transitCdnNumber = potentialTransitCdnNumber
+        transitUploadTimestamp = potentialTransitUploadTimestamp
+      }
+
+      val hasSomePointer = includeMediaName || includeTransitTierInfo
+
+      var key: ByteArray = byteArrayOf()
+      var digest: ByteArray = byteArrayOf()
+      var size = 0
+      if (hasSomePointer) {
+        key = potentialKey
+        digest = potentialDigest
+        size = potentialSize
+      }
+
+      val locatorInfo = FilePointer.LocatorInfo(
+        key = key.toByteString(),
+        digest = digest.toByteString(),
+        size = size,
+        transitCdnKey = transitCdnKey,
+        transitCdnNumber = transitCdnNumber,
+        transitTierUploadTimestamp = transitUploadTimestamp,
+        mediaTierCdnNumber = mediaTierCdnNumber,
+        mediaName = mediaName,
+        localKey = null
+      )
+
       val potentialIncrementalMac = some(Generators.bytes(16).nullable())
-      val incrementalMac = if (includeIncrementalMac && invalidAttachmentLocator == null) potentialIncrementalMac else null
+      val incrementalMac = if (includeIncrementalMac && hasSomePointer) potentialIncrementalMac else null
       val incrementalMacChunkSize: Int? = some(Generators.list(1024, 2048))
 
       val contentType = some(contentTypeGenerator)
       val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
 
       frames += FilePointer(
-        backupLocator = backupLocator,
-        attachmentLocator = attachmentLocator,
-        invalidAttachmentLocator = invalidAttachmentLocator,
+        invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator(),
+        locatorInfo = locatorInfo,
         contentType = contentType,
         incrementalMac = incrementalMac?.toByteString(),
         incrementalMacChunkSize = if (incrementalMac != null) {
@@ -577,28 +647,6 @@ object Generators {
         height = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         caption = if (includeCaption) someNullableString() else null,
         blurHash = if (includeBlurHash && blurHashSupported) some(Generators.blurHashes().nullable()) else null
-      )
-    }
-  }
-
-  private fun backupLocatorGenerator(): Generator<FilePointer.BackupLocator> {
-    return Generators.permutation {
-      val transitCdnKey = some(Generators.nonEmptyStrings().nullable())
-      val transitCdnNumber = some(Generators.cdnNumbers().nullable())
-      val digest = someBytes(16)
-
-      frames += FilePointer.BackupLocator(
-        mediaName = digest.toHexString(),
-        cdnNumber = some(Generators.cdnNumbers()),
-        key = someBytes(16).toByteString(),
-        digest = digest.toByteString(),
-        size = somePositiveInt(),
-        transitCdnNumber = if (transitCdnKey != null) {
-          transitCdnNumber
-        } else {
-          null
-        },
-        transitCdnKey = transitCdnKey
       )
     }
   }

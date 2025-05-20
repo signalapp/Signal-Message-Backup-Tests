@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -15148908
+          solid = -6607516
         },
         CustomChatColor {
           id = 2
-          solid = -13831452
+          solid = -3877931
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 312
+            angle = 347
             colors = [
-              -6201948,
-              -9003532
+              -1570527,
+              -12481143
             ]
             positions = [
               0.0,
@@ -42,26 +42,32 @@ Frame {
           blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <434bca72346a5ff97c318292bd6e73ff>
+            key = <7f372e1b97f2d8ea602ae6c88bffbb68>
+            mediaName = "434bca72346a5ff97c318292bd6e73ff"
+            size = 134861564
+          }
         }
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 1305377059
+      universalExpireTimerSeconds = 844099452
     }
-    avatarUrlPath = "https://signal.org/lnJDCHSAKhylA"
+    avatarUrlPath = "https://signal.org/DXOZYcESWutf"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true
-      subscriberId = <264eb5417dfb20d9de3b2c342e2771dbc69f3f56cf981fd64acc5040d64ea836>
+      subscriberId = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a5>
     }
-    familyName = "Rivers"
-    givenName = "Patsy"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Gallegos"
+    givenName = "Kristen"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "1234"
-    username = "shelly.01"
+    username = "sabrina.06"
     usernameLink = UsernameLink {
       color = Color.GREEN
-      entropy = <0b7e939b46b594613c7b2ffacf664a80595e2aa725b1e780a6681e10130f4bc7>
-      serverId = <0f4d11d0201e77f9ba1caec888cf6bfa>
+      entropy = <22ad4bfac6e10859fb70db9f128ab0196d6be1c6a7ed5289222d4808bdaadcf9>
+      serverId = <c733c2440c3ae62e4a5aa0bbf67baa90>
     }
   }
 }

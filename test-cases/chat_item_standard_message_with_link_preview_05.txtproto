@@ -144,18 +144,21 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1770169545286
-          description = "consectetuer verear lectus solum"
+          date = 1786170548347
+          description = "ultrices urna non"
           image = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "xxDXOZ"
-              digest = <1c11f4a53bc87b1036327e78d6bf0ffb>
-              key = <4cb7634ea9ab33f68328b1520712b5ad>
-              size = 1761157590
-              uploadTimestamp = 1714584661411
-            }
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "image/jpeg"
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <162925690d31a8ba1a7be8b3820ab936>
+              key = <db326789aebcb5a166a1e4dfbdea011a>
+              mediaName = "162925690d31a8ba1a7be8b3820ab936"
+              size = 680830668
+              transitCdnKey = "XMOBqmCd"
+              transitCdnNumber = 2
+              transitTierUploadTimestamp = 1712931481956
+            }
           }
           title = "Ridens Tamquam"
           url = "https://signal.org/OMpdiJZO"
@@ -165,13 +168,13 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1726049184982
+          sentTimestamp = 1791048979308
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1726049184983
+          sentTimestamp = 1791048979309
           sortOrder = 2
         }
       ]

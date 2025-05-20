@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -4323357
+          solid = -4506046
         },
         CustomChatColor {
           id = 2
-          solid = -4019538
+          solid = -298204
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 185
+            angle = 181
             colors = [
-              -11825771,
-              -6506482
+              -12250776,
+              -2367362
             ]
             positions = [
               0.0,
@@ -39,33 +39,34 @@ Frame {
         autoBubbleColor = AutomaticBubbleColor {}
         dimWallpaperInDarkMode = true
         wallpaperPhoto = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <5c0c5f7b97527985b715cd4f8972f428>
-            key = <3bd72e515007f15a21064b374c7c7f19>
-            mediaName = "5c0c5f7b97527985b715cd4f8972f428"
-            size = 1000441712
-          }
           contentType = "image/jpeg"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <e77bcc2f537f0b02efe86030ac2c3153>
+            key = <2cc2b48c50aefe53b3974ed91e6b4ea9>
+            mediaName = "e77bcc2f537f0b02efe86030ac2c3153"
+            size = 21713888
+          }
         }
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 264034631
+      universalExpireTimerSeconds = 1776497293
     }
-    avatarUrlPath = "https://signal.org/neLVzsX"
+    avatarUrlPath = "https://signal.org/PMVYoUEqXx"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true
-      subscriberId = <264eb5417dfb20d9de3b2c342e2771dbc69f3f56cf981fd64acc5040d64ea836>
+      subscriberId = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a5>
     }
-    familyName = "Rivers"
-    givenName = "Patsy"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Gallegos"
+    givenName = "Kristen"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "123456"
-    username = "joey.6010"
+    username = "emery.8742"
     usernameLink = UsernameLink {
       color = Color.BLUE
-      entropy = <66da53caf60c4ec900b2dee58107854a29a3b2f195b0f63bd4c8184986860917>
-      serverId = <5bc982fa3e64d7eea8973f9028fe841d>
+      entropy = <25ef73707c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d2951>
+      serverId = <4a95979def0ce9d2080db8f45d04641d>
     }
   }
 }

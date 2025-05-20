@@ -143,18 +143,25 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1743240709328
-          description = "consectetuer verear lectus solum"
+          description = "dolorum aperiri dignissim"
           image = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <fc0e29956dc1e0cd18b0df35d2dda82a>
-              key = <fd2aa72b0a038863ebb03fed8486f419>
-              mediaName = "fc0e29956dc1e0cd18b0df35d2dda82a"
-              size = 931871620
-            }
+            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "image/jpeg"
+            height = 422
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <dbd29cb42e984d652ed70996974af5a7>
+              key = <3d448eb3458c6acb7db665e567fdcb1a>
+              mediaName = "dbd29cb42e984d652ed70996974af5a7"
+              mediaTierCdnNumber = 2
+              size = 582678964
+              transitCdnKey = "XMOBqmCd"
+              transitCdnNumber = 3
+              transitTierUploadTimestamp = 1712931481956
+            }
+            width = 495
           }
-          title = "Ridens Tamquam"
+          title = "Graeco Tractatos"
           url = "https://signal.org/OMpdiJZO"
         }
       ]
@@ -162,7 +169,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1726049184982
+          sentTimestamp = 1791048979308
           sortOrder = 1
         }
       ]

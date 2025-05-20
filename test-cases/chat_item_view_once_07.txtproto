@@ -142,24 +142,6 @@ Frame {
         }
       ]
     }
-    viewOnceMessage = ViewOnceMessage {
-      attachment = MessageAttachment {
-        flag = Flag.NONE
-        pointer = FilePointer {
-          attachmentLocator = AttachmentLocator {
-            cdnKey = "TYzPC"
-            cdnNumber = 3
-            digest = <af1b499244fc7b251b65c6d3f9de9f64>
-            key = <221e8fec3522a5e4cd2f910df5668247>
-            size = 1124556685
-            uploadTimestamp = 1712947131451
-          }
-          contentType = "image/gif"
-          height = 727
-          width = 875
-        }
-        wasDownloaded = true
-      }
-    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }

@@ -120,7 +120,7 @@ Frame {
 
 Frame {
   chat = Chat {
-    expireTimerVersion = 2123148011
+    expireTimerVersion = 582678965
     id = 3
     pinnedOrder = 1
     recipientId = 4

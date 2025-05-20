@@ -142,23 +142,19 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1770169545286
-          description = "aliquip consul intellegebat neglegentur utamur"
+          date = 1757577531389
           image = FilePointer {
-            backupLocator = BackupLocator {
-              cdnNumber = 2
-              digest = <a7ed5289222d4808bdaadcf9eaa4908f>
-              key = <0c3ae62e4a5aa0bbf67baa9066da53ca>
-              mediaName = "a7ed5289222d4808bdaadcf9eaa4908f"
-              size = 259718505
-              transitCdnKey = "QNEWGrAzrHYkF"
-            }
-            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "image/png"
-            height = 1577
-            width = 2489
+            height = 3538
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <>
+              key = <>
+              mediaName = ""
+            }
+            width = 3312
           }
-          title = "Laoreet Fugit"
           url = "https://signal.org/OMpdiJZO"
         }
       ]
@@ -166,13 +162,13 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1726049184982
+          sentTimestamp = 1791048979308
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1726049184983
+          sentTimestamp = 1791048979309
           sortOrder = 2
         }
       ]

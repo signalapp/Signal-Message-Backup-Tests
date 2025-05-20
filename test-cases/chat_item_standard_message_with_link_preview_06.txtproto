@@ -143,20 +143,18 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "aliquip consul intellegebat neglegentur utamur"
+          description = "risus"
           image = FilePointer {
-            attachmentLocator = AttachmentLocator {
-              cdnKey = "cESWu"
-              cdnNumber = 2
-              digest = <01480e9e27dcdcb674f34922363753d4>
-              key = <820ab936183555ed8e40d2431d317e2d>
-              size = 1134316339
-              uploadTimestamp = 1712146640321
-            }
             blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             contentType = "image/png"
-            height = 1577
-            width = 2489
+            height = 1556
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <>
+              key = <>
+              mediaName = ""
+            }
+            width = 1777
           }
           title = "Laoreet Fugit"
           url = "https://signal.org/OMpdiJZO"

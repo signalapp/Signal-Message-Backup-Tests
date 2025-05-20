@@ -130,21 +130,21 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1683705884536
+    dateSent = 1842946157852
     directStoryReplyMessage = DirectStoryReplyMessage {
-      emoji = "👍"
+      emoji = "👩‍💻"
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1858449948308
+          sentTimestamp = 1783978971133
           sortOrder = 1
         }
       ]
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1683705884526
-      dateServerSent = 1683705884535
+      dateReceived = 1842946157842
+      dateServerSent = 1842946157851
       read = true
       sealedSender = true
     }
@@ -152,17 +152,17 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1683705825565
+        dateSent = 1842946084067
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "dicat vituperata saperet inimicus ridens labores consectetur singulis dui"
+              body = "solet ullamcorper mandamus equidem utamur metus"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1683705825555
-          dateServerSent = 1683705825564
+          dateReceived = 1842946084057
+          dateServerSent = 1842946084066
           read = true
           sealedSender = true
         }

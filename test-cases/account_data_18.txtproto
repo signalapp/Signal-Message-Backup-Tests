@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -9041347
+          solid = -7820003
         },
         CustomChatColor {
           id = 2
-          solid = -2627377
+          solid = -1309265
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 137
+            angle = 159
             colors = [
-              -15156903,
-              -448447
+              -5726839,
+              -4759389
             ]
             positions = [
               0.0,
@@ -47,6 +47,7 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
@@ -54,16 +55,16 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 390911022
+      universalExpireTimerSeconds = 314441250
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <0c4220ab396c4b8ebdefd49b44b4c8d19c47cb807844279fb4a4e927c5f36b40>
+      subscriberId = <36327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f3>
     }
-    familyName = "Hewitt"
-    givenName = "Clarice"
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    familyName = "Kramer"
+    givenName = "Janelle"
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "안녕하세요, 세계"
   }
 }

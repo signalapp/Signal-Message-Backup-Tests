@@ -141,23 +141,19 @@ Frame {
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
-        clientUuid = <8fa99e96c1484819885f787a8fd1d20d>
+        clientUuid = <ee553d0289804d228b1eb3d79549608d>
         flag = Flag.NONE
         pointer = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 2
-            digest = <994d295169f375454a95979def0ce9d2>
-            key = <5d04641dda741f81140efe703c6727a8>
-            mediaName = "994d295169f375454a95979def0ce9d2"
-            size = 1093478118
-            transitCdnKey = "pdiJZ"
+          blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+          contentType = "video/mp4"
+          height = 1799
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
           }
-          blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-          contentType = "image/png"
-          height = 1085
-          incrementalMac = <66a1e4dfbdea011a4c4f4cdd16292569>
-          incrementalMacChunkSize = 2048
-          width = 2878
+          width = 3525
         }
       }
     }

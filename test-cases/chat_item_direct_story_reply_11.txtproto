@@ -130,23 +130,27 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1808388979111
+    dateSent = 1854327129886
     directStoryReplyMessage = DirectStoryReplyMessage {
-      emoji = "👎"
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1741109005970
+          sentTimestamp = 1739598175233
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1741109005971
+          sentTimestamp = 1739598175234
           sortOrder = 2
         }
       ]
+      textReply = TextReply {
+        text = Text {
+          body = "massa nominavi senserit decore interpretaris"
+        }
+      }
     }
     outgoing = OutgoingMessageDetails {
       sendStatus = [

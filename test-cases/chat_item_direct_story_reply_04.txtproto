@@ -130,25 +130,25 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1808388979104
+    dateSent = 1854327129879
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1741109005970
+          sentTimestamp = 1739598175233
           sortOrder = 1
         }
       ]
       textReply = TextReply {
         longText = FilePointer {
-          backupLocator = BackupLocator {
-            digest = <7db665e567fdcb1ac685a8aedbd29cb4>
-            key = <2ed70996974af5a7a459650a2590efd1>
-            mediaName = "7db665e567fdcb1ac685a8aedbd29cb4"
-            size = 891929939
-          }
           contentType = "text/x-signal-plain"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <>
+            key = <>
+            mediaName = ""
+          }
         }
         text = Text {
           body = "in definitiones volutpat sagittis"

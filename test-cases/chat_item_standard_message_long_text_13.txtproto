@@ -144,22 +144,20 @@ Frame {
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
-        attachmentLocator = AttachmentLocator {
-          cdnKey = "dzHLOokMZPmj"
-          cdnNumber = 2
-          digest = <10636ce8af1b499244fc7b251b65c6d3>
-          key = <c3c226dc221e8fec3522a5e4cd2f910d>
-          size = 265383037
-          uploadTimestamp = 1714769873121
-        }
         contentType = "text/x-signal-plain"
-        fileName = "cKiDzz"
+        fileName = "dYWyYPn"
+        invalidAttachmentLocator = InvalidAttachmentLocator {}
+        locatorInfo = LocatorInfo {
+          digest = <>
+          key = <>
+          mediaName = ""
+        }
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1893972547779
+          sentTimestamp = 1737231682230
           sortOrder = 1
         }
       ]

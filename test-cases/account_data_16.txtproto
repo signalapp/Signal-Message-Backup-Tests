@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -4323357
+          solid = -4506046
         },
         CustomChatColor {
           id = 2
-          solid = -4019538
+          solid = -298204
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 185
+            angle = 181
             colors = [
-              -11825771,
-              -6506482
+              -12250776,
+              -2367362
             ]
             positions = [
               0.0,
@@ -47,6 +47,7 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
@@ -54,18 +55,18 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 264034631
+      universalExpireTimerSeconds = 1776497293
     }
-    avatarUrlPath = "https://signal.org/neLVzsX"
+    avatarUrlPath = "https://signal.org/PMVYoUEqXx"
     familyName = ""
     givenName = ""
-    profileKey = <c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd16292569>
+    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
     svrPin = "123456"
-    username = "joey.6010"
+    username = "emery.8742"
     usernameLink = UsernameLink {
       color = Color.PINK
-      entropy = <d4337a3cc4f08757f22b67999610114498749f3fd268ebfe4cb7634ea9ab33f6>
-      serverId = <0712b5adab5ce2a61c11f4a53bc87b10>
+      entropy = <570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b3d448eb3>
+      serverId = <7db665e567fdcb1ac685a8aedbd29cb4>
     }
   }
 }

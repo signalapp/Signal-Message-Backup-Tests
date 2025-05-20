@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1798056002726
+    dateSent = 1800045001418
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -147,13 +147,16 @@ Frame {
         MessageAttachment {
           flag = Flag.BORDERLESS
           pointer = FilePointer {
-            backupLocator = BackupLocator {
-              digest = <3384961f52e772aa4fd669a338fb6ddd>
-              key = <2a7eddab7869439292de6b3479d3b8d1>
-              mediaName = "3384961f52e772aa4fd669a338fb6ddd"
-              size = 1695849057
-            }
             contentType = "image/png"
+            invalidAttachmentLocator = InvalidAttachmentLocator {}
+            locatorInfo = LocatorInfo {
+              digest = <0d02ce11b1a6608635a5eb695456cf27>
+              key = <154356f8228ce13806bcb400f2316eac>
+              mediaName = "0d02ce11b1a6608635a5eb695456cf27"
+              size = 564564811
+              transitCdnKey = "cDiwAmYyIl"
+              transitTierUploadTimestamp = 1712857520890
+            }
           }
         }
       ]
@@ -161,7 +164,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1826383505455
+          sentTimestamp = 1789679693581
           sortOrder = 1
         }
       ]

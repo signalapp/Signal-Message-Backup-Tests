@@ -146,19 +146,18 @@ Frame {
       attachment = MessageAttachment {
         flag = Flag.NONE
         pointer = FilePointer {
-          backupLocator = BackupLocator {
-            cdnNumber = 3
-            digest = <7cb4446159fb651a953525dd5da9aa79>
-            key = <ca20483ef7a05a9615d4adbdf6985c94>
-            mediaName = "7cb4446159fb651a953525dd5da9aa79"
-            size = 957662124
-            transitCdnKey = "YWfDTgpIJ"
+          blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
+          contentType = "image/jpeg"
+          invalidAttachmentLocator = InvalidAttachmentLocator {}
+          locatorInfo = LocatorInfo {
+            digest = <58493e1bb0268c5da867e8b454754359>
+            key = <fbd8a21f072534d5f767baaec4d38bdc>
+            mediaName = "58493e1bb0268c5da867e8b454754359"
+            size = 1970043211
+            transitCdnKey = "IJqySkLQGERt"
             transitCdnNumber = 2
+            transitTierUploadTimestamp = 1714542436278
           }
-          blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-          contentType = "image/gif"
-          height = 727
-          width = 875
         }
         wasDownloaded = true
       }

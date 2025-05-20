@@ -120,23 +120,21 @@ Frame {
 
 Frame {
   chat = Chat {
-    expireTimerVersion = 2123148011
+    expireTimerVersion = 582678965
     id = 3
     pinnedOrder = 1
     recipientId = 4
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.SOLID_VERMILION
       wallpaperPhoto = FilePointer {
-        backupLocator = BackupLocator {
-          digest = <6dc1e0cd18b0df35d2dda82a4ffea322>
-          key = <0a038863ebb03fed8486f4196b6e656c>
-          mediaName = "6dc1e0cd18b0df35d2dda82a4ffea322"
-          size = 1000441712
-        }
         blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
         contentType = "image/png"
-        incrementalMac = <59fb651a953525dd5da9aa792ff23f31>
-        incrementalMacChunkSize = 2048
+        invalidAttachmentLocator = InvalidAttachmentLocator {}
+        locatorInfo = LocatorInfo {
+          digest = <>
+          key = <>
+          mediaName = ""
+        }
       }
     }
   }
