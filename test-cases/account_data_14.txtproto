@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -6607516
+          solid = -7668588
         },
         CustomChatColor {
           id = 2
-          solid = -3877931
+          solid = -5756433
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 347
+            angle = 165
             colors = [
-              -1570527,
-              -12481143
+              -8820984,
+              -792050
             ]
             positions = [
               0.0,
@@ -55,16 +55,20 @@ Frame {
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 844099452
+      universalExpireTimerSeconds = 1049338212
     }
-    avatarUrlPath = "https://signal.org/DXOZYcESWutf"
+    avatarUrlPath = "https://signal.org/taPHwAvo"
+    backupsSubscriberData = IAPSubscriberData {
+      purchaseToken = "PMVYoUEqXx"
+      subscriberId = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ff>
+    }
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <36327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f3>
+      subscriberId = <0e366ee6b4982ddc1b1b12d3edc997f4505b2d0c464633445cb1f9a68a644847>
     }
-    familyName = "Kramer"
-    givenName = "Janelle"
-    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
+    familyName = "Hyde"
+    givenName = "Evan"
+    profileKey = <ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795a>
     svrPin = ""
     username = "sabrina.06"
     usernameLink = UsernameLink {

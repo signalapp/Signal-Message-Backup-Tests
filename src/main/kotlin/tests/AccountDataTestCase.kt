@@ -40,9 +40,23 @@ object AccountDataTestCase : TestCase("account_data") {
         color = someEnum(AccountData.UsernameLink.Color::class.java, excluding = AccountData.UsernameLink.Color.UNKNOWN)
       )
     }.nullable()
-
     val usernameLink = some(usernameLinkGenerator)
     val username = some(Generators.usernames())
+
+    val backupsSubscriberDataGenerator: Generator<AccountData.IAPSubscriberData?> = Generators.permutation<AccountData.IAPSubscriberData?> {
+      val (purchaseToken, originalTransactionId) = oneOf(
+        Generators.nonEmptyStrings() as Generator<Any?>,
+        Generators.longs(lower = 1) as Generator<Any?>
+      )
+
+      frames += AccountData.IAPSubscriberData(
+        subscriberId = someBytes(32).toByteString(),
+        purchaseToken = someOneOf(purchaseToken),
+        originalTransactionId = someOneOf(originalTransactionId)
+      )
+    }.nullable()
+    val backupsSubscriberData = some(backupsSubscriberDataGenerator)
+    val optimizeOnDeviceStorage = someBoolean()
 
     frames += Frame(
       account = AccountData(
@@ -64,14 +78,6 @@ object AccountDataTestCase : TestCase("account_data") {
             manuallyCancelled = someBoolean()
           )
         },
-        // TODO Currently in flux, unclear if this is even needed anymore
-//        backupsSubscriberData = someNullablePermutation {
-//          frames += AccountData.SubscriberData(
-//            subscriberId = someBytes(32).toByteString(),
-//            currencyCode = some(Generators.list("USD", "EUR", "GBP")),
-//            manuallyCancelled = someBoolean()
-//          )
-//        },
         accountSettings = AccountData.AccountSettings(
           readReceipts = someBoolean(),
           sealedSenderIndicators = someBoolean(),
@@ -118,8 +124,14 @@ object AccountDataTestCase : TestCase("account_data") {
               )
             )
           ),
-          optimizeOnDeviceStorage = someBoolean()
-        )
+          // This setting is only available if we are subscribed to Backups.
+          optimizeOnDeviceStorage = if (backupsSubscriberData != null) {
+            optimizeOnDeviceStorage
+          } else {
+            false
+          }
+        ),
+        backupsSubscriberData = backupsSubscriberData
       )
     )
 

@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -6607516
+          solid = -7668588
         },
         CustomChatColor {
           id = 2
-          solid = -3877931
+          solid = -5756433
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 347
+            angle = 165
             colors = [
-              -1570527,
-              -12481143
+              -8820984,
+              -792050
             ]
             positions = [
               0.0,
@@ -41,17 +41,21 @@ Frame {
         wallpaperPreset = WallpaperPreset.GRADIENT_IRIDESCENT
       }
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 844099452
+      universalExpireTimerSeconds = 1049338212
     }
-    avatarUrlPath = "https://signal.org/DXOZYcESWutf"
+    avatarUrlPath = "https://signal.org/taPHwAvo"
+    backupsSubscriberData = IAPSubscriberData {
+      originalTransactionId = 6295245009113704931
+      subscriberId = <f2eff4ef03129ecfd189c9f35a386c4aa68fd418e657fd8cab0b80bf8bf32b9d>
+    }
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true
-      subscriberId = <af4b15d212e5d730c3c226dc221e8fec3522a5e4cd2f910df566824710636ce8>
+      subscriberId = <ea8e9fff77a691f7effe2df539419f38d11a00b7a2c95354552e30c89a57440e>
     }
-    familyName = "Woods"
-    givenName = "Mavis"
-    profileKey = <46d547630e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b>
+    familyName = "Snow"
+    givenName = "Jasmine"
+    profileKey = <ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795a>
     svrPin = "안녕하세요, 세계"
     username = "sabrina.06"
     usernameLink = UsernameLink {
