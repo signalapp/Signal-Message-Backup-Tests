@@ -44,7 +44,6 @@ Frame {
           locatorInfo = LocatorInfo {
             digest = <e77bcc2f537f0b02efe86030ac2c3153>
             key = <2cc2b48c50aefe53b3974ed91e6b4ea9>
-            mediaName = "e77bcc2f537f0b02efe86030ac2c3153"
             size = 21713888
           }
         }

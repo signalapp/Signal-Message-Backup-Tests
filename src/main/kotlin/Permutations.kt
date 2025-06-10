@@ -388,7 +388,6 @@ object Generators {
       var key: ByteArray = byteArrayOf()
       var digest: ByteArray = byteArrayOf()
       var size = 0
-      var mediaName = ""
       var mediaTierCdnNumber: Int? = null
       var incrementalMac: ByteArray? = null
       var incrementalMacChunkSize: Int? = null
@@ -396,7 +395,6 @@ object Generators {
         key = potentialKey
         digest = potentialDigest
         size = potentialSize
-        mediaName = digest.toHexString()
         mediaTierCdnNumber = potentialMediaTierCdnNumber
         incrementalMac = potentialIncrementalMac
       }
@@ -409,7 +407,6 @@ object Generators {
         digest = digest.toByteString(),
         size = size,
         mediaTierCdnNumber = mediaTierCdnNumber,
-        mediaName = mediaName,
         localKey = null
       )
       val contentType: String = some(Generators.list("image/jpeg", "image/png"))
@@ -527,7 +524,6 @@ object Generators {
       val key: ByteString = someBytes(16).toByteString()
       val digest = someBytes(16)
       val size: Int = somePositiveInt()
-      val mediaName = digest.toHexString()
       val mediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
 
       val locatorInfo = FilePointer.LocatorInfo(
@@ -535,7 +531,6 @@ object Generators {
         digest = digest.toByteString(),
         size = size,
         mediaTierCdnNumber = mediaTierCdnNumber,
-        mediaName = mediaName,
         localKey = null
       )
 
@@ -571,19 +566,24 @@ object Generators {
     val attachmentLocatorUploadMinTimestamp: Long = attachmentLocatorUploadMaxTimestamp - 45.days.inWholeMilliseconds
 
     return Generators.permutation {
-      val includeMediaName = someBoolean()
+      val previouslyDownloadedAndValidated = someBoolean()
       val includeTransitTierInfo = someBoolean()
 
       val potentialKey = someBytes(16)
       val potentialDigest = someBytes(16)
+      val potentialPlaintextHash = someBytes(32)
       val potentialSize = somePositiveInt()
       val potentialMediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
 
-      var mediaName = ""
+      var plaintextHash: ByteArray? = null
+      var digest: ByteArray? = null
       var mediaTierCdnNumber: Int? = null
-      if (includeMediaName) {
-        mediaName = potentialDigest.toHexString()
+
+      if (previouslyDownloadedAndValidated) {
+        plaintextHash = potentialPlaintextHash
         mediaTierCdnNumber = potentialMediaTierCdnNumber
+      } else {
+        digest = potentialDigest
       }
 
       val potentialTransitCdnKey = some(Generators.nonEmptyStrings())
@@ -602,26 +602,24 @@ object Generators {
         transitUploadTimestamp = potentialTransitUploadTimestamp
       }
 
-      val hasSomePointer = includeMediaName || includeTransitTierInfo
+      val hasSomePointer = previouslyDownloadedAndValidated || includeTransitTierInfo
 
       var key: ByteArray = byteArrayOf()
-      var digest: ByteArray = byteArrayOf()
       var size = 0
       if (hasSomePointer) {
         key = potentialKey
-        digest = potentialDigest
         size = potentialSize
       }
 
       val locatorInfo = FilePointer.LocatorInfo(
         key = key.toByteString(),
-        digest = digest.toByteString(),
+        digest = digest?.toByteString(),
+        plaintextHash = plaintextHash?.toByteString(),
         size = size,
         transitCdnKey = transitCdnKey,
         transitCdnNumber = transitCdnNumber,
         transitTierUploadTimestamp = transitUploadTimestamp,
         mediaTierCdnNumber = mediaTierCdnNumber,
-        mediaName = mediaName,
         localKey = null
       )
 

@@ -130,20 +130,20 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1854327129883
+    dateSent = 1854312318246
     directStoryReplyMessage = DirectStoryReplyMessage {
       emoji = "👎"
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1739598175233
+          sentTimestamp = 1802397995141
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1739598175234
+          sentTimestamp = 1802397995142
           sortOrder = 2
         }
       ]

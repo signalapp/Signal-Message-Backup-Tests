@@ -145,20 +145,19 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1786170548347
-          description = "ultrices urna non"
+          date = 1798776144156
+          description = "sapien"
           image = FilePointer {
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <162925690d31a8ba1a7be8b3820ab936>
-              key = <db326789aebcb5a166a1e4dfbdea011a>
-              mediaName = "162925690d31a8ba1a7be8b3820ab936"
-              size = 680830668
-              transitCdnKey = "XMOBqmCd"
+              key = <0c4220ab396c4b8ebdefd49b44b4c8d1>
+              plaintextHash = <5df7981e10411f6eea6a34842a849b36033d55ee22ad8089d8b31e0b8d604995>
+              size = 1517940842
+              transitCdnKey = "WyYPnka"
               transitCdnNumber = 2
-              transitTierUploadTimestamp = 1712931481956
+              transitTierUploadTimestamp = 1714733026458
             }
           }
           title = "Ridens Tamquam"

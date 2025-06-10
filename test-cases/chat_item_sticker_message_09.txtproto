@@ -146,15 +146,14 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/apng"
-          fileName = "qmCdYWyYPnka"
-          height = 1777
+          fileName = "BHCZROtEhcCMe"
+          height = 4004
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
+            digest = <eaa4908fc733c2440c3ae62e4a5aa0bb>
             key = <>
-            mediaName = ""
           }
-          width = 3795
+          width = 2878
         }
         emoji = "👩‍💻"
         packId = <e85604e4e3670f77ebf5e721149f599d>

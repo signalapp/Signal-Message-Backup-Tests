@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1854327129875
+    dateSent = 1854312318238
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         text = Text {

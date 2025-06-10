@@ -140,18 +140,17 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/png"
-          height = 893
+          height = 1049
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
+            digest = <f7b77f1dca19e2e880bcc6f6757877ca>
             key = <>
-            mediaName = ""
           }
-          width = 3916
+          width = 2437
         }
         emoji = "👍🏾"
-        packId = <248136cb2b86dd3b56a4d17627ffa6db>
-        packKey = <4aa948b6797ba7de47a20d4a44322a1ce6620b0ad5c88e3954b8d0dcccf76675>
+        packId = <1df2294371cbeb158753f1cefd272e36>
+        packKey = <7710c62309d1b72b18b044b442726becc8e98675fe735bc043f8538d900e579a>
       }
     }
   }
@@ -161,7 +160,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464618
+    dateSent = 1669001252462
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -183,13 +182,12 @@ Frame {
                 contentType = "image/jpeg"
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <5d991b04b4dc051b9ea2eb0e1f571757>
-                  key = <a41aaa84b2faa55ce06caff819bb7395>
-                  mediaName = "5d991b04b4dc051b9ea2eb0e1f571757"
-                  size = 508240466
-                  transitCdnKey = "KFgbkCrm"
+                  key = <e5801d9aecc167c4229055e787921bed>
+                  plaintextHash = <46dd65b6669821f980632341862c9d91923202fbf124c405ff8493c2669771ce>
+                  size = 1412830504
+                  transitCdnKey = "qMwwPH"
                   transitCdnNumber = 2
-                  transitTierUploadTimestamp = 1711987805477
+                  transitTierUploadTimestamp = 1714433631019
                 }
               }
               wasDownloaded = true
@@ -204,12 +202,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1753730775131
+          sentTimestamp = 1766954754335
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "oratio neque decore wisi regione dico mauris curae"
+        body = "dicta"
       }
     }
   }

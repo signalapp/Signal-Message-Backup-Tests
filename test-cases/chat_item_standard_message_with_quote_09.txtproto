@@ -140,24 +140,23 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/webp"
-          fileName = "qqaJPpU"
-          height = 3334
+          fileName = "wqBta"
+          height = 4031
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <9da8b7afc56db49d1c31fc998ff6ebb7>
-            key = <1315a70b68fc42549fb3dc833e8e3ae0>
-            mediaName = "9da8b7afc56db49d1c31fc998ff6ebb7"
+            key = <d979740c4882a1dde2cef4c6e233e839>
             mediaTierCdnNumber = 2
-            size = 1718218228
-            transitCdnKey = "VrgohtSR"
+            plaintextHash = <17fab28880cbd50672d55d2122af4da88c9f2f7aa16a7adf1fea1a7573892ef6>
+            size = 333407461
+            transitCdnKey = "lCZEmaXjv"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1713705932662
+            transitTierUploadTimestamp = 1713669651913
           }
-          width = 35
+          width = 468
         }
         emoji = "👎"
-        packId = <03e37119321da6d448263a1881ce7ad8>
-        packKey = <005765a2278f1a4a02600f559e16c84ad5408b23a1d75afe893a9c1f9fefcb04>
+        packId = <4f5dd4f8bc93638b680c6a1cb509486e>
+        packKey = <015fb349b06025e8a0cf42bea8295c37d911cd7a98dadbb35f372d7196febb08>
       }
     }
   }
@@ -167,7 +166,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464617
+    dateSent = 1669001252461
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -189,14 +188,13 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 2385
+                height = 1238
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <>
+                  digest = <70aca04bc379f8ee462ddf669e05a8f6>
                   key = <>
-                  mediaName = ""
                 }
-                width = 2688
+                width = 1752
               }
             }
           }
@@ -206,7 +204,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
+        body = "interpretaris quisque reprehendunt pulvinar quam urbanitas elit eleifend"
       }
     }
   }

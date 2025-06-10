@@ -147,36 +147,34 @@ Frame {
           pointer = FilePointer {
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "video/mp4"
-            fileName = "cCMeejhnSf"
+            fileName = "gFokLHLm"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <e660b3fbea8e9fff77a691f7effe2df5>
-              key = <edc997f4505b2d0c464633445cb1f9a6>
-              mediaName = "e660b3fbea8e9fff77a691f7effe2df5"
-              size = 1083161197
-              transitCdnKey = "CdYWy"
+              key = <d4acf856cb64e960fcd58ca580b80888>
+              plaintextHash = <da4e86e6a6eeb98b207d85f0b413e071743cee3d4bece41ec92ea59e67f1c2ef>
+              size = 390746787
+              transitCdnKey = "aWIBH"
               transitCdnNumber = 2
-              transitTierUploadTimestamp = 1715089586241
+              transitTierUploadTimestamp = 1714192135940
             }
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
+          clientUuid = <daa58a3b374e4bc088686ad3cf49aa4b>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             caption = ""
             contentType = "image/jpeg"
-            fileName = "gFokLHLm"
-            height = 411
+            fileName = "LxdKPN"
+            height = 750
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
+              digest = <8aed884a50a53b5413559bd194275d6f>
               key = <>
-              mediaName = ""
             }
-            width = 4004
+            width = 3997
           }
         },
         MessageAttachment {
@@ -185,12 +183,11 @@ Frame {
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <994d295169f375454a95979def0ce9d2>
               key = <a78a536a99eb27976fb2a59dcf3429a0>
-              mediaName = "994d295169f375454a95979def0ce9d2"
-              size = 246546990
-              transitCdnKey = "CdYWy"
-              transitTierUploadTimestamp = 1715089586241
+              plaintextHash = <5d04641dda741f81140efe703c6727a8d5e0f3b49a458da0d95fde0154d933c2>
+              size = 2060227180
+              transitCdnKey = "aWIBH"
+              transitTierUploadTimestamp = 1714192135940
             }
           }
           wasDownloaded = true
@@ -200,7 +197,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1710490134292
+          sentTimestamp = 1864418929641
           sortOrder = 1
         }
       ]

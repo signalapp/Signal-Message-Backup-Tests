@@ -135,15 +135,14 @@ Frame {
         avatar = FilePointer {
           blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
           contentType = "image/png"
-          fileName = "GQDDfXFi"
-          height = 105
+          fileName = "susanngyzNxzc"
+          height = 521
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
+            digest = <284843e2405b83fe8e81fccbfae5bce8>
             key = <>
-            mediaName = ""
           }
-          width = 2552
+          width = 1579
         }
         name = Name {
           familyName = "Clayton"

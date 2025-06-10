@@ -141,19 +141,18 @@ Frame {
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
-        clientUuid = <ee553d0289804d228b1eb3d79549608d>
+        clientUuid = <8cfd57e5bf804bab8d2bf38b56d13082>
         flag = Flag.NONE
         pointer = FilePointer {
           blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
           contentType = "image/png"
-          height = 1836
+          height = 1701
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
+            digest = <ef0ce9d2080db8f45d04641dda741f81>
             key = <>
-            mediaName = ""
           }
-          width = 3655
+          width = 3603
         }
       }
     }

@@ -130,37 +130,37 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1697069138811
+    dateSent = 1704930542309
     directStoryReplyMessage = DirectStoryReplyMessage {
       emoji = "👍"
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1783978971133
+          sentTimestamp = 1797243572803
           sortOrder = 1
         }
       ]
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1697069138801
-      dateServerSent = 1697069138810
+      dateReceived = 1704930542299
+      dateServerSent = 1704930542308
     }
     revisions = [
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1697069065026
+        dateSent = 1704930494641
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "solet ullamcorper mandamus equidem utamur metus"
+              body = "eam scelerisque dictas purus tantas"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1697069065016
-          dateServerSent = 1697069065025
+          dateReceived = 1704930494631
+          dateServerSent = 1704930494640
           read = true
           sealedSender = true
         }
@@ -168,33 +168,33 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1697069065027
+        dateSent = 1704930494642
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "aliquip"
+              body = "eam veri"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1697069065017
-          dateServerSent = 1697069065026
+          dateReceived = 1704930494632
+          dateServerSent = 1704930494641
         }
       },
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1697069065028
+        dateSent = 1704930494643
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "curabitur nibh option consectetur nam intellegat elit"
+              body = "saperet habitasse quaeque intellegat dissentiunt populo imperdiet convenire noster"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1697069065018
-          dateServerSent = 1697069065027
+          dateReceived = 1704930494633
+          dateServerSent = 1704930494642
           read = true
           sealedSender = true
         }

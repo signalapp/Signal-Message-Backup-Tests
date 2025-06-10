@@ -143,12 +143,11 @@ Frame {
           contentType = "image/png"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <d55d99f6f871f8839a9ce2d8d36859b9>
             key = <7c318292bd6e73ff9022c6fa6faebb15>
-            mediaName = "d55d99f6f871f8839a9ce2d8d36859b9"
-            size = 1093478118
-            transitCdnKey = "CQWuu"
-            transitTierUploadTimestamp = 1711790123967
+            plaintextHash = <cc4d5a8259872972fc853ca658a12027e42941e2e1f45a96bc4c7227ad071086>
+            size = 1222780618
+            transitCdnKey = "mCqQNEWGrAz"
+            transitTierUploadTimestamp = 1712830274050
           }
         }
         emoji = "💀"
