@@ -142,11 +142,12 @@ Frame {
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
+            digest = <0a0f6193b4fffb255879953e257ab947>
             key = <e85604e4e3670f77ebf5e721149f599d>
-            plaintextHash = <7f372e1b97f2d8ea602ae6c88bffbb6878d9cd54434bca72346a5ff97c318292>
-            size = 2103644488
-            transitCdnKey = "ERtwSQu"
-            transitTierUploadTimestamp = 1714939642912
+            mediaName = "0a0f6193b4fffb255879953e257ab947"
+            size = 228006847
+            transitCdnKey = "IJqySkLQGERt"
+            transitTierUploadTimestamp = 1714542436278
           }
         }
         wasDownloaded = true

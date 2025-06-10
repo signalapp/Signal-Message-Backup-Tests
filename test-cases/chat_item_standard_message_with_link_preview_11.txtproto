@@ -142,17 +142,18 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1840177933779
+          date = 1757577531389
           image = FilePointer {
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "image/png"
-            height = 2373
+            height = 3538
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <8db57633fa5483f31f78622caf4b15d2>
+              digest = <>
               key = <>
+              mediaName = ""
             }
-            width = 996
+            width = 3312
           }
           url = "https://signal.org/OMpdiJZO"
         }
@@ -161,13 +162,13 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1878621438748
+          sentTimestamp = 1791048979308
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1878621438749
+          sentTimestamp = 1791048979309
           sortOrder = 2
         }
       ]

@@ -145,18 +145,19 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <daa58a3b374e4bc088686ad3cf49aa4b>
+          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "ETYzPCvxAOiiq"
+            caption = "TWpTUET"
             contentType = "audio/mp3"
-            height = 2314
+            height = 2197
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <11d6299d176b795affa4eb1d534530a4>
+              digest = <>
               key = <>
+              mediaName = ""
             }
-            width = 1100
+            width = 2557
           }
         }
       ]

@@ -138,6 +138,7 @@ Frame {
         locatorInfo = LocatorInfo {
           digest = <80f6e1c9dbd14b48236d757f2705f484>
           key = <031ee7c9761a278e9730ff2a7b4eb31e>
+          mediaName = "80f6e1c9dbd14b48236d757f2705f484"
           mediaTierCdnNumber = 2
           size = 1147991908
         }

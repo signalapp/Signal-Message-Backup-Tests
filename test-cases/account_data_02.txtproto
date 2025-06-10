@@ -44,6 +44,7 @@ Frame {
           locatorInfo = LocatorInfo {
             digest = <>
             key = <>
+            mediaName = ""
           }
         }
       }

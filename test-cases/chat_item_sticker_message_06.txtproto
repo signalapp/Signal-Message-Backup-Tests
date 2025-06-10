@@ -144,19 +144,20 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/webp"
-          fileName = "jhnSfTgFokL"
-          height = 1424
+          fileName = "IBHCZ"
+          height = 495
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <3c7b2ffacf664a80595e2aa725b1e780>
+            digest = <83c9e903fcd89432f89fb1eaa7865695>
+            key = <974af5a7a459650a2590efd18c249edb>
+            mediaName = "83c9e903fcd89432f89fb1eaa7865695"
             mediaTierCdnNumber = 2
-            plaintextHash = <88cf6bfa88e3f24a21a78511518391fbc5b26db646e8dc0a531c93c2fbd8a21f>
-            size = 1574910277
-            transitCdnKey = "mCqQNEWGrAz"
+            size = 1394492158
+            transitCdnKey = "CQWuu"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1712830274050
+            transitTierUploadTimestamp = 1711790123967
           }
-          width = 3478
+          width = 415
         }
         emoji = "👍"
         packId = <e85604e4e3670f77ebf5e721149f599d>

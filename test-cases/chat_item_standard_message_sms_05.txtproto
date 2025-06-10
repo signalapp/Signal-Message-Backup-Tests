@@ -152,6 +152,7 @@ Frame {
             locatorInfo = LocatorInfo {
               digest = <59633d69d55d99f6f871f8839a9ce2d8>
               key = <346a5ff97c318292bd6e73ff9022c6fa>
+              mediaName = "59633d69d55d99f6f871f8839a9ce2d8"
               size = 761879400
             }
           }
@@ -168,6 +169,7 @@ Frame {
             locatorInfo = LocatorInfo {
               digest = <d95fde0154d933c20d1a04ced92499f5>
               key = <da741f81140efe703c6727a8d5e0f3b4>
+              mediaName = "d95fde0154d933c20d1a04ced92499f5"
               size = 1093478118
             }
             width = 1298
@@ -183,6 +185,7 @@ Frame {
             locatorInfo = LocatorInfo {
               digest = <877862d96ce3c17322ad4bfac6e10859>
               key = <32d8456e7027634ab98b2bedfeba4948>
+              mediaName = "877862d96ce3c17322ad4bfac6e10859"
               mediaTierCdnNumber = 2
               size = 957662124
             }
@@ -200,6 +203,7 @@ Frame {
             locatorInfo = LocatorInfo {
               digest = <67fdcb1ac685a8aedbd29cb42e984d65>
               key = <696ab01a75f6908b3d448eb3458c6acb>
+              mediaName = "67fdcb1ac685a8aedbd29cb42e984d65"
               mediaTierCdnNumber = 3
               size = 761879400
             }

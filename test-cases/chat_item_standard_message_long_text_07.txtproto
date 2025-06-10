@@ -147,15 +147,16 @@ Frame {
         contentType = "text/x-signal-plain"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          digest = <74f34922363753d413b462631f8eb741>
+          digest = <>
           key = <>
+          mediaName = ""
         }
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1664604943965
+          sentTimestamp = 1737231682230
           sortOrder = 1
         }
       ]

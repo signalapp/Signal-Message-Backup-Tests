@@ -143,22 +143,23 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "turpis eget simul dolor habitant euripidis"
+          description = "dolorum aperiri dignissim"
           image = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "image/jpeg"
-            height = 3034
+            height = 422
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              key = <b5a5bfd31bbf0e8674ca8dec9544987b>
+              digest = <dbd29cb42e984d652ed70996974af5a7>
+              key = <3d448eb3458c6acb7db665e567fdcb1a>
+              mediaName = "dbd29cb42e984d652ed70996974af5a7"
               mediaTierCdnNumber = 2
-              plaintextHash = <0e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b46b59461>
-              size = 1346806477
-              transitCdnKey = "WyYPnka"
+              size = 582678964
+              transitCdnKey = "XMOBqmCd"
               transitCdnNumber = 3
-              transitTierUploadTimestamp = 1714733026458
+              transitTierUploadTimestamp = 1712931481956
             }
-            width = 787
+            width = 495
           }
           title = "Graeco Tractatos"
           url = "https://signal.org/OMpdiJZO"
@@ -168,7 +169,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1878621438748
+          sentTimestamp = 1791048979308
           sortOrder = 1
         }
       ]

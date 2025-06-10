@@ -144,11 +144,12 @@ Frame {
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
+              digest = <149f599dab4f9c8a0a0f6193b4fffb25>
               key = <36106eec0da607bfe85604e4e3670f77>
-              plaintextHash = <257ab94747b56ae57f372e1b97f2d8ea602ae6c88bffbb6878d9cd54434bca72>
-              size = 1229002942
-              transitCdnKey = "QGERtw"
-              transitTierUploadTimestamp = 1712052699146
+              mediaName = "149f599dab4f9c8a0a0f6193b4fffb25"
+              size = 601668882
+              transitCdnKey = "gpIJqy"
+              transitTierUploadTimestamp = 1714708939862
             }
           }
           wasDownloaded = true
@@ -172,7 +173,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1669001252453
+    dateSent = 1714038464609
     incoming = IncomingMessageDetails {
       dateReceived = 1702291826270
       dateServerSent = 1794124103202
@@ -187,13 +188,14 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
-                height = 1578
+                height = 330
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <5d0f81b5ed5b783474d29263d258add1>
+                  digest = <>
                   key = <>
+                  mediaName = ""
                 }
-                width = 3013
+                width = 2168
               }
             }
           }
@@ -216,12 +218,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1766954754335
+          sentTimestamp = 1753730775131
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "dicta"
+        body = "oratio neque decore wisi regione dico mauris curae"
       }
     }
   }

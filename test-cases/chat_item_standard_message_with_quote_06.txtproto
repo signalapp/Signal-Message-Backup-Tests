@@ -156,7 +156,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1669001252458
+    dateSent = 1714038464614
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -176,7 +176,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "interpretaris quisque reprehendunt pulvinar quam urbanitas elit eleifend"
+        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
       }
     }
   }

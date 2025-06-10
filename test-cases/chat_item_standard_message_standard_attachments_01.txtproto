@@ -138,57 +138,60 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <daa58a3b374e4bc088686ad3cf49aa4b>
+          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "gFokLHLm"
-            height = 750
+            fileName = "cCMeejhnSf"
+            height = 411
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <974af5a7a459650a2590efd18c249edb>
+              digest = <>
               key = <>
+              mediaName = ""
             }
-            width = 3997
+            width = 4004
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "LUUkKGTWpT"
+            caption = "uFXypjDLUUkK"
             contentType = "image/gif"
-            fileName = "LxdKPN"
-            height = 3002
+            fileName = "gFokLHLm"
+            height = 3182
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              key = <363753d413b462631f8eb741383ccf36>
+              digest = <c3c226dc221e8fec3522a5e4cd2f910d>
+              key = <8db57633fa5483f31f78622caf4b15d2>
+              mediaName = "c3c226dc221e8fec3522a5e4cd2f910d"
               mediaTierCdnNumber = 2
-              plaintextHash = <2dcd51a027f66df3e403f1bdf1199c78f4a921363af79e298cfcf2491a96e707>
-              size = 1720027595
-              transitCdnKey = "aWIBH"
+              size = 947848970
+              transitCdnKey = "CdYWy"
               transitCdnNumber = 3
-              transitTierUploadTimestamp = 1714192135940
+              transitTierUploadTimestamp = 1715089586241
             }
-            width = 2297
+            width = 1424
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <daa58a3b374e4bc088686ad3cf49aa4b>
+          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "ETYzPCvxAOiiq"
+            caption = "TWpTUET"
             contentType = "audio/mp3"
-            height = 2314
+            height = 2197
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <11d6299d176b795affa4eb1d534530a4>
+              digest = <>
               key = <>
+              mediaName = ""
             }
-            width = 1100
+            width = 2557
           }
         }
       ]
@@ -196,7 +199,7 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1864418929641
+          sentTimestamp = 1710490134292
           sortOrder = 1
         }
       ]

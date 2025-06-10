@@ -144,11 +144,12 @@ Frame {
             contentType = "audio/mp3"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              key = <1127c1aadefcb84217d91c57a069ec8a>
-              plaintextHash = <4600285e82b747ee35c20449c30ba2141132b9f6a650c927ad3da9bac6b6ded0>
-              size = 186829551
-              transitCdnKey = "pvWXxhPwLQ"
-              transitTierUploadTimestamp = 1714020387060
+              digest = <415927e5e905a65cf1e3dc3854637d61>
+              key = <6c16ee4958a6182835d776e1b9efa859>
+              mediaName = "415927e5e905a65cf1e3dc3854637d61"
+              size = 464850599
+              transitCdnKey = "IZokXAtYfRj"
+              transitTierUploadTimestamp = 1713506558146
             }
           }
           wasDownloaded = true
@@ -162,7 +163,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1669001252455
+    dateSent = 1714038464611
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -184,13 +185,14 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 1238
+                height = 2385
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <70aca04bc379f8ee462ddf669e05a8f6>
+                  digest = <>
                   key = <>
+                  mediaName = ""
                 }
-                width = 1752
+                width = 2688
               }
             }
           }
@@ -200,7 +202,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "interpretaris quisque reprehendunt pulvinar quam urbanitas elit eleifend"
+        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
       }
     }
   }

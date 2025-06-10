@@ -146,27 +146,28 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1908415279914
+          sentTimestamp = 1738568507738
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1908415279915
+          sentTimestamp = 1738568507739
           sortOrder = 2
         }
       ]
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/apng"
-          fileName = "BHCZROtEhcCMe"
-          height = 4004
+          fileName = "qmCdYWyYPnka"
+          height = 1777
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <eaa4908fc733c2440c3ae62e4a5aa0bb>
+            digest = <>
             key = <>
+            mediaName = ""
           }
-          width = 2878
+          width = 3795
         }
         emoji = "💀"
         packId = <e85604e4e3670f77ebf5e721149f599d>

@@ -148,18 +148,19 @@ Frame {
         pointer = FilePointer {
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/gif"
-          height = 2418
+          height = 3603
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <f67baa9066da53caf60c4ec900b2dee5>
+            digest = <7027634ab98b2bedfeba4948ff5ee0b3>
+            key = <15d4adbdf6985c94b6633322a1ff1c97>
+            mediaName = "7027634ab98b2bedfeba4948ff5ee0b3"
             mediaTierCdnNumber = 2
-            plaintextHash = <5bc982fa3e64d7eea8973f9028fe841d9e2ff1cb589bfcfd570e0a10b620d15a>
-            size = 882815404
-            transitCdnKey = "ERtwSQu"
+            size = 1685263664
+            transitCdnKey = "IJqySkLQGERt"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1714939642912
+            transitTierUploadTimestamp = 1714542436278
           }
-          width = 1799
+          width = 1115
         }
         wasDownloaded = true
       }

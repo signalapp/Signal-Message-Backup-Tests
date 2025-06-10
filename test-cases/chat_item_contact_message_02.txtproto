@@ -159,14 +159,15 @@ Frame {
         avatar = FilePointer {
           blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
           contentType = "image/png"
-          fileName = "XFiONBRKCi"
-          height = 521
+          fileName = "yaEqYS"
+          height = 105
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <eddfc099729df40349b8e59cb677e456>
+            digest = <>
             key = <>
+            mediaName = ""
           }
-          width = 1579
+          width = 2552
         }
         email = [
           Email {

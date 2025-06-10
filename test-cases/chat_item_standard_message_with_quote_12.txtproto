@@ -132,7 +132,7 @@ Frame {
     chatId = 2
     dateSent = 1
     giftBadge = GiftBadge {
-      receiptCredentialPresentation = <00d0111bf1baa7f425c779e00e6c18d9420a9d5efe244957eba812515531cfdf15600197be7c2497ba1648e6a7a4b79170c681728c10cbd0e553b3af3dfb36ef7d80174ffa6bf5f13ad94dcd729f08f1b5625c5d861281ae7c3417318b18c1915d3473cb87e83868d5acae317ff365b46a09e10e8d0a19484b078fd8bb0fda99213a7887bd30b5f0d41d1ed9d51706f1daf3fe59ea6455f3a16ccbbb6a95bcb82d80000000000000006b09157ae37cbe26155c7685d0e98644117cc90ab94b342bd84a11bc6a13c908f398290396e36754efb87b28f5a66c160a4d6efb999d70cdabb7181cc226a405d4a7aad239af0ff1f4c9cf43e8fe2a7906159f2e7600e0ce7815ed8d8eb9d701909ba1f13c8a36153e9f0cc42073bbaf34a860a62783290fcbf7c2295806410e0000000000000000010000000000000064c71c74e7e420545cfee8029cd19629>
+      receiptCredentialPresentation = <006cdec31a9dac5d7746246a6315f18cf165d30979a2dfe93d1ce83e24f1935777940884794ac3b4c4d7d79dda4fbc540571f53dd23f4ec98f50eb5e1f857e093f0e8180f1b43d7693032cdc3f53ea9dff66f2d45d34e885b4b5cb5d911d1c3f273c033f02149f5732133cf3513cd83f65dbf2bf65ce1f9533a4fb5e14852d312064276ae3334233318d931bdbed68b5d3cecc550a9e00d74e498481b4ec3a5f7680000000000000005bb7b01db0ae7fb6d469878ae7098644c7a01bf14d0d477a520369e2ba833c0617844fdfe27d5ee1c2db332f35deb5e303e6ed9c9d1612855233e029ebfb1f0d4a5ed8540701845f0349dd68013daf442f2251e2875a7685b1dd67e3cbedfe045e421bc601689146ce66eb38f91dc5a63ac0e7488bab51ff4463025bac5758080000000000000000010000000000000013146f971dd8e18dda3c9fecbbbc4dd7>
       state = State.OPENED
     }
     incoming = IncomingMessageDetails {
@@ -147,7 +147,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1669001252464
+    dateSent = 1714038464620
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -166,7 +166,7 @@ Frame {
         type = Type.GIFT_BADGE
       }
       text = Text {
-        body = "interpretaris quisque reprehendunt pulvinar quam urbanitas elit eleifend"
+        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
       }
     }
   }

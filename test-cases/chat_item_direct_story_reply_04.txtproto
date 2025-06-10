@@ -130,13 +130,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1854312318242
+    dateSent = 1854327129879
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1802397995141
+          sentTimestamp = 1739598175233
           sortOrder = 1
         }
       ]
@@ -145,8 +145,9 @@ Frame {
           contentType = "text/x-signal-plain"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <74f34922363753d413b462631f8eb741>
+            digest = <>
             key = <>
+            mediaName = ""
           }
         }
         text = Text {

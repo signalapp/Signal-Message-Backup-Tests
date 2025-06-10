@@ -130,29 +130,29 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1704930542309
+    dateSent = 1697069138811
     directStoryReplyMessage = DirectStoryReplyMessage {
       emoji = "👍🏾"
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1704930542299
-      dateServerSent = 1704930542308
+      dateReceived = 1697069138801
+      dateServerSent = 1697069138810
     }
     revisions = [
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1704930494641
+        dateSent = 1697069065026
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "eam scelerisque dictas purus tantas"
+              body = "solet ullamcorper mandamus equidem utamur metus"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1704930494631
-          dateServerSent = 1704930494640
+          dateReceived = 1697069065016
+          dateServerSent = 1697069065025
           read = true
           sealedSender = true
         }
@@ -160,33 +160,33 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1704930494642
+        dateSent = 1697069065027
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "eam veri"
+              body = "aliquip"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1704930494632
-          dateServerSent = 1704930494641
+          dateReceived = 1697069065017
+          dateServerSent = 1697069065026
         }
       },
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1704930494643
+        dateSent = 1697069065028
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "saperet habitasse quaeque intellegat dissentiunt populo imperdiet convenire noster"
+              body = "curabitur nibh option consectetur nam intellegat elit"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1704930494633
-          dateServerSent = 1704930494642
+          dateReceived = 1697069065018
+          dateServerSent = 1697069065027
           read = true
           sealedSender = true
         }

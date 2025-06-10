@@ -149,11 +149,12 @@ Frame {
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
+            digest = <3f401e4adf93d2e29614e293c3e76f4e>
             key = <097ad9b4c06dcac60b2b6007c3846787>
-            plaintextHash = <efc1fa486e362a8bfe82fac40e9e6701fc72fbe76eb51ac08d871eb76f2e7e38>
-            size = 861308840
-            transitCdnKey = "JEZWRFzq"
-            transitTierUploadTimestamp = 1713457590538
+            mediaName = "3f401e4adf93d2e29614e293c3e76f4e"
+            size = 612196599
+            transitCdnKey = "aXiLScgL"
+            transitTierUploadTimestamp = 1713032953686
           }
         }
         email = [

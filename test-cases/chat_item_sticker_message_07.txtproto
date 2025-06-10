@@ -147,20 +147,21 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1908415279914
+          sentTimestamp = 1738568507738
           sortOrder = 1
         }
       ]
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/png"
-          height = 2557
+          height = 3312
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <1d4aadc91b5463098f179c50eabc0dac>
+            digest = <>
             key = <>
+            mediaName = ""
           }
-          width = 1852
+          width = 1734
         }
         emoji = "👎"
         packId = <e85604e4e3670f77ebf5e721149f599d>

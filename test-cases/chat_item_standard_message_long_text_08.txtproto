@@ -144,24 +144,25 @@ Frame {
         contentType = "text/x-signal-plain"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
+          digest = <59633d69d55d99f6f871f8839a9ce2d8>
           key = <346a5ff97c318292bd6e73ff9022c6fa>
-          plaintextHash = <d0b6d25acc4d5a8259872972fc853ca658a12027e42941e2e1f45a96bc4c7227>
-          size = 1826427142
-          transitCdnKey = "CmCqQNEWGrAz"
-          transitTierUploadTimestamp = 1712830274050
+          mediaName = "59633d69d55d99f6f871f8839a9ce2d8"
+          size = 761879400
+          transitCdnKey = "ECQWuuuEFCmCq"
+          transitTierUploadTimestamp = 1714340547340
         }
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1664604943965
+          sentTimestamp = 1737231682230
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1664604943966
+          sentTimestamp = 1737231682231
           sortOrder = 2
         }
       ]

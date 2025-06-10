@@ -143,17 +143,18 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "nonumy porta placerat tractatos appareat litora"
+          description = "risus"
           image = FilePointer {
             blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             contentType = "image/png"
-            height = 2405
+            height = 1556
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <a68fd418e657fd8cab0b80bf8bf32b9d>
+              digest = <>
               key = <>
+              mediaName = ""
             }
-            width = 1946
+            width = 1777
           }
           title = "Laoreet Fugit"
           url = "https://signal.org/OMpdiJZO"

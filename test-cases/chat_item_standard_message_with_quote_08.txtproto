@@ -140,18 +140,19 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/apng"
-          fileName = "LKaRTiUCEImpq"
-          height = 3658
+          fileName = "qTVXW"
+          height = 1788
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <86ee0470424a9a6e24831677e5ee14c3>
+            digest = <>
             key = <>
+            mediaName = ""
           }
-          width = 3303
+          width = 727
         }
         emoji = "👍"
-        packId = <e77fea5f6a53e1355c928033c0addc17>
-        packKey = <4ff3ea78b74d071f9a4b88e5155807a0414bc81d2b85b63db872f38037d3da77>
+        packId = <7592509c2f0c3813190d07bea53a2575>
+        packKey = <cbf8375abbead5fd72c344139b7956d08b848152cd1bc8621fe615c472b007c9>
       }
     }
   }
@@ -161,7 +162,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1669001252460
+    dateSent = 1714038464616
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -180,18 +181,19 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
                 contentType = "image/jpeg"
-                height = 3533
+                height = 3967
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  key = <13e55d35373304859a721e4bbbfc105e>
+                  digest = <d4b1d7636bdb57ad30aa3c500868d7e3>
+                  key = <760bd28a6c67002e8feb35cf929eee91>
+                  mediaName = "d4b1d7636bdb57ad30aa3c500868d7e3"
                   mediaTierCdnNumber = 2
-                  plaintextHash = <699cf8a7c11c80bac7b0a860aec91df4851c5036661adbf2b00ddb833a23bbc7>
-                  size = 398257791
-                  transitCdnKey = "qMwwPH"
+                  size = 1542306071
+                  transitCdnKey = "KFgbkCrm"
                   transitCdnNumber = 3
-                  transitTierUploadTimestamp = 1714433631019
+                  transitTierUploadTimestamp = 1711987805477
                 }
-                width = 1405
+                width = 1700
               }
               wasDownloaded = true
             }
@@ -205,18 +207,18 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1766954754335
+          sentTimestamp = 1753730775131
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1766954754336
+          sentTimestamp = 1753730775132
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "discere felis fames commodo luptatum repudiandae error decore"
+        body = "vero"
       }
     }
   }

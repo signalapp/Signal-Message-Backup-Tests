@@ -147,8 +147,9 @@ Frame {
         contentType = "text/x-signal-plain"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          digest = <74f34922363753d413b462631f8eb741>
+          digest = <>
           key = <>
+          mediaName = ""
         }
       }
       text = Text {

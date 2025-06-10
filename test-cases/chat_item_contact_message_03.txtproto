@@ -135,19 +135,20 @@ Frame {
         avatar = FilePointer {
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/jpeg"
-          fileName = "susanngyzNxzc"
-          height = 743
+          fileName = "GQDDfXFi"
+          height = 2067
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <ecd645dddccb4f0312752e2f4eac3a2d>
+            digest = <9c78ede6249be3774edfd6f44d99aeec>
+            key = <26a8275b675edf50b974ee8cbdec4974>
+            mediaName = "9c78ede6249be3774edfd6f44d99aeec"
             mediaTierCdnNumber = 2
-            plaintextHash = <f93b313cf462948807aed74a6f6314675ce2931bdc4268650eb4a44f3384961f>
-            size = 1602086367
-            transitCdnKey = "JEZWRFzq"
+            size = 1652375935
+            transitCdnKey = "aXiLScgL"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1713457590538
+            transitTierUploadTimestamp = 1713032953686
           }
-          width = 2095
+          width = 2160
         }
         name = Name {
           familyName = ""
