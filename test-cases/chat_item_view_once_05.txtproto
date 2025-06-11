@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577843
+    dateSent = 1700984146928
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -149,13 +149,11 @@ Frame {
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <58493e1bb0268c5da867e8b454754359>
-            key = <fbd8a21f072534d5f767baaec4d38bdc>
-            mediaName = "58493e1bb0268c5da867e8b454754359"
-            size = 1970043211
-            transitCdnKey = "IJqySkLQGERt"
-            transitCdnNumber = 2
-            transitTierUploadTimestamp = 1714542436278
+            key = <1d4aadc91b5463098f179c50eabc0dac>
+            legacyDigest = <>
+            legacyMediaName = ""
+            plaintextHash = <3af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9de3b2c342e2771db>
+            size = 1124598742
           }
         }
         wasDownloaded = true

@@ -238,7 +238,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1878937499399
+    dateSent = 1810531568155
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       groupChange = GroupChangeChatUpdate {
@@ -251,7 +251,7 @@ Frame {
           },
           Update {
             groupUnknownInviteeUpdate = GroupUnknownInviteeUpdate {
-              inviteeCount = 1
+              inviteeCount = 2
               inviterAci = <00000000000040008000000000000001>
             }
           },

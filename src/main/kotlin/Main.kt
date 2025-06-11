@@ -1,8 +1,10 @@
 @file:Suppress("UNCHECKED_CAST")
+@file:OptIn(ExperimentalStdlibApi::class)
 
 import com.squareup.wire.Message
 import org.signal.libsignal.messagebackup.ComparableBackup
 import org.signal.libsignal.messagebackup.MessageBackup
+import org.signal.libsignal.messagebackup.ValidationError
 import org.thoughtcrime.securesms.backup.v2.proto.BackupInfo
 import org.thoughtcrime.securesms.backup.v2.proto.Frame
 import tests.*
@@ -135,7 +137,11 @@ private fun runTest(testName: String, init: PermutationScope.() -> Unit) {
     val binary = framesToBytes(snapshot)
 
     // Implicitly validates the backup. Throws exception on error.
-    ComparableBackup.readUnencrypted(MessageBackup.Purpose.REMOTE_BACKUP, binary.inputStream(), binary.size.toLong())
+    try {
+      ComparableBackup.readUnencrypted(MessageBackup.Purpose.REMOTE_BACKUP, binary.inputStream(), binary.size.toLong())
+    } catch (e: ValidationError) {
+      throw RuntimeException("Failed to validate ${testName}_${index.minDigits(2)}!", e)
+    }
 
     // For one-off tests with no permutations, it's nice to not have a trailing number
     val baseFileName = if (snapshots.size == 1) {

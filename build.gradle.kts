@@ -1,5 +1,5 @@
 plugins {
-  id("org.jetbrains.kotlin.jvm") version "1.9.10"
+  id("org.jetbrains.kotlin.jvm") version "2.1.0"
   id("com.squareup.wire") version "4.4.3"
   id("org.jlleitschuh.gradle.ktlint") version "12.1.1"
   application
@@ -19,7 +19,7 @@ application {
 }
 
 dependencies {
-  implementation("org.signal:libsignal-client:0.67.2")
+  implementation("org.signal:libsignal-client:0.74.1")
   implementation("com.thedeanda:lorem:2.2")
   implementation(kotlin("reflect"))
 }

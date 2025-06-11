@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577852
+    dateSent = 1700984146937
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -150,10 +150,11 @@ Frame {
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <59633d69d55d99f6f871f8839a9ce2d8>
-              key = <346a5ff97c318292bd6e73ff9022c6fa>
-              mediaName = "59633d69d55d99f6f871f8839a9ce2d8"
-              size = 761879400
+              key = <58a12027e42941e2e1f45a96bc4c7227>
+              legacyDigest = <>
+              legacyMediaName = ""
+              plaintextHash = <0c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345>
+              size = 963106989
             }
           }
           wasDownloaded = true
@@ -163,33 +164,35 @@ Frame {
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            fileName = "ECQWuuuEFCmCq"
-            height = 3374
+            fileName = "rAzrHYk"
+            height = 3929
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <d95fde0154d933c20d1a04ced92499f5>
-              key = <da741f81140efe703c6727a8d5e0f3b4>
-              mediaName = "d95fde0154d933c20d1a04ced92499f5"
-              size = 1093478118
+              key = <791cedfafc0e29956dc1e0cd18b0df35>
+              legacyDigest = <>
+              legacyMediaName = ""
+              plaintextHash = <4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166fd3faf51e>
+              size = 1889272792
             }
-            width = 1298
+            width = 29
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             contentType = "audio/mp3"
-            fileName = "NEWGrAzrH"
-            height = 3915
+            fileName = "XMOBqmCd"
+            height = 745
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <877862d96ce3c17322ad4bfac6e10859>
-              key = <32d8456e7027634ab98b2bedfeba4948>
-              mediaName = "877862d96ce3c17322ad4bfac6e10859"
+              key = <f67baa9066da53caf60c4ec900b2dee5>
+              legacyDigest = <>
+              legacyMediaName = ""
               mediaTierCdnNumber = 2
-              size = 957662124
+              plaintextHash = <29a3b2f195b0f63bd4c8184986860917d55519fd5bc982fa3e64d7eea8973f90>
+              size = 943323026
             }
-            width = 1111
+            width = 3107
           }
           wasDownloaded = true
         },
@@ -198,21 +201,22 @@ Frame {
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "video/mp4"
-            height = 470
+            height = 3280
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <67fdcb1ac685a8aedbd29cb42e984d65>
-              key = <696ab01a75f6908b3d448eb3458c6acb>
-              mediaName = "67fdcb1ac685a8aedbd29cb42e984d65"
+              key = <fecdc4c5701ad7ec4bf8a7f52384caa7>
+              legacyDigest = <>
+              legacyMediaName = ""
               mediaTierCdnNumber = 3
-              size = 761879400
+              plaintextHash = <0e64d7294f139f80950d8ea9f18dbe1090e3527a69f4f6360b7e939b46b59461>
+              size = 963106989
             }
-            width = 2521
+            width = 3296
           }
         }
       ]
       text = Text {
-        body = "pdiJZ"
+        body = "pIJqySkLQ"
       }
     }
   }

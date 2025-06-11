@@ -236,13 +236,14 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A170
-      masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
+      masterKey = <b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb5ea278fd>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
           attributes = AccessRequired.ADMINISTRATOR
           members = AccessRequired.ADMINISTRATOR
         }
+        announcements_only = true
         avatarUrl = ""
         description = GroupAttributeBlob {
           descriptionText = "volumus error leo taciti quo"
@@ -250,7 +251,7 @@ Frame {
         disappearingMessagesTimer = GroupAttributeBlob {
           disappearingMessagesDuration = 882815404
         }
-        inviteLinkPassword = <afd0cb13a6fd095284a078df6859b9ac390b234e608d3671842725ffb7b5369c>
+        inviteLinkPassword = <b7b5369c034f2f21228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c8>
         members = [
           Member {
             role = Role.DEFAULT

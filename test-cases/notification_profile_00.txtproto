@@ -190,13 +190,11 @@ Frame {
 
 Frame {
   notificationProfile = NotificationProfile {
-    allowAllCalls = true
     allowAllMentions = true
     color = -1842178
-    id = <2faf620c7229690068c4b09c566976e5>
+    id = <566976e517765490bce89c73382a342b>
     name = "Ut Cubilia"
-    scheduleEnabled = true
-    scheduleEndTime = 434
-    scheduleStartTime = 2223
+    scheduleEndTime = 116
+    scheduleStartTime = 1023
   }
 }

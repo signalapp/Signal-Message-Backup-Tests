@@ -144,15 +144,15 @@ Frame {
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <149f599dab4f9c8a0a0f6193b4fffb25>
-              key = <36106eec0da607bfe85604e4e3670f77>
-              mediaName = "149f599dab4f9c8a0a0f6193b4fffb25"
-              size = 601668882
-              transitCdnKey = "gpIJqy"
-              transitTierUploadTimestamp = 1714708939862
+              encryptedDigest = <7c318292bd6e73ff9022c6fa6faebb15>
+              key = <602ae6c88bffbb6878d9cd54434bca72>
+              legacyDigest = <>
+              legacyMediaName = ""
+              size = 1897960690
+              transitCdnKey = "uuEFCmC"
+              transitTierUploadTimestamp = 1714213501916
             }
           }
-          wasDownloaded = true
         }
       ]
       text = Text {
@@ -173,10 +173,11 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1714038464609
+    dateSent = 1776361158421
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826270
-      dateServerSent = 1794124103202
+      dateReceived = 1680366577839
+      dateServerSent = 1688484601890
+      read = true
     }
     standardMessage = StandardMessage {
       quote = Quote {
@@ -188,15 +189,21 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
-                height = 330
+                height = 601
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <>
-                  key = <>
-                  mediaName = ""
+                  encryptedDigest = <ef3a64313534f66b90f7ad7afcef796b>
+                  key = <60f9a5a6fc282ef6602b6dd7ff632a7a>
+                  legacyDigest = <>
+                  legacyMediaName = ""
+                  size = 559108605
+                  transitCdnKey = "VNzGrthhi"
+                  transitCdnNumber = 2
+                  transitTierUploadTimestamp = 1712475055839
                 }
-                width = 2168
+                width = 3053
               }
+              wasDownloaded = true
             }
           }
         ]
@@ -218,12 +225,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1753730775131
+          sentTimestamp = 1752256552408
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "oratio neque decore wisi regione dico mauris curae"
+        body = "reprimique adolescens adhuc constituto his mutat ipsum dapibus maiestatis"
       }
     }
   }

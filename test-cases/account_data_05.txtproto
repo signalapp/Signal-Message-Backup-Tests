@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -7668588
+          solid = -520561
         },
         CustomChatColor {
           id = 2
-          solid = -5756433
+          solid = -10024887
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 165
+            angle = 341
             colors = [
-              -8820984,
-              -792050
+              -1728405,
+              -10844618
             ]
             positions = [
               0.0,
@@ -37,41 +37,50 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_BURLAP
-        dimWallpaperInDarkMode = true
         wallpaperPhoto = FilePointer {
           blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <434bca72346a5ff97c318292bd6e73ff>
-            key = <7f372e1b97f2d8ea602ae6c88bffbb68>
-            mediaName = "434bca72346a5ff97c318292bd6e73ff"
-            size = 134861564
+            key = <b4fffb255879953e257ab94747b56ae5>
+            legacyDigest = <>
+            legacyMediaName = ""
+            plaintextHash = <78d9cd54434bca72346a5ff97c318292bd6e73ff9022c6fa6faebb1559633d69>
+            size = 17153961
           }
         }
       }
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 1049338212
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 2056716151
     }
-    avatarUrlPath = "https://signal.org/taPHwAvo"
+    avatarUrlPath = "https://signal.org/tgrXFLPSk"
     backupsSubscriberData = IAPSubscriberData {
-      originalTransactionId = 6295245009113704931
-      subscriberId = <f2eff4ef03129ecfd189c9f35a386c4aa68fd418e657fd8cab0b80bf8bf32b9d>
+      originalTransactionId = 9022372258134979013
+      subscriberId = <ccd719d94ce58985ed43189427a38645ab2d573928a14adb2e90907199154fed>
     }
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true
-      subscriberId = <0cc51a91522bafdb5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fd>
+      subscriberId = <390b234e608d3671842725ffb7b5369c034f2f21228e188ff7647a4b753e5d1b>
     }
-    familyName = "Roberts"
-    givenName = "Candice"
-    profileKey = <ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795a>
+    familyName = "Molina"
+    givenName = "Stevie"
+    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
     svrPin = "1234"
-    username = "sabrina.06"
+    username = "effie.08"
     usernameLink = UsernameLink {
       color = Color.GREEN
-      entropy = <22ad4bfac6e10859fb70db9f128ab0196d6be1c6a7ed5289222d4808bdaadcf9>
-      serverId = <c733c2440c3ae62e4a5aa0bbf67baa90>
+      entropy = <7027634ab98b2bedfeba4948ff5ee0b3877862d96ce3c17322ad4bfac6e10859>
+      serverId = <128ab0196d6be1c6a7ed5289222d4808>
     }
   }
 }

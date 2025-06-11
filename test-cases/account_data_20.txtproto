@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -7668588
+          solid = -520561
         },
         CustomChatColor {
           id = 2
-          solid = -5756433
+          solid = -10024887
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 165
+            angle = 341
             colors = [
-              -8820984,
-              -792050
+              -1728405,
+              -10844618
             ]
             positions = [
               0.0,
@@ -37,40 +37,32 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.GRADIENT_BASIL
+        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.GRADIENT_NOIR
       }
-      displayBadgesOnProfile = true
-      hasCompletedUsernameOnboarding = true
-      hasSeenGroupStoryEducationSheet = true
-      hasSetMyStoriesPrivacy = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       linkPreviews = true
-      notDiscoverableByPhoneNumber = true
       optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
-      sealedSenderIndicators = true
-      storiesDisabled = true
-      storyViewReceiptsEnabled = true
-      typingIndicators = true
-      universalExpireTimerSeconds = 1049338212
+      universalExpireTimerSeconds = 2056716151
     }
-    avatarUrlPath = "https://signal.org/taPHwAvo"
+    avatarUrlPath = "https://signal.org/tgrXFLPSk"
     backupsSubscriberData = IAPSubscriberData {
-      purchaseToken = "PMVYoUEqXx"
-      subscriberId = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ff>
+      purchaseToken = "mjwqTJNP"
+      subscriberId = <1ec67707ad43f2d167963887aa1d063c8db57633fa5483f31f78622caf4b15d2>
     }
     familyName = ""
     givenName = ""
-    profileKey = <ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795a>
+    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
     svrPin = "1234"
-    username = "sabrina.06"
+    username = "effie.08"
     usernameLink = UsernameLink {
       color = Color.WHITE
-      entropy = <140efe703c6727a8d5e0f3b49a458da0d95fde0154d933c20d1a04ced92499f5>
-      serverId = <97130bcd791cedfafc0e29956dc1e0cd>
+      entropy = <69f375454a95979def0ce9d2080db8f45d04641dda741f81140efe703c6727a8>
+      serverId = <9a458da0d95fde0154d933c20d1a04ce>
     }
   }
 }

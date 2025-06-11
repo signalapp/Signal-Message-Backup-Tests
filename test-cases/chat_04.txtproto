@@ -120,13 +120,12 @@ Frame {
 
 Frame {
   chat = Chat {
-    archived = true
     dontNotifyForMentionsIfMuted = true
-    expirationTimerMs = 444658788000
-    expireTimerVersion = 1321978534
+    expirationTimerMs = 123321745000
+    expireTimerVersion = 217727811
     id = 3
     markedUnread = true
-    muteUntilMs = 1829227952967
+    muteUntilMs = 1717037855458
     recipientId = 4
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.SOLID_BURLAP
@@ -136,10 +135,11 @@ Frame {
         contentType = "image/jpeg"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          digest = <434bca72346a5ff97c318292bd6e73ff>
-          key = <7f372e1b97f2d8ea602ae6c88bffbb68>
-          mediaName = "434bca72346a5ff97c318292bd6e73ff"
-          size = 134861564
+          key = <b4fffb255879953e257ab94747b56ae5>
+          legacyDigest = <>
+          legacyMediaName = ""
+          plaintextHash = <78d9cd54434bca72346a5ff97c318292bd6e73ff9022c6fa6faebb1559633d69>
+          size = 17153961
         }
       }
     }

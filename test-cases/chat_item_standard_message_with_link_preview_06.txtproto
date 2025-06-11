@@ -130,38 +130,38 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1709869938874
+    dateSent = 1818790665714
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           delivered = Delivered {}
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "risus"
+          description = "mollis imperdiet purus"
           image = FilePointer {
             blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             contentType = "image/png"
-            height = 1556
+            height = 1100
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
               key = <>
-              mediaName = ""
+              legacyDigest = <>
+              legacyMediaName = ""
             }
-            width = 1777
+            width = 132
           }
-          title = "Laoreet Fugit"
-          url = "https://signal.org/OMpdiJZO"
+          title = "Tation Legere"
+          url = "https://signal.org/TgpIJqySkLQG"
         }
       ]
       text = Text {
-        body = "utinam sapien tristique https://signal.org/OMpdiJZO"
+        body = "ferri altera https://signal.org/TgpIJqySkLQG"
       }
     }
   }

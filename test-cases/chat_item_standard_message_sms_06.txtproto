@@ -130,20 +130,20 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577844
+    dateSent = 1700984146929
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           delivered = Delivered {}
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
     sms = true
     standardMessage = StandardMessage {
       text = Text {
-        body = "pdiJZ"
+        body = "pIJqySkLQ"
       }
     }
   }

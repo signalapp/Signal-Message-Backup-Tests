@@ -100,24 +100,25 @@ Frame {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
       avatarColor = AvatarColor.A130
+      blocked = true
       e164 = 12255550184
       identityKey = <05dee2f65c1c9a51a0f5667a56aca18c43e56684e6719dfffa904591dcb227971f>
       identityState = IdentityState.DEFAULT
       nickname = Name {
-        family = "Sheppard"
-        given = "Virginia"
+        family = "Irwin"
+        given = "Julius"
       }
       notRegistered = NotRegistered {
         unregisteredTimestamp = 1695248715439
       }
       note = ""
       pni = <f2c8f6640c624f2f806929719cb0c468>
-      profileFamilyName = "Forbes"
-      profileGivenName = "Lindsay"
-      profileKey = <21064b374c7c7f19ef4ab90be00e43771d8bb3f9031ee7c9761a278e9730ff2a>
+      profileFamilyName = "Holcomb"
+      profileGivenName = "Bryant"
+      profileKey = <4c7c7f19ef4ab90be00e43771d8bb3f9031ee7c9761a278e9730ff2a7b4eb31e>
       systemFamilyName = ""
-      systemGivenName = "Quinton"
-      systemNickname = "Derick"
+      systemGivenName = "Juliette"
+      systemNickname = "Felicia"
       username = "bret.01"
       visibility = Visibility.VISIBLE
     }

@@ -130,34 +130,34 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577844
+    dateSent = 1700984146929
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           delivered = Delivered {}
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
         contentType = "text/x-signal-plain"
-        fileName = "aWIBH"
+        fileName = "gFokLHLm"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          digest = <974af5a7a459650a2590efd18c249edb>
-          key = <67fdcb1ac685a8aedbd29cb42e984d65>
-          mediaName = "974af5a7a459650a2590efd18c249edb"
-          mediaTierCdnNumber = 2
-          size = 957662124
-          transitCdnKey = "ECQWuuuEFCmCq"
+          encryptedDigest = <b0268c5da867e8b454754359d4337a3c>
+          key = <072534d5f767baaec4d38bdc7ba76237>
+          legacyDigest = <>
+          legacyMediaName = ""
+          size = 1343527527
+          transitCdnKey = "YkFXMOBqmCdYWy"
           transitCdnNumber = 3
-          transitTierUploadTimestamp = 1714340547340
+          transitTierUploadTimestamp = 1715089586241
         }
       }
       text = Text {
-        body = "senserit decore interpretaris"
+        body = "brute veritus unum"
       }
     }
   }

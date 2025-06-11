@@ -140,24 +140,24 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/webp"
-          fileName = "qqaJPpU"
-          height = 3334
+          fileName = "jAPgZpaR"
+          height = 1639
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <9da8b7afc56db49d1c31fc998ff6ebb7>
-            key = <1315a70b68fc42549fb3dc833e8e3ae0>
-            mediaName = "9da8b7afc56db49d1c31fc998ff6ebb7"
-            mediaTierCdnNumber = 2
-            size = 1718218228
-            transitCdnKey = "VrgohtSR"
+            encryptedDigest = <654e8f940bf8e8777e42dac21846314a>
+            key = <b6efbca9eac44454b8a3fbd066cb5c5b>
+            legacyDigest = <>
+            legacyMediaName = ""
+            size = 1767037458
+            transitCdnKey = "ZGfOSvRRNDs"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1713705932662
+            transitTierUploadTimestamp = 1712164502582
           }
-          width = 35
+          width = 787
         }
         emoji = "👎"
-        packId = <03e37119321da6d448263a1881ce7ad8>
-        packKey = <005765a2278f1a4a02600f559e16c84ad5408b23a1d75afe893a9c1f9fefcb04>
+        packId = <5b65b2994d53c703642afda3f8c6c5d9>
+        packKey = <19282c20a15788bf1d6aa076dac747f144ae1b3ad4624664eaa04a8cee6fa6e9>
       }
     }
   }
@@ -167,15 +167,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464617
+    dateSent = 1776361158429
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           recipientId = 4
-          timestamp = 1833527071192
-          viewed = Viewed {
-            sealedSender = true
-          }
+          timestamp = 1660152710755
+          viewed = Viewed {}
         }
       ]
     }
@@ -189,15 +187,20 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 2385
+                height = 184
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <>
-                  key = <>
-                  mediaName = ""
+                  encryptedDigest = <8b71d65322e5b174175b1fae11a2814a>
+                  key = <65479a91242085fcc6cd18ca376d06f4>
+                  legacyDigest = <>
+                  legacyMediaName = ""
+                  size = 526952817
+                  transitCdnKey = "VNzGrthhi"
+                  transitTierUploadTimestamp = 1712475055839
                 }
-                width = 2688
+                width = 3030
               }
+              wasDownloaded = true
             }
           }
         ]
@@ -206,7 +209,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
+        body = "vulputate omittam"
       }
     }
   }

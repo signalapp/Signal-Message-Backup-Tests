@@ -238,26 +238,26 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1820168225219
+    dateSent = 1776491210910
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       groupChange = GroupChangeChatUpdate {
         updates = [
           Update {
             groupDescriptionUpdate = GroupDescriptionUpdate {
-              newDescription = "convallis sale minim praesent dapibus ex dictas utamur"
+              newDescription = "minim"
               updaterAci = <00000000000040008000000000000001>
             }
           },
           Update {
             groupDescriptionUpdate = GroupDescriptionUpdate {
-              newDescription = "maximus recteque repudiandae"
+              newDescription = "dapibus ex dictas utamur eget maximus"
               updaterAci = <00000000000040008000000000000001>
             }
           },
           Update {
             groupDescriptionUpdate = GroupDescriptionUpdate {
-              newDescription = "nostrum moderatius"
+              newDescription = "repudiandae cetero nostrum moderatius aliquet sententiae aenean discere"
               updaterAci = <00000000000040008000000000000001>
             }
           }

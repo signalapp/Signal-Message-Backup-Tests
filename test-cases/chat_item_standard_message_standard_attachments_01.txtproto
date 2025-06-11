@@ -130,81 +130,94 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577839
+    dateSent = 1700984146924
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826270
-      dateServerSent = 1794124103202
+      dateReceived = 1680366577839
+      dateServerSent = 1688484601890
+      read = true
     }
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
+          clientUuid = <44374cd4cc6f4a8980ed7c0caae005d0>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "cCMeejhnSf"
-            height = 411
+            fileName = "UkKGTWp"
+            height = 3670
+            incrementalMac = <0c3ae62e4a5aa0bbf67baa9066da53ca>
+            incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
-              key = <>
-              mediaName = ""
+              encryptedDigest = <cf664a80595e2aa725b1e780a6681e10>
+              key = <90e3527a69f4f6360b7e939b46b59461>
+              legacyDigest = <>
+              legacyMediaName = ""
+              size = 221445548
+              transitCdnKey = "LmtLxdKP"
+              transitCdnNumber = 2
+              transitTierUploadTimestamp = 1715417005883
             }
-            width = 4004
+            width = 2233
           }
+          wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "uFXypjDLUUkK"
+            caption = "PnbCyaCBGAzW"
             contentType = "image/gif"
-            fileName = "gFokLHLm"
-            height = 3182
+            fileName = "UETYzPCvxA"
+            height = 428
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <c3c226dc221e8fec3522a5e4cd2f910d>
-              key = <8db57633fa5483f31f78622caf4b15d2>
-              mediaName = "c3c226dc221e8fec3522a5e4cd2f910d"
+              key = <bdefd49b44b4c8d19c47cb807844279f>
+              legacyDigest = <>
+              legacyMediaName = ""
               mediaTierCdnNumber = 2
-              size = 947848970
-              transitCdnKey = "CdYWy"
-              transitCdnNumber = 3
-              transitTierUploadTimestamp = 1715089586241
+              plaintextHash = <ea6a34842a849b36033d55ee22ad8089d8b31e0b8d6049955da8992e8eb2791f>
+              size = 1855101642
             }
-            width = 1424
+            width = 2872
           }
-          wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
+          clientUuid = <44374cd4cc6f4a8980ed7c0caae005d0>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "TWpTUET"
+            caption = "FqaczwFdzHL"
             contentType = "audio/mp3"
-            height = 2197
+            height = 2794
+            incrementalMac = <0c3ae62e4a5aa0bbf67baa9066da53ca>
+            incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
-              key = <>
-              mediaName = ""
+              encryptedDigest = <5ea278fda6c9d64b759ef2a75d430cc5>
+              key = <e00d51de27e38374784397640cc51a91>
+              legacyDigest = <>
+              legacyMediaName = ""
+              size = 815946302
+              transitCdnKey = "LmtLxdKP"
+              transitTierUploadTimestamp = 1715417005883
             }
-            width = 2557
+            width = 3254
           }
+          wasDownloaded = true
         }
       ]
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1710490134292
+          sentTimestamp = 1838843920399
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "senserit decore interpretaris"
+        body = "brute veritus unum"
       }
     }
   }

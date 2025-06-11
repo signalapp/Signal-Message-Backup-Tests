@@ -192,18 +192,18 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1829227952973
+    dateSent = 1739258413364
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           delivered = Delivered {}
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         },
         SendStatus {
           delivered = Delivered {}
           recipientId = 5
-          timestamp = 1702291826269
+          timestamp = 1871443451884
         }
       ]
     }
@@ -219,18 +219,18 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1910611834866
+    dateSent = 1859306524962
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           delivered = Delivered {}
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         },
         SendStatus {
           delivered = Delivered {}
           recipientId = 5
-          timestamp = 1702291826269
+          timestamp = 1871443451884
         }
       ]
     }

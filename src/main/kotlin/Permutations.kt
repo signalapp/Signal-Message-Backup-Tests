@@ -303,7 +303,11 @@ object Generators {
   fun nonEmptyStrings(): Generator<String> = Generators.list(SeededRandom.string(), SeededRandom.string())
   fun emoji(): Generator<String> = Generators.list("\uD83D\uDC80", "👍", "👎", "\uD83D\uDC4D\uD83C\uDFFE", "\uD83D\uDC69\u200D\uD83D\uDCBB")
   fun usernames(): Generator<String> = Generators.list("${SeededRandom.lipsum.firstName.lowercase()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.lipsum.firstName.lowercase()}.${SeededRandom.int(10, 10000)}", "${SeededRandom.lipsum.firstName.lowercase()}.0${SeededRandom.int(1, 10)}")
-  fun booleans(): Generator<Boolean> = Generators.list(true, false)
+  fun booleans(): Generator<Boolean> {
+    val first = SeededRandom.boolean()
+    val second = !first
+    return Generators.list(first, second)
+  }
   fun ints(lower: Int = Int.MIN_VALUE, upper: Int = Int.MAX_VALUE): Generator<Int> = Generators.list(SeededRandom.int(lower, upper), SeededRandom.int(lower, upper), SeededRandom.int(lower, upper))
   fun longs(lower: Long = Long.MIN_VALUE, upper: Long = Long.MAX_VALUE): Generator<Long> = Generators.list(0L, SeededRandom.long(lower, upper), SeededRandom.long(lower, upper))
   fun nonZeroLongs(lower: Long = Long.MIN_VALUE, upper: Long = Long.MAX_VALUE): Generator<Long> = Generators.list(SeededRandom.long(lower, upper), SeededRandom.long(lower, upper), SeededRandom.long(lower, upper))
@@ -376,40 +380,11 @@ object Generators {
 
   fun wallpaperFilePointer(): Generator<FilePointer> {
     return Generators.permutation {
-      val includeMediaName = someBoolean()
-
-      val potentialKey = someBytes(16)
-      val potentialDigest = someBytes(16)
-      val potentialSize = somePositiveInt()
-      val potentialMediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
-      val potentialIncrementalMac = some(Generators.bytes(16).nullable())
-      val potentialIncrementalMacChunkSize = some(Generators.list(1024, 2048))
-
-      var key: ByteArray = byteArrayOf()
-      var digest: ByteArray = byteArrayOf()
-      var size = 0
-      var mediaName = ""
-      var mediaTierCdnNumber: Int? = null
-      var incrementalMac: ByteArray? = null
-      var incrementalMacChunkSize: Int? = null
-      if (includeMediaName) {
-        key = potentialKey
-        digest = potentialDigest
-        size = potentialSize
-        mediaName = digest.toHexString()
-        mediaTierCdnNumber = potentialMediaTierCdnNumber
-        incrementalMac = potentialIncrementalMac
-      }
-      if (incrementalMac != null) {
-        incrementalMacChunkSize = potentialIncrementalMacChunkSize
-      }
-
       val locatorInfo = FilePointer.LocatorInfo(
-        key = key.toByteString(),
-        digest = digest.toByteString(),
-        size = size,
-        mediaTierCdnNumber = mediaTierCdnNumber,
-        mediaName = mediaName,
+        key = someBytes(16).toByteString(),
+        size = somePositiveInt(),
+        plaintextHash = someBytes(32).toByteString(),
+        mediaTierCdnNumber = some(Generators.cdnNumbers().nullable()),
         localKey = null
       )
       val contentType: String = some(Generators.list("image/jpeg", "image/png"))
@@ -418,8 +393,8 @@ object Generators {
         invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator(),
         locatorInfo = locatorInfo,
         contentType = contentType,
-        incrementalMac = incrementalMac?.toByteString(),
-        incrementalMacChunkSize = incrementalMacChunkSize,
+        incrementalMac = null,
+        incrementalMacChunkSize = null,
         fileName = null,
         width = null,
         height = null,
@@ -524,18 +499,11 @@ object Generators {
       val contentType = some(Generators.list("image/jpeg", "image/png", "audio/mp3", "video/mp4", "application/pdf"))
       val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
 
-      val key: ByteString = someBytes(16).toByteString()
-      val digest = someBytes(16)
-      val size: Int = somePositiveInt()
-      val mediaName = digest.toHexString()
-      val mediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
-
       val locatorInfo = FilePointer.LocatorInfo(
-        key = key,
-        digest = digest.toByteString(),
-        size = size,
-        mediaTierCdnNumber = mediaTierCdnNumber,
-        mediaName = mediaName,
+        key = someBytes(16).toByteString(),
+        plaintextHash = someBytes(32).toByteString(),
+        size = somePositiveInt(),
+        mediaTierCdnNumber = some(Generators.cdnNumbers().nullable()),
         localKey = null
       )
 
@@ -571,19 +539,24 @@ object Generators {
     val attachmentLocatorUploadMinTimestamp: Long = attachmentLocatorUploadMaxTimestamp - 45.days.inWholeMilliseconds
 
     return Generators.permutation {
-      val includeMediaName = someBoolean()
+      val previouslyDownloadedAndValidated = someBoolean()
       val includeTransitTierInfo = someBoolean()
 
       val potentialKey = someBytes(16)
       val potentialDigest = someBytes(16)
+      val potentialPlaintextHash = someBytes(32)
       val potentialSize = somePositiveInt()
       val potentialMediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
 
-      var mediaName = ""
+      var plaintextHash: ByteArray? = null
+      var digest: ByteArray? = null
       var mediaTierCdnNumber: Int? = null
-      if (includeMediaName) {
-        mediaName = potentialDigest.toHexString()
+
+      if (previouslyDownloadedAndValidated) {
+        plaintextHash = potentialPlaintextHash
         mediaTierCdnNumber = potentialMediaTierCdnNumber
+      } else if (includeTransitTierInfo) {
+        digest = potentialDigest
       }
 
       val potentialTransitCdnKey = some(Generators.nonEmptyStrings())
@@ -602,26 +575,24 @@ object Generators {
         transitUploadTimestamp = potentialTransitUploadTimestamp
       }
 
-      val hasSomePointer = includeMediaName || includeTransitTierInfo
+      val hasSomePointer = previouslyDownloadedAndValidated || includeTransitTierInfo
 
       var key: ByteArray = byteArrayOf()
-      var digest: ByteArray = byteArrayOf()
       var size = 0
       if (hasSomePointer) {
         key = potentialKey
-        digest = potentialDigest
         size = potentialSize
       }
 
       val locatorInfo = FilePointer.LocatorInfo(
         key = key.toByteString(),
-        digest = digest.toByteString(),
+        encryptedDigest = digest?.toByteString(),
+        plaintextHash = plaintextHash?.toByteString(),
         size = size,
         transitCdnKey = transitCdnKey,
         transitCdnNumber = transitCdnNumber,
         transitTierUploadTimestamp = transitUploadTimestamp,
         mediaTierCdnNumber = mediaTierCdnNumber,
-        mediaName = mediaName,
         localKey = null
       )
 

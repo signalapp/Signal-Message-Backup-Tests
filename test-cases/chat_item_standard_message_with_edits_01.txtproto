@@ -134,6 +134,7 @@ Frame {
     incoming = IncomingMessageDetails {
       dateReceived = 1695248715429
       dateServerSent = 1695248715438
+      sealedSender = true
     }
     revisions = [
       ChatItem {
@@ -143,12 +144,10 @@ Frame {
         incoming = IncomingMessageDetails {
           dateReceived = 1695248657608
           dateServerSent = 1695248657617
-          read = true
-          sealedSender = true
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = "morbi dicat antiopam quod iudicabit auctor platonem"
+            body = "antiopam"
           }
         }
       },
@@ -159,10 +158,12 @@ Frame {
         incoming = IncomingMessageDetails {
           dateReceived = 1695248657609
           dateServerSent = 1695248657618
+          read = true
+          sealedSender = true
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = "proin reformidans oratio rhoncus imperdiet volumus"
+            body = "iudicabit auctor platonem"
           }
         }
       },
@@ -173,19 +174,17 @@ Frame {
         incoming = IncomingMessageDetails {
           dateReceived = 1695248657610
           dateServerSent = 1695248657619
-          read = true
-          sealedSender = true
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = "leo taciti"
+            body = "proin reformidans oratio rhoncus imperdiet volumus"
           }
         }
       }
     ]
     standardMessage = StandardMessage {
       text = Text {
-        body = "utinam tota repudiandae brute veritus unum"
+        body = "definitiones volutpat sagittis natoque utinam tota repudiandae brute"
       }
     }
   }

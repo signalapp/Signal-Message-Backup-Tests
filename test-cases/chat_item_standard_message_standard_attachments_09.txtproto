@@ -130,39 +130,44 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577847
+    dateSent = 1700984146932
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           recipientId = 4
-          timestamp = 1833527071192
-          viewed = Viewed {
-            sealedSender = true
-          }
+          timestamp = 1660152710755
+          viewed = Viewed {}
         }
       ]
     }
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <b0ddc8c543ef400a882a56e7186cace7>
+          clientUuid = <44374cd4cc6f4a8980ed7c0caae005d0>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "TWpTUET"
+            caption = "FqaczwFdzHL"
             contentType = "audio/mp3"
-            height = 2197
+            height = 2794
+            incrementalMac = <0c3ae62e4a5aa0bbf67baa9066da53ca>
+            incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
-              key = <>
-              mediaName = ""
+              encryptedDigest = <5ea278fda6c9d64b759ef2a75d430cc5>
+              key = <e00d51de27e38374784397640cc51a91>
+              legacyDigest = <>
+              legacyMediaName = ""
+              size = 815946302
+              transitCdnKey = "LmtLxdKP"
+              transitTierUploadTimestamp = 1715417005883
             }
-            width = 2557
+            width = 3254
           }
+          wasDownloaded = true
         }
       ]
       text = Text {
-        body = "senserit decore interpretaris"
+        body = "brute veritus unum"
       }
     }
   }

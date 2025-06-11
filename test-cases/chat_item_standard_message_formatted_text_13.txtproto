@@ -192,7 +192,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1829227952980
+    dateSent = 1739258413371
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -200,14 +200,14 @@ Frame {
             reason = FailureReason.NETWORK
           }
           recipientId = 4
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         },
         SendStatus {
           failed = Failed {
             reason = FailureReason.NETWORK
           }
           recipientId = 5
-          timestamp = 1794124103201
+          timestamp = 1876644825915
         }
       ]
     }
@@ -229,7 +229,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1910611834873
+    dateSent = 1859306524969
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -237,14 +237,14 @@ Frame {
             reason = FailureReason.NETWORK
           }
           recipientId = 4
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         },
         SendStatus {
           failed = Failed {
             reason = FailureReason.NETWORK
           }
           recipientId = 5
-          timestamp = 1794124103201
+          timestamp = 1876644825915
         }
       ]
     }

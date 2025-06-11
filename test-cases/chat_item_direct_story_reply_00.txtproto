@@ -130,18 +130,17 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1854327129875
+    dateSent = 1907421183791
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         text = Text {
-          body = "massa nominavi senserit decore interpretaris"
+          body = "tota repudiandae"
         }
       }
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826269
-      dateServerSent = 1794124103201
-      read = true
+      dateReceived = 1680366577838
+      dateServerSent = 1688484601889
       sealedSender = true
     }
   }

@@ -148,11 +148,10 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1714038464608
+    dateSent = 1776361158420
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826269
-      dateServerSent = 1794124103201
-      read = true
+      dateReceived = 1680366577838
+      dateServerSent = 1688484601889
       sealedSender = true
     }
     standardMessage = StandardMessage {
@@ -165,7 +164,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
+        body = "vulputate omittam"
       }
     }
   }

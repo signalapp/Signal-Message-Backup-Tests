@@ -100,21 +100,20 @@ Frame {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
       avatarColor = AvatarColor.A140
-      blocked = true
       e164 = 33639987372
       hideStory = true
       identityState = IdentityState.DEFAULT
       nickname = Name {
         family = ""
-        given = "Maura"
+        given = "Gale"
       }
-      note = "natoque"
+      note = "repudiandae brute"
       pni = <f2c8f6640c624f2f806929719cb0c468>
       profileSharing = true
       registered = Registered {}
-      systemFamilyName = "Roach"
+      systemFamilyName = "Kemp"
       systemGivenName = ""
-      systemNickname = "Juliette"
+      systemNickname = "Robin"
       visibility = Visibility.HIDDEN
     }
     id = 4

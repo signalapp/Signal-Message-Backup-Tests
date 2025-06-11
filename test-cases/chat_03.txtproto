@@ -120,7 +120,8 @@ Frame {
 
 Frame {
   chat = Chat {
-    expireTimerVersion = 582678965
+    archived = true
+    expireTimerVersion = 1990187126
     id = 3
     pinnedOrder = 1
     recipientId = 4
@@ -131,9 +132,12 @@ Frame {
         contentType = "image/png"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          digest = <>
-          key = <>
-          mediaName = ""
+          key = <5499ec295fa73d1eca46d29f861af10f>
+          legacyDigest = <>
+          legacyMediaName = ""
+          mediaTierCdnNumber = 3
+          plaintextHash = <82b87e2036106eec0da607bfe85604e4e3670f77ebf5e721149f599dab4f9c8a>
+          size = 400965107
         }
       }
     }

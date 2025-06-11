@@ -135,7 +135,6 @@ Frame {
       dateReceived = 1833527071182
       dateServerSent = 1833527071191
       read = true
-      sealedSender = true
     }
     revisions = [
       ChatItem {
@@ -145,19 +144,17 @@ Frame {
         incoming = IncomingMessageDetails {
           dateReceived = 1833527013361
           dateServerSent = 1833527013370
-          read = true
-          sealedSender = true
         }
         standardMessage = StandardMessage {
           text = Text {
-            body = "morbi dicat antiopam quod iudicabit auctor platonem"
+            body = "antiopam"
           }
         }
       }
     ]
     standardMessage = StandardMessage {
       text = Text {
-        body = "sapien tristique sale"
+        body = "unum utinam sapien tristique sale quaerendum disputationi quaeque"
       }
     }
   }

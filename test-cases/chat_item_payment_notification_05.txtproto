@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1776266470568
+    dateSent = 1793619271804
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -142,9 +142,9 @@ Frame {
       ]
     }
     paymentNotification = PaymentNotification {
-      amountMob = "8659743698745397888"
-      feeMob = "6646369563226663457966"
-      note = "homero periculis vero quaerendum molestie ferri risus aeque"
+      amountMob = "74539788824386491352746"
+      feeMob = "663457966868341419"
+      note = "invenire inimicus quis fermentum arcu nonumy convallis similique mei"
       transactionDetails = TransactionDetails {
         failedTransaction = FailedTransaction {
           reason = FailureReason.INSUFFICIENT_FUNDS

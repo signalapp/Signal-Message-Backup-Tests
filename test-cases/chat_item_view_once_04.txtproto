@@ -130,31 +130,37 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577842
+    dateSent = 1700984146927
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           recipientId = 4
           sent = Sent {}
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
-        clientUuid = <ee553d0289804d228b1eb3d79549608d>
+        clientUuid = <c8e87991b986480584cc7987083b3bb6>
         flag = Flag.NONE
         pointer = FilePointer {
           blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
           contentType = "video/mp4"
-          height = 1799
+          height = 554
+          incrementalMac = <54d933c20d1a04ced92499f547a5942e>
+          incrementalMacChunkSize = 2048
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
-            key = <>
-            mediaName = ""
+            encryptedDigest = <a867e8b454754359d4337a3cc4f08757>
+            key = <f767baaec4d38bdc7ba7623758493e1b>
+            legacyDigest = <>
+            legacyMediaName = ""
+            size = 330901086
+            transitCdnKey = "rHYkFXMOBq"
+            transitTierUploadTimestamp = 1713112202564
           }
-          width = 3525
+          width = 3294
         }
       }
     }

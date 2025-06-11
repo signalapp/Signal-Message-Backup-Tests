@@ -221,11 +221,10 @@ Frame {
       10
     ]
     folderType = FolderType.CUSTOM
-    id = <7229690068c4b09c566976e517765490>
+    id = <bce89c73382a342b5c0c5f7b97527985>
     includeAllGroupChats = true
     includeAllIndividualChats = true
     name = "Quod Iudicabit"
     showMutedChats = true
-    showOnlyUnread = true
   }
 }

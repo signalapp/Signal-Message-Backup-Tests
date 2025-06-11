@@ -130,29 +130,34 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1854327129888
+    dateSent = 1907421183804
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1739598175233
+          sentTimestamp = 1706981830239
           sortOrder = 1
         }
       ]
       textReply = TextReply {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
-          fileName = "dYWyYPn"
+          fileName = "hcCMe"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
-            key = <>
-            mediaName = ""
+            encryptedDigest = <6d6be1c6a7ed5289222d4808bdaadcf9>
+            key = <6ce3c17322ad4bfac6e10859fb70db9f>
+            legacyDigest = <>
+            legacyMediaName = ""
+            size = 1267987916
+            transitCdnKey = "WyYPnka"
+            transitCdnNumber = 2
+            transitTierUploadTimestamp = 1713069754495
           }
         }
         text = Text {
-          body = "utinam tota repudiandae brute veritus unum"
+          body = "sale quaerendum disputationi quaeque an pretium ubique reprehendunt"
           bodyRanges = [
             BodyRange {
               length = 4
@@ -173,7 +178,7 @@ Frame {
             reason = FailureReason.NETWORK
           }
           recipientId = 4
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }

@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1709869938871
+    dateSent = 1818790665711
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -138,37 +138,38 @@ Frame {
           sent = Sent {
             sealedSender = true
           }
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "dolorum aperiri dignissim"
+          description = "penatibus sumo aliquet definitiones accommodare pellentesque pulvinar voluptaria"
           image = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "image/jpeg"
-            height = 422
+            height = 750
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <dbd29cb42e984d652ed70996974af5a7>
-              key = <3d448eb3458c6acb7db665e567fdcb1a>
-              mediaName = "dbd29cb42e984d652ed70996974af5a7"
+              key = <cf664a80595e2aa725b1e780a6681e10>
+              legacyDigest = <>
+              legacyMediaName = ""
               mediaTierCdnNumber = 2
-              size = 582678964
-              transitCdnKey = "XMOBqmCd"
+              plaintextHash = <88e3f24a21a78511518391fbc5b26db646e8dc0a531c93c2fbd8a21f072534d5>
+              size = 217727810
+              transitCdnKey = "EhcCMeejhn"
               transitCdnNumber = 3
-              transitTierUploadTimestamp = 1712931481956
+              transitTierUploadTimestamp = 1715385601435
             }
-            width = 495
+            width = 3997
           }
-          title = "Graeco Tractatos"
-          url = "https://signal.org/OMpdiJZO"
+          title = "Lorem vel"
+          url = "https://signal.org/TgpIJqySkLQG"
         }
       ]
       text = Text {
-        body = "utinam sapien tristique https://signal.org/OMpdiJZO"
+        body = "ferri altera https://signal.org/TgpIJqySkLQG"
       }
     }
   }

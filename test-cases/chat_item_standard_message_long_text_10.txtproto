@@ -130,42 +130,44 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577848
+    dateSent = 1700984146933
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           recipientId = 4
-          timestamp = 1695248715439
-          viewed = Viewed {}
+          timestamp = 1830930358412
+          viewed = Viewed {
+            sealedSender = true
+          }
         }
       ]
     }
     standardMessage = StandardMessage {
       longText = FilePointer {
         contentType = "text/x-signal-plain"
-        fileName = "aWIBH"
+        fileName = "gFokLHLm"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          digest = <974af5a7a459650a2590efd18c249edb>
-          key = <67fdcb1ac685a8aedbd29cb42e984d65>
-          mediaName = "974af5a7a459650a2590efd18c249edb"
-          mediaTierCdnNumber = 2
-          size = 957662124
-          transitCdnKey = "ECQWuuuEFCmCq"
+          encryptedDigest = <b0268c5da867e8b454754359d4337a3c>
+          key = <072534d5f767baaec4d38bdc7ba76237>
+          legacyDigest = <>
+          legacyMediaName = ""
+          size = 1343527527
+          transitCdnKey = "YkFXMOBqmCdYWy"
           transitCdnNumber = 3
-          transitTierUploadTimestamp = 1714340547340
+          transitTierUploadTimestamp = 1715089586241
         }
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1737231682230
+          sentTimestamp = 1757577531389
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "in definitiones volutpat sagittis"
+        body = "sapien tristique sale"
       }
     }
   }

@@ -238,7 +238,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1878937499399
+    dateSent = 1810531568155
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       groupChange = GroupChangeChatUpdate {
@@ -258,7 +258,6 @@ Frame {
             groupAdminStatusUpdate = GroupAdminStatusUpdate {
               memberAci = <000a11ce000040008000000000000001>
               updaterAci = <00000000000040008000000000000001>
-              wasAdminStatusGranted = true
             }
           }
         ]

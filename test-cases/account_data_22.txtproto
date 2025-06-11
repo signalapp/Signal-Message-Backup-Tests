@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -6364780
+          solid = -11098071
         },
         CustomChatColor {
           id = 2
-          solid = -8932443
+          solid = -3114329
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 335
+            angle = 139
             colors = [
-              -5320582,
-              -10997243
+              -10882070,
+              -14174184
             ]
             positions = [
               0.0,
@@ -37,44 +37,36 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.GRADIENT_SEA
+        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.GRADIENT_AQUA
       }
-      displayBadgesOnProfile = true
-      hasCompletedUsernameOnboarding = true
-      hasSeenGroupStoryEducationSheet = true
-      hasSetMyStoriesPrivacy = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       linkPreviews = true
-      notDiscoverableByPhoneNumber = true
       optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
-      sealedSenderIndicators = true
-      storiesDisabled = true
-      storyViewReceiptsEnabled = true
-      typingIndicators = true
-      universalExpireTimerSeconds = 708390689
+      universalExpireTimerSeconds = 2076758843
     }
-    avatarUrlPath = "https://signal.org/CfVdHWJ"
+    avatarUrlPath = "https://signal.org/NgpXHtZhdLyg"
     backupsSubscriberData = IAPSubscriberData {
-      originalTransactionId = 1139811466616640132
-      subscriberId = <47db44d61270a0dc3ef0b2b677d4e0eeaf3371028a04ed7271a429e076b8d33f>
+      originalTransactionId = 8987934779766148702
+      subscriberId = <44b4c8d19c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e>
     }
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <0e366ee6b4982ddc1b1b12d3edc997f4505b2d0c464633445cb1f9a68a644847>
+      subscriberId = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
     }
-    familyName = "Hyde"
-    givenName = "Evan"
-    profileKey = <ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795a>
+    familyName = "Stanley"
+    givenName = "Bernardo"
+    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
     svrPin = "abcdefg"
-    username = "emery.8742"
+    username = "vito.4246"
     usernameLink = UsernameLink {
       color = Color.OLIVE
-      entropy = <2ff23f31ca20483ef7a05a9615d4adbdf6985c94b6633322a1ff1c9732d8456e>
-      serverId = <b98b2bedfeba4948ff5ee0b3877862d9>
+      entropy = <d3faf51e18e707cf7cb4446159fb651a953525dd5da9aa792ff23f31ca20483e>
+      serverId = <15d4adbdf6985c94b6633322a1ff1c97>
     }
   }
 }

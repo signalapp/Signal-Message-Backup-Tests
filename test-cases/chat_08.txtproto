@@ -120,13 +120,12 @@ Frame {
 
 Frame {
   chat = Chat {
-    archived = true
     dontNotifyForMentionsIfMuted = true
-    expirationTimerMs = 904364147000
-    expireTimerVersion = 1769244280
+    expirationTimerMs = 365366664000
+    expireTimerVersion = 909293366
     id = 3
     markedUnread = true
-    muteUntilMs = 1910611834860
+    muteUntilMs = 1760120031011
     recipientId = 4
     style = ChatStyle {
       bubbleColorPreset = BubbleColorPreset.SOLID_BLUE

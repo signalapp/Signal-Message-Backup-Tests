@@ -120,9 +120,8 @@ Frame {
 
 Frame {
   chat = Chat {
-    archived = true
     dontNotifyForMentionsIfMuted = true
-    expireTimerVersion = 582678965
+    expireTimerVersion = 1990187126
     id = 3
     markedUnread = true
     recipientId = 4

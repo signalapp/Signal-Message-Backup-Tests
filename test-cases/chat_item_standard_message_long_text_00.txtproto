@@ -130,11 +130,10 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577838
+    dateSent = 1700984146923
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826269
-      dateServerSent = 1794124103201
-      read = true
+      dateReceived = 1680366577838
+      dateServerSent = 1688484601889
       sealedSender = true
     }
     standardMessage = StandardMessage {
@@ -142,16 +141,17 @@ Frame {
         contentType = "text/x-signal-plain"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          digest = <59633d69d55d99f6f871f8839a9ce2d8>
-          key = <346a5ff97c318292bd6e73ff9022c6fa>
-          mediaName = "59633d69d55d99f6f871f8839a9ce2d8"
-          size = 761879400
-          transitCdnKey = "ECQWuuuEFCmCq"
-          transitTierUploadTimestamp = 1714340547340
+          encryptedDigest = <0c22bad9944dc49190adabba8a72bebb>
+          key = <58a12027e42941e2e1f45a96bc4c7227>
+          legacyDigest = <>
+          legacyMediaName = ""
+          size = 1267987916
+          transitCdnKey = "YkFXMOBqmCdYWy"
+          transitTierUploadTimestamp = 1715089586241
         }
       }
       text = Text {
-        body = "senserit decore interpretaris"
+        body = "brute veritus unum"
       }
     }
   }

@@ -190,18 +190,20 @@ Frame {
 
 Frame {
   notificationProfile = NotificationProfile {
+    allowAllCalls = true
     allowedMembers = [
       4
     ]
     color = -2234372
     createdAtMs = 1905721875752
     emoji = "💀"
-    id = <2faf620c7229690068c4b09c566976e5>
+    id = <566976e517765490bce89c73382a342b>
     name = "Congue Fastidii"
     scheduleDaysEnabled = [
       DayOfWeek.MONDAY
     ]
-    scheduleEndTime = 434
-    scheduleStartTime = 2223
+    scheduleEnabled = true
+    scheduleEndTime = 116
+    scheduleStartTime = 1023
   }
 }

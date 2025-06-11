@@ -135,20 +135,18 @@ Frame {
         avatar = FilePointer {
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/jpeg"
-          fileName = "GQDDfXFi"
-          height = 2067
+          fileName = "QgbBhBndE"
+          height = 2510
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <9c78ede6249be3774edfd6f44d99aeec>
-            key = <26a8275b675edf50b974ee8cbdec4974>
-            mediaName = "9c78ede6249be3774edfd6f44d99aeec"
+            key = <12752e2f4eac3a2d1eb146b64b90327c>
+            legacyDigest = <>
+            legacyMediaName = ""
             mediaTierCdnNumber = 2
-            size = 1652375935
-            transitCdnKey = "aXiLScgL"
-            transitCdnNumber = 3
-            transitTierUploadTimestamp = 1713032953686
+            plaintextHash = <07aed74a6f6314675ce2931bdc4268650eb4a44f3384961f52e772aa4fd669a3>
+            size = 542768234
           }
-          width = 2160
+          width = 1075
         }
         name = Name {
           familyName = ""
@@ -161,7 +159,7 @@ Frame {
         organization = ""
       }
     }
-    dateSent = 1688484601889
+    dateSent = 1717801198101
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -169,7 +167,7 @@ Frame {
           sent = Sent {
             sealedSender = true
           }
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }

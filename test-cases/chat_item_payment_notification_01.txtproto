@@ -130,28 +130,29 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1776266470564
+    dateSent = 1793619271800
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826270
-      dateServerSent = 1794124103202
+      dateReceived = 1680366577839
+      dateServerSent = 1688484601890
+      read = true
     }
     paymentNotification = PaymentNotification {
-      amountMob = "8659743698745397888"
-      feeMob = "6646369563226663457966"
-      note = "homero periculis vero quaerendum molestie ferri risus aeque"
+      amountMob = "74539788824386491352746"
+      feeMob = "663457966868341419"
+      note = "invenire inimicus quis fermentum arcu nonumy convallis similique mei"
       transactionDetails = TransactionDetails {
         transaction = Transaction {
-          blockIndex = 9203588929966772552
-          blockTimestamp = 1870070955972
+          blockIndex = 1409715382782039282
+          blockTimestamp = 1855264323774
           mobileCoinIdentification = MobileCoinTxoIdentification {
             publicKey = [
-<90adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72>
+<99eb27976fb2a59dcf3429a08f357899994d295169f375454a95979def0ce9d2>
             ]
           }
-          receipt = <0a220a2000000000000000000000000000000000000000000000000000000000000000002a2d0a220a200000000000000000000000000000000000000000000000000000000000000000119e02000000000000>
+          receipt = <0a220a2000000000000000000000000000000000000000000000000000000000000000002a2d0a220a200000000000000000000000000000000000000000000000000000000000000000110501000000000000>
           status = Status.SUBMITTED
-          timestamp = 1754822320311
-          transaction = <54d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e29956dc1e0cd>
+          timestamp = 1838953738863
+          transaction = <0a038863ebb03fed8486f4196b6e656c0977166fd3faf51e18e707cf7cb44461>
         }
       }
     }

@@ -40,6 +40,10 @@ object SeededRandom {
     return random.nextLong(lower, upper)
   }
 
+  fun boolean(): Boolean{
+    return random.nextBoolean()
+  }
+
   /** Random int from [lower] (inclusive) to [upper] (exclusive) */
   fun int(lower: Int = Int.MIN_VALUE, upper: Int = Int.MAX_VALUE): Int {
     return random.nextInt(lower, upper)

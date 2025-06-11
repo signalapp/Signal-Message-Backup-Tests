@@ -132,7 +132,7 @@ Frame {
     chatId = 2
     dateSent = 1
     giftBadge = GiftBadge {
-      receiptCredentialPresentation = <006cdec31a9dac5d7746246a6315f18cf165d30979a2dfe93d1ce83e24f1935777940884794ac3b4c4d7d79dda4fbc540571f53dd23f4ec98f50eb5e1f857e093f0e8180f1b43d7693032cdc3f53ea9dff66f2d45d34e885b4b5cb5d911d1c3f273c033f02149f5732133cf3513cd83f65dbf2bf65ce1f9533a4fb5e14852d312064276ae3334233318d931bdbed68b5d3cecc550a9e00d74e498481b4ec3a5f7680000000000000005bb7b01db0ae7fb6d469878ae7098644c7a01bf14d0d477a520369e2ba833c0617844fdfe27d5ee1c2db332f35deb5e303e6ed9c9d1612855233e029ebfb1f0d4a5ed8540701845f0349dd68013daf442f2251e2875a7685b1dd67e3cbedfe045e421bc601689146ce66eb38f91dc5a63ac0e7488bab51ff4463025bac5758080000000000000000010000000000000013146f971dd8e18dda3c9fecbbbc4dd7>
+      receiptCredentialPresentation = <00ca4f3227864e68ae8e94bf281619563c2eb383ee704add540a5133e25e8c0916d686cd94b0891b435d16d5d441065a75f82323fa36255932d71a4b949710567e58db69766f696ebc99e748c5d818cee19d5a1efab90cfab8706c657ba1326600ee57162924b03f1709d5b61dff5ad5bafe639abfd161c42ac252724626953747e2aa2515fdda965be44c62fdf07def192b467c7196ca7ac9746af55dde8162648000000000000000e4f740655b6ac374a50677b67fe242616077f35a9688a151f66d31aea5536003738c4d08f84123fb0f838fcf69f3760efa350019a847c556933ecbc57783ec0b6c6c428344e0239692a815826a55935698ce48425c156273239d2b366cdc4101e956aedeea5d9a1351b4653a9122513e3971415bde72528b7fb4c1ae5e498f09000000000000000001000000000000003e9c05b4cf7858f3236a5a4adaa54cff>
       state = State.OPENED
     }
     incoming = IncomingMessageDetails {
@@ -147,7 +147,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464620
+    dateSent = 1776361158432
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -155,7 +155,7 @@ Frame {
             reason = FailureReason.UNKNOWN
           }
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
@@ -166,7 +166,7 @@ Frame {
         type = Type.GIFT_BADGE
       }
       text = Text {
-        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
+        body = "vulputate omittam"
       }
     }
   }

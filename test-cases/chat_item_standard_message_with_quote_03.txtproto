@@ -144,12 +144,11 @@ Frame {
             contentType = "audio/mp3"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <415927e5e905a65cf1e3dc3854637d61>
-              key = <6c16ee4958a6182835d776e1b9efa859>
-              mediaName = "415927e5e905a65cf1e3dc3854637d61"
-              size = 464850599
-              transitCdnKey = "IZokXAtYfRj"
-              transitTierUploadTimestamp = 1713506558146
+              key = <277d70073c7bebc349967e8bee1a8abd>
+              legacyDigest = <>
+              legacyMediaName = ""
+              plaintextHash = <346a9b3dcc07d6b3111c644449894b5870b59e80009c84d33e65ea581a082d86>
+              size = 599513233
             }
           }
           wasDownloaded = true
@@ -163,7 +162,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464611
+    dateSent = 1776361158423
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -171,7 +170,7 @@ Frame {
           sent = Sent {
             sealedSender = true
           }
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
@@ -185,15 +184,20 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 2385
+                height = 184
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <>
-                  key = <>
-                  mediaName = ""
+                  encryptedDigest = <8b71d65322e5b174175b1fae11a2814a>
+                  key = <65479a91242085fcc6cd18ca376d06f4>
+                  legacyDigest = <>
+                  legacyMediaName = ""
+                  size = 526952817
+                  transitCdnKey = "VNzGrthhi"
+                  transitTierUploadTimestamp = 1712475055839
                 }
-                width = 2688
+                width = 3030
               }
+              wasDownloaded = true
             }
           }
         ]
@@ -202,7 +206,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
+        body = "vulputate omittam"
       }
     }
   }

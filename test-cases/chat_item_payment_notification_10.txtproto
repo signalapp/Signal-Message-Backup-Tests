@@ -130,20 +130,22 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1776266470573
+    dateSent = 1793619271809
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           recipientId = 4
-          timestamp = 1695248715439
-          viewed = Viewed {}
+          timestamp = 1830930358412
+          viewed = Viewed {
+            sealedSender = true
+          }
         }
       ]
     }
     paymentNotification = PaymentNotification {
-      amountMob = "168215219239718813429"
-      feeMob = "4386491352746419896"
-      note = "invenire inimicus quis fermentum arcu nonumy convallis similique mei"
+      amountMob = "7188134294865974369"
+      feeMob = "198967664636956322"
+      note = "sociis qui molestie montes dictumst varius idque"
       transactionDetails = TransactionDetails {
         failedTransaction = FailedTransaction {
           reason = FailureReason.NETWORK

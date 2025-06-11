@@ -133,17 +133,17 @@ Frame {
     contactMessage = ContactMessage {
       contact = ContactAttachment {
         name = Name {
-          familyName = "Gillespie"
-          givenName = "Fletcher"
-          middleName = "Daphne"
-          nickname = "Michelle"
+          familyName = "Clarke"
+          givenName = "Cliff"
+          middleName = "Brandi"
+          nickname = "Aurelio"
           prefix = ""
           suffix = ""
         }
         organization = ""
       }
     }
-    dateSent = 1688484601889
+    dateSent = 1717801198101
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -151,7 +151,7 @@ Frame {
             sealedSender = true
           }
           recipientId = 4
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }

@@ -130,23 +130,22 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1854327129887
+    dateSent = 1907421183803
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <59633d69d55d99f6f871f8839a9ce2d8>
-            key = <346a5ff97c318292bd6e73ff9022c6fa>
-            mediaName = "59633d69d55d99f6f871f8839a9ce2d8"
-            size = 761879400
-            transitCdnKey = "ECQWuuuEFCmCq"
-            transitTierUploadTimestamp = 1714340547340
+            key = <fc853ca658a12027e42941e2e1f45a96>
+            legacyDigest = <>
+            legacyMediaName = ""
+            plaintextHash = <4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef7370>
+            size = 891929939
           }
         }
         text = Text {
-          body = "in definitiones volutpat sagittis"
+          body = "veritus unum utinam sapien"
           bodyRanges = [
             BodyRange {
               length = 1
@@ -163,7 +162,7 @@ Frame {
             reason = FailureReason.UNKNOWN
           }
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }

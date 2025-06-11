@@ -218,12 +218,13 @@ Frame {
 Frame {
   chatFolder = ChatFolder {
     folderType = FolderType.CUSTOM
-    id = <7229690068c4b09c566976e517765490>
+    id = <bce89c73382a342b5c0c5f7b97527985>
     includedRecipientIds = [
       5,
       4,
       10
     ]
     name = "Quod Iudicabit"
+    showOnlyUnread = true
   }
 }

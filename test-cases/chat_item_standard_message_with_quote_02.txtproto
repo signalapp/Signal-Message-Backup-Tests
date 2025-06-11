@@ -139,61 +139,71 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <d7f549b4b6174280892b2ad83c23daae>
+          clientUuid = <9b26f237f17f4e4e8c0acb3f311e18d7>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "FCmCqQN"
-            height = 3374
+            fileName = "yYPnkaWIBHCZR"
+            height = 787
+            incrementalMac = <140efe703c6727a8d5e0f3b49a458da0>
+            incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
-              key = <>
-              mediaName = ""
+              key = <eaa4908fc733c2440c3ae62e4a5aa0bb>
+              legacyDigest = <>
+              legacyMediaName = ""
+              plaintextHash = <95b0f63bd4c8184986860917d55519fd5bc982fa3e64d7eea8973f9028fe841d>
+              size = 1261271664
             }
-            width = 1298
+            width = 422
           }
+          wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "qmCdYWyYPnka"
+            caption = "fTgFokL"
             contentType = "image/gif"
-            fileName = "WGrAzrH"
-            height = 3915
+            fileName = "tEhcC"
+            height = 996
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <46b594613c7b2ffacf664a80595e2aa7>
-              key = <950d8ea9f18dbe1090e3527a69f4f636>
-              mediaName = "46b594613c7b2ffacf664a80595e2aa7"
-              mediaTierCdnNumber = 2
-              size = 228006847
-              transitCdnKey = "gpIJqy"
+              encryptedDigest = <aa1d063c8db57633fa5483f31f78622c>
+              key = <36327e78d6bf0ffb1ec67707ad43f2d1>
+              legacyDigest = <>
+              legacyMediaName = ""
+              size = 330901086
+              transitCdnKey = "uuEFCmC"
               transitCdnNumber = 3
-              transitTierUploadTimestamp = 1714708939862
+              transitTierUploadTimestamp = 1714213501916
             }
-            width = 1111
+            width = 3538
           }
-          wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <d7f549b4b6174280892b2ad83c23daae>
+          clientUuid = <9b26f237f17f4e4e8c0acb3f311e18d7>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "IBHCZ"
+            caption = "LmtLxdKP"
             contentType = "audio/mp3"
-            height = 470
+            height = 2405
+            incrementalMac = <140efe703c6727a8d5e0f3b49a458da0>
+            incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
-              key = <>
-              mediaName = ""
+              key = <4ce58985ed43189427a38645ab2d5739>
+              legacyDigest = <>
+              legacyMediaName = ""
+              mediaTierCdnNumber = 3
+              plaintextHash = <0dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede827e18e55>
+              size = 1897960690
             }
-            width = 2521
+            width = 1946
           }
+          wasDownloaded = true
         }
       ]
       text = Text {
@@ -217,7 +227,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464610
+    dateSent = 1776361158422
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -236,21 +246,18 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
                 contentType = "image/jpeg"
-                height = 3967
+                height = 2597
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  digest = <d4b1d7636bdb57ad30aa3c500868d7e3>
-                  key = <760bd28a6c67002e8feb35cf929eee91>
-                  mediaName = "d4b1d7636bdb57ad30aa3c500868d7e3"
+                  key = <7edab79243ee0afa974f0f919a6bcc01>
+                  legacyDigest = <>
+                  legacyMediaName = ""
                   mediaTierCdnNumber = 2
-                  size = 1542306071
-                  transitCdnKey = "KFgbkCrm"
-                  transitCdnNumber = 3
-                  transitTierUploadTimestamp = 1711987805477
+                  plaintextHash = <4cb3aaac973d525de064dac3d65cb97888da15caec10fdd86648483d75127188>
+                  size = 1491072171
                 }
-                width = 1700
+                width = 2269
               }
-              wasDownloaded = true
             }
           }
         ]
@@ -275,18 +282,18 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1753730775131
+          sentTimestamp = 1752256552408
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1753730775132
+          sentTimestamp = 1752256552409
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "vero"
+        body = "felis salutatus dolore tractatos evertitur deterruisset usu delectus molestiae"
       }
     }
   }

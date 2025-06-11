@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1680366577846
+    dateSent = 1700984146931
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -144,18 +144,18 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1754822320310
+          sentTimestamp = 1838953738862
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1754822320311
+          sentTimestamp = 1838953738863
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "utinam tota repudiandae brute veritus unum"
+        body = "disputationi quaeque an pretium ubique reprehendunt quisque"
       }
     }
   }

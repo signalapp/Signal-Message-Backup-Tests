@@ -130,21 +130,20 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1709869938868
+    dateSent = 1818790665708
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826269
-      dateServerSent = 1794124103201
-      read = true
+      dateReceived = 1680366577838
+      dateServerSent = 1688484601889
       sealedSender = true
     }
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          url = "https://signal.org/OMpdiJZO"
+          url = "https://signal.org/TgpIJqySkLQG"
         }
       ]
       text = Text {
-        body = "utinam sapien tristique https://signal.org/OMpdiJZO"
+        body = "ferri altera https://signal.org/TgpIJqySkLQG"
       }
     }
   }

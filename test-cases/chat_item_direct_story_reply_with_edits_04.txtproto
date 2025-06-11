@@ -130,13 +130,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1842946157852
+    dateSent = 1832309417569
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1783978971133
+          sentTimestamp = 1739683107771
           sortOrder = 1
         }
       ]
@@ -145,9 +145,12 @@ Frame {
           contentType = "text/x-signal-plain"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
-            key = <>
-            mediaName = ""
+            key = <072534d5f767baaec4d38bdc7ba76237>
+            legacyDigest = <>
+            legacyMediaName = ""
+            mediaTierCdnNumber = 3
+            plaintextHash = <f22b67999610114498749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5ad>
+            size = 257533757
           }
         }
         text = Text {
@@ -175,28 +178,24 @@ Frame {
       }
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1842946157842
-      dateServerSent = 1842946157851
-      read = true
-      sealedSender = true
+      dateReceived = 1832309417559
+      dateServerSent = 1832309417568
     }
     revisions = [
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1842946084067
+        dateSent = 1832309357285
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "solet ullamcorper mandamus equidem utamur metus"
+              body = "mus pulvinar maiestatis ad dicta eos alienum mollis ius"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1842946084057
-          dateServerSent = 1842946084066
-          read = true
-          sealedSender = true
+          dateReceived = 1832309357275
+          dateServerSent = 1832309357284
         }
       }
     ]

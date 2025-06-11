@@ -130,22 +130,23 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577839
+    dateSent = 1700984146924
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826270
-      dateServerSent = 1794124103202
+      dateReceived = 1680366577839
+      dateServerSent = 1688484601890
+      read = true
     }
     standardMessage = StandardMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1754822320310
+          sentTimestamp = 1838953738862
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "in definitiones volutpat sagittis"
+        body = "sapien tristique sale"
       }
     }
   }

@@ -130,10 +130,11 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577839
+    dateSent = 1700984146924
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826270
-      dateServerSent = 1794124103202
+      dateReceived = 1680366577839
+      dateServerSent = 1688484601890
+      read = true
     }
     remoteDeletedMessage = RemoteDeletedMessage {}
   }

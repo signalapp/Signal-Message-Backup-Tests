@@ -156,13 +156,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464614
+    dateSent = 1776361158426
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           delivered = Delivered {}
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
@@ -176,7 +176,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "atomorum maecenas suscipiantur ligula commodo dicunt"
+        body = "vulputate omittam"
       }
     }
   }

@@ -100,26 +100,25 @@ Frame {
     contact = Contact {
       aci = <88d9eec83bef469d8111daaf5d87ff09>
       avatarColor = AvatarColor.A120
-      blocked = true
       e164 = 33639987372
       hideStory = true
       identityKey = <05921917e2011c5cdb846a4910c8c0517e6becd9f55c75781179a58a6f4ea0211c>
       identityState = IdentityState.UNVERIFIED
       nickname = Name {
-        family = "Blevins"
-        given = "Thomas"
+        family = "Banks"
+        given = "Pamela"
       }
       notRegistered = NotRegistered {
         unregisteredTimestamp = 1833527071192
       }
-      note = "veritus unum utinam sapien"
+      note = "pretium ubique"
       pni = <f2c8f6640c624f2f806929719cb0c468>
-      profileFamilyName = "Pennington"
-      profileGivenName = "Manuela"
+      profileFamilyName = "Grant"
+      profileGivenName = "Josephine"
       profileSharing = true
-      systemFamilyName = "Byers"
-      systemGivenName = "Brandi"
-      systemNickname = "Mona"
+      systemFamilyName = "Cook"
+      systemGivenName = "Derick"
+      systemNickname = "Felicia"
       username = "theodore.2274"
       visibility = Visibility.HIDDEN_MESSAGE_REQUEST
     }

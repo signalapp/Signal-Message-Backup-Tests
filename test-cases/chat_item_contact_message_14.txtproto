@@ -133,17 +133,17 @@ Frame {
     contactMessage = ContactMessage {
       contact = ContactAttachment {
         name = Name {
-          familyName = "Gillespie"
-          givenName = "Fletcher"
-          middleName = "Daphne"
-          nickname = "Michelle"
+          familyName = "Clarke"
+          givenName = "Cliff"
+          middleName = "Brandi"
+          nickname = "Aurelio"
           prefix = ""
           suffix = ""
         }
         organization = ""
       }
     }
-    dateSent = 1680366577838
+    dateSent = 1700984146923
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {

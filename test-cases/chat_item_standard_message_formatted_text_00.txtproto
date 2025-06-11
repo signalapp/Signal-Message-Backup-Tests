@@ -192,10 +192,10 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 3
-    dateSent = 1829227952967
+    dateSent = 1739258413358
     incoming = IncomingMessageDetails {
-      dateReceived = 1893384744452
-      dateServerSent = 1661654979888
+      dateReceived = 1854396896237
+      dateServerSent = 1723066873782
       read = true
       sealedSender = true
     }
@@ -211,10 +211,10 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 3
-    dateSent = 1910611834860
+    dateSent = 1859306524956
     incoming = IncomingMessageDetails {
-      dateReceived = 1893384744452
-      dateServerSent = 1661654979888
+      dateReceived = 1854396896237
+      dateServerSent = 1723066873782
       read = true
       sealedSender = true
     }

@@ -130,45 +130,45 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1709869938872
+    dateSent = 1818790665712
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           recipientId = 4
           sent = Sent {}
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1757577531389
+          date = 1668393149052
           image = FilePointer {
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "image/png"
-            height = 3538
+            height = 3002
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
               key = <>
-              mediaName = ""
+              legacyDigest = <>
+              legacyMediaName = ""
             }
-            width = 3312
+            width = 2297
           }
-          url = "https://signal.org/OMpdiJZO"
+          url = "https://signal.org/TgpIJqySkLQG"
         }
       ]
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1791048979308
+          sentTimestamp = 1740111564901
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "quaerendum disputationi quaeque an pretium https://signal.org/OMpdiJZO"
+        body = "tamquam himenaeos laoreet fugit pretium graeco tractatos aenean https://signal.org/TgpIJqySkLQG"
       }
     }
   }

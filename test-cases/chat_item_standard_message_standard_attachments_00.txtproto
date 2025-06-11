@@ -130,11 +130,10 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577838
+    dateSent = 1700984146923
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826269
-      dateServerSent = 1794124103201
-      read = true
+      dateReceived = 1680366577838
+      dateServerSent = 1688484601889
       sealedSender = true
     }
     standardMessage = StandardMessage {
@@ -145,15 +144,13 @@ Frame {
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <994d295169f375454a95979def0ce9d2>
-              key = <a78a536a99eb27976fb2a59dcf3429a0>
-              mediaName = "994d295169f375454a95979def0ce9d2"
-              size = 246546990
-              transitCdnKey = "CdYWy"
-              transitTierUploadTimestamp = 1715089586241
+              key = <54d933c20d1a04ced92499f547a5942e>
+              legacyDigest = <>
+              legacyMediaName = ""
+              plaintextHash = <4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166fd3faf51e>
+              size = 815946302
             }
           }
-          wasDownloaded = true
         }
       ]
     }

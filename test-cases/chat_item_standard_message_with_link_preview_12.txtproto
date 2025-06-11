@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1709869938880
+    dateSent = 1818790665720
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -138,35 +138,36 @@ Frame {
             reason = FailureReason.UNKNOWN
           }
           recipientId = 4
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1786170548347
-          description = "ultrices urna non"
+          date = 1860155357250
+          description = "homero legimus mollis torquent lacus maximus"
           image = FilePointer {
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <162925690d31a8ba1a7be8b3820ab936>
-              key = <db326789aebcb5a166a1e4dfbdea011a>
-              mediaName = "162925690d31a8ba1a7be8b3820ab936"
-              size = 680830668
-              transitCdnKey = "XMOBqmCd"
+              key = <8d6049955da8992e8eb2791f46f29c9b>
+              legacyDigest = <>
+              legacyMediaName = ""
+              plaintextHash = <47db44d61270a0dc3ef0b2b677d4e0eeaf3371028a04ed7271a429e076b8d33f>
+              size = 1990187125
+              transitCdnKey = "EhcCMeejhn"
               transitCdnNumber = 2
-              transitTierUploadTimestamp = 1712931481956
+              transitTierUploadTimestamp = 1715385601435
             }
           }
-          title = "Ridens Tamquam"
-          url = "https://signal.org/OMpdiJZO"
+          title = "Morbi Proin"
+          url = "https://signal.org/TgpIJqySkLQG"
         }
       ]
       text = Text {
-        body = "utinam sapien tristique https://signal.org/OMpdiJZO"
+        body = "ferri altera https://signal.org/TgpIJqySkLQG"
       }
     }
   }

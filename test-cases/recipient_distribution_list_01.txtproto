@@ -171,13 +171,13 @@ Frame {
 Frame {
   recipient = Recipient {
     distributionList = DistributionListItem {
-      distributionId = <512ed73b5af14750874b0621197f7c4c>
+      distributionId = <f9b38b1cc9e74e038e271a762aff3097>
       distributionList = DistributionList {
         allowReplies = true
         memberRecipientIds = [
           4
         ]
-        name = "Justo Congue"
+        name = "Eum Morbi"
         privacyMode = PrivacyMode.ONLY_WITH
       }
     }

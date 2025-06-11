@@ -144,7 +144,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1714038464621
+    dateSent = 1776361158433
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -152,7 +152,7 @@ Frame {
             reason = FailureReason.NETWORK
           }
           recipientId = 4
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }
@@ -166,12 +166,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1753730775131
+          sentTimestamp = 1752256552408
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "oratio neque decore wisi regione dico mauris curae"
+        body = "reprimique adolescens adhuc constituto his mutat ipsum dapibus maiestatis"
       }
     }
   }

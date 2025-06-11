@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1776266470566
+    dateSent = 1793619271802
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -138,14 +138,14 @@ Frame {
           sent = Sent {
             sealedSender = true
           }
-          timestamp = 1833527071192
+          timestamp = 1660152710755
         }
       ]
     }
     paymentNotification = PaymentNotification {
-      amountMob = "8659743698745397888"
-      feeMob = "6646369563226663457966"
-      note = "sociis qui molestie montes dictumst varius idque"
+      amountMob = "74539788824386491352746"
+      feeMob = "663457966868341419"
+      note = "posuere quod constituto varius tacimates suavitate utamur"
       transactionDetails = TransactionDetails {
         failedTransaction = FailedTransaction {
           reason = FailureReason.GENERIC

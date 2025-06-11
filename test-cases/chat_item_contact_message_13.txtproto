@@ -135,28 +135,33 @@ Frame {
         avatar = FilePointer {
           blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
           contentType = "image/png"
-          fileName = "GQDDfXFi"
-          height = 105
+          fileName = "QgbBhBndE"
+          height = 63
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
-            key = <>
-            mediaName = ""
+            encryptedDigest = <a27fa4e4ecdeaed9c655a939fcac4c1e>
+            key = <8e81fccbfae5bce8176bc947e17594ad>
+            legacyDigest = <>
+            legacyMediaName = ""
+            size = 542768234
+            transitCdnKey = "DDfXFiO"
+            transitCdnNumber = 3
+            transitTierUploadTimestamp = 1713877558366
           }
-          width = 2552
+          width = 2396
         }
         name = Name {
-          familyName = "Clayton"
-          givenName = "Rachael"
-          middleName = "Lorraine"
-          nickname = "Iva"
+          familyName = "Dickerson"
+          givenName = "Alexis"
+          middleName = "Maxwell"
+          nickname = "Steve"
           prefix = "Mrs."
           suffix = "Sr."
         }
         organization = ""
       }
     }
-    dateSent = 1688484601889
+    dateSent = 1717801198101
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -164,7 +169,7 @@ Frame {
             reason = FailureReason.NETWORK
           }
           recipientId = 4
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }

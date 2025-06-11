@@ -130,10 +130,11 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1680366577839
+    dateSent = 1700984146924
     incoming = IncomingMessageDetails {
-      dateReceived = 1702291826270
-      dateServerSent = 1794124103202
+      dateReceived = 1680366577839
+      dateServerSent = 1688484601890
+      read = true
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
@@ -142,12 +143,11 @@ Frame {
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <0a0f6193b4fffb255879953e257ab947>
-            key = <e85604e4e3670f77ebf5e721149f599d>
-            mediaName = "0a0f6193b4fffb255879953e257ab947"
-            size = 228006847
-            transitCdnKey = "IJqySkLQGERt"
-            transitTierUploadTimestamp = 1714542436278
+            key = <78d9cd54434bca72346a5ff97c318292>
+            legacyDigest = <>
+            legacyMediaName = ""
+            plaintextHash = <9a9ce2d8d36859b9d0b6d25acc4d5a8259872972fc853ca658a12027e42941e2>
+            size = 330901086
           }
         }
         wasDownloaded = true

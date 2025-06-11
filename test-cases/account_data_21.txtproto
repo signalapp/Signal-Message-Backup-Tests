@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -7295395
+          solid = -16091213
         },
         CustomChatColor {
           id = 2
-          solid = -5112496
+          solid = -13525414
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 239
+            angle = 19
             colors = [
-              -577122,
-              -6739874
+              -1943502,
+              -13785388
             ]
             positions = [
               0.0,
@@ -37,30 +37,38 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.GRADIENT_SUBLIME
-        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.GRADIENT_HEATMAP
       }
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      universalExpireTimerSeconds = 6518363
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 2144323445
     }
     avatarUrlPath = ""
     backupsSubscriberData = IAPSubscriberData {
-      subscriberId = <1a96e707c00259c7264eb5417dfb20d9de3b2c342e2771dbc69f3f56cf981fd6>
+      subscriberId = <183555ed8e40d2431d317e2dee39bbf801480e9e27dcdcb674f34922363753d4>
     }
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true
-      subscriberId = <0cc51a91522bafdb5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fd>
+      subscriberId = <390b234e608d3671842725ffb7b5369c034f2f21228e188ff7647a4b753e5d1b>
     }
-    familyName = "Roberts"
-    givenName = "Candice"
-    profileKey = <ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795a>
+    familyName = "Molina"
+    givenName = "Stevie"
+    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
     svrPin = "123456"
-    username = "ryan.8012"
+    username = "miguel.1875"
     usernameLink = UsernameLink {
       color = Color.GREY
-      entropy = <d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166f>
-      serverId = <18e707cf7cb4446159fb651a953525dd>
+      entropy = <47a5942e97130bcd791cedfafc0e29956dc1e0cd18b0df35d2dda82a4ffea322>
+      serverId = <0a038863ebb03fed8486f4196b6e656c>
     }
   }
 }

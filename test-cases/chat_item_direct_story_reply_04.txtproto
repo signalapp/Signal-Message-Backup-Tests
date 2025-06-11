@@ -130,13 +130,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1854327129879
+    dateSent = 1907421183795
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1739598175233
+          sentTimestamp = 1706981830239
           sortOrder = 1
         }
       ]
@@ -145,13 +145,17 @@ Frame {
           contentType = "text/x-signal-plain"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            digest = <>
-            key = <>
-            mediaName = ""
+            encryptedDigest = <8f179c50eabc0dacb6f894ff2dcd51a0>
+            key = <1f8eb741383ccf3627c362ea1d4aadc9>
+            legacyDigest = <>
+            legacyMediaName = ""
+            size = 891929939
+            transitCdnKey = "WyYPnka"
+            transitTierUploadTimestamp = 1713069754495
           }
         }
         text = Text {
-          body = "in definitiones volutpat sagittis"
+          body = "veritus unum utinam sapien"
           bodyRanges = [
             BodyRange {
               length = 2
@@ -179,7 +183,7 @@ Frame {
         SendStatus {
           recipientId = 4
           sent = Sent {}
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }

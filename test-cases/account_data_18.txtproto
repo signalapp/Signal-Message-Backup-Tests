@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -7295395
+          solid = -16091213
         },
         CustomChatColor {
           id = 2
-          solid = -5112496
+          solid = -13525414
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 239
+            angle = 19
             colors = [
-              -577122,
-              -6739874
+              -1943502,
+              -13785388
             ]
             positions = [
               0.0,
@@ -37,33 +37,25 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.GRADIENT_LAGOON
+        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.SOLID_SILVER
       }
-      displayBadgesOnProfile = true
-      hasCompletedUsernameOnboarding = true
-      hasSeenGroupStoryEducationSheet = true
-      hasSetMyStoriesPrivacy = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       linkPreviews = true
-      notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
-      sealedSenderIndicators = true
-      storiesDisabled = true
-      storyViewReceiptsEnabled = true
-      typingIndicators = true
-      universalExpireTimerSeconds = 6518363
+      universalExpireTimerSeconds = 2144323445
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <0e366ee6b4982ddc1b1b12d3edc997f4505b2d0c464633445cb1f9a68a644847>
+      subscriberId = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
     }
-    familyName = "Hyde"
-    givenName = "Evan"
-    profileKey = <ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795a>
+    familyName = "Stanley"
+    givenName = "Bernardo"
+    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
     svrPin = "안녕하세요, 세계"
   }
 }

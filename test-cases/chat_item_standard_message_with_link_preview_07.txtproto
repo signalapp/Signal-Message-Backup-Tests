@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1709869938875
+    dateSent = 1818790665715
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -138,26 +138,26 @@ Frame {
             sealedSender = true
           }
           recipientId = 4
-          timestamp = 1695248715439
+          timestamp = 1830930358412
         }
       ]
     }
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          url = "https://signal.org/OMpdiJZO"
+          url = "https://signal.org/TgpIJqySkLQG"
         }
       ]
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1791048979308
+          sentTimestamp = 1740111564901
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "quaerendum disputationi quaeque an pretium https://signal.org/OMpdiJZO"
+        body = "tamquam himenaeos laoreet fugit pretium graeco tractatos aenean https://signal.org/TgpIJqySkLQG"
       }
     }
   }

@@ -130,41 +130,39 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1709869938877
+    dateSent = 1818790665717
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
           recipientId = 4
-          timestamp = 1833527071192
-          viewed = Viewed {
-            sealedSender = true
-          }
+          timestamp = 1660152710755
+          viewed = Viewed {}
         }
       ]
     }
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1786170548347
-          description = "risus"
+          date = 1860155357250
+          description = "mollis imperdiet purus"
           image = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            height = 1556
+            height = 1100
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              digest = <>
               key = <>
-              mediaName = ""
+              legacyDigest = <>
+              legacyMediaName = ""
             }
-            width = 1777
+            width = 132
           }
-          title = "Laoreet Fugit"
-          url = "https://signal.org/OMpdiJZO"
+          title = "Tation Legere"
+          url = "https://signal.org/TgpIJqySkLQG"
         }
       ]
       text = Text {
-        body = "utinam sapien tristique https://signal.org/OMpdiJZO"
+        body = "ferri altera https://signal.org/TgpIJqySkLQG"
       }
     }
   }

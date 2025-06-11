@@ -130,29 +130,47 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1697069138811
+    dateSent = 1853676146313
     directStoryReplyMessage = DirectStoryReplyMessage {
       emoji = "👍🏾"
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1697069138801
-      dateServerSent = 1697069138810
+      dateReceived = 1853676146303
+      dateServerSent = 1853676146312
+      read = true
+      sealedSender = true
     }
     revisions = [
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1697069065026
+        dateSent = 1853676086029
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "solet ullamcorper mandamus equidem utamur metus"
+              body = "mus pulvinar maiestatis ad dicta eos alienum mollis ius"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1697069065016
-          dateServerSent = 1697069065025
+          dateReceived = 1853676086019
+          dateServerSent = 1853676086028
+        }
+      },
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1853676086030
+        directStoryReplyMessage = DirectStoryReplyMessage {
+          textReply = TextReply {
+            text = Text {
+              body = "consetetur primis elitr erroribus interesset arcu dicta ocurreret"
+            }
+          }
+        }
+        incoming = IncomingMessageDetails {
+          dateReceived = 1853676086020
+          dateServerSent = 1853676086029
           read = true
           sealedSender = true
         }
@@ -160,35 +178,17 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1697069065027
+        dateSent = 1853676086031
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "aliquip"
+              body = "vivendo fabulas hendrerit sapientem gravida omittantur bibendum nam"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1697069065017
-          dateServerSent = 1697069065026
-        }
-      },
-      ChatItem {
-        authorId = 4
-        chatId = 2
-        dateSent = 1697069065028
-        directStoryReplyMessage = DirectStoryReplyMessage {
-          textReply = TextReply {
-            text = Text {
-              body = "curabitur nibh option consectetur nam intellegat elit"
-            }
-          }
-        }
-        incoming = IncomingMessageDetails {
-          dateReceived = 1697069065018
-          dateServerSent = 1697069065027
-          read = true
-          sealedSender = true
+          dateReceived = 1853676086021
+          dateServerSent = 1853676086030
         }
       }
     ]

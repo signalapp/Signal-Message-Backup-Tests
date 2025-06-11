@@ -237,14 +237,13 @@ Frame {
     group = Group {
       avatarColor = AvatarColor.A200
       hideStory = true
-      masterKey = <228e188ff7647a4b753e5d1b1bcfadd2b72893989279e8c805d886b98779cc84>
+      masterKey = <b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb5ea278fd>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
           attributes = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
-        announcements_only = true
         avatarUrl = "https://signal.org/ZOYWfDTgpIJqyS"
         description = GroupAttributeBlob {
           descriptionText = "docendi proin reformidans oratio rhoncus"
@@ -252,7 +251,7 @@ Frame {
         disappearingMessagesTimer = GroupAttributeBlob {
           disappearingMessagesDuration = 182310711
         }
-        inviteLinkPassword = <162925690d31a8ba1a7be8b3820ab936183555ed8e40d2431d317e2dee39bbf8>
+        inviteLinkPassword = <1d4aadc91b5463098f179c50eabc0dacb6f894ff2dcd51a027f66df3e403f1bd>
         members = [
           Member {
             role = Role.DEFAULT
