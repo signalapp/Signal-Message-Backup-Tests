@@ -11,6 +11,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      backupTier = 201
       customChatColors = [
         CustomChatColor {
           id = 1

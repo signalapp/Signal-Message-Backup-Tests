@@ -40,7 +40,7 @@ object SeededRandom {
     return random.nextLong(lower, upper)
   }
 
-  fun boolean(): Boolean{
+  fun boolean(): Boolean {
     return random.nextBoolean()
   }
 

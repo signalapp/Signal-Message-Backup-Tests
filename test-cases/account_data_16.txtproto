@@ -11,6 +11,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      backupTier = 200
       customChatColors = [
         CustomChatColor {
           id = 1
@@ -43,17 +44,12 @@ Frame {
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       linkPreviews = true
-      optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       preferContactAvatars = true
       readReceipts = true
       universalExpireTimerSeconds = 2076758843
     }
     avatarUrlPath = "https://signal.org/NgpXHtZhdLyg"
-    backupsSubscriberData = IAPSubscriberData {
-      originalTransactionId = 8987934779766148702
-      subscriberId = <44b4c8d19c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e>
-    }
     familyName = ""
     givenName = ""
     profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>

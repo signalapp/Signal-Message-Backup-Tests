@@ -11,6 +11,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      backupTier = 200
       customChatColors = [
         CustomChatColor {
           id = 1
@@ -52,10 +53,6 @@ Frame {
       universalExpireTimerSeconds = 2076758843
     }
     avatarUrlPath = "https://signal.org/NgpXHtZhdLyg"
-    backupsSubscriberData = IAPSubscriberData {
-      purchaseToken = "czwFdzHLOokMZ"
-      subscriberId = <21a78511518391fbc5b26db646e8dc0a531c93c2fbd8a21f072534d5f767baae>
-    }
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true

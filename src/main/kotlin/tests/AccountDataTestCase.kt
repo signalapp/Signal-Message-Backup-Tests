@@ -55,7 +55,10 @@ object AccountDataTestCase : TestCase("account_data") {
         originalTransactionId = someOneOf(originalTransactionId)
       )
     }.nullable()
-    val backupsSubscriberData = some(backupsSubscriberDataGenerator)
+    val backupTierGenerator: Generator<Long?> = Generators.list(null, 200L, 201L)
+    val backupTier = some(backupTierGenerator)
+    val candidateBackupsSubscriberData = some(backupsSubscriberDataGenerator)
+    val backupsSubscriberData = if (backupTier != 200L) candidateBackupsSubscriberData else null
     val optimizeOnDeviceStorage = someBoolean()
 
     frames += Frame(
@@ -125,11 +128,12 @@ object AccountDataTestCase : TestCase("account_data") {
             )
           ),
           // This setting is only available if we are subscribed to Backups.
-          optimizeOnDeviceStorage = if (backupsSubscriberData != null) {
+          optimizeOnDeviceStorage = if (backupTier == 201L) {
             optimizeOnDeviceStorage
           } else {
             false
-          }
+          },
+          backupTier = backupTier
         ),
         backupsSubscriberData = backupsSubscriberData
       )
