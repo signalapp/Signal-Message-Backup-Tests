@@ -381,7 +381,7 @@ object Generators {
   fun wallpaperFilePointer(): Generator<FilePointer> {
     return Generators.permutation {
       val locatorInfo = FilePointer.LocatorInfo(
-        key = someBytes(16).toByteString(),
+        key = someBytes(64).toByteString(),
         size = somePositiveInt(),
         plaintextHash = someBytes(32).toByteString(),
         mediaTierCdnNumber = some(Generators.cdnNumbers().nullable()),
@@ -500,7 +500,7 @@ object Generators {
       val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
 
       val locatorInfo = FilePointer.LocatorInfo(
-        key = someBytes(16).toByteString(),
+        key = someBytes(64).toByteString(),
         plaintextHash = someBytes(32).toByteString(),
         size = somePositiveInt(),
         mediaTierCdnNumber = some(Generators.cdnNumbers().nullable()),
@@ -542,8 +542,8 @@ object Generators {
       val previouslyDownloadedAndValidated = someBoolean()
       val includeTransitTierInfo = someBoolean()
 
-      val potentialKey = someBytes(16)
-      val potentialDigest = someBytes(16)
+      val potentialKey = someBytes(64)
+      val potentialDigest = someBytes(32)
       val potentialPlaintextHash = someBytes(32)
       val potentialSize = somePositiveInt()
       val potentialMediaTierCdnNumber = some(Generators.cdnNumbers().nullable())
