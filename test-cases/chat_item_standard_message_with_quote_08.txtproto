@@ -140,21 +140,24 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/apng"
-          fileName = "gKgpssExdikfe"
-          height = 2670
+          fileName = "yaJIPEzvfFz"
+          height = 445
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <48538575717ead3c6a025d29957135de>
+            encryptedDigest = <d0c51b2f56190566edb5316a04dbc026801ecc7beac028506910be78916a05cc>
+            key = <c161c049a48483907270503b9dbf073a39dbd8c4dba0de7f24505633dcf41dc9aed543cc730ebdc896d3bac850b0dfdfe836c879b2a1f6ef62b9d26a575d829e>
             legacyDigest = <>
             legacyMediaName = ""
-            plaintextHash = <7599364ef81a63368f4a6ebfe7d13c4916b3cd7fb2f6b8b5a6be6c3a3a00a015>
-            size = 1431958273
+            size = 2082420584
+            transitCdnKey = "XGeFmXGyxOEx"
+            transitCdnNumber = 2
+            transitTierUploadTimestamp = 1713789346726
           }
-          width = 1835
+          width = 3035
         }
         emoji = "👍"
-        packId = <b4c2751823e3de23c88180c8a7cd7452>
-        packKey = <621c85e166151a9b246380f08cd7af991c44a9501e048bf22c7aad5244f2ad60>
+        packId = <8fa0849f8de30fad992a6b7dc7ab4bb4>
+        packKey = <ba6f69527f3e90c6757e5455b6a94d3fa26abd3ef2a7f6fc9cb7888a96637691>
       }
     }
   }
@@ -164,7 +167,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1776361158428
+    dateSent = 1835444582913
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -183,18 +186,19 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
                 contentType = "image/jpeg"
-                height = 2597
+                height = 263
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  key = <7edab79243ee0afa974f0f919a6bcc01>
+                  key = <333bf2b123bd5a5551e0c8172f65110d29071b089a41003c3be4f450b7bc14bec2aef7acca15cdb6bdc8a12a9d26d09347f79c3e5b6f2598bdb8c05de01cbd2d>
                   legacyDigest = <>
                   legacyMediaName = ""
                   mediaTierCdnNumber = 2
-                  plaintextHash = <4cb3aaac973d525de064dac3d65cb97888da15caec10fdd86648483d75127188>
-                  size = 1491072171
+                  plaintextHash = <52eb227b23f9c6ea823554f4397004e759c49021e8444033ca8237a12d8f6044>
+                  size = 106617276
                 }
-                width = 2269
+                width = 676
               }
+              wasDownloaded = true
             }
           }
         ]
@@ -206,18 +210,18 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1752256552408
+          sentTimestamp = 1697421638843
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1752256552409
+          sentTimestamp = 1697421638844
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "felis salutatus dolore tractatos evertitur deterruisset usu delectus molestiae"
+        body = "graeci potenti postea odio"
       }
     }
   }

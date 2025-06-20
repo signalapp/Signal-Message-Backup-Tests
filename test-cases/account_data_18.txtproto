@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -16091213
+          solid = -7981376
         },
         CustomChatColor {
           id = 2
-          solid = -13525414
+          solid = -4769265
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 19
+            angle = 241
             colors = [
-              -1943502,
-              -13785388
+              -16037347,
+              -7635376
             ]
             positions = [
               0.0,
@@ -37,25 +37,25 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.GRADIENT_LAGOON
-        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.SOLID_SILVER
       }
-      hasViewedOnboardingStory = true
-      keepMutedChatsArchived = true
+      hasCompletedUsernameOnboarding = true
+      hasSetMyStoriesPrivacy = true
       linkPreviews = true
+      notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
-      preferContactAvatars = true
-      readReceipts = true
-      universalExpireTimerSeconds = 2144323445
+      sealedSenderIndicators = true
+      universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
+      manuallyCancelled = true
+      subscriberId = <da4e86e6a6eeb98b207d85f0b413e071743cee3d4bece41ec92ea59e67f1c2ef>
     }
-    familyName = "Stanley"
-    givenName = "Bernardo"
-    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
+    familyName = "Wyatt"
+    givenName = "Lois"
+    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
     svrPin = "안녕하세요, 세계"
   }
 }

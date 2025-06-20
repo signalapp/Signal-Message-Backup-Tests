@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -16091213
+          solid = -7981376
         },
         CustomChatColor {
           id = 2
-          solid = -13525414
+          solid = -4769265
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 19
+            angle = 241
             colors = [
-              -1943502,
-              -13785388
+              -16037347,
+              -7635376
             ]
             positions = [
               0.0,
@@ -35,18 +35,18 @@ Frame {
           id = 3
         }
       ]
-      hasViewedOnboardingStory = true
-      keepMutedChatsArchived = true
+      hasCompletedUsernameOnboarding = true
+      hasSetMyStoriesPrivacy = true
       linkPreviews = true
+      notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
-      preferContactAvatars = true
-      readReceipts = true
-      universalExpireTimerSeconds = 2144323445
+      sealedSenderIndicators = true
+      universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
     familyName = ""
     givenName = ""
-    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
+    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
     svrPin = "1234"
   }
 }

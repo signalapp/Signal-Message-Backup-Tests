@@ -128,19 +128,12 @@ Frame {
 
 Frame {
   chatItem = ChatItem {
-    authorId = 1
+    authorId = 4
     chatId = 2
-    dateSent = 1700984146926
-    outgoing = OutgoingMessageDetails {
-      sendStatus = [
-        SendStatus {
-          recipientId = 4
-          sent = Sent {
-            sealedSender = true
-          }
-          timestamp = 1660152710755
-        }
-      ]
+    dateSent = 1833527071195
+    incoming = IncomingMessageDetails {
+      dateReceived = 1833527071192
+      dateServerSent = 1833527071192
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
@@ -148,20 +141,36 @@ Frame {
         pointer = FilePointer {
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/gif"
-          height = 682
+          height = 2525
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <7db665e567fdcb1ac685a8aedbd29cb4>
+            key = <69fdc3dbb98690e5a59db3bc40954bc8d59158752e85dccb2f16d80569020d9684d24938cfa103f53b66c79c2ad28ba75e99ae7c116d728630bbb562d97ef382>
             legacyDigest = <>
             legacyMediaName = ""
             mediaTierCdnNumber = 2
-            plaintextHash = <c4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9b5a5bfd31bbf0e86>
-            size = 1826427142
+            plaintextHash = <729df40349b8e59cb677e456b3a5b045e5a3884e9d1b95d880aa3d22b1e43d57>
+            size = 749107939
           }
-          width = 2386
+          width = 1762
         }
-        wasDownloaded = true
       }
     }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 2
+    dateSent = 1833527071196
+    outgoing = OutgoingMessageDetails {
+      sendStatus = [
+        SendStatus {
+          delivered = Delivered {}
+          recipientId = 4
+        }
+      ]
+    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }

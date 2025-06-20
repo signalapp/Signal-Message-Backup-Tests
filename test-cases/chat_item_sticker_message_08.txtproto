@@ -144,13 +144,13 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1817606978959
+          sentTimestamp = 1896262556285
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1817606978960
+          sentTimestamp = 1896262556286
           sortOrder = 2
         }
       ]
@@ -159,11 +159,11 @@ Frame {
           contentType = "image/png"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <e42941e2e1f45a96bc4c7227ad071086>
+            key = <e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef7370>
             legacyDigest = <>
             legacyMediaName = ""
-            plaintextHash = <ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a>
-            size = 1322441015
+            plaintextHash = <080db8f45d04641dda741f81140efe703c6727a8d5e0f3b49a458da0d95fde01>
+            size = 1728187654
           }
         }
         emoji = "👍🏾"

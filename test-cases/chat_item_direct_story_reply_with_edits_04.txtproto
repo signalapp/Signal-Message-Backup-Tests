@@ -130,13 +130,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1832309417569
+    dateSent = 1887804255077
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1739683107771
+          sentTimestamp = 1705678368449
           sortOrder = 1
         }
       ]
@@ -145,12 +145,12 @@ Frame {
           contentType = "text/x-signal-plain"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <072534d5f767baaec4d38bdc7ba76237>
+            key = <aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba1a7be8b3820ab936183555ed8e40d2431d317e2dee39bbf801480e9e27dcdcb674f34922363753d4>
             legacyDigest = <>
             legacyMediaName = ""
             mediaTierCdnNumber = 3
-            plaintextHash = <f22b67999610114498749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5ad>
-            size = 257533757
+            plaintextHash = <27f66df3e403f1bdf1199c78f4a921363af79e298cfcf2491a96e707c00259c7>
+            size = 1798771361
           }
         }
         text = Text {
@@ -178,24 +178,28 @@ Frame {
       }
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1832309417559
-      dateServerSent = 1832309417568
+      dateReceived = 1887804255067
+      dateServerSent = 1887804255076
+      read = true
+      sealedSender = true
     }
     revisions = [
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1832309357285
+        dateSent = 1887804184898
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "mus pulvinar maiestatis ad dicta eos alienum mollis ius"
+              body = "rhoncus consectetuer indoctum at vituperata"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1832309357275
-          dateServerSent = 1832309357284
+          dateReceived = 1887804184888
+          dateServerSent = 1887804184897
+          read = true
+          sealedSender = true
         }
       }
     ]

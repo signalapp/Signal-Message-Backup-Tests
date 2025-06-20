@@ -145,24 +145,24 @@ Frame {
     standardMessage = StandardMessage {
       longText = FilePointer {
         contentType = "text/x-signal-plain"
-        fileName = "gFokLHLm"
+        fileName = "dKPNuFXypj"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          encryptedDigest = <b0268c5da867e8b454754359d4337a3c>
-          key = <072534d5f767baaec4d38bdc7ba76237>
+          encryptedDigest = <1f78622caf4b15d212e5d730c3c226dc221e8fec3522a5e4cd2f910df5668247>
+          key = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b1036327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633>
           legacyDigest = <>
           legacyMediaName = ""
-          size = 1343527527
-          transitCdnKey = "YkFXMOBqmCdYWy"
+          size = 2060227180
+          transitCdnKey = "nkaWIBHCZROt"
           transitCdnNumber = 3
-          transitTierUploadTimestamp = 1715089586241
+          transitTierUploadTimestamp = 1715517260399
         }
       }
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1757577531389
+          sentTimestamp = 1735129320454
           sortOrder = 1
         }
       ]

@@ -15,18 +15,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -520561
+          solid = -15706209
         },
         CustomChatColor {
           id = 2
-          solid = -10024887
+          solid = -5609147
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 341
+            angle = 10
             colors = [
-              -1728405,
-              -10844618
+              -5222363,
+              -7885081
             ]
             positions = [
               0.0,
@@ -38,32 +38,31 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.GRADIENT_BASIL
-        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.GRADIENT_NOIR
       }
-      hasViewedOnboardingStory = true
-      keepMutedChatsArchived = true
+      hasCompletedUsernameOnboarding = true
+      hasSetMyStoriesPrivacy = true
       linkPreviews = true
+      notDiscoverableByPhoneNumber = true
       optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
-      preferContactAvatars = true
-      readReceipts = true
-      universalExpireTimerSeconds = 2056716151
+      sealedSenderIndicators = true
+      universalExpireTimerSeconds = 1995618975
     }
-    avatarUrlPath = "https://signal.org/tgrXFLPSk"
+    avatarUrlPath = "https://signal.org/yZCTrFaZqBnUUi"
     backupsSubscriberData = IAPSubscriberData {
-      purchaseToken = "mjwqTJNP"
-      subscriberId = <1ec67707ad43f2d167963887aa1d063c8db57633fa5483f31f78622caf4b15d2>
+      purchaseToken = "HyuLGdFwzenI"
+      subscriberId = <9c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e10411f6e>
     }
     familyName = ""
     givenName = ""
-    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
+    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
     svrPin = "1234"
-    username = "effie.08"
+    username = "marjorie.07"
     usernameLink = UsernameLink {
       color = Color.WHITE
-      entropy = <69f375454a95979def0ce9d2080db8f45d04641dda741f81140efe703c6727a8>
-      serverId = <9a458da0d95fde0154d933c20d1a04ce>
+      entropy = <a8973f9028fe841d9e2ff1cb589bfcfd570e0a10b620d15a9dbd5c2ab78a3b76>
+      serverId = <696ab01a75f6908b3d448eb3458c6acb>
     }
   }
 }

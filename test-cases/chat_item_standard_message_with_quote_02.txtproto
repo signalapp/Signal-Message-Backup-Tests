@@ -139,71 +139,70 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <9b26f237f17f4e4e8c0acb3f311e18d7>
+          clientUuid = <0f09e4311f52463d8c93f7201d851d6d>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "yYPnkaWIBHCZR"
-            height = 787
-            incrementalMac = <140efe703c6727a8d5e0f3b49a458da0>
+            fileName = "ZROtEhc"
+            height = 1764
+            incrementalMac = <fc0e29956dc1e0cd18b0df35d2dda82a>
             incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              key = <eaa4908fc733c2440c3ae62e4a5aa0bb>
+              key = <d55519fd5bc982fa3e64d7eea8973f9028fe841d9e2ff1cb589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b3d448eb3458c6acb>
               legacyDigest = <>
               legacyMediaName = ""
-              plaintextHash = <95b0f63bd4c8184986860917d55519fd5bc982fa3e64d7eea8973f9028fe841d>
-              size = 1261271664
+              plaintextHash = <c4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9b5a5bfd31bbf0e86>
+              size = 891929939
             }
-            width = 422
+            width = 2373
           }
-          wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "fTgFokL"
+            caption = "HLmtLxdKPN"
             contentType = "image/gif"
-            fileName = "tEhcC"
-            height = 996
+            fileName = "MeejhnS"
+            height = 1190
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              encryptedDigest = <aa1d063c8db57633fa5483f31f78622c>
-              key = <36327e78d6bf0ffb1ec67707ad43f2d1>
+              encryptedDigest = <820ab936183555ed8e40d2431d317e2dee39bbf801480e9e27dcdcb674f34922>
+              key = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba>
               legacyDigest = <>
               legacyMediaName = ""
-              size = 330901086
-              transitCdnKey = "uuEFCmC"
+              size = 1267987916
+              transitCdnKey = "rHYkFXMOBq"
               transitCdnNumber = 3
-              transitTierUploadTimestamp = 1714213501916
+              transitTierUploadTimestamp = 1713949086715
             }
-            width = 3538
+            width = 547
           }
+          wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <9b26f237f17f4e4e8c0acb3f311e18d7>
+          clientUuid = <0f09e4311f52463d8c93f7201d851d6d>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "LmtLxdKP"
+            caption = "FXypjDLUUkK"
             contentType = "audio/mp3"
-            height = 2405
-            incrementalMac = <140efe703c6727a8d5e0f3b49a458da0>
+            height = 3794
+            incrementalMac = <fc0e29956dc1e0cd18b0df35d2dda82a>
             incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              key = <4ce58985ed43189427a38645ab2d5739>
+              key = <e657fd8cab0b80bf8bf32b9d8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13a6fd0952>
               legacyDigest = <>
               legacyMediaName = ""
               mediaTierCdnNumber = 3
-              plaintextHash = <0dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede827e18e55>
-              size = 1897960690
+              plaintextHash = <1bcfadd2b72893989279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de>
+              size = 705496382
             }
-            width = 1946
+            width = 2417
           }
-          wasDownloaded = true
         }
       ]
       text = Text {
@@ -227,7 +226,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1776361158422
+    dateSent = 1835444582907
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -246,18 +245,19 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
                 contentType = "image/jpeg"
-                height = 2597
+                height = 263
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  key = <7edab79243ee0afa974f0f919a6bcc01>
+                  key = <333bf2b123bd5a5551e0c8172f65110d29071b089a41003c3be4f450b7bc14bec2aef7acca15cdb6bdc8a12a9d26d09347f79c3e5b6f2598bdb8c05de01cbd2d>
                   legacyDigest = <>
                   legacyMediaName = ""
                   mediaTierCdnNumber = 2
-                  plaintextHash = <4cb3aaac973d525de064dac3d65cb97888da15caec10fdd86648483d75127188>
-                  size = 1491072171
+                  plaintextHash = <52eb227b23f9c6ea823554f4397004e759c49021e8444033ca8237a12d8f6044>
+                  size = 106617276
                 }
-                width = 2269
+                width = 676
               }
+              wasDownloaded = true
             }
           }
         ]
@@ -282,18 +282,18 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1752256552408
+          sentTimestamp = 1697421638843
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1752256552409
+          sentTimestamp = 1697421638844
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "felis salutatus dolore tractatos evertitur deterruisset usu delectus molestiae"
+        body = "graeci potenti postea odio"
       }
     }
   }

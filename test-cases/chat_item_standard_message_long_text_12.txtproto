@@ -147,13 +147,13 @@ Frame {
         contentType = "text/x-signal-plain"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          encryptedDigest = <0c22bad9944dc49190adabba8a72bebb>
-          key = <58a12027e42941e2e1f45a96bc4c7227>
+          encryptedDigest = <7c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d295169f37545>
+          key = <58a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e1>
           legacyDigest = <>
           legacyMediaName = ""
-          size = 1267987916
-          transitCdnKey = "YkFXMOBqmCdYWy"
-          transitTierUploadTimestamp = 1715089586241
+          size = 1629088938
+          transitCdnKey = "nkaWIBHCZROt"
+          transitTierUploadTimestamp = 1715517260399
         }
       }
       text = Text {

@@ -128,17 +128,30 @@ Frame {
 
 Frame {
   chatItem = ChatItem {
+    authorId = 4
+    chatId = 2
+    dateSent = 1833527071199
+    incoming = IncomingMessageDetails {
+      dateReceived = 1833527071192
+      dateServerSent = 1833527071192
+    }
+    viewOnceMessage = ViewOnceMessage {}
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146930
+    dateSent = 1833527071200
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
-          read = Read {
+          recipientId = 4
+          timestamp = 1780476232764
+          viewed = Viewed {
             sealedSender = true
           }
-          recipientId = 4
-          timestamp = 1830930358412
         }
       ]
     }

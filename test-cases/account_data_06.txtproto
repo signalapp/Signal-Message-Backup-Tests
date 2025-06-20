@@ -14,18 +14,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -16091213
+          solid = -7981376
         },
         CustomChatColor {
           id = 2
-          solid = -13525414
+          solid = -4769265
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 19
+            angle = 241
             colors = [
-              -1943502,
-              -13785388
+              -16037347,
+              -7635376
             ]
             positions = [
               0.0,
@@ -37,42 +37,42 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_FOREST
-        dimWallpaperInDarkMode = true
         wallpaperPhoto = FilePointer {
           blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
           contentType = "image/png"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <f871f8839a9ce2d8d36859b9d0b6d25a>
+            key = <18e707cf7cb4446159fb651a953525dd5da9aa792ff23f31ca20483ef7a05a9615d4adbdf6985c94b6633322a1ff1c9732d8456e7027634ab98b2bedfeba4948>
             legacyDigest = <>
             legacyMediaName = ""
-            plaintextHash = <e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb>
-            size = 405828727
+            plaintextHash = <c6e10859fb70db9f128ab0196d6be1c6a7ed5289222d4808bdaadcf9eaa4908f>
+            size = 1314415156
           }
         }
       }
-      hasViewedOnboardingStory = true
-      keepMutedChatsArchived = true
+      hasCompletedUsernameOnboarding = true
+      hasSetMyStoriesPrivacy = true
       linkPreviews = true
+      notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
-      preferContactAvatars = true
-      readReceipts = true
-      universalExpireTimerSeconds = 2144323445
+      sealedSenderIndicators = true
+      universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
+      manuallyCancelled = true
+      subscriberId = <da4e86e6a6eeb98b207d85f0b413e071743cee3d4bece41ec92ea59e67f1c2ef>
     }
-    familyName = "Stanley"
-    givenName = "Bernardo"
-    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
+    familyName = "Wyatt"
+    givenName = "Lois"
+    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
     svrPin = "123456"
-    username = "miguel.1875"
+    username = "frieda.3662"
     usernameLink = UsernameLink {
       color = Color.ORANGE
-      entropy = <eaa4908fc733c2440c3ae62e4a5aa0bbf67baa9066da53caf60c4ec900b2dee5>
-      serverId = <29a3b2f195b0f63bd4c8184986860917>
+      entropy = <ba1caec888cf6bfa88e3f24a21a78511518391fbc5b26db646e8dc0a531c93c2>
+      serverId = <072534d5f767baaec4d38bdc7ba76237>
     }
   }
 }

@@ -128,19 +128,14 @@ Frame {
 
 Frame {
   chatItem = ChatItem {
-    authorId = 1
+    authorId = 4
     chatId = 2
-    dateSent = 1700984146935
-    outgoing = OutgoingMessageDetails {
-      sendStatus = [
-        SendStatus {
-          failed = Failed {
-            reason = FailureReason.UNKNOWN
-          }
-          recipientId = 4
-          timestamp = 1660152710755
-        }
-      ]
+    dateSent = 1833527071204
+    incoming = IncomingMessageDetails {
+      dateReceived = 1833527071192
+      dateServerSent = 1833527071192
+      read = true
+      sealedSender = true
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
@@ -150,15 +145,33 @@ Frame {
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <1d4aadc91b5463098f179c50eabc0dac>
+            key = <56513b8517c599ae4ee06946bb9f9c0265e2f2798aa5d90bfe644025fe8082f772d0cc61a319e55f94f0b995c11698bbfa7c60d5e22af1036fae5ece6f2fc478>
             legacyDigest = <>
             legacyMediaName = ""
-            plaintextHash = <3af79e298cfcf2491a96e707c00259c7264eb5417dfb20d9de3b2c342e2771db>
-            size = 1124598742
+            plaintextHash = <8ba88d777df97be2cf85e07d66d999105e461abe4526105952daf6dc1d24718f>
+            size = 952113813
           }
         }
-        wasDownloaded = true
       }
     }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 2
+    dateSent = 1833527071205
+    outgoing = OutgoingMessageDetails {
+      sendStatus = [
+        SendStatus {
+          failed = Failed {
+            reason = FailureReason.IDENTITY_KEY_MISMATCH
+          }
+          recipientId = 4
+        }
+      ]
+    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }

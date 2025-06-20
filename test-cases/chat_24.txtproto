@@ -120,10 +120,8 @@ Frame {
 
 Frame {
   chat = Chat {
-    dontNotifyForMentionsIfMuted = true
-    expireTimerVersion = 1990187126
+    expireTimerVersion = 32826562
     id = 3
-    markedUnread = true
     recipientId = 4
     style = ChatStyle {
       customColorId = 2

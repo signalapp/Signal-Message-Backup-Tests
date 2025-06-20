@@ -130,7 +130,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1797926507188
+    dateSent = 1827596898917
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -150,13 +150,13 @@ Frame {
             contentType = "audio/mp3"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              encryptedDigest = <7c318292bd6e73ff9022c6fa6faebb15>
-              key = <602ae6c88bffbb6878d9cd54434bca72>
+              encryptedDigest = <fc853ca658a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc491>
+              key = <602ae6c88bffbb6878d9cd54434bca72346a5ff97c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8d36859b9d0b6d25acc4d5a82>
               legacyDigest = <>
               legacyMediaName = ""
-              size = 1897960690
-              transitCdnKey = "uuEFCmC"
-              transitTierUploadTimestamp = 1714213501916
+              size = 705496382
+              transitCdnKey = "rHYkFXMOBq"
+              transitTierUploadTimestamp = 1713949086715
             }
           }
           wasDownloaded = true

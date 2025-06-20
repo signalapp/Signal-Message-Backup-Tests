@@ -15,18 +15,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -11098071
+          solid = -4896335
         },
         CustomChatColor {
           id = 2
-          solid = -3114329
+          solid = -8329015
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 139
+            angle = 218
             colors = [
-              -10882070,
-              -14174184
+              -11625524,
+              -2101757
             ]
             positions = [
               0.0,
@@ -38,35 +38,35 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_TAUPE
+        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.SOLID_FROST
       }
       displayBadgesOnProfile = true
-      hasCompletedUsernameOnboarding = true
       hasSeenGroupStoryEducationSheet = true
-      hasSetMyStoriesPrivacy = true
-      notDiscoverableByPhoneNumber = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      sealedSenderIndicators = true
+      preferContactAvatars = true
+      readReceipts = true
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 2076758843
+      universalExpireTimerSeconds = 694141765
     }
-    avatarUrlPath = "https://signal.org/NgpXHtZhdLyg"
+    avatarUrlPath = "https://signal.org/budVyDygxM"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
-      manuallyCancelled = true
-      subscriberId = <390b234e608d3671842725ffb7b5369c034f2f21228e188ff7647a4b753e5d1b>
+      subscriberId = <d4acf856cb64e960fcd58ca580b80888e681e323c607d5959f6b63ece7730df0>
     }
-    familyName = "Molina"
-    givenName = "Stevie"
-    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
+    familyName = "Bridges"
+    givenName = "Michele"
+    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
     svrPin = "안녕하세요, 세계"
-    username = "vito.4246"
+    username = "irvin.4656"
     usernameLink = UsernameLink {
       color = Color.OLIVE
-      entropy = <d3faf51e18e707cf7cb4446159fb651a953525dd5da9aa792ff23f31ca20483e>
-      serverId = <15d4adbdf6985c94b6633322a1ff1c97>
+      entropy = <14b8aab9b5a5bfd31bbf0e8674ca8dec9544987b380d208afecdc4c5701ad7ec>
+      serverId = <2384caa746d547630e64d7294f139f80>
     }
   }
 }

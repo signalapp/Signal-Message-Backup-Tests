@@ -150,13 +150,14 @@ Frame {
             contentType = "image/jpeg"
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              key = <54d933c20d1a04ced92499f547a5942e>
+              key = <54d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e29956dc1e0cd18b0df35d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c>
               legacyDigest = <>
               legacyMediaName = ""
-              plaintextHash = <4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166fd3faf51e>
-              size = 815946302
+              plaintextHash = <15d4adbdf6985c94b6633322a1ff1c9732d8456e7027634ab98b2bedfeba4948>
+              size = 1823554627
             }
           }
+          wasDownloaded = true
         }
       ]
     }

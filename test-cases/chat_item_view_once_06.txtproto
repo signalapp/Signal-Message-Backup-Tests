@@ -128,42 +128,59 @@ Frame {
 
 Frame {
   chatItem = ChatItem {
-    authorId = 1
+    authorId = 4
     chatId = 2
-    dateSent = 1700984146929
-    outgoing = OutgoingMessageDetails {
-      sendStatus = [
-        SendStatus {
-          delivered = Delivered {}
-          recipientId = 4
-          timestamp = 1660152710755
-        }
-      ]
+    dateSent = 1833527071198
+    incoming = IncomingMessageDetails {
+      dateReceived = 1833527071192
+      dateServerSent = 1833527071192
+      read = true
+      sealedSender = true
     }
     viewOnceMessage = ViewOnceMessage {
       attachment = MessageAttachment {
-        clientUuid = <c8e87991b986480584cc7987083b3bb6>
+        clientUuid = <1301371c02d3459683cce566b0ade8ed>
         flag = Flag.NONE
         pointer = FilePointer {
           blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
           contentType = "image/png"
-          height = 861
-          incrementalMac = <54d933c20d1a04ced92499f547a5942e>
+          height = 182
+          incrementalMac = <20d3f1c914ab100845c3a0059539e08b>
           incrementalMacChunkSize = 2048
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            encryptedDigest = <ab2d573928a14adb2e90907199154fed>
-            key = <821bcd82ccd719d94ce58985ed431894>
+            encryptedDigest = <ab4cb19cd78c9faa44bc265440f354e695b5f39c591cb6939bc43327e52bb008>
+            key = <6fd199716e06f1e54c79d357398365ca68f73bc61300d0f6fa3046875f0b001866bdefbc95239458e0c53beda1f43084f2363ed9947107e26853961a46c9023f>
             legacyDigest = <>
             legacyMediaName = ""
-            size = 1826427142
-            transitCdnKey = "rHYkFXMOBq"
+            size = 749107939
+            transitCdnKey = "eJDueIncJR"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1713112202564
+            transitTierUploadTimestamp = 1712262635413
           }
-          width = 4014
+          width = 3868
         }
+        wasDownloaded = true
       }
     }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 2
+    dateSent = 1833527071199
+    outgoing = OutgoingMessageDetails {
+      sendStatus = [
+        SendStatus {
+          read = Read {
+            sealedSender = true
+          }
+          recipientId = 4
+        }
+      ]
+    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }

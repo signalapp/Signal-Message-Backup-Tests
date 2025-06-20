@@ -159,20 +159,20 @@ Frame {
         avatar = FilePointer {
           blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
           contentType = "image/png"
-          fileName = "anngyzNxz"
-          height = 63
+          fileName = "seNsrZSyI"
+          height = 1444
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            encryptedDigest = <a892564cbef63c8cb99480f43f727f88>
-            key = <9d1b95d880aa3d22b1e43d57f8d18a3d>
+            encryptedDigest = <92f58f16a0fb7a757b561f3a13be730626a8275b675edf50b974ee8cbdec4974>
+            key = <ece9b0df911abe0326f7d093c5d15ca0b3d9177085e92add1533a5f65bda799a7f11bd6289540c3b81e3ab1cf16546819eb3dc4670c25d55f62608ba0a27e599>
             legacyDigest = <>
             legacyMediaName = ""
-            size = 769549436
-            transitCdnKey = "DDfXFiO"
+            size = 1185212967
+            transitCdnKey = "susanngyzNxzc"
             transitCdnNumber = 2
-            transitTierUploadTimestamp = 1713877558366
+            transitTierUploadTimestamp = 1715411283149
           }
-          width = 2396
+          width = 2604
         }
         email = [
           Email {

@@ -130,33 +130,33 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1832309417569
+    dateSent = 1887804255077
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1739683107771
+          sentTimestamp = 1705678368449
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1739683107772
+          sentTimestamp = 1705678368450
           sortOrder = 2
         }
       ]
       textReply = TextReply {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
-          fileName = "DTgpIJqy"
+          fileName = "QuECQWuuuEFCm"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <58a12027e42941e2e1f45a96bc4c7227>
+            key = <99eb27976fb2a59dcf3429a08f357899994d295169f375454a95979def0ce9d2080db8f45d04641dda741f81140efe703c6727a8d5e0f3b49a458da0d95fde01>
             legacyDigest = <>
             legacyMediaName = ""
-            plaintextHash = <342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef73707c0a1a54>
-            size = 1139370809
+            plaintextHash = <4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166fd3faf51e>
+            size = 1342510274
           }
         }
         text = Text {
@@ -175,24 +175,28 @@ Frame {
       }
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1832309417559
-      dateServerSent = 1832309417568
+      dateReceived = 1887804255067
+      dateServerSent = 1887804255076
+      read = true
+      sealedSender = true
     }
     revisions = [
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1832309357285
+        dateSent = 1887804184898
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "mus pulvinar maiestatis ad dicta eos alienum mollis ius"
+              body = "rhoncus consectetuer indoctum at vituperata"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1832309357275
-          dateServerSent = 1832309357284
+          dateReceived = 1887804184888
+          dateServerSent = 1887804184897
+          read = true
+          sealedSender = true
         }
       }
     ]

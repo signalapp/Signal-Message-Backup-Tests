@@ -121,8 +121,10 @@ Frame {
 Frame {
   chat = Chat {
     archived = true
-    expireTimerVersion = 1990187126
+    dontNotifyForMentionsIfMuted = true
+    expireTimerVersion = 32826562
     id = 3
+    markedUnread = true
     pinnedOrder = 1
     recipientId = 4
     style = ChatStyle {
@@ -132,12 +134,12 @@ Frame {
         contentType = "image/png"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          key = <5499ec295fa73d1eca46d29f861af10f>
+          key = <d36859b9d0b6d25acc4d5a8259872972fc853ca658a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035>
           legacyDigest = <>
           legacyMediaName = ""
           mediaTierCdnNumber = 3
-          plaintextHash = <82b87e2036106eec0da607bfe85604e4e3670f77ebf5e721149f599dab4f9c8a>
-          size = 400965107
+          plaintextHash = <b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899>
+          size = 103896983
         }
       }
     }

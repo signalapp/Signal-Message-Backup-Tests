@@ -135,20 +135,20 @@ Frame {
         avatar = FilePointer {
           blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
           contentType = "image/png"
-          fileName = "QgbBhBndE"
-          height = 63
+          fileName = "cyYXgDzAHJC"
+          height = 1444
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            encryptedDigest = <a27fa4e4ecdeaed9c655a939fcac4c1e>
-            key = <8e81fccbfae5bce8176bc947e17594ad>
+            encryptedDigest = <9fb531fc34977acc1143c272eed78eff4c5d85908dd94664eac043a8790aa5e6>
+            key = <f86dfac56ed8483c672dbbe3fb112bb5b0f1e53cd4791278350db2123d3ff3fce4584bf8e3b2209f2b89e27a325da6d9efb12d39ba502cdcca04b8fbcf0a50d3>
             legacyDigest = <>
             legacyMediaName = ""
-            size = 542768234
-            transitCdnKey = "DDfXFiO"
+            size = 8679219
+            transitCdnKey = "susanngyzNxzc"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1713877558366
+            transitTierUploadTimestamp = 1715411283149
           }
-          width = 2396
+          width = 2604
         }
         name = Name {
           familyName = "Dickerson"

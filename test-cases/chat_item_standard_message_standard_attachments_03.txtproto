@@ -145,27 +145,26 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <44374cd4cc6f4a8980ed7c0caae005d0>
+          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "FqaczwFdzHL"
+            caption = "wqTJNPMVYo"
             contentType = "audio/mp3"
-            height = 2794
-            incrementalMac = <0c3ae62e4a5aa0bbf67baa9066da53ca>
+            height = 3930
+            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
             incrementalMacChunkSize = 2048
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
-              encryptedDigest = <5ea278fda6c9d64b759ef2a75d430cc5>
-              key = <e00d51de27e38374784397640cc51a91>
+              encryptedDigest = <aaaad4de1ced785cdb7cbb015c73c8a4f339e37ebf76577de18f7cb990b27d33>
+              key = <7fb3079eafb9bdeb1dc592e8e2c75d1863f563926dccb546ff71c9ba1c9a698bc9f517a49ba983fdd8ea68c6438d6e9c047f4c40a3f759c1fcda06be8f60c41e>
               legacyDigest = <>
               legacyMediaName = ""
-              size = 815946302
-              transitCdnKey = "LmtLxdKP"
-              transitTierUploadTimestamp = 1715417005883
+              size = 1823554627
+              transitCdnKey = "DLUUkKGTWpTUET"
+              transitTierUploadTimestamp = 1712945000486
             }
-            width = 3254
+            width = 2210
           }
-          wasDownloaded = true
         }
       ]
       text = Text {

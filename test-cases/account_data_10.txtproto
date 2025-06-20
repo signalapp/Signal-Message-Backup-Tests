@@ -15,18 +15,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -11098071
+          solid = -4896335
         },
         CustomChatColor {
           id = 2
-          solid = -3114329
+          solid = -8329015
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 139
+            angle = 218
             colors = [
-              -10882070,
-              -14174184
+              -11625524,
+              -2101757
             ]
             positions = [
               0.0,
@@ -38,31 +38,31 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_INDIGO
-        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.SOLID_CELADON
       }
-      hasViewedOnboardingStory = true
-      keepMutedChatsArchived = true
+      hasCompletedUsernameOnboarding = true
+      hasSetMyStoriesPrivacy = true
       linkPreviews = true
+      notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
-      preferContactAvatars = true
-      readReceipts = true
-      universalExpireTimerSeconds = 2076758843
+      sealedSenderIndicators = true
+      universalExpireTimerSeconds = 694141765
     }
-    avatarUrlPath = "https://signal.org/NgpXHtZhdLyg"
+    avatarUrlPath = "https://signal.org/budVyDygxM"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
-      subscriberId = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
+      manuallyCancelled = true
+      subscriberId = <da4e86e6a6eeb98b207d85f0b413e071743cee3d4bece41ec92ea59e67f1c2ef>
     }
-    familyName = "Stanley"
-    givenName = "Bernardo"
-    profileKey = <7b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
+    familyName = "Wyatt"
+    givenName = "Lois"
+    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
     svrPin = "1234"
-    username = "vito.4246"
+    username = "irvin.4656"
     usernameLink = UsernameLink {
       color = Color.BLUE
-      entropy = <342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef73707c0a1a54>
-      serverId = <99eb27976fb2a59dcf3429a08f357899>
+      entropy = <0c3ae62e4a5aa0bbf67baa9066da53caf60c4ec900b2dee58107854a29a3b2f1>
+      serverId = <d4c8184986860917d55519fd5bc982fa>
     }
   }
 }

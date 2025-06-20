@@ -15,28 +15,41 @@ import toByteArray
  * Incoming/outgoing view-once messages
  */
 object ChatItemViewOnceTestCase : TestCase("chat_item_view_once") {
+
+  private var incrementingDate = 0L
+
   override fun PermutationScope.execute() {
     frames += StandardFrames.MANDATORY_FRAMES
 
     frames += StandardFrames.recipientAlice
     frames += StandardFrames.chatAlice
 
-    val (incomingGenerator, outgoingGenerator) = Generators.incomingOutgoingDetails(StandardFrames.recipientAlice.recipient!!)
+    incrementingDate = someIncrementingTimestamp()
 
-    val incoming = some(incomingGenerator)
-    val outgoing = some(outgoingGenerator)
+    val incomingGenerator = Generators.permutation<ChatItem.IncomingMessageDetails> {
+      frames += ChatItem.IncomingMessageDetails(
+        dateReceived = incrementingDate,
+        dateServerSent = incrementingDate,
+        read = someBoolean(),
+        sealedSender = someBoolean()
+      )
+    }
 
+    val outgoingGenerator = Generators.permutation<ChatItem.OutgoingMessageDetails> {
+      frames += ChatItem.OutgoingMessageDetails(
+        sendStatus = Generators.sendStatus(
+          recipientIdGenerator = Generators.single(StandardFrames.recipientAlice.recipient!!.id)
+        ).let { listOf(some(it)) }
+      )
+    }
+
+    // Incoming
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
-        authorId = if (outgoing != null) {
-          StandardFrames.recipientSelf.recipient!!.id
-        } else {
-          StandardFrames.recipientAlice.recipient!!.id
-        },
-        dateSent = someIncrementingTimestamp(),
-        incoming = incoming,
-        outgoing = outgoing,
+        authorId = StandardFrames.recipientAlice.recipient!!.id,
+        dateSent = incrementingDate,
+        incoming = some(incomingGenerator),
         viewOnceMessage = ViewOnceMessage(
           attachment = Generators.permutation<MessageAttachment> {
             frames += MessageAttachment(
@@ -46,6 +59,19 @@ object ChatItemViewOnceTestCase : TestCase("chat_item_view_once") {
               clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()
             )
           }.nullable().let { some(it) }
+        )
+      )
+    )
+
+    // Outgoing
+    frames += Frame(
+      chatItem = ChatItem(
+        chatId = StandardFrames.chatAlice.chat!!.id,
+        authorId = StandardFrames.recipientSelf.recipient!!.id,
+        dateSent = incrementingDate + 1,
+        outgoing = some(outgoingGenerator),
+        viewOnceMessage = ViewOnceMessage(
+          attachment = null
         )
       )
     )

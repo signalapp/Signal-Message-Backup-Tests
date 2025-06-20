@@ -130,13 +130,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1907421183795
+    dateSent = 1831850566556
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1706981830239
+          sentTimestamp = 1850601213807
           sortOrder = 1
         }
       ]
@@ -145,13 +145,13 @@ Frame {
           contentType = "text/x-signal-plain"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            encryptedDigest = <8f179c50eabc0dacb6f894ff2dcd51a0>
-            key = <1f8eb741383ccf3627c362ea1d4aadc9>
+            encryptedDigest = <71a429e076b8d33fcc659540406bb217821bcd82ccd719d94ce58985ed431894>
+            key = <d8b31e0b8d6049955da8992e8eb2791f46f29c9b679db1bca4c0c97e9983986201c65001bb7bc8acec00723d47db44d61270a0dc3ef0b2b677d4e0eeaf337102>
             legacyDigest = <>
             legacyMediaName = ""
-            size = 891929939
-            transitCdnKey = "WyYPnka"
-            transitTierUploadTimestamp = 1713069754495
+            size = 15675372
+            transitCdnKey = "BHCZROtEhcCMe"
+            transitTierUploadTimestamp = 1714329419219
           }
         }
         text = Text {

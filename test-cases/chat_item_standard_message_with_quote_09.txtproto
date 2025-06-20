@@ -140,24 +140,22 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/webp"
-          fileName = "jAPgZpaR"
-          height = 1639
+          fileName = "kImeGllwfgQ"
+          height = 2826
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            encryptedDigest = <654e8f940bf8e8777e42dac21846314a>
-            key = <b6efbca9eac44454b8a3fbd066cb5c5b>
+            key = <3a530032203ab564514bd5789efb16b8878e054c83268135be39cd7324da230d760a61dd0717f1bb690ac2bdf41fac27475df07be4c159ff58773dfc569200b3>
             legacyDigest = <>
             legacyMediaName = ""
-            size = 1767037458
-            transitCdnKey = "ZGfOSvRRNDs"
-            transitCdnNumber = 3
-            transitTierUploadTimestamp = 1712164502582
+            mediaTierCdnNumber = 2
+            plaintextHash = <cb13449b99ecb929bb5c92dc558ac12a03facb5ed4700cdf822cd28f7ab734b3>
+            size = 2146767977
           }
-          width = 787
+          width = 3345
         }
         emoji = "👎"
-        packId = <5b65b2994d53c703642afda3f8c6c5d9>
-        packKey = <19282c20a15788bf1d6aa076dac747f144ae1b3ad4624664eaa04a8cee6fa6e9>
+        packId = <b234bf9693d1f2cb67a1d9ae8fc8b530>
+        packKey = <be32bac8fe266cff576ca1da421797a8122f4baba17755b51094b712b861beec>
       }
     }
   }
@@ -167,7 +165,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1776361158429
+    dateSent = 1835444582914
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
@@ -187,20 +185,19 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 184
+                height = 3937
                 invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
-                  encryptedDigest = <8b71d65322e5b174175b1fae11a2814a>
-                  key = <65479a91242085fcc6cd18ca376d06f4>
+                  encryptedDigest = <aa8aa5007e5eb54da13270cb14857f9526c7142c049b9b5a11eb962c84a4f9a0>
+                  key = <9563ff8d299f551ec2047c8ed1038a9fd6b5dfadba816b98d781a5a2811e3cc7144e13b9fb7b168dfa4dfea8370e09871fb8de1b4e01cfce78b197691cdc069f>
                   legacyDigest = <>
                   legacyMediaName = ""
-                  size = 526952817
-                  transitCdnKey = "VNzGrthhi"
-                  transitTierUploadTimestamp = 1712475055839
+                  size = 597407552
+                  transitCdnKey = "stOBudGnFK"
+                  transitTierUploadTimestamp = 1713469203023
                 }
-                width = 3030
+                width = 76
               }
-              wasDownloaded = true
             }
           }
         ]
@@ -209,7 +206,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "vulputate omittam"
+        body = "eros invidunt docendi vocibus sonet nulla bibendum error"
       }
     }
   }

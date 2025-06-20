@@ -130,20 +130,20 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1907421183794
+    dateSent = 1831850566555
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
-          fileName = "jhnSfTgFokL"
+          fileName = "dKPNuFXypj"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <cf664a80595e2aa725b1e780a6681e10>
+            key = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b1036327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633>
             legacyDigest = <>
             legacyMediaName = ""
             mediaTierCdnNumber = 2
-            plaintextHash = <88e3f24a21a78511518391fbc5b26db646e8dc0a531c93c2fbd8a21f072534d5>
-            size = 1322441015
+            plaintextHash = <af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a1>
+            size = 1728187654
           }
         }
         text = Text {

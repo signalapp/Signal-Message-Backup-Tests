@@ -135,18 +135,18 @@ Frame {
         avatar = FilePointer {
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/jpeg"
-          fileName = "QgbBhBndE"
-          height = 2510
+          fileName = "cyYXgDzAHJC"
+          height = 2344
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <12752e2f4eac3a2d1eb146b64b90327c>
+            key = <4a6b3c96c18f98b1080c089e5cfdae9e5d1df2f899f0b69d01c6a5275a57bd2156513b8517c599ae4ee06946bb9f9c0265e2f2798aa5d90bfe644025fe8082f7>
             legacyDigest = <>
             legacyMediaName = ""
             mediaTierCdnNumber = 2
-            plaintextHash = <07aed74a6f6314675ce2931bdc4268650eb4a44f3384961f52e772aa4fd669a3>
-            size = 542768234
+            plaintextHash = <fb508106666250a3d0955ce53ad73057e5ca44138205a13510c99b72528730f7>
+            size = 8679219
           }
-          width = 1075
+          width = 295
         }
         name = Name {
           familyName = ""

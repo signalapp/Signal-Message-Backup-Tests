@@ -143,19 +143,19 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1860155357250
-          description = "mollis imperdiet purus"
+          date = 1908877730944
+          description = "quot ornatus"
           image = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            height = 1100
+            height = 472
             invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <>
               legacyDigest = <>
               legacyMediaName = ""
             }
-            width = 132
+            width = 4008
           }
           title = "Tation Legere"
           url = "https://signal.org/TgpIJqySkLQG"

@@ -147,12 +147,12 @@ Frame {
         contentType = "text/x-signal-plain"
         invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
-          key = <3af79e298cfcf2491a96e707c00259c7>
+          key = <d8b31e0b8d6049955da8992e8eb2791f46f29c9b679db1bca4c0c97e9983986201c65001bb7bc8acec00723d47db44d61270a0dc3ef0b2b677d4e0eeaf337102>
           legacyDigest = <>
           legacyMediaName = ""
           mediaTierCdnNumber = 3
-          plaintextHash = <4acc5040d64ea836f23a4ce20c4220ab396c4b8ebdefd49b44b4c8d19c47cb80>
-          size = 1267987916
+          plaintextHash = <ab2d573928a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f>
+          size = 1629088938
         }
       }
       text = Text {

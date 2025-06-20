@@ -148,7 +148,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1776361158420
+    dateSent = 1835444582905
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577838
       dateServerSent = 1688484601889
@@ -164,7 +164,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "vulputate omittam"
+        body = "eros invidunt docendi vocibus sonet nulla bibendum error"
       }
     }
   }

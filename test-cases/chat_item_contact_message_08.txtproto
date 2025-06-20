@@ -149,11 +149,11 @@ Frame {
           contentType = "image/jpeg"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <fc72fbe76eb51ac08d871eb76f2e7e38>
+            key = <fc72fbe76eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b42848fa87911e7798244f14304a45b550a99ee0df3ff32c42e228cf0>
             legacyDigest = <>
             legacyMediaName = ""
-            plaintextHash = <7911e7798244f14304a45b550a99ee0df3ff32c42e228cf0ec92e3182c8face4>
-            size = 616008951
+            plaintextHash = <3bff341b858050af7413fec76076c9df65cfa830a11a5cb82d872d622f7cb73a>
+            size = 1563511732
           }
         }
         email = [

@@ -130,22 +130,22 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1853676146313
+    dateSent = 1824927463025
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
-          fileName = "kLQGERtwS"
+          fileName = "qQNEW"
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            encryptedDigest = <bdaadcf9eaa4908fc733c2440c3ae62e>
-            key = <fb70db9f128ab0196d6be1c6a7ed5289>
+            encryptedDigest = <b5a5bfd31bbf0e8674ca8dec9544987b380d208afecdc4c5701ad7ec4bf8a7f5>
+            key = <458c6acb7db665e567fdcb1ac685a8aedbd29cb42e984d652ed70996974af5a7a459650a2590efd18c249edbc4fa0a5983c9e903fcd89432f89fb1eaa7865695>
             legacyDigest = <>
             legacyMediaName = ""
-            size = 1693514560
-            transitCdnKey = "ZzmNnJzEavlH"
+            size = 930648346
+            transitCdnKey = "tfOMpdiJ"
             transitCdnNumber = 3
-            transitTierUploadTimestamp = 1713600706889
+            transitTierUploadTimestamp = 1714579323552
           }
         }
         text = Text {
@@ -171,42 +171,24 @@ Frame {
       }
     }
     incoming = IncomingMessageDetails {
-      dateReceived = 1853676146303
-      dateServerSent = 1853676146312
-      read = true
-      sealedSender = true
+      dateReceived = 1824927463015
+      dateServerSent = 1824927463024
     }
     revisions = [
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1853676086029
+        dateSent = 1824927392846
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "mus pulvinar maiestatis ad dicta eos alienum mollis ius"
+              body = "rhoncus consectetuer indoctum at vituperata"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1853676086019
-          dateServerSent = 1853676086028
-        }
-      },
-      ChatItem {
-        authorId = 4
-        chatId = 2
-        dateSent = 1853676086030
-        directStoryReplyMessage = DirectStoryReplyMessage {
-          textReply = TextReply {
-            text = Text {
-              body = "consetetur primis elitr erroribus interesset arcu dicta ocurreret"
-            }
-          }
-        }
-        incoming = IncomingMessageDetails {
-          dateReceived = 1853676086020
-          dateServerSent = 1853676086029
+          dateReceived = 1824927392836
+          dateServerSent = 1824927392845
           read = true
           sealedSender = true
         }
@@ -214,17 +196,35 @@ Frame {
       ChatItem {
         authorId = 4
         chatId = 2
-        dateSent = 1853676086031
+        dateSent = 1824927392847
         directStoryReplyMessage = DirectStoryReplyMessage {
           textReply = TextReply {
             text = Text {
-              body = "vivendo fabulas hendrerit sapientem gravida omittantur bibendum nam"
+              body = "discere"
             }
           }
         }
         incoming = IncomingMessageDetails {
-          dateReceived = 1853676086021
-          dateServerSent = 1853676086030
+          dateReceived = 1824927392837
+          dateServerSent = 1824927392846
+        }
+      },
+      ChatItem {
+        authorId = 4
+        chatId = 2
+        dateSent = 1824927392848
+        directStoryReplyMessage = DirectStoryReplyMessage {
+          textReply = TextReply {
+            text = Text {
+              body = "doming himenaeos adhuc"
+            }
+          }
+        }
+        incoming = IncomingMessageDetails {
+          dateReceived = 1824927392838
+          dateServerSent = 1824927392847
+          read = true
+          sealedSender = true
         }
       }
     ]

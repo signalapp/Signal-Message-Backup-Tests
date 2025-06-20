@@ -144,18 +144,18 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/webp"
-          fileName = "gFokLHLm"
-          height = 3182
+          fileName = "jDLUUkKG"
+          height = 2307
           invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
-            key = <a867e8b454754359d4337a3cc4f08757>
+            key = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba>
             legacyDigest = <>
             legacyMediaName = ""
             mediaTierCdnNumber = 2
-            plaintextHash = <8328b1520712b5adab5ce2a61c11f4a53bc87b1036327e78d6bf0ffb1ec67707>
-            size = 1287396039
+            plaintextHash = <13b462631f8eb741383ccf3627c362ea1d4aadc91b5463098f179c50eabc0dac>
+            size = 390746787
           }
-          width = 1424
+          width = 4049
         }
         emoji = "👍"
         packId = <602ae6c88bffbb6878d9cd54434bca72>
