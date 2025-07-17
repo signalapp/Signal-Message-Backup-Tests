@@ -24,6 +24,14 @@ object ChatItemStandardMessageLongTextTestCase : TestCase("chat_item_standard_me
     val incoming = some(incomingGenerator)
     val outgoing = some(outgoingGenerator)
 
+    val shouldUseLongBody = someBoolean()
+    val longTextBody = "Y" + "o".repeat(127 * 1024)
+    val shortTextBody = some(Generators.textBody())
+
+    val bodyText = if (shouldUseLongBody) longTextBody else shortTextBody
+    val longTextPointerCandidate = some(Generators.longTextFilePointer())
+    val longTextPointer = if (shouldUseLongBody) null else longTextPointerCandidate
+
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatAlice.chat!!.id,
@@ -37,9 +45,9 @@ object ChatItemStandardMessageLongTextTestCase : TestCase("chat_item_standard_me
         outgoing = outgoing,
         standardMessage = StandardMessage(
           text = Text(
-            body = some(Generators.textBody())
+            body = bodyText
           ),
-          longText = some(Generators.longTextFilePointer()),
+          longText = longTextPointer,
           reactions = some(Generators.reactions(2, StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
         )
       )
