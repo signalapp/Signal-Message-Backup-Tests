@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -152,11 +153,8 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/png"
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             key = <e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef7370>
-            legacyDigest = <>
-            legacyMediaName = ""
             plaintextHash = <080db8f45d04641dda741f81140efe703c6727a8d5e0f3b49a458da0d95fde01>
             size = 1728187654
           }

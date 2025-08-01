@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -156,11 +157,8 @@ Frame {
           contentType = "image/webp"
           fileName = "jDLUUkKG"
           height = 2307
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             key = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba>
-            legacyDigest = <>
-            legacyMediaName = ""
             mediaTierCdnNumber = 2
             plaintextHash = <13b462631f8eb741383ccf3627c362ea1d4aadc91b5463098f179c50eabc0dac>
             size = 390746787

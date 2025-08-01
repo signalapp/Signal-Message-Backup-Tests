@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -147,11 +148,8 @@ Frame {
           flag = Flag.GIF
           pointer = FilePointer {
             contentType = "video/mp4"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fdf6d6742e0e366ee6b4982ddc1b1b12d3edc997f4505b2d0c464633445cb1f9a68a644847e660b3fb>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <425e7254c942177d4c77276c8a75e29e160466044bd34ca8d6debfee6b707251>
               size = 51231423
               transitCdnKey = "dVyDygxMh"

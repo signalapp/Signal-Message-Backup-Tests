@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -149,11 +150,8 @@ Frame {
             height = 1764
             incrementalMac = <fc0e29956dc1e0cd18b0df35d2dda82a>
             incrementalMacChunkSize = 2048
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <d55519fd5bc982fa3e64d7eea8973f9028fe841d9e2ff1cb589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b3d448eb3458c6acb>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <c4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9b5a5bfd31bbf0e86>
               size = 891929939
             }
@@ -168,12 +166,9 @@ Frame {
             contentType = "image/gif"
             fileName = "MeejhnS"
             height = 1190
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <820ab936183555ed8e40d2431d317e2dee39bbf801480e9e27dcdcb674f34922>
               key = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 1267987916
               transitCdnKey = "rHYkFXMOBq"
               transitCdnNumber = 3
@@ -192,11 +187,8 @@ Frame {
             height = 3794
             incrementalMac = <fc0e29956dc1e0cd18b0df35d2dda82a>
             incrementalMacChunkSize = 2048
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <e657fd8cab0b80bf8bf32b9d8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13a6fd0952>
-              legacyDigest = <>
-              legacyMediaName = ""
               mediaTierCdnNumber = 3
               plaintextHash = <1bcfadd2b72893989279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de>
               size = 705496382
@@ -246,11 +238,8 @@ Frame {
                 blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
                 contentType = "image/jpeg"
                 height = 263
-                invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
                   key = <333bf2b123bd5a5551e0c8172f65110d29071b089a41003c3be4f450b7bc14bec2aef7acca15cdb6bdc8a12a9d26d09347f79c3e5b6f2598bdb8c05de01cbd2d>
-                  legacyDigest = <>
-                  legacyMediaName = ""
                   mediaTierCdnNumber = 2
                   plaintextHash = <52eb227b23f9c6ea823554f4397004e759c49021e8444033ca8237a12d8f6044>
                   size = 106617276

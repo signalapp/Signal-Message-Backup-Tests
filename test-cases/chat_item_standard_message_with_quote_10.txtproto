@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -141,12 +142,9 @@ Frame {
         data_ = FilePointer {
           contentType = "image/png"
           height = 2636
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             encryptedDigest = <91e1e228ebed44a19af7c9dd94e423d85e3b26725cbceee8726d32c221da3378>
             key = <aa923a5bdccc8d4f0a86e15ec47d4274510dee45547440911c7a3651e39fdddababdb1a743e734fdceb35e31f01bb6c31fd1cd8fa8d776bec6cf2c258a48c283>
-            legacyDigest = <>
-            legacyMediaName = ""
             size = 1215810581
             transitCdnKey = "XGeFmXGyxOEx"
             transitTierUploadTimestamp = 1713789346726
@@ -187,11 +185,8 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
                 contentType = "image/jpeg"
-                invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
                   key = <7970e315f8f68a0202a9f905ebe1ca6b7bae725d9676d2587d3bccba69b136effaeeb9716a8880f084a861ffd22e784dfb9be13b67e4f50adf26dced1bd6159b>
-                  legacyDigest = <>
-                  legacyMediaName = ""
                   plaintextHash = <75caca7979d74d0ed24f6b5ccf355ced72ee4f1ef9795c08cf0f508680a6e44a>
                   size = 176525635
                 }

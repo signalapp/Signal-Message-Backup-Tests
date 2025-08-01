@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -148,12 +149,9 @@ Frame {
           flag = Flag.VOICE_MESSAGE
           pointer = FilePointer {
             contentType = "audio/mp3"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <fc853ca658a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc491>
               key = <602ae6c88bffbb6878d9cd54434bca72346a5ff97c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8d36859b9d0b6d25acc4d5a82>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 705496382
               transitCdnKey = "rHYkFXMOBq"
               transitTierUploadTimestamp = 1713949086715

@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -41,11 +42,8 @@ Frame {
         dimWallpaperInDarkMode = true
         wallpaperPhoto = FilePointer {
           contentType = "image/jpeg"
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             key = <2cc2b48c50aefe53b3974ed91e6b4ea924f9baa8e77bcc2f537f0b02efe86030ac2c315346a8f5dcc0a79602f9a51310c8eed9889d46ef3bafda11b109ff875d>
-            legacyDigest = <>
-            legacyMediaName = ""
             plaintextHash = <566976e517765490bce89c73382a342b5c0c5f7b97527985b715cd4f8972f428>
             size = 103896983
           }

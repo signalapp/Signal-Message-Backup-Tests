@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -149,11 +150,8 @@ Frame {
           image = FilePointer {
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "image/jpeg"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <8bf32b9d8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13a6fd095284a078df6859b9ac>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
               size = 1267630032
               transitCdnKey = "kLHLmtL"

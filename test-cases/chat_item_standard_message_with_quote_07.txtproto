@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -140,11 +141,8 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/png"
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             key = <6c3cf12bc285879c46171ca1766f32d8d1e140e54d070cb4914445b05d1a63f00d0f0bf333a888c0231a0f968e5dc467a823707ce2a779a847cc2b528c761855>
-            legacyDigest = <>
-            legacyMediaName = ""
             plaintextHash = <512a77c7c4ae3f7019203d64f293d4c3272fab9ba767b57dabb28c2eed79ac8c>
             size = 1215810581
           }
@@ -184,12 +182,9 @@ Frame {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
                 height = 2494
-                invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
                   encryptedDigest = <db4f147a9556093132316b08d855d437bef31c1337aaebc3b80e797f4f7f0cb8>
                   key = <ebf36bbf3a8b305aaaa08a76d810fc6299be7e3a5e427e098edbb85f4ef38f7745fb2ab7e97350e2bfa7d77131da2a87263588fc96392a28678fb24fa530495d>
-                  legacyDigest = <>
-                  legacyMediaName = ""
                   size = 176525635
                   transitCdnKey = "stOBudGnFK"
                   transitCdnNumber = 2

@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -142,11 +143,8 @@ Frame {
           contentType = "image/webp"
           fileName = "kImeGllwfgQ"
           height = 2826
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             key = <3a530032203ab564514bd5789efb16b8878e054c83268135be39cd7324da230d760a61dd0717f1bb690ac2bdf41fac27475df07be4c159ff58773dfc569200b3>
-            legacyDigest = <>
-            legacyMediaName = ""
             mediaTierCdnNumber = 2
             plaintextHash = <cb13449b99ecb929bb5c92dc558ac12a03facb5ed4700cdf822cd28f7ab734b3>
             size = 2146767977
@@ -186,12 +184,9 @@ Frame {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
                 height = 3937
-                invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
                   encryptedDigest = <aa8aa5007e5eb54da13270cb14857f9526c7142c049b9b5a11eb962c84a4f9a0>
                   key = <9563ff8d299f551ec2047c8ed1038a9fd6b5dfadba816b98d781a5a2811e3cc7144e13b9fb7b168dfa4dfea8370e09871fb8de1b4e01cfce78b197691cdc069f>
-                  legacyDigest = <>
-                  legacyMediaName = ""
                   size = 597407552
                   transitCdnKey = "stOBudGnFK"
                   transitTierUploadTimestamp = 1713469203023

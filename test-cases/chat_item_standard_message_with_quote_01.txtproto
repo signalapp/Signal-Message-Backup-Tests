@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -142,12 +143,9 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             contentType = "image/jpeg"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <fc853ca658a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc491>
               key = <602ae6c88bffbb6878d9cd54434bca72346a5ff97c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8d36859b9d0b6d25acc4d5a82>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 705496382
               transitCdnKey = "rHYkFXMOBq"
               transitTierUploadTimestamp = 1713949086715
@@ -191,12 +189,9 @@ Frame {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
                 height = 2494
-                invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
                   encryptedDigest = <db4f147a9556093132316b08d855d437bef31c1337aaebc3b80e797f4f7f0cb8>
                   key = <ebf36bbf3a8b305aaaa08a76d810fc6299be7e3a5e427e098edbb85f4ef38f7745fb2ab7e97350e2bfa7d77131da2a87263588fc96392a28678fb24fa530495d>
-                  legacyDigest = <>
-                  legacyMediaName = ""
                   size = 176525635
                   transitCdnKey = "stOBudGnFK"
                   transitCdnNumber = 2

@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -142,12 +143,9 @@ Frame {
           flag = Flag.VOICE_MESSAGE
           pointer = FilePointer {
             contentType = "audio/mp3"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <4b6ed9350f831e9f2e3aba40b0306c5b0223cc7309213eca40a83f844216f872>
               key = <578c98bed06a466ddba5af36e614794dc7f3843e0ff671c18ad4d8acecef54f15cc3ea37fd7e748dd4dc9ab3a49e13497a9470e1a093f6e3ab3820145d939375>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 1042192920
               transitCdnKey = "nxtQVCIWRKuB"
               transitTierUploadTimestamp = 1714196155702
@@ -187,12 +185,9 @@ Frame {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
                 height = 3937
-                invalidAttachmentLocator = InvalidAttachmentLocator {}
                 locatorInfo = LocatorInfo {
                   encryptedDigest = <aa8aa5007e5eb54da13270cb14857f9526c7142c049b9b5a11eb962c84a4f9a0>
                   key = <9563ff8d299f551ec2047c8ed1038a9fd6b5dfadba816b98d781a5a2811e3cc7144e13b9fb7b168dfa4dfea8370e09871fb8de1b4e01cfce78b197691cdc069f>
-                  legacyDigest = <>
-                  legacyMediaName = ""
                   size = 597407552
                   transitCdnKey = "stOBudGnFK"
                   transitTierUploadTimestamp = 1713469203023

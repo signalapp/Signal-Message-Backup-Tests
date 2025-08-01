@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -146,12 +147,9 @@ Frame {
       longText = FilePointer {
         contentType = "text/x-signal-plain"
         fileName = "LxdKPN"
-        invalidAttachmentLocator = InvalidAttachmentLocator {}
         locatorInfo = LocatorInfo {
           encryptedDigest = <1ec67707ad43f2d167963887aa1d063c8db57633fa5483f31f78622caf4b15d2>
           key = <a867e8b454754359d4337a3cc4f08757f22b67999610114498749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b1036327e78>
-          legacyDigest = <>
-          legacyMediaName = ""
           size = 1629088938
           transitCdnKey = "YPnkaWIBH"
           transitCdnNumber = 3

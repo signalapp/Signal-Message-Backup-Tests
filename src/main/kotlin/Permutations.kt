@@ -390,7 +390,6 @@ object Generators {
       val contentType: String = some(Generators.list("image/jpeg", "image/png"))
 
       frames += FilePointer(
-        invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator(),
         locatorInfo = locatorInfo,
         contentType = contentType,
         incrementalMac = null,
@@ -508,7 +507,6 @@ object Generators {
       )
 
       frames += FilePointer(
-        invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator(),
         locatorInfo = locatorInfo,
         contentType = contentType,
         incrementalMac = null,
@@ -604,7 +602,6 @@ object Generators {
       val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
 
       frames += FilePointer(
-        invalidAttachmentLocator = FilePointer.InvalidAttachmentLocator(),
         locatorInfo = locatorInfo,
         contentType = contentType,
         incrementalMac = incrementalMac?.toByteString(),

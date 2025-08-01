@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -143,11 +144,8 @@ Frame {
       textReply = TextReply {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             key = <aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba1a7be8b3820ab936183555ed8e40d2431d317e2dee39bbf801480e9e27dcdcb674f34922363753d4>
-            legacyDigest = <>
-            legacyMediaName = ""
             mediaTierCdnNumber = 3
             plaintextHash = <27f66df3e403f1bdf1199c78f4a921363af79e298cfcf2491a96e707c00259c7>
             size = 1798771361

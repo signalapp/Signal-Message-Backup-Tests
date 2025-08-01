@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -148,11 +149,8 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             contentType = "image/jpeg"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <58a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e1>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <7c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d295169f37545>
               size = 1769244279
             }
@@ -165,11 +163,8 @@ Frame {
             contentType = "image/png"
             fileName = "qmCdYWyYPnka"
             height = 1777
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <7cb4446159fb651a953525dd5da9aa792ff23f31ca20483ef7a05a9615d4adbdf6985c94b6633322a1ff1c9732d8456e7027634ab98b2bedfeba4948ff5ee0b3>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <6ce3c17322ad4bfac6e10859fb70db9f128ab0196d6be1c6a7ed5289222d4808>
               size = 2052851332
             }
@@ -183,11 +178,8 @@ Frame {
             contentType = "audio/mp3"
             fileName = "IBHCZ"
             height = 495
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <7db665e567fdcb1ac685a8aedbd29cb42e984d652ed70996974af5a7a459650a2590efd18c249edbc4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9>
-              legacyDigest = <>
-              legacyMediaName = ""
               mediaTierCdnNumber = 2
               plaintextHash = <1bbf0e8674ca8dec9544987b380d208afecdc4c5701ad7ec4bf8a7f52384caa7>
               size = 246546990
@@ -201,11 +193,8 @@ Frame {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "video/mp4"
             height = 3312
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <58493e1bb0268c5da867e8b454754359d4337a3cc4f08757f22b67999610114498749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a5>
-              legacyDigest = <>
-              legacyMediaName = ""
               mediaTierCdnNumber = 3
               plaintextHash = <36327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f3>
               size = 1769244279

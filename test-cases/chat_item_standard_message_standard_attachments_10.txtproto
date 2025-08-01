@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -150,11 +151,8 @@ Frame {
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "video/mp4"
             fileName = "qzDNPnbCyaC"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <91f30119c0d5644ec979811fff633701f45a0a51f398be7e72754494dab73df6b549f5d780a217b6d82a2b79aeda233c8ec8b7a4c8826207fd8bfef53c199310>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <81b6e8908aed884a50a53b5413559bd194275d6f24601d90cd3c3fdbf1793a03>
               size = 971043254
             }
@@ -172,12 +170,9 @@ Frame {
             height = 3164
             incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
             incrementalMacChunkSize = 2048
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <cd45f8bcee2bba22154356f8228ce13806bcb400f2316eac211b93280d02ce11>
               key = <cb134608cc803e36ea2b87608981423f87a1cf293b8aa5dac03b4e37d46a68b84baa49cf5140d38a1aaa87f98be2cb21a0fa47a0181037dfcfe0de9507642fd0>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 2099631761
               transitCdnKey = "DLUUkKGTWpTUET"
               transitCdnNumber = 3
@@ -190,11 +185,8 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             contentType = "image/jpeg"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <54d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e29956dc1e0cd18b0df35d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <15d4adbdf6985c94b6633322a1ff1c9732d8456e7027634ab98b2bedfeba4948>
               size = 1823554627
             }

@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -137,12 +138,9 @@ Frame {
           contentType = "image/png"
           fileName = "cyYXgDzAHJC"
           height = 1444
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
           locatorInfo = LocatorInfo {
             encryptedDigest = <9fb531fc34977acc1143c272eed78eff4c5d85908dd94664eac043a8790aa5e6>
             key = <f86dfac56ed8483c672dbbe3fb112bb5b0f1e53cd4791278350db2123d3ff3fce4584bf8e3b2209f2b89e27a325da6d9efb12d39ba502cdcca04b8fbcf0a50d3>
-            legacyDigest = <>
-            legacyMediaName = ""
             size = 8679219
             transitCdnKey = "susanngyzNxzc"
             transitCdnNumber = 3

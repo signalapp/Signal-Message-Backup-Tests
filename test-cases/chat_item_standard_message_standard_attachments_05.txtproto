@@ -3,6 +3,7 @@
 BackupInfo {
   backupTimeMs = 1715636551000
   currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
   firstAppVersion = "FooClient 1.0.0"
   mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
   version = 1
@@ -154,12 +155,9 @@ Frame {
             height = 3164
             incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
             incrementalMacChunkSize = 2048
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <d268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b10>
               key = <c5b26db646e8dc0a531c93c2fbd8a21f072534d5f767baaec4d38bdc7ba7623758493e1bb0268c5da867e8b454754359d4337a3cc4f08757f22b679996101144>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 971043254
               transitCdnKey = "DLUUkKGTWpTUET"
               transitCdnNumber = 2
@@ -176,11 +174,8 @@ Frame {
             contentType = "image/gif"
             fileName = "GAzWWF"
             height = 3789
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <821bcd82ccd719d94ce58985ed43189427a38645ab2d573928a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1745e712bc96653a1>
-              legacyDigest = <>
-              legacyMediaName = ""
               mediaTierCdnNumber = 2
               plaintextHash = <f2eff4ef03129ecfd189c9f35a386c4aa68fd418e657fd8cab0b80bf8bf32b9d>
               size = 2099631761
@@ -198,12 +193,9 @@ Frame {
             height = 3930
             incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
             incrementalMacChunkSize = 2048
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <aaaad4de1ced785cdb7cbb015c73c8a4f339e37ebf76577de18f7cb990b27d33>
               key = <7fb3079eafb9bdeb1dc592e8e2c75d1863f563926dccb546ff71c9ba1c9a698bc9f517a49ba983fdd8ea68c6438d6e9c047f4c40a3f759c1fcda06be8f60c41e>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 1823554627
               transitCdnKey = "DLUUkKGTWpTUET"
               transitTierUploadTimestamp = 1712945000486
@@ -217,11 +209,8 @@ Frame {
             blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
             contentType = "video/mp4"
             fileName = "qzDNPnbCyaC"
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               key = <91f30119c0d5644ec979811fff633701f45a0a51f398be7e72754494dab73df6b549f5d780a217b6d82a2b79aeda233c8ec8b7a4c8826207fd8bfef53c199310>
-              legacyDigest = <>
-              legacyMediaName = ""
               plaintextHash = <81b6e8908aed884a50a53b5413559bd194275d6f24601d90cd3c3fdbf1793a03>
               size = 971043254
             }
@@ -239,12 +228,9 @@ Frame {
             height = 3164
             incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
             incrementalMacChunkSize = 2048
-            invalidAttachmentLocator = InvalidAttachmentLocator {}
             locatorInfo = LocatorInfo {
               encryptedDigest = <cd45f8bcee2bba22154356f8228ce13806bcb400f2316eac211b93280d02ce11>
               key = <cb134608cc803e36ea2b87608981423f87a1cf293b8aa5dac03b4e37d46a68b84baa49cf5140d38a1aaa87f98be2cb21a0fa47a0181037dfcfe0de9507642fd0>
-              legacyDigest = <>
-              legacyMediaName = ""
               size = 2099631761
               transitCdnKey = "DLUUkKGTWpTUET"
               transitCdnNumber = 3
