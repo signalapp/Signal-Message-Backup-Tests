@@ -135,31 +135,7 @@ Frame {
       dateReceived = 1833527071192
       dateServerSent = 1833527071192
     }
-    viewOnceMessage = ViewOnceMessage {
-      attachment = MessageAttachment {
-        clientUuid = <1301371c02d3459683cce566b0ade8ed>
-        flag = Flag.NONE
-        pointer = FilePointer {
-          blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
-          contentType = "video/mp4"
-          height = 999
-          incrementalMac = <20d3f1c914ab100845c3a0059539e08b>
-          incrementalMacChunkSize = 2048
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
-          locatorInfo = LocatorInfo {
-            encryptedDigest = <9e8c8e7c536c9a83b3fc850a1ee1a5ce797b0500d54391053f6694ba415322f4>
-            key = <92f58f16a0fb7a757b561f3a13be730626a8275b675edf50b974ee8cbdec4974ebc8ff049c78ede6249be3774edfd6f44d99aeecc35aa0157aeb9a33ab215d44>
-            legacyDigest = <>
-            legacyMediaName = ""
-            size = 1360557697
-            transitCdnKey = "eJDueIncJR"
-            transitTierUploadTimestamp = 1712262635413
-          }
-          width = 3111
-        }
-        wasDownloaded = true
-      }
-    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }
 

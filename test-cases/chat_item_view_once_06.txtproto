@@ -137,32 +137,7 @@ Frame {
       read = true
       sealedSender = true
     }
-    viewOnceMessage = ViewOnceMessage {
-      attachment = MessageAttachment {
-        clientUuid = <1301371c02d3459683cce566b0ade8ed>
-        flag = Flag.NONE
-        pointer = FilePointer {
-          blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
-          contentType = "image/png"
-          height = 182
-          incrementalMac = <20d3f1c914ab100845c3a0059539e08b>
-          incrementalMacChunkSize = 2048
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
-          locatorInfo = LocatorInfo {
-            encryptedDigest = <ab4cb19cd78c9faa44bc265440f354e695b5f39c591cb6939bc43327e52bb008>
-            key = <6fd199716e06f1e54c79d357398365ca68f73bc61300d0f6fa3046875f0b001866bdefbc95239458e0c53beda1f43084f2363ed9947107e26853961a46c9023f>
-            legacyDigest = <>
-            legacyMediaName = ""
-            size = 749107939
-            transitCdnKey = "eJDueIncJR"
-            transitCdnNumber = 3
-            transitTierUploadTimestamp = 1712262635413
-          }
-          width = 3868
-        }
-        wasDownloaded = true
-      }
-    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }
 

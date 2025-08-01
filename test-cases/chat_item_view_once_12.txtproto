@@ -137,23 +137,7 @@ Frame {
       read = true
       sealedSender = true
     }
-    viewOnceMessage = ViewOnceMessage {
-      attachment = MessageAttachment {
-        flag = Flag.NONE
-        pointer = FilePointer {
-          blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
-          contentType = "image/jpeg"
-          invalidAttachmentLocator = InvalidAttachmentLocator {}
-          locatorInfo = LocatorInfo {
-            key = <56513b8517c599ae4ee06946bb9f9c0265e2f2798aa5d90bfe644025fe8082f772d0cc61a319e55f94f0b995c11698bbfa7c60d5e22af1036fae5ece6f2fc478>
-            legacyDigest = <>
-            legacyMediaName = ""
-            plaintextHash = <8ba88d777df97be2cf85e07d66d999105e461abe4526105952daf6dc1d24718f>
-            size = 952113813
-          }
-        }
-      }
-    }
+    viewOnceMessage = ViewOnceMessage {}
   }
 }
 
