@@ -28,7 +28,8 @@ object RecipientCallLinkTestCase : TestCase("recipient_call_link") {
           adminKey = someNullableBytes(32)?.toByteString(),
           name = someString(),
           restrictions = someEnum(CallLink.Restrictions::class.java),
-          expirationMs = some(Generators.expirationTimersMs().map { Instant.ofEpochMilli(it).truncatedTo(ChronoUnit.DAYS).toEpochMilli() })
+          expirationMs = some(Generators.expirationTimersMs().map { Instant.ofEpochMilli(it).truncatedTo(ChronoUnit.DAYS).toEpochMilli() }),
+          epoch = someNullableBytes(4)?.toByteString()
         )
       )
     )

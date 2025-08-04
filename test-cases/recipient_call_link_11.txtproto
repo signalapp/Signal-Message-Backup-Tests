@@ -100,6 +100,7 @@ Frame {
   recipient = Recipient {
     callLink = CallLink {
       adminKey = <e77bcc2f537f0b02efe86030ac2c315346a8f5dcc0a79602f9a51310c8eed988>
+      epoch = <761a278e>
       expirationMs = 1587945600000
       name = "SDTsXBkoG"
       restrictions = Restrictions.ADMIN_APPROVAL
