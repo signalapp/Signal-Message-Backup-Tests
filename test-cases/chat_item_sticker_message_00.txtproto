@@ -131,7 +131,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1700984146923
+    dateSent = 1813169575912
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577838
       dateServerSent = 1688484601889
@@ -142,15 +142,17 @@ Frame {
         data_ = FilePointer {
           contentType = "image/png"
           locatorInfo = LocatorInfo {
-            key = <e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef7370>
-            plaintextHash = <080db8f45d04641dda741f81140efe703c6727a8d5e0f3b49a458da0d95fde01>
-            size = 1728187654
+            key = <080db8f45d04641dda741f81140efe703c6727a8d5e0f3b49a458da0d95fde0154d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e29956dc1e0cd>
+            plaintextHash = <18e707cf7cb4446159fb651a953525dd5da9aa792ff23f31ca20483ef7a05a96>
+            size = 1244548219
+            transitCdnKey = "okLHLmtLxd"
+            transitTierUploadTimestamp = 1714663573080
           }
         }
         emoji = "💀"
-        packId = <602ae6c88bffbb6878d9cd54434bca72>
-        packKey = <7c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8>
-        stickerId = 27
+        packId = <8a72bebb4db939e0342ae035ddbe7fe4>
+        packKey = <d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59d>
+        stickerId = 16
       }
     }
   }

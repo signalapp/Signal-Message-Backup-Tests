@@ -145,8 +145,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1835444582918
+    dateSent = 1774046569637
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146934
       sendStatus = [
         SendStatus {
           failed = Failed {
@@ -167,12 +168,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1697421638843
+          sentTimestamp = 1794098355195
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "sale"
+        body = "dui luctus postulant omittantur gubergren qui platonem gubergren"
       }
     }
   }

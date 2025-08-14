@@ -131,7 +131,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1700984146923
+    dateSent = 1813169575912
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577838
       dateServerSent = 1688484601889
@@ -144,9 +144,11 @@ Frame {
           pointer = FilePointer {
             contentType = "image/jpeg"
             locatorInfo = LocatorInfo {
-              key = <54d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e29956dc1e0cd18b0df35d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c>
-              plaintextHash = <15d4adbdf6985c94b6633322a1ff1c9732d8456e7027634ab98b2bedfeba4948>
-              size = 1823554627
+              key = <6ce3c17322ad4bfac6e10859fb70db9f128ab0196d6be1c6a7ed5289222d4808bdaadcf9eaa4908fc733c2440c3ae62e4a5aa0bbf67baa9066da53caf60c4ec9>
+              plaintextHash = <28fe841d9e2ff1cb589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139>
+              size = 1170766650
+              transitCdnKey = "zDNPnbCyaCBGA"
+              transitTierUploadTimestamp = 1713746416479
             }
           }
           wasDownloaded = true

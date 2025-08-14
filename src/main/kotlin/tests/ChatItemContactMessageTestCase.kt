@@ -38,7 +38,8 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
       },
       Generators.permutation {
         frames += ChatItem.OutgoingMessageDetails(
-          sendStatus = listOf(some(sendStatusGenerator))
+          sendStatus = listOf(some(sendStatusGenerator)),
+          dateReceived = someIncrementingTimestamp()
         )
       }
     )

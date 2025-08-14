@@ -131,21 +131,23 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1831850566555
+    dateSent = 1705678368452
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
-          fileName = "dKPNuFXypj"
+          fileName = "UETYzPCvxA"
           locatorInfo = LocatorInfo {
-            key = <98749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b1036327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633>
-            mediaTierCdnNumber = 2
-            plaintextHash = <af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a1>
-            size = 1728187654
+            encryptedDigest = <1f8eb741383ccf3627c362ea1d4aadc91b5463098f179c50eabc0dacb6f894ff>
+            key = <aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba1a7be8b3820ab936183555ed8e40d2431d317e2dee39bbf801480e9e27dcdcb674f34922363753d4>
+            size = 1020613806
+            transitCdnKey = "hnSfTgFokL"
+            transitCdnNumber = 3
+            transitTierUploadTimestamp = 1714332425910
           }
         }
         text = Text {
-          body = "tota repudiandae"
+          body = "laoreet fugit"
           bodyRanges = [
             BodyRange {
               length = 5
@@ -167,6 +169,7 @@ Frame {
       }
     }
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146924
       sendStatus = [
         SendStatus {
           recipientId = 4

@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1818790665720
+    dateSent = 1889758719966
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146933
       sendStatus = [
         SendStatus {
           failed = Failed {
@@ -146,26 +147,26 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1908877730944
-          description = "proin donec taciti fabulas"
+          date = 1876975836016
+          description = "pri cu tritani"
           image = FilePointer {
             blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
             contentType = "image/jpeg"
             locatorInfo = LocatorInfo {
-              key = <8bf32b9d8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13a6fd095284a078df6859b9ac>
-              plaintextHash = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
-              size = 1267630032
-              transitCdnKey = "kLHLmtL"
+              key = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e160466044bd34ca8d6debfee6b707251e91134d37e751b067fb3079e>
+              plaintextHash = <438d6e9c047f4c40a3f759c1fcda06be8f60c41ef6390ff4aaaad4de1ced785c>
+              size = 2130595244
+              transitCdnKey = "CvxAOiiqzDNPnb"
               transitCdnNumber = 2
-              transitTierUploadTimestamp = 1714192708563
+              transitTierUploadTimestamp = 1711805511730
             }
           }
-          title = "Morbi Proin"
-          url = "https://signal.org/TgpIJqySkLQG"
+          title = "Mattis Partiendo"
+          url = "https://signal.org/EFCmCqQNEWGrA"
         }
       ]
       text = Text {
-        body = "ferri altera https://signal.org/TgpIJqySkLQG"
+        body = "quo imperdiet https://signal.org/EFCmCqQNEWGrA"
       }
     }
   }

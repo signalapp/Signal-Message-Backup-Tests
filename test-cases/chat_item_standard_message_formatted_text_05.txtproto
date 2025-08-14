@@ -193,8 +193,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1739258413363
+    dateSent = 1761309309673
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1739258413361
       sendStatus = [
         SendStatus {
           delivered = Delivered {
@@ -249,8 +250,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1859306524961
+    dateSent = 1840371882780
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1739258413361
       sendStatus = [
         SendStatus {
           delivered = Delivered {

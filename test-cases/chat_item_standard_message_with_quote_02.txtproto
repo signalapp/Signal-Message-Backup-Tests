@@ -140,56 +140,52 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <0f09e4311f52463d8c93f7201d851d6d>
+          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "ZROtEhc"
-            height = 1764
+            fileName = "tLxdKPNuF"
+            height = 4049
             locatorInfo = LocatorInfo {
-              key = <d55519fd5bc982fa3e64d7eea8973f9028fe841d9e2ff1cb589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b3d448eb3458c6acb>
-              plaintextHash = <c4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9b5a5bfd31bbf0e86>
-              size = 891929939
+              key = <>
             }
-            width = 2373
+            width = 959
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "HLmtLxdKPN"
+            caption = "ETYzPCvxAOiiq"
             contentType = "image/gif"
-            fileName = "MeejhnS"
-            height = 1190
+            fileName = "ypjDLUUk"
+            height = 4008
             locatorInfo = LocatorInfo {
-              encryptedDigest = <820ab936183555ed8e40d2431d317e2dee39bbf801480e9e27dcdcb674f34922>
-              key = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba>
-              size = 1267987916
-              transitCdnKey = "rHYkFXMOBq"
+              key = <bdefd49b44b4c8d19c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e10411f6eea6a34842a849b36033d55ee22ad8089d8b31e0b8d604995>
+              mediaTierCdnNumber = 2
+              plaintextHash = <1270a0dc3ef0b2b677d4e0eeaf3371028a04ed7271a429e076b8d33fcc659540>
+              size = 290586407
+              transitCdnKey = "ZROtEhc"
               transitCdnNumber = 3
-              transitTierUploadTimestamp = 1713949086715
+              transitTierUploadTimestamp = 1714503493427
             }
-            width = 547
+            width = 1169
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <0f09e4311f52463d8c93f7201d851d6d>
+          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "FXypjDLUUkK"
+            caption = "DNPnbCyaCBGA"
             contentType = "audio/mp3"
-            height = 3794
+            height = 3821
             locatorInfo = LocatorInfo {
-              key = <e657fd8cab0b80bf8bf32b9d8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13a6fd0952>
-              mediaTierCdnNumber = 3
-              plaintextHash = <1bcfadd2b72893989279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de>
-              size = 705496382
+              key = <>
             }
-            width = 2417
+            width = 368
           }
         }
       ]
@@ -214,8 +210,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1835444582907
+    dateSent = 1774046569626
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146923
       sendStatus = [
         SendStatus {
           pending = Pending {}
@@ -233,14 +230,11 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
                 contentType = "image/jpeg"
-                height = 263
+                height = 605
                 locatorInfo = LocatorInfo {
-                  key = <333bf2b123bd5a5551e0c8172f65110d29071b089a41003c3be4f450b7bc14bec2aef7acca15cdb6bdc8a12a9d26d09347f79c3e5b6f2598bdb8c05de01cbd2d>
-                  mediaTierCdnNumber = 2
-                  plaintextHash = <52eb227b23f9c6ea823554f4397004e759c49021e8444033ca8237a12d8f6044>
-                  size = 106617276
+                  key = <>
                 }
-                width = 676
+                width = 863
               }
               wasDownloaded = true
             }
@@ -267,18 +261,18 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1697421638843
+          sentTimestamp = 1794098355195
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1697421638844
+          sentTimestamp = 1794098355196
           sortOrder = 2
         }
       ]
       text = Text {
-        body = "graeci potenti postea odio"
+        body = "scripta eos error aptent autem veniam"
       }
     }
   }

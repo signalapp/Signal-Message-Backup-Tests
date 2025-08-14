@@ -131,7 +131,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1700984146923
+    dateSent = 1813169575912
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577838
       dateServerSent = 1688484601889
@@ -139,7 +139,7 @@ Frame {
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "brute veritus unum"
+        body = "pretium graeco tractatos aenean ullamcorper odio mel populo"
       }
     }
   }

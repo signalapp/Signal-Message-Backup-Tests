@@ -142,14 +142,16 @@ Frame {
         data_ = FilePointer {
           contentType = "image/png"
           locatorInfo = LocatorInfo {
-            key = <6c3cf12bc285879c46171ca1766f32d8d1e140e54d070cb4914445b05d1a63f00d0f0bf333a888c0231a0f968e5dc467a823707ce2a779a847cc2b528c761855>
-            plaintextHash = <512a77c7c4ae3f7019203d64f293d4c3272fab9ba767b57dabb28c2eed79ac8c>
-            size = 1215810581
+            encryptedDigest = <8d1a520713dc7d62cd878b67b1a213815be182cf837507b1c873425a55fc585e>
+            key = <0a25effd9cb39c731daa53540d0c93540c23db9d9e83b143c596a4e5e99f920842a930f40ab8bec8842f856fd7adc8c90a958a40a4cf953998bdfccc40ba65d2>
+            size = 782353625
+            transitCdnKey = "SwyCVZdvoPEXpy"
+            transitTierUploadTimestamp = 1715210508904
           }
         }
         emoji = "💀"
-        packId = <2eabe6883d97bae004a16a1863f2af79>
-        packKey = <b1abf52f8057dc52c41a9c845aa2eae51744418a8afd0f37ec952823c1aa2145>
+        packId = <12783d9019c04529defd00af995b5268>
+        packKey = <df2e5698c4930d58e9512bddb3973c9d1f34ec71aad65d22a183e18afc043d10>
       }
     }
   }
@@ -159,8 +161,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1835444582912
+    dateSent = 1774046569631
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146928
       sendStatus = [
         SendStatus {
           read = Read {
@@ -181,16 +184,16 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
-                height = 2494
+                height = 1062
                 locatorInfo = LocatorInfo {
-                  encryptedDigest = <db4f147a9556093132316b08d855d437bef31c1337aaebc3b80e797f4f7f0cb8>
-                  key = <ebf36bbf3a8b305aaaa08a76d810fc6299be7e3a5e427e098edbb85f4ef38f7745fb2ab7e97350e2bfa7d77131da2a87263588fc96392a28678fb24fa530495d>
-                  size = 176525635
-                  transitCdnKey = "stOBudGnFK"
+                  key = <d117fec6f9bc251f3886532340511712905d2162d6e3f6c27d7ef4e9a9fe2535734522f0ec90a4897569854110ee348cce09996ce4715b90a74742c8c1584b35>
+                  plaintextHash = <e081c5a16fbcd29a8c09588ebff9bd7bac98c202aea07386de0ecf71720bbdcc>
+                  size = 915152284
+                  transitCdnKey = "waHPpPTBb"
                   transitCdnNumber = 2
-                  transitTierUploadTimestamp = 1713469203023
+                  transitTierUploadTimestamp = 1712888047325
                 }
-                width = 2290
+                width = 3436
               }
             }
           }
@@ -203,12 +206,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1697421638843
+          sentTimestamp = 1794098355195
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "sale"
+        body = "dui luctus postulant omittantur gubergren qui platonem gubergren"
       }
     }
   }

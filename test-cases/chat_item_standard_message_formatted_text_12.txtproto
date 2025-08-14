@@ -193,8 +193,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1739258413370
+    dateSent = 1761309309680
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1739258413368
       sendStatus = [
         SendStatus {
           failed = Failed {
@@ -224,8 +225,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1859306524968
+    dateSent = 1840371882787
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1739258413368
       sendStatus = [
         SendStatus {
           failed = Failed {

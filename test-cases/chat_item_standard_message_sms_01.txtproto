@@ -131,7 +131,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1700984146924
+    dateSent = 1813169575913
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577839
       dateServerSent = 1688484601890
@@ -145,15 +145,16 @@ Frame {
           pointer = FilePointer {
             contentType = "image/jpeg"
             locatorInfo = LocatorInfo {
-              key = <58a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e1>
-              plaintextHash = <7c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d295169f37545>
-              size = 1769244279
+              key = <d95fde0154d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e29956dc1e0cd18b0df35d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f419>
+              plaintextHash = <0977166fd3faf51e18e707cf7cb4446159fb651a953525dd5da9aa792ff23f31>
+              size = 1261260923
             }
           }
+          wasDownloaded = true
         }
       ]
       text = Text {
-        body = "ERtwSQu"
+        body = "HYkFXMOBqmCd"
       }
     }
   }

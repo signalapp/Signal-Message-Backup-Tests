@@ -131,11 +131,11 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1831850566552
+    dateSent = 1705678368449
     directStoryReplyMessage = DirectStoryReplyMessage {
       textReply = TextReply {
         text = Text {
-          body = "tota repudiandae"
+          body = "laoreet fugit"
         }
       }
     }

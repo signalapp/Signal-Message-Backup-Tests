@@ -131,13 +131,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1831850566556
+    dateSent = 1705678368453
     directStoryReplyMessage = DirectStoryReplyMessage {
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1850601213807
+          sentTimestamp = 1671236786526
           sortOrder = 1
         }
       ]
@@ -145,15 +145,14 @@ Frame {
         longText = FilePointer {
           contentType = "text/x-signal-plain"
           locatorInfo = LocatorInfo {
-            encryptedDigest = <71a429e076b8d33fcc659540406bb217821bcd82ccd719d94ce58985ed431894>
-            key = <d8b31e0b8d6049955da8992e8eb2791f46f29c9b679db1bca4c0c97e9983986201c65001bb7bc8acec00723d47db44d61270a0dc3ef0b2b677d4e0eeaf337102>
-            size = 15675372
-            transitCdnKey = "BHCZROtEhcCMe"
-            transitTierUploadTimestamp = 1714329419219
+            key = <0dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede827e18e55c28e712f9a3dddc384e466f98e15432bce34cee30502d540f2eff4ef03129ecf>
+            mediaTierCdnNumber = 3
+            plaintextHash = <6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13>
+            size = 221445548
           }
         }
         text = Text {
-          body = "veritus unum utinam sapien"
+          body = "graeco tractatos aenean ullamcorper odio"
           bodyRanges = [
             BodyRange {
               length = 2
@@ -177,6 +176,7 @@ Frame {
       }
     }
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146925
       sendStatus = [
         SendStatus {
           recipientId = 4

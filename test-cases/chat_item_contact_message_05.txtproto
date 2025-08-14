@@ -135,55 +135,55 @@ Frame {
       contact = ContactAttachment {
         address = [
           PostalAddress {
-            city = "pXHaW"
-            country = "UUiitmkHLv"
-            label = "ygutgr"
-            neighborhood = "CfVdHWJ"
-            pobox = ""
-            postcode = "jjbudVyDygx"
-            region = "mtfRDjcUVSZl"
-            street = "nGMNaiqnlQbYT"
-            type = Type.WORK
-          },
-          PostalAddress {
             city = "ejXWhGQ"
             country = "jrJToWuNQzhOBq"
             label = "FLPSkA"
             neighborhood = "taPHwAvo"
-            pobox = "vzSFNgpXHtZhd"
+            pobox = ""
             postcode = "hyZCTrFaZqB"
             region = "tAKtPVXV"
             street = "dKVWk"
+            type = Type.WORK
+          },
+          PostalAddress {
+            city = "mtfRDjcUVSZl"
+            country = "unEEaAnFRLrvz"
+            label = "CfVdHWJ"
+            neighborhood = "pXHaW"
+            pobox = "ygutgr"
+            postcode = "UUiitmkHLv"
+            region = "jjbudVyDygx"
+            street = "Kenth"
             type = Type.CUSTOM
           }
         ]
         avatar = FilePointer {
           blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/jpeg"
-          fileName = "seNsrZSyI"
+          fileName = "IocyYXgDz"
           locatorInfo = LocatorInfo {
             key = <c7d6521b7624aafb8f19d75ef7129713842db2adbe12faf29a852ad28dafc5280a19d0fd2932b058843ddacc74d13410284843e2405b83fe8e81fccbfae5bce8>
             plaintextHash = <285504cdf1b5257877380521362db73801df7d496ce0af3aa0005822d3f6fd64>
-            size = 1185212967
+            size = 456011350
           }
         }
         email = [
           Email {
             label = ""
             type = Type.HOME
-            value_ = "Stacy@Velasquez.com"
+            value_ = "Gale@Trevino.com"
           },
           Email {
-            label = "WFqaczw"
+            label = "mjwqTJNP"
             type = Type.MOBILE
-            value_ = "CvxAOiiqzDNPnb@yaCBGAz.org"
+            value_ = "CBGAzWWFq@czwFdzHLOokMZ.org"
           }
         ]
         name = Name {
-          familyName = "Maddox"
-          givenName = "Geoffrey"
-          middleName = "Quinton"
-          nickname = "Kathleen"
+          familyName = "Benjamin"
+          givenName = "Numbers"
+          middleName = "Sherman"
+          nickname = "Darrell"
           prefix = "Mr."
           suffix = "Jr."
         }
@@ -191,19 +191,20 @@ Frame {
           Phone {
             label = ""
             type = Type.HOME
-            value_ = "17185550134"
+            value_ = "15685550174"
           },
           Phone {
-            label = "QWuuu"
+            label = "BqmCd"
             type = Type.MOBILE
-            value_ = "447700900440"
+            value_ = "19795550132"
           }
         ]
-        organization = "UVdtLLzdMbv"
+        organization = "PaXiLScgLH"
       }
     }
-    dateSent = 1717801198101
+    dateSent = 1807052905030
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146926
       sendStatus = [
         SendStatus {
           delivered = Delivered {

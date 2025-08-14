@@ -134,18 +134,19 @@ Frame {
     contactMessage = ContactMessage {
       contact = ContactAttachment {
         name = Name {
-          familyName = "Clarke"
-          givenName = "Cliff"
-          middleName = "Brandi"
-          nickname = "Aurelio"
+          familyName = "Watkins"
+          givenName = "Leslie"
+          middleName = "Joesph"
+          nickname = "Allie"
           prefix = ""
           suffix = ""
         }
         organization = ""
       }
     }
-    dateSent = 1700984146923
+    dateSent = 1813169575912
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146935
       sendStatus = [
         SendStatus {
           failed = Failed {

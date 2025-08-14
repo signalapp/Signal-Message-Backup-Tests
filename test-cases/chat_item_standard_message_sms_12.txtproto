@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146935
+    dateSent = 1813169575924
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146933
       sendStatus = [
         SendStatus {
           failed = Failed {
@@ -146,7 +147,7 @@ Frame {
     sms = true
     standardMessage = StandardMessage {
       text = Text {
-        body = "pIJqySkLQ"
+        body = "CmCqQNEWGrAz"
       }
     }
   }

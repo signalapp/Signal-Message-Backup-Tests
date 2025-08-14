@@ -131,7 +131,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1700984146924
+    dateSent = 1813169575913
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577839
       dateServerSent = 1688484601890

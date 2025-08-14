@@ -141,19 +141,18 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/png"
-          height = 2636
+          height = 3176
           locatorInfo = LocatorInfo {
-            encryptedDigest = <91e1e228ebed44a19af7c9dd94e423d85e3b26725cbceee8726d32c221da3378>
-            key = <aa923a5bdccc8d4f0a86e15ec47d4274510dee45547440911c7a3651e39fdddababdb1a743e734fdceb35e31f01bb6c31fd1cd8fa8d776bec6cf2c258a48c283>
-            size = 1215810581
-            transitCdnKey = "XGeFmXGyxOEx"
-            transitTierUploadTimestamp = 1713789346726
+            key = <3287181e80bab56ec6b4d2f18cd465fb714b972fa18d35effbdc28c45cba985cc2d07f115ebaf175f6a6ffb5a25eedc3fd5e1fa037958622887ad911e32680be>
+            mediaTierCdnNumber = 3
+            plaintextHash = <a4f673e8e06406469d26fe2c0aaa9cb9ce08549b2c60c89663421c586c0f5f04>
+            size = 782353625
           }
-          width = 3030
+          width = 2871
         }
         emoji = "👍🏾"
-        packId = <d23e0f847c8a91c9990240dc29b6651b>
-        packKey = <081f421d087988ad8cefcf39c8d26c68101e40971e788bfb505fe1f6451be8fc>
+        packId = <ac014ae9c9ecb7fe867ecac7299ddc17>
+        packKey = <72706d4a468670096a72b9c462502b1b95f642d16e76d4c74bf24f5bfda3cbd2>
       }
     }
   }
@@ -163,8 +162,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1835444582915
+    dateSent = 1774046569634
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146931
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -186,9 +186,7 @@ Frame {
                 blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
                 contentType = "image/jpeg"
                 locatorInfo = LocatorInfo {
-                  key = <7970e315f8f68a0202a9f905ebe1ca6b7bae725d9676d2587d3bccba69b136effaeeb9716a8880f084a861ffd22e784dfb9be13b67e4f50adf26dced1bd6159b>
-                  plaintextHash = <75caca7979d74d0ed24f6b5ccf355ced72ee4f1ef9795c08cf0f508680a6e44a>
-                  size = 176525635
+                  key = <>
                 }
               }
               wasDownloaded = true
@@ -203,12 +201,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1697421638843
+          sentTimestamp = 1794098355195
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "sale"
+        body = "dui luctus postulant omittantur gubergren qui platonem gubergren"
       }
     }
   }

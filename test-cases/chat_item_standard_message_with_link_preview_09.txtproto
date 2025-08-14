@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1818790665717
+    dateSent = 1889758719963
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146930
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -144,23 +145,23 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          date = 1908877730944
-          description = "quot ornatus"
+          date = 1876975836016
+          description = "aeque ut fringilla malesuada an tortor"
           image = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            height = 472
+            height = 2057
             locatorInfo = LocatorInfo {
               key = <>
             }
-            width = 4008
+            width = 2684
           }
-          title = "Tation Legere"
-          url = "https://signal.org/TgpIJqySkLQG"
+          title = "Similique est"
+          url = "https://signal.org/EFCmCqQNEWGrA"
         }
       ]
       text = Text {
-        body = "ferri altera https://signal.org/TgpIJqySkLQG"
+        body = "quo imperdiet https://signal.org/EFCmCqQNEWGrA"
       }
     }
   }

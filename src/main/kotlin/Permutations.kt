@@ -697,7 +697,8 @@ object Generators {
       },
       Generators.permutation {
         frames += ChatItem.OutgoingMessageDetails(
-          sendStatus = sendStatusGenerators.map { some(it) }
+          sendStatus = sendStatusGenerators.map { some(it) },
+          dateReceived = someIncrementingTimestamp()
         )
       }
     )

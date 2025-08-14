@@ -131,7 +131,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1700984146924
+    dateSent = 1813169575913
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577839
       dateServerSent = 1688484601890
@@ -142,12 +142,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1838953738862
+          sentTimestamp = 1665535355564
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "sapien tristique sale"
+        body = "morbi proin hinc tation legere civibus lorem vel elaboraret"
       }
     }
   }

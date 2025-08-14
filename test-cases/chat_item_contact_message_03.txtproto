@@ -136,15 +136,15 @@ Frame {
         avatar = FilePointer {
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/jpeg"
-          fileName = "cyYXgDzAHJC"
-          height = 2344
+          fileName = "HJCuLzg"
+          height = 3579
           locatorInfo = LocatorInfo {
             key = <4a6b3c96c18f98b1080c089e5cfdae9e5d1df2f899f0b69d01c6a5275a57bd2156513b8517c599ae4ee06946bb9f9c0265e2f2798aa5d90bfe644025fe8082f7>
             mediaTierCdnNumber = 2
             plaintextHash = <fb508106666250a3d0955ce53ad73057e5ca44138205a13510c99b72528730f7>
-            size = 8679219
+            size = 1514863930
           }
-          width = 295
+          width = 1304
         }
         name = Name {
           familyName = ""
@@ -157,8 +157,9 @@ Frame {
         organization = ""
       }
     }
-    dateSent = 1717801198101
+    dateSent = 1807052905030
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146924
       sendStatus = [
         SendStatus {
           recipientId = 4

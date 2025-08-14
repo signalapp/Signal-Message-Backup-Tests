@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146925
+    dateSent = 1813169575914
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146923
       sendStatus = [
         SendStatus {
           pending = Pending {}
@@ -145,33 +146,36 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1896262556285
+          sentTimestamp = 1802236770486
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1896262556286
+          sentTimestamp = 1802236770487
           sortOrder = 2
         }
       ]
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/webp"
-          fileName = "jDLUUkKG"
-          height = 2307
+          fileName = "iiqzD"
+          height = 166
           locatorInfo = LocatorInfo {
-            key = <cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba>
+            key = <f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd162925690d31a8ba1a7be8b3820ab936183555ed8e40d2431d317e2dee39bbf8>
             mediaTierCdnNumber = 2
-            plaintextHash = <13b462631f8eb741383ccf3627c362ea1d4aadc91b5463098f179c50eabc0dac>
-            size = 390746787
+            plaintextHash = <8f179c50eabc0dacb6f894ff2dcd51a027f66df3e403f1bdf1199c78f4a92136>
+            size = 1267630032
+            transitCdnKey = "okLHLmtLxd"
+            transitCdnNumber = 3
+            transitTierUploadTimestamp = 1714663573080
           }
-          width = 4049
+          width = 1620
         }
         emoji = "👎"
-        packId = <602ae6c88bffbb6878d9cd54434bca72>
-        packKey = <7c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8>
-        stickerId = 19
+        packId = <8a72bebb4db939e0342ae035ddbe7fe4>
+        packKey = <d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59d>
+        stickerId = 20
       }
     }
   }

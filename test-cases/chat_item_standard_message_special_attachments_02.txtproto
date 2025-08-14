@@ -133,6 +133,7 @@ Frame {
     chatId = 2
     dateSent = 1827596898916
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146923
       sendStatus = [
         SendStatus {
           pending = Pending {}
@@ -147,11 +148,9 @@ Frame {
           pointer = FilePointer {
             contentType = "video/mp4"
             locatorInfo = LocatorInfo {
-              key = <5ea278fda6c9d64b759ef2a75d430cc52c50e0151c6530fdf6d6742e0e366ee6b4982ddc1b1b12d3edc997f4505b2d0c464633445cb1f9a68a644847e660b3fb>
-              plaintextHash = <425e7254c942177d4c77276c8a75e29e160466044bd34ca8d6debfee6b707251>
-              size = 51231423
-              transitCdnKey = "dVyDygxMh"
-              transitTierUploadTimestamp = 1714715049917
+              key = <1c6530fdf6d6742e0e366ee6b4982ddc1b1b12d3edc997f4505b2d0c464633445cb1f9a68a644847e660b3fbea8e9fff77a691f7effe2df539419f38d11a00b7>
+              plaintextHash = <4bd34ca8d6debfee6b707251e91134d37e751b067fb3079eafb9bdeb1dc592e8>
+              size = 1228012209
             }
           }
           wasDownloaded = true

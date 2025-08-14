@@ -133,7 +133,7 @@ Frame {
     chatId = 2
     dateSent = 1
     giftBadge = GiftBadge {
-      receiptCredentialPresentation = <00582df3722bf701b273e61c21df70ad8c887d108ed652ff93f51a54b312675535a442614f72ca6ded62267733206a5ac5eafdc20fab0f8f53bfda6fa911cf1009d687d9d56dd95725a14826d051f3e5bb6932d05a4a518fc4b8cbaee03dc4c110f0dea074f70013269910659c6ded3a20de24a22952adc1577812f962af269a2ce8c6c9e4b57386fc4b48b1b758476ba3a8316f2ce7bb7d71c82370acc337500e8000000000000000c862cbc02f5041208fd687606029951b45c949a30dca5958c6a9eb043ae27706cd0f0cc9df3ba36121fa3ece87600d93071a5d017125ee7a4223c8b244013a0ee97e9261077c49d3f53363d2ec30eca019abc09ac2abdf476fd5dede884f8e0f7a7257b7d53bc8090fed379441cf6ca26d022283598429ece9f546afbeabd80f000000000000000001000000000000005b3f277178c1e12913c197e15500350a>
+      receiptCredentialPresentation = <00fa50495c37610ee78d2a9bdc581edb2a4c26ca1fcea3d7a6d17b3a1363be5f1eecff9098bac341d2c9000f04ee9e6eb26109846d9b41633c4b0a4f05b50cfe780431c5d4ba1bb2151f7394aa985bd44a2a9e1f257af827d311860f206fbfe054c057ed0bfb17cb67d6fff6fb507f3de86886b16907eabf94525b2e50f3b2a80fd48f2a30598d06ef42a9172ca812f81cd67147540b2dfd16b7f189aa1a914e1b8000000000000000a32a2f6e429fbec4dc025f89b69e80e4efaae5a5d443f3ddb1d23702c656380637f25e5abfc95ca43026f27fcb2bc6ca037ac2fd2adf1ca63fce95196f67790abc5d93fa525d8fc8c8413a9ed19d5abce81f6ec0a5681fed0f77ca90c8e5ea02f52ebbf8cfa0f1e33cc425d310dd93aaa3ff8dd147e27cb8603de74ba1d776090000000000000000010000000000000071939ee6a82ae5217970e315f8f68a02>
       state = State.OPENED
     }
     incoming = IncomingMessageDetails {
@@ -148,8 +148,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1835444582917
+    dateSent = 1774046569636
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146933
       sendStatus = [
         SendStatus {
           failed = Failed {
@@ -167,7 +168,7 @@ Frame {
         type = Type.GIFT_BADGE
       }
       text = Text {
-        body = "eros invidunt docendi vocibus sonet nulla bibendum error"
+        body = "deserunt gubergren dicat ad ac dictum"
       }
     }
   }

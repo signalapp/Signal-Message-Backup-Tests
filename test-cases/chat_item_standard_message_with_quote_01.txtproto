@@ -144,11 +144,11 @@ Frame {
           pointer = FilePointer {
             contentType = "image/jpeg"
             locatorInfo = LocatorInfo {
-              encryptedDigest = <fc853ca658a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc491>
-              key = <602ae6c88bffbb6878d9cd54434bca72346a5ff97c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8d36859b9d0b6d25acc4d5a82>
-              size = 705496382
-              transitCdnKey = "rHYkFXMOBq"
-              transitTierUploadTimestamp = 1713949086715
+              key = <8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d2951>
+              plaintextHash = <d95fde0154d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e2995>
+              size = 451926028
+              transitCdnKey = "ZROtEhc"
+              transitTierUploadTimestamp = 1714503493427
             }
           }
           wasDownloaded = true
@@ -172,7 +172,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1835444582906
+    dateSent = 1774046569625
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577839
       dateServerSent = 1688484601890
@@ -188,16 +188,16 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
-                height = 2494
+                height = 1062
                 locatorInfo = LocatorInfo {
-                  encryptedDigest = <db4f147a9556093132316b08d855d437bef31c1337aaebc3b80e797f4f7f0cb8>
-                  key = <ebf36bbf3a8b305aaaa08a76d810fc6299be7e3a5e427e098edbb85f4ef38f7745fb2ab7e97350e2bfa7d77131da2a87263588fc96392a28678fb24fa530495d>
-                  size = 176525635
-                  transitCdnKey = "stOBudGnFK"
+                  key = <d117fec6f9bc251f3886532340511712905d2162d6e3f6c27d7ef4e9a9fe2535734522f0ec90a4897569854110ee348cce09996ce4715b90a74742c8c1584b35>
+                  plaintextHash = <e081c5a16fbcd29a8c09588ebff9bd7bac98c202aea07386de0ecf71720bbdcc>
+                  size = 915152284
+                  transitCdnKey = "waHPpPTBb"
                   transitCdnNumber = 2
-                  transitTierUploadTimestamp = 1713469203023
+                  transitTierUploadTimestamp = 1712888047325
                 }
-                width = 2290
+                width = 3436
               }
             }
           }
@@ -220,12 +220,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1697421638843
+          sentTimestamp = 1794098355195
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "sale"
+        body = "dui luctus postulant omittantur gubergren qui platonem gubergren"
       }
     }
   }

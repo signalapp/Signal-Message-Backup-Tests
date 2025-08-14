@@ -131,7 +131,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1818790665708
+    dateSent = 1889758719954
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577838
       dateServerSent = 1688484601889
@@ -140,11 +140,11 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          url = "https://signal.org/TgpIJqySkLQG"
+          url = "https://signal.org/EFCmCqQNEWGrA"
         }
       ]
       text = Text {
-        body = "ferri altera https://signal.org/TgpIJqySkLQG"
+        body = "quo imperdiet https://signal.org/EFCmCqQNEWGrA"
       }
     }
   }

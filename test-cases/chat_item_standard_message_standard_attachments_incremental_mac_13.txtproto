@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146936
+    dateSent = 1813169575925
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146934
       sendStatus = [
         SendStatus {
           failed = Failed {
@@ -146,62 +147,52 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
+          clientUuid = <07602b0a876744c3878ab2924a1e403f>
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             caption = ""
             contentType = "image/png"
-            fileName = "qzDNPnbCyaC"
-            height = 3164
-            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
-            incrementalMacChunkSize = 2048
+            fileName = "jwqTJ"
+            height = 3528
             locatorInfo = LocatorInfo {
-              encryptedDigest = <d268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b10>
-              key = <c5b26db646e8dc0a531c93c2fbd8a21f072534d5f767baaec4d38bdc7ba7623758493e1bb0268c5da867e8b454754359d4337a3cc4f08757f22b679996101144>
-              size = 971043254
-              transitCdnKey = "DLUUkKGTWpTUET"
-              transitCdnNumber = 2
-              transitTierUploadTimestamp = 1712945000486
+              key = <>
             }
-            width = 3784
+            width = 506
           }
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
-            caption = "zHLOokMZPm"
+            caption = "ESWutfktWAZ"
             contentType = "image/gif"
-            fileName = "GAzWWF"
-            height = 3789
+            fileName = "PMVYoUEqXx"
+            height = 886
             locatorInfo = LocatorInfo {
-              key = <821bcd82ccd719d94ce58985ed43189427a38645ab2d573928a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1745e712bc96653a1>
+              key = <6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13a6fd095284a078df6859b9ac390b234e608d3671842725ffb7b5369c034f2f21>
               mediaTierCdnNumber = 2
-              plaintextHash = <f2eff4ef03129ecfd189c9f35a386c4aa68fd418e657fd8cab0b80bf8bf32b9d>
-              size = 2099631761
+              plaintextHash = <e00d51de27e38374784397640cc51a91522bafdb5ea278fda6c9d64b759ef2a7>
+              size = 1706378786
+              transitCdnKey = "zDNPnbCyaCBGA"
+              transitCdnNumber = 3
+              transitTierUploadTimestamp = 1713746416479
             }
-            width = 1977
+            width = 3411
           }
           wasDownloaded = true
         },
         MessageAttachment {
-          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
+          clientUuid = <07602b0a876744c3878ab2924a1e403f>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "wqTJNPMVYo"
+            caption = "lGxHDjKnBipjPV"
             contentType = "audio/mp3"
-            height = 3930
-            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
-            incrementalMacChunkSize = 2048
+            height = 435
             locatorInfo = LocatorInfo {
-              encryptedDigest = <aaaad4de1ced785cdb7cbb015c73c8a4f339e37ebf76577de18f7cb990b27d33>
-              key = <7fb3079eafb9bdeb1dc592e8e2c75d1863f563926dccb546ff71c9ba1c9a698bc9f517a49ba983fdd8ea68c6438d6e9c047f4c40a3f759c1fcda06be8f60c41e>
-              size = 1823554627
-              transitCdnKey = "DLUUkKGTWpTUET"
-              transitTierUploadTimestamp = 1712945000486
+              key = <>
             }
-            width = 2210
+            width = 2795
           }
         }
       ]
@@ -209,12 +200,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1907175648373
+          sentTimestamp = 1875099209097
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "brute veritus unum"
+        body = "pretium graeco tractatos aenean ullamcorper odio mel populo"
       }
     }
   }

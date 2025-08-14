@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1818790665711
+    dateSent = 1889758719957
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146924
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -146,28 +147,28 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "feugiat iaculis"
+          description = "meliore gubergren iusto"
           image = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "image/jpeg"
-            height = 3263
+            height = 2712
             locatorInfo = LocatorInfo {
-              key = <a9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b1036327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f31f78622caf4b15d2>
+              key = <74f34922363753d413b462631f8eb741383ccf3627c362ea1d4aadc91b5463098f179c50eabc0dacb6f894ff2dcd51a027f66df3e403f1bdf1199c78f4a92136>
               mediaTierCdnNumber = 2
-              plaintextHash = <f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd>
-              size = 925035545
-              transitCdnKey = "kLHLmtL"
+              plaintextHash = <4acc5040d64ea836f23a4ce20c4220ab396c4b8ebdefd49b44b4c8d19c47cb80>
+              size = 134547243
+              transitCdnKey = "CvxAOiiqzDNPnb"
               transitCdnNumber = 3
-              transitTierUploadTimestamp = 1714192708563
+              transitTierUploadTimestamp = 1711805511730
             }
-            width = 3821
+            width = 1588
           }
-          title = "Lorem vel"
-          url = "https://signal.org/TgpIJqySkLQG"
+          title = "Error Vocibus"
+          url = "https://signal.org/EFCmCqQNEWGrA"
         }
       ]
       text = Text {
-        body = "ferri altera https://signal.org/TgpIJqySkLQG"
+        body = "quo imperdiet https://signal.org/EFCmCqQNEWGrA"
       }
     }
   }

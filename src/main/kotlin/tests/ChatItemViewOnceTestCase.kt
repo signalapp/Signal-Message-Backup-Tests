@@ -36,7 +36,8 @@ object ChatItemViewOnceTestCase : TestCase("chat_item_view_once") {
       frames += ChatItem.OutgoingMessageDetails(
         sendStatus = Generators.sendStatus(
           recipientIdGenerator = Generators.single(StandardFrames.recipientAlice.recipient!!.id)
-        ).let { listOf(some(it)) }
+        ).let { listOf(some(it)) },
+        dateReceived = incrementingDate
       )
     }
 

@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146931
+    dateSent = 1813169575920
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146929
       sendStatus = [
         SendStatus {
           read = Read {}
@@ -148,62 +149,62 @@ Frame {
           pointer = FilePointer {
             contentType = "image/jpeg"
             locatorInfo = LocatorInfo {
-              key = <58a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e1>
-              plaintextHash = <7c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d295169f37545>
-              size = 1769244279
+              key = <d95fde0154d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e29956dc1e0cd18b0df35d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f419>
+              plaintextHash = <0977166fd3faf51e18e707cf7cb4446159fb651a953525dd5da9aa792ff23f31>
+              size = 1261260923
             }
           }
+          wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
             contentType = "image/png"
-            fileName = "qmCdYWyYPnka"
-            height = 1777
+            fileName = "gFokLHLm"
+            height = 750
             locatorInfo = LocatorInfo {
-              key = <7cb4446159fb651a953525dd5da9aa792ff23f31ca20483ef7a05a9615d4adbdf6985c94b6633322a1ff1c9732d8456e7027634ab98b2bedfeba4948ff5ee0b3>
-              plaintextHash = <6ce3c17322ad4bfac6e10859fb70db9f128ab0196d6be1c6a7ed5289222d4808>
-              size = 2052851332
+              key = <66da53caf60c4ec900b2dee58107854a29a3b2f195b0f63bd4c8184986860917d55519fd5bc982fa3e64d7eea8973f9028fe841d9e2ff1cb589bfcfd570e0a10>
+              plaintextHash = <9dbd5c2ab78a3b769a54a139696ab01a75f6908b3d448eb3458c6acb7db665e5>
+              size = 1591142922
             }
-            width = 3795
+            width = 3997
           }
-          wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             contentType = "audio/mp3"
-            fileName = "IBHCZ"
-            height = 495
+            fileName = "LxdKPN"
+            height = 3002
             locatorInfo = LocatorInfo {
-              key = <7db665e567fdcb1ac685a8aedbd29cb42e984d652ed70996974af5a7a459650a2590efd18c249edbc4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9>
+              key = <3c7b2ffacf664a80595e2aa725b1e780a6681e10130f4bc74b91d8690f4d11d0201e77f9ba1caec888cf6bfa88e3f24a21a78511518391fbc5b26db646e8dc0a>
               mediaTierCdnNumber = 2
-              plaintextHash = <1bbf0e8674ca8dec9544987b380d208afecdc4c5701ad7ec4bf8a7f52384caa7>
-              size = 246546990
+              plaintextHash = <fbd8a21f072534d5f767baaec4d38bdc7ba7623758493e1bb0268c5da867e8b4>
+              size = 1244548219
             }
-            width = 415
+            width = 2297
           }
+          wasDownloaded = true
         },
         MessageAttachment {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
             contentType = "video/mp4"
-            height = 3312
+            height = 2314
             locatorInfo = LocatorInfo {
-              key = <58493e1bb0268c5da867e8b454754359d4337a3cc4f08757f22b67999610114498749f3fd268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a5>
+              key = <221e8fec3522a5e4cd2f910df566824710636ce8af1b499244fc7b251b65c6d3f9de9f64c5fbf0ffdf7a948adb326789aebcb5a166a1e4dfbdea011a4c4f4cdd>
               mediaTierCdnNumber = 3
-              plaintextHash = <36327e78d6bf0ffb1ec67707ad43f2d167963887aa1d063c8db57633fa5483f3>
-              size = 1769244279
+              plaintextHash = <0d31a8ba1a7be8b3820ab936183555ed8e40d2431d317e2dee39bbf801480e9e>
+              size = 1261260923
             }
-            width = 1734
+            width = 1100
           }
-          wasDownloaded = true
         }
       ]
       text = Text {
-        body = "pIJqySkLQ"
+        body = "CmCqQNEWGrAz"
       }
     }
   }

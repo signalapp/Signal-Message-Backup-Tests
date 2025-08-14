@@ -131,12 +131,13 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146930
+    dateSent = 1813169575919
     giftBadge = GiftBadge {
       receiptCredentialPresentation = <>
       state = State.FAILED
     }
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146928
       sendStatus = [
         SendStatus {
           read = Read {

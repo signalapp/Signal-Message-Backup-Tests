@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1818790665721
+    dateSent = 1889758719967
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146934
       sendStatus = [
         SendStatus {
           failed = Failed {
@@ -146,30 +147,30 @@ Frame {
     standardMessage = StandardMessage {
       linkPreview = [
         LinkPreview {
-          description = "quot ornatus"
+          description = "aeque ut fringilla malesuada an tortor"
           image = FilePointer {
             blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
             contentType = "image/png"
-            height = 472
+            height = 2057
             locatorInfo = LocatorInfo {
               key = <>
             }
-            width = 4008
+            width = 2684
           }
-          title = "Tation Legere"
-          url = "https://signal.org/TgpIJqySkLQG"
+          title = "Similique est"
+          url = "https://signal.org/EFCmCqQNEWGrA"
         }
       ]
       reactions = [
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1688948683717
+          sentTimestamp = 1725220055244
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "tamquam himenaeos laoreet fugit pretium graeco tractatos aenean https://signal.org/TgpIJqySkLQG"
+        body = "blandit neglegentur vim ubique ne https://signal.org/EFCmCqQNEWGrA"
       }
     }
   }

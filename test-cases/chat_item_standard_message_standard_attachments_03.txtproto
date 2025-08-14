@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146926
+    dateSent = 1813169575915
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146924
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -146,25 +147,21 @@ Frame {
     standardMessage = StandardMessage {
       attachments = [
         MessageAttachment {
-          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
+          clientUuid = <07602b0a876744c3878ab2924a1e403f>
           flag = Flag.NONE
           pointer = FilePointer {
-            caption = "wqTJNPMVYo"
+            caption = "lGxHDjKnBipjPV"
             contentType = "audio/mp3"
-            height = 3930
+            height = 435
             locatorInfo = LocatorInfo {
-              encryptedDigest = <aaaad4de1ced785cdb7cbb015c73c8a4f339e37ebf76577de18f7cb990b27d33>
-              key = <7fb3079eafb9bdeb1dc592e8e2c75d1863f563926dccb546ff71c9ba1c9a698bc9f517a49ba983fdd8ea68c6438d6e9c047f4c40a3f759c1fcda06be8f60c41e>
-              size = 1823554627
-              transitCdnKey = "DLUUkKGTWpTUET"
-              transitTierUploadTimestamp = 1712945000486
+              key = <>
             }
-            width = 2210
+            width = 2795
           }
         }
       ]
       text = Text {
-        body = "disputationi quaeque an pretium ubique reprehendunt quisque"
+        body = "appetere vocent nisl parturient aliquam"
       }
     }
   }

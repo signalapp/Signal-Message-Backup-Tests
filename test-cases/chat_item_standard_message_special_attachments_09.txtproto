@@ -133,6 +133,7 @@ Frame {
     chatId = 2
     dateSent = 1827596898923
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146930
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -148,11 +149,11 @@ Frame {
           pointer = FilePointer {
             contentType = "audio/mp3"
             locatorInfo = LocatorInfo {
-              encryptedDigest = <fc853ca658a12027e42941e2e1f45a96bc4c7227ad0710860c22bad9944dc491>
-              key = <602ae6c88bffbb6878d9cd54434bca72346a5ff97c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8d36859b9d0b6d25acc4d5a82>
-              size = 705496382
-              transitCdnKey = "rHYkFXMOBq"
-              transitTierUploadTimestamp = 1713949086715
+              key = <8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d2951>
+              plaintextHash = <d95fde0154d933c20d1a04ced92499f547a5942e97130bcd791cedfafc0e2995>
+              size = 451926028
+              transitCdnKey = "ZROtEhc"
+              transitTierUploadTimestamp = 1714503493427
             }
           }
           wasDownloaded = true

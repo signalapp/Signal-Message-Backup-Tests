@@ -133,6 +133,7 @@ Frame {
     chatId = 2
     dateSent = 1827596898927
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146934
       sendStatus = [
         SendStatus {
           failed = Failed {

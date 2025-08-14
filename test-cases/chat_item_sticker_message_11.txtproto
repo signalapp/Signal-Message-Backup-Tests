@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146934
+    dateSent = 1813169575923
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146932
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -145,33 +146,29 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1896262556285
+          sentTimestamp = 1802236770486
           sortOrder = 1
         },
         Reaction {
           authorId = 4
           emoji = "👍"
-          sentTimestamp = 1896262556286
+          sentTimestamp = 1802236770487
           sortOrder = 2
         }
       ]
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/png"
-          height = 472
+          height = 3358
           locatorInfo = LocatorInfo {
-            encryptedDigest = <c28e712f9a3dddc384e466f98e15432bce34cee30502d540f2eff4ef03129ecf>
-            key = <ed43189427a38645ab2d573928a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea80c2dede8>
-            size = 1728187654
-            transitCdnKey = "EhcCMeejhn"
-            transitTierUploadTimestamp = 1715271192872
+            key = <>
           }
-          width = 4008
+          width = 2400
         }
         emoji = "👍"
-        packId = <602ae6c88bffbb6878d9cd54434bca72>
-        packKey = <7c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8>
-        stickerId = 19
+        packId = <8a72bebb4db939e0342ae035ddbe7fe4>
+        packKey = <d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59d>
+        stickerId = 20
       }
     }
   }

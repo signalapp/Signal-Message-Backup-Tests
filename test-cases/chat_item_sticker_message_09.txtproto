@@ -131,8 +131,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146932
+    dateSent = 1813169575921
     outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146930
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -145,22 +146,17 @@ Frame {
       sticker = Sticker {
         data_ = FilePointer {
           contentType = "image/apng"
-          fileName = "mtLxdKPNuFXy"
-          height = 3821
+          fileName = "UETYzPCvxA"
+          height = 2687
           locatorInfo = LocatorInfo {
-            encryptedDigest = <2590efd18c249edbc4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9>
-            key = <570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b3d448eb3458c6acb7db665e567fdcb1ac685a8aedbd29cb42e984d652ed70996974af5a7>
-            size = 2060227180
-            transitCdnKey = "EhcCMeejhn"
-            transitCdnNumber = 2
-            transitTierUploadTimestamp = 1715271192872
+            key = <>
           }
-          width = 368
+          width = 2889
         }
         emoji = "👩‍💻"
-        packId = <602ae6c88bffbb6878d9cd54434bca72>
-        packKey = <7c318292bd6e73ff9022c6fa6faebb1559633d69d55d99f6f871f8839a9ce2d8>
-        stickerId = 27
+        packId = <8a72bebb4db939e0342ae035ddbe7fe4>
+        packKey = <d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59d>
+        stickerId = 16
       }
     }
   }
