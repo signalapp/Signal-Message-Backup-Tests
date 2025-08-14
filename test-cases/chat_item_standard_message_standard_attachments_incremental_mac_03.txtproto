@@ -152,6 +152,8 @@ Frame {
             caption = "wqTJNPMVYo"
             contentType = "audio/mp3"
             height = 3930
+            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
+            incrementalMacChunkSize = 2048
             locatorInfo = LocatorInfo {
               encryptedDigest = <aaaad4de1ced785cdb7cbb015c73c8a4f339e37ebf76577de18f7cb990b27d33>
               key = <7fb3079eafb9bdeb1dc592e8e2c75d1863f563926dccb546ff71c9ba1c9a698bc9f517a49ba983fdd8ea68c6438d6e9c047f4c40a3f759c1fcda06be8f60c41e>

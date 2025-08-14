@@ -131,15 +131,15 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1700984146926
+    dateSent = 1700984146930
     outgoing = OutgoingMessageDetails {
       sendStatus = [
         SendStatus {
-          recipientId = 4
-          sent = Sent {
+          read = Read {
             sealedSender = true
           }
-          timestamp = 1660152710755
+          recipientId = 4
+          timestamp = 1830930358412
         }
       ]
     }
@@ -149,9 +149,51 @@ Frame {
           clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
           flag = Flag.NONE
           pointer = FilePointer {
+            blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
+            caption = ""
+            contentType = "image/png"
+            fileName = "qzDNPnbCyaC"
+            height = 3164
+            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
+            incrementalMacChunkSize = 2048
+            locatorInfo = LocatorInfo {
+              encryptedDigest = <d268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b10>
+              key = <c5b26db646e8dc0a531c93c2fbd8a21f072534d5f767baaec4d38bdc7ba7623758493e1bb0268c5da867e8b454754359d4337a3cc4f08757f22b679996101144>
+              size = 971043254
+              transitCdnKey = "DLUUkKGTWpTUET"
+              transitCdnNumber = 2
+              transitTierUploadTimestamp = 1712945000486
+            }
+            width = 3784
+          }
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
+            caption = "zHLOokMZPm"
+            contentType = "image/gif"
+            fileName = "GAzWWF"
+            height = 3789
+            locatorInfo = LocatorInfo {
+              key = <821bcd82ccd719d94ce58985ed43189427a38645ab2d573928a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1745e712bc96653a1>
+              mediaTierCdnNumber = 2
+              plaintextHash = <f2eff4ef03129ecfd189c9f35a386c4aa68fd418e657fd8cab0b80bf8bf32b9d>
+              size = 2099631761
+            }
+            width = 1977
+          }
+          wasDownloaded = true
+        },
+        MessageAttachment {
+          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
+          flag = Flag.NONE
+          pointer = FilePointer {
             caption = "wqTJNPMVYo"
             contentType = "audio/mp3"
             height = 3930
+            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
+            incrementalMacChunkSize = 2048
             locatorInfo = LocatorInfo {
               encryptedDigest = <aaaad4de1ced785cdb7cbb015c73c8a4f339e37ebf76577de18f7cb990b27d33>
               key = <7fb3079eafb9bdeb1dc592e8e2c75d1863f563926dccb546ff71c9ba1c9a698bc9f517a49ba983fdd8ea68c6438d6e9c047f4c40a3f759c1fcda06be8f60c41e>
@@ -161,6 +203,14 @@ Frame {
             }
             width = 2210
           }
+        }
+      ]
+      reactions = [
+        Reaction {
+          authorId = 1
+          emoji = "💀"
+          sentTimestamp = 1907175648373
+          sortOrder = 1
         }
       ]
       text = Text {

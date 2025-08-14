@@ -148,8 +148,6 @@ Frame {
             contentType = "image/png"
             fileName = "ZROtEhc"
             height = 1764
-            incrementalMac = <fc0e29956dc1e0cd18b0df35d2dda82a>
-            incrementalMacChunkSize = 2048
             locatorInfo = LocatorInfo {
               key = <d55519fd5bc982fa3e64d7eea8973f9028fe841d9e2ff1cb589bfcfd570e0a10b620d15a9dbd5c2ab78a3b769a54a139696ab01a75f6908b3d448eb3458c6acb>
               plaintextHash = <c4fa0a5983c9e903fcd89432f89fb1eaa786569514b8aab9b5a5bfd31bbf0e86>
@@ -185,8 +183,6 @@ Frame {
             caption = "FXypjDLUUkK"
             contentType = "audio/mp3"
             height = 3794
-            incrementalMac = <fc0e29956dc1e0cd18b0df35d2dda82a>
-            incrementalMacChunkSize = 2048
             locatorInfo = LocatorInfo {
               key = <e657fd8cab0b80bf8bf32b9d8230d156ba7d509eae665c54f4c8fe4c6906b3bc1dd6ad80d35172d511d6299d176b795affa4eb1d534530a4afd0cb13a6fd0952>
               mediaTierCdnNumber = 3

@@ -466,12 +466,12 @@ object Generators {
     contentTypeGenerator = Generators.list("image/jpeg", "image/png")
   )
 
-  fun viewOnceFilePointer(): Generator<FilePointer> = filePointerInternal(
+  fun viewOnceFilePointer(includeIncrementalMac: Boolean): Generator<FilePointer> = filePointerInternal(
     includeFileName = false,
     includeMediaSize = true,
     includeCaption = false,
     includeBlurHash = true,
-    includeIncrementalMac = true,
+    includeIncrementalMac = includeIncrementalMac,
     contentTypeGenerator = Generators.list("image/jpeg", "image/png", "image/gif", "video/mp4")
   )
 
@@ -484,12 +484,12 @@ object Generators {
     contentTypeGenerator = Generators.list("image/png", "image/apng", "image/webp")
   )
 
-  fun bodyAttachmentFilePointer(): Generator<FilePointer> = filePointerInternal(
+  fun bodyAttachmentFilePointer(includeIncrementalMac: Boolean): Generator<FilePointer> = filePointerInternal(
     includeFileName = true,
     includeMediaSize = true,
     includeCaption = true,
     includeBlurHash = true,
-    includeIncrementalMac = true,
+    includeIncrementalMac = includeIncrementalMac,
     contentTypeGenerator = Generators.list("image/jpeg", "image/png", "image/gif", "audio/mp3", "video/mp4")
   )
 

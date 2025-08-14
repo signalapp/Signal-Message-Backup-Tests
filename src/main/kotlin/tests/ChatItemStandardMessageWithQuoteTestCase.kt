@@ -149,7 +149,7 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
     return Generators.permutation {
       val standardMessageGenerator = Generators.permutation<MessageAttachment> {
         frames += MessageAttachment(
-          pointer = some(Generators.bodyAttachmentFilePointer()),
+          pointer = some(Generators.bodyAttachmentFilePointer(includeIncrementalMac = false)),
           flag = MessageAttachment.Flag.NONE,
           wasDownloaded = someBoolean(),
           clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()

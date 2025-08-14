@@ -167,8 +167,6 @@ Frame {
             contentType = "image/jpeg"
             fileName = "GAzWWF"
             height = 3164
-            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
-            incrementalMacChunkSize = 2048
             locatorInfo = LocatorInfo {
               encryptedDigest = <cd45f8bcee2bba22154356f8228ce13806bcb400f2316eac211b93280d02ce11>
               key = <cb134608cc803e36ea2b87608981423f87a1cf293b8aa5dac03b4e37d46a68b84baa49cf5140d38a1aaa87f98be2cb21a0fa47a0181037dfcfe0de9507642fd0>
@@ -201,8 +199,6 @@ Frame {
             contentType = "image/png"
             fileName = "qzDNPnbCyaC"
             height = 3164
-            incrementalMac = <b78a3b769a54a139696ab01a75f6908b>
-            incrementalMacChunkSize = 2048
             locatorInfo = LocatorInfo {
               encryptedDigest = <d268ebfe4cb7634ea9ab33f68328b1520712b5adab5ce2a61c11f4a53bc87b10>
               key = <c5b26db646e8dc0a531c93c2fbd8a21f072534d5f767baaec4d38bdc7ba7623758493e1bb0268c5da867e8b454754359d4337a3cc4f08757f22b679996101144>

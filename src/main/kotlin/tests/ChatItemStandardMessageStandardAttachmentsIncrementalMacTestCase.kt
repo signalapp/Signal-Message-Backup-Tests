@@ -12,7 +12,7 @@ import toByteArray
 /**
  * Incoming/outgoing messages with standard attachments (i.e. no flags, meaning no voice notes, etc.).
  */
-object ChatItemStandardMessageStandardAttachmentsTestCase : TestCase("chat_item_standard_message_standard_attachments") {
+object ChatItemStandardMessageStandardAttachmentsIncrementalMacTestCase : TestCase("chat_item_standard_message_standard_attachments_incremental_mac") {
 
   override fun PermutationScope.execute() {
     frames += StandardFrames.MANDATORY_FRAMES
@@ -45,7 +45,7 @@ object ChatItemStandardMessageStandardAttachmentsTestCase : TestCase("chat_item_
           },
           attachments = Generators.permutation<MessageAttachment> {
             frames += MessageAttachment(
-              pointer = some(Generators.bodyAttachmentFilePointer(includeIncrementalMac = false)),
+              pointer = some(Generators.bodyAttachmentFilePointer(includeIncrementalMac = true)),
               flag = MessageAttachment.Flag.NONE,
               wasDownloaded = someBoolean(),
               clientUuid = some(Generators.uuids().nullable())?.toByteArray()?.toByteString()
