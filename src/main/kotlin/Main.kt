@@ -41,6 +41,7 @@ val ALL_TEST_CASES = listOf(
   ChatItemIndividualCallUpdateTestCase,
   ChatItemGroupCallUpdateTestCase,
   ChatItemStandardMessageTextOnlyTestCase,
+  ChatItemStandardMessageGroupTextOnlyTestCase,
   ChatItemStandardMessageFormattedTextTestCase,
   ChatItemStandardMessageSmsTestCase,
   ChatItemStandardMessageStandardAttachmentsTestCase,

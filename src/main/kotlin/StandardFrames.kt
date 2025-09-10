@@ -290,6 +290,49 @@ object StandardFrames {
     )
   )
 
+  /** A group with you, Alice, Bob, and Carol */
+  val recipientGroupABC = Frame(
+    recipient = Recipient(
+      id = 12,
+      group = Group(
+        masterKey = ByteArray(32) { 0 }.toByteString(),
+        whitelisted = true,
+        snapshot = Group.GroupSnapshot(
+          title = Group.GroupAttributeBlob(
+            title = "Me, Alice, Bob, Carol"
+          ),
+          avatarUrl = "https://example.com/avatar.jpg",
+          version = 1,
+          members = listOf(
+            Group.Member(
+              userId = SELF_ACI.toByteString(),
+              role = Group.Member.Role.ADMINISTRATOR
+            ),
+            Group.Member(
+              userId = recipientAlice.recipient!!.contact!!.aci!!,
+              role = Group.Member.Role.DEFAULT
+            ),
+            Group.Member(
+              userId = recipientBob.recipient!!.contact!!.aci!!,
+              role = Group.Member.Role.DEFAULT
+            ),
+            Group.Member(
+              userId = recipientCarol.recipient!!.contact!!.aci!!,
+              role = Group.Member.Role.DEFAULT
+            )
+          ),
+          accessControl = Group.AccessControl(
+            attributes = Group.AccessControl.AccessRequired.MEMBER,
+            members = Group.AccessControl.AccessRequired.MEMBER,
+            addFromInviteLink = Group.AccessControl.AccessRequired.UNSATISFIABLE
+          )
+        ),
+        avatarColor = AvatarColor.A170
+      )
+    )
+  )
+
+
   val chatAlice = Frame(
     chat = Chat(
       id = 2,
@@ -318,6 +361,14 @@ object StandardFrames {
     chat = Chat(
       id = 5,
       recipientId = recipientBob.recipient!!.id,
+      expireTimerVersion = 1
+    )
+  )
+
+  val chatGroupABC = Frame(
+    chat = Chat(
+      id = 6,
+      recipientId = recipientGroupABC.recipient!!.id,
       expireTimerVersion = 1
     )
   )
