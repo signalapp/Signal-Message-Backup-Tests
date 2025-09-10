@@ -220,31 +220,28 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 6
-    dateSent = 1731426801455
+    dateSent = 1769072981935
     outgoing = OutgoingMessageDetails {
-      dateReceived = 1805256517998
+      dateReceived = 1758919278021
       sendStatus = [
         SendStatus {
-          delivered = Delivered {
-            sealedSender = true
-          }
+          pending = Pending {}
           recipientId = 4
         },
         SendStatus {
-          delivered = Delivered {
-            sealedSender = true
-          }
           recipientId = 5
+          skipped = Skipped {}
         },
         SendStatus {
-          delivered = Delivered {}
           recipientId = 6
+          timestamp = 1796894078130
+          viewed = Viewed {}
         }
       ]
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "laoreet labores magnis persequeris"
+        body = "risus aeque elaboraret invenire"
       }
     }
   }

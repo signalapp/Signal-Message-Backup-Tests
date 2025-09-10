@@ -220,36 +220,34 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 6
-    dateSent = 1731426801462
+    dateSent = 1769072981942
     outgoing = OutgoingMessageDetails {
-      dateReceived = 1805256518005
+      dateReceived = 1758919278028
       sendStatus = [
         SendStatus {
-          failed = Failed {
-            reason = FailureReason.UNKNOWN
-          }
           recipientId = 4
-          timestamp = 1660152710755
+          timestamp = 1830930358412
+          viewed = Viewed {
+            sealedSender = true
+          }
         },
         SendStatus {
-          failed = Failed {
-            reason = FailureReason.UNKNOWN
-          }
+          read = Read {}
           recipientId = 5
-          timestamp = 1871443451884
+          timestamp = 1792893756508
         },
         SendStatus {
-          failed = Failed {
-            reason = FailureReason.UNKNOWN
-          }
           recipientId = 6
-          timestamp = 1906134040764
+          sent = Sent {
+            sealedSender = true
+          }
+          timestamp = 1679431906427
         }
       ]
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "convenire aenean aperiri usu maluisset propriae velit netus"
+        body = "sadipscing ignota nonumes discere augue diam"
       }
     }
   }

@@ -220,32 +220,34 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 6
-    dateSent = 1731426801454
+    dateSent = 1769072981934
     outgoing = OutgoingMessageDetails {
-      dateReceived = 1805256517997
+      dateReceived = 1758919278020
       sendStatus = [
         SendStatus {
-          recipientId = 4
-          sent = Sent {}
-          timestamp = 1830930358412
-        },
-        SendStatus {
-          recipientId = 5
-          sent = Sent {}
-          timestamp = 1876644825915
-        },
-        SendStatus {
-          recipientId = 6
-          sent = Sent {
+          delivered = Delivered {
             sealedSender = true
           }
-          timestamp = 1810343294547
+          recipientId = 4
+        },
+        SendStatus {
+          failed = Failed {
+            reason = FailureReason.IDENTITY_KEY_MISMATCH
+          }
+          recipientId = 5
+        },
+        SendStatus {
+          read = Read {
+            sealedSender = true
+          }
+          recipientId = 6
+          timestamp = 1679431906427
         }
       ]
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "cum luctus delectus"
+        body = "class homero periculis vero quaerendum molestie"
       }
     }
   }

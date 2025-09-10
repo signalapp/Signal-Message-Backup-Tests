@@ -361,9 +361,13 @@ object Generators {
   fun <T> randomizedList(items: List<T>): Generator<T> = ListGenerator(items.seededShuffled())
   fun <T> single(item: T): Generator<T> = Generators.list(item)
 
-  fun <T> permutation(snapshotCount: Int = -1, init: PermutationScope.() -> Unit): Generator<T> {
+  fun <T> permutation(snapshotCount: Int = -1, shuffled: Boolean = false, init: PermutationScope.() -> Unit): Generator<T> {
     val snapshots = permuteSingle<T> { init() }
-    return ListGenerator(snapshots)
+    return if (shuffled) {
+      ListGenerator(snapshots.seededShuffled())
+    } else {
+      ListGenerator(snapshots)
+    }
   }
 
   fun <T> merge(vararg generators: Generator<T>): Generator<T> {
@@ -621,7 +625,7 @@ object Generators {
 
   fun callLinkRootKey(): Generator<ByteArray> = CallLinkRootKeyGenerator()
 
-  fun sendStatus(recipientIdGenerator: Generator<Long>): Generator<SendStatus> {
+  fun sendStatus(recipientIdGenerator: Generator<Long>, shuffled: Boolean = false): Generator<SendStatus> {
     val (
       pendingGenerator,
       sentGenerator,
@@ -660,7 +664,7 @@ object Generators {
       }
     )
 
-    return Generators.permutation {
+    return Generators.permutation(shuffled = shuffled) {
       frames += SendStatus(
         recipientId = some(recipientIdGenerator),
         timestamp = someTimestamp(),
@@ -674,14 +678,22 @@ object Generators {
       )
     }
   }
-
   /**
    * Generates a pair of generators that can be used for setting incoming/outgoing message details.
    * For outgoing statuses, one will be made for each of the outgoing recipients.
    */
   fun incomingOutgoingDetails(vararg outgoingRecipients: Recipient): Pair<Generator<ChatItem.IncomingMessageDetails?>, Generator<ChatItem.OutgoingMessageDetails?>> {
+    return incomingOutgoingDetails(shuffledStatuses = false, outgoingRecipients = outgoingRecipients)
+  }
+
+  /**
+   * Generates a pair of generators that can be used for setting incoming/outgoing message details.
+   * For outgoing statuses, one will be made for each of the outgoing recipients.
+   */
+  fun incomingOutgoingDetails(shuffledStatuses: Boolean = false, vararg outgoingRecipients: Recipient): Pair<Generator<ChatItem.IncomingMessageDetails?>, Generator<ChatItem.OutgoingMessageDetails?>> {
     val sendStatusGenerators = outgoingRecipients.map { outgoingRecipient ->
       Generators.sendStatus(
+        shuffled = shuffledStatuses,
         recipientIdGenerator = Generators.single(outgoingRecipient.id)
       )
     }

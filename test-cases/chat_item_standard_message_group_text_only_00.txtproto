@@ -220,15 +220,15 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 6
-    dateSent = 1731426801450
+    dateSent = 1769072981930
     incoming = IncomingMessageDetails {
-      dateReceived = 1811261825532
-      dateServerSent = 1873559150162
+      dateReceived = 1858961967730
+      dateServerSent = 1731426801450
       sealedSender = true
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "convenire aenean aperiri usu maluisset propriae velit netus"
+        body = "sadipscing ignota nonumes discere augue diam"
       }
     }
   }

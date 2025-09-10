@@ -332,7 +332,6 @@ object StandardFrames {
     )
   )
 
-
   val chatAlice = Frame(
     chat = Chat(
       id = 2,

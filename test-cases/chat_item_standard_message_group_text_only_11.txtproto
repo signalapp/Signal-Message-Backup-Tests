@@ -220,9 +220,9 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 6
-    dateSent = 1731426801461
+    dateSent = 1769072981941
     outgoing = OutgoingMessageDetails {
-      dateReceived = 1805256518004
+      dateReceived = 1758919278027
       sendStatus = [
         SendStatus {
           recipientId = 4
@@ -230,17 +230,18 @@ Frame {
         },
         SendStatus {
           recipientId = 5
-          skipped = Skipped {}
+          timestamp = 1792893756508
+          viewed = Viewed {}
         },
         SendStatus {
+          delivered = Delivered {}
           recipientId = 6
-          skipped = Skipped {}
         }
       ]
     }
     standardMessage = StandardMessage {
       text = Text {
-        body = "laoreet labores magnis persequeris"
+        body = "risus aeque elaboraret invenire"
       }
     }
   }

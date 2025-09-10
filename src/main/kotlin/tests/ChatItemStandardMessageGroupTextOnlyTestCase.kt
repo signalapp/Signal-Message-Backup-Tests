@@ -23,6 +23,7 @@ object ChatItemStandardMessageGroupTextOnlyTestCase : TestCase("chat_item_standa
     frames += StandardFrames.chatGroupABC
 
     val (incomingGenerator, outgoingGenerator) = Generators.incomingOutgoingDetails(
+      shuffledStatuses = true,
       StandardFrames.recipientAlice.recipient!!,
       StandardFrames.recipientBob.recipient!!,
       StandardFrames.recipientCarol.recipient!!
