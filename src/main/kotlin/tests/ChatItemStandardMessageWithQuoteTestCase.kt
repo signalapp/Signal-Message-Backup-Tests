@@ -94,14 +94,12 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
       }
     )
 
-    val targetHasMedia = (
-      targetMessage.chatItem.stickerMessage?.sticker?.data_?.contentType
-        ?: targetMessage.chatItem.standardMessage?.attachments?.firstOrNull()?.pointer?.contentType
-      ) != null
+    val targetContentType: String? = targetMessage.chatItem.stickerMessage?.sticker?.data_?.contentType
+      ?: targetMessage.chatItem.standardMessage?.attachments?.firstOrNull()?.pointer?.contentType
 
-    val quoteAttachment: Quote.QuotedAttachment? = if (targetHasMedia) {
+    val quoteAttachment: Quote.QuotedAttachment? = if (targetContentType != null) {
       Quote.QuotedAttachment(
-        contentType = "image/jpeg",
+        contentType = targetContentType,
         fileName = quoteThumbnail.pointer?.fileName,
         thumbnail = quoteThumbnail
       )

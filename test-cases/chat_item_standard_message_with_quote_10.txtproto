@@ -179,7 +179,7 @@ Frame {
       quote = Quote {
         attachments = [
           QuotedAttachment {
-            contentType = "image/jpeg"
+            contentType = "image/png"
             thumbnail = MessageAttachment {
               flag = Flag.NONE
               pointer = FilePointer {
