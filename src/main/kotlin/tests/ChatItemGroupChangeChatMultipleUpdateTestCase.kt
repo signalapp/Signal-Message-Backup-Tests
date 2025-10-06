@@ -12,6 +12,7 @@ import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import pni
 import toByteString
 import kotlin.time.Duration.Companion.days
 import kotlin.time.Duration.Companion.minutes
@@ -139,7 +140,14 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
       // groupInvitationRevokedUpdateGenerator,
       Generators.permutation {
         frames += GroupInvitationRevokedUpdate(
-          updaterAci
+          updaterAci,
+          invitees = listOf(
+            GroupInvitationRevokedUpdate.Invitee(
+              inviterAci = some(groupMembersExcludingSelfGenerator()),
+              inviteeAci = some(Generators.list(StandardFrames.recipientCarol.aci, null)),
+              inviteePni = some(Generators.list(null, StandardFrames.recipientCarol.pni))
+            )
+          )
         )
       },
       // groupJoinRequestUpdateGenerator,
@@ -256,6 +264,39 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
     val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[27]
     val groupExpirationTimerUpdateGenerator = listOfGenerators[28]
 
+    val updates = Generators.permutation<GroupChangeChatUpdate.Update> {
+      frames += GroupChangeChatUpdate.Update(
+        genericGroupUpdate = someOneOf(genericGroupUpdateGenerator),
+        groupCreationUpdate = someOneOf(groupCreationUpdateGenerator),
+        groupNameUpdate = someOneOf(groupNameUpdateGenerator),
+        groupAvatarUpdate = someOneOf(groupAvatarUpdateGenerator),
+        groupDescriptionUpdate = someOneOf(groupDescriptionUpdateGenerator),
+        groupMembershipAccessLevelChangeUpdate = someOneOf(groupMembershipAccessLevelChangeUpdateGenerator),
+        groupAttributesAccessLevelChangeUpdate = someOneOf(groupAttributesAccessLevelChangeUpdateGenerator),
+        groupAnnouncementOnlyChangeUpdate = someOneOf(groupAnnouncementOnlyChangeUpdateGenerator),
+        groupAdminStatusUpdate = someOneOf(groupAdminStatusUpdateGenerator),
+        groupMemberRemovedUpdate = someOneOf(groupMemberRemovedUpdateGenerator),
+        groupUnknownInviteeUpdate = someOneOf(groupUnknownInviteeUpdateGenerator),
+        groupMemberJoinedUpdate = someOneOf(groupMemberJoinedUpdateGenerator),
+        groupMemberAddedUpdate = someOneOf(groupMemberAddedUpdateGenerator),
+        groupSelfInvitationRevokedUpdate = someOneOf(groupSelfInvitationRevokedUpdateGenerator),
+        groupInvitationRevokedUpdate = someOneOf(groupInvitationRevokedUpdateGenerator),
+        groupJoinRequestUpdate = someOneOf(groupJoinRequestUpdateGenerator),
+        groupJoinRequestApprovalUpdate = someOneOf(groupJoinRequestApprovalUpdateGenerator),
+        groupJoinRequestCanceledUpdate = someOneOf(groupJoinRequestCanceledUpdateGenerator),
+        groupInviteLinkResetUpdate = someOneOf(groupInviteLinkResetUpdateGenerator),
+        groupInviteLinkEnabledUpdate = someOneOf(groupInviteLinkEnabledUpdateGenerator),
+        groupInviteLinkAdminApprovalUpdate = someOneOf(groupInviteLinkAdminApprovalUpdateGenerator),
+        groupInviteLinkDisabledUpdate = someOneOf(groupInviteLinkDisabledUpdateGenerator),
+        groupMemberJoinedByLinkUpdate = someOneOf(groupMemberJoinedByLinkUpdateGenerator),
+        groupV2MigrationUpdate = someOneOf(groupV2MigrationUpdateGenerator),
+        groupV2MigrationSelfInvitedUpdate = someOneOf(groupV2MigrationSelfInvitedUpdateGenerator),
+        groupV2MigrationInvitedMembersUpdate = someOneOf(groupV2MigrationInvitedMembersUpdateGenerator),
+        groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator),
+        groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
+        groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator)
+      )
+    }
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatGroupAB.chat!!.id,
@@ -264,39 +305,7 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           groupChange = GroupChangeChatUpdate(
-            updates = Generators.permutation<GroupChangeChatUpdate.Update> {
-              frames += GroupChangeChatUpdate.Update(
-                genericGroupUpdate = someOneOf(genericGroupUpdateGenerator),
-                groupCreationUpdate = someOneOf(groupCreationUpdateGenerator),
-                groupNameUpdate = someOneOf(groupNameUpdateGenerator),
-                groupAvatarUpdate = someOneOf(groupAvatarUpdateGenerator),
-                groupDescriptionUpdate = someOneOf(groupDescriptionUpdateGenerator),
-                groupMembershipAccessLevelChangeUpdate = someOneOf(groupMembershipAccessLevelChangeUpdateGenerator),
-                groupAttributesAccessLevelChangeUpdate = someOneOf(groupAttributesAccessLevelChangeUpdateGenerator),
-                groupAnnouncementOnlyChangeUpdate = someOneOf(groupAnnouncementOnlyChangeUpdateGenerator),
-                groupAdminStatusUpdate = someOneOf(groupAdminStatusUpdateGenerator),
-                groupMemberRemovedUpdate = someOneOf(groupMemberRemovedUpdateGenerator),
-                groupUnknownInviteeUpdate = someOneOf(groupUnknownInviteeUpdateGenerator),
-                groupMemberJoinedUpdate = someOneOf(groupMemberJoinedUpdateGenerator),
-                groupMemberAddedUpdate = someOneOf(groupMemberAddedUpdateGenerator),
-                groupSelfInvitationRevokedUpdate = someOneOf(groupSelfInvitationRevokedUpdateGenerator),
-                groupInvitationRevokedUpdate = someOneOf(groupInvitationRevokedUpdateGenerator),
-                groupJoinRequestUpdate = someOneOf(groupJoinRequestUpdateGenerator),
-                groupJoinRequestApprovalUpdate = someOneOf(groupJoinRequestApprovalUpdateGenerator),
-                groupJoinRequestCanceledUpdate = someOneOf(groupJoinRequestCanceledUpdateGenerator),
-                groupInviteLinkResetUpdate = someOneOf(groupInviteLinkResetUpdateGenerator),
-                groupInviteLinkEnabledUpdate = someOneOf(groupInviteLinkEnabledUpdateGenerator),
-                groupInviteLinkAdminApprovalUpdate = someOneOf(groupInviteLinkAdminApprovalUpdateGenerator),
-                groupInviteLinkDisabledUpdate = someOneOf(groupInviteLinkDisabledUpdateGenerator),
-                groupMemberJoinedByLinkUpdate = someOneOf(groupMemberJoinedByLinkUpdateGenerator),
-                groupV2MigrationUpdate = someOneOf(groupV2MigrationUpdateGenerator),
-                groupV2MigrationSelfInvitedUpdate = someOneOf(groupV2MigrationSelfInvitedUpdateGenerator),
-                groupV2MigrationInvitedMembersUpdate = someOneOf(groupV2MigrationInvitedMembersUpdateGenerator),
-                groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator),
-                groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
-                groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator)
-              )
-            }.asList(*List(listOfGenerators.size / 3) { 3 }.toIntArray()).let { some(it) }
+            updates = updates.asList(*List(updates.minSize / 3) { 3 }.toIntArray()).let { some(it) }
           )
         )
       )

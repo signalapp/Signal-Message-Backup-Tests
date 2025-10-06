@@ -90,9 +90,13 @@ fun base64Decode(value: String): ByteArray {
   return Base64.getDecoder().decode(value)
 }
 
-/** Synthetic value to make it easier to get ACI's off of frames that you know are Contacts with ACI's */
+/** Synthetic value to make it easier to get ACIs off of frames that you know are Contacts with ACIs */
 val Frame.aci: ByteString
   get() = this.recipient!!.contact!!.aci!!
+
+/** Synthetic value to make it easier to get PNIs off of frames that you know are Contacts with PNIs */
+val Frame.pni: ByteString
+  get() = this.recipient!!.contact!!.pni!!
 
 fun UUID.toByteString(): ByteString = this.toByteArray().toByteString()
 

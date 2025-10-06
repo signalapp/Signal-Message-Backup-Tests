@@ -12,6 +12,7 @@ import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import pni
 import toByteString
 import kotlin.time.Duration.Companion.days
 import kotlin.time.Duration.Companion.minutes
@@ -140,7 +141,7 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
       Generators.permutation {
         frames += GroupInvitationDeclinedUpdate(
           inviterAci = some(groupMembersExcludingSelfGenerator()),
-          inviteeAci = some(peopleNotInGroupGenerator())
+          inviteeAci = some(peopleNotInGroupGenerator().nullable())
         )
       },
       // groupMemberJoinedUpdateGenerator,
@@ -169,7 +170,14 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
       // groupInvitationRevokedUpdateGenerator,
       Generators.permutation {
         frames += GroupInvitationRevokedUpdate(
-          updaterAci = some(groupMembersExcludingSelfGenerator())
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
+          invitees = listOf(
+            GroupInvitationRevokedUpdate.Invitee(
+              inviterAci = some(groupMembersExcludingSelfGenerator()),
+              inviteeAci = some(Generators.list(StandardFrames.recipientCarol.aci, null)),
+              inviteePni = some(Generators.list(null, StandardFrames.recipientCarol.pni))
+            )
+          )
         )
       },
       // groupJoinRequestUpdateGenerator,
@@ -290,7 +298,44 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
     val groupV2MigrationDroppedMembersUpdateGenerator = listOfGenerators[31]
     val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[32]
     val groupExpirationTimerUpdateGenerator = listOfGenerators[33]
-
+    val updatesGenerator = Generators.permutation<GroupChangeChatUpdate.Update> {
+      frames += GroupChangeChatUpdate.Update(
+        genericGroupUpdate = someOneOf(genericGroupUpdateGenerator),
+        groupCreationUpdate = someOneOf(groupCreationUpdateGenerator),
+        groupNameUpdate = someOneOf(groupNameUpdateGenerator),
+        groupAvatarUpdate = someOneOf(groupAvatarUpdateGenerator),
+        groupDescriptionUpdate = someOneOf(groupDescriptionUpdateGenerator),
+        groupMembershipAccessLevelChangeUpdate = someOneOf(groupMembershipAccessLevelChangeUpdateGenerator),
+        groupAttributesAccessLevelChangeUpdate = someOneOf(groupAttributesAccessLevelChangeUpdateGenerator),
+        groupAnnouncementOnlyChangeUpdate = someOneOf(groupAnnouncementOnlyChangeUpdateGenerator),
+        groupAdminStatusUpdate = someOneOf(groupAdminStatusUpdateGenerator),
+        groupMemberLeftUpdate = someOneOf(groupMemberLeftUpdateGenerator),
+        groupMemberRemovedUpdate = someOneOf(groupMemberRemovedUpdateGenerator),
+        selfInvitedToGroupUpdate = someOneOf(selfInvitedToGroupUpdateGenerator),
+        selfInvitedOtherUserToGroupUpdate = someOneOf(selfInvitedOtherUserToGroupUpdateGenerator),
+        groupUnknownInviteeUpdate = someOneOf(groupUnknownInviteeUpdateGenerator),
+        groupInvitationAcceptedUpdate = someOneOf(groupInvitationAcceptedUpdateGenerator),
+        groupInvitationDeclinedUpdate = someOneOf(groupInvitationDeclinedUpdateGenerator),
+        groupMemberJoinedUpdate = someOneOf(groupMemberJoinedUpdateGenerator),
+        groupMemberAddedUpdate = someOneOf(groupMemberAddedUpdateGenerator),
+        groupSelfInvitationRevokedUpdate = someOneOf(groupSelfInvitationRevokedUpdateGenerator),
+        groupInvitationRevokedUpdate = someOneOf(groupInvitationRevokedUpdateGenerator),
+        groupJoinRequestUpdate = someOneOf(groupJoinRequestUpdateGenerator),
+        groupJoinRequestApprovalUpdate = someOneOf(groupJoinRequestApprovalUpdateGenerator),
+        groupJoinRequestCanceledUpdate = someOneOf(groupJoinRequestCanceledUpdateGenerator),
+        groupInviteLinkResetUpdate = someOneOf(groupInviteLinkResetUpdateGenerator),
+        groupInviteLinkEnabledUpdate = someOneOf(groupInviteLinkEnabledUpdateGenerator),
+        groupInviteLinkAdminApprovalUpdate = someOneOf(groupInviteLinkAdminApprovalUpdateGenerator),
+        groupInviteLinkDisabledUpdate = someOneOf(groupInviteLinkDisabledUpdateGenerator),
+        groupMemberJoinedByLinkUpdate = someOneOf(groupMemberJoinedByLinkUpdateGenerator),
+        groupV2MigrationUpdate = someOneOf(groupV2MigrationUpdateGenerator),
+        groupV2MigrationSelfInvitedUpdate = someOneOf(groupV2MigrationSelfInvitedUpdateGenerator),
+        groupV2MigrationInvitedMembersUpdate = someOneOf(groupV2MigrationInvitedMembersUpdateGenerator),
+        groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator),
+        groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
+        groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator)
+      )
+    }
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatGroupAB.chat!!.id,
@@ -299,44 +344,7 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           groupChange = GroupChangeChatUpdate(
-            updates = Generators.permutation<GroupChangeChatUpdate.Update> {
-              frames += GroupChangeChatUpdate.Update(
-                genericGroupUpdate = someOneOf(genericGroupUpdateGenerator),
-                groupCreationUpdate = someOneOf(groupCreationUpdateGenerator),
-                groupNameUpdate = someOneOf(groupNameUpdateGenerator),
-                groupAvatarUpdate = someOneOf(groupAvatarUpdateGenerator),
-                groupDescriptionUpdate = someOneOf(groupDescriptionUpdateGenerator),
-                groupMembershipAccessLevelChangeUpdate = someOneOf(groupMembershipAccessLevelChangeUpdateGenerator),
-                groupAttributesAccessLevelChangeUpdate = someOneOf(groupAttributesAccessLevelChangeUpdateGenerator),
-                groupAnnouncementOnlyChangeUpdate = someOneOf(groupAnnouncementOnlyChangeUpdateGenerator),
-                groupAdminStatusUpdate = someOneOf(groupAdminStatusUpdateGenerator),
-                groupMemberLeftUpdate = someOneOf(groupMemberLeftUpdateGenerator),
-                groupMemberRemovedUpdate = someOneOf(groupMemberRemovedUpdateGenerator),
-                selfInvitedToGroupUpdate = someOneOf(selfInvitedToGroupUpdateGenerator),
-                selfInvitedOtherUserToGroupUpdate = someOneOf(selfInvitedOtherUserToGroupUpdateGenerator),
-                groupUnknownInviteeUpdate = someOneOf(groupUnknownInviteeUpdateGenerator),
-                groupInvitationAcceptedUpdate = someOneOf(groupInvitationAcceptedUpdateGenerator),
-                groupInvitationDeclinedUpdate = someOneOf(groupInvitationDeclinedUpdateGenerator),
-                groupMemberJoinedUpdate = someOneOf(groupMemberJoinedUpdateGenerator),
-                groupMemberAddedUpdate = someOneOf(groupMemberAddedUpdateGenerator),
-                groupSelfInvitationRevokedUpdate = someOneOf(groupSelfInvitationRevokedUpdateGenerator),
-                groupInvitationRevokedUpdate = someOneOf(groupInvitationRevokedUpdateGenerator),
-                groupJoinRequestUpdate = someOneOf(groupJoinRequestUpdateGenerator),
-                groupJoinRequestApprovalUpdate = someOneOf(groupJoinRequestApprovalUpdateGenerator),
-                groupJoinRequestCanceledUpdate = someOneOf(groupJoinRequestCanceledUpdateGenerator),
-                groupInviteLinkResetUpdate = someOneOf(groupInviteLinkResetUpdateGenerator),
-                groupInviteLinkEnabledUpdate = someOneOf(groupInviteLinkEnabledUpdateGenerator),
-                groupInviteLinkAdminApprovalUpdate = someOneOf(groupInviteLinkAdminApprovalUpdateGenerator),
-                groupInviteLinkDisabledUpdate = someOneOf(groupInviteLinkDisabledUpdateGenerator),
-                groupMemberJoinedByLinkUpdate = someOneOf(groupMemberJoinedByLinkUpdateGenerator),
-                groupV2MigrationUpdate = someOneOf(groupV2MigrationUpdateGenerator),
-                groupV2MigrationSelfInvitedUpdate = someOneOf(groupV2MigrationSelfInvitedUpdateGenerator),
-                groupV2MigrationInvitedMembersUpdate = someOneOf(groupV2MigrationInvitedMembersUpdateGenerator),
-                groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator),
-                groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
-                groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator)
-              )
-            }.asList(*List(listOfGenerators.size) { 1 }.toIntArray()).let { some(it) }
+            updates = updatesGenerator.asList(*List(updatesGenerator.minSize) { 1 }.toIntArray()).let { some(it) }
           )
         )
       )
