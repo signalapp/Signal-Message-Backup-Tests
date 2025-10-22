@@ -239,23 +239,23 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1810531568155
+    dateSent = 1824414820669
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       groupChange = GroupChangeChatUpdate {
         updates = [
           Update {
-            groupMemberJoinedByLinkUpdate = GroupMemberJoinedByLinkUpdate {
-              newMemberAci = <0000ca01000040008000000000000001>
+            groupV2MigrationSelfInvitedUpdate = GroupV2MigrationSelfInvitedUpdate {}
+          },
+          Update {
+            groupV2MigrationInvitedMembersUpdate = GroupV2MigrationInvitedMembersUpdate {
+              invitedMembersCount = 2
             }
           },
           Update {
-            groupMemberJoinedByLinkUpdate = GroupMemberJoinedByLinkUpdate {
-              newMemberAci = <000000da000040008000000000000001>
+            groupV2MigrationDroppedMembersUpdate = GroupV2MigrationDroppedMembersUpdate {
+              droppedMembersCount = 3
             }
-          },
-          Update {
-            groupV2MigrationUpdate = GroupV2MigrationUpdate {}
           }
         ]
       }

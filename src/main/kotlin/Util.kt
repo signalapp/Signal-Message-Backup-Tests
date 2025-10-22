@@ -154,3 +154,15 @@ fun Any?.prettyPrint(indent: String = ""): String {
     .replace(Regex("=\\s+"), "= ")
     .replace(Regex("\\{\\s+}", RegexOption.MULTILINE), "{}")
 }
+
+/**
+ * Takes a total count and returns a list of chunk sizes, with max size chunkSize
+ */
+fun chunkSizes(total: Int, chunkSize: Int): IntArray {
+  val full = total / chunkSize
+  val remainder = total % chunkSize
+  return buildList {
+    repeat(full) { add(chunkSize) }
+    if (remainder != 0) add(remainder)
+  }.toIntArray()
+}

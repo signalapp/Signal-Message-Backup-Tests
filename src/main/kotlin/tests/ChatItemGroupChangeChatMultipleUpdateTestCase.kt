@@ -8,15 +8,13 @@ import StandardFrames
 import TestCase
 import aci
 import asList
+import chunkSizes
 import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
 import pni
 import toByteString
-import kotlin.time.Duration.Companion.days
-import kotlin.time.Duration.Companion.minutes
-import kotlin.time.Duration.Companion.seconds
 
 /**
  * Reasonable permutations of [GroupChangeChatMultipleUpdate] objects.
@@ -114,12 +112,6 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
           inviteeCount = some(Generators.ints(1, 3))
         )
       },
-      // groupMemberJoinedUpdateGenerator,
-      Generators.permutation {
-        frames += GroupMemberJoinedUpdate(
-          newMemberAci = some(peopleNotInGroupGenerator())
-        )
-      },
       // groupMemberAddedUpdateGenerator,
       Generators.permutation {
         val inviter = some(groupMembersExcludingSelfGenerator().nullable())
@@ -134,7 +126,7 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
       // groupSelfInvitationRevokedUpdateGenerator,
       Generators.permutation {
         frames += GroupSelfInvitationRevokedUpdate(
-          revokerAci = some(groupMembersExcludingSelfGenerator())
+          revokerAci = StandardFrames.SELF_ACI.toByteString()
         )
       },
       // groupInvitationRevokedUpdateGenerator,
@@ -167,7 +159,7 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
       // groupJoinRequestCanceledUpdateGenerator,
       Generators.permutation {
         frames += GroupJoinRequestCanceledUpdate(
-          requestorAci = some(peopleNotInGroupGenerator())
+          requestorAci = StandardFrames.SELF_ACI.toByteString()
         )
       },
       // groupInviteLinkResetUpdateGenerator,
@@ -199,37 +191,32 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
       // groupMemberJoinedByLinkUpdateGenerator,
       Generators.permutation {
         frames += GroupMemberJoinedByLinkUpdate(
-          newMemberAci = some(Generators.list(StandardFrames.recipientCarol.aci, StandardFrames.recipientDan.aci))
+          newMemberAci = StandardFrames.SELF_ACI.toByteString()
         )
       },
-      // groupV2MigrationUpdateGenerator,
-      Generators.single(GroupV2MigrationUpdate()),
+
+      // groupSequenceOfRequestsAndCancelsUpdateGenerator,
+      Generators.permutation {
+        frames += GroupSequenceOfRequestsAndCancelsUpdate(
+          requestorAci = StandardFrames.SELF_ACI.toByteString(),
+          count = some(Generators.ints(1, 5))
+        )
+      }
+    )
+
+    val listOfMigrationGenerators = oneOf(
       // groupV2MigrationSelfInvitedUpdateGenerator,
       Generators.single(GroupV2MigrationSelfInvitedUpdate()),
       // groupV2MigrationInvitedMembersUpdateGenerator,
       Generators.permutation {
         frames += GroupV2MigrationInvitedMembersUpdate(
-          invitedMembersCount = some(Generators.ints(1, 5))
+          invitedMembersCount = 2
         )
       },
       // groupV2MigrationDroppedMembersUpdateGenerator,
       Generators.permutation {
         frames += GroupV2MigrationDroppedMembersUpdate(
-          droppedMembersCount = some(Generators.ints(1, 5))
-        )
-      },
-      // groupSequenceOfRequestsAndCancelsUpdateGenerator,
-      Generators.permutation {
-        frames += GroupSequenceOfRequestsAndCancelsUpdate(
-          requestorAci = some(groupMembersExcludingSelfGenerator()),
-          count = some(Generators.ints(1, 5))
-        )
-      },
-      // groupExpirationTimerUpdateGenerator
-      Generators.permutation {
-        frames += GroupExpirationTimerUpdate(
-          updaterAci = updaterAci,
-          expiresInMs = some(Generators.longs(lower = 5.minutes.inWholeSeconds, upper = 28.days.inWholeSeconds)).seconds.inWholeMilliseconds
+          droppedMembersCount = 3
         )
       }
     )
@@ -245,24 +232,18 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
     val groupAdminStatusUpdateGenerator = listOfGenerators[8]
     val groupMemberRemovedUpdateGenerator = listOfGenerators[9]
     val groupUnknownInviteeUpdateGenerator = listOfGenerators[10]
-    val groupMemberJoinedUpdateGenerator = listOfGenerators[11]
-    val groupMemberAddedUpdateGenerator = listOfGenerators[12]
-    val groupSelfInvitationRevokedUpdateGenerator = listOfGenerators[13]
-    val groupInvitationRevokedUpdateGenerator = listOfGenerators[14]
-    val groupJoinRequestUpdateGenerator = listOfGenerators[15]
-    val groupJoinRequestApprovalUpdateGenerator = listOfGenerators[16]
-    val groupJoinRequestCanceledUpdateGenerator = listOfGenerators[17]
-    val groupInviteLinkResetUpdateGenerator = listOfGenerators[18]
-    val groupInviteLinkEnabledUpdateGenerator = listOfGenerators[19]
-    val groupInviteLinkAdminApprovalUpdateGenerator = listOfGenerators[20]
-    val groupInviteLinkDisabledUpdateGenerator = listOfGenerators[21]
-    val groupMemberJoinedByLinkUpdateGenerator = listOfGenerators[22]
-    val groupV2MigrationUpdateGenerator = listOfGenerators[23]
-    val groupV2MigrationSelfInvitedUpdateGenerator = listOfGenerators[24]
-    val groupV2MigrationInvitedMembersUpdateGenerator = listOfGenerators[25]
-    val groupV2MigrationDroppedMembersUpdateGenerator = listOfGenerators[26]
-    val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[27]
-    val groupExpirationTimerUpdateGenerator = listOfGenerators[28]
+    val groupMemberAddedUpdateGenerator = listOfGenerators[11]
+    val groupSelfInvitationRevokedUpdateGenerator = listOfGenerators[12]
+    val groupInvitationRevokedUpdateGenerator = listOfGenerators[13]
+    val groupJoinRequestUpdateGenerator = listOfGenerators[14]
+    val groupJoinRequestApprovalUpdateGenerator = listOfGenerators[15]
+    val groupJoinRequestCanceledUpdateGenerator = listOfGenerators[16]
+    val groupInviteLinkResetUpdateGenerator = listOfGenerators[17]
+    val groupInviteLinkEnabledUpdateGenerator = listOfGenerators[18]
+    val groupInviteLinkAdminApprovalUpdateGenerator = listOfGenerators[19]
+    val groupInviteLinkDisabledUpdateGenerator = listOfGenerators[20]
+    val groupMemberJoinedByLinkUpdateGenerator = listOfGenerators[21]
+    val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[22]
 
     val updates = Generators.permutation<GroupChangeChatUpdate.Update> {
       frames += GroupChangeChatUpdate.Update(
@@ -277,7 +258,6 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
         groupAdminStatusUpdate = someOneOf(groupAdminStatusUpdateGenerator),
         groupMemberRemovedUpdate = someOneOf(groupMemberRemovedUpdateGenerator),
         groupUnknownInviteeUpdate = someOneOf(groupUnknownInviteeUpdateGenerator),
-        groupMemberJoinedUpdate = someOneOf(groupMemberJoinedUpdateGenerator),
         groupMemberAddedUpdate = someOneOf(groupMemberAddedUpdateGenerator),
         groupSelfInvitationRevokedUpdate = someOneOf(groupSelfInvitationRevokedUpdateGenerator),
         groupInvitationRevokedUpdate = someOneOf(groupInvitationRevokedUpdateGenerator),
@@ -289,14 +269,26 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
         groupInviteLinkAdminApprovalUpdate = someOneOf(groupInviteLinkAdminApprovalUpdateGenerator),
         groupInviteLinkDisabledUpdate = someOneOf(groupInviteLinkDisabledUpdateGenerator),
         groupMemberJoinedByLinkUpdate = someOneOf(groupMemberJoinedByLinkUpdateGenerator),
-        groupV2MigrationUpdate = someOneOf(groupV2MigrationUpdateGenerator),
-        groupV2MigrationSelfInvitedUpdate = someOneOf(groupV2MigrationSelfInvitedUpdateGenerator),
-        groupV2MigrationInvitedMembersUpdate = someOneOf(groupV2MigrationInvitedMembersUpdateGenerator),
-        groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator),
-        groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
-        groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator)
+        groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator)
       )
     }
+
+    // Migration update messages should not be mixed with other types of update messages
+    val groupV2MigrationSelfInvitedUpdateGenerator = listOfMigrationGenerators[0]
+    val groupV2MigrationInvitedMembersUpdateGenerator = listOfMigrationGenerators[1]
+    val groupV2MigrationDroppedMembersUpdateGenerator = listOfMigrationGenerators[2]
+
+    val migrationUpdates = Generators.permutation<GroupChangeChatUpdate.Update> {
+      frames += GroupChangeChatUpdate.Update(
+        groupV2MigrationSelfInvitedUpdate = someOneOf(groupV2MigrationSelfInvitedUpdateGenerator),
+        groupV2MigrationInvitedMembersUpdate = someOneOf(groupV2MigrationInvitedMembersUpdateGenerator),
+        groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator)
+      )
+    }
+
+    val multipleUpdatesGenerator = updates.asList(*chunkSizes(updates.minSize, 3))
+    val multipleMigrationUpdatesGenerator = migrationUpdates.asList(*chunkSizes(migrationUpdates.minSize, 3))
+
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatGroupAB.chat!!.id,
@@ -305,7 +297,7 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           groupChange = GroupChangeChatUpdate(
-            updates = updates.asList(*List(updates.minSize / 3) { 3 }.toIntArray()).let { some(it) }
+            updates = some(Generators.merge(multipleUpdatesGenerator, multipleMigrationUpdatesGenerator))
           )
         )
       )

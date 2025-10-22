@@ -239,26 +239,25 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1810531568155
+    dateSent = 1824414820669
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       groupChange = GroupChangeChatUpdate {
         updates = [
           Update {
-            groupJoinRequestUpdate = GroupJoinRequestUpdate {
-              requestorAci = <0000ca01000040008000000000000001>
-            }
-          },
-          Update {
-            groupJoinRequestUpdate = GroupJoinRequestUpdate {
-              requestorAci = <000000da000040008000000000000001>
-            }
-          },
-          Update {
             groupJoinRequestApprovalUpdate = GroupJoinRequestApprovalUpdate {
-              requestorAci = <0000ca01000040008000000000000001>
+              requestorAci = <000000da000040008000000000000001>
               updaterAci = <00000000000040008000000000000001>
-              wasApproved = true
+            }
+          },
+          Update {
+            groupJoinRequestCanceledUpdate = GroupJoinRequestCanceledUpdate {
+              requestorAci = <00000000000040008000000000000001>
+            }
+          },
+          Update {
+            groupInviteLinkResetUpdate = GroupInviteLinkResetUpdate {
+              updaterAci = <00000000000040008000000000000001>
             }
           }
         ]

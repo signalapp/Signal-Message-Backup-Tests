@@ -239,25 +239,27 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 3
-    dateSent = 1776491210910
+    dateSent = 1853750641458
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       groupChange = GroupChangeChatUpdate {
         updates = [
           Update {
-            groupInviteLinkAdminApprovalUpdate = GroupInviteLinkAdminApprovalUpdate {
-              linkRequiresAdminApproval = true
-              updaterAci = <00000000000040008000000000000001>
+            groupSequenceOfRequestsAndCancelsUpdate = GroupSequenceOfRequestsAndCancelsUpdate {
+              count = 4
+              requestorAci = <00000000000040008000000000000001>
             }
           },
           Update {
-            groupInviteLinkAdminApprovalUpdate = GroupInviteLinkAdminApprovalUpdate {
-              updaterAci = <00000000000040008000000000000001>
+            groupSequenceOfRequestsAndCancelsUpdate = GroupSequenceOfRequestsAndCancelsUpdate {
+              count = 1
+              requestorAci = <00000000000040008000000000000001>
             }
           },
           Update {
-            groupInviteLinkDisabledUpdate = GroupInviteLinkDisabledUpdate {
-              updaterAci = <00000000000040008000000000000001>
+            groupSequenceOfRequestsAndCancelsUpdate = GroupSequenceOfRequestsAndCancelsUpdate {
+              count = 4
+              requestorAci = <00000000000040008000000000000001>
             }
           }
         ]
