@@ -120,6 +120,68 @@ Frame {
 }
 
 Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000b0b000040008000000000000001>
+      avatarColor = AvatarColor.A120
+      e164 = 16105550102
+      identityKey = <052dde6c6dcfaf0ffdcbc5e2eac90e5a18c26969907c942eade3a0e345948be27e>
+      identityState = IdentityState.VERIFIED
+      note = ""
+      pni = <00000b0b000040008000000000000002>
+      profileFamilyName = "Jones"
+      profileGivenName = "Bob"
+      profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 5
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    group = Group {
+      avatarColor = AvatarColor.A170
+      masterKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      snapshot = GroupSnapshot {
+        accessControl = AccessControl {
+          addFromInviteLink = AccessRequired.UNSATISFIABLE
+          attributes = AccessRequired.MEMBER
+          members = AccessRequired.MEMBER
+        }
+        avatarUrl = "https://example.com/avatar.jpg"
+        inviteLinkPassword = <>
+        members = [
+          Member {
+            role = Role.ADMINISTRATOR
+            userId = <00000000000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <000a11ce000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <00000b0b000040008000000000000001>
+          }
+        ]
+        title = GroupAttributeBlob {
+          title = "Me, Alice, Bob"
+        }
+        version = 1
+      }
+      storySendMode = StorySendMode.DEFAULT
+      whitelisted = true
+    }
+    id = 10
+  }
+}
+
+Frame {
   chat = Chat {
     expireTimerVersion = 1
     id = 2
@@ -128,9 +190,17 @@ Frame {
 }
 
 Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 3
+    recipientId = 10
+  }
+}
+
+Frame {
   chatItem = ChatItem {
     authorId = 4
-    chatId = 2
+    chatId = 3
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
@@ -161,7 +231,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1774046569631
+    dateSent = 1765286786186
     outgoing = OutgoingMessageDetails {
       dateReceived = 1700984146928
       sendStatus = [
@@ -184,16 +254,16 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
                 contentType = "image/jpeg"
-                height = 1062
+                height = 3699
                 locatorInfo = LocatorInfo {
-                  key = <d117fec6f9bc251f3886532340511712905d2162d6e3f6c27d7ef4e9a9fe2535734522f0ec90a4897569854110ee348cce09996ce4715b90a74742c8c1584b35>
-                  plaintextHash = <e081c5a16fbcd29a8c09588ebff9bd7bac98c202aea07386de0ecf71720bbdcc>
-                  size = 915152284
-                  transitCdnKey = "waHPpPTBb"
+                  encryptedDigest = <cd131488a885ef7339f7b635d29feb1754663c75523920c70e1d88ffc36332f8>
+                  key = <029a6e0594d5f88de4359cb48d426ee0eabf75a6fdfb6686ba4458948f6b71e1077fea046759ae8f44190b11cf3643833aec595d1301f4ce50935b2effedf0c1>
+                  size = 1056993250
+                  transitCdnKey = "xCFXmSaSAUHdPv"
                   transitCdnNumber = 2
-                  transitTierUploadTimestamp = 1712888047325
+                  transitTierUploadTimestamp = 1713887874474
                 }
-                width = 3436
+                width = 693
               }
             }
           }
@@ -206,12 +276,12 @@ Frame {
         Reaction {
           authorId = 1
           emoji = "💀"
-          sentTimestamp = 1794098355195
+          sentTimestamp = 1881952068037
           sortOrder = 1
         }
       ]
       text = Text {
-        body = "dui luctus postulant omittantur gubergren qui platonem gubergren"
+        body = "natum qualisque magna ubique tellus persequeris inceptos suas mattis"
       }
     }
   }

@@ -120,6 +120,68 @@ Frame {
 }
 
 Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000b0b000040008000000000000001>
+      avatarColor = AvatarColor.A120
+      e164 = 16105550102
+      identityKey = <052dde6c6dcfaf0ffdcbc5e2eac90e5a18c26969907c942eade3a0e345948be27e>
+      identityState = IdentityState.VERIFIED
+      note = ""
+      pni = <00000b0b000040008000000000000002>
+      profileFamilyName = "Jones"
+      profileGivenName = "Bob"
+      profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 5
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    group = Group {
+      avatarColor = AvatarColor.A170
+      masterKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      snapshot = GroupSnapshot {
+        accessControl = AccessControl {
+          addFromInviteLink = AccessRequired.UNSATISFIABLE
+          attributes = AccessRequired.MEMBER
+          members = AccessRequired.MEMBER
+        }
+        avatarUrl = "https://example.com/avatar.jpg"
+        inviteLinkPassword = <>
+        members = [
+          Member {
+            role = Role.ADMINISTRATOR
+            userId = <00000000000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <000a11ce000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <00000b0b000040008000000000000001>
+          }
+        ]
+        title = GroupAttributeBlob {
+          title = "Me, Alice, Bob"
+        }
+        version = 1
+      }
+      storySendMode = StorySendMode.DEFAULT
+      whitelisted = true
+    }
+    id = 10
+  }
+}
+
+Frame {
   chat = Chat {
     expireTimerVersion = 1
     id = 2
@@ -128,9 +190,17 @@ Frame {
 }
 
 Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 3
+    recipientId = 10
+  }
+}
+
+Frame {
   chatItem = ChatItem {
     authorId = 4
-    chatId = 2
+    chatId = 3
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
@@ -149,7 +219,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 4
     chatId = 2
-    dateSent = 1774046569624
+    dateSent = 1765286786179
     incoming = IncomingMessageDetails {
       dateReceived = 1680366577838
       dateServerSent = 1688484601889
@@ -165,7 +235,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "deserunt gubergren dicat ad ac dictum"
+        body = "accommodare nam vestibulum"
       }
     }
   }

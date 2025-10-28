@@ -706,6 +706,23 @@ object Generators {
     return incoming as Generator<ChatItem.IncomingMessageDetails?> to outgoing as Generator<ChatItem.OutgoingMessageDetails?>
   }
 
+  fun pollOption(vararg voters: Recipient): Generator<List<Poll.PollOption>> {
+    return Generators.lists((2..10).toList()) {
+      Generators.permutation<Poll.PollOption> {
+        val voteCount = somePositiveInt()
+        frames += Poll.PollOption(
+          option = someNonEmptyString(),
+          votes = some(Generators.randomizedList(voters.toList()).asList(0, voters.size)).map {
+            Poll.PollOption.PollVote(
+              voterId = it.id,
+              voteCount = voteCount
+            )
+          }
+        )
+      }
+    }
+  }
+
   fun reactions(maxReactions: Int, vararg authors: Recipient): Generator<List<Reaction>> {
     return Generators.lists((0..maxReactions).toList()) {
       Generators.permutation<Reaction> {

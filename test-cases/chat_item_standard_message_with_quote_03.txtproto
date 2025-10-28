@@ -120,6 +120,68 @@ Frame {
 }
 
 Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <00000b0b000040008000000000000001>
+      avatarColor = AvatarColor.A120
+      e164 = 16105550102
+      identityKey = <052dde6c6dcfaf0ffdcbc5e2eac90e5a18c26969907c942eade3a0e345948be27e>
+      identityState = IdentityState.VERIFIED
+      note = ""
+      pni = <00000b0b000040008000000000000002>
+      profileFamilyName = "Jones"
+      profileGivenName = "Bob"
+      profileKey = <0410410410410410410410410410410410410410410410410410410410410410>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 5
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    group = Group {
+      avatarColor = AvatarColor.A170
+      masterKey = <0000000000000000000000000000000000000000000000000000000000000000>
+      snapshot = GroupSnapshot {
+        accessControl = AccessControl {
+          addFromInviteLink = AccessRequired.UNSATISFIABLE
+          attributes = AccessRequired.MEMBER
+          members = AccessRequired.MEMBER
+        }
+        avatarUrl = "https://example.com/avatar.jpg"
+        inviteLinkPassword = <>
+        members = [
+          Member {
+            role = Role.ADMINISTRATOR
+            userId = <00000000000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <000a11ce000040008000000000000001>
+          },
+          Member {
+            role = Role.DEFAULT
+            userId = <00000b0b000040008000000000000001>
+          }
+        ]
+        title = GroupAttributeBlob {
+          title = "Me, Alice, Bob"
+        }
+        version = 1
+      }
+      storySendMode = StorySendMode.DEFAULT
+      whitelisted = true
+    }
+    id = 10
+  }
+}
+
+Frame {
   chat = Chat {
     expireTimerVersion = 1
     id = 2
@@ -128,9 +190,17 @@ Frame {
 }
 
 Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 3
+    recipientId = 10
+  }
+}
+
+Frame {
   chatItem = ChatItem {
     authorId = 4
-    chatId = 2
+    chatId = 3
     dateSent = 1
     incoming = IncomingMessageDetails {
       dateReceived = 1
@@ -161,7 +231,7 @@ Frame {
   chatItem = ChatItem {
     authorId = 1
     chatId = 2
-    dateSent = 1774046569627
+    dateSent = 1765286786182
     outgoing = OutgoingMessageDetails {
       dateReceived = 1700984146924
       sendStatus = [
@@ -184,16 +254,15 @@ Frame {
               pointer = FilePointer {
                 blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
                 contentType = "image/jpeg"
-                height = 785
+                height = 541
                 locatorInfo = LocatorInfo {
-                  key = <a882a0374e8c5626d4d7cd43fa4e8e2b8c25a02e8609f8fea1cbe6405f331260dd0faa78213f6dfd69ac17597f6769fa009988a766500f48d5b69bb18a42d6f6>
-                  mediaTierCdnNumber = 3
-                  plaintextHash = <b66a57f94440c5eceab4d9b0ad97e3f90c9ffe1f8bca4851d7cbdc42de7f47f3>
-                  size = 1815709569
-                  transitCdnKey = "waHPpPTBb"
-                  transitTierUploadTimestamp = 1712888047325
+                  encryptedDigest = <4f927918153e72d1f7dfa91624b7e81a790c7ccf290ab44b2d70265b3f527512>
+                  key = <8cae9bcd27bc6e8c6c9db2f9fe958f70b081828bed8091a00b1e7c412772c0f40ed7a125a7fa5df20efa0a9c0e7df3158d94e9b966f83636204ece9f4172a855>
+                  size = 2125101289
+                  transitCdnKey = "xCFXmSaSAUHdPv"
+                  transitTierUploadTimestamp = 1713887874474
                 }
-                width = 3456
+                width = 150
               }
             }
           }
@@ -203,7 +272,7 @@ Frame {
         type = Type.NORMAL
       }
       text = Text {
-        body = "deserunt gubergren dicat ad ac dictum"
+        body = "accommodare nam vestibulum"
       }
     }
   }

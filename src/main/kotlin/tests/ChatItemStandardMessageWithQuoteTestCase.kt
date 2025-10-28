@@ -25,7 +25,11 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
     frames += StandardFrames.MANDATORY_FRAMES
 
     frames += StandardFrames.recipientAlice
+    frames += StandardFrames.recipientBob
+    frames += StandardFrames.recipientGroupAB
+
     frames += StandardFrames.chatAlice
+    frames += StandardFrames.chatGroupAB
 
     val (incomingGenerator, outgoingGenerator) = Generators.incomingOutgoingDetails(StandardFrames.recipientAlice.recipient!!)
 
@@ -37,7 +41,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
       contactMessageGenerator,
       stickerMessageGenerator,
       giftBadgeGenerator,
-      viewOnceGenerator
+      viewOnceGenerator,
+      pollGenerator
     ) = oneOf(
       standardMessageGenerator(),
       ContactMessage(
@@ -57,14 +62,19 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
         receiptCredentialPresentation = some(Generators.receiptCredentialPresentation()).serialize().toByteString(),
         state = GiftBadge.State.OPENED
       ).asGenerator(),
-      ViewOnceMessage().asGenerator()
+      ViewOnceMessage().asGenerator(),
+      Poll(
+        question = someNonEmptyString(),
+        allowMultiple = someBoolean(),
+        options = some(Generators.pollOption(StandardFrames.recipientSelf.recipient!!, StandardFrames.recipientAlice.recipient))
+      ).asGenerator()
     )
 
     val targetDateSent = 1L
 
     val targetMessage = Frame(
       chatItem = ChatItem(
-        chatId = StandardFrames.chatAlice.chat!!.id,
+        chatId = StandardFrames.chatGroupAB.chat!!.id,
         authorId = StandardFrames.recipientAlice.recipient.id,
         dateSent = targetDateSent,
         incoming = ChatItem.IncomingMessageDetails(
@@ -76,7 +86,8 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
         contactMessage = someOneOf(contactMessageGenerator),
         stickerMessage = someOneOf(stickerMessageGenerator),
         giftBadge = someOneOf(giftBadgeGenerator),
-        viewOnceMessage = someOneOf(viewOnceGenerator)
+        viewOnceMessage = someOneOf(viewOnceGenerator),
+        poll = someOneOf(pollGenerator)
       )
     )
 
@@ -129,6 +140,7 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
             type = when {
               targetMessage.chatItem.giftBadge != null -> Quote.Type.GIFT_BADGE
               targetMessage.chatItem.viewOnceMessage != null -> Quote.Type.VIEW_ONCE
+              targetMessage.chatItem.poll != null -> Quote.Type.POLL
               else -> Quote.Type.NORMAL
             },
             attachments = if (quoteAttachment != null) {
@@ -201,4 +213,6 @@ object ChatItemStandardMessageWithQuoteTestCase : TestCase("chat_item_standard_m
       else -> null
     }
   }
+
+  private operator fun <T> List<T>.component6(): T = this[5]
 }
