@@ -678,6 +678,7 @@ object Generators {
       )
     }
   }
+
   /**
    * Generates a pair of generators that can be used for setting incoming/outgoing message details.
    * For outgoing statuses, one will be made for each of the outgoing recipients.

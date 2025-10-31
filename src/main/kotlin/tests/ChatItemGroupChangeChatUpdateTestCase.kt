@@ -397,7 +397,6 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
 
     val updatersSize = updaters.size
     val updatesSize = updatesGenerator.minSize
-    println(updatersSize)
     require(updatersSize == updatesSize) { "Every update frame must specify an updater. Frames: $updatesSize, updaters: $updatersSize." }
 
     frames += Frame(
