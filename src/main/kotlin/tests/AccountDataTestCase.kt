@@ -133,9 +133,21 @@ object AccountDataTestCase : TestCase("account_data") {
           } else {
             false
           },
-          backupTier = backupTier
+          backupTier = backupTier,
+          showSealedSenderIndicators = someBoolean(),
+          defaultSentMediaQuality = someEnum(AccountData.SentMediaQuality::class.java, excluding = AccountData.SentMediaQuality.UNKNOWN_QUALITY),
+          autoDownloadSettings = AccountData.AutoDownloadSettings(
+            images = someEnum(AccountData.AutoDownloadSettings.AutoDownloadOption::class.java, excluding = AccountData.AutoDownloadSettings.AutoDownloadOption.UNKNOWN),
+            audio = someEnum(AccountData.AutoDownloadSettings.AutoDownloadOption::class.java, excluding = AccountData.AutoDownloadSettings.AutoDownloadOption.UNKNOWN),
+            video = someEnum(AccountData.AutoDownloadSettings.AutoDownloadOption::class.java, excluding = AccountData.AutoDownloadSettings.AutoDownloadOption.UNKNOWN),
+            documents = someEnum(AccountData.AutoDownloadSettings.AutoDownloadOption::class.java, excluding = AccountData.AutoDownloadSettings.AutoDownloadOption.UNKNOWN)
+          ),
+          screenLockTimeoutMinutes = some(Generators.list(null, 1, 5, 60)),
+          pinReminders = some(Generators.list(null, true, false))
         ),
-        backupsSubscriberData = backupsSubscriberData
+        backupsSubscriberData = backupsSubscriberData,
+        bioText = some(Generators.textBody(minWords = 1, maxWords = 5)),
+        bioEmoji = someEmoji()
       )
     )
 

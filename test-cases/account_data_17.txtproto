@@ -12,6 +12,12 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.WIFI_AND_CELLULAR
+        documents = AutoDownloadOption.WIFI_AND_CELLULAR
+        images = AutoDownloadOption.WIFI_AND_CELLULAR
+        video = AutoDownloadOption.WIFI_AND_CELLULAR
+      }
       backupTier = 201
       customChatColors = [
         CustomChatColor {
@@ -42,6 +48,7 @@ Frame {
         dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.SOLID_EGGPLANT
       }
+      defaultSentMediaQuality = SentMediaQuality.HIGH
       displayBadgesOnProfile = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
@@ -49,6 +56,7 @@ Frame {
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
       readReceipts = true
+      screenLockTimeoutMinutes = 1
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
@@ -59,6 +67,8 @@ Frame {
       originalTransactionId = 7649816532921440778
       subscriberId = <505b2d0c464633445cb1f9a68a644847e660b3fbea8e9fff77a691f7effe2df5>
     }
+    bioEmoji = "👎"
+    bioText = "viris ignota detracto himenaeos pretium eloquentiam intellegebat non"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       subscriberId = <d4acf856cb64e960fcd58ca580b80888e681e323c607d5959f6b63ece7730df0>

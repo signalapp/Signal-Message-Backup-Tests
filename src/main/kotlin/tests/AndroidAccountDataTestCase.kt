@@ -1,0 +1,54 @@
+@file:Suppress("UNCHECKED_CAST")
+
+package tests
+
+import PermutationScope
+import TestCase
+import okio.ByteString.Companion.toByteString
+import org.thoughtcrime.securesms.backup.v2.proto.AccountData
+import org.thoughtcrime.securesms.backup.v2.proto.Frame
+
+/**
+ * Simplified AccountData test case focused on AndroidSpecificSettings.
+ */
+object AndroidAccountDataTestCase : TestCase("android_account_data") {
+
+  override fun PermutationScope.execute() {
+    frames += StandardFrames.backupInfo
+
+    frames += Frame(
+      account = AccountData(
+        profileKey = someBytes(32).toByteString(),
+        givenName = "Alice",
+        familyName = "Smith",
+        accountSettings = AccountData.AccountSettings(
+          readReceipts = true,
+          sealedSenderIndicators = true,
+          typingIndicators = true,
+          linkPreviews = true,
+          notDiscoverableByPhoneNumber = false,
+          preferContactAvatars = false,
+          universalExpireTimerSeconds = 0,
+          preferredReactionEmoji = listOf(),
+          displayBadgesOnProfile = true,
+          keepMutedChatsArchived = false,
+          hasSetMyStoriesPrivacy = true,
+          hasViewedOnboardingStory = true,
+          storiesDisabled = false,
+          storyViewReceiptsEnabled = true,
+          hasSeenGroupStoryEducationSheet = true,
+          hasCompletedUsernameOnboarding = true,
+          phoneNumberSharingMode = AccountData.PhoneNumberSharingMode.NOBODY
+        ),
+        androidSpecificSettings = AccountData.AndroidSpecificSettings(
+          useSystemEmoji = someBoolean(),
+          screenshotSecurity = someBoolean()
+        )
+      )
+    )
+
+    frames += StandardFrames.recipientSelf
+    frames += StandardFrames.recipientReleaseNotes
+    frames += StandardFrames.recipientMyStory
+  }
+}

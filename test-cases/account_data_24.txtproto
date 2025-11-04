@@ -12,6 +12,12 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.NEVER
+        documents = AutoDownloadOption.NEVER
+        images = AutoDownloadOption.NEVER
+        video = AutoDownloadOption.NEVER
+      }
       customChatColors = [
         CustomChatColor {
           id = 1
@@ -40,15 +46,19 @@ Frame {
         customColorId = 1
         wallpaperPreset = WallpaperPreset.GRADIENT_MONSTERA
       }
+      defaultSentMediaQuality = SentMediaQuality.STANDARD
       hasCompletedUsernameOnboarding = true
       hasSetMyStoriesPrivacy = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       sealedSenderIndicators = true
+      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
+    bioEmoji = "👩‍💻"
+    bioText = "ocurreret elit mi singulis falli"
     familyName = ""
     givenName = ""
     profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>

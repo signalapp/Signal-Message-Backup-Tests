@@ -12,6 +12,12 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.NEVER
+        documents = AutoDownloadOption.NEVER
+        images = AutoDownloadOption.NEVER
+        video = AutoDownloadOption.NEVER
+      }
       customChatColors = [
         CustomChatColor {
           id = 1
@@ -40,15 +46,20 @@ Frame {
         bubbleColorPreset = BubbleColorPreset.GRADIENT_LAGOON
         wallpaperPreset = WallpaperPreset.SOLID_SILVER
       }
+      defaultSentMediaQuality = SentMediaQuality.STANDARD
       hasCompletedUsernameOnboarding = true
       hasSetMyStoriesPrivacy = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
+      screenLockTimeoutMinutes = 5
       sealedSenderIndicators = true
+      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
+    bioEmoji = "👍🏾"
+    bioText = "ocurreret elit mi singulis falli"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true

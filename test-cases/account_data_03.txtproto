@@ -12,6 +12,12 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.NEVER
+        documents = AutoDownloadOption.NEVER
+        images = AutoDownloadOption.NEVER
+        video = AutoDownloadOption.NEVER
+      }
       customChatColors = [
         CustomChatColor {
           id = 1
@@ -50,6 +56,7 @@ Frame {
           }
         }
       }
+      defaultSentMediaQuality = SentMediaQuality.HIGH
       displayBadgesOnProfile = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
@@ -57,6 +64,7 @@ Frame {
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
       readReceipts = true
+      screenLockTimeoutMinutes = 60
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
@@ -66,6 +74,8 @@ Frame {
     backupsSubscriberData = IAPSubscriberData {
       subscriberId = <28a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1>
     }
+    bioEmoji = "👍🏾"
+    bioText = "ocurreret elit mi singulis falli"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       subscriberId = <42bf45e91cd2b5d284298c030d7a577d4e461bad394678abe8ddfe7755cf8693>

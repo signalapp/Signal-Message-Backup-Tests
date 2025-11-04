@@ -12,6 +12,12 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.WIFI
+        documents = AutoDownloadOption.WIFI
+        images = AutoDownloadOption.WIFI
+        video = AutoDownloadOption.WIFI
+      }
       backupTier = 200
       customChatColors = [
         CustomChatColor {
@@ -49,19 +55,24 @@ Frame {
           }
         }
       }
+      defaultSentMediaQuality = SentMediaQuality.HIGH
       displayBadgesOnProfile = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      pinReminders = true
       preferContactAvatars = true
       readReceipts = true
+      screenLockTimeoutMinutes = 1
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
       universalExpireTimerSeconds = 694141765
     }
     avatarUrlPath = "https://signal.org/budVyDygxM"
+    bioEmoji = "👍"
+    bioText = "porro dapibus metus penatibus"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       subscriberId = <d4acf856cb64e960fcd58ca580b80888e681e323c607d5959f6b63ece7730df0>

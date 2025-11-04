@@ -1,0 +1,68 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
+  firstAppVersion = "FooClient 1.0.0"
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      defaultSentMediaQuality = SentMediaQuality.UNKNOWN_QUALITY
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      linkPreviews = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      readReceipts = true
+      sealedSenderIndicators = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+    }
+    androidSpecificSettings = AndroidSpecificSettings {
+      useSystemEmoji = true
+    }
+    avatarUrlPath = ""
+    bioEmoji = ""
+    bioText = ""
+    familyName = "Smith"
+    givenName = "Alice"
+    profileKey = <2cc2b48c50aefe53b3974ed91e6b4ea924f9baa8e77bcc2f537f0b02efe86030>
+    svrPin = ""
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {
+      avatarColor = AvatarColor.A210
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = ""
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}

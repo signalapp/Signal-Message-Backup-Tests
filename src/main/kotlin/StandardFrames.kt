@@ -95,6 +95,7 @@ object StandardFrames {
         hasSeenGroupStoryEducationSheet = true,
         hasCompletedUsernameOnboarding = true,
         phoneNumberSharingMode = AccountData.PhoneNumberSharingMode.NOBODY,
+        defaultSentMediaQuality = AccountData.SentMediaQuality.STANDARD,
         customChatColors = listOf(
           ChatStyle.CustomChatColor(
             id = 1,

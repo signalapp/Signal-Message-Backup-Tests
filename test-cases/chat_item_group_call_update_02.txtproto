@@ -26,6 +26,7 @@ Frame {
           solid = -16711936
         }
       ]
+      defaultSentMediaQuality = SentMediaQuality.STANDARD
       displayBadgesOnProfile = true
       hasCompletedUsernameOnboarding = true
       hasSeenGroupStoryEducationSheet = true
@@ -49,6 +50,8 @@ Frame {
       universalExpireTimerSeconds = 3600
     }
     avatarUrlPath = ""
+    bioEmoji = ""
+    bioText = ""
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true

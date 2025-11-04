@@ -12,6 +12,12 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.WIFI
+        documents = AutoDownloadOption.WIFI
+        images = AutoDownloadOption.WIFI
+        video = AutoDownloadOption.WIFI
+      }
       backupTier = 200
       customChatColors = [
         CustomChatColor {
@@ -50,15 +56,20 @@ Frame {
           }
         }
       }
+      defaultSentMediaQuality = SentMediaQuality.STANDARD
       hasCompletedUsernameOnboarding = true
       hasSetMyStoriesPrivacy = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
+      pinReminders = true
       sealedSenderIndicators = true
+      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 694141765
     }
     avatarUrlPath = "https://signal.org/budVyDygxM"
+    bioEmoji = "👩‍💻"
+    bioText = "porro dapibus metus penatibus"
     familyName = ""
     givenName = ""
     profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
