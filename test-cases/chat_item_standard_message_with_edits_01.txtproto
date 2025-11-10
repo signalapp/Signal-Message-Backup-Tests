@@ -138,6 +138,7 @@ Frame {
     incoming = IncomingMessageDetails {
       dateReceived = 1695248715429
       dateServerSent = 1695248715438
+      read = true
       sealedSender = true
     }
     revisions = [
@@ -188,7 +189,7 @@ Frame {
     ]
     standardMessage = StandardMessage {
       text = Text {
-        body = "definitiones volutpat sagittis natoque utinam tota repudiandae brute"
+        body = "reprehendunt quisque sociis dolor pertinacia populo ferri"
       }
     }
   }

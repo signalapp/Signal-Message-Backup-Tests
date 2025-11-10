@@ -362,7 +362,7 @@ object Generators {
   fun <T> single(item: T): Generator<T> = Generators.list(item)
 
   fun <T> permutation(snapshotCount: Int = -1, shuffled: Boolean = false, init: PermutationScope.() -> Unit): Generator<T> {
-    val snapshots = permuteSingle<T> { init() }
+    val snapshots = permuteSingle<T>(snapshotCount) { init() }
     return if (shuffled) {
       ListGenerator(snapshots.seededShuffled())
     } else {
