@@ -59,7 +59,8 @@ val ALL_TEST_CASES = listOf(
   ChatItemGroupChangeChatMultipleUpdateTestCase,
   ChatItemDirectStoryReplyTestCase,
   ChatItemDirectStoryReplyWithEditsTestCase,
-  ChatItemPollTestCase,
+  ChatItemPollSingleVoteTestCase,
+  ChatItemPollMultipleVoteTestCase,
   ChatItemPollTerminateUpdateTestCase
 )
 
