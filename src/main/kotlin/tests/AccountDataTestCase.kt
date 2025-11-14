@@ -134,7 +134,6 @@ object AccountDataTestCase : TestCase("account_data") {
             false
           },
           backupTier = backupTier,
-          showSealedSenderIndicators = someBoolean(),
           defaultSentMediaQuality = someEnum(AccountData.SentMediaQuality::class.java, excluding = AccountData.SentMediaQuality.UNKNOWN_QUALITY),
           autoDownloadSettings = AccountData.AutoDownloadSettings(
             images = someEnum(AccountData.AutoDownloadSettings.AutoDownloadOption::class.java, excluding = AccountData.AutoDownloadSettings.AutoDownloadOption.UNKNOWN),

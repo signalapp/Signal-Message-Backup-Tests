@@ -55,12 +55,11 @@ Frame {
       notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       sealedSenderIndicators = true
-      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
     bioEmoji = "👎"
-    bioText = "ocurreret elit mi singulis falli"
+    bioText = "iudicabit ocurreret elit"
     familyName = ""
     givenName = ""
     profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>

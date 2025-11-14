@@ -58,12 +58,11 @@ Frame {
       pinReminders = true
       screenLockTimeoutMinutes = 5
       sealedSenderIndicators = true
-      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 694141765
     }
     avatarUrlPath = "https://signal.org/budVyDygxM"
     bioEmoji = "💀"
-    bioText = "porro dapibus metus penatibus"
+    bioText = "singulis falli eros porro dapibus metus penatibus tation"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true

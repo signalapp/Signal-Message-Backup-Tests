@@ -56,12 +56,11 @@ Frame {
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       screenLockTimeoutMinutes = 5
       sealedSenderIndicators = true
-      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
     bioEmoji = "👍🏾"
-    bioText = "ocurreret elit mi singulis falli"
+    bioText = "iudicabit ocurreret elit"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true

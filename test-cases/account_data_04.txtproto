@@ -66,12 +66,11 @@ Frame {
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
       sealedSenderIndicators = true
-      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 694141765
     }
     avatarUrlPath = "https://signal.org/budVyDygxM"
     bioEmoji = "👩‍💻"
-    bioText = "porro dapibus metus penatibus"
+    bioText = "singulis falli eros porro dapibus metus penatibus tation"
     familyName = ""
     givenName = ""
     profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>

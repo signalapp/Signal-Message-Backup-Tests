@@ -58,7 +58,6 @@ Frame {
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       screenLockTimeoutMinutes = 5
       sealedSenderIndicators = true
-      showSealedSenderIndicators = true
       universalExpireTimerSeconds = 1995618975
     }
     avatarUrlPath = "https://signal.org/yZCTrFaZqBnUUi"
@@ -67,7 +66,7 @@ Frame {
       subscriberId = <9c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e10411f6e>
     }
     bioEmoji = "👍"
-    bioText = "viris ignota detracto himenaeos pretium eloquentiam intellegebat non"
+    bioText = "ignota detracto himenaeos"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true
