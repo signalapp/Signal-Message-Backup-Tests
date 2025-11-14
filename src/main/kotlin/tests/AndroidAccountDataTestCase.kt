@@ -42,7 +42,8 @@ object AndroidAccountDataTestCase : TestCase("android_account_data") {
         ),
         androidSpecificSettings = AccountData.AndroidSpecificSettings(
           useSystemEmoji = someBoolean(),
-          screenshotSecurity = someBoolean()
+          screenshotSecurity = someBoolean(),
+          navigationBarSize = someEnum(AccountData.AndroidSpecificSettings.NavigationBarSize::class.java, excluding = AccountData.AndroidSpecificSettings.NavigationBarSize.UNKNOWN_BAR_SIZE)
         )
       )
     )

@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      appTheme = AppTheme.DARK
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI_AND_CELLULAR
         documents = AutoDownloadOption.WIFI_AND_CELLULAR
@@ -19,6 +20,7 @@ Frame {
         video = AutoDownloadOption.WIFI_AND_CELLULAR
       }
       backupTier = 201
+      callsUseLessDataSetting = CallsUseLessDataSetting.WIFI_AND_MOBILE_DATA
       customChatColors = [
         CustomChatColor {
           id = 1

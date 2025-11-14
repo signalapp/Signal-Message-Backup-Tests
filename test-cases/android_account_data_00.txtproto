@@ -12,6 +12,8 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      appTheme = AppTheme.UNKNOWN_APP_THEME
+      callsUseLessDataSetting = CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING
       defaultSentMediaQuality = SentMediaQuality.UNKNOWN_QUALITY
       displayBadgesOnProfile = true
       hasCompletedUsernameOnboarding = true
@@ -26,6 +28,7 @@ Frame {
       typingIndicators = true
     }
     androidSpecificSettings = AndroidSpecificSettings {
+      navigationBarSize = NavigationBarSize.NORMAL
       useSystemEmoji = true
     }
     avatarUrlPath = ""

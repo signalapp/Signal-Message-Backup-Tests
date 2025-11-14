@@ -12,12 +12,14 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      appTheme = AppTheme.SYSTEM
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.NEVER
         documents = AutoDownloadOption.NEVER
         images = AutoDownloadOption.NEVER
         video = AutoDownloadOption.NEVER
       }
+      callsUseLessDataSetting = CallsUseLessDataSetting.NEVER
       customChatColors = [
         CustomChatColor {
           id = 1

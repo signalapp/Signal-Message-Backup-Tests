@@ -12,6 +12,8 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      appTheme = AppTheme.UNKNOWN_APP_THEME
+      callsUseLessDataSetting = CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING
       customChatColors = [
         CustomChatColor {
           id = 1
