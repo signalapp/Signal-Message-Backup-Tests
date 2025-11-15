@@ -14,7 +14,7 @@ Frame {
     accountSettings = AccountSettings {
       appTheme = AppTheme.UNKNOWN_APP_THEME
       callsUseLessDataSetting = CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING
-      defaultSentMediaQuality = SentMediaQuality.UNKNOWN_QUALITY
+      defaultSentMediaQuality = SentMediaQuality.HIGH
       displayBadgesOnProfile = true
       hasCompletedUsernameOnboarding = true
       hasSeenGroupStoryEducationSheet = true

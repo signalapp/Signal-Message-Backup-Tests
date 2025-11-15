@@ -38,7 +38,8 @@ object AndroidAccountDataTestCase : TestCase("android_account_data") {
           storyViewReceiptsEnabled = true,
           hasSeenGroupStoryEducationSheet = true,
           hasCompletedUsernameOnboarding = true,
-          phoneNumberSharingMode = AccountData.PhoneNumberSharingMode.NOBODY
+          phoneNumberSharingMode = AccountData.PhoneNumberSharingMode.NOBODY,
+          defaultSentMediaQuality = AccountData.SentMediaQuality.HIGH
         ),
         androidSpecificSettings = AccountData.AndroidSpecificSettings(
           useSystemEmoji = someBoolean(),
