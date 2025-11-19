@@ -39,7 +39,9 @@ object AndroidAccountDataTestCase : TestCase("android_account_data") {
           hasSeenGroupStoryEducationSheet = true,
           hasCompletedUsernameOnboarding = true,
           phoneNumberSharingMode = AccountData.PhoneNumberSharingMode.NOBODY,
-          defaultSentMediaQuality = AccountData.SentMediaQuality.HIGH
+          defaultSentMediaQuality = AccountData.SentMediaQuality.HIGH,
+          appTheme = AccountData.AppTheme.SYSTEM,
+          callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER
         ),
         androidSpecificSettings = AccountData.AndroidSpecificSettings(
           useSystemEmoji = someBoolean(),

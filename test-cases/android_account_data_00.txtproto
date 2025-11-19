@@ -12,8 +12,8 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
-      appTheme = AppTheme.UNKNOWN_APP_THEME
-      callsUseLessDataSetting = CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING
+      appTheme = AppTheme.SYSTEM
+      callsUseLessDataSetting = CallsUseLessDataSetting.NEVER
       defaultSentMediaQuality = SentMediaQuality.HIGH
       displayBadgesOnProfile = true
       hasCompletedUsernameOnboarding = true

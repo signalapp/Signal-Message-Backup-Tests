@@ -109,7 +109,9 @@ object StandardFrames {
             id = 3,
             solid = "FF00FF00".hexToInt()
           )
-        )
+        ),
+        appTheme = AccountData.AppTheme.SYSTEM,
+        callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER
       )
     )
   )
