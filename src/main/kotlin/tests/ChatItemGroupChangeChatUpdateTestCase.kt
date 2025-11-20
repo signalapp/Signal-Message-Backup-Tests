@@ -5,6 +5,7 @@ import PermutationScope
 import StandardFrames
 import TestCase
 import aci
+import asList
 import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
@@ -29,293 +30,235 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
     frames += StandardFrames.recipientGroupAB
     frames += StandardFrames.chatGroupAB
 
-    val groupMembersExcludingSelfGenerator = { Generators.list(StandardFrames.recipientAlice, StandardFrames.recipientBob) }
-    val peopleNotInGroupGenerator = { Generators.list(StandardFrames.recipientCarol, StandardFrames.recipientDan) }
+    val groupMembersExcludingSelfGenerator = { Generators.list(StandardFrames.recipientAlice.aci, StandardFrames.recipientBob.aci) }
+    val peopleNotInGroupGenerator = { Generators.list(StandardFrames.recipientCarol.aci, StandardFrames.recipientDan.aci) }
 
-    val updaters = mutableListOf<Frame>()
     val listOfGenerators = oneOf(
       // genericGroupUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GenericGroupUpdate(
-          updaterAci = updater.aci
+          updaterAci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(updater)
       },
       // groupCreationUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupCreationUpdate(
-          updaterAci = updater.aci
+          updaterAci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(updater)
       },
       // groupNameUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupNameUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           newGroupName = some(Generators.titles().nullable())
         )
-        updaters.add(updater)
       },
       // groupAvatarUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupAvatarUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           wasRemoved = someBoolean()
         )
-        updaters.add(updater)
       },
       // groupDescriptionUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupDescriptionUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           newDescription = some(Generators.textBody().nullable())
         )
-        updaters.add(updater)
       },
       // groupMembershipAccessLevelChangeUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupMembershipAccessLevelChangeUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           accessLevel = someEnum(GroupV2AccessLevel::class.java, excluding = listOf(GroupV2AccessLevel.UNKNOWN, GroupV2AccessLevel.UNSATISFIABLE))
         )
-        updaters.add(updater)
       },
       // groupAttributesAccessLevelChangeUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupAttributesAccessLevelChangeUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           accessLevel = someEnum(GroupV2AccessLevel::class.java, listOf(GroupV2AccessLevel.UNKNOWN, GroupV2AccessLevel.UNSATISFIABLE))
         )
-        updaters.add(updater)
       },
       // groupAnnouncementOnlyChangeUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupAnnouncementOnlyChangeUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           isAnnouncementOnly = someBoolean()
         )
-        updaters.add(updater)
       },
       // groupAdminStatusUpdateGenerator,
       Generators.permutation {
         frames += GroupAdminStatusUpdate(
           updaterAci = StandardFrames.SELF_ACI.toByteString(),
-          memberAci = some(groupMembersExcludingSelfGenerator()).aci,
+          memberAci = some(groupMembersExcludingSelfGenerator()),
           wasAdminStatusGranted = someBoolean()
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupMemberLeftUpdateGenerator,
       Generators.permutation {
         frames += GroupMemberLeftUpdate(
-          aci = some(groupMembersExcludingSelfGenerator()).aci
+          aci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupMemberRemovedUpdateGenerator,
       Generators.permutation {
         frames += GroupMemberRemovedUpdate(
           removerAci = StandardFrames.SELF_ACI.toByteString(),
-          removedAci = some(groupMembersExcludingSelfGenerator()).aci
+          removedAci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // selfInvitedToGroupUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += SelfInvitedToGroupUpdate(
-          inviterAci = updater.aci
+          inviterAci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(updater)
       },
       // selfInvitedOtherUserToGroupUpdateGenerator,
       Generators.permutation {
         frames += SelfInvitedOtherUserToGroupUpdate(
-          inviteeServiceId = some(groupMembersExcludingSelfGenerator()).aci
+          inviteeServiceId = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupUnknownInviteeUpdateGenerator,
       Generators.permutation {
         frames += GroupUnknownInviteeUpdate(
-          inviterAci = some(groupMembersExcludingSelfGenerator()).aci,
+          inviterAci = some(groupMembersExcludingSelfGenerator()),
           inviteeCount = some(Generators.ints(1, 3))
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupInvitationAcceptedUpdateGenerator,
       Generators.permutation {
         frames += GroupInvitationAcceptedUpdate(
-          inviterAci = some(groupMembersExcludingSelfGenerator()).aci,
-          newMemberAci = some(peopleNotInGroupGenerator()).aci
+          inviterAci = some(groupMembersExcludingSelfGenerator()),
+          newMemberAci = some(peopleNotInGroupGenerator())
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupInvitationDeclinedUpdateGenerator,
       Generators.permutation {
         frames += GroupInvitationDeclinedUpdate(
-          inviterAci = some(groupMembersExcludingSelfGenerator()).aci,
-          inviteeAci = some(peopleNotInGroupGenerator().nullable())?.aci
+          inviterAci = some(groupMembersExcludingSelfGenerator()),
+          inviteeAci = some(peopleNotInGroupGenerator().nullable())
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupMemberJoinedUpdateGenerator,
       Generators.permutation {
         frames += GroupMemberJoinedUpdate(
-          newMemberAci = some(peopleNotInGroupGenerator()).aci
+          newMemberAci = some(peopleNotInGroupGenerator())
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupMemberAddedUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         val inviter = some(groupMembersExcludingSelfGenerator().nullable())
         val hadOpenInvitation = someBoolean()
         frames += GroupMemberAddedUpdate(
-          updaterAci = updater.aci,
-          newMemberAci = some(peopleNotInGroupGenerator()).aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
+          newMemberAci = some(peopleNotInGroupGenerator()),
           hadOpenInvitation = if (inviter != null) true else hadOpenInvitation,
-          inviterAci = inviter?.aci
+          inviterAci = inviter
         )
-        updaters.add(updater)
       },
       // groupSelfInvitationRevokedUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupSelfInvitationRevokedUpdate(
-          revokerAci = updater.aci
+          revokerAci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(updater)
       },
       // groupInvitationRevokedUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupInvitationRevokedUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           invitees = listOf(
             GroupInvitationRevokedUpdate.Invitee(
-              inviterAci = some(groupMembersExcludingSelfGenerator()).aci,
+              inviterAci = some(groupMembersExcludingSelfGenerator()),
               inviteeAci = some(Generators.list(StandardFrames.recipientCarol.aci, null)),
               inviteePni = some(Generators.list(null, StandardFrames.recipientCarol.pni))
             )
           )
         )
-        updaters.add(updater)
       },
       // groupJoinRequestUpdateGenerator,
       Generators.permutation {
-        val updater = some(peopleNotInGroupGenerator())
         frames += GroupJoinRequestUpdate(
-          requestorAci = updater.aci
+          requestorAci = some(peopleNotInGroupGenerator())
         )
-        updaters.add(updater)
       },
       // groupJoinRequestApprovalUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupJoinRequestApprovalUpdate(
-          requestorAci = some(peopleNotInGroupGenerator()).aci,
-          updaterAci = updater.aci,
+          requestorAci = some(peopleNotInGroupGenerator()),
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           wasApproved = someBoolean()
         )
-        updaters.add(updater)
       },
       // groupJoinRequestCanceledUpdateGenerator,
       Generators.permutation {
         frames += GroupJoinRequestCanceledUpdate(
-          requestorAci = some(peopleNotInGroupGenerator()).aci
+          requestorAci = some(peopleNotInGroupGenerator())
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupInviteLinkResetUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupInviteLinkResetUpdate(
-          updaterAci = updater.aci
+          updaterAci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(updater)
       },
       // groupInviteLinkEnabledUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupInviteLinkEnabledUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           linkRequiresAdminApproval = someBoolean()
         )
-        updaters.add(updater)
       },
       // groupInviteLinkAdminApprovalUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupInviteLinkAdminApprovalUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           linkRequiresAdminApproval = someBoolean()
         )
-        updaters.add(updater)
       },
       // groupInviteLinkDisabledUpdateGenerator,
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupInviteLinkDisabledUpdate(
-          updaterAci = updater.aci
+          updaterAci = some(groupMembersExcludingSelfGenerator())
         )
-        updaters.add(updater)
       },
       // groupMemberJoinedByLinkUpdateGenerator,
       Generators.permutation {
         frames += GroupMemberJoinedByLinkUpdate(
           newMemberAci = some(Generators.list(StandardFrames.recipientCarol.aci, StandardFrames.recipientDan.aci))
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupV2MigrationUpdateGenerator,
-      Generators.permutation {
-        frames += GroupV2MigrationUpdate()
-        updaters.add(StandardFrames.recipientSelf)
-      },
+      Generators.single(GroupV2MigrationUpdate()),
       // groupV2MigrationSelfInvitedUpdateGenerator,
-      Generators.permutation {
-        frames += GroupV2MigrationSelfInvitedUpdate()
-        updaters.add(StandardFrames.recipientSelf)
-      },
+      Generators.single(GroupV2MigrationSelfInvitedUpdate()),
       // groupV2MigrationInvitedMembersUpdateGenerator,
       Generators.permutation {
         frames += GroupV2MigrationInvitedMembersUpdate(
           invitedMembersCount = some(Generators.ints(1, 5))
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupV2MigrationDroppedMembersUpdateGenerator,
       Generators.permutation {
         frames += GroupV2MigrationDroppedMembersUpdate(
           droppedMembersCount = some(Generators.ints(1, 5))
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupSequenceOfRequestsAndCancelsUpdateGenerator,
       Generators.permutation {
         frames += GroupSequenceOfRequestsAndCancelsUpdate(
-          requestorAci = some(groupMembersExcludingSelfGenerator()).aci,
+          requestorAci = some(groupMembersExcludingSelfGenerator()),
           count = some(Generators.ints(1, 5))
         )
-        updaters.add(StandardFrames.recipientSelf)
       },
       // groupExpirationTimerUpdateGenerator
       Generators.permutation {
-        val updater = some(groupMembersExcludingSelfGenerator())
         frames += GroupExpirationTimerUpdate(
-          updaterAci = updater.aci,
+          updaterAci = some(groupMembersExcludingSelfGenerator()),
           expiresInMs = some(Generators.longs(lower = 5.minutes.inWholeSeconds, upper = 28.days.inWholeSeconds)).seconds.inWholeMilliseconds
         )
-        updaters.add(updater)
       }
     )
 
@@ -391,23 +334,15 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
         groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator)
       )
     }
-
-    val update = some(updatesGenerator)
-    val updater = some(Generators.list(updaters))
-
-    val updatersSize = updaters.size
-    val updatesSize = updatesGenerator.minSize
-    require(updatersSize == updatesSize) { "Every update frame must specify an updater. Frames: $updatesSize, updaters: $updatersSize." }
-
     frames += Frame(
       chatItem = ChatItem(
         chatId = StandardFrames.chatGroupAB.chat!!.id,
-        authorId = updater.recipient?.id ?: StandardFrames.recipientSelf.recipient!!.id,
+        authorId = StandardFrames.recipientSelf.recipient!!.id,
         dateSent = someNonZeroTimestamp(),
         directionless = ChatItem.DirectionlessMessageDetails(),
         updateMessage = ChatUpdateMessage(
           groupChange = GroupChangeChatUpdate(
-            updates = listOf(update)
+            updates = updatesGenerator.asList(*List(updatesGenerator.minSize) { 1 }.toIntArray()).let { some(it) }
           )
         )
       )
