@@ -142,7 +142,7 @@ object AccountDataTestCase : TestCase("account_data") {
             documents = someEnum(AccountData.AutoDownloadSettings.AutoDownloadOption::class.java, excluding = AccountData.AutoDownloadSettings.AutoDownloadOption.UNKNOWN)
           ),
           screenLockTimeoutMinutes = some(Generators.list(null, 1, 5, 60)),
-          pinReminders = some(Generators.list(null, true, false)),
+          pinReminders = someBoolean(),
           appTheme = someEnum(AccountData.AppTheme::class.java, excluding = AccountData.AppTheme.UNKNOWN_APP_THEME),
           callsUseLessDataSetting = someEnum(AccountData.CallsUseLessDataSetting::class.java, excluding = AccountData.CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING)
         ),

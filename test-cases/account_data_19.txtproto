@@ -56,7 +56,6 @@ Frame {
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
-      pinReminders = true
       preferContactAvatars = true
       readReceipts = true
       screenLockTimeoutMinutes = 60
@@ -67,7 +66,7 @@ Frame {
     }
     avatarUrlPath = "https://signal.org/budVyDygxM"
     bioEmoji = "👩‍💻"
-    bioText = "singulis falli eros porro dapibus metus penatibus tation"
+    bioText = "porro dapibus metus penatibus"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       subscriberId = <42bf45e91cd2b5d284298c030d7a577d4e461bad394678abe8ddfe7755cf8693>

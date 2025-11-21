@@ -38,10 +38,17 @@ object AndroidAccountDataTestCase : TestCase("android_account_data") {
           storyViewReceiptsEnabled = true,
           hasSeenGroupStoryEducationSheet = true,
           hasCompletedUsernameOnboarding = true,
+          pinReminders = false,
           phoneNumberSharingMode = AccountData.PhoneNumberSharingMode.NOBODY,
           defaultSentMediaQuality = AccountData.SentMediaQuality.HIGH,
           appTheme = AccountData.AppTheme.SYSTEM,
-          callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER
+          callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER,
+          autoDownloadSettings = AccountData.AutoDownloadSettings(
+            images = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI_AND_CELLULAR,
+            audio = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI_AND_CELLULAR,
+            video = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI,
+            documents = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI
+          )
         ),
         androidSpecificSettings = AccountData.AndroidSpecificSettings(
           useSystemEmoji = someBoolean(),

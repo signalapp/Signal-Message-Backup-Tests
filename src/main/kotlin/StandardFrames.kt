@@ -96,6 +96,13 @@ object StandardFrames {
         hasCompletedUsernameOnboarding = true,
         phoneNumberSharingMode = AccountData.PhoneNumberSharingMode.NOBODY,
         defaultSentMediaQuality = AccountData.SentMediaQuality.STANDARD,
+        pinReminders = false,
+        autoDownloadSettings = AccountData.AutoDownloadSettings(
+          images = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI_AND_CELLULAR,
+          audio = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI_AND_CELLULAR,
+          video = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI,
+          documents = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI
+        ),
         customChatColors = listOf(
           ChatStyle.CustomChatColor(
             id = 1,

@@ -13,6 +13,12 @@ Frame {
   account = AccountData {
     accountSettings = AccountSettings {
       appTheme = AppTheme.SYSTEM
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.WIFI_AND_CELLULAR
+        documents = AutoDownloadOption.WIFI
+        images = AutoDownloadOption.WIFI_AND_CELLULAR
+        video = AutoDownloadOption.WIFI
+      }
       callsUseLessDataSetting = CallsUseLessDataSetting.NEVER
       defaultSentMediaQuality = SentMediaQuality.HIGH
       displayBadgesOnProfile = true

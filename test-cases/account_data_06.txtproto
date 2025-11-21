@@ -62,13 +62,14 @@ Frame {
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
+      pinReminders = true
       screenLockTimeoutMinutes = 5
       sealedSenderIndicators = true
       universalExpireTimerSeconds = 1157010821
     }
     avatarUrlPath = ""
     bioEmoji = "👍"
-    bioText = "iudicabit ocurreret elit"
+    bioText = "ocurreret elit mi singulis falli"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true

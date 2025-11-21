@@ -56,6 +56,7 @@ Frame {
       notDiscoverableByPhoneNumber = true
       optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
+      pinReminders = true
       screenLockTimeoutMinutes = 5
       sealedSenderIndicators = true
       universalExpireTimerSeconds = 1995618975
@@ -66,7 +67,7 @@ Frame {
       subscriberId = <9c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e10411f6e>
     }
     bioEmoji = "👍"
-    bioText = "ignota detracto himenaeos"
+    bioText = "viris ignota detracto himenaeos pretium eloquentiam intellegebat non"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true
