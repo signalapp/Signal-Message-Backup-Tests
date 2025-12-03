@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      allowSealedSenderFromAnyone = true
       appTheme = AppTheme.DARK
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI_AND_CELLULAR
@@ -70,7 +71,7 @@ Frame {
       subscriberId = <505b2d0c464633445cb1f9a68a644847e660b3fbea8e9fff77a691f7effe2df5>
     }
     bioEmoji = "👍🏾"
-    bioText = "viris ignota detracto himenaeos pretium eloquentiam intellegebat non"
+    bioText = "eloquentiam intellegebat non pulvinar"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       subscriberId = <42bf45e91cd2b5d284298c030d7a577d4e461bad394678abe8ddfe7755cf8693>

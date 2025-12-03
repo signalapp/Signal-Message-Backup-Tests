@@ -43,6 +43,7 @@ object AndroidAccountDataTestCase : TestCase("android_account_data") {
           defaultSentMediaQuality = AccountData.SentMediaQuality.HIGH,
           appTheme = AccountData.AppTheme.SYSTEM,
           callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER,
+          allowSealedSenderFromAnyone = false,
           autoDownloadSettings = AccountData.AutoDownloadSettings(
             images = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI_AND_CELLULAR,
             audio = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI_AND_CELLULAR,

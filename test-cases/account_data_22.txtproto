@@ -62,7 +62,7 @@ Frame {
     }
     avatarUrlPath = "https://signal.org/budVyDygxM"
     bioEmoji = "👎"
-    bioText = "porro dapibus metus penatibus"
+    bioText = "metus penatibus tation viris ignota detracto himenaeos"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true

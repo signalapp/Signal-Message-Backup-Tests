@@ -61,7 +61,7 @@ Frame {
     }
     avatarUrlPath = ""
     bioEmoji = "👍🏾"
-    bioText = "ocurreret elit mi singulis falli"
+    bioText = "elit mi singulis falli eros porro"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       manuallyCancelled = true

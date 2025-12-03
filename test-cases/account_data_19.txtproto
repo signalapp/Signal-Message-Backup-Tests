@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      allowSealedSenderFromAnyone = true
       appTheme = AppTheme.LIGHT
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI
@@ -66,7 +67,7 @@ Frame {
     }
     avatarUrlPath = "https://signal.org/budVyDygxM"
     bioEmoji = "👩‍💻"
-    bioText = "porro dapibus metus penatibus"
+    bioText = "metus penatibus tation viris ignota detracto himenaeos"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       subscriberId = <42bf45e91cd2b5d284298c030d7a577d4e461bad394678abe8ddfe7755cf8693>

@@ -144,7 +144,8 @@ object AccountDataTestCase : TestCase("account_data") {
           screenLockTimeoutMinutes = some(Generators.list(null, 1, 5, 60)),
           pinReminders = someBoolean(),
           appTheme = someEnum(AccountData.AppTheme::class.java, excluding = AccountData.AppTheme.UNKNOWN_APP_THEME),
-          callsUseLessDataSetting = someEnum(AccountData.CallsUseLessDataSetting::class.java, excluding = AccountData.CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING)
+          callsUseLessDataSetting = someEnum(AccountData.CallsUseLessDataSetting::class.java, excluding = AccountData.CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING),
+          allowSealedSenderFromAnyone = someBoolean()
         ),
         backupsSubscriberData = backupsSubscriberData,
         bioText = some(Generators.textBody(minWords = 1, maxWords = 5)),
