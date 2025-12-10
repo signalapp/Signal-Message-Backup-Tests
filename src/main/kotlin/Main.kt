@@ -30,6 +30,7 @@ val ALL_TEST_CASES = listOf(
   NotificationProfileTestCase,
   ChatFolderTestCase,
   ChatTestCase,
+  ChatReleaseNotesTestCase,
   ChatItemSimpleUpdatesTestCase,
   ChatItemContactMessageTestCase,
   ChatItemLearnedProfileUpdateTestCase,

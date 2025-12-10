@@ -1,0 +1,162 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
+  firstAppVersion = "FooClient 1.0.0"
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      appTheme = AppTheme.SYSTEM
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.WIFI_AND_CELLULAR
+        documents = AutoDownloadOption.WIFI
+        images = AutoDownloadOption.WIFI_AND_CELLULAR
+        video = AutoDownloadOption.WIFI
+      }
+      callsUseLessDataSetting = CallsUseLessDataSetting.NEVER
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      defaultSentMediaQuality = SentMediaQuality.STANDARD
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    bioEmoji = ""
+    bioText = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    svrPin = ""
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {
+      avatarColor = AvatarColor.A210
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = ""
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 4
+    recipientId = 2
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 2
+    chatId = 4
+    dateSent = 1833527071196
+    incoming = IncomingMessageDetails {
+      dateReceived = 1695248715443
+      dateServerSent = 1829883016183
+    }
+    standardMessage = StandardMessage {
+      attachments = [
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+            contentType = "video/mp4"
+            fileName = "uEFCmCq"
+            locatorInfo = LocatorInfo {
+              key = <fcd58ca580b80888e681e323c607d5959f6b63ece7730df01fcfad80dfdf000fda4e86e6a6eeb98b207d85f0b413e071743cee3d4bece41ec92ea59e67f1c2ef>
+              plaintextHash = <d1408e670e080e775a5e2a0ebbf3b28fce7fe14e67cf3896a63d519636c55025>
+              size = 272587841
+            }
+          }
+        }
+      ]
+      text = Text {
+        body = "iudicabit auctor platonem"
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 2
+    chatId = 4
+    dateSent = 1739430820877
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      simpleUpdate = SimpleChatUpdate {
+        type = Type.RELEASE_CHANNEL_DONATION_REQUEST
+      }
+    }
+  }
+}

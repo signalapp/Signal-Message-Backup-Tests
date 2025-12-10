@@ -1,0 +1,169 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
+  firstAppVersion = "FooClient 1.0.0"
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      appTheme = AppTheme.SYSTEM
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.WIFI_AND_CELLULAR
+        documents = AutoDownloadOption.WIFI
+        images = AutoDownloadOption.WIFI_AND_CELLULAR
+        video = AutoDownloadOption.WIFI
+      }
+      callsUseLessDataSetting = CallsUseLessDataSetting.NEVER
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      defaultSentMediaQuality = SentMediaQuality.STANDARD
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    bioEmoji = ""
+    bioText = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    svrPin = ""
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {
+      avatarColor = AvatarColor.A210
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = ""
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 4
+    recipientId = 2
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 2
+    chatId = 4
+    dateSent = 1833527071195
+    incoming = IncomingMessageDetails {
+      dateReceived = 1695248715442
+      dateServerSent = 1829883016182
+      read = true
+      sealedSender = true
+    }
+    standardMessage = StandardMessage {
+      attachments = [
+        MessageAttachment {
+          clientUuid = <d853f22fb7d447748ae4af3d411c0d04>
+          flag = Flag.NONE
+          pointer = FilePointer {
+            caption = "IBHCZ"
+            contentType = "audio/mp3"
+            height = 470
+            locatorInfo = LocatorInfo {
+              encryptedDigest = <27e18e55c28e712f9a3dddc384e466f98e15432bce34cee30502d540f2eff4ef>
+              key = <4ce58985ed43189427a38645ab2d573928a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1745e712bc96653a10091c5a8a51edea8>
+              size = 882840783
+              transitCdnKey = "IJqySkLQGERt"
+              transitTierUploadTimestamp = 1714708939862
+            }
+            width = 2521
+          }
+          wasDownloaded = true
+        }
+      ]
+      text = Text {
+        body = "antiopam"
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 2
+    chatId = 4
+    dateSent = 1739430820876
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      simpleUpdate = SimpleChatUpdate {
+        type = Type.RELEASE_CHANNEL_DONATION_REQUEST
+      }
+    }
+  }
+}
