@@ -1,0 +1,214 @@
+// This file was auto-generated! It's only meant to show you what's in the .binproto. Do not edit!
+
+BackupInfo {
+  backupTimeMs = 1715636551000
+  currentAppVersion = "FooClient 2.0.0"
+  debugInfo = <>
+  firstAppVersion = "FooClient 1.0.0"
+  mediaRootBackupKey = <8fba3ce1946b78a4ca0d9229ddb050a12702072309d6574ae12451269e5fdbb2>
+  version = 1
+}
+
+Frame {
+  account = AccountData {
+    accountSettings = AccountSettings {
+      appTheme = AppTheme.SYSTEM
+      autoDownloadSettings = AutoDownloadSettings {
+        audio = AutoDownloadOption.WIFI_AND_CELLULAR
+        documents = AutoDownloadOption.WIFI
+        images = AutoDownloadOption.WIFI_AND_CELLULAR
+        video = AutoDownloadOption.WIFI
+      }
+      callsUseLessDataSetting = CallsUseLessDataSetting.NEVER
+      customChatColors = [
+        CustomChatColor {
+          id = 1
+          solid = -16777216
+        },
+        CustomChatColor {
+          id = 2
+          solid = -65536
+        },
+        CustomChatColor {
+          id = 3
+          solid = -16711936
+        }
+      ]
+      defaultSentMediaQuality = SentMediaQuality.STANDARD
+      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
+      hasSeenGroupStoryEducationSheet = true
+      hasSetMyStoriesPrivacy = true
+      hasViewedOnboardingStory = true
+      keepMutedChatsArchived = true
+      linkPreviews = true
+      notDiscoverableByPhoneNumber = true
+      phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      preferContactAvatars = true
+      preferredReactionEmoji = [
+        "a",
+        "b",
+        "c"
+      ]
+      readReceipts = true
+      sealedSenderIndicators = true
+      storiesDisabled = true
+      storyViewReceiptsEnabled = true
+      typingIndicators = true
+      universalExpireTimerSeconds = 3600
+    }
+    avatarUrlPath = ""
+    bioEmoji = ""
+    bioText = ""
+    donationSubscriberData = SubscriberData {
+      currencyCode = "USD"
+      manuallyCancelled = true
+      subscriberId = <ecbb68c734331a2ea333cda747c98c4553652261582b4fce5ae0dea84dce6519>
+    }
+    familyName = "Fett"
+    givenName = "Boba"
+    profileKey = <610291abedc34249489da39a31c9a5cd99cdd26ff58732e268e357ee0075d9d8>
+    svrPin = ""
+    username = "boba_fett.66"
+    usernameLink = UsernameLink {
+      color = Color.OLIVE
+      entropy = <65675c73d00eb01005e3bb7c4a47f296cb6554f78981238815e915d824fd2e93>
+      serverId = <61c101a200d5421789c20518d8497af0>
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 1
+    self = Self {
+      avatarColor = AvatarColor.A210
+    }
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    id = 2
+    releaseNotes = ReleaseNotes {}
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    distributionList = DistributionListItem {
+      distributionId = <00000000000000000000000000000000>
+      distributionList = DistributionList {
+        name = ""
+        privacyMode = PrivacyMode.ALL
+      }
+    }
+    id = 3
+  }
+}
+
+Frame {
+  recipient = Recipient {
+    contact = Contact {
+      aci = <000a11ce000040008000000000000001>
+      avatarColor = AvatarColor.A110
+      e164 = 16105550101
+      identityKey = <05ea7585ab4f6de1913af6059f69b50ad26c55af2779e31bde58dec8ba165e164e>
+      identityState = IdentityState.DEFAULT
+      note = ""
+      pni = <000a11ce000040008000000000000002>
+      profileFamilyName = "Smith"
+      profileGivenName = "Alice"
+      profileKey = <d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d75d>
+      registered = Registered {}
+      systemFamilyName = ""
+      systemGivenName = ""
+      systemNickname = ""
+      visibility = Visibility.VISIBLE
+    }
+    id = 4
+  }
+}
+
+Frame {
+  chat = Chat {
+    expireTimerVersion = 1
+    id = 2
+    recipientId = 4
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 2
+    dateSent = 1696183957714
+    outgoing = OutgoingMessageDetails {
+      dateReceived = 1700984146925
+      sendStatus = [
+        SendStatus {
+          recipientId = 4
+          sent = Sent {}
+          timestamp = 1830930358412
+        }
+      ]
+    }
+    pinDetails = PinDetails {
+      pinExpiresAtTimestamp = 1848078849975
+      pinnedAtTimestamp = 1813169575916
+    }
+    standardMessage = StandardMessage {
+      attachments = [
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
+            contentType = "video/mp4"
+            fileName = "iqzDNPn"
+            locatorInfo = LocatorInfo {
+              key = <91f30119c0d5644ec979811fff633701f45a0a51f398be7e72754494dab73df6b549f5d780a217b6d82a2b79aeda233c8ec8b7a4c8826207fd8bfef53c199310>
+              plaintextHash = <81b6e8908aed884a50a53b5413559bd194275d6f24601d90cd3c3fdbf1793a03>
+              size = 2095994206
+              transitCdnKey = "ypjDLUUk"
+              transitCdnNumber = 2
+              transitTierUploadTimestamp = 1715084651268
+            }
+          }
+          wasDownloaded = true
+        },
+        MessageAttachment {
+          clientUuid = <edb9592fb6044d368b403cb38ae01b5b>
+          flag = Flag.NONE
+          pointer = FilePointer {
+            blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
+            caption = ""
+            contentType = "image/jpeg"
+            fileName = "CyaCBGAz"
+            height = 3784
+            locatorInfo = LocatorInfo {
+              key = <>
+            }
+            width = 2970
+          }
+        },
+        MessageAttachment {
+          flag = Flag.NONE
+          pointer = FilePointer {
+            contentType = "image/jpeg"
+            locatorInfo = LocatorInfo {
+              key = <18b0df35d2dda82a4ffea322fd2aa72b0a038863ebb03fed8486f4196b6e656c0977166fd3faf51e18e707cf7cb4446159fb651a953525dd5da9aa792ff23f31>
+              plaintextHash = <ff5ee0b3877862d96ce3c17322ad4bfac6e10859fb70db9f128ab0196d6be1c6>
+              size = 69473937
+              transitCdnKey = "ypjDLUUk"
+              transitTierUploadTimestamp = 1715084651268
+            }
+          }
+          wasDownloaded = true
+        }
+      ]
+      text = Text {
+        body = "QNEWGrAzrHYkF"
+      }
+    }
+  }
+}

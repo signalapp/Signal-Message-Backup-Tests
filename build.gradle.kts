@@ -8,6 +8,13 @@ plugins {
 repositories {
   mavenCentral()
   mavenLocal()
+  maven {
+    name = "SignalBuildArtifacts"
+    url = uri("https://build-artifacts.signal.org/libraries/maven/")
+    content {
+      includeGroupByRegex("org\\.signal.*")
+    }
+  }
 }
 
 wire {
@@ -19,7 +26,7 @@ application {
 }
 
 dependencies {
-  implementation("org.signal:libsignal-client:0.86.5")
+  implementation("org.signal:libsignal-client:0.86.8")
   implementation("com.thedeanda:lorem:2.2")
   implementation(kotlin("reflect"))
 }
