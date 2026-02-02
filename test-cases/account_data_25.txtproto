@@ -12,7 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
-      allowSealedSenderFromAnyone = true
+      allowAutomaticKeyVerification = true
       appTheme = AppTheme.LIGHT
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI
@@ -25,18 +25,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -4896335
+          solid = -4154540
         },
         CustomChatColor {
           id = 2
-          solid = -8329015
+          solid = -15788018
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 218
+            angle = 165
             colors = [
-              -11625524,
-              -2101757
+              -14863127,
+              -11485698
             ]
             positions = [
               0.0,
@@ -48,33 +48,34 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         customColorId = 2
-        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.GRADIENT_BLISS
       }
       defaultSentMediaQuality = SentMediaQuality.HIGH
-      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
+      linkPreviews = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
-      readReceipts = true
       screenLockTimeoutMinutes = 1
+      sealedSenderIndicators = true
       storiesDisabled = true
-      storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 694141765
+      universalExpireTimerSeconds = 1260953299
     }
-    avatarUrlPath = "https://signal.org/budVyDygxM"
+    avatarUrlPath = "https://signal.org/udVyDygxMhyZCT"
     bioEmoji = "💀"
-    bioText = "metus penatibus tation viris ignota detracto himenaeos"
+    bioText = "mi singulis falli eros porro"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
-      subscriberId = <d4acf856cb64e960fcd58ca580b80888e681e323c607d5959f6b63ece7730df0>
+      manuallyCancelled = true
+      subscriberId = <e18f7cb990b27d334c2044a3d4acf856cb64e960fcd58ca580b80888e681e323>
     }
-    familyName = "Bridges"
-    givenName = "Michele"
-    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
+    familyName = "Wyatt"
+    givenName = "Lois"
+    keyTransparencyData = <023354c1c58b8bdb65b292d0fbfd03cef547a36774f7b594a5a5b7db5756287fd9d0ef45731ddfba674ec6f3bac14fed8832849e10f3a33700205ee8e14dd5d6>
+    profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>
     svrPin = "1234"
     username = "irvin.4656"
     usernameLink = UsernameLink {

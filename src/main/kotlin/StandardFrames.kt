@@ -118,7 +118,9 @@ object StandardFrames {
           )
         ),
         appTheme = AccountData.AppTheme.SYSTEM,
-        callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER
+        callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER,
+        allowSealedSenderFromAnyone = false,
+        allowAutomaticKeyVerification = true
       )
     )
   )

@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      allowSealedSenderFromAnyone = true
       appTheme = AppTheme.DARK
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI_AND_CELLULAR
@@ -24,18 +25,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -15706209
+          solid = -5160699
         },
         CustomChatColor {
           id = 2
-          solid = -5609147
+          solid = -3560794
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 10
+            angle = 344
             colors = [
-              -5222363,
-              -7885081
+              -3364091,
+              -16545670
             ]
             positions = [
               0.0,
@@ -47,29 +48,30 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_TEAL
+        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.SOLID_COPPER
       }
       defaultSentMediaQuality = SentMediaQuality.STANDARD
-      hasCompletedUsernameOnboarding = true
+      displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
-      linkPreviews = true
       notDiscoverableByPhoneNumber = true
       optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
-      sealedSenderIndicators = true
-      universalExpireTimerSeconds = 1995618975
+      readReceipts = true
+      storyViewReceiptsEnabled = true
+      universalExpireTimerSeconds = 313025179
     }
-    avatarUrlPath = "https://signal.org/yZCTrFaZqBnUUi"
+    avatarUrlPath = "https://signal.org/FaZqBn"
     backupsSubscriberData = IAPSubscriberData {
       purchaseToken = "HyuLGdFwzenI"
       subscriberId = <9c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e10411f6e>
     }
     bioEmoji = "👍🏾"
-    bioText = "eloquentiam intellegebat non pulvinar"
+    bioText = "metus penatibus tation viris ignota detracto himenaeos"
     familyName = ""
     givenName = ""
-    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
+    profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>
     svrPin = "안녕하세요, 세계"
     username = "marjorie.07"
     usernameLink = UsernameLink {

@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      allowSealedSenderFromAnyone = true
       appTheme = AppTheme.LIGHT
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI
@@ -24,18 +25,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -4896335
+          solid = -4154540
         },
         CustomChatColor {
           id = 2
-          solid = -8329015
+          solid = -15788018
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 218
+            angle = 165
             colors = [
-              -11625524,
-              -2101757
+              -14863127,
+              -11485698
             ]
             positions = [
               0.0,
@@ -47,6 +48,7 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_VERMILION
+        dimWallpaperInDarkMode = true
         wallpaperPhoto = FilePointer {
           blurHash = "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6"
           contentType = "image/png"
@@ -59,21 +61,21 @@ Frame {
         }
       }
       defaultSentMediaQuality = SentMediaQuality.STANDARD
-      hasCompletedUsernameOnboarding = true
+      displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
-      linkPreviews = true
       notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
-      sealedSenderIndicators = true
-      universalExpireTimerSeconds = 694141765
+      readReceipts = true
+      storyViewReceiptsEnabled = true
+      universalExpireTimerSeconds = 1260953299
     }
-    avatarUrlPath = "https://signal.org/budVyDygxM"
+    avatarUrlPath = "https://signal.org/udVyDygxMhyZCT"
     bioEmoji = "👩‍💻"
-    bioText = "metus penatibus tation viris ignota detracto himenaeos"
+    bioText = "mi singulis falli eros porro"
     familyName = ""
     givenName = ""
-    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
+    profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>
     svrPin = ""
     username = "irvin.4656"
     usernameLink = UsernameLink {

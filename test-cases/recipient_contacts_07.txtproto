@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      allowAutomaticKeyVerification = true
       appTheme = AppTheme.SYSTEM
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI_AND_CELLULAR
@@ -116,6 +117,7 @@ Frame {
       e164 = 12255550184
       identityKey = <05dee2f65c1c9a51a0f5667a56aca18c43e56684e6719dfffa904591dcb227971f>
       identityState = IdentityState.VERIFIED
+      keyTransparencyData = <8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d2951>
       nickname = Name {
         family = "Banks"
         given = "Pamela"

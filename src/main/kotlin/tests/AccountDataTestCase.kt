@@ -60,6 +60,7 @@ object AccountDataTestCase : TestCase("account_data") {
     val candidateBackupsSubscriberData = some(backupsSubscriberDataGenerator)
     val backupsSubscriberData = if (backupTier != 200L) candidateBackupsSubscriberData else null
     val optimizeOnDeviceStorage = someBoolean()
+    val allowAutomaticVerification = someBoolean()
 
     frames += Frame(
       account = AccountData(
@@ -145,11 +146,13 @@ object AccountDataTestCase : TestCase("account_data") {
           pinReminders = someBoolean(),
           appTheme = someEnum(AccountData.AppTheme::class.java, excluding = AccountData.AppTheme.UNKNOWN_APP_THEME),
           callsUseLessDataSetting = someEnum(AccountData.CallsUseLessDataSetting::class.java, excluding = AccountData.CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING),
-          allowSealedSenderFromAnyone = someBoolean()
+          allowSealedSenderFromAnyone = someBoolean(),
+          allowAutomaticKeyVerification = allowAutomaticVerification
         ),
         backupsSubscriberData = backupsSubscriberData,
         bioText = some(Generators.textBody(minWords = 1, maxWords = 5)),
-        bioEmoji = someEmoji()
+        bioEmoji = someEmoji(),
+        keyTransparencyData = someNullableBytes(64)?.toByteString().takeIf { allowAutomaticVerification }
       )
     )
 

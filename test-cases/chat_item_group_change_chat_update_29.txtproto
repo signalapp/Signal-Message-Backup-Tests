@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      allowAutomaticKeyVerification = true
       appTheme = AppTheme.SYSTEM
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI_AND_CELLULAR

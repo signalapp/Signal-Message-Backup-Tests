@@ -12,7 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
-      allowSealedSenderFromAnyone = true
+      allowAutomaticKeyVerification = true
       appTheme = AppTheme.SYSTEM
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.NEVER
@@ -24,18 +24,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -7981376
+          solid = -2774941
         },
         CustomChatColor {
           id = 2
-          solid = -4769265
+          solid = -6300813
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 241
+            angle = 88
             colors = [
-              -16037347,
-              -7635376
+              -9842508,
+              -14346057
             ]
             positions = [
               0.0,
@@ -47,36 +47,37 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_BLUE
-        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.SOLID_DUST
       }
       defaultSentMediaQuality = SentMediaQuality.HIGH
-      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
+      linkPreviews = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
-      readReceipts = true
       screenLockTimeoutMinutes = 1
+      sealedSenderIndicators = true
       storiesDisabled = true
-      storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 1157010821
+      universalExpireTimerSeconds = 1260152755
     }
     avatarUrlPath = ""
     backupsSubscriberData = IAPSubscriberData {
       subscriberId = <28a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1>
     }
     bioEmoji = "👩‍💻"
-    bioText = "elit mi singulis falli eros porro"
+    bioText = "ignota iudicabit ocurreret"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
-      subscriberId = <d4acf856cb64e960fcd58ca580b80888e681e323c607d5959f6b63ece7730df0>
+      manuallyCancelled = true
+      subscriberId = <e18f7cb990b27d334c2044a3d4acf856cb64e960fcd58ca580b80888e681e323>
     }
-    familyName = "Bridges"
-    givenName = "Michele"
-    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
+    familyName = "Wyatt"
+    givenName = "Lois"
+    keyTransparencyData = <023354c1c58b8bdb65b292d0fbfd03cef547a36774f7b594a5a5b7db5756287fd9d0ef45731ddfba674ec6f3bac14fed8832849e10f3a33700205ee8e14dd5d6>
+    profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>
     svrPin = ""
   }
 }

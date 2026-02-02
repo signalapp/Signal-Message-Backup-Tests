@@ -12,7 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
-      allowSealedSenderFromAnyone = true
+      allowAutomaticKeyVerification = true
       appTheme = AppTheme.DARK
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.WIFI_AND_CELLULAR
@@ -25,18 +25,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -15706209
+          solid = -5160699
         },
         CustomChatColor {
           id = 2
-          solid = -5609147
+          solid = -3560794
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 10
+            angle = 344
             colors = [
-              -5222363,
-              -7885081
+              -3364091,
+              -16545670
             ]
             positions = [
               0.0,
@@ -48,7 +48,6 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         bubbleColorPreset = BubbleColorPreset.SOLID_BURLAP
-        dimWallpaperInDarkMode = true
         wallpaperPhoto = FilePointer {
           blurHash = "LJR,66e.~Cxu%LoLM|S2%3WWIosm"
           contentType = "image/jpeg"
@@ -60,33 +59,35 @@ Frame {
         }
       }
       defaultSentMediaQuality = SentMediaQuality.HIGH
-      displayBadgesOnProfile = true
+      hasCompletedUsernameOnboarding = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
+      linkPreviews = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
-      readReceipts = true
       screenLockTimeoutMinutes = 1
+      sealedSenderIndicators = true
       storiesDisabled = true
-      storyViewReceiptsEnabled = true
       typingIndicators = true
-      universalExpireTimerSeconds = 1995618975
+      universalExpireTimerSeconds = 313025179
     }
-    avatarUrlPath = "https://signal.org/yZCTrFaZqBnUUi"
+    avatarUrlPath = "https://signal.org/FaZqBn"
     backupsSubscriberData = IAPSubscriberData {
       originalTransactionId = 7649816532921440778
       subscriberId = <505b2d0c464633445cb1f9a68a644847e660b3fbea8e9fff77a691f7effe2df5>
     }
     bioEmoji = "💀"
-    bioText = "eloquentiam intellegebat non pulvinar"
+    bioText = "metus penatibus tation viris ignota detracto himenaeos"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
-      subscriberId = <d4acf856cb64e960fcd58ca580b80888e681e323c607d5959f6b63ece7730df0>
+      manuallyCancelled = true
+      subscriberId = <e18f7cb990b27d334c2044a3d4acf856cb64e960fcd58ca580b80888e681e323>
     }
-    familyName = "Bridges"
-    givenName = "Michele"
-    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
+    familyName = "Wyatt"
+    givenName = "Lois"
+    keyTransparencyData = <023354c1c58b8bdb65b292d0fbfd03cef547a36774f7b594a5a5b7db5756287fd9d0ef45731ddfba674ec6f3bac14fed8832849e10f3a33700205ee8e14dd5d6>
+    profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>
     svrPin = "1234"
     username = "marjorie.07"
     usernameLink = UsernameLink {

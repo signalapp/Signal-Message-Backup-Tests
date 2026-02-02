@@ -12,6 +12,7 @@ BackupInfo {
 Frame {
   account = AccountData {
     accountSettings = AccountSettings {
+      allowSealedSenderFromAnyone = true
       appTheme = AppTheme.SYSTEM
       autoDownloadSettings = AutoDownloadSettings {
         audio = AutoDownloadOption.NEVER
@@ -23,18 +24,18 @@ Frame {
       customChatColors = [
         CustomChatColor {
           id = 1
-          solid = -7981376
+          solid = -2774941
         },
         CustomChatColor {
           id = 2
-          solid = -4769265
+          solid = -6300813
         },
         CustomChatColor {
           gradient = Gradient {
-            angle = 241
+            angle = 88
             colors = [
-              -16037347,
-              -7635376
+              -9842508,
+              -14346057
             ]
             positions = [
               0.0,
@@ -46,24 +47,25 @@ Frame {
       ]
       defaultChatStyle = ChatStyle {
         customColorId = 1
+        dimWallpaperInDarkMode = true
         wallpaperPreset = WallpaperPreset.GRADIENT_MONSTERA
       }
       defaultSentMediaQuality = SentMediaQuality.STANDARD
-      hasCompletedUsernameOnboarding = true
+      displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
-      linkPreviews = true
       notDiscoverableByPhoneNumber = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
-      sealedSenderIndicators = true
-      universalExpireTimerSeconds = 1157010821
+      readReceipts = true
+      storyViewReceiptsEnabled = true
+      universalExpireTimerSeconds = 1260152755
     }
     avatarUrlPath = ""
     bioEmoji = "👩‍💻"
-    bioText = "elit mi singulis falli eros porro"
+    bioText = "ignota iudicabit ocurreret"
     familyName = ""
     givenName = ""
-    profileKey = <a2c95354552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c>
+    profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>
     svrPin = ""
     username = "frieda.3662"
     usernameLink = UsernameLink {
