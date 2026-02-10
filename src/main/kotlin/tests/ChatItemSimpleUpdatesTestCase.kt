@@ -24,7 +24,7 @@ object ChatItemSimpleUpdatesTestCase : TestCase("chat_item_simple_updates") {
     val timestamp = someIncrementingTimestamp()
     val dateSentTimestamps = listOf(timestamp, timestamp + 1000)
 
-    val simpleChatUpdate = someEnum(SimpleChatUpdate.Type::class.java, excluding = SimpleChatUpdate.Type.UNKNOWN)
+    val simpleChatUpdate = someEnum(SimpleChatUpdate.Type::class.java, excluding = listOf(SimpleChatUpdate.Type.RELEASE_CHANNEL_DONATION_REQUEST, SimpleChatUpdate.Type.UNKNOWN))
 
     val selfRecipientId = StandardFrames.recipientSelf.recipient!!.id
     val aliceRecipientId = StandardFrames.recipientAlice.recipient!!.id

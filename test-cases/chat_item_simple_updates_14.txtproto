@@ -147,7 +147,7 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
-        type = Type.UNBLOCKED
+        type = Type.MESSAGE_REQUEST_ACCEPTED
       }
     }
   }

@@ -147,7 +147,7 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
-        type = Type.PAYMENTS_ACTIVATED
+        type = Type.PAYMENT_ACTIVATION_REQUEST
       }
     }
   }
@@ -161,7 +161,7 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
-        type = Type.PAYMENTS_ACTIVATED
+        type = Type.PAYMENT_ACTIVATION_REQUEST
       }
     }
   }

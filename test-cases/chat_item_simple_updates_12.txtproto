@@ -147,7 +147,7 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
-        type = Type.REPORTED_SPAM
+        type = Type.BLOCKED
       }
     }
   }

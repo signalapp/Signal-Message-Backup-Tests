@@ -147,21 +147,7 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
-        type = Type.UNSUPPORTED_PROTOCOL_MESSAGE
-      }
-    }
-  }
-}
-
-Frame {
-  chatItem = ChatItem {
-    authorId = 4
-    chatId = 2
-    dateSent = 1833527072203
-    directionless = DirectionlessMessageDetails {}
-    updateMessage = ChatUpdateMessage {
-      simpleUpdate = SimpleChatUpdate {
-        type = Type.UNSUPPORTED_PROTOCOL_MESSAGE
+        type = Type.REPORTED_SPAM
       }
     }
   }

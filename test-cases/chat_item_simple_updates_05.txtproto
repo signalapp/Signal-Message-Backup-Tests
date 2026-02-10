@@ -140,22 +140,28 @@ Frame {
 }
 
 Frame {
-  chat = Chat {
-    expireTimerVersion = 1
-    id = 4
-    recipientId = 2
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 2
+    dateSent = 1833527071197
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      simpleUpdate = SimpleChatUpdate {
+        type = Type.END_SESSION
+      }
+    }
   }
 }
 
 Frame {
   chatItem = ChatItem {
-    authorId = 2
-    chatId = 4
-    dateSent = 1833527071197
+    authorId = 4
+    chatId = 2
+    dateSent = 1833527072197
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
-        type = Type.RELEASE_CHANNEL_DONATION_REQUEST
+        type = Type.END_SESSION
       }
     }
   }

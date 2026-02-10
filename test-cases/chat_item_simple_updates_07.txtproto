@@ -147,7 +147,21 @@ Frame {
     directionless = DirectionlessMessageDetails {}
     updateMessage = ChatUpdateMessage {
       simpleUpdate = SimpleChatUpdate {
-        type = Type.CHAT_SESSION_REFRESH
+        type = Type.BAD_DECRYPT
+      }
+    }
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 4
+    chatId = 2
+    dateSent = 1833527072199
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      simpleUpdate = SimpleChatUpdate {
+        type = Type.BAD_DECRYPT
       }
     }
   }
