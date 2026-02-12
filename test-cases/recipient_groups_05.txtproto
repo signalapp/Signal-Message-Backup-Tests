@@ -249,60 +249,35 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A150
-      masterKey = <b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb5ea278fd>
+      hideStory = true
+      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
-          addFromInviteLink = AccessRequired.UNSATISFIABLE
-          attributes = AccessRequired.ADMINISTRATOR
-          members = AccessRequired.ADMINISTRATOR
+          addFromInviteLink = AccessRequired.ADMINISTRATOR
+          attributes = AccessRequired.MEMBER
+          members = AccessRequired.MEMBER
         }
         announcements_only = true
-        avatarUrl = "https://signal.org/eTtfOMpdi"
-        description = GroupAttributeBlob {
-          descriptionText = "quod iudicabit auctor"
-        }
-        disappearingMessagesTimer = GroupAttributeBlob {
-          disappearingMessagesDuration = 2103644488
-        }
-        inviteLinkPassword = <7db665e567fdcb1ac685a8aedbd29cb42e984d652ed70996974af5a7a459650a>
+        avatarUrl = ""
+        inviteLinkPassword = <2e984d652ed70996974af5a7a459650a2590efd18c249edbc4fa0a5983c9e903>
         members = [
           Member {
-            role = Role.ADMINISTRATOR
-            userId = <00000b0b000040008000000000000001>
-          },
-          Member {
+            labelEmoji = ""
+            labelString = ""
             role = Role.DEFAULT
-            userId = <0000ca01000040008000000000000001>
+            userId = <000a11ce000040008000000000000001>
           },
           Member {
+            labelEmoji = ""
+            labelString = ""
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }
         ]
-        membersPendingAdminApproval = [
-          MemberPendingAdminApproval {
-            userId = <000000ee000040008000000000000001>
-          }
-        ]
-        membersPendingProfileKey = [
-          MemberPendingProfileKey {
-            addedByUserId = <000a11ce000040008000000000000001>
-            member = Member {
-              role = Role.DEFAULT
-              userId = <000000da000040008000000000000001>
-            }
-          }
-        ]
-        members_banned = [
-          MemberBanned {
-            timestamp = 1747591982256
-            userId = <000000fa000040008000000000000001>
-          }
-        ]
         title = GroupAttributeBlob {
-          title = "Congue Fastidii"
+          title = "Ut Cubilia"
         }
-        version = 1394492158
+        version = 957662124
       }
       storySendMode = StorySendMode.ENABLED
     }
@@ -312,7 +287,6 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 2103644488000
     expireTimerVersion = 1
     id = 1
     recipientId = 10

@@ -192,18 +192,26 @@ Frame {
         inviteLinkPassword = <>
         members = [
           Member {
+            labelEmoji = ""
+            labelString = ""
             role = Role.ADMINISTRATOR
             userId = <00000000000040008000000000000001>
           },
           Member {
+            labelEmoji = ""
+            labelString = ""
             role = Role.DEFAULT
             userId = <000a11ce000040008000000000000001>
           },
           Member {
+            labelEmoji = ""
+            labelString = ""
             role = Role.DEFAULT
             userId = <00000b0b000040008000000000000001>
           },
           Member {
+            labelEmoji = ""
+            labelString = ""
             role = Role.DEFAULT
             userId = <0000ca01000040008000000000000001>
           }

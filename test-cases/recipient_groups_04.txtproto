@@ -249,30 +249,40 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A140
-      hideStory = true
-      masterKey = <b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb5ea278fd>
+      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
           attributes = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
-        avatarUrl = ""
-        inviteLinkPassword = <0c22bad9944dc49190adabba8a72bebb4db939e0342ae035ddbe7fe465fdb345>
+        announcements_only = true
+        avatarUrl = "https://signal.org/eTtfOMpdi"
+        inviteLinkPassword = <94f0b995c11698bbfa7c60d5e22af1036fae5ece6f2fc4786f846a4ebe390edf>
         members = [
           Member {
+            labelEmoji = "💀"
+            labelString = "Tractatos Aenean"
             role = Role.DEFAULT
+            userId = <0000ca01000040008000000000000001>
+          },
+          Member {
+            labelEmoji = ""
+            labelString = ""
+            role = Role.ADMINISTRATOR
             userId = <000a11ce000040008000000000000001>
           },
           Member {
+            labelEmoji = ""
+            labelString = "Appareat Dicunt"
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }
         ]
         title = GroupAttributeBlob {
-          title = "Ut Cubilia"
+          title = "Congue Fastidii"
         }
-        version = 957662124
+        version = 1394492158
       }
       storySendMode = StorySendMode.DISABLED
       whitelisted = true

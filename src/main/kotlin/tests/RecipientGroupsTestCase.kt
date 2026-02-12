@@ -8,6 +8,7 @@ import asList
 import map
 import okio.ByteString.Companion.toByteString
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import kotlin.collections.plus
 
 /**
  * Every reasonable permutation of Recipient.Group
@@ -48,19 +49,7 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
           addFromInviteLink = someEnum(Group.AccessControl.AccessRequired::class.java, Group.AccessControl.AccessRequired.UNKNOWN, Group.AccessControl.AccessRequired.ANY, Group.AccessControl.AccessRequired.MEMBER)
         ),
         version = somePositiveInt(),
-        members = Generators.permutation<Group.Member> {
-          val userGenerator: Generator<Contact> = Generators.list(StandardFrames.recipientAlice.recipient!!.contact!!, StandardFrames.recipientBob.recipient!!.contact!!, StandardFrames.recipientCarol.recipient!!.contact!!)
-          val user = some(userGenerator)
-          frames += Group.Member(
-            userId = user.aci!!,
-            role = someEnum(Group.Member.Role::class.java, excluding = Group.Member.Role.UNKNOWN)
-          )
-        }.asList(1, 2, 3).map { members ->
-          members + Group.Member(
-            userId = StandardFrames.SELF_ACI.toByteString(),
-            role = Group.Member.Role.DEFAULT
-          )
-        }.let { some(it) },
+        members = generateMembers(),
         membersPendingProfileKey = Generators.permutation<Group.MemberPendingProfileKey> {
           frames += Group.MemberPendingProfileKey(
             member = Group.Member(
@@ -122,3 +111,46 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
     )
   }
 }
+
+private fun PermutationScope.generateMembers(): List<Group.Member> = some(
+  memberGenerator()
+    .asList(1, 2, 3)
+    .map { members ->
+      val label = someMemberLabel()
+      val self = Group.Member(
+        userId = StandardFrames.SELF_ACI.toByteString(),
+        role = Group.Member.Role.DEFAULT,
+        labelEmoji = label.emoji,
+        labelString = label.string
+      )
+      members + self
+    }
+)
+
+private fun memberGenerator(): Generator<Group.Member> = Generators.permutation {
+  val userGenerator: Generator<Contact> = Generators.list(
+    StandardFrames.recipientAlice.recipient!!.contact!!,
+    StandardFrames.recipientBob.recipient!!.contact!!,
+    StandardFrames.recipientCarol.recipient!!.contact!!
+  )
+
+  val user = some(userGenerator)
+  val label = someMemberLabel()
+
+  frames += Group.Member(
+    userId = user.aci!!,
+    role = someEnum(Group.Member.Role::class.java, excluding = Group.Member.Role.UNKNOWN),
+    labelEmoji = label.emoji,
+    labelString = label.string
+  )
+}
+
+private fun PermutationScope.someMemberLabel(): MemberLabel = some(
+  Generators.list(
+    MemberLabel(emoji = "", string = ""),
+    MemberLabel(emoji = "", string = some(Generators.titles())),
+    MemberLabel(emoji = some(Generators.emoji()), string = some(Generators.titles()))
+  )
+)
+
+private data class MemberLabel(val emoji: String, val string: String)

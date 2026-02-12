@@ -249,14 +249,14 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A120
-      hideStory = true
-      masterKey = <b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb5ea278fd>
+      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
           attributes = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
+        announcements_only = true
         avatarUrl = "https://signal.org/ZOYWfDTgpIJqyS"
         description = GroupAttributeBlob {
           descriptionText = "docendi proin reformidans oratio rhoncus"
@@ -264,21 +264,29 @@ Frame {
         disappearingMessagesTimer = GroupAttributeBlob {
           disappearingMessagesDuration = 182310711
         }
-        inviteLinkPassword = <1d4aadc91b5463098f179c50eabc0dacb6f894ff2dcd51a027f66df3e403f1bd>
+        inviteLinkPassword = <1aa0600d06b623beedfe97d11af854fc6f4642e44c8239eac2dc7b0cd0753532>
         members = [
           Member {
+            labelEmoji = ""
+            labelString = ""
+            role = Role.ADMINISTRATOR
+            userId = <000a11ce000040008000000000000001>
+          },
+          Member {
+            labelEmoji = ""
+            labelString = "Ferri Altera"
+            role = Role.DEFAULT
+            userId = <00000b0b000040008000000000000001>
+          },
+          Member {
+            labelEmoji = ""
+            labelString = ""
             role = Role.DEFAULT
             userId = <000a11ce000040008000000000000001>
           },
           Member {
-            role = Role.ADMINISTRATOR
-            userId = <00000b0b000040008000000000000001>
-          },
-          Member {
-            role = Role.DEFAULT
-            userId = <0000ca01000040008000000000000001>
-          },
-          Member {
+            labelEmoji = "💀"
+            labelString = "Invenire Alienum"
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }

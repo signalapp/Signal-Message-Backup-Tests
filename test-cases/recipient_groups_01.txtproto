@@ -249,14 +249,14 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A110
-      masterKey = <b63b3b0848ae92e6e00d51de27e38374784397640cc51a91522bafdb5ea278fd>
+      hideStory = true
+      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
           attributes = AccessRequired.ADMINISTRATOR
           members = AccessRequired.ADMINISTRATOR
         }
-        announcements_only = true
         avatarUrl = "https://signal.org/eTtfOMpdi"
         description = GroupAttributeBlob {
           descriptionText = "quod iudicabit auctor"
@@ -264,17 +264,23 @@ Frame {
         disappearingMessagesTimer = GroupAttributeBlob {
           disappearingMessagesDuration = 2103644488
         }
-        inviteLinkPassword = <7db665e567fdcb1ac685a8aedbd29cb42e984d652ed70996974af5a7a459650a>
+        inviteLinkPassword = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
         members = [
           Member {
+            labelEmoji = ""
+            labelString = "Ferri Altera"
             role = Role.ADMINISTRATOR
             userId = <00000b0b000040008000000000000001>
           },
           Member {
+            labelEmoji = "💀"
+            labelString = "Tractatos Aenean"
             role = Role.DEFAULT
             userId = <0000ca01000040008000000000000001>
           },
           Member {
+            labelEmoji = ""
+            labelString = "Appareat Dicunt"
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }
@@ -288,6 +294,8 @@ Frame {
           MemberPendingProfileKey {
             addedByUserId = <000a11ce000040008000000000000001>
             member = Member {
+              labelEmoji = ""
+              labelString = ""
               role = Role.DEFAULT
               userId = <000000da000040008000000000000001>
             }
@@ -295,7 +303,7 @@ Frame {
         ]
         members_banned = [
           MemberBanned {
-            timestamp = 1747591982256
+            timestamp = 1817646542563
             userId = <000000fa000040008000000000000001>
           }
         ]
