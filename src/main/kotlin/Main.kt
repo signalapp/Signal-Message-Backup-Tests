@@ -87,6 +87,11 @@ fun main(args: Array<String>) {
     return
   }
 
+  if (args[0] == "generate-local-backup") {
+    generateLocalBackup(args.drop(1))
+    return
+  }
+
   printHelp()
 }
 
@@ -105,13 +110,77 @@ private fun prettyPrintBackup(path: String) {
   println(prettyPrinted)
 }
 
+private fun generateLocalBackup(args: List<String>) {
+  var credentialsPath: String? = null
+  var outputDir: String = "local-backup-output"
+  var messageCount: Int = 500
+
+  val iter = args.iterator()
+  while (iter.hasNext()) {
+    when (val arg = iter.next()) {
+      "--credentials" -> credentialsPath = iter.next()
+      "--output" -> outputDir = iter.next()
+      "--messages" -> messageCount = iter.next().toInt()
+      else -> {
+        if (credentialsPath == null && !arg.startsWith("--")) {
+          credentialsPath = arg
+        } else {
+          System.err.println("Unknown argument: $arg")
+          printHelp()
+          return
+        }
+      }
+    }
+  }
+
+  if (credentialsPath == null) {
+    System.err.println("Error: credentials file path is required")
+    println()
+    printHelp()
+    return
+  }
+
+  val credentialsFile = File(credentialsPath)
+  if (!credentialsFile.exists()) {
+    System.err.println("Error: credentials file not found: $credentialsPath")
+    return
+  }
+
+  val json = credentialsFile.readText()
+  val aep = Regex(""""accountEntropyPool"\s*:\s*"([^"]+)"""").find(json)?.groupValues?.get(1)
+  val aci = Regex(""""aci"\s*:\s*"([^"]+)"""").find(json)?.groupValues?.get(1)
+
+  if (aep == null) {
+    System.err.println("Error: 'accountEntropyPool' not found in credentials file. Make sure your credentials were exported with AEP support.")
+    return
+  }
+
+  if (aci == null) {
+    System.err.println("Error: 'aci' not found in credentials file.")
+    return
+  }
+
+  val output = File(outputDir)
+  LocalBackupGenerator.generate(aep, aci, output, messageCount)
+}
+
 private fun printHelp() {
   println("Usage:")
   println("  If no command is supplied, this will generate tests.")
   println("")
   println("Commands:")
   println("  generate-tests\t\tGenerates test cases")
-  println("  print\t\tPrints out a readable plaintext version of a plaintext, ungzipped backup file")
+  println("  print <path>\t\t\tPrints out a readable plaintext version of a plaintext, ungzipped backup file")
+  println("  generate-local-backup\t\tGenerates an encrypted local backup for quickstart restore")
+  println("")
+  println("generate-local-backup options:")
+  println("  <credentials-path>\t\tPath to quickstart credentials JSON (required)")
+  println("  --credentials <path>\t\tAlternate way to specify credentials path")
+  println("  --output <dir>\t\tOutput directory (default: local-backup-output)")
+  println("  --messages <count>\t\tNumber of Note to Self messages (default: 500)")
+  println("")
+  println("Example:")
+  println("  generate-local-backup /sdcard/signal-quickstart/prod_credentials.json --messages 100")
 }
 
 private fun init() {
