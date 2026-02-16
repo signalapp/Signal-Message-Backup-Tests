@@ -234,7 +234,7 @@ object LocalBackupGenerator {
       frames += Frame(
         chatItem = ChatItem(
           chatId = noteToSelfChatId,
-          authorId = 1, // self
+          authorId = 1,
           dateSent = timestamp,
           outgoing = ChatItem.OutgoingMessageDetails(
             sendStatus = listOf(
