@@ -250,7 +250,7 @@ Frame {
     group = Group {
       avatarColor = AvatarColor.A170
       hideStory = true
-      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
+      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -265,29 +265,29 @@ Frame {
         disappearingMessagesTimer = GroupAttributeBlob {
           disappearingMessagesDuration = 182310711
         }
-        inviteLinkPassword = <1aa0600d06b623beedfe97d11af854fc6f4642e44c8239eac2dc7b0cd0753532>
+        inviteLinkPassword = <5a5e2a0ebbf3b28fce7fe14e67cf3896a63d519636c550250b2bed898a86bf52>
         members = [
           Member {
             labelEmoji = ""
             labelString = ""
-            role = Role.ADMINISTRATOR
+            role = Role.DEFAULT
             userId = <000a11ce000040008000000000000001>
           },
           Member {
             labelEmoji = ""
             labelString = "Ferri Altera"
-            role = Role.DEFAULT
+            role = Role.ADMINISTRATOR
             userId = <00000b0b000040008000000000000001>
           },
           Member {
-            labelEmoji = ""
-            labelString = ""
+            labelEmoji = "💀"
+            labelString = "Tractatos Aenean"
             role = Role.DEFAULT
-            userId = <000a11ce000040008000000000000001>
+            userId = <0000ca01000040008000000000000001>
           },
           Member {
             labelEmoji = "💀"
-            labelString = "Invenire Alienum"
+            labelString = "Suspendisse Propriae"
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }

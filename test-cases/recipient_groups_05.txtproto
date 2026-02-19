@@ -250,7 +250,7 @@ Frame {
     group = Group {
       avatarColor = AvatarColor.A150
       hideStory = true
-      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
+      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -259,7 +259,7 @@ Frame {
         }
         announcements_only = true
         avatarUrl = ""
-        inviteLinkPassword = <2e984d652ed70996974af5a7a459650a2590efd18c249edbc4fa0a5983c9e903>
+        inviteLinkPassword = <a7ed5289222d4808bdaadcf9eaa4908fc733c2440c3ae62e4a5aa0bbf67baa90>
         members = [
           Member {
             labelEmoji = ""

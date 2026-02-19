@@ -127,7 +127,7 @@ private fun PermutationScope.generateMembers(): List<Group.Member> = some(
     }
 )
 
-private fun memberGenerator(): Generator<Group.Member> = Generators.permutation {
+private fun memberGenerator(): Generator<Group.Member> = Generators.permutation(snapshotCount = 3) {
   val userGenerator: Generator<Contact> = Generators.list(
     StandardFrames.recipientAlice.recipient!!.contact!!,
     StandardFrames.recipientBob.recipient!!.contact!!,

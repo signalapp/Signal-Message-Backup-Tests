@@ -250,7 +250,7 @@ Frame {
     group = Group {
       avatarColor = AvatarColor.A110
       hideStory = true
-      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
+      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
@@ -264,7 +264,7 @@ Frame {
         disappearingMessagesTimer = GroupAttributeBlob {
           disappearingMessagesDuration = 2103644488
         }
-        inviteLinkPassword = <9279e8c805d886b98779cc84b63b3b0848ae92e6e00d51de27e3837478439764>
+        inviteLinkPassword = <1270a0dc3ef0b2b677d4e0eeaf3371028a04ed7271a429e076b8d33fcc659540>
         members = [
           Member {
             labelEmoji = ""
@@ -280,7 +280,7 @@ Frame {
           },
           Member {
             labelEmoji = ""
-            labelString = "Appareat Dicunt"
+            labelString = "Similique est"
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }
@@ -303,7 +303,7 @@ Frame {
         ]
         members_banned = [
           MemberBanned {
-            timestamp = 1817646542563
+            timestamp = 1731385689557
             userId = <000000fa000040008000000000000001>
           }
         ]

@@ -249,7 +249,7 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A140
-      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
+      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -258,8 +258,14 @@ Frame {
         }
         announcements_only = true
         avatarUrl = "https://signal.org/eTtfOMpdi"
-        inviteLinkPassword = <94f0b995c11698bbfa7c60d5e22af1036fae5ece6f2fc4786f846a4ebe390edf>
+        inviteLinkPassword = <3f401e4adf93d2e29614e293c3e76f4e185b9058efc1fa486e362a8bfe82fac4>
         members = [
+          Member {
+            labelEmoji = ""
+            labelString = "Ferri Altera"
+            role = Role.ADMINISTRATOR
+            userId = <00000b0b000040008000000000000001>
+          },
           Member {
             labelEmoji = "💀"
             labelString = "Tractatos Aenean"
@@ -268,13 +274,7 @@ Frame {
           },
           Member {
             labelEmoji = ""
-            labelString = ""
-            role = Role.ADMINISTRATOR
-            userId = <000a11ce000040008000000000000001>
-          },
-          Member {
-            labelEmoji = ""
-            labelString = "Appareat Dicunt"
+            labelString = "Similique est"
             role = Role.DEFAULT
             userId = <00000000000040008000000000000001>
           }

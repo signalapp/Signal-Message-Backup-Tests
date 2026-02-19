@@ -251,7 +251,7 @@ Frame {
       avatarColor = AvatarColor.A130
       blocked = true
       hideStory = true
-      masterKey = <d0955ce53ad73057e5ca44138205a13510c99b72528730f78ba88d777df97be2>
+      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
@@ -265,13 +265,13 @@ Frame {
         disappearingMessagesTimer = GroupAttributeBlob {
           disappearingMessagesDuration = 882815404
         }
-        inviteLinkPassword = <097ad9b4c06dcac60b2b6007c384678792b28a973f401e4adf93d2e29614e293>
+        inviteLinkPassword = <e14dd5d6df1bf0ae271eed9d640edd3bd1e1a6cfc758125a94372c26631f9ac1>
         members = [
           Member {
             labelEmoji = ""
-            labelString = "Ferri Altera"
-            role = Role.ADMINISTRATOR
-            userId = <00000b0b000040008000000000000001>
+            labelString = ""
+            role = Role.DEFAULT
+            userId = <000a11ce000040008000000000000001>
           },
           Member {
             labelEmoji = ""
@@ -298,7 +298,7 @@ Frame {
         ]
         members_banned = [
           MemberBanned {
-            timestamp = 1817646542564
+            timestamp = 1731385689558
             userId = <000000fa000040008000000000000001>
           }
         ]
