@@ -63,7 +63,8 @@ val ALL_TEST_CASES = listOf(
   ChatItemPollMultipleVoteTestCase,
   ChatItemPollTerminateUpdateTestCase,
   ChatItemPinMessageTestCase,
-  ChatItemPinMessageUpdateTestCase
+  ChatItemPinMessageUpdateTestCase,
+  ChatItemAdminDeletedTestCase
 )
 
 fun main(args: Array<String>) {
