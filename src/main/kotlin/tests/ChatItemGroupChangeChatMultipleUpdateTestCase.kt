@@ -14,10 +14,9 @@ import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
 import pni
-import toByteString
 
 /**
- * Reasonable permutations of [GroupChangeChatMultipleUpdate] objects.
+ * Reasonable permutations of [GroupChangeChatUpdate]s containing multiple batched updates.
  */
 object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group_change_chat_multiple_update") {
   override fun PermutationScope.execute() {
@@ -33,7 +32,7 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
     val groupMembersExcludingSelfGenerator = { Generators.list(StandardFrames.recipientAlice.aci, StandardFrames.recipientBob.aci) }
     val peopleNotInGroupGenerator = { Generators.list(StandardFrames.recipientCarol.aci, StandardFrames.recipientDan.aci) }
 
-    var updaterAci = StandardFrames.SELF_ACI.toByteString()
+    val updaterAci = StandardFrames.SELF_ACI.toByteString()
 
     val listOfGenerators = oneOf(
       // genericGroupUpdateGenerator,
@@ -201,6 +200,17 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
           requestorAci = StandardFrames.SELF_ACI.toByteString(),
           count = some(Generators.ints(1, 5))
         )
+      },
+
+      // groupMemberLabelAccessLevelChangeUpdateGenerator
+      Generators.permutation {
+        frames += GroupMemberLabelAccessLevelChangeUpdate(
+          updaterAci,
+          accessLevel = someEnum(
+            GroupV2AccessLevel::class.java,
+            excluding = listOf(GroupV2AccessLevel.UNKNOWN, GroupV2AccessLevel.ANY, GroupV2AccessLevel.UNSATISFIABLE)
+          )
+        )
       }
     )
 
@@ -244,6 +254,7 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
     val groupInviteLinkDisabledUpdateGenerator = listOfGenerators[20]
     val groupMemberJoinedByLinkUpdateGenerator = listOfGenerators[21]
     val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[22]
+    val groupMemberLabelAccessLevelChangeUpdateGenerator = listOfGenerators[23]
 
     val updates = Generators.permutation<GroupChangeChatUpdate.Update> {
       frames += GroupChangeChatUpdate.Update(
@@ -269,7 +280,8 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
         groupInviteLinkAdminApprovalUpdate = someOneOf(groupInviteLinkAdminApprovalUpdateGenerator),
         groupInviteLinkDisabledUpdate = someOneOf(groupInviteLinkDisabledUpdateGenerator),
         groupMemberJoinedByLinkUpdate = someOneOf(groupMemberJoinedByLinkUpdateGenerator),
-        groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator)
+        groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
+        groupMemberLabelAccessLevelChangeUpdate = someOneOf(groupMemberLabelAccessLevelChangeUpdateGenerator)
       )
     }
 

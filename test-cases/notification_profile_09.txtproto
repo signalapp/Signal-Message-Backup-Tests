@@ -163,6 +163,7 @@ Frame {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
           attributes = AccessRequired.MEMBER
+          memberLabel = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
         avatarUrl = "https://example.com/avatar.jpg"

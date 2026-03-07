@@ -254,6 +254,7 @@ Frame {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
           attributes = AccessRequired.MEMBER
+          memberLabel = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
         announcements_only = true

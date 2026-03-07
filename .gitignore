@@ -8,6 +8,7 @@ out/
 .gradle/
 build/
 kls_database.db
+local.properties
 
 ### Mac OS ###
 .DS_Store

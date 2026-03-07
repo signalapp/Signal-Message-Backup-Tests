@@ -281,7 +281,8 @@ object StandardFrames {
           accessControl = Group.AccessControl(
             attributes = Group.AccessControl.AccessRequired.MEMBER,
             members = Group.AccessControl.AccessRequired.MEMBER,
-            addFromInviteLink = Group.AccessControl.AccessRequired.UNSATISFIABLE
+            addFromInviteLink = Group.AccessControl.AccessRequired.UNSATISFIABLE,
+            memberLabel = Group.AccessControl.AccessRequired.MEMBER
           )
         ),
         avatarColor = AvatarColor.A170
@@ -336,7 +337,8 @@ object StandardFrames {
           accessControl = Group.AccessControl(
             attributes = Group.AccessControl.AccessRequired.MEMBER,
             members = Group.AccessControl.AccessRequired.MEMBER,
-            addFromInviteLink = Group.AccessControl.AccessRequired.UNSATISFIABLE
+            addFromInviteLink = Group.AccessControl.AccessRequired.UNSATISFIABLE,
+            memberLabel = Group.AccessControl.AccessRequired.MEMBER
           )
         ),
         avatarColor = AvatarColor.A170

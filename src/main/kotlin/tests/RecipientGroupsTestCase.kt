@@ -46,7 +46,8 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
         accessControl = Group.AccessControl(
           attributes = someEnum(Group.AccessControl.AccessRequired::class.java, Group.AccessControl.AccessRequired.UNKNOWN, Group.AccessControl.AccessRequired.ANY, Group.AccessControl.AccessRequired.UNSATISFIABLE),
           members = someEnum(Group.AccessControl.AccessRequired::class.java, Group.AccessControl.AccessRequired.UNKNOWN, Group.AccessControl.AccessRequired.ANY, Group.AccessControl.AccessRequired.UNSATISFIABLE),
-          addFromInviteLink = someEnum(Group.AccessControl.AccessRequired::class.java, Group.AccessControl.AccessRequired.UNKNOWN, Group.AccessControl.AccessRequired.ANY, Group.AccessControl.AccessRequired.MEMBER)
+          addFromInviteLink = someEnum(Group.AccessControl.AccessRequired::class.java, Group.AccessControl.AccessRequired.UNKNOWN, Group.AccessControl.AccessRequired.ANY, Group.AccessControl.AccessRequired.MEMBER),
+          memberLabel = someEnum(Group.AccessControl.AccessRequired::class.java, Group.AccessControl.AccessRequired.UNKNOWN, Group.AccessControl.AccessRequired.ANY, Group.AccessControl.AccessRequired.UNSATISFIABLE)
         ),
         version = somePositiveInt(),
         members = generateMembers(),

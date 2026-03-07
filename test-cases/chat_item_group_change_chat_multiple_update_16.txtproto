@@ -209,6 +209,7 @@ Frame {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
           attributes = AccessRequired.MEMBER
+          memberLabel = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
         avatarUrl = "https://example.com/avatar.jpg"
@@ -263,16 +264,15 @@ Frame {
       groupChange = GroupChangeChatUpdate {
         updates = [
           Update {
-            groupV2MigrationSelfInvitedUpdate = GroupV2MigrationSelfInvitedUpdate {}
-          },
-          Update {
-            groupV2MigrationInvitedMembersUpdate = GroupV2MigrationInvitedMembersUpdate {
-              invitedMembersCount = 2
+            groupMemberLabelAccessLevelChangeUpdate = GroupMemberLabelAccessLevelChangeUpdate {
+              accessLevel = GroupV2AccessLevel.MEMBER
+              updaterAci = <00000000000040008000000000000001>
             }
           },
           Update {
-            groupV2MigrationDroppedMembersUpdate = GroupV2MigrationDroppedMembersUpdate {
-              droppedMembersCount = 3
+            groupMemberLabelAccessLevelChangeUpdate = GroupMemberLabelAccessLevelChangeUpdate {
+              accessLevel = GroupV2AccessLevel.ADMINISTRATOR
+              updaterAci = <00000000000040008000000000000001>
             }
           }
         ]

@@ -10,8 +10,8 @@ import nullable
 import okio.ByteString.Companion.toByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.*
+import plus
 import pni
-import toByteString
 import kotlin.time.Duration.Companion.days
 import kotlin.time.Duration.Companion.minutes
 import kotlin.time.Duration.Companion.seconds
@@ -31,6 +31,7 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
     frames += StandardFrames.chatGroupAB
 
     val groupMembersExcludingSelfGenerator = { Generators.list(StandardFrames.recipientAlice.aci, StandardFrames.recipientBob.aci) }
+    val groupMembersIncludingSelfGenerator = { groupMembersExcludingSelfGenerator().plus(StandardFrames.SELF_ACI.toByteString()) }
     val peopleNotInGroupGenerator = { Generators.list(StandardFrames.recipientCarol.aci, StandardFrames.recipientDan.aci) }
 
     val listOfGenerators = oneOf(
@@ -259,6 +260,13 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
           updaterAci = some(groupMembersExcludingSelfGenerator()),
           expiresInMs = some(Generators.longs(lower = 5.minutes.inWholeSeconds, upper = 28.days.inWholeSeconds)).seconds.inWholeMilliseconds
         )
+      },
+      // groupMemberLabelAccessLevelChangeUpdateGenerator
+      Generators.permutation {
+        frames += GroupMemberLabelAccessLevelChangeUpdate(
+          updaterAci = some(groupMembersIncludingSelfGenerator()),
+          accessLevel = someEnum(GroupV2AccessLevel::class.java, excluding = listOf(GroupV2AccessLevel.UNKNOWN, GroupV2AccessLevel.ANY, GroupV2AccessLevel.UNSATISFIABLE))
+        )
       }
     )
 
@@ -296,6 +304,7 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
     val groupV2MigrationDroppedMembersUpdateGenerator = listOfGenerators[31]
     val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[32]
     val groupExpirationTimerUpdateGenerator = listOfGenerators[33]
+    val groupMemberLabelAccessLevelChangeUpdateGenerator = listOfGenerators[34]
     val updatesGenerator = Generators.permutation<GroupChangeChatUpdate.Update> {
       frames += GroupChangeChatUpdate.Update(
         genericGroupUpdate = someOneOf(genericGroupUpdateGenerator),
@@ -331,7 +340,8 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
         groupV2MigrationInvitedMembersUpdate = someOneOf(groupV2MigrationInvitedMembersUpdateGenerator),
         groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator),
         groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
-        groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator)
+        groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator),
+        groupMemberLabelAccessLevelChangeUpdate = someOneOf(groupMemberLabelAccessLevelChangeUpdateGenerator)
       )
     }
     frames += Frame(

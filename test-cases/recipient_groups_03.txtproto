@@ -256,6 +256,7 @@ Frame {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
           attributes = AccessRequired.ADMINISTRATOR
+          memberLabel = AccessRequired.ADMINISTRATOR
           members = AccessRequired.ADMINISTRATOR
         }
         avatarUrl = ""
