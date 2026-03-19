@@ -249,7 +249,7 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A200
-      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
+      masterKey = <185b9058efc1fa486e362a8bfe82fac40e9e6701fc72fbe76eb51ac08d871eb7>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -257,7 +257,7 @@ Frame {
           memberLabel = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
-        announcements_only = true
+        announcementsOnly = true
         avatarUrl = ""
         inviteLinkPassword = <a7ed5289222d4808bdaadcf9eaa4908fc733c2440c3ae62e4a5aa0bbf67baa90>
         members = [
@@ -274,6 +274,7 @@ Frame {
             userId = <00000000000040008000000000000001>
           }
         ]
+        terminated = true
         title = GroupAttributeBlob {
           title = "Ut Cubilia"
         }

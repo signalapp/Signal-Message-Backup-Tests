@@ -211,6 +211,12 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
             excluding = listOf(GroupV2AccessLevel.UNKNOWN, GroupV2AccessLevel.ANY, GroupV2AccessLevel.UNSATISFIABLE)
           )
         )
+      },
+      // groupTerminateChangeUpdateGenerator
+      Generators.permutation {
+        frames += GroupTerminateChangeUpdate(
+          updaterAci
+        )
       }
     )
 
@@ -255,6 +261,7 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
     val groupMemberJoinedByLinkUpdateGenerator = listOfGenerators[21]
     val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[22]
     val groupMemberLabelAccessLevelChangeUpdateGenerator = listOfGenerators[23]
+    val groupTerminateChangeUpdateGenerator = listOfGenerators[24]
 
     val updates = Generators.permutation<GroupChangeChatUpdate.Update> {
       frames += GroupChangeChatUpdate.Update(
@@ -281,7 +288,8 @@ object ChatItemGroupChangeChatMultipleUpdateTestCase : TestCase("chat_item_group
         groupInviteLinkDisabledUpdate = someOneOf(groupInviteLinkDisabledUpdateGenerator),
         groupMemberJoinedByLinkUpdate = someOneOf(groupMemberJoinedByLinkUpdateGenerator),
         groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
-        groupMemberLabelAccessLevelChangeUpdate = someOneOf(groupMemberLabelAccessLevelChangeUpdateGenerator)
+        groupMemberLabelAccessLevelChangeUpdate = someOneOf(groupMemberLabelAccessLevelChangeUpdateGenerator),
+        groupTerminateChangeUpdate = someOneOf(groupTerminateChangeUpdateGenerator)
       )
     }
 

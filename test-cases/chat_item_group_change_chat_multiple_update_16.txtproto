@@ -274,6 +274,11 @@ Frame {
               accessLevel = GroupV2AccessLevel.ADMINISTRATOR
               updaterAci = <00000000000040008000000000000001>
             }
+          },
+          Update {
+            groupTerminateChangeUpdate = GroupTerminateChangeUpdate {
+              updaterAci = <00000000000040008000000000000001>
+            }
           }
         ]
       }

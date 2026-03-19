@@ -202,70 +202,25 @@ Frame {
 
 Frame {
   recipient = Recipient {
-    contact = Contact {
-      aci = <000000ee000040008000000000000001>
-      avatarColor = AvatarColor.A150
-      e164 = 16105550105
-      identityKey = <05ff3bfe864a9bf12602543fcd6fa3031219fc031f47487ff065cb051ba3603938>
-      identityState = IdentityState.VERIFIED
-      note = ""
-      pni = <000000ee000040008000000000000002>
-      profileFamilyName = "Green"
-      profileGivenName = "Eve"
-      profileKey = <1041041041041041041041041041041041041041041041041041041041041041>
-      registered = Registered {}
-      systemFamilyName = ""
-      systemGivenName = ""
-      systemNickname = ""
-      visibility = Visibility.VISIBLE
-    }
-    id = 8
-  }
-}
-
-Frame {
-  recipient = Recipient {
-    contact = Contact {
-      aci = <000000fa000040008000000000000001>
-      avatarColor = AvatarColor.A160
-      e164 = 16105550106
-      identityState = IdentityState.DEFAULT
-      note = ""
-      pni = <000000fa000040008000000000000002>
-      profileFamilyName = "Johnson"
-      profileGivenName = "Frank"
-      profileKey = <1451451451451451451451451451451451451451451451451451451451451451>
-      registered = Registered {}
-      systemFamilyName = ""
-      systemGivenName = ""
-      systemNickname = ""
-      visibility = Visibility.VISIBLE
-    }
-    id = 9
-  }
-}
-
-Frame {
-  recipient = Recipient {
     group = Group {
-      avatarColor = AvatarColor.A180
-      masterKey = <185b9058efc1fa486e362a8bfe82fac40e9e6701fc72fbe76eb51ac08d871eb7>
+      avatarColor = AvatarColor.A170
+      masterKey = <0000000000000000000000000000000000000000000000000000000000000000>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
-          attributes = AccessRequired.ADMINISTRATOR
-          memberLabel = AccessRequired.ADMINISTRATOR
-          members = AccessRequired.ADMINISTRATOR
+          attributes = AccessRequired.MEMBER
+          memberLabel = AccessRequired.MEMBER
+          members = AccessRequired.MEMBER
         }
-        avatarUrl = ""
-        description = GroupAttributeBlob {
-          descriptionText = "volumus error leo taciti quo"
-        }
-        disappearingMessagesTimer = GroupAttributeBlob {
-          disappearingMessagesDuration = 882815404
-        }
-        inviteLinkPassword = <e14dd5d6df1bf0ae271eed9d640edd3bd1e1a6cfc758125a94372c26631f9ac1>
+        avatarUrl = "https://example.com/avatar.jpg"
+        inviteLinkPassword = <>
         members = [
+          Member {
+            labelEmoji = ""
+            labelString = ""
+            role = Role.ADMINISTRATOR
+            userId = <00000000000040008000000000000001>
+          },
           Member {
             labelEmoji = ""
             labelString = ""
@@ -276,37 +231,16 @@ Frame {
             labelEmoji = ""
             labelString = ""
             role = Role.DEFAULT
-            userId = <00000000000040008000000000000001>
-          }
-        ]
-        membersBanned = [
-          MemberBanned {
-            timestamp = 1731385689558
-            userId = <000000fa000040008000000000000001>
-          }
-        ]
-        membersPendingAdminApproval = [
-          MemberPendingAdminApproval {
-            userId = <000000ee000040008000000000000001>
-          }
-        ]
-        membersPendingProfileKey = [
-          MemberPendingProfileKey {
-            addedByUserId = <000a11ce000040008000000000000001>
-            member = Member {
-              labelEmoji = ""
-              labelString = ""
-              role = Role.DEFAULT
-              userId = <000000da000040008000000000000001>
-            }
+            userId = <00000b0b000040008000000000000001>
           }
         ]
         title = GroupAttributeBlob {
-          title = "Ut Cubilia"
+          title = "Me, Alice, Bob"
         }
-        version = 957662124
+        version = 1
       }
-      storySendMode = StorySendMode.ENABLED
+      storySendMode = StorySendMode.DEFAULT
+      whitelisted = true
     }
     id = 10
   }
@@ -314,9 +248,28 @@ Frame {
 
 Frame {
   chat = Chat {
-    expirationTimerMs = 882815404000
     expireTimerVersion = 1
-    id = 1
+    id = 3
     recipientId = 10
+  }
+}
+
+Frame {
+  chatItem = ChatItem {
+    authorId = 1
+    chatId = 3
+    dateSent = 1810531568155
+    directionless = DirectionlessMessageDetails {}
+    updateMessage = ChatUpdateMessage {
+      groupChange = GroupChangeChatUpdate {
+        updates = [
+          Update {
+            groupTerminateChangeUpdate = GroupTerminateChangeUpdate {
+              updaterAci = <000a11ce000040008000000000000001>
+            }
+          }
+        ]
+      }
+    }
   }
 }

@@ -250,7 +250,7 @@ Frame {
     group = Group {
       avatarColor = AvatarColor.A110
       hideStory = true
-      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
+      masterKey = <185b9058efc1fa486e362a8bfe82fac40e9e6701fc72fbe76eb51ac08d871eb7>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
@@ -286,6 +286,12 @@ Frame {
             userId = <00000000000040008000000000000001>
           }
         ]
+        membersBanned = [
+          MemberBanned {
+            timestamp = 1731385689557
+            userId = <000000fa000040008000000000000001>
+          }
+        ]
         membersPendingAdminApproval = [
           MemberPendingAdminApproval {
             userId = <000000ee000040008000000000000001>
@@ -300,12 +306,6 @@ Frame {
               role = Role.DEFAULT
               userId = <000000da000040008000000000000001>
             }
-          }
-        ]
-        members_banned = [
-          MemberBanned {
-            timestamp = 1731385689557
-            userId = <000000fa000040008000000000000001>
           }
         ]
         title = GroupAttributeBlob {

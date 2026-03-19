@@ -249,7 +249,7 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A140
-      masterKey = <6eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe1e28e38b>
+      masterKey = <185b9058efc1fa486e362a8bfe82fac40e9e6701fc72fbe76eb51ac08d871eb7>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.ADMINISTRATOR
@@ -257,9 +257,9 @@ Frame {
           memberLabel = AccessRequired.MEMBER
           members = AccessRequired.MEMBER
         }
-        announcements_only = true
+        announcementsOnly = true
         avatarUrl = "https://signal.org/eTtfOMpdi"
-        inviteLinkPassword = <3f401e4adf93d2e29614e293c3e76f4e185b9058efc1fa486e362a8bfe82fac4>
+        inviteLinkPassword = <d9ff68cb8c1cc671097ad9b4c06dcac60b2b6007c384678792b28a973f401e4a>
         members = [
           Member {
             labelEmoji = ""
@@ -280,6 +280,7 @@ Frame {
             userId = <00000000000040008000000000000001>
           }
         ]
+        terminated = true
         title = GroupAttributeBlob {
           title = "Congue Fastidii"
         }

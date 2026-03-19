@@ -65,14 +65,15 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
             userId = StandardFrames.recipientEve.recipient!!.contact!!.aci!!
           )
         }.asList(0, 1).let { some(it) },
-        members_banned = Generators.permutation<Group.MemberBanned> {
+        membersBanned = Generators.permutation<Group.MemberBanned> {
           frames += Group.MemberBanned(
             userId = StandardFrames.recipientFrank.recipient!!.contact!!.aci!!,
             timestamp = someIncrementingTimestamp()
           )
         }.asList(0, 1).let { some(it) },
         inviteLinkPassword = someBytes(32).toByteString(),
-        announcements_only = someBoolean()
+        announcementsOnly = someBoolean(),
+        terminated = someBoolean()
       )
     }
 

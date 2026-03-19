@@ -267,6 +267,12 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
           updaterAci = some(groupMembersIncludingSelfGenerator()),
           accessLevel = someEnum(GroupV2AccessLevel::class.java, excluding = listOf(GroupV2AccessLevel.UNKNOWN, GroupV2AccessLevel.ANY, GroupV2AccessLevel.UNSATISFIABLE))
         )
+      },
+      // groupTerminateChangeUpdateGenerator
+      Generators.permutation {
+        frames += GroupTerminateChangeUpdate(
+          updaterAci = some(groupMembersIncludingSelfGenerator())
+        )
       }
     )
 
@@ -305,6 +311,7 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
     val groupSequenceOfRequestsAndCancelsUpdateGenerator = listOfGenerators[32]
     val groupExpirationTimerUpdateGenerator = listOfGenerators[33]
     val groupMemberLabelAccessLevelChangeUpdateGenerator = listOfGenerators[34]
+    val groupTerminateChangeUpdateGenerator = listOfGenerators[35]
     val updatesGenerator = Generators.permutation<GroupChangeChatUpdate.Update> {
       frames += GroupChangeChatUpdate.Update(
         genericGroupUpdate = someOneOf(genericGroupUpdateGenerator),
@@ -341,7 +348,8 @@ object ChatItemGroupChangeChatUpdateTestCase : TestCase("chat_item_group_change_
         groupV2MigrationDroppedMembersUpdate = someOneOf(groupV2MigrationDroppedMembersUpdateGenerator),
         groupSequenceOfRequestsAndCancelsUpdate = someOneOf(groupSequenceOfRequestsAndCancelsUpdateGenerator),
         groupExpirationTimerUpdate = someOneOf(groupExpirationTimerUpdateGenerator),
-        groupMemberLabelAccessLevelChangeUpdate = someOneOf(groupMemberLabelAccessLevelChangeUpdateGenerator)
+        groupMemberLabelAccessLevelChangeUpdate = someOneOf(groupMemberLabelAccessLevelChangeUpdateGenerator),
+        groupTerminateChangeUpdate = someOneOf(groupTerminateChangeUpdateGenerator)
       )
     }
     frames += Frame(
