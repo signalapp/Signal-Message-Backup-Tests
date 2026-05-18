@@ -78,7 +78,6 @@ Frame {
     }
     familyName = "Wyatt"
     givenName = "Lois"
-    keyTransparencyData = <023354c1c58b8bdb65b292d0fbfd03cef547a36774f7b594a5a5b7db5756287fd9d0ef45731ddfba674ec6f3bac14fed8832849e10f3a33700205ee8e14dd5d6>
     profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>
     svrPin = "abcdefg"
     username = "marjorie.07"

@@ -151,8 +151,7 @@ object AccountDataTestCase : TestCase("account_data") {
         ),
         backupsSubscriberData = backupsSubscriberData,
         bioText = some(Generators.textBody(minWords = 1, maxWords = 5)),
-        bioEmoji = someEmoji(),
-        keyTransparencyData = someNullableBytes(64)?.toByteString().takeIf { allowAutomaticVerification }
+        bioEmoji = someEmoji()
       )
     )
 

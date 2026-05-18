@@ -187,7 +187,7 @@ message AccountData {
   string bioText = 13;
   string bioEmoji = 14;
   // Opaque blob containing key transparency data for the account
-  optional bytes keyTransparencyData = 15;
+  reserved /*keyTransparencyData*/ 15;
   IOSSpecificSettings iosSpecificSettings = 16;
 }
 
