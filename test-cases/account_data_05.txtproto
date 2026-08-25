@@ -60,6 +60,7 @@ Frame {
       }
       defaultSentMediaQuality = SentMediaQuality.HIGH
       hasCompletedUsernameOnboarding = true
+      hasSeenAdminDeleteEducationDialog = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
@@ -78,7 +79,7 @@ Frame {
       subscriberId = <505b2d0c464633445cb1f9a68a644847e660b3fbea8e9fff77a691f7effe2df5>
     }
     bioEmoji = "💀"
-    bioText = "metus penatibus tation viris ignota detracto himenaeos"
+    bioText = "ignota detracto himenaeos"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true

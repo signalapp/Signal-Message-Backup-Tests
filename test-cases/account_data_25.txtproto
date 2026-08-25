@@ -52,6 +52,7 @@ Frame {
       }
       defaultSentMediaQuality = SentMediaQuality.HIGH
       hasCompletedUsernameOnboarding = true
+      hasSeenAdminDeleteEducationDialog = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
@@ -66,7 +67,7 @@ Frame {
     }
     avatarUrlPath = "https://signal.org/udVyDygxMhyZCT"
     bioEmoji = "💀"
-    bioText = "mi singulis falli eros porro"
+    bioText = "singulis falli eros porro dapibus metus penatibus tation"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true

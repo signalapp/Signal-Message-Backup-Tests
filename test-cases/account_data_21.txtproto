@@ -51,6 +51,7 @@ Frame {
       }
       defaultSentMediaQuality = SentMediaQuality.HIGH
       hasCompletedUsernameOnboarding = true
+      hasSeenAdminDeleteEducationDialog = true
       hasSeenGroupStoryEducationSheet = true
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
@@ -68,7 +69,7 @@ Frame {
       subscriberId = <28a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1>
     }
     bioEmoji = "👍"
-    bioText = "ignota iudicabit ocurreret"
+    bioText = "iudicabit ocurreret elit"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true

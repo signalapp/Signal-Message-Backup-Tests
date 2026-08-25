@@ -147,7 +147,8 @@ object AccountDataTestCase : TestCase("account_data") {
           appTheme = someEnum(AccountData.AppTheme::class.java, excluding = AccountData.AppTheme.UNKNOWN_APP_THEME),
           callsUseLessDataSetting = someEnum(AccountData.CallsUseLessDataSetting::class.java, excluding = AccountData.CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING),
           allowSealedSenderFromAnyone = someBoolean(),
-          allowAutomaticKeyVerification = allowAutomaticVerification
+          allowAutomaticKeyVerification = allowAutomaticVerification,
+          hasSeenAdminDeleteEducationDialog = someBoolean()
         ),
         backupsSubscriberData = backupsSubscriberData,
         bioText = some(Generators.textBody(minWords = 1, maxWords = 5)),

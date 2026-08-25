@@ -69,7 +69,7 @@ Frame {
       subscriberId = <9c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e10411f6e>
     }
     bioEmoji = "👩‍💻"
-    bioText = "metus penatibus tation viris ignota detracto himenaeos"
+    bioText = "ignota detracto himenaeos"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       subscriberId = <e7730df01fcfad80dfdf000fda4e86e6a6eeb98b207d85f0b413e071743cee3d>

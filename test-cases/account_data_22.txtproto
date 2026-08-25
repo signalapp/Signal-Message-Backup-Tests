@@ -64,7 +64,7 @@ Frame {
     }
     avatarUrlPath = "https://signal.org/udVyDygxMhyZCT"
     bioEmoji = "👎"
-    bioText = "mi singulis falli eros porro"
+    bioText = "singulis falli eros porro dapibus metus penatibus tation"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       subscriberId = <e7730df01fcfad80dfdf000fda4e86e6a6eeb98b207d85f0b413e071743cee3d>
