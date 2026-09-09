@@ -31,6 +31,8 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
     )
 
     val identityKey: ByteArray? = some(Generators.identityKeys().nullable())
+    val isBlocked = someBoolean()
+    val blockedAt = someTimestamp()
 
     frames += Frame(
       recipient = Recipient(
@@ -40,7 +42,7 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           pni = someUuid().toByteArray().toByteString(),
           username = someNullableUsername(),
           e164 = someE164(),
-          blocked = someBoolean(),
+          blocked = isBlocked,
           visibility = someEnum(Contact.Visibility::class.java),
           registered = someOneOf(registered),
           notRegistered = someOneOf(notRegistered),
@@ -62,7 +64,8 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           systemFamilyName = some(Generators.lastNames(count = 3).plus("")),
           systemNickname = some(Generators.firstNames(count = 5).plus("")),
           avatarColor = someEnum(AvatarColor::class.java),
-          keyTransparencyData = someNullableBytes(64)?.toByteString()
+          keyTransparencyData = someNullableBytes(64)?.toByteString(),
+          blockedAtTimestamp = if (isBlocked) blockedAt else 0
         )
       )
     )

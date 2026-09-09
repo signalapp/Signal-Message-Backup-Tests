@@ -111,23 +111,24 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <88d9eec83bef469d8111daaf5d87ff09>
+      aci = <0c62af2f006949728cb0c467e5766956>
       avatarColor = AvatarColor.A150
-      blocked = true
-      e164 = 12255550184
+      e164 = 33639985670
+      hideStory = true
       identityKey = <0531e2a12cfad6f939e88ac2b05ec5a42b5de6d37168e8b9729d2b10c259f8fc1c>
       identityState = IdentityState.UNVERIFIED
-      keyTransparencyData = <8a72bebb4db939e0342ae035ddbe7fe465fdb345d9345fdc5ab1cf72b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d2951>
+      keyTransparencyData = <b00738e125ef73707c0a1a54a78a536a99eb27976fb2a59dcf3429a08f357899994d295169f375454a95979def0ce9d2080db8f45d04641dda741f81140efe70>
       notRegistered = NotRegistered {}
-      note = "unum utinam sapien tristique sale quaerendum disputationi quaeque"
-      pni = <f2c8f6640c624f2f806929719cb0c468>
-      profileFamilyName = "Forbes"
-      profileGivenName = "Lindsay"
-      profileKey = <4c7c7f19ef4ab90be00e43771d8bb3f9031ee7c9761a278e9730ff2a7b4eb31e>
-      systemFamilyName = "Lynn"
-      systemGivenName = "Matthew"
+      note = "quaerendum disputationi quaeque an pretium"
+      pni = <90547617739c48bc8b342a387b5f0c5c>
+      profileFamilyName = "Rodriguez"
+      profileGivenName = "Maura"
+      profileKey = <031ee7c9761a278e9730ff2a7b4eb31e73d6d28780f6e1c9dbd14b48236d757f>
+      profileSharing = true
+      systemFamilyName = "Rich"
+      systemGivenName = "Freddy"
       systemNickname = ""
-      username = "goldie.9119"
+      username = "joan.351"
       visibility = Visibility.HIDDEN_MESSAGE_REQUEST
     }
     id = 4

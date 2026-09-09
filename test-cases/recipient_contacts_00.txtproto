@@ -111,18 +111,17 @@ Frame {
 Frame {
   recipient = Recipient {
     contact = Contact {
-      aci = <88d9eec83bef469d8111daaf5d87ff09>
+      aci = <0c62af2f006949728cb0c467e5766956>
       avatarColor = AvatarColor.A100
-      e164 = 33639987372
-      hideStory = true
+      blocked = true
+      e164 = 15465550139
       identityState = IdentityState.DEFAULT
-      note = "repudiandae brute"
-      pni = <f2c8f6640c624f2f806929719cb0c468>
-      profileSharing = true
+      note = "utinam sapien tristique"
+      pni = <90547617739c48bc8b342a387b5f0c5c>
       registered = Registered {}
-      systemFamilyName = "Kemp"
-      systemGivenName = "Matthew"
-      systemNickname = "Freddy"
+      systemFamilyName = "Brown"
+      systemGivenName = "Freddy"
+      systemNickname = "Leslie"
       visibility = Visibility.VISIBLE
     }
     id = 4

@@ -85,6 +85,7 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
         Pair(false, false)
       )
     )
+    val blockedAt = someNonZeroTimestamp()
 
     frames += Frame(
       recipient = Recipient(
@@ -96,7 +97,8 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
           storySendMode = someEnum(Group.StorySendMode::class.java),
           snapshot = snapshot,
           blocked = isBlocked,
-          avatarColor = someEnum(AvatarColor::class.java)
+          avatarColor = someEnum(AvatarColor::class.java),
+          blockedAtTimestamp = if (isBlocked) blockedAt else 0
         )
       )
     )

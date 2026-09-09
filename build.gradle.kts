@@ -26,7 +26,7 @@ application {
 }
 
 dependencies {
-  implementation("org.signal:libsignal-client:0.89.1")
+  implementation("org.signal:libsignal-client:0.99.4")
   implementation("com.thedeanda:lorem:2.2")
   implementation(kotlin("reflect"))
 }
