@@ -53,17 +53,22 @@ Frame {
       defaultSentMediaQuality = SentMediaQuality.STANDARD
       displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
+      includeMutedChatsInBadge = true
       notDiscoverableByPhoneNumber = true
+      notifyForCallsIfMuted = true
+      notifyWhenContactJoins = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
       readReceipts = true
       screenLockTimeoutMinutes = 5
+      showUnreadReminders = true
       storyViewReceiptsEnabled = true
       universalExpireTimerSeconds = 1260152755
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = ""
     bioEmoji = "👍🏾"
-    bioText = "iudicabit ocurreret elit"
+    bioText = "porro dapibus metus penatibus"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       subscriberId = <e7730df01fcfad80dfdf000fda4e86e6a6eeb98b207d85f0b413e071743cee3d>

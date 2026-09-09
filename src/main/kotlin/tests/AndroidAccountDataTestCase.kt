@@ -49,7 +49,15 @@ object AndroidAccountDataTestCase : TestCase("android_account_data") {
             audio = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI_AND_CELLULAR,
             video = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI,
             documents = AccountData.AutoDownloadSettings.AutoDownloadOption.WIFI
-          )
+          ),
+          unreadBadgeType = AccountData.AccountSettings.UnreadBadgeType.UNREAD_MESSAGES,
+          includeMutedChatsInBadge = false,
+          reactionNotifications = true,
+          notifyForCallsIfMuted = false,
+          notifyForMentionsIfMuted = true,
+          notifyForRepliesIfMuted = true,
+          showUnreadReminders = true,
+          notifyWhenContactJoins = false
         ),
         androidSpecificSettings = AccountData.AndroidSpecificSettings(
           useSystemEmoji = someBoolean(),

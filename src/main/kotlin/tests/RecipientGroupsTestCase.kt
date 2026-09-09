@@ -87,6 +87,8 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
     )
     val blockedAt = someNonZeroTimestamp()
 
+    val notifyMentionsIfMuted = someNullableBoolean()
+
     frames += Frame(
       recipient = Recipient(
         id = groupRecipientId,
@@ -110,7 +112,12 @@ object RecipientGroupsTestCase : TestCase("recipient_groups") {
         expirationTimerMs = snapshot.disappearingMessagesTimer?.let { timer ->
           timer.disappearingMessagesDuration!!.toLong() * 1000
         },
-        expireTimerVersion = 1
+        expireTimerVersion = 1,
+        dontNotifyForMentionsIfMuted = notifyMentionsIfMuted == false,
+        notifyForCallsIfMuted = someNullableBoolean(),
+        notifyForMentionsIfMuted = notifyMentionsIfMuted,
+        notifyForRepliesIfMuted = someNullableBoolean(),
+        showUnreadReminders = someNullableBoolean()
       )
     )
   }

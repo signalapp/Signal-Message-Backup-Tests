@@ -148,7 +148,15 @@ object AccountDataTestCase : TestCase("account_data") {
           callsUseLessDataSetting = someEnum(AccountData.CallsUseLessDataSetting::class.java, excluding = AccountData.CallsUseLessDataSetting.UNKNOWN_CALL_DATA_SETTING),
           allowSealedSenderFromAnyone = someBoolean(),
           allowAutomaticKeyVerification = allowAutomaticVerification,
-          hasSeenAdminDeleteEducationDialog = someBoolean()
+          hasSeenAdminDeleteEducationDialog = someBoolean(),
+          unreadBadgeType = someEnum(AccountData.AccountSettings.UnreadBadgeType::class.java, excluding = AccountData.AccountSettings.UnreadBadgeType.UNKNOWN_BADGE_TYPE),
+          includeMutedChatsInBadge = someBoolean(),
+          reactionNotifications = someBoolean(),
+          notifyForCallsIfMuted = someBoolean(),
+          notifyForMentionsIfMuted = someBoolean(),
+          notifyForRepliesIfMuted = someBoolean(),
+          showUnreadReminders = someBoolean(),
+          notifyWhenContactJoins = someBoolean()
         ),
         backupsSubscriberData = backupsSubscriberData,
         bioText = some(Generators.textBody(minWords = 1, maxWords = 5)),

@@ -54,17 +54,22 @@ Frame {
       defaultSentMediaQuality = SentMediaQuality.STANDARD
       displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
+      includeMutedChatsInBadge = true
       notDiscoverableByPhoneNumber = true
+      notifyForCallsIfMuted = true
+      notifyWhenContactJoins = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
       readReceipts = true
       screenLockTimeoutMinutes = 5
+      showUnreadReminders = true
       storyViewReceiptsEnabled = true
       universalExpireTimerSeconds = 1260953299
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = "https://signal.org/udVyDygxMhyZCT"
     bioEmoji = "💀"
-    bioText = "singulis falli eros porro dapibus metus penatibus tation"
+    bioText = "viris ignota detracto himenaeos pretium eloquentiam intellegebat non"
     donationSubscriberData = SubscriberData {
       currencyCode = "EUR"
       subscriberId = <e7730df01fcfad80dfdf000fda4e86e6a6eeb98b207d85f0b413e071743cee3d>

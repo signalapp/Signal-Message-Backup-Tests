@@ -48,16 +48,21 @@ Frame {
       defaultSentMediaQuality = SentMediaQuality.STANDARD
       displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
+      includeMutedChatsInBadge = true
       notDiscoverableByPhoneNumber = true
+      notifyForCallsIfMuted = true
+      notifyWhenContactJoins = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
       readReceipts = true
+      showUnreadReminders = true
       storyViewReceiptsEnabled = true
       universalExpireTimerSeconds = 1260152755
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = ""
     bioEmoji = "💀"
-    bioText = "iudicabit ocurreret elit"
+    bioText = "porro dapibus metus penatibus"
     familyName = ""
     givenName = ""
     profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>

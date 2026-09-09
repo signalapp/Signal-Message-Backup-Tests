@@ -120,7 +120,15 @@ object StandardFrames {
         appTheme = AccountData.AppTheme.SYSTEM,
         callsUseLessDataSetting = AccountData.CallsUseLessDataSetting.NEVER,
         allowSealedSenderFromAnyone = false,
-        allowAutomaticKeyVerification = true
+        allowAutomaticKeyVerification = true,
+        unreadBadgeType = AccountData.AccountSettings.UnreadBadgeType.UNREAD_MESSAGES,
+        includeMutedChatsInBadge = false,
+        reactionNotifications = true,
+        notifyForCallsIfMuted = false,
+        notifyForMentionsIfMuted = true,
+        notifyForRepliesIfMuted = true,
+        showUnreadReminders = true,
+        notifyWhenContactJoins = false
       )
     )
   )

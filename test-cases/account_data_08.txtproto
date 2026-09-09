@@ -54,13 +54,18 @@ Frame {
       defaultSentMediaQuality = SentMediaQuality.STANDARD
       displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
+      includeMutedChatsInBadge = true
       notDiscoverableByPhoneNumber = true
+      notifyForCallsIfMuted = true
+      notifyWhenContactJoins = true
       optimizeOnDeviceStorage = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
       readReceipts = true
+      showUnreadReminders = true
       storyViewReceiptsEnabled = true
       universalExpireTimerSeconds = 313025179
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = "https://signal.org/FaZqBn"
     backupsSubscriberData = IAPSubscriberData {
@@ -68,7 +73,7 @@ Frame {
       subscriberId = <9c47cb807844279fb4a4e927c5f36b40745ec558f58cca155df7981e10411f6e>
     }
     bioEmoji = "👍🏾"
-    bioText = "ignota detracto himenaeos"
+    bioText = "tincidunt ea dolore iaculis fastidii"
     familyName = ""
     givenName = ""
     profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>

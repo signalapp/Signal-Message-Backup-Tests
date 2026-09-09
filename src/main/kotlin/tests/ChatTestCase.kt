@@ -40,7 +40,6 @@ object ChatTestCase : TestCase("chat") {
         expirationTimerMs = someExpirationTimerMs().takeIf { it > 0 },
         muteUntilMs = someTimestamp().takeIf { it > 0 },
         markedUnread = someBoolean(),
-        dontNotifyForMentionsIfMuted = someBoolean(),
         style = somePermutation {
           frames += ChatStyle(
             wallpaperPreset = someOneOf(wallpaperPresetGenerator),
@@ -51,7 +50,9 @@ object ChatTestCase : TestCase("chat") {
             dimWallpaperInDarkMode = someBoolean()
           )
         },
-        expireTimerVersion = someExpirationTimerVersion()
+        expireTimerVersion = someExpirationTimerVersion(),
+        notifyForCallsIfMuted = someNullableBoolean(),
+        showUnreadReminders = someNullableBoolean()
       )
     )
   }

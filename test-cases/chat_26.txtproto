@@ -44,6 +44,8 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      notifyForMentionsIfMuted = true
+      notifyForRepliesIfMuted = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
       preferredReactionEmoji = [
@@ -51,12 +53,15 @@ Frame {
         "b",
         "c"
       ]
+      reactionNotifications = true
       readReceipts = true
       sealedSenderIndicators = true
+      showUnreadReminders = true
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
       universalExpireTimerSeconds = 3600
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = ""
     bioEmoji = ""
@@ -134,13 +139,12 @@ Frame {
 Frame {
   chat = Chat {
     expirationTimerMs = 788193506000
-    expireTimerVersion = 1968754685
+    expireTimerVersion = 424307839
     id = 3
     muteUntilMs = 1903461115386
     recipientId = 4
     style = ChatStyle {
       autoBubbleColor = AutomaticBubbleColor {}
-      dimWallpaperInDarkMode = true
       wallpaperPreset = WallpaperPreset.GRADIENT_PEACH
     }
   }

@@ -57,13 +57,17 @@ Frame {
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       linkPreviews = true
+      notifyForMentionsIfMuted = true
+      notifyForRepliesIfMuted = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
+      reactionNotifications = true
       screenLockTimeoutMinutes = 60
       sealedSenderIndicators = true
       storiesDisabled = true
       typingIndicators = true
       universalExpireTimerSeconds = 313025179
+      unreadBadgeType = UnreadBadgeType.UNREAD_CHATS
     }
     avatarUrlPath = "https://signal.org/FaZqBn"
     backupsSubscriberData = IAPSubscriberData {
@@ -71,7 +75,7 @@ Frame {
       subscriberId = <505b2d0c464633445cb1f9a68a644847e660b3fbea8e9fff77a691f7effe2df5>
     }
     bioEmoji = "👍🏾"
-    bioText = "ignota detracto himenaeos"
+    bioText = "tincidunt ea dolore iaculis fastidii"
     donationSubscriberData = SubscriberData {
       currencyCode = "GBP"
       manuallyCancelled = true

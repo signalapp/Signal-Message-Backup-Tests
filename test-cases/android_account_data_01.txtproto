@@ -27,11 +27,16 @@ Frame {
       hasSetMyStoriesPrivacy = true
       hasViewedOnboardingStory = true
       linkPreviews = true
+      notifyForMentionsIfMuted = true
+      notifyForRepliesIfMuted = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
+      reactionNotifications = true
       readReceipts = true
       sealedSenderIndicators = true
+      showUnreadReminders = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     androidSpecificSettings = AndroidSpecificSettings {
       navigationBarSize = NavigationBarSize.COMPACT

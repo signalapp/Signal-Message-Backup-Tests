@@ -44,6 +44,8 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      notifyForMentionsIfMuted = true
+      notifyForRepliesIfMuted = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
       preferredReactionEmoji = [
@@ -51,12 +53,15 @@ Frame {
         "b",
         "c"
       ]
+      reactionNotifications = true
       readReceipts = true
       sealedSenderIndicators = true
+      showUnreadReminders = true
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
       universalExpireTimerSeconds = 3600
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = ""
     bioEmoji = ""
@@ -249,7 +254,7 @@ Frame {
   recipient = Recipient {
     group = Group {
       avatarColor = AvatarColor.A110
-      masterKey = <0e9e6701fc72fbe76eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4>
+      masterKey = <fc72fbe76eb51ac08d871eb76f2e7e3825d55d76500fad6608e092e4becbfbbe>
       snapshot = GroupSnapshot {
         accessControl = AccessControl {
           addFromInviteLink = AccessRequired.UNSATISFIABLE
@@ -321,6 +326,7 @@ Frame {
 
 Frame {
   chat = Chat {
+    dontNotifyForMentionsIfMuted = true
     expirationTimerMs = 2103644488000
     expireTimerVersion = 1
     id = 1

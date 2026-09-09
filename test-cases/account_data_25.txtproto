@@ -57,17 +57,21 @@ Frame {
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       linkPreviews = true
+      notifyForMentionsIfMuted = true
+      notifyForRepliesIfMuted = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
+      reactionNotifications = true
       screenLockTimeoutMinutes = 1
       sealedSenderIndicators = true
       storiesDisabled = true
       typingIndicators = true
       universalExpireTimerSeconds = 1260953299
+      unreadBadgeType = UnreadBadgeType.UNREAD_CHATS
     }
     avatarUrlPath = "https://signal.org/udVyDygxMhyZCT"
     bioEmoji = "💀"
-    bioText = "singulis falli eros porro dapibus metus penatibus tation"
+    bioText = "viris ignota detracto himenaeos pretium eloquentiam intellegebat non"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true

@@ -44,6 +44,8 @@ Frame {
       keepMutedChatsArchived = true
       linkPreviews = true
       notDiscoverableByPhoneNumber = true
+      notifyForMentionsIfMuted = true
+      notifyForRepliesIfMuted = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
       preferredReactionEmoji = [
@@ -51,12 +53,15 @@ Frame {
         "b",
         "c"
       ]
+      reactionNotifications = true
       readReceipts = true
       sealedSenderIndicators = true
+      showUnreadReminders = true
       storiesDisabled = true
       storyViewReceiptsEnabled = true
       typingIndicators = true
       universalExpireTimerSeconds = 3600
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = ""
     bioEmoji = ""
@@ -233,7 +238,7 @@ Frame {
           flag = Flag.NONE
           pointer = FilePointer {
             blurHash = "LfLh6Voa9NIW?wNF-ooL-;WAX8oy"
-            caption = ""
+            caption = "DNPnbCyaCBGA"
             contentType = "image/png"
             fileName = "tLxdKPNuF"
             height = 4049

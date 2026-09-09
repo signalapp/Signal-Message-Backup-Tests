@@ -63,16 +63,21 @@ Frame {
       defaultSentMediaQuality = SentMediaQuality.STANDARD
       displayBadgesOnProfile = true
       hasSetMyStoriesPrivacy = true
+      includeMutedChatsInBadge = true
       notDiscoverableByPhoneNumber = true
+      notifyForCallsIfMuted = true
+      notifyWhenContactJoins = true
       phoneNumberSharingMode = PhoneNumberSharingMode.EVERYBODY
       pinReminders = true
       readReceipts = true
+      showUnreadReminders = true
       storyViewReceiptsEnabled = true
       universalExpireTimerSeconds = 1260953299
+      unreadBadgeType = UnreadBadgeType.UNREAD_MESSAGES
     }
     avatarUrlPath = "https://signal.org/udVyDygxMhyZCT"
     bioEmoji = "👩‍💻"
-    bioText = "singulis falli eros porro dapibus metus penatibus tation"
+    bioText = "viris ignota detracto himenaeos pretium eloquentiam intellegebat non"
     familyName = ""
     givenName = ""
     profileKey = <552e30c89a57440e8b6df14eb6ecc600425e7254c942177d4c77276c8a75e29e>

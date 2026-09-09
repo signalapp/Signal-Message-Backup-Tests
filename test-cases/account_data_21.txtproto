@@ -56,20 +56,24 @@ Frame {
       hasViewedOnboardingStory = true
       keepMutedChatsArchived = true
       linkPreviews = true
+      notifyForMentionsIfMuted = true
+      notifyForRepliesIfMuted = true
       phoneNumberSharingMode = PhoneNumberSharingMode.NOBODY
       preferContactAvatars = true
+      reactionNotifications = true
       screenLockTimeoutMinutes = 1
       sealedSenderIndicators = true
       storiesDisabled = true
       typingIndicators = true
       universalExpireTimerSeconds = 1260152755
+      unreadBadgeType = UnreadBadgeType.UNREAD_CHATS
     }
     avatarUrlPath = ""
     backupsSubscriberData = IAPSubscriberData {
       subscriberId = <28a14adb2e90907199154fed979ea98f19d848c17b785ff80dd2d18f5aa092c1>
     }
     bioEmoji = "👍"
-    bioText = "iudicabit ocurreret elit"
+    bioText = "porro dapibus metus penatibus"
     donationSubscriberData = SubscriberData {
       currencyCode = "USD"
       manuallyCancelled = true

@@ -617,7 +617,7 @@ object Generators {
         fileName = if (includeFileName) some(Generators.nonEmptyStrings().nullable()) else null,
         width = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         height = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
-        caption = if (includeCaption) someNullableString() else null,
+        caption = if (includeCaption) someNonEmptyString() else null,
         blurHash = if (includeBlurHash && blurHashSupported) some(Generators.blurHashes().nullable()) else null
       )
     }
