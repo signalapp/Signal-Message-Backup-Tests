@@ -150,6 +150,7 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
+        aci = <>
         avatar = FilePointer {
           blurHash = "LGG*f,-i.l-o?G$~?Zt7pHN1=tE3"
           contentType = "image/jpeg"
@@ -171,6 +172,11 @@ Frame {
           prefix = "Miss"
           suffix = "III"
         }
+        nickname = SignalNickname {
+          family = "Jennings"
+          given = "Cleo"
+        }
+        note = ""
         organization = ""
       }
     }

@@ -134,6 +134,10 @@ Frame {
       profileGivenName = "Maura"
       profileKey = <031ee7c9761a278e9730ff2a7b4eb31e73d6d28780f6e1c9dbd14b48236d757f>
       profileSharing = true
+      sharedName = Name {
+        family = "Bentley"
+        given = ""
+      }
       systemFamilyName = "Rich"
       systemGivenName = "Lana"
       systemNickname = "Numbers"

@@ -65,7 +65,18 @@ object RecipientContactsTestCase : TestCase("recipient_contacts") {
           systemNickname = some(Generators.firstNames(count = 5).plus("")),
           avatarColor = someEnum(AvatarColor::class.java),
           keyTransparencyData = someNullableBytes(64)?.toByteString(),
-          blockedAtTimestamp = if (isBlocked) blockedAt else 0
+          blockedAtTimestamp = if (isBlocked) blockedAt else 0,
+          sharedName = Generators.permutation<Contact.Name> {
+            // A shared name with both names empty is invalid, so ensure that at least one
+            // of the fields has a non-empty string.
+            val givenGenerator = Generators.list("", SeededRandom.lipsum.firstName, SeededRandom.lipsum.firstName)
+            val familyGenerator = Generators.list(SeededRandom.lipsum.lastName, "", SeededRandom.lipsum.lastName)
+
+            frames += Contact.Name(
+              given = some(givenGenerator),
+              family = some(familyGenerator)
+            )
+          }.nullable().let { some(it) }
         )
       )
     )

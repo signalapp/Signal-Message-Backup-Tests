@@ -150,6 +150,7 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
+        aci = <48977dcb9a6e4a948222fb139344c03b>
         address = [
           PostalAddress {
             city = ""
@@ -191,6 +192,7 @@ Frame {
           prefix = ""
           suffix = ""
         }
+        note = "scelerisque sodales"
         number = [
           Phone {
             label = ""

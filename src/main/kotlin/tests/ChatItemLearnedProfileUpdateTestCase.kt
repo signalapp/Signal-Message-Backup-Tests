@@ -23,9 +23,10 @@ object ChatItemLearnedProfileUpdateTestCase : TestCase("chat_item_learned_profil
     frames += StandardFrames.recipientAlice
     frames += StandardFrames.chatAlice
 
-    val (e164Generator, usernameGenerator) = oneOf(
+    val (e164Generator, usernameGenerator, sharedNameGenerator) = oneOf(
       Generators.e164s() as Generator<Any?>,
-      Generators.usernames() as Generator<Any?>
+      Generators.usernames() as Generator<Any?>,
+      Generators.names() as Generator<Any?>
     )
 
     frames += Frame(
@@ -37,7 +38,8 @@ object ChatItemLearnedProfileUpdateTestCase : TestCase("chat_item_learned_profil
         updateMessage = ChatUpdateMessage(
           learnedProfileChange = LearnedProfileChatUpdate(
             e164 = someOneOf(e164Generator),
-            username = someOneOf(usernameGenerator)
+            username = someOneOf(usernameGenerator),
+            sharedName = someOneOf(sharedNameGenerator)
           )
         )
       )

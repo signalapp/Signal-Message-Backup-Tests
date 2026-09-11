@@ -150,6 +150,7 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
+        aci = <48977dcb9a6e4a948222fb139344c03b>
         avatar = FilePointer {
           blurHash = "LIM:}RB8?-^L.d4]O.nkK_ruI?od"
           contentType = "image/png"
@@ -173,6 +174,11 @@ Frame {
           prefix = "Mrs."
           suffix = "Sr."
         }
+        nickname = SignalNickname {
+          family = ""
+          given = "Liliana"
+        }
+        note = "erat cursus detraxit mnesarchum risus sociis"
         organization = ""
       }
     }

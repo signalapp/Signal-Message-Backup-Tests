@@ -227,6 +227,7 @@ Frame {
     chatId = 3
     contactMessage = ContactMessage {
       contact = ContactAttachment {
+        aci = <>
         name = Name {
           familyName = "Parker"
           givenName = "Peter"
@@ -235,6 +236,7 @@ Frame {
           prefix = ""
           suffix = ""
         }
+        note = ""
         organization = ""
       }
     }

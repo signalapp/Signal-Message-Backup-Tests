@@ -133,6 +133,10 @@ Frame {
       pni = <90547617739c48bc8b342a387b5f0c5c>
       profileFamilyName = "Blevins"
       profileGivenName = "Thomas"
+      sharedName = Name {
+        family = ""
+        given = "Sheena"
+      }
       systemFamilyName = "Knight"
       systemGivenName = "Lana"
       systemNickname = "Leslie"

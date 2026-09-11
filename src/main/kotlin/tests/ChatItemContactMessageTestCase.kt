@@ -4,13 +4,16 @@ import Generators
 import PermutationScope
 import TestCase
 import asList
+import map
 import nullable
+import okio.ByteString
 import oneOf
 import org.thoughtcrime.securesms.backup.v2.proto.ChatItem
 import org.thoughtcrime.securesms.backup.v2.proto.ContactAttachment
 import org.thoughtcrime.securesms.backup.v2.proto.ContactMessage
 import org.thoughtcrime.securesms.backup.v2.proto.Frame
 import plus
+import toByteString
 
 /**
  * Every reasonable permutation of ChatItem.ContactMessage
@@ -111,7 +114,20 @@ object ChatItemContactMessageTestCase : TestCase("chat_item_contact_message") {
                 )
               }.asList(0, 1, 2).let { some(it) },
               organization = someString(),
-              avatar = some(Generators.avatarFilePointer().nullable())
+              avatar = some(Generators.avatarFilePointer().nullable()),
+              aci = some(Generators.uuids().map { it.toByteString() }.plus(ByteString.EMPTY)),
+              nickname = Generators.permutation<ContactAttachment.SignalNickname> {
+                // A nickname with both names empty is invalid, so ensure that at least one
+                // of the fields has a non-empty string.
+                val givenGenerator = Generators.list("", SeededRandom.lipsum.firstName, SeededRandom.lipsum.firstName)
+                val familyGenerator = Generators.list(SeededRandom.lipsum.lastName, "", SeededRandom.lipsum.lastName)
+
+                frames += ContactAttachment.SignalNickname(
+                  given = some(givenGenerator),
+                  family = some(familyGenerator)
+                )
+              }.nullable().let { some(it) },
+              note = some(Generators.textBody().plus(""))
             )
           }.let { some(it) }
         )

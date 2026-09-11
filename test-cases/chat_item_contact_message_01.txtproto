@@ -150,6 +150,7 @@ Frame {
     chatId = 2
     contactMessage = ContactMessage {
       contact = ContactAttachment {
+        aci = <>
         address = [
           PostalAddress {
             city = ""
@@ -186,6 +187,11 @@ Frame {
           prefix = "Mr."
           suffix = "Jr."
         }
+        nickname = SignalNickname {
+          family = "Levy"
+          given = ""
+        }
+        note = "praesent convallis neque nobis"
         number = [
           Phone {
             label = ""
