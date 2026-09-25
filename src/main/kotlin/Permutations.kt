@@ -325,6 +325,18 @@ object Generators {
   fun uuids(): Generator<UUID> = UuidGenerator()
   fun cdnNumbers(): Generator<Int> = Generators.list(0, 2, 3)
   fun emails(): Generator<String> = Generators.list("${SeededRandom.lipsum.firstName}@${SeededRandom.lipsum.lastName}.com", "${SeededRandom.string()}@${SeededRandom.string()}.org")
+
+  /**
+   * Waveform/duration pairs for audio attachments. Both are derived from the
+   * audio file itself, so they're either both present or both absent.
+   */
+  fun audioDetails(): Generator<Pair<ByteArray?, Float?>> = Generators.list(
+    null to null,
+    SeededRandom.bytes(100) to SeededRandom.float(0.1f, 1f),
+    SeededRandom.bytes(64) to SeededRandom.float(1f, 60f),
+    SeededRandom.bytes(1) to SeededRandom.float(60f, 3600f)
+  )
+
   fun blurHashes(): Generator<String> = Generators.list("LfLh6Voa9NIW?wNF-ooL-;WAX8oy", "LGG*f,-i.l-o?G\$~?Zt7pHN1=tE3", "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6", "LJR,66e.~Cxu%LoLM|S2%3WWIosm", "LIM:}RB8?-^L.d4]O.nkK_ruI?od")
   fun picoMobs(): Generator<String> = Generators.list(SeededRandom.string(18, 25, "123456789"), SeededRandom.string(18, 25, "123456789"))
   fun colors(): Generator<Int> = Generators.list(seededRandomColor(), seededRandomColor(), seededRandomColor())
@@ -434,6 +446,16 @@ object Generators {
     contentTypeGenerator = Generators.list("audio/mp3")
   )
 
+  fun audioAttachmentFilePointer(): Generator<FilePointer> = filePointerInternal(
+    includeFileName = true,
+    includeMediaSize = false,
+    includeCaption = false,
+    includeBlurHash = false,
+    includeIncrementalMac = false,
+    includeAudioDetails = true,
+    contentTypeGenerator = Generators.list("audio/mp3", "audio/aac", "audio/mpeg", "audio/ogg")
+  )
+
   fun gifFilePointer(): Generator<FilePointer> = filePointerInternal(
     includeFileName = true,
     includeMediaSize = true,
@@ -530,6 +552,7 @@ object Generators {
     includeCaption: Boolean,
     includeBlurHash: Boolean,
     includeIncrementalMac: Boolean,
+    includeAudioDetails: Boolean = false,
     contentTypeGenerator: Generator<String>
   ): Generator<FilePointer> {
     // As an optimization during restore clients may discard attachment locators
@@ -605,6 +628,11 @@ object Generators {
       val contentType = some(contentTypeGenerator)
       val blurHashSupported = contentType.startsWith("image") || contentType.startsWith("video")
 
+      val potentialAudioDetails: Pair<ByteArray?, Float?> = if (includeAudioDetails) some(Generators.audioDetails()) else null to null
+
+      // These details only apply to audio attachments.
+      val (audioWaveform, audioDurationSeconds) = if (contentType.startsWith("audio")) potentialAudioDetails else null to null
+
       frames += FilePointer(
         locatorInfo = locatorInfo,
         contentType = contentType,
@@ -618,7 +646,9 @@ object Generators {
         width = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         height = if (includeMediaSize) some(Generators.ints(0, 4096).nullable()) else null,
         caption = if (includeCaption) someNonEmptyString() else null,
-        blurHash = if (includeBlurHash && blurHashSupported) some(Generators.blurHashes().nullable()) else null
+        blurHash = if (includeBlurHash && blurHashSupported) some(Generators.blurHashes().nullable()) else null,
+        audioWaveform = audioWaveform?.toByteString(),
+        audioDurationSeconds = audioDurationSeconds
       )
     }
   }
