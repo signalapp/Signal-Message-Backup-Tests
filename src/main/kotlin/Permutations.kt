@@ -18,6 +18,7 @@ import java.security.SecureRandom
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.math.roundToLong
 import kotlin.time.Duration.Companion.days
 
 /**
@@ -329,13 +330,18 @@ object Generators {
   /**
    * Waveform/duration pairs for audio attachments. Both are derived from the
    * audio file itself, so they're either both present or both absent.
+   * Durations are whole microseconds so that clients storing them at that precision can round trip them.
    */
   fun audioDetails(): Generator<Pair<ByteArray?, Float?>> = Generators.list(
     null to null,
-    SeededRandom.bytes(100) to SeededRandom.float(0.1f, 1f),
-    SeededRandom.bytes(64) to SeededRandom.float(1f, 60f),
-    SeededRandom.bytes(1) to SeededRandom.float(60f, 3600f)
+    SeededRandom.bytes(100) to wholeMicrosecondsAsSeconds(SeededRandom.float(0.1f, 1f)),
+    SeededRandom.bytes(64) to wholeMicrosecondsAsSeconds(SeededRandom.float(1f, 60f)),
+    SeededRandom.bytes(1) to wholeMicrosecondsAsSeconds(SeededRandom.float(60f, 3600f))
   )
+
+  private fun wholeMicrosecondsAsSeconds(seconds: Float): Float {
+    return ((seconds.toDouble() * 1_000_000).roundToLong() / 1_000_000.0).toFloat()
+  }
 
   fun blurHashes(): Generator<String> = Generators.list("LfLh6Voa9NIW?wNF-ooL-;WAX8oy", "LGG*f,-i.l-o?G\$~?Zt7pHN1=tE3", "LdIOX?NE9Y4T~pRPRjE1X9f5jrt6", "LJR,66e.~Cxu%LoLM|S2%3WWIosm", "LIM:}RB8?-^L.d4]O.nkK_ruI?od")
   fun picoMobs(): Generator<String> = Generators.list(SeededRandom.string(18, 25, "123456789"), SeededRandom.string(18, 25, "123456789"))

@@ -167,7 +167,7 @@ Frame {
           clientUuid = <6fdfe4dea42e4416887a25d63d2e935d>
           flag = Flag.NONE
           pointer = FilePointer {
-            audioDurationSeconds = 0.64009786
+            audioDurationSeconds = 0.640098
             audioWaveform = <07cb04e9d9b24141b2f8da685258ef7d8a247a3a9729d5257280c920d4ee6948329015040e2deb6456d4afb5d5b1012b93c0e7cb966f802da273194cd524b6d2538c4846f429adfdc79a7537345c89604bdd6c8bd965066c68095195594603d7001fba09>
             contentType = "audio/aac"
             fileName = "uVVegbO"
